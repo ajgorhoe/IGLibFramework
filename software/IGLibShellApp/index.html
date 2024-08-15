@@ -1,0 +1,683 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>IGShell - a shell application based on the Investigative
+      Generic Library (IGLib).</title>
+    <meta name="author" content="Igor Grešovnik">
+    <meta name="keywords" content="shell application, .net, numerical
+      library, technical applications, optimization, optimization
+      library, optimization algorithm, successive approximation, moving
+      least squares, inverse problems, weighted least squares,
+      approximation, Igor Gresovnik, Igor Grešovnik, Investigative
+      Generic Library, IGLib, IOptLib, cryptography, cryptographic
+      shell, encryption, hash, public key">
+    <meta name="description" content="IGShell is a shell application
+      based on the Investigative Generic Library (IGLib) and .NET
+      framework. It includes command-line, interpreters, calculator,
+      cryptographic utilities, and several demonstration applications.">
+    <meta name="Classification" content="software/technical">
+    <meta name="GENERATOR" content="Netscape 7 Composer">
+    <meta name="Author" content="Igor Grešovnik">
+    <link rev="made"
+href="http://www.google.com/search?hl=en&amp;q=Igor+Gre%C5%A1ovnik&amp;btnG=Google+Search&amp;meta=">
+    <link rel="SHORTCUT ICON" href="ig.ico">
+    <!-- Google Analitics - account Software 
+	property Software IGLibShell -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g; m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-96841644-3', 'auto');
+    ga('send', 'pageview');
+	</script>
+    <!-- Google Analitics - account Software 
+	property Software all -->
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-96841644-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+    <!-- Google Analitics - account IGLib -->
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-76143121-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+  </head>
+  <body style=" color: rgb(0, 0, 0); background-color: rgb(255, 255,
+    255);" vlink="#006600" link="#0000ee" alink="#fe0000">
+    <div align="right"><small>&nbsp; </small>
+      <table width="100%" cellspacing="2" cellpadding="2" border="0">
+        <tbody>
+          <tr>
+            <td valign="top"><small><small>&nbsp;&nbsp; &nbsp; &nbsp;</small><small><big><big>
+                      <small><a href="./"><big>./ <small>(directory)</small></big></a></small></big></big>
+                  &nbsp;&nbsp;<small> <a href="../index.html"><span
+                        style="font-weight: bold;">&lt;&lt;</span></a>
+                    &nbsp;&nbsp; <a href="../index.html"><span
+                        style="font-weight: bold;">&lt; back</span></a>
+                    &nbsp;&nbsp;</small></small></small>&nbsp;&nbsp; <small><a
+                  href="index.html#search" style="font-weight: bold;">Search</a></small>
+              &nbsp;<small><small><small> &nbsp; </small></small></small>
+              &nbsp;<small><small><small> &nbsp;&nbsp; &lt; sponsored: <a
+href="http://www2.arnes.si/%7Efgreso/stan/index.html">Stanovanje v
+                      Ljubljani</a> &gt; <br>
+                  </small></small></small></td>
+            <td valign="top" align="right"><small>&nbsp; <a
+                  href="HashForm.html">HashForm &amp; HashShell</a>&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="../../links.html">Optimization links</a>&nbsp;
+                &nbsp; <a href="../../index.html">Igor Grešovnik</a>
+                &nbsp;&nbsp; <a href="../../iglib/index.html"><span
+                    style="font-style: italic;">IGLib</span></a> &nbsp;
+                &nbsp;&nbsp; </small></td>
+          </tr>
+        </tbody>
+      </table>
+      <font size="-1"><a href="http://www.c3m.si/igor"> </a></font></div>
+    <center>
+      <div style="text-align: left;">
+        <div style="text-align: right;">&nbsp;&nbsp;<span
+            style="font-style: italic;"> </span><font color="#000000"><span
+              style="font-style: italic;"><br>
+            </span></font></div>
+      </div>
+    </center>
+    <table nosave="" style="width: 100%;" cols="2" cellspacing="5"
+      cellpadding="0">
+      <tbody>
+        <tr nosave="" valign="top">
+          <td nosave="" style="vertical-align: middle; text-align: left;
+            width: 90%;"> <span style="font-weight: bold;"></span><br>
+            <h1 style="text-align: center;"><big><b><i><font><font><b><i><font><font><big><big><b><i><font><font><b><i><font
+                                                  color="#cc0000"><font
+                                                    size="+2"><big><font
+                                                        size="+2">IGShell
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                        <font size="+2">-</font>
+                                                        IGLib's&nbsp; <font
+                                                          size="+2">Shell
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          Application</font></font><br>
+                                                    </big></font></font></i></b></font></font></i></b></big></big></font></font></i></b></font></font></i></b></big></h1>
+            <p style="text-align: left;"><b>This page contains IGLib
+                binaries and IGShell, a simple shell application that is
+                based on the library. <br>
+              </b></p>
+            <font color="#000000"> </font><span style="font-weight:
+              bold;"></span><br>
+            <font color="#000000"> </font> </td>
+          <td style="text-align: right;" nosave="">&nbsp;&nbsp; <img
+              src="shellapp_title.jpg" alt="ShellApp screenshot."
+              style="width: 336px; height: 256px;" width="336"
+              height="256"><b> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+              &nbsp; </b></td>
+        </tr>
+      </tbody>
+    </table>
+    <p><b><br>
+      </b></p>
+    <p> </p>
+    <hr width="100%">
+    <center>
+      <table nosave="" cols="2" width="100%">
+        <tbody>
+          <tr nosave="" valign="top">
+            <td nosave=""> <span style="font-weight: bold;">Contents:<br>
+              </span>
+              <ul>
+                <li><a href="#about">About the Software</a>&nbsp;&nbsp;</li>
+                <ul>
+                  <li><small><a href="HashForm.html#hashform">HashForm</a>
+                      (<a href="doc/HashForm_help.html">User Manual</a>)<br>
+                    </small></li>
+                  <li><a href="HashForm.html#hashshell"><small>HashShell
+                      </small></a><br>
+                  </li>
+                </ul>
+                <ul>
+                </ul>
+                <li><a href="#doc"><span style="text-decoration:
+                      underline;">Documentation</span></a>&nbsp; <br>
+                </li>
+                <li><a href="#download">Download</a>&nbsp;&nbsp;</li>
+                <li><a href="#archive">Archive</a>&nbsp; <br>
+                </li>
+                <ul>
+                </ul>
+              </ul>
+              <br>
+              <font color="#000000"><span style="font-weight: bold;"></span></font></td>
+            <td nosave="" align="right">&nbsp;&nbsp;&nbsp; <br>
+              &nbsp;&nbsp; <a href="#search" style="font-weight: bold;">Search</a>
+              &nbsp; <br>
+              &nbsp;&nbsp;&nbsp;&nbsp; <b><br>
+                &nbsp; &nbsp; &nbsp; <br>
+              </b></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+    </center>
+    <hr width="100%">&nbsp;&nbsp; <br>
+    <center>
+      <h1> <a name="about"></a><b><i><font color="#cc0000"><font
+                size="+2">About the Software<br>
+              </font></font></i></b></h1>
+    </center>
+    <br>
+    &nbsp; IGShell is an extensible application based on the&nbsp; <a
+      href="file:///D:/users/igor/www/www/igor/iglib/index.html"><i>Investigative
+
+
+
+
+
+
+
+
+
+
+
+
+        Generic Library</i></a><a> (<i>IGLib</i>)</a> and the .NET
+    framework. It provides access to a couple of useful utilities
+    implemented in <i>IGLib</i> through a command-line interpreter used
+    to invoke those utilities. Beside immediate applicability of some
+    tools like a flexible expression evaluator or an extensive set of
+    cryptographic utilities, it provides access to some demonstrative
+    examples showing the capabilities of the library (such as 2D and 3D
+    graphics). <br>
+    <br>
+    &nbsp; Furthermore, it provides an application framework for
+    building flexible and extensible desktop applications that can cover
+    practically unlimited areas of application. The framework is
+    conceived to support rapid development of&nbsp; multifunctional
+    applications, where full industrial scale applications can be
+    developed in the same framework as a number of accompanying testing
+    applications (where a solid set of tests can be maintained for the
+    current functionality of software) and sandbox applications that are
+    created simultaneously to provide proof of concepts. <br>
+    <br>
+    &nbsp; Flexibility that enables hosting so different components
+    under one roof is provided through the three level interpretation
+    system, which enables easy combining and launch of the desired
+    functions from a potentially very large set of available ones. On
+    the case of cryptographic utilities, the software projects available
+    in this distribution demonstrates the flexibility of this concept to
+    combine functionality implemented in the underlying libraries and
+    provide it through applications in a user friendly way. Here, <i>IGLib</i>
+    provides the functionality itself (but this can be extended by
+    arbitrary number of external libraries), and at the same time it
+    provides all the necessary machinery for construction of the
+    application framework (such as interpreters or interprocess
+    communication tools). <br>
+    <br>
+    <br>
+    <h2 style="text-align: center;"><small><a name="functionaliy"></a><span
+          style="color: rgb(204, 0, 0);">Functionality&nbsp; <br>
+        </span></small></h2>
+    <br>
+    <br>
+    <h2 style="text-align: center;"><small><a name="applications"></a><span
+          style="color: rgb(204, 0, 0);">Applications&nbsp; <br>
+        </span></small></h2>
+    <br>
+    <br>
+    &nbsp; A Visual Studio (or MonoDevelop) project for building the
+    IGShell is included in order to demonstrate how to build a simple
+    shell application based on IGLib. This project can be used as a
+    template for building your own shell applications, which can be more
+    complex and provide more functionality.<br>
+    <br>
+    &nbsp; In addition, two <a href="HashForm.html">hosted applications</a>
+    are included, namely the <i><a href="HashForm.html#hashform"><b>HashForm</b></a></i>
+    and the <i><a href="HashForm.html#hashshell"><b>HashShell</b></a></i>.
+    These are simple but useful applications for calculation of <br>
+    <br>
+    <br>
+    <h2 style="text-align: center;"><small><a name="examples"></a><span
+          style="color: rgb(204, 0, 0);">Examples&nbsp; <br>
+        </span></small></h2>
+    <br>
+    A number of example files that contain various commands for the
+    shell are available in the <a href="examples/">examples</a>
+    directory (<a href="download/examples.zip">zipped version</a> for
+    download). This directory also contains some sample files on which
+    example commands act. For example, the <a
+      href="examples/crypto/excrypto.cmd">examples/crypto/excrypto.cmd</a>
+    (view <a href="excrypto.cmd.html">html version here</a>) is a
+    command file that contains numerous examples of how to uses built-in
+    cryptographic utilities of the IGShell, and the containing directory
+    <a href="examples/crypto/">examples/crypto/</a> contains some
+    auxiliary files (especially in the <a
+      href="examples/crypto/cryptofiles/">examples/crypto/cryptofiles/</a>
+    directory) that are used when example commands are run (e.g. to test
+    how these files are encrypted and then decrypted).<br>
+    <br>
+    &nbsp; <br>
+    <center>
+      <h1> <a name="doc"></a><b><i><font color="#cc0000"><font
+                size="+2">Documentation<br>
+              </font></font></i></b></h1>
+    </center>
+    <br>
+    &nbsp; <a href="Readme_IGShell.html"><b>ReadMe file</b></a>.
+    Contains very basic information about the software.<br>
+    <br>
+    &nbsp; <a href="License_IGShel.html"><b>IGShell License Agreement</b></a>.
+    Contains terms of use of the software.<br>
+    <br>
+    &nbsp; <a href="../../iglib/index.html#doc"><b>IGLib Documentation</b></a>.
+    <br>
+    <br>
+    <br>
+    &nbsp; <span style="font-weight: bold;">See also:</span> <br>
+    <ul>
+      <li><a href="../../iglib/index.html">IGLib</a> home page. Contains
+        information on the <i>Investigative Generic Library</i>, the
+        code base for this software, including the complete <a
+          href="../codedoc/generated/iglib/html/index.html">code
+          documentation</a> (and <a
+          href="../codedoc/generated/iglib/index.html">wider code
+          documentation</a>).<br>
+      </li>
+      <li>My <a href="../../doc/index.html">other documentation</a>.</li>
+      <li>Documentation section on the page about <a
+          href="../../cobik/index.html#doc">my work at COBIK</a> where I
+        use IGLib as a base library for research software in the field
+        of neural networks. <br>
+      </li>
+      <li>Docuentation section on the <a
+          href="../../ioptlib/index.html#doc">IOptLib page</a>.</li>
+      <li>Collection of <a href="../../links.html">optimization-related
+          links</a>.<br>
+      </li>
+      <li>Ph.D. thesis on <a href="../../../inverse/doc/phd/index.html">optimization
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          shell <span style="font-style: italic;">Inverse</span></a>. <br>
+      </li>
+    </ul>
+    <p><br>
+    </p>
+    <ul>
+    </ul>
+    <center>
+      <h1> <a name="download"></a><b><i><font color="#cc0000"><font
+                size="+2">Download<br>
+              </font></font></i></b></h1>
+    </center>
+    <br>
+    <a href="download/IGLibShellApp.zip">Download the files</a> (click
+    on the link).<br>
+    <br>
+    Short installation instructions:<br>
+    <ul>
+      <li>Download the compressed archive by clicking on the download
+        link above.</li>
+      <li>Extract contents of the archive to an arbitrary directory.</li>
+      <li>Run the executable from the location where files were
+        unpacked. As executable is build around a command-line
+        interpreter, things are invoked by providing commands and their
+        arguments as arguments to the program that is run in a console.
+        Some examples of commands with arguments are in the .cmd file
+        that is contained in the root directory.</li>
+      <li>Within the root directory, there is a Visual Studio C# project
+        that can be used to build the application. You can modify the
+        application and run it from the <a
+          href="https://en.wikipedia.org/wiki/Microsoft_Visual_Studio">VS
+
+
+
+
+          IDE</a> or from <a
+          href="https://en.wikipedia.org/wiki/MonoDevelop">MonoDevelop</a>.<br>
+      </li>
+    </ul>
+    <br>
+    <h2 style="text-align: center;"><small><a name="other_software"></a><span
+          style="color: rgb(204, 0, 0);">Other Software&nbsp; <br>
+        </span></small></h2>
+    <br>
+    <a href="../../iglib/index.html"><img
+        src="../../iglib/dragonfly_server_small.jpg" alt="IGLib Logo."
+        style="width: 336px; height: 256px;" width="336" height="256"
+        border="0"></a> This softwae is based on the <a
+      href="http://www2.arnes.si/%7Eljc3m2/igor/iglib/index.html"><i>Investigative
+
+        Generic Library (IGLib.NET)</i></a>.<br>
+    Some other publically available software based on this library
+    includes: <br>
+    <ul>
+      <li><a
+href="http://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/HashForm.html#hashform"><i>HashForm</i></a>
+        - application for calculation and verification of checksums
+        (MD5, SHA-1, SHA-256, SHA-512) for files and text. <br>
+      </li>
+      <li><a
+href="http://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/HashForm.html#hashshell"><i>HashShell</i></a>
+        - a shell application with various cryptography-related
+        functionality (calculation of hash functions / checksums,
+        symmetric and asymmetric encryption, certificate management,
+        etc.). <br>
+      </li>
+      <li><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+          font-family:&quot;Times New
+          Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times
+          New Roman&quot;;
+          mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
+
+          layout-grid-mode:line"><a
+            href="http://www2.arnes.si/%7Eljc3m2/igor/software/NeurApp/index.html">NeurApp</a>
+          – an educational application for visually exploring features
+          of function approximation with artificial neural networks
+          (ANN). It creates 1D and 2D ANN models of user defined
+          functions and provides visualization capabilities to compare
+          these models with originals. It can be <a
+            href="http://www.softpedia.com/get/Science-CAD/NeurApp.shtml">downloaded
+
+            from Softpedia</a>.<br>
+        </span></li>
+      <li>&nbsp;<i style="mso-bidi-font-style:normal"><span
+            style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times
+
+            New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New
+            Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+            EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line"><a
+              href="http://www2.arnes.si/%7Eljc3m2/igor/software/AnnApp/index.html">AnnApp</a></span></i><span
+          style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times
+
+          New Roman&quot;,&quot;serif&quot;;
+          mso-fareast-font-family:&quot;Times New
+          Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+          EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line"> –
+          software for exploring multidimensional ANN-based models.</span></li>
+      <li><a
+href="http://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/index.html"><span
+            style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+            font-family:&quot;Times New
+            Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times
+            New Roman&quot;;
+            mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
+
+            layout-grid-mode:line"><i>IGShell</i></span></a> - <span
+          style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+          font-family:&quot;Times New
+          Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times
+          New Roman&quot;;
+          mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
+
+          layout-grid-mode:line">a shell application based on <i>IGLib</i>.</span></li>
+      <li><i style="mso-bidi-font-style:normal"><span
+            style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times
+
+            New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New
+            Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+            EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line"><a
+href="http://www2.arnes.si/%7Eljc3m2/igor/software/thesis_petek/index.html">Oscillator
+
+              Modeller</a></span></i><span
+          style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+          font-family:&quot;Times New
+          Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times
+          New Roman&quot;;
+          mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
+
+          layout-grid-mode:line"> – an educational application for
+          playing with nonlinear driven oscillators and their resonance
+          curves. <br>
+        </span></li>
+    </ul>
+    <p><br>
+    </p>
+    <center>
+      <h1> <a name="archive"></a><b><i><font color="#cc0000"><font
+                size="+2">Archive<br>
+              </font></font></i></b></h1>
+    </center>
+    <br>
+    <h2 style="text-align: center;"><small><a name="iglib_doc"></a><span
+          style="color: rgb(204, 0, 0);">IGLib Documentation&nbsp; <br>
+        </span></small></h2>
+    <br>
+    <a href="archive/16_04_iglib_1.7.2.zip">IGLib 1.7.2, April 2016</a>
+    (code doc., without images, ~45 MB) <br>
+    <br>
+    <a href="archive/15_06_iglib_1.6.0.zip">IGLib 1.6.0, June 2015</a>
+    (code doc., without images, ~16 MB) <br>
+    <ul>
+      <li><a href="archive/15_06_iglib_withimages_1.6.0.zip">With images</a>
+        (~36.8 MB)<br>
+      </li>
+    </ul>
+    <br>
+    <a href="archive/14_01_doc_iglib_1.5.zip">IGLib 1.5, January 2014</a>
+    (code doc., without images, ~16 MB) <br>
+    <ul>
+      <li><a href="archive/13_04_doc_iglib_withimages_1.4.zip">With
+          images</a> (~36.8 MB)<br>
+      </li>
+    </ul>
+    <br>
+    <a href="archive/13_04_IGLibShellApp_1.4.zip">IGLib 1.4, April 2013</a>
+    (code doc., without images, ~12.6 MB) <br>
+    <ul>
+      <li><a href="archive/14_01_doc_iglib_withimages_1.5.zip">With
+          images</a> (~40.1 MB)<br>
+      </li>
+    </ul>
+    <br>
+    <h2 style="text-align: center;"><small><a name="igshell"></a><span
+          style="color: rgb(204, 0, 0);">IGShell <br>
+        </span></small></h2>
+    <br>
+    <a href="archive/15_06_IGLibShellApp_1.6.0.zip">IGShell 1.6.0, June
+      2015</a> (application, HashForm &amp; HashShell, ~18.3 MB)<br>
+    <br>
+    <a href="archive/13_04_IGLibShellApp_1.4.zip">IGShell 1.4, April
+      2013</a> (application, HashForm &amp; HashShell, ~18.3 MB)<br>
+    <br>
+    <a href="archive/15_06_examples_1.6.0.zip">IGShell 1.6.0 Examples,
+      June 2015</a> (example commands and files, ~100 kB)<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr width="100%"><br>
+    <br>
+    <!-- SiteSearch Google --> <a name="search"><b>Search within this
+        site:</b> <br>
+      <script>
+	  (function() {
+		var cx = '005529250561729632597:c5xdncmbwjo';
+		var gcse = document.createElement('script');
+		gcse.type = 'text/javascript';
+		gcse.async = true;
+		gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(gcse, s);
+	  })();
+	</script> <gcse:search></gcse:search>
+      <!-- SiteSearch Google -->
+      <p> </p>
+      <p> </p>
+      <p> </p>
+      <p> </p>
+      <br>
+      <hr>
+      <center>
+        <table nosave="" cellpadding="2" border="3" bgcolor="#ffffff">
+          <tbody>
+            <tr nosave="">
+              <td nosave="" valign="top" align="center">
+                <center>&nbsp;&nbsp; <a
+                    href="http://www.c3m.si/inverse/doc/phd/"><br>
+                  </a></center>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </center>
+      &nbsp;
+      <div align="right">
+        <table nosave="" cellpadding="2" border="3" bgcolor="#ffffff">
+          <tbody>
+            <tr nosave="">
+              <td nosave="" valign="top" align="left">
+                <div align="right"><font size="-1">&nbsp; Maintained by
+                    <a href="http://www2.arnes.si/%7Eljc3m2/igor/">Igor
+                      Grešovnik</a>&nbsp; <br>
+                  </font></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        &nbsp; &nbsp; &nbsp;&nbsp; </div>
+      <center>
+        <table nosave="" cellpadding="2" border="3">
+          <tbody>
+            <tr nosave="">
+              <td nosave="" valign="top" align="left">
+                <center><i>&nbsp; Updated in December 2016 &nbsp; <br>
+                  </i></center>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </center>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </a>
+  </body>
+</html>

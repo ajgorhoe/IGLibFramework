@@ -1,0 +1,5765 @@
+Parallel execution test, 04/09/2012 17:03:25:
+  numRep: 800
+  numThreads: 12
+
+ 
+It. No. 10: 
+  Ex. time: 12.0618426266686, perceived latency: 0.0330682253714571
+  Total time: 122.865365570184
+  Latency: 0.328411105505436
+  Relative latency: 0.00267293475245339
+
+It. No. 20: 
+  Ex. time: 12.0397713536671, perceived latency: 0.032922661561016
+  Total time: 244.775441153107
+  Latency: 0.657582980539233
+  Relative latency: 0.0026864744985912
+
+It. No. 30: 
+  Ex. time: 12.0436057411924, perceived latency: 0.0326335727347561
+  Total time: 366.383861967869
+  Latency: 0.988590320803025
+  Relative latency: 0.00269823653119777
+
+It. No. 40: 
+  Ex. time: 12.2211047569182, perceived latency: 0.0330588070365069
+  Total time: 487.824307573639
+  Latency: 1.31844845769023
+  Relative latency: 0.00270271168783692
+
+It. No. 50: 
+  Ex. time: 12.2166380358841, perceived latency: 0.0329715188572432
+  Total time: 609.305463244982
+  Latency: 1.6496308712432
+  Relative latency: 0.00270739550316478
+
+It. No. 60: 
+  Ex. time: 12.3158698579945, perceived latency: 0.0335720107164691
+  Total time: 731.927538317818
+  Latency: 1.97625791963171
+  Relative latency: 0.00270007318507748
+
+It. No. 70: 
+  Ex. time: 11.9513547053053, perceived latency: 0.0337011433877827
+  Total time: 854.825635951958
+  Latency: 2.30406304169053
+  Relative latency: 0.00269536025218132
+
+It. No. 80: 
+  Ex. time: 12.4031274027637, perceived latency: 0.0324281444374702
+  Total time: 977.304187477603
+  Latency: 2.63298595096875
+  Relative latency: 0.00269413145334455
+
+It. No. 90: 
+  Ex. time: 12.2207078581853, perceived latency: 0.0329267038090649
+  Total time: 1098.65754567309
+  Latency: 2.96216219084883
+  Relative latency: 0.00269616515402355
+
+It. No. 100: 
+  Ex. time: 12.3921572158373, perceived latency: 0.032520545093994
+  Total time: 1220.66565272792
+  Latency: 3.29064835754971
+  Relative latency: 0.00269578188769041
+
+It. No. 110: 
+  Ex. time: 12.3763766254472, perceived latency: 0.0335296413298839
+  Total time: 1342.96847828363
+  Latency: 3.62052498884073
+  Relative latency: 0.00269591211363942
+
+It. No. 120: 
+  Ex. time: 12.1103236233865, perceived latency: 0.0334639633588516
+  Total time: 1464.50047645467
+  Latency: 3.95025673403432
+  Relative latency: 0.00269734069571441
+
+It. No. 130: 
+  Ex. time: 12.2928213771009, perceived latency: 0.0331459603796466
+  Total time: 1585.64248058209
+  Latency: 4.2809049435032
+  Relative latency: 0.0026997920375668
+
+It. No. 140: 
+  Ex. time: 12.1911814806735, perceived latency: 0.0332828708607095
+  Total time: 1707.7404415465
+  Latency: 4.61252952991229
+  Relative latency: 0.00270095467536932
+
+It. No. 150: 
+  Ex. time: 11.9331017424489, perceived latency: 0.0336802215267226
+  Total time: 1829.22654125542
+  Latency: 4.9432078378633
+  Relative latency: 0.00270234863007767
+
+It. No. 160: 
+  Ex. time: 11.9058425178388, perceived latency: 0.0334454159518982
+  Total time: 1952.00773101925
+  Latency: 5.27501571754878
+  Relative latency: 0.00270235390655672
+
+It. No. 170: 
+  Ex. time: 12.2714926078996, perceived latency: 0.0327952563634395
+  Total time: 2074.51597332222
+  Latency: 5.60331098233946
+  Relative latency: 0.00270102089084717
+
+It. No. 180: 
+  Ex. time: 12.233813234912, perceived latency: 0.0335518608226265
+  Total time: 2195.96472858316
+  Latency: 5.93304510892518
+  Relative latency: 0.0027017943556649
+
+It. No. 190: 
+  Ex. time: 12.3468772357162, perceived latency: 0.0332498148199332
+  Total time: 2318.38025456521
+  Latency: 6.26453648572083
+  Relative latency: 0.00270211777096752
+
+It. No. 200: 
+  Ex. time: 12.4060010787686, perceived latency: 0.0333590208164329
+  Total time: 2440.77206069928
+  Latency: 6.59537835651735
+  Relative latency: 0.00270216890086319
+
+It. No. 210: 
+  Ex. time: 12.1275634791995, perceived latency: 0.033682443134803
+  Total time: 2562.72363990819
+  Latency: 6.92576857261068
+  Relative latency: 0.00270250309661123
+
+It. No. 220: 
+  Ex. time: 12.0416093116623, perceived latency: 0.033044282610463
+  Total time: 2684.80567150609
+  Latency: 7.25601343892618
+  Relative latency: 0.00270262146565557
+
+It. No. 230: 
+  Ex. time: 12.5165179604094, perceived latency: 0.0335777493899299
+  Total time: 2806.62282486332
+  Latency: 7.58747617430118
+  Relative latency: 0.00270341853813958
+
+It. No. 240: 
+  Ex. time: 12.4645078568665, perceived latency: 0.0332042497341538
+  Total time: 2929.64857304257
+  Latency: 7.91641549076804
+  Relative latency: 0.00270217239146417
+
+It. No. 250: 
+  Ex. time: 12.4537894051502, perceived latency: 0.0323432750494066
+  Total time: 3052.66909835774
+  Latency: 8.24485676030514
+  Relative latency: 0.00270086815657179
+
+It. No. 260: 
+  Ex. time: 12.3944558572532, perceived latency: 0.0326972902794723
+  Total time: 3175.01887799962
+  Latency: 8.57576987133854
+  Relative latency: 0.00270101382097659
+
+It. No. 270: 
+  Ex. time: 12.2822747833649, perceived latency: 0.0323757571161645
+  Total time: 3297.78981655964
+  Latency: 8.90675000503721
+  Relative latency: 0.00270082403684811
+
+It. No. 280: 
+  Ex. time: 11.9616725905818, perceived latency: 0.0337280856245082
+  Total time: 3418.87408922532
+  Latency: 9.23796973340327
+  Relative latency: 0.00270205029267296
+
+It. No. 290: 
+  Ex. time: 11.9002296769942, perceived latency: 0.0331120121925362
+  Total time: 3541.3400035963
+  Latency: 9.5672738583322
+  Relative latency: 0.00270159709280003
+
+It. No. 300: 
+  Ex. time: 12.0849670336752, perceived latency: 0.0325912096438036
+  Total time: 3662.43349213498
+  Latency: 9.89761135428277
+  Relative latency: 0.0027024685569138
+
+It. No. 310: 
+  Ex. time: 12.1022836611653, perceived latency: 0.0322542880341736
+  Total time: 3785.42538706118
+  Latency: 10.2278677363803
+  Relative latency: 0.00270190710173281
+
+It. No. 320: 
+  Ex. time: 12.033127296421, perceived latency: 0.0333812777987745
+  Total time: 3907.47936426894
+  Latency: 10.5574965474272
+  Relative latency: 0.00270186879141778
+
+It. No. 330: 
+  Ex. time: 11.9868351769899, perceived latency: 0.0332445679781114
+  Total time: 4030.06069521134
+  Latency: 10.8877477542888
+  Relative latency: 0.00270163369182652
+
+It. No. 340: 
+  Ex. time: 12.3340293650285, perceived latency: 0.0337554995668444
+  Total time: 4152.17056818022
+  Latency: 11.2181106086777
+  Relative latency: 0.00270174609266937
+
+It. No. 350: 
+  Ex. time: 12.4112342730114, perceived latency: 0.0334299729641572
+  Total time: 4274.74010352404
+  Latency: 11.547534135368
+  Relative latency: 0.00270134180224158
+
+It. No. 360: 
+  Ex. time: 12.452630046139, perceived latency: 0.0335541704538386
+  Total time: 4397.62789856362
+  Latency: 11.876240469542
+  Relative latency: 0.00270060149323254
+
+It. No. 370: 
+  Ex. time: 12.2562247109927, perceived latency: 0.0332161930255957
+  Total time: 4519.9041858241
+  Latency: 12.2065618307442
+  Relative latency: 0.00270062402407288
+
+It. No. 380: 
+  Ex. time: 11.9785151024287, perceived latency: 0.0337512980535385
+  Total time: 4641.83975435006
+  Latency: 12.5383373712809
+  Relative latency: 0.0027011568763292
+
+It. No. 390: 
+  Ex. time: 12.217458204452, perceived latency: 0.0326675195355205
+  Total time: 4763.6087380289
+  Latency: 12.8701287907164
+  Relative latency: 0.00270176026170483
+
+It. No. 400: 
+  Ex. time: 12.4024639008888, perceived latency: 0.0335612012151724
+  Total time: 4885.89699535348
+  Latency: 13.2033350520685
+  Relative latency: 0.0027023359404885
+
+It. No. 410: 
+  Ex. time: 12.516820398265, perceived latency: 0.0337281289728165
+  Total time: 5008.08669280997
+  Latency: 13.5345901326611
+  Relative latency: 0.00270254709290327
+
+It. No. 420: 
+  Ex. time: 12.0507168206739, perceived latency: 0.0336567066073827
+  Total time: 5130.83311195256
+  Latency: 13.8636800595922
+  Relative latency: 0.00270203293638532
+
+It. No. 430: 
+  Ex. time: 12.4747453316247, perceived latency: 0.0325041226917593
+  Total time: 5252.79882373642
+  Latency: 14.1928571107909
+  Relative latency: 0.00270196091399047
+
+It. No. 440: 
+  Ex. time: 12.4234133827072, perceived latency: 0.0330487770946601
+  Total time: 5374.32071939027
+  Latency: 14.5213510936382
+  Relative latency: 0.00270198818638529
+
+It. No. 450: 
+  Ex. time: 12.3397536631713, perceived latency: 0.0324729399886324
+  Total time: 5496.13336875838
+  Latency: 14.8499497179051
+  Relative latency: 0.00270189035119063
+
+It. No. 460: 
+  Ex. time: 11.9472826189335, perceived latency: 0.0327352635565331
+  Total time: 5617.10406020017
+  Latency: 15.181765508684
+  Relative latency: 0.00270277448058226
+
+It. No. 470: 
+  Ex. time: 12.5087243381165, perceived latency: 0.0334626613791911
+  Total time: 5739.95948244051
+  Latency: 15.5121475367548
+  Relative latency: 0.00270248380397267
+
+It. No. 480: 
+  Ex. time: 12.0418847935186, perceived latency: 0.0327235872229036
+  Total time: 5861.94867671814
+  Latency: 15.8415566776167
+  Relative latency: 0.00270243865159286
+
+It. No. 490: 
+  Ex. time: 12.3411508560279, perceived latency: 0.0334047377917307
+  Total time: 5983.96750968168
+  Latency: 16.1708688268896
+  Relative latency: 0.00270236574659306
+
+It. No. 500: 
+  Ex. time: 12.0580996072972, perceived latency: 0.0322539312291729
+  Total time: 6105.86382842071
+  Latency: 16.5002366753447
+  Relative latency: 0.00270235909922226
+
+It. No. 510: 
+  Ex. time: 12.4553715771003, perceived latency: 0.0324659473222922
+  Total time: 6227.78573015302
+  Latency: 16.828577344805
+  Relative latency: 0.00270217667626653
+
+It. No. 520: 
+  Ex. time: 11.998002240971, perceived latency: 0.0326543029462719
+  Total time: 6350.74823826935
+  Latency: 17.1597891256941
+  Relative latency: 0.00270201061070095
+
+It. No. 530: 
+  Ex. time: 12.5096069932855, perceived latency: 0.0330039021061072
+  Total time: 6472.64191705124
+  Latency: 17.4881876399728
+  Relative latency: 0.00270186237151521
+
+It. No. 540: 
+  Ex. time: 12.1732568564662, perceived latency: 0.0334305406063294
+  Total time: 6594.42882243242
+  Latency: 17.8197698232617
+  Relative latency: 0.00270224613883825
+
+It. No. 550: 
+  Ex. time: 12.4860522673553, perceived latency: 0.0334336820939623
+  Total time: 6717.04589355072
+  Latency: 18.1503743806724
+  Relative latency: 0.00270213642549312
+
+It. No. 560: 
+  Ex. time: 12.5016807046151, perceived latency: 0.0321674907150833
+  Total time: 6840.32818567193
+  Latency: 18.4810633166204
+  Relative latency: 0.00270178020922033
+
+It. No. 570: 
+  Ex. time: 12.4954529587949, perceived latency: 0.0337136416954926
+  Total time: 6964.10192359198
+  Latency: 18.811721113686
+  Relative latency: 0.00270124149819783
+
+It. No. 580: 
+  Ex. time: 12.5112906839487, perceived latency: 0.0331303939118527
+  Total time: 7086.39082676888
+  Latency: 19.1438225097075
+  Relative latency: 0.00270149120725766
+
+It. No. 590: 
+  Ex. time: 12.1834725553255, perceived latency: 0.0322692106115515
+  Total time: 7208.06817046249
+  Latency: 19.4714212823803
+  Relative latency: 0.00270133700485395
+
+It. No. 600: 
+  Ex. time: 12.384148472133, perceived latency: 0.032572835455314
+  Total time: 7330.55298227768
+  Latency: 19.7989520487568
+  Relative latency: 0.00270088110632617
+
+It. No. 610: 
+  Ex. time: 12.1697556485901, perceived latency: 0.0322964305166162
+  Total time: 7452.28712388949
+  Latency: 20.1293251203781
+  Relative latency: 0.00270109360867891
+
+It. No. 620: 
+  Ex. time: 12.3523174660285, perceived latency: 0.0330868627011746
+  Total time: 7574.62733053118
+  Latency: 20.4605710774189
+  Relative latency: 0.00270119838040719
+
+It. No. 630: 
+  Ex. time: 11.9126263514899, perceived latency: 0.0321496540596291
+  Total time: 7695.87093387057
+  Latency: 20.7897477660003
+  Relative latency: 0.0027014158559367
+
+It. No. 640: 
+  Ex. time: 11.9549237344171, perceived latency: 0.0332170730018429
+  Total time: 7816.67153080813
+  Latency: 21.1188999747428
+  Relative latency: 0.00270177656711122
+
+It. No. 650: 
+  Ex. time: 12.0370367405861, perceived latency: 0.0330352349179945
+  Total time: 7939.55673631796
+  Latency: 21.4501333603956
+  Relative latency: 0.00270167895674529
+
+It. No. 660: 
+  Ex. time: 12.1526285814014, perceived latency: 0.0329266173179204
+  Total time: 8060.57601511501
+  Latency: 21.7777786828014
+  Relative latency: 0.00270176456892959
+
+It. No. 670: 
+  Ex. time: 12.22154856842, perceived latency: 0.0330440633135105
+  Total time: 8183.03460323728
+  Latency: 22.1070188598152
+  Relative latency: 0.00270156731966763
+
+It. No. 680: 
+  Ex. time: 12.4517895653728, perceived latency: 0.0333041755485086
+  Total time: 8304.57373294521
+  Latency: 22.4368246981482
+  Relative latency: 0.00270174308997206
+
+It. No. 690: 
+  Ex. time: 12.4286323163663, perceived latency: 0.0332725578578657
+  Total time: 8426.97623321287
+  Latency: 22.765869951429
+  Relative latency: 0.00270154671395688
+
+It. No. 700: 
+  Ex. time: 12.3625847495441, perceived latency: 0.032551381251553
+  Total time: 8548.40438493178
+  Latency: 23.0926871462927
+  Relative latency: 0.00270140322175189
+
+It. No. 710: 
+  Ex. time: 11.9251218668849, perceived latency: 0.0325788044070678
+  Total time: 8670.16250168514
+  Latency: 23.4205381152324
+  Relative latency: 0.00270128017908319
+
+It. No. 720: 
+  Ex. time: 12.1289375085574, perceived latency: 0.0327443693550852
+  Total time: 8792.33254723152
+  Latency: 23.7487377556744
+  Relative latency: 0.0027010736488979
+
+It. No. 730: 
+  Ex. time: 12.2904644375417, perceived latency: 0.0332760652385052
+  Total time: 8915.27393433811
+  Latency: 24.0797340634296
+  Relative latency: 0.00270095279637836
+
+It. No. 740: 
+  Ex. time: 12.0697558942356, perceived latency: 0.0321413761552721
+  Total time: 9037.37359303771
+  Latency: 24.4079748056222
+  Relative latency: 0.00270078187587883
+
+It. No. 750: 
+  Ex. time: 11.9252377823467, perceived latency: 0.0330660078940737
+  Total time: 9158.76772246396
+  Latency: 24.7369516101702
+  Relative latency: 0.00270090391630931
+
+It. No. 760: 
+  Ex. time: 12.2530705721761, perceived latency: 0.0325784363672324
+  Total time: 9280.62839817628
+  Latency: 25.0646349909887
+  Relative latency: 0.00270074761272783
+
+It. No. 770: 
+  Ex. time: 12.0831954842406, perceived latency: 0.0334164517763452
+  Total time: 9402.16328339228
+  Latency: 25.3949942859559
+  Relative latency: 0.00270097354412179
+
+It. No. 780: 
+  Ex. time: 12.4090363656835, perceived latency: 0.0331683782662983
+  Total time: 9524.04485259959
+  Latency: 25.7237715792865
+  Relative latency: 0.0027009292771511
+
+It. No. 790: 
+  Ex. time: 12.3019053983839, perceived latency: 0.0329615787145624
+  Total time: 9646.89771029747
+  Latency: 26.0545807628528
+  Relative latency: 0.00270082481905464
+
+It. No. 800: 
+  Ex. time: 12.3368580062913, perceived latency: 0.0334109019868219
+  Total time: 9769.61254125197
+  Latency: 26.3866754056726
+  Relative latency: 0.00270089272161567
+
+It. No. 810: 
+  Ex. time: 11.943961863759, perceived latency: 0.032240975624089
+  Total time: 9891.63026993304
+  Latency: 26.7148402716385
+  Relative latency: 0.00270075200372601
+
+It. No. 820: 
+  Ex. time: 12.5023472563522, perceived latency: 0.0331974292234908
+  Total time: 10013.9194156034
+  Latency: 27.0450159125935
+  Relative latency: 0.00270074231578623
+
+It. No. 830: 
+  Ex. time: 12.5025263786025, perceived latency: 0.0327719985124863
+  Total time: 10135.87033527
+  Latency: 27.376715531961
+  Relative latency: 0.00270097333789853
+
+It. No. 840: 
+  Ex. time: 11.9711875509658, perceived latency: 0.0326386230232577
+  Total time: 10258.0201117026
+  Latency: 27.7073769039296
+  Relative latency: 0.00270104528965784
+
+It. No. 850: 
+  Ex. time: 11.9250132165678, perceived latency: 0.0325779005212721
+  Total time: 10379.1367936148
+  Latency: 28.0358059751206
+  Relative latency: 0.00270116932964677
+
+It. No. 860: 
+  Ex. time: 12.0587170964915, perceived latency: 0.0331464645703124
+  Total time: 10501.0854031905
+  Latency: 28.3659638964913
+  Relative latency: 0.00270124113911816
+
+It. No. 870: 
+  Ex. time: 12.1224062979586, perceived latency: 0.0327652120708241
+  Total time: 10623.3574107244
+  Latency: 28.694480115114
+  Relative latency: 0.00270107452905112
+
+It. No. 880: 
+  Ex. time: 11.9266119254184, perceived latency: 0.033274836505307
+  Total time: 10744.3846475884
+  Latency: 29.0258154494678
+  Relative latency: 0.00270148700009382
+
+It. No. 890: 
+  Ex. time: 12.3676825969714, perceived latency: 0.0324046917698687
+  Total time: 10867.0626540734
+  Latency: 29.3565823699679
+  Relative latency: 0.00270142754343685
+
+It. No. 900: 
+  Ex. time: 12.1237320182006, perceived latency: 0.0331966115407063
+  Total time: 10988.745341508
+  Latency: 29.685056467223
+  Relative latency: 0.00270140544208383
+
+It. No. 910: 
+  Ex. time: 12.4249934515354, perceived latency: 0.0331812078280456
+  Total time: 11110.9541193456
+  Latency: 30.0148581057935
+  Relative latency: 0.0027013753979538
+
+It. No. 920: 
+  Ex. time: 12.4870705585812, perceived latency: 0.0332546447526319
+  Total time: 11232.8303008773
+  Latency: 30.3439639211246
+  Relative latency: 0.00270136404702515
+
+It. No. 930: 
+  Ex. time: 12.3642518274976, perceived latency: 0.0336814753243641
+  Total time: 11354.0727135009
+  Latency: 30.6736481458728
+  Relative latency: 0.0027015546685199
+
+It. No. 940: 
+  Ex. time: 12.0316007345952, perceived latency: 0.0326372954973574
+  Total time: 11476.1726651969
+  Latency: 31.0016828297979
+  Relative latency: 0.00270139564245271
+
+It. No. 950: 
+  Ex. time: 12.2508643756962, perceived latency: 0.0330760257036216
+  Total time: 11598.0517782701
+  Latency: 31.3298766755622
+  Relative latency: 0.00270130512214658
+
+It. No. 960: 
+  Ex. time: 12.3726916447185, perceived latency: 0.0324771050530829
+  Total time: 11719.4987836135
+  Latency: 31.6572112036064
+  Relative latency: 0.00270124275688909
+
+It. No. 970: 
+  Ex. time: 12.0976930851145, perceived latency: 0.0325519424894522
+  Total time: 11842.0692117473
+  Latency: 31.9858423791991
+  Relative latency: 0.00270103491267128
+
+It. No. 980: 
+  Ex. time: 12.2964494840244, perceived latency: 0.033744002768567
+  Total time: 11964.5448556402
+  Latency: 32.3154805757432
+  Relative latency: 0.00270093689025783
+
+It. No. 990: 
+  Ex. time: 12.1480041749155, perceived latency: 0.0331153283093835
+  Total time: 12085.4104364807
+  Latency: 32.6459017972504
+  Relative latency: 0.0027012654612628
+
+It. No. 1000: 
+  Ex. time: 12.2343149678438, perceived latency: 0.0325089558049452
+  Total time: 12208.3744809607
+  Latency: 32.975392213486
+  Relative latency: 0.00270104691373222
+
+It. No. 1010: 
+  Ex. time: 12.4975746356067, perceived latency: 0.0338012247153645
+  Total time: 12332.0994130238
+  Latency: 33.3054667531273
+  Relative latency: 0.00270071345013272
+
+It. No. 1020: 
+  Ex. time: 11.943906045451, perceived latency: 0.0332997973811831
+  Total time: 12453.32497552
+  Latency: 33.6350540954623
+  Relative latency: 0.00270088945414818
+
+It. No. 1030: 
+  Ex. time: 12.3040549863907, perceived latency: 0.0329305987470245
+  Total time: 12574.4262739389
+  Latency: 33.9656766078725
+  Relative latency: 0.00270117108072501
+
+It. No. 1040: 
+  Ex. time: 12.4535735029041, perceived latency: 0.0330640715804165
+  Total time: 12695.8737127251
+  Latency: 34.293517219821
+  Relative latency: 0.00270115456374212
+
+It. No. 1050: 
+  Ex. time: 11.9284908856898, perceived latency: 0.0335989301717743
+  Total time: 12816.9494019723
+  Latency: 34.6250883488039
+  Relative latency: 0.00270150776622991
+
+It. No. 1060: 
+  Ex. time: 12.2061137137224, perceived latency: 0.0329825549068458
+  Total time: 12939.2815172088
+  Latency: 34.9579735991658
+  Relative latency: 0.00270169356410346
+
+It. No. 1070: 
+  Ex. time: 12.3017599491187, perceived latency: 0.0337451105306759
+  Total time: 13061.7130869103
+  Latency: 35.2871247963984
+  Relative latency: 0.00270156943132989
+
+It. No. 1080: 
+  Ex. time: 12.0080833767652, perceived latency: 0.0323514670735246
+  Total time: 13183.3062651944
+  Latency: 35.6139989967641
+  Relative latency: 0.0027014466841895
+
+It. No. 1090: 
+  Ex. time: 12.2257091031256, perceived latency: 0.0328458641124238
+  Total time: 13304.4411836676
+  Latency: 35.9442033272392
+  Relative latency: 0.00270166952756827
+
+It. No. 1100: 
+  Ex. time: 11.9595496457155, perceived latency: 0.033625939575823
+  Total time: 13426.4642585657
+  Latency: 36.2700754157071
+  Relative latency: 0.00270138695618006
+
+It. No. 1110: 
+  Ex. time: 12.2247820546769, perceived latency: 0.0336587685164317
+  Total time: 13548.0484797075
+  Latency: 36.6023905783406
+  Relative latency: 0.00270167254222364
+
+It. No. 1120: 
+  Ex. time: 12.399544048922, perceived latency: 0.0333635899924819
+  Total time: 13670.0359871143
+  Latency: 36.9314548069007
+  Relative latency: 0.00270163552178744
+
+It. No. 1130: 
+  Ex. time: 12.2226632172109, perceived latency: 0.0326861510285717
+  Total time: 13792.9465048684
+  Latency: 37.2578548634282
+  Relative latency: 0.00270122521321152
+
+It. No. 1140: 
+  Ex. time: 12.0091500158863, perceived latency: 0.032413998163479
+  Total time: 13915.0597589298
+  Latency: 37.5858370322897
+  Relative latency: 0.0027010905941794
+
+It. No. 1150: 
+  Ex. time: 12.3157140587337, perceived latency: 0.0326709638771722
+  Total time: 14037.7507718474
+  Latency: 37.9151002475009
+  Relative latency: 0.00270093840984407
+
+It. No. 1160: 
+  Ex. time: 12.0491159025685, perceived latency: 0.0335078643011639
+  Total time: 14159.653119241
+  Latency: 38.2475360552663
+  Relative latency: 0.00270116335006069
+
+It. No. 1170: 
+  Ex. time: 12.4786125926397, perceived latency: 0.0333389525351509
+  Total time: 14281.1120969726
+  Latency: 38.5776898995043
+  Relative latency: 0.00270130852818404
+
+It. No. 1180: 
+  Ex. time: 12.2917151577091, perceived latency: 0.0331705936220448
+  Total time: 14403.8306951702
+  Latency: 38.9089905706038
+  Relative latency: 0.00270129463432604
+
+It. No. 1190: 
+  Ex. time: 12.2807657113028, perceived latency: 0.0326798678675151
+  Total time: 14526.4157000388
+  Latency: 39.2384190907172
+  Relative latency: 0.00270117693868642
+
+It. No. 1200: 
+  Ex. time: 12.0778969692991, perceived latency: 0.0324077434307819
+  Total time: 14647.8781883046
+  Latency: 39.5655364101167
+  Relative latency: 0.00270111042032745
+
+It. No. 1210: 
+  Ex. time: 12.0950530230071, perceived latency: 0.0329068403873705
+  Total time: 14770.5511777136
+  Latency: 39.8946874273495
+  Relative latency: 0.00270096132143966
+
+It. No. 1220: 
+  Ex. time: 12.2455488200146, perceived latency: 0.0326357140544293
+  Total time: 14891.5182527916
+  Latency: 40.2252849741698
+  Relative latency: 0.00270122121138514
+
+It. No. 1230: 
+  Ex. time: 11.9117725740831, perceived latency: 0.0323594121178556
+  Total time: 15013.2810900755
+  Latency: 40.5555005650038
+  Relative latency: 0.00270130828309163
+
+It. No. 1240: 
+  Ex. time: 12.0214009588735, perceived latency: 0.0334921005368864
+  Total time: 15134.600521253
+  Latency: 40.8848375316835
+  Relative latency: 0.00270141504391017
+
+It. No. 1250: 
+  Ex. time: 12.4375890846312, perceived latency: 0.0330661297563293
+  Total time: 15257.138921073
+  Latency: 41.2176786146128
+  Relative latency: 0.00270153393947822
+
+It. No. 1260: 
+  Ex. time: 12.4998351479147, perceived latency: 0.0322527471786705
+  Total time: 15380.1970076221
+  Latency: 41.5468717198598
+  Relative latency: 0.00270132246675839
+
+It. No. 1270: 
+  Ex. time: 12.3273299901066, perceived latency: 0.0328281563501486
+  Total time: 15502.8548094433
+  Latency: 41.8759303248478
+  Relative latency: 0.00270117541830681
+
+It. No. 1280: 
+  Ex. time: 11.9018956364705, perceived latency: 0.0331420403851162
+  Total time: 15624.9800256057
+  Latency: 42.2066718447877
+  Relative latency: 0.00270123045121471
+
+It. No. 1290: 
+  Ex. time: 12.3442784963246, perceived latency: 0.0327544606787601
+  Total time: 15747.5466703115
+  Latency: 42.5380013762497
+  Relative latency: 0.00270124624913452
+
+It. No. 1300: 
+  Ex. time: 12.3190523246652, perceived latency: 0.0334815958325399
+  Total time: 15870.1847124639
+  Latency: 42.8675102357653
+  Relative latency: 0.00270113492769234
+
+It. No. 1310: 
+  Ex. time: 12.0747216456038, perceived latency: 0.0328806887016695
+  Total time: 15992.3714836963
+  Latency: 43.1994045349382
+  Relative latency: 0.00270125069186759
+
+It. No. 1320: 
+  Ex. time: 12.1076020602747, perceived latency: 0.0330893477693188
+  Total time: 16113.7709602321
+  Latency: 43.5303844545853
+  Relative latency: 0.00270143993991325
+
+It. No. 1330: 
+  Ex. time: 12.3765975287674, perceived latency: 0.0334517132086536
+  Total time: 16234.7191354365
+  Latency: 43.8602319847116
+  Relative latency: 0.00270163170787323
+
+It. No. 1340: 
+  Ex. time: 11.9163560538104, perceived latency: 0.0322507104647481
+  Total time: 16356.3487449907
+  Latency: 44.1902638423212
+  Relative latency: 0.0027017193464926
+
+It. No. 1350: 
+  Ex. time: 12.1242415075791, perceived latency: 0.033301370206093
+  Total time: 16479.3872409532
+  Latency: 44.5213670463599
+  Relative latency: 0.00270163971483836
+
+It. No. 1360: 
+  Ex. time: 12.4479509634397, perceived latency: 0.0331109213381805
+  Total time: 16601.7221951621
+  Latency: 44.8513279432038
+  Relative latency: 0.00270160694269863
+
+It. No. 1370: 
+  Ex. time: 12.1963590659583, perceived latency: 0.0329272299852419
+  Total time: 16723.7978794648
+  Latency: 45.1792441167454
+  Relative latency: 0.00270149426836958
+
+It. No. 1380: 
+  Ex. time: 12.0075612170466, perceived latency: 0.0322587322808437
+  Total time: 16845.809471572
+  Latency: 45.509532289271
+  Relative latency: 0.00270153431131168
+
+It. No. 1390: 
+  Ex. time: 12.0069637481851, perceived latency: 0.0322366038358445
+  Total time: 16967.9463131104
+  Latency: 45.8396879475274
+  Relative latency: 0.00270154602694075
+
+It. No. 1400: 
+  Ex. time: 12.3001589980655, perceived latency: 0.0329499004387889
+  Total time: 17089.5007078418
+  Latency: 46.1717202333103
+  Relative latency: 0.00270175946170994
+
+It. No. 1410: 
+  Ex. time: 11.9998483353335, perceived latency: 0.0324991613238535
+  Total time: 17211.6376049119
+  Latency: 46.4993956437027
+  Relative latency: 0.00270162530208239
+
+It. No. 1420: 
+  Ex. time: 12.4452277164891, perceived latency: 0.0324712319182287
+  Total time: 17333.3516794174
+  Latency: 46.8308930695236
+  Relative latency: 0.00270177943283371
+
+It. No. 1430: 
+  Ex. time: 12.4005424769733, perceived latency: 0.0323129480626524
+  Total time: 17455.1932148019
+  Latency: 47.1605158853671
+  Relative latency: 0.00270180428855839
+
+It. No. 1440: 
+  Ex. time: 12.16142663146, perceived latency: 0.0337430505039401
+  Total time: 17576.7048290854
+  Latency: 47.4934196846474
+  Relative latency: 0.0027020661805765
+
+It. No. 1450: 
+  Ex. time: 11.9533819713905, perceived latency: 0.0336191064943631
+  Total time: 17698.2938587268
+  Latency: 47.8262824000043
+  Relative latency: 0.00270231033464403
+
+It. No. 1460: 
+  Ex. time: 12.0998330234859, perceived latency: 0.0321805443720676
+  Total time: 17820.1633443792
+  Latency: 48.1548344139105
+  Relative latency: 0.00270226672355948
+
+It. No. 1470: 
+  Ex. time: 12.0770847192929, perceived latency: 0.0323846686829946
+  Total time: 17941.9841782695
+  Latency: 48.4837272232627
+  Relative latency: 0.00270225002661544
+
+It. No. 1480: 
+  Ex. time: 11.9592375582245, perceived latency: 0.0335783357914657
+  Total time: 18064.1319927648
+  Latency: 48.8121909884864
+  Relative latency: 0.00270216089032327
+
+It. No. 1490: 
+  Ex. time: 12.512295732475, perceived latency: 0.0327810015049395
+  Total time: 18186.5519259638
+  Latency: 49.1421493085059
+  Relative latency: 0.00270211470038742
+
+It. No. 1500: 
+  Ex. time: 12.4304984747978, perceived latency: 0.0321343333655562
+  Total time: 18309.0589030983
+  Latency: 49.4725577892388
+  Relative latency: 0.00270208086887891
+
+It. No. 1510: 
+  Ex. time: 12.4682868797726, perceived latency: 0.0332220711453125
+  Total time: 18431.8058388627
+  Latency: 49.8012558247015
+  Relative latency: 0.00270191951131004
+
+It. No. 1520: 
+  Ex. time: 12.0256138267053, perceived latency: 0.0334180419042076
+  Total time: 18553.8477640616
+  Latency: 50.1315478513604
+  Relative latency: 0.00270194886197483
+
+It. No. 1530: 
+  Ex. time: 11.9890981866277, perceived latency: 0.0334621185770961
+  Total time: 18675.4086145203
+  Latency: 50.4607032596981
+  Relative latency: 0.00270198656967882
+
+It. No. 1540: 
+  Ex. time: 12.1975546401868, perceived latency: 0.0321954130228684
+  Total time: 18797.1343485659
+  Latency: 50.788190458101
+  Relative latency: 0.00270191134011742
+
+It. No. 1550: 
+  Ex. time: 12.1552464701948, perceived latency: 0.0336384319980571
+  Total time: 18919.813609444
+  Latency: 51.1213610235364
+  Relative latency: 0.00270200130291023
+
+It. No. 1560: 
+  Ex. time: 12.4403269458445, perceived latency: 0.0328225866597502
+  Total time: 19042.3550846205
+  Latency: 51.451386466619
+  Relative latency: 0.00270194449362903
+
+It. No. 1570: 
+  Ex. time: 12.215249309748, perceived latency: 0.0325127348692547
+  Total time: 19165.1980069505
+  Latency: 51.7810845500063
+  Relative latency: 0.00270182883220028
+
+It. No. 1580: 
+  Ex. time: 11.9339586659372, perceived latency: 0.033053204114741
+  Total time: 19287.1697992806
+  Latency: 52.1123102115885
+  Relative latency: 0.00270191587225681
+
+It. No. 1590: 
+  Ex. time: 12.2764063678661, perceived latency: 0.0331043578085196
+  Total time: 19408.4064481454
+  Latency: 52.4410728482344
+  Relative latency: 0.00270197725858351
+
+It. No. 1600: 
+  Ex. time: 12.010329654148, perceived latency: 0.0327212951142865
+  Total time: 19531.7508130604
+  Latency: 52.7706866867294
+  Relative latency: 0.00270178988006764
+
+It. No. 1610: 
+  Ex. time: 12.2483312395383, perceived latency: 0.0328471630942389
+  Total time: 19653.7328768593
+  Latency: 53.1000550576827
+  Relative latency: 0.0027017796258035
+
+It. No. 1620: 
+  Ex. time: 12.0010172005258, perceived latency: 0.0335636018413821
+  Total time: 19775.4802355185
+  Latency: 53.4300998558358
+  Relative latency: 0.00270183576932157
+
+It. No. 1630: 
+  Ex. time: 12.2367971972546, perceived latency: 0.0324208312055764
+  Total time: 19898.0516082045
+  Latency: 53.7608755866664
+  Relative latency: 0.00270181606949392
+
+It. No. 1640: 
+  Ex. time: 12.2004504591819, perceived latency: 0.0327852558473971
+  Total time: 20021.3172637642
+  Latency: 54.0911507345018
+  Relative latency: 0.00270167791768624
+
+It. No. 1650: 
+  Ex. time: 12.4837957201596, perceived latency: 0.0323656584750074
+  Total time: 20143.3331274295
+  Latency: 54.4222487119995
+  Relative latency: 0.00270174992230516
+
+It. No. 1660: 
+  Ex. time: 12.0155609388739, perceived latency: 0.0337170592415399
+  Total time: 20265.0242945919
+  Latency: 54.7519548412289
+  Relative latency: 0.00270179566751571
+
+It. No. 1670: 
+  Ex. time: 12.3653582754833, perceived latency: 0.0324363898811767
+  Total time: 20386.7041175694
+  Latency: 55.0828151709015
+  Relative latency: 0.00270189898539954
+
+It. No. 1680: 
+  Ex. time: 11.9921814963332, perceived latency: 0.0327487560388738
+  Total time: 20508.506000661
+  Latency: 55.4120744712306
+  Relative latency: 0.00270190692922461
+
+It. No. 1690: 
+  Ex. time: 12.2861923985946, perceived latency: 0.0334615013445159
+  Total time: 20630.7797977502
+  Latency: 55.7423934289244
+  Relative latency: 0.00270190433785751
+
+It. No. 1700: 
+  Ex. time: 12.4748180340976, perceived latency: 0.032365423913291
+  Total time: 20753.8156818397
+  Latency: 56.0715208738458
+  Relative latency: 0.00270174515055129
+
+It. No. 1710: 
+  Ex. time: 12.347074028506, perceived latency: 0.0321273127495041
+  Total time: 20875.8544358687
+  Latency: 56.4029887960939
+  Relative latency: 0.00270182899432288
+
+It. No. 1720: 
+  Ex. time: 12.2398599894938, perceived latency: 0.0335114603733097
+  Total time: 20997.8932459932
+  Latency: 56.7337843844371
+  Relative latency: 0.0027018798371719
+
+It. No. 1730: 
+  Ex. time: 12.2391779414832, perceived latency: 0.0335351955799617
+  Total time: 21120.5268297601
+  Latency: 57.0652004012156
+  Relative latency: 0.00270188337919712
+
+It. No. 1740: 
+  Ex. time: 12.1554061861667, perceived latency: 0.0332079748970782
+  Total time: 21242.4736591732
+  Latency: 57.3936138763099
+  Relative latency: 0.00270183288430373
+
+It. No. 1750: 
+  Ex. time: 12.114565692919, perceived latency: 0.0331725347788597
+  Total time: 21363.620490972
+  Latency: 57.7244850651316
+  Relative latency: 0.00270199918078143
+
+It. No. 1760: 
+  Ex. time: 12.00189741114, perceived latency: 0.0334913263551365
+  Total time: 21485.7490480729
+  Latency: 58.0560727484433
+  Relative latency: 0.00270207348222056
+
+It. No. 1770: 
+  Ex. time: 12.0276223445941, perceived latency: 0.0336055328655135
+  Total time: 21608.4892314473
+  Latency: 58.3875530395619
+  Relative latency: 0.00270206548982561
+
+It. No. 1780: 
+  Ex. time: 12.4188692237499, perceived latency: 0.0337956007519993
+  Total time: 21730.7395593726
+  Latency: 58.7185739689311
+  Relative latency: 0.00270209735883589
+
+It. No. 1790: 
+  Ex. time: 12.1704328398557, perceived latency: 0.0334876659836169
+  Total time: 21853.0172720368
+  Latency: 59.0509238427545
+  Relative latency: 0.00270218629801369
+
+It. No. 1800: 
+  Ex. time: 12.3422249751837, perceived latency: 0.0332091326518794
+  Total time: 21975.8701158068
+  Latency: 59.3795567189285
+  Relative latency: 0.00270203438617058
+
+It. No. 1810: 
+  Ex. time: 12.432667861833, perceived latency: 0.0326411112285904
+  Total time: 22096.8851905048
+  Latency: 59.7084650830083
+  Relative latency: 0.00270212134281556
+
+It. No. 1820: 
+  Ex. time: 12.2940544946655, perceived latency: 0.0322056877276082
+  Total time: 22219.3924477505
+  Latency: 60.0396184232273
+  Relative latency: 0.0027021269174849
+
+It. No. 1830: 
+  Ex. time: 12.4956910451431, perceived latency: 0.0331136303637931
+  Total time: 22342.9503757498
+  Latency: 60.3691039770578
+  Relative latency: 0.0027019307191668
+
+It. No. 1840: 
+  Ex. time: 12.0236730857329, perceived latency: 0.0331457606694566
+  Total time: 22464.7995633171
+  Latency: 60.7002419121353
+  Relative latency: 0.00270201573537532
+
+It. No. 1850: 
+  Ex. time: 11.9170775771252, perceived latency: 0.0326813335745617
+  Total time: 22586.4610338395
+  Latency: 61.0289470513318
+  Relative latency: 0.0027020145812085
+
+It. No. 1860: 
+  Ex. time: 12.1223551427906, perceived latency: 0.0329589643430822
+  Total time: 22708.4955371292
+  Latency: 61.3585005006989
+  Relative latency: 0.00270200640990837
+
+It. No. 1870: 
+  Ex. time: 12.5004422678695, perceived latency: 0.0337994659382334
+  Total time: 22830.2208271887
+  Latency: 61.6885689076744
+  Relative latency: 0.00270205747787639
+
+It. No. 1880: 
+  Ex. time: 12.4090893980037, perceived latency: 0.0328664866904278
+  Total time: 22952.5249990351
+  Latency: 62.0179935261032
+  Relative latency: 0.00270201180605229
+
+It. No. 1890: 
+  Ex. time: 12.4773363370208, perceived latency: 0.0326982229494642
+  Total time: 23074.6642511318
+  Latency: 62.3496967592119
+  Relative latency: 0.00270208467957031
+
+It. No. 1900: 
+  Ex. time: 11.9116181962446, perceived latency: 0.0322604717758777
+  Total time: 23196.4366731569
+  Latency: 62.6783460724845
+  Relative latency: 0.002702067863079
+
+It. No. 1910: 
+  Ex. time: 12.2468970042696, perceived latency: 0.03248860284172
+  Total time: 23317.2049656935
+  Latency: 63.0046052604752
+  Relative latency: 0.00270206507826189
+
+It. No. 1920: 
+  Ex. time: 12.3655316324446, perceived latency: 0.0330032413425769
+  Total time: 23440.4192492122
+  Latency: 63.334041423523
+  Relative latency: 0.0027019158979271
+
+It. No. 1930: 
+  Ex. time: 12.3950456548075, perceived latency: 0.033529630214711
+  Total time: 23561.9813469579
+  Latency: 63.664838721837
+  Relative latency: 0.00270201549625014
+
+It. No. 1940: 
+  Ex. time: 12.0829526140408, perceived latency: 0.0322803053033544
+  Total time: 23683.3652477461
+  Latency: 63.9923197978319
+  Relative latency: 0.00270199437995502
+
+It. No. 1950: 
+  Ex. time: 11.9656679962476, perceived latency: 0.0327303173541979
+  Total time: 23806.2191830005
+  Latency: 64.3239174949027
+  Relative latency: 0.00270197955418452
+
+It. No. 1960: 
+  Ex. time: 12.2114761433936, perceived latency: 0.0325119876877941
+  Total time: 23928.4957443704
+  Latency: 64.6544963902732
+  Relative latency: 0.00270198749979862
+
+It. No. 1970: 
+  Ex. time: 12.291946521823, perceived latency: 0.032873074482325
+  Total time: 24050.8539001745
+  Latency: 64.9853290375089
+  Relative latency: 0.00270199674852448
+
+It. No. 1980: 
+  Ex. time: 12.003177948812, perceived latency: 0.0336830257457335
+  Total time: 24172.5408980524
+  Latency: 65.3157611113736
+  Relative latency: 0.0027020643542126
+
+It. No. 1990: 
+  Ex. time: 12.0246792877253, perceived latency: 0.0326270045926015
+  Total time: 24294.0375599986
+  Latency: 65.6441378053059
+  Relative latency: 0.00270206784867216
+
+It. No. 2000: 
+  Ex. time: 12.2302782173026, perceived latency: 0.0326214885044335
+  Total time: 24417.4255006322
+  Latency: 65.9747667118423
+  Relative latency: 0.00270195425435553
+
+It. No. 2010: 
+  Ex. time: 12.0625090005456, perceived latency: 0.0335912522946641
+  Total time: 24539.4974857951
+  Latency: 66.3071644628988
+  Relative latency: 0.00270205877285308
+
+It. No. 2020: 
+  Ex. time: 12.0722315022965, perceived latency: 0.0323987506402924
+  Total time: 24660.5880813034
+  Latency: 66.6393630443356
+  Relative latency: 0.00270226171511533
+
+It. No. 2030: 
+  Ex. time: 12.3435186698325, perceived latency: 0.0331241797791765
+  Total time: 24783.031092413
+  Latency: 66.968532369983
+  Relative latency: 0.00270219296906279
+
+It. No. 2040: 
+  Ex. time: 12.2822824873282, perceived latency: 0.0337797249936363
+  Total time: 24904.9562086831
+  Latency: 67.2989153069544
+  Relative latency: 0.00270222981895831
+
+It. No. 2050: 
+  Ex. time: 12.2169364581851, perceived latency: 0.0330559841006439
+  Total time: 25027.4017088723
+  Latency: 67.6272626760849
+  Relative latency: 0.00270212878918673
+
+It. No. 2060: 
+  Ex. time: 12.5002576829837, perceived latency: 0.0334246295984858
+  Total time: 25150.0498205856
+  Latency: 67.9603823312668
+  Relative latency: 0.00270219672788244
+
+It. No. 2070: 
+  Ex. time: 12.4358451708544, perceived latency: 0.0321759371545579
+  Total time: 25272.873716813
+  Latency: 68.2897438833847
+  Relative latency: 0.00270209651061384
+
+It. No. 2080: 
+  Ex. time: 12.4940215774506, perceived latency: 0.0331066632161391
+  Total time: 25394.8562964602
+  Latency: 68.6198316228524
+  Relative latency: 0.00270211537414438
+
+It. No. 2090: 
+  Ex. time: 12.0267529700292, perceived latency: 0.0328997628130442
+  Total time: 25515.7445564436
+  Latency: 68.9503462188977
+  Relative latency: 0.0027022666756352
+
+It. No. 2100: 
+  Ex. time: 12.348149169628, perceived latency: 0.0323065071360486
+  Total time: 25638.2725966806
+  Latency: 69.2781401861724
+  Relative latency: 0.00270213759234083
+
+It. No. 2110: 
+  Ex. time: 11.9951737591991, perceived latency: 0.0335286880127046
+  Total time: 25759.1323746695
+  Latency: 69.6093109423188
+  Relative latency: 0.00270231582065124
+
+It. No. 2120: 
+  Ex. time: 12.108357635329, perceived latency: 0.0335302574760601
+  Total time: 25880.7122350532
+  Latency: 69.9383196205277
+  Relative latency: 0.00270233365238698
+
+It. No. 2130: 
+  Ex. time: 12.3826728223026, perceived latency: 0.0336806105010915
+  Total time: 26002.2733603482
+  Latency: 70.2671847206451
+  Relative latency: 0.00270234774270922
+
+It. No. 2140: 
+  Ex. time: 11.9067092714467, perceived latency: 0.0328432530773061
+  Total time: 26123.4562041723
+  Latency: 70.5934039513237
+  Relative latency: 0.00270229955024285
+
+It. No. 2150: 
+  Ex. time: 11.926616932324, perceived latency: 0.0321812205696205
+  Total time: 26244.6493786138
+  Latency: 70.9214989685591
+  Relative latency: 0.00270232221225068
+
+It. No. 2160: 
+  Ex. time: 12.4542782723874, perceived latency: 0.0321260701481222
+  Total time: 26366.5087375173
+  Latency: 71.2522538749476
+  Relative latency: 0.00270237726899207
+
+It. No. 2170: 
+  Ex. time: 12.1782199778386, perceived latency: 0.0327632435334785
+  Total time: 26487.9289707982
+  Latency: 71.583123695401
+  Relative latency: 0.00270248095931994
+
+It. No. 2180: 
+  Ex. time: 12.4998524219138, perceived latency: 0.032517133937262
+  Total time: 26610.4966030301
+  Latency: 71.9122131368559
+  Relative latency: 0.00270240026744436
+
+It. No. 2190: 
+  Ex. time: 12.3254306421193, perceived latency: 0.0321866012572067
+  Total time: 26732.175443496
+  Latency: 72.2410956054296
+  Relative latency: 0.00270240241981526
+
+It. No. 2200: 
+  Ex. time: 12.341168238784, perceived latency: 0.0327890210844599
+  Total time: 26853.9755214783
+  Latency: 72.570223463323
+  Relative latency: 0.00270240149006169
+
+It. No. 2210: 
+  Ex. time: 12.3113041511491, perceived latency: 0.0336021207341669
+  Total time: 26975.4984994842
+  Latency: 72.9034533853529
+  Relative latency: 0.00270258039482559
+
+It. No. 2220: 
+  Ex. time: 12.4432582476235, perceived latency: 0.0327314823375222
+  Total time: 27096.9575567816
+  Latency: 73.2327906854186
+  Relative latency: 0.00270262041529789
+
+It. No. 2230: 
+  Ex. time: 12.4126553014442, perceived latency: 0.0322325188858191
+  Total time: 27219.4315829808
+  Latency: 73.5642605612526
+  Relative latency: 0.00270263764829128
+
+It. No. 2240: 
+  Ex. time: 12.1505508240618, perceived latency: 0.0334709184875706
+  Total time: 27341.1158364137
+  Latency: 73.8941462019678
+  Relative latency: 0.00270267485219288
+
+It. No. 2250: 
+  Ex. time: 12.5131033289632, perceived latency: 0.0331307980612391
+  Total time: 27463.1674889017
+  Latency: 74.2238898267817
+  Relative latency: 0.00270267039869953
+
+It. No. 2260: 
+  Ex. time: 12.3250294146816, perceived latency: 0.0337393355390431
+  Total time: 27585.6716692717
+  Latency: 74.5547343163512
+  Relative latency: 0.00270266155597724
+
+It. No. 2270: 
+  Ex. time: 12.3904613108554, perceived latency: 0.0321380379017617
+  Total time: 27708.1235421143
+  Latency: 74.8829997421749
+  Relative latency: 0.00270256481383008
+
+It. No. 2280: 
+  Ex. time: 12.1679225823288, perceived latency: 0.033749685286748
+  Total time: 27829.9530466567
+  Latency: 75.2163271643624
+  Relative latency: 0.00270271124921636
+
+It. No. 2290: 
+  Ex. time: 12.1846433798939, perceived latency: 0.0325786106319504
+  Total time: 27952.5760403305
+  Latency: 75.5473532392016
+  Relative latency: 0.00270269735176466
+
+It. No. 2300: 
+  Ex. time: 12.4217393985363, perceived latency: 0.0329590809992582
+  Total time: 28075.4871512703
+  Latency: 75.8802650651506
+  Relative latency: 0.00270272300730915
+
+It. No. 2310: 
+  Ex. time: 11.9646930859571, perceived latency: 0.03377866797683
+  Total time: 28197.0586123191
+  Latency: 76.2106242636247
+  Relative latency: 0.002702786319362
+
+It. No. 2320: 
+  Ex. time: 11.9188058835388, perceived latency: 0.0324464609418418
+  Total time: 28319.8115019357
+  Latency: 76.54098128725
+  Relative latency: 0.00270273625521901
+
+It. No. 2330: 
+  Ex. time: 12.5118836535346, perceived latency: 0.0334412768902921
+  Total time: 28442.4022187623
+  Latency: 76.8706881141233
+  Relative latency: 0.00270267917325966
+
+It. No. 2340: 
+  Ex. time: 12.3609622713045, perceived latency: 0.0321963424155414
+  Total time: 28565.0752896843
+  Latency: 77.2002406060079
+  Relative latency: 0.00270260938657099
+
+It. No. 2350: 
+  Ex. time: 12.1343943358345, perceived latency: 0.0331785345411895
+  Total time: 28686.5830038908
+  Latency: 77.5309296431458
+  Relative latency: 0.00270268960345086
+
+It. No. 2360: 
+  Ex. time: 12.0214279600667, perceived latency: 0.0326177790731119
+  Total time: 28808.5591208434
+  Latency: 77.8612743988835
+  Relative latency: 0.00270271324824954
+
+It. No. 2370: 
+  Ex. time: 12.0038848047975, perceived latency: 0.0336441874155233
+  Total time: 28930.0435257017
+  Latency: 78.1897264761238
+  Relative latency: 0.00270271720838095
+
+It. No. 2380: 
+  Ex. time: 12.369696304291, perceived latency: 0.0337861394529186
+  Total time: 29051.9465011584
+  Latency: 78.5190733468043
+  Relative latency: 0.00270271299527808
+
+It. No. 2390: 
+  Ex. time: 12.2596694879641, perceived latency: 0.0326514754238944
+  Total time: 29174.5455463349
+  Latency: 78.8485963369283
+  Relative latency: 0.00270265037073846
+
+It. No. 2400: 
+  Ex. time: 12.1045376792498, perceived latency: 0.0331923800757134
+  Total time: 29296.802329899
+  Latency: 79.180610246494
+  Relative latency: 0.00270270486706619
+
+It. No. 2410: 
+  Ex. time: 11.9456541753852, perceived latency: 0.0328884962883364
+  Total time: 29418.5428648221
+  Latency: 79.5089612585427
+  Relative latency: 0.00270268182975226
+
+It. No. 2420: 
+  Ex. time: 12.1665002907983, perceived latency: 0.0321521273717795
+  Total time: 29540.578111763
+  Latency: 79.8381479488368
+  Relative latency: 0.00270266030836564
+
+It. No. 2430: 
+  Ex. time: 11.9683300643055, perceived latency: 0.0337993114137916
+  Total time: 29662.2576772634
+  Latency: 80.1690111368368
+  Relative latency: 0.00270272789108321
+
+It. No. 2440: 
+  Ex. time: 12.3481585402273, perceived latency: 0.0327730302121423
+  Total time: 29784.4058930806
+  Latency: 80.5000990348581
+  Relative latency: 0.00270275993833268
+
+It. No. 2450: 
+  Ex. time: 12.3352653575109, perceived latency: 0.0326157882904628
+  Total time: 29906.963007137
+  Latency: 80.8275814906625
+  Relative latency: 0.00270263421502791
+
+It. No. 2460: 
+  Ex. time: 11.9979331184413, perceived latency: 0.0327514334587887
+  Total time: 30028.7268785702
+  Latency: 81.1544434596941
+  Relative latency: 0.00270256024465724
+
+It. No. 2470: 
+  Ex. time: 12.0626745616978, perceived latency: 0.0325098223585917
+  Total time: 30150.1384159323
+  Latency: 81.4836926654883
+  Relative latency: 0.00270259763127421
+
+It. No. 2480: 
+  Ex. time: 12.1406330282105, perceived latency: 0.0334757207500309
+  Total time: 30272.3195084767
+  Latency: 81.8140294635652
+  Relative latency: 0.00270260194104572
+
+It. No. 2490: 
+  Ex. time: 12.3737618483296, perceived latency: 0.0335114106065578
+  Total time: 30395.071505287
+  Latency: 82.1430120524196
+  Relative latency: 0.00270251090010206
+
+It. No. 2500: 
+  Ex. time: 12.2376242519212, perceived latency: 0.0333483689067013
+  Total time: 30516.9188095373
+  Latency: 82.4729135136763
+  Relative latency: 0.00270253081670557
+
+It. No. 2510: 
+  Ex. time: 12.4392141284288, perceived latency: 0.0323603584859853
+  Total time: 30638.8129701863
+  Latency: 82.8001013774048
+  Relative latency: 0.00270245787452585
+
+It. No. 2520: 
+  Ex. time: 11.9005956872718, perceived latency: 0.0327836270419765
+  Total time: 30761.4794824536
+  Latency: 83.1273940599823
+  Relative latency: 0.00270232106707996
+
+It. No. 2530: 
+  Ex. time: 12.0024924363213, perceived latency: 0.0336241219179549
+  Total time: 30883.4608914914
+  Latency: 83.4570086609109
+  Relative latency: 0.002702320473542
+
+It. No. 2540: 
+  Ex. time: 12.0003843124436, perceived latency: 0.0332390541068375
+  Total time: 31004.9842125828
+  Latency: 83.788696533234
+  Relative latency: 0.00270242667948948
+
+It. No. 2550: 
+  Ex. time: 12.2137632501494, perceived latency: 0.0331092441704609
+  Total time: 31127.57815977
+  Latency: 84.1200138002281
+  Relative latency: 0.00270242719714529
+
+It. No. 2560: 
+  Ex. time: 12.2582804690879, perceived latency: 0.0335158220013147
+  Total time: 31249.2774314071
+  Latency: 84.4487822274627
+  Relative latency: 0.00270242351724227
+
+It. No. 2570: 
+  Ex. time: 12.120683521534, perceived latency: 0.0321703560624279
+  Total time: 31371.3556387088
+  Latency: 84.7769336434962
+  Relative latency: 0.00270236755528954
+
+It. No. 2580: 
+  Ex. time: 12.3570977032652, perceived latency: 0.0329118344166753
+  Total time: 31493.7997170969
+  Latency: 85.1067799096724
+  Relative latency: 0.0027023344491351
+
+It. No. 2590: 
+  Ex. time: 12.4466794068243, perceived latency: 0.033291452537018
+  Total time: 31616.7380251421
+  Latency: 85.437362535652
+  Relative latency: 0.00270228264749232
+
+It. No. 2600: 
+  Ex. time: 12.4292199562745, perceived latency: 0.0337971922969104
+  Total time: 31739.2900583361
+  Latency: 85.7684466887385
+  Relative latency: 0.00270227993540807
+
+It. No. 2610: 
+  Ex. time: 11.9734413002192, perceived latency: 0.033362230428684
+  Total time: 31862.3393746595
+  Latency: 86.0989857755121
+  Relative latency: 0.00270221796218729
+
+It. No. 2620: 
+  Ex. time: 12.4484109774069, perceived latency: 0.0332895209492183
+  Total time: 31986.2839187872
+  Latency: 86.4290334459403
+  Relative latency: 0.00270206547485737
+
+It. No. 2630: 
+  Ex. time: 11.9919128483839, perceived latency: 0.0333944548468525
+  Total time: 32108.3467309326
+  Latency: 86.7593344153183
+  Relative latency: 0.00270208040116049
+
+It. No. 2640: 
+  Ex. time: 12.0304888405938, perceived latency: 0.0337577190454155
+  Total time: 32230.4133587925
+  Latency: 87.0902946017957
+  Relative latency: 0.00270211534777097
+
+It. No. 2650: 
+  Ex. time: 11.9113433689715, perceived latency: 0.0326375926989263
+  Total time: 32352.8414275634
+  Latency: 87.4206128757178
+  Relative latency: 0.00270210000167833
+
+It. No. 2660: 
+  Ex. time: 12.1701408356776, perceived latency: 0.0332126345674343
+  Total time: 32474.5579096144
+  Latency: 87.7515986033069
+  Relative latency: 0.00270216453284888
+
+It. No. 2670: 
+  Ex. time: 12.396951329655, perceived latency: 0.03314992686361
+  Total time: 32596.4091573955
+  Latency: 88.0801471692658
+  Relative latency: 0.00270214264227574
+
+It. No. 2680: 
+  Ex. time: 12.0367549085437, perceived latency: 0.033293925194177
+  Total time: 32718.1183612013
+  Latency: 88.4109725689459
+  Relative latency: 0.00270220223525408
+
+It. No. 2690: 
+  Ex. time: 12.2107515034464, perceived latency: 0.0331595685781875
+  Total time: 32840.8993198725
+  Latency: 88.7409511293299
+  Relative latency: 0.00270214741274249
+
+It. No. 2700: 
+  Ex. time: 12.050544448649, perceived latency: 0.0328296461360023
+  Total time: 32963.6356915861
+  Latency: 89.0695666207776
+  Relative latency: 0.00270205530282306
+
+It. No. 2710: 
+  Ex. time: 12.4031743828863, perceived latency: 0.0326062249985116
+  Total time: 33085.5846887267
+  Latency: 89.3997239206873
+  Relative latency: 0.0027020747785409
+
+It. No. 2720: 
+  Ex. time: 12.3497246811574, perceived latency: 0.0326939708797954
+  Total time: 33207.9424385618
+  Latency: 89.729806010876
+  Relative latency: 0.00270205858664341
+
+It. No. 2730: 
+  Ex. time: 11.9285752242906, perceived latency: 0.0332351782612479
+  Total time: 33330.3559374233
+  Latency: 90.060090508377
+  Relative latency: 0.00270204406689992
+
+It. No. 2740: 
+  Ex. time: 12.1628861563836, perceived latency: 0.033700535453404
+  Total time: 33451.7161448988
+  Latency: 90.3908848737418
+  Relative latency: 0.00270212997390646
+
+It. No. 2750: 
+  Ex. time: 12.3378093049342, perceived latency: 0.0321287680121142
+  Total time: 33574.3972865239
+  Latency: 90.7177430954203
+  Relative latency: 0.00270199170877842
+
+It. No. 2760: 
+  Ex. time: 11.9318970203835, perceived latency: 0.032174553445824
+  Total time: 33696.5887001955
+  Latency: 91.0443054172333
+  Relative latency: 0.00270188493640322
+
+It. No. 2770: 
+  Ex. time: 12.1220303345173, perceived latency: 0.0323205572876874
+  Total time: 33817.9737358468
+  Latency: 91.3724844184603
+  Relative latency: 0.00270189116391696
+
+It. No. 2780: 
+  Ex. time: 12.2406540056399, perceived latency: 0.033730702767106
+  Total time: 33938.9915565578
+  Latency: 91.7028475742996
+  Relative latency: 0.00270199093633884
+
+It. No. 2790: 
+  Ex. time: 12.1186629470679, perceived latency: 0.0336043968261969
+  Total time: 34061.1264257393
+  Latency: 92.034442134444
+  Relative latency: 0.00270203753640089
+
+It. No. 2800: 
+  Ex. time: 12.446994352905, perceived latency: 0.0330330623712906
+  Total time: 34183.546307721
+  Latency: 92.3615698739241
+  Relative latency: 0.00270193060259118
+
+It. No. 2810: 
+  Ex. time: 12.4525143129108, perceived latency: 0.0326770551887232
+  Total time: 34306.2209078952
+  Latency: 92.6896186041331
+  Relative latency: 0.0027018312175213
+
+It. No. 2820: 
+  Ex. time: 12.1282635479297, perceived latency: 0.033566752041503
+  Total time: 34428.4150602045
+  Latency: 93.021987886167
+  Relative latency: 0.00270189573709684
+
+It. No. 2830: 
+  Ex. time: 12.4032218639326, perceived latency: 0.0330034294841383
+  Total time: 34550.3281031298
+  Latency: 93.3502723020782
+  Relative latency: 0.00270186355462199
+
+It. No. 2840: 
+  Ex. time: 12.06176139537, perceived latency: 0.0326069761988799
+  Total time: 34673.1779290297
+  Latency: 93.6768603176962
+  Relative latency: 0.00270170967626438
+
+It. No. 2850: 
+  Ex. time: 12.094691187775, perceived latency: 0.0327320946230278
+  Total time: 34796.1283378681
+  Latency: 94.0061386279128
+  Relative latency: 0.00270162639116397
+
+It. No. 2860: 
+  Ex. time: 12.140164216295, perceived latency: 0.0330301610742066
+  Total time: 34917.5876014135
+  Latency: 94.3356774214848
+  Relative latency: 0.0027016665211335
+
+It. No. 2870: 
+  Ex. time: 12.1909730144344, perceived latency: 0.0332491158134063
+  Total time: 35039.5528617262
+  Latency: 94.6664109665382
+  Relative latency: 0.00270170145549838
+
+It. No. 2880: 
+  Ex. time: 11.9201246512032, perceived latency: 0.0337940632257735
+  Total time: 35160.5375478971
+  Latency: 94.9958753253865
+  Relative latency: 0.00270177539794377
+
+It. No. 2890: 
+  Ex. time: 12.2274811709785, perceived latency: 0.0321223382605143
+  Total time: 35281.9250552726
+  Latency: 95.3240138911182
+  Relative latency: 0.00270178040857419
+
+It. No. 2900: 
+  Ex. time: 12.125319478425, perceived latency: 0.0335584545291277
+  Total time: 35404.1422998239
+  Latency: 95.6548778885026
+  Relative latency: 0.00270179904595453
+
+It. No. 2910: 
+  Ex. time: 12.3824637213074, perceived latency: 0.0327218746785622
+  Total time: 35526.658729203
+  Latency: 95.9834464323933
+  Relative latency: 0.00270173018982769
+
+It. No. 2920: 
+  Ex. time: 12.1524945373376, perceived latency: 0.0321551567212603
+  Total time: 35648.5153470577
+  Latency: 96.3122930270232
+  Relative latency: 0.00270171961130416
+
+It. No. 2930: 
+  Ex. time: 12.3574114783854, perceived latency: 0.0324121971968706
+  Total time: 35771.1508454516
+  Latency: 96.6402779854554
+  Relative latency: 0.00270162619041773
+
+It. No. 2940: 
+  Ex. time: 12.3354890835572, perceived latency: 0.0326510409134515
+  Total time: 35892.5815512787
+  Latency: 96.9702222573063
+  Relative latency: 0.00270167867749406
+
+It. No. 2950: 
+  Ex. time: 12.0020296150814, perceived latency: 0.0332950260347901
+  Total time: 36015.2348780367
+  Latency: 97.2996008365898
+  Relative latency: 0.00270162338704964
+
+It. No. 2960: 
+  Ex. time: 12.2131515113738, perceived latency: 0.032820962936024
+  Total time: 36137.4964058233
+  Latency: 97.6300694371666
+  Relative latency: 0.00270162792521051
+
+It. No. 2970: 
+  Ex. time: 11.9164089738747, perceived latency: 0.0337860530137326
+  Total time: 36259.1304011597
+  Latency: 97.9627414263848
+  Relative latency: 0.00270173995742743
+
+It. No. 2980: 
+  Ex. time: 12.09490750668, perceived latency: 0.0326764597054795
+  Total time: 36380.1796681469
+  Latency: 98.2943628875708
+  Relative latency: 0.00270186579022405
+
+It. No. 2990: 
+  Ex. time: 12.0954383039813, perceived latency: 0.0330348080029328
+  Total time: 36501.4481313882
+  Latency: 98.625169393296
+  Relative latency: 0.00270195223593024
+
+It. No. 3000: 
+  Ex. time: 11.9226050728562, perceived latency: 0.0331267973831023
+  Total time: 36624.1769570662
+  Latency: 98.9557299534067
+  Relative latency: 0.00270192365194747
+
+It. No. 3010: 
+  Ex. time: 12.3715495824491, perceived latency: 0.0324425086693028
+  Total time: 36746.2668438945
+  Latency: 99.2858045018541
+  Relative latency: 0.00270192901291552
+
+It. No. 3020: 
+  Ex. time: 11.951072909418, perceived latency: 0.032872441221349
+  Total time: 36868.6017695046
+  Latency: 99.6155425856532
+  Relative latency: 0.00270190725453681
+
+It. No. 3030: 
+  Ex. time: 11.9993296328056, perceived latency: 0.03286812121364
+  Total time: 36989.8459785148
+  Latency: 99.9438536895369
+  Relative latency: 0.00270192673274683
+
+It. No. 3040: 
+  Ex. time: 12.1815422742722, perceived latency: 0.0333930556174986
+  Total time: 37111.8909735862
+  Latency: 100.273275104044
+  Relative latency: 0.00270191770005501
+
+It. No. 3050: 
+  Ex. time: 12.0570327946896, perceived latency: 0.0330984202199906
+  Total time: 37233.8272039643
+  Latency: 100.604183757066
+  Relative latency: 0.00270195656240126
+
+It. No. 3060: 
+  Ex. time: 11.9810119924624, perceived latency: 0.0332966260473547
+  Total time: 37356.1579888624
+  Latency: 100.933922325338
+  Relative latency: 0.00270193531024876
+
+It. No. 3070: 
+  Ex. time: 12.1462890919575, perceived latency: 0.0333080727159583
+  Total time: 37478.041703312
+  Latency: 101.267608541912
+  Relative latency: 0.00270205175989658
+
+It. No. 3080: 
+  Ex. time: 11.9094043719021, perceived latency: 0.0322894242285014
+  Total time: 37598.8419939767
+  Latency: 101.598627783293
+  Relative latency: 0.00270217438610393
+
+It. No. 3090: 
+  Ex. time: 11.9740355107433, perceived latency: 0.0330278097242924
+  Total time: 37720.5467293924
+  Latency: 101.926226249746
+  Relative latency: 0.00270214074522741
+
+It. No. 3100: 
+  Ex. time: 11.9586654973969, perceived latency: 0.032569711253314
+  Total time: 37842.7137053686
+  Latency: 102.256515542937
+  Relative latency: 0.00270214542062374
+
+It. No. 3110: 
+  Ex. time: 12.0154630208059, perceived latency: 0.0321950858633146
+  Total time: 37964.9770617042
+  Latency: 102.585709461388
+  Relative latency: 0.00270211435383344
+
+It. No. 3120: 
+  Ex. time: 12.5120224213858, perceived latency: 0.0331068134406252
+  Total time: 38086.0050749527
+  Latency: 102.916462327623
+  Relative latency: 0.00270221206254331
+
+It. No. 3130: 
+  Ex. time: 12.2830801805117, perceived latency: 0.0336420033332553
+  Total time: 38208.6898014414
+  Latency: 103.24811454286
+  Relative latency: 0.00270221551901958
+
+It. No. 3140: 
+  Ex. time: 12.1505558015184, perceived latency: 0.0337074309353924
+  Total time: 38331.1538635055
+  Latency: 103.577988698025
+  Relative latency: 0.00270218812266542
+
+It. No. 3150: 
+  Ex. time: 11.9358892610155, perceived latency: 0.0333815135807274
+  Total time: 38453.501642057
+  Latency: 103.906570729053
+  Relative latency: 0.00270213546990501
+
+It. No. 3160: 
+  Ex. time: 12.3679051564308, perceived latency: 0.0336580627080709
+  Total time: 38575.2331710765
+  Latency: 104.237346027896
+  Relative latency: 0.00270218317451553
+
+It. No. 3170: 
+  Ex. time: 11.9117482673236, perceived latency: 0.032223092615396
+  Total time: 38697.1636778976
+  Latency: 104.568236847877
+  Relative latency: 0.00270221966959305
+
+It. No. 3180: 
+  Ex. time: 12.4359091112426, perceived latency: 0.0327108518248324
+  Total time: 38819.4283047495
+  Latency: 104.895742722018
+  Relative latency: 0.0027021454797979
+
+It. No. 3190: 
+  Ex. time: 12.0724133930402, perceived latency: 0.0323988244323184
+  Total time: 38941.971161926
+  Latency: 105.22541326604
+  Relative latency: 0.00270210803732811
+
+It. No. 3200: 
+  Ex. time: 12.049683175171, perceived latency: 0.0335009528088864
+  Total time: 39063.8362790263
+  Latency: 105.556644507092
+  Relative latency: 0.00270215766196436
+
+It. No. 3210: 
+  Ex. time: 11.9593453985495, perceived latency: 0.0324337996231427
+  Total time: 39185.2683159336
+  Latency: 105.887014362509
+  Relative latency: 0.00270221486066621
+
+It. No. 3220: 
+  Ex. time: 12.3711777864723, perceived latency: 0.0323612223039406
+  Total time: 39307.214030861
+  Latency: 106.216733945632
+  Relative latency: 0.00270221984855601
+
+It. No. 3230: 
+  Ex. time: 12.2841619216986, perceived latency: 0.0337508895782172
+  Total time: 39428.9402056143
+  Latency: 106.548017163159
+  Relative latency: 0.00270227950859273
+
+It. No. 3240: 
+  Ex. time: 12.0048911379981, perceived latency: 0.0334902606226933
+  Total time: 39550.8904747196
+  Latency: 106.880005949741
+  Relative latency: 0.00270234132953485
+
+It. No. 3250: 
+  Ex. time: 12.3602082325526, perceived latency: 0.0335330673821599
+  Total time: 39673.9066142602
+  Latency: 107.210583942606
+  Relative latency: 0.00270229460851911
+
+It. No. 3260: 
+  Ex. time: 12.1766076002991, perceived latency: 0.0322528657958844
+  Total time: 39795.7320169364
+  Latency: 107.542186665915
+  Relative latency: 0.00270235478066207
+
+It. No. 3270: 
+  Ex. time: 12.0850638064413, perceived latency: 0.0323078639192819
+  Total time: 39918.52513997
+  Latency: 107.868322972542
+  Relative latency: 0.00270221213319663
+
+It. No. 3280: 
+  Ex. time: 11.9756623672552, perceived latency: 0.0331396926966984
+  Total time: 40040.5347054143
+  Latency: 108.199069315309
+  Relative latency: 0.00270223837197355
+
+It. No. 3290: 
+  Ex. time: 12.0839846617192, perceived latency: 0.032521767918099
+  Total time: 40162.4701224797
+  Latency: 108.527783872622
+  Relative latency: 0.00270221885112283
+
+It. No. 3300: 
+  Ex. time: 12.3593116835997, perceived latency: 0.0327687582297897
+  Total time: 40283.720328793
+  Latency: 108.858985584035
+  Relative latency: 0.00270230715275391
+
+It. No. 3310: 
+  Ex. time: 12.1493510231792, perceived latency: 0.0332021459702085
+  Total time: 40406.2097444225
+  Latency: 109.189809952009
+  Relative latency: 0.00270230270650618
+
+It. No. 3320: 
+  Ex. time: 12.2658780036166, perceived latency: 0.0334405458017817
+  Total time: 40527.869385184
+  Latency: 109.523137295013
+  Relative latency: 0.00270241537382796
+
+It. No. 3330: 
+  Ex. time: 12.3546945929924, perceived latency: 0.032592616993634
+  Total time: 40649.6324119345
+  Latency: 109.851033080253
+  Relative latency: 0.00270238687442599
+
+It. No. 3340: 
+  Ex. time: 12.2010518462123, perceived latency: 0.0326465218639272
+  Total time: 40772.8024728008
+  Latency: 110.177718846668
+  Relative latency: 0.00270223561208889
+
+It. No. 3350: 
+  Ex. time: 12.0516571345649, perceived latency: 0.0336780265528606
+  Total time: 40895.3435040806
+  Latency: 110.50524185539
+  Relative latency: 0.00270214729567839
+
+It. No. 3360: 
+  Ex. time: 12.2981882398605, perceived latency: 0.033504427114821
+  Total time: 41018.2582951977
+  Latency: 110.835078396951
+  Relative latency: 0.00270209128820878
+
+It. No. 3370: 
+  Ex. time: 12.0196190996804, perceived latency: 0.0328089805647395
+  Total time: 41141.0141752339
+  Latency: 111.16347091139
+  Relative latency: 0.00270201095281477
+
+It. No. 3380: 
+  Ex. time: 12.3629694657398, perceived latency: 0.0334943793118621
+  Total time: 41263.1305549859
+  Latency: 111.492569718108
+  Relative latency: 0.00270199008699877
+
+It. No. 3390: 
+  Ex. time: 12.4273297873225, perceived latency: 0.0328054027182023
+  Total time: 41384.638297233
+  Latency: 111.821641677858
+  Relative latency: 0.00270200843305027
+
+It. No. 3400: 
+  Ex. time: 12.4296751216607, perceived latency: 0.0337896906290239
+  Total time: 41507.2805514272
+  Latency: 112.150960702849
+  Relative latency: 0.00270195876995349
+
+It. No. 3410: 
+  Ex. time: 11.9436105100224, perceived latency: 0.0325830371371703
+  Total time: 41628.9782368129
+  Latency: 112.480373110843
+  Relative latency: 0.00270197294949161
+
+It. No. 3420: 
+  Ex. time: 12.0700739426616, perceived latency: 0.0325222681300068
+  Total time: 41751.0644910172
+  Latency: 112.810704153699
+  Relative latency: 0.00270198390218218
+
+It. No. 3430: 
+  Ex. time: 12.0340193183988, perceived latency: 0.0329553911995724
+  Total time: 41872.288584987
+  Latency: 113.13936366064
+  Relative latency: 0.00270201050585054
+
+It. No. 3440: 
+  Ex. time: 12.4146991047214, perceived latency: 0.0332584650656558
+  Total time: 41994.6472896095
+  Latency: 113.470831948531
+  Relative latency: 0.00270203083659681
+
+It. No. 3450: 
+  Ex. time: 12.1628307287845, perceived latency: 0.0336258189172716
+  Total time: 42116.8174604501
+  Latency: 113.80082427253
+  Relative latency: 0.00270202810028073
+
+It. No. 3460: 
+  Ex. time: 12.1250352758874, perceived latency: 0.0336933476067064
+  Total time: 42238.5317327324
+  Latency: 114.131537368877
+  Relative latency: 0.00270207160824275
+
+It. No. 3470: 
+  Ex. time: 12.0098621703512, perceived latency: 0.0325903076600023
+  Total time: 42359.8113555084
+  Latency: 114.460862967237
+  Relative latency: 0.00270210983723734
+
+It. No. 3480: 
+  Ex. time: 11.9831687875908, perceived latency: 0.0336485015086283
+  Total time: 42482.1080654713
+  Latency: 114.791723992574
+  Relative latency: 0.00270211929727365
+
+It. No. 3490: 
+  Ex. time: 12.1193878441832, perceived latency: 0.0326742948061152
+  Total time: 42605.1911126506
+  Latency: 115.120583768985
+  Relative latency: 0.00270203185955908
+
+It. No. 3500: 
+  Ex. time: 12.1233124714716, perceived latency: 0.0324019093364078
+  Total time: 42727.3118521384
+  Latency: 115.448884282291
+  Relative latency: 0.00270199268987041
+
+It. No. 3510: 
+  Ex. time: 12.2907851745699, perceived latency: 0.0331099026336488
+  Total time: 42849.5909099855
+  Latency: 115.779515946281
+  Relative latency: 0.00270199816351806
+
+It. No. 3520: 
+  Ex. time: 12.0719672670254, perceived latency: 0.0322125807226761
+  Total time: 42971.5799662114
+  Latency: 116.107574371894
+  Relative latency: 0.00270196195865243
+
+It. No. 3530: 
+  Ex. time: 12.1171111754785, perceived latency: 0.0335918398487329
+  Total time: 43094.0553516743
+  Latency: 116.440122799161
+  Relative latency: 0.0027019996574687
+
+It. No. 3540: 
+  Ex. time: 11.9220174830988, perceived latency: 0.0334559609027908
+  Total time: 43215.6344178153
+  Latency: 116.771609612031
+  Relative latency: 0.00270206861903415
+
+It. No. 3550: 
+  Ex. time: 12.1926950998292, perceived latency: 0.0337291474466842
+  Total time: 43338.574389096
+  Latency: 117.098550595323
+  Relative latency: 0.00270194745087844
+
+It. No. 3560: 
+  Ex. time: 12.2164868020861, perceived latency: 0.0326434456927943
+  Total time: 43461.5692267059
+  Latency: 117.427617475333
+  Relative latency: 0.00270187247181073
+
+It. No. 3570: 
+  Ex. time: 12.2139892700068, perceived latency: 0.033714240736316
+  Total time: 43584.0010385212
+  Latency: 117.758303586696
+  Relative latency: 0.00270186997018967
+
+It. No. 3580: 
+  Ex. time: 12.0558419839025, perceived latency: 0.0336771024190129
+  Total time: 43705.0852824677
+  Latency: 118.087435554838
+  Relative latency: 0.00270191523003867
+
+It. No. 3590: 
+  Ex. time: 12.1873613575224, perceived latency: 0.0324919177296712
+  Total time: 43827.2363283523
+  Latency: 118.41681451139
+  Relative latency: 0.00270190010668742
+
+It. No. 3600: 
+  Ex. time: 12.1949861235875, perceived latency: 0.032441949889196
+  Total time: 43949.1181909359
+  Latency: 118.745760581173
+  Relative latency: 0.00270189176641236
+
+It. No. 3610: 
+  Ex. time: 12.3497095895883, perceived latency: 0.0330396835276003
+  Total time: 44072.3492476223
+  Latency: 119.074930408331
+  Relative latency: 0.0027018058361106
+
+It. No. 3620: 
+  Ex. time: 12.1899975405317, perceived latency: 0.0331981560986429
+  Total time: 44194.4420759184
+  Latency: 119.405098384017
+  Relative latency: 0.00270181255323689
+
+It. No. 3630: 
+  Ex. time: 12.0812794267411, perceived latency: 0.0324841534621844
+  Total time: 44315.886468486
+  Latency: 119.734510324201
+  Relative latency: 0.00270184170657056
+
+It. No. 3640: 
+  Ex. time: 12.4088398775883, perceived latency: 0.0325175416450152
+  Total time: 44438.0297046869
+  Latency: 120.063347326793
+  Relative latency: 0.00270181527229435
+
+It. No. 3650: 
+  Ex. time: 12.1622398938105, perceived latency: 0.0335142350917275
+  Total time: 44559.4284743988
+  Latency: 120.392886693965
+  Relative latency: 0.00270184988488207
+
+It. No. 3660: 
+  Ex. time: 11.9654629023512, perceived latency: 0.033680075866708
+  Total time: 44679.7540275041
+  Latency: 120.721090266
+  Relative latency: 0.0027019193120823
+
+It. No. 3670: 
+  Ex. time: 12.2096261897601, perceived latency: 0.0330921560828133
+  Total time: 44801.154844481
+  Latency: 121.051588546082
+  Relative latency: 0.00270197473628282
+
+It. No. 3680: 
+  Ex. time: 12.3811649133286, perceived latency: 0.0334523694573092
+  Total time: 44923.4779520481
+  Latency: 121.382953262333
+  Relative latency: 0.00270199367448573
+
+It. No. 3690: 
+  Ex. time: 12.3364479010141, perceived latency: 0.0330582928800522
+  Total time: 45045.7684035099
+  Latency: 121.715017235814
+  Relative latency: 0.00270202999192994
+
+It. No. 3700: 
+  Ex. time: 12.1542116884287, perceived latency: 0.0336581890962226
+  Total time: 45167.8789522242
+  Latency: 122.043647912315
+  Relative latency: 0.00270200086307805
+
+It. No. 3710: 
+  Ex. time: 12.3032629879354, perceived latency: 0.0336314484079141
+  Total time: 45290.6591386443
+  Latency: 122.373633294986
+  Relative latency: 0.00270196185311357
+
+It. No. 3720: 
+  Ex. time: 12.0012568672041, perceived latency: 0.0333283215875064
+  Total time: 45412.6671897511
+  Latency: 122.705183933392
+  Relative latency: 0.00270200346129604
+
+It. No. 3730: 
+  Ex. time: 12.4669032803789, perceived latency: 0.0324415078266705
+  Total time: 45535.1768884087
+  Latency: 123.034231558734
+  Relative latency: 0.00270196011009794
+
+It. No. 3740: 
+  Ex. time: 12.4810089328601, perceived latency: 0.0321414627771
+  Total time: 45657.9147146572
+  Latency: 123.361276933172
+  Relative latency: 0.00270185963822764
+
+It. No. 3750: 
+  Ex. time: 12.2283398485748, perceived latency: 0.0333800531994223
+  Total time: 45779.7875339434
+  Latency: 123.690805200039
+  Relative latency: 0.00270186499027171
+
+It. No. 3760: 
+  Ex. time: 12.143133425294, perceived latency: 0.0323253216503918
+  Total time: 45901.1417442546
+  Latency: 124.022373955726
+  Relative latency: 0.00270194529466687
+
+It. No. 3770: 
+  Ex. time: 12.3078028832088, perceived latency: 0.0324362179246737
+  Total time: 46023.678775691
+  Latency: 124.350722535853
+  Relative latency: 0.00270188576497568
+
+It. No. 3780: 
+  Ex. time: 12.018427154088, perceived latency: 0.0330258693665355
+  Total time: 46145.7327247015
+  Latency: 124.680553752038
+  Relative latency: 0.00270188696527724
+
+It. No. 3790: 
+  Ex. time: 12.1896483447329, perceived latency: 0.0327337139357963
+  Total time: 46266.6926848699
+  Latency: 125.00884494347
+  Relative latency: 0.00270191876032563
+
+It. No. 3800: 
+  Ex. time: 12.0862944293003, perceived latency: 0.0329887338101157
+  Total time: 46388.5912785962
+  Latency: 125.337504129543
+  Relative latency: 0.00270190365076626
+
+It. No. 3810: 
+  Ex. time: 12.2179758631456, perceived latency: 0.0337583236646874
+  Total time: 46510.8608731631
+  Latency: 125.669444517216
+  Relative latency: 0.00270193761538668
+
+It. No. 3820: 
+  Ex. time: 12.2202029657596, perceived latency: 0.0332705275828554
+  Total time: 46633.2594527943
+  Latency: 125.999207699131
+  Relative latency: 0.00270191724056253
+
+It. No. 3830: 
+  Ex. time: 12.3337283675476, perceived latency: 0.0327840283131795
+  Total time: 46756.4938872409
+  Latency: 126.326239119203
+  Relative latency: 0.00270179024594646
+
+It. No. 3840: 
+  Ex. time: 12.0242189343661, perceived latency: 0.0334593718524762
+  Total time: 46878.5353057498
+  Latency: 126.656768465958
+  Relative latency: 0.00270180729069031
+
+It. No. 3850: 
+  Ex. time: 12.5166153778453, perceived latency: 0.0325818264587475
+  Total time: 47001.3032943572
+  Latency: 126.988600853142
+  Relative latency: 0.00270181020423719
+
+It. No. 3860: 
+  Ex. time: 12.1285348911873, perceived latency: 0.0331980592724896
+  Total time: 47123.5062985084
+  Latency: 127.318187085731
+  Relative latency: 0.00270179783056086
+
+It. No. 3870: 
+  Ex. time: 11.9881579042267, perceived latency: 0.032142790858011
+  Total time: 47245.127349937
+  Latency: 127.648196887751
+  Relative latency: 0.00270182776611611
+
+It. No. 3880: 
+  Ex. time: 11.9253896753931, perceived latency: 0.032249847294699
+  Total time: 47367.3700065622
+  Latency: 127.978232410617
+  Relative latency: 0.00270182263429207
+
+It. No. 3890: 
+  Ex. time: 12.463239204618, perceived latency: 0.0335133622046603
+  Total time: 47490.1903839766
+  Latency: 128.308219878355
+  Relative latency: 0.00270178364923226
+
+It. No. 3900: 
+  Ex. time: 12.1885840973918, perceived latency: 0.0333067090309104
+  Total time: 47612.7973117964
+  Latency: 128.637612623093
+  Relative latency: 0.0027017444864812
+
+It. No. 3910: 
+  Ex. time: 12.1169531987444, perceived latency: 0.033580248639583
+  Total time: 47733.6058515942
+  Latency: 128.967221236728
+  Relative latency: 0.00270181183541197
+
+It. No. 3920: 
+  Ex. time: 12.0816032734041, perceived latency: 0.0325750668898401
+  Total time: 47855.0867694414
+  Latency: 129.294733722469
+  Relative latency: 0.00270179708053591
+
+It. No. 3930: 
+  Ex. time: 12.1005196509548, perceived latency: 0.0321967583280069
+  Total time: 47976.7729628198
+  Latency: 129.623975364141
+  Relative latency: 0.00270180688193835
+
+It. No. 3940: 
+  Ex. time: 12.2530479466311, perceived latency: 0.0327969310119613
+  Total time: 48099.3333456068
+  Latency: 129.952542315764
+  Relative latency: 0.00270175350211237
+
+It. No. 3950: 
+  Ex. time: 12.1849184850368, perceived latency: 0.0333847649290002
+  Total time: 48221.6524601118
+  Latency: 130.282662814641
+  Relative latency: 0.00270174612789159
+
+It. No. 3960: 
+  Ex. time: 12.1886843914948, perceived latency: 0.0337774566607353
+  Total time: 48343.0585399548
+  Latency: 130.612768672347
+  Relative latency: 0.00270178951471177
+
+It. No. 3970: 
+  Ex. time: 12.4708283488185, perceived latency: 0.0328487095628295
+  Total time: 48466.3083715763
+  Latency: 130.943292648487
+  Relative latency: 0.0027017385282284
+
+It. No. 3980: 
+  Ex. time: 12.0822136088348, perceived latency: 0.032146367791339
+  Total time: 48588.5917038503
+  Latency: 131.274697932806
+  Relative latency: 0.00270175967916361
+
+It. No. 3990: 
+  Ex. time: 12.1085772268586, perceived latency: 0.0336602201931212
+  Total time: 48710.722869139
+  Latency: 131.605596950215
+  Relative latency: 0.00270177877063685
+
+It. No. 4000: 
+  Ex. time: 12.4737186588179, perceived latency: 0.0336910478302811
+  Total time: 48832.5099091562
+  Latency: 131.937385604963
+  Relative latency: 0.00270183502446235
+
+It. No. 4010: 
+  Ex. time: 12.3239606706891, perceived latency: 0.0330426450051698
+  Total time: 48955.0313234978
+  Latency: 132.265447854713
+  Relative latency: 0.00270177434839527
+
+It. No. 4020: 
+  Ex. time: 11.9183012036704, perceived latency: 0.033306941815018
+  Total time: 49077.523019064
+  Latency: 132.594848292365
+  Relative latency: 0.00270174287811671
+
+It. No. 4030: 
+  Ex. time: 12.4720481481659, perceived latency: 0.0330018995391233
+  Total time: 49199.6313007796
+  Latency: 132.922708133419
+  Relative latency: 0.00270170130586553
+
+It. No. 4040: 
+  Ex. time: 12.5156550547012, perceived latency: 0.0323207132464974
+  Total time: 49322.130229944
+  Latency: 133.252945024936
+  Relative latency: 0.00270168673582629
+
+It. No. 4050: 
+  Ex. time: 12.3246384593894, perceived latency: 0.0332016084678757
+  Total time: 49445.3741075201
+  Latency: 133.581164573227
+  Relative latency: 0.00270159073491388
+
+It. No. 4060: 
+  Ex. time: 12.0966877027361, perceived latency: 0.0323645427530208
+  Total time: 49568.0923488727
+  Latency: 133.91033714783
+  Relative latency: 0.00270154308552638
+
+It. No. 4070: 
+  Ex. time: 12.3037265795133, perceived latency: 0.0331310656701067
+  Total time: 49690.3288605278
+  Latency: 134.240093609546
+  Relative latency: 0.00270153361203012
+
+It. No. 4080: 
+  Ex. time: 12.1735517830887, perceived latency: 0.0326046558437579
+  Total time: 49812.3142866816
+  Latency: 134.569031825247
+  Relative latency: 0.00270152137583431
+
+It. No. 4090: 
+  Ex. time: 12.3093360232314, perceived latency: 0.0333625792974245
+  Total time: 49934.2139205726
+  Latency: 134.899759359786
+  Relative latency: 0.0027015496744249
+
+It. No. 4100: 
+  Ex. time: 12.0204978769177, perceived latency: 0.0333437346196244
+  Total time: 50056.2647442171
+  Latency: 135.230593157554
+  Relative latency: 0.00270157179822686
+
+It. No. 4110: 
+  Ex. time: 12.3498943141379, perceived latency: 0.0329677852298144
+  Total time: 50178.2339533887
+  Latency: 135.559712657061
+  Relative latency: 0.00270156404434211
+
+It. No. 4120: 
+  Ex. time: 11.9141994878591, perceived latency: 0.032160527488718
+  Total time: 50300.1114478609
+  Latency: 135.892442280425
+  Relative latency: 0.00270163302563028
+
+It. No. 4130: 
+  Ex. time: 12.4148017996433, perceived latency: 0.033654915858483
+  Total time: 50422.3835000832
+  Latency: 136.223265431673
+  Relative latency: 0.0027016427224518
+
+It. No. 4140: 
+  Ex. time: 12.3165407710927, perceived latency: 0.0322651488129535
+  Total time: 50544.5889335484
+  Latency: 136.552125033681
+  Relative latency: 0.00270161708532654
+
+It. No. 4150: 
+  Ex. time: 11.9613958841154, perceived latency: 0.0335190557309482
+  Total time: 50666.4184945748
+  Latency: 136.879970857996
+  Relative latency: 0.00270159160495335
+
+It. No. 4160: 
+  Ex. time: 12.373583973432, perceived latency: 0.0336523754663941
+  Total time: 50788.5907491112
+  Latency: 137.208432617239
+  Relative latency: 0.00270156014556558
+
+It. No. 4170: 
+  Ex. time: 12.0009445537435, perceived latency: 0.033280571311012
+  Total time: 50909.9092842375
+  Latency: 137.539558346646
+  Relative latency: 0.00270162646683857
+
+It. No. 4180: 
+  Ex. time: 12.4757850552754, perceived latency: 0.0329633136750404
+  Total time: 51032.5587145047
+  Latency: 137.868603322839
+  Relative latency: 0.00270158124138215
+
+It. No. 4190: 
+  Ex. time: 12.1633015242766, perceived latency: 0.0333135424091632
+  Total time: 51154.5655619568
+  Latency: 138.197304131761
+  Relative latency: 0.00270156344040066
+
+It. No. 4200: 
+  Ex. time: 12.2699136718358, perceived latency: 0.0336523405203976
+  Total time: 51275.707268313
+  Latency: 138.529569237986
+  Relative latency: 0.00270166081792096
+
+It. No. 4210: 
+  Ex. time: 12.3650927365856, perceived latency: 0.0332902956907024
+  Total time: 51397.89793604
+  Latency: 138.855941471477
+  Relative latency: 0.00270158794517766
+
+It. No. 4220: 
+  Ex. time: 12.0647517425959, perceived latency: 0.0336574422139168
+  Total time: 51519.8866678944
+  Latency: 139.187291795019
+  Relative latency: 0.00270162263151399
+
+It. No. 4230: 
+  Ex. time: 12.3107679614817, perceived latency: 0.0324095640770483
+  Total time: 51642.8260822706
+  Latency: 139.518094952334
+  Relative latency: 0.00270159682450515
+
+It. No. 4240: 
+  Ex. time: 12.0898913232469, perceived latency: 0.033618873749618
+  Total time: 51764.1872833364
+  Latency: 139.846738359763
+  Relative latency: 0.00270161178411434
+
+It. No. 4250: 
+  Ex. time: 12.1892712811835, perceived latency: 0.0335930064089176
+  Total time: 51885.8178311686
+  Latency: 140.177253258569
+  Relative latency: 0.0027016487186285
+
+It. No. 4260: 
+  Ex. time: 12.2795692524393, perceived latency: 0.0332480017021318
+  Total time: 52008.1782454835
+  Latency: 140.507664458355
+  Relative latency: 0.00270164557187806
+
+It. No. 4270: 
+  Ex. time: 12.0097659518669, perceived latency: 0.0323890272005777
+  Total time: 52130.0709039518
+  Latency: 140.835827187705
+  Relative latency: 0.00270162354943256
+
+It. No. 4280: 
+  Ex. time: 12.4765980006851, perceived latency: 0.0326848850332895
+  Total time: 52251.2512627981
+  Latency: 141.164703845505
+  Relative latency: 0.00270165212188922
+
+It. No. 4290: 
+  Ex. time: 12.3104045940291, perceived latency: 0.0336594498397647
+  Total time: 52373.263388758
+  Latency: 141.496896829012
+  Relative latency: 0.00270170097629212
+
+It. No. 4300: 
+  Ex. time: 12.1754550308757, perceived latency: 0.0331055555280316
+  Total time: 52494.9058608076
+  Latency: 141.830601971286
+  Relative latency: 0.00270179743435211
+
+It. No. 4310: 
+  Ex. time: 12.4067139190151, perceived latency: 0.0334315813144791
+  Total time: 52617.1126003495
+  Latency: 142.158589738364
+  Relative latency: 0.0027017558112343
+
+It. No. 4320: 
+  Ex. time: 12.1903528453852, perceived latency: 0.033295957482971
+  Total time: 52738.7727029084
+  Latency: 142.48759655103
+  Relative latency: 0.00270176170677503
+
+It. No. 4330: 
+  Ex. time: 12.1989214218945, perceived latency: 0.0323247728282014
+  Total time: 52861.7788973644
+  Latency: 142.815356658235
+  Relative latency: 0.00270167519211798
+
+It. No. 4340: 
+  Ex. time: 12.3876817201808, perceived latency: 0.0324864633256349
+  Total time: 52984.4435422977
+  Latency: 143.144396608078
+  Relative latency: 0.00270163064926416
+
+It. No. 4350: 
+  Ex. time: 12.3906704739559, perceived latency: 0.0328584412820452
+  Total time: 53107.1983715222
+  Latency: 143.474686770914
+  Relative latency: 0.00270160526577221
+
+It. No. 4360: 
+  Ex. time: 12.4138205170071, perceived latency: 0.0325233983751685
+  Total time: 53228.969773221
+  Latency: 143.802870839781
+  Relative latency: 0.00270159034549127
+
+It. No. 4370: 
+  Ex. time: 11.9570556932879, perceived latency: 0.0334171579515642
+  Total time: 53352.1177638604
+  Latency: 144.133562781571
+  Relative latency: 0.00270155279345263
+
+It. No. 4380: 
+  Ex. time: 12.4127862198367, perceived latency: 0.0331541479085711
+  Total time: 53474.3226195929
+  Latency: 144.463220848312
+  Relative latency: 0.00270154372736983
+
+It. No. 4390: 
+  Ex. time: 12.031871037809, perceived latency: 0.0330008762669711
+  Total time: 53595.5229672142
+  Latency: 144.791705249095
+  Relative latency: 0.00270156343726076
+
+It. No. 4400: 
+  Ex. time: 12.2868762123763, perceived latency: 0.0323539655760781
+  Total time: 53718.1811601816
+  Latency: 145.120199929521
+  Relative latency: 0.0027015099319314
+
+It. No. 4410: 
+  Ex. time: 12.2952370544968, perceived latency: 0.0326589524681973
+  Total time: 53840.0435004641
+  Latency: 145.451350772938
+  Relative latency: 0.00270154593711805
+
+It. No. 4420: 
+  Ex. time: 12.163000833823, perceived latency: 0.0335880878799698
+  Total time: 53962.4714083439
+  Latency: 145.781600135447
+  Relative latency: 0.00270153675935801
+
+It. No. 4430: 
+  Ex. time: 12.3163296541561, perceived latency: 0.0323728031702091
+  Total time: 54084.6425036785
+  Latency: 146.107436768017
+  Relative latency: 0.00270145886159975
+
+It. No. 4440: 
+  Ex. time: 11.992279911243, perceived latency: 0.0332634929096798
+  Total time: 54206.316593178
+  Latency: 146.439132716926
+  Relative latency: 0.00270151417621605
+
+It. No. 4450: 
+  Ex. time: 12.4322947814735, perceived latency: 0.03283482978611
+  Total time: 54330.0886262682
+  Latency: 146.765294661765
+  Relative latency: 0.00270136306368558
+
+It. No. 4460: 
+  Ex. time: 11.9806145099988, perceived latency: 0.0333337116622533
+  Total time: 54452.3080254839
+  Latency: 147.095856860081
+  Relative latency: 0.00270137046883742
+
+It. No. 4470: 
+  Ex. time: 11.9313881908366, perceived latency: 0.0324580824506427
+  Total time: 54574.4723576408
+  Latency: 147.424502447365
+  Relative latency: 0.00270134544739625
+
+It. No. 4480: 
+  Ex. time: 11.9822319513007, perceived latency: 0.033338875844473
+  Total time: 54695.5486881489
+  Latency: 147.751841030299
+  Relative latency: 0.0027013503762933
+
+It. No. 4490: 
+  Ex. time: 12.4367494602174, perceived latency: 0.0335292415623271
+  Total time: 54817.0213094634
+  Latency: 148.082443959523
+  Relative latency: 0.00270139530427127
+
+It. No. 4500: 
+  Ex. time: 12.4361673319291, perceived latency: 0.032244118953098
+  Total time: 54939.3281395365
+  Latency: 148.412525759124
+  Relative latency: 0.00270138952886686
+
+It. No. 4510: 
+  Ex. time: 12.2684115345653, perceived latency: 0.0326044472959073
+  Total time: 55061.0644027385
+  Latency: 148.74160712086
+  Relative latency: 0.00270139360243574
+
+It. No. 4520: 
+  Ex. time: 12.304443550486, perceived latency: 0.0336326295589774
+  Total time: 55183.2764720771
+  Latency: 149.071019647739
+  Relative latency: 0.00270138036698798
+
+It. No. 4530: 
+  Ex. time: 12.4194511388977, perceived latency: 0.0326122476209866
+  Total time: 55304.7054074694
+  Latency: 149.400338913593
+  Relative latency: 0.00270140375602498
+
+It. No. 4540: 
+  Ex. time: 11.9569804841549, perceived latency: 0.032809075143296
+  Total time: 55426.5800280654
+  Latency: 149.730133197497
+  Relative latency: 0.00270141389062217
+
+It. No. 4550: 
+  Ex. time: 12.0747811117918, perceived latency: 0.0324240775784337
+  Total time: 55548.0488176434
+  Latency: 150.058143122677
+  Relative latency: 0.00270141159440716
+
+It. No. 4560: 
+  Ex. time: 11.9584980302267, perceived latency: 0.0328948645045947
+  Total time: 55670.0748982415
+  Latency: 150.38776372961
+  Relative latency: 0.00270141119810781
+
+It. No. 4570: 
+  Ex. time: 12.3670079814689, perceived latency: 0.032129793689313
+  Total time: 55792.2170189551
+  Latency: 150.717282830707
+  Relative latency: 0.00270140336562538
+
+It. No. 4580: 
+  Ex. time: 12.3774602627387, perceived latency: 0.0331289815732234
+  Total time: 55914.3329592383
+  Latency: 151.048668030375
+  Relative latency: 0.00270143020646406
+
+It. No. 4590: 
+  Ex. time: 12.2850605988488, perceived latency: 0.0337296767616242
+  Total time: 56036.9207359992
+  Latency: 151.379257281979
+  Relative latency: 0.00270141997978719
+
+It. No. 4600: 
+  Ex. time: 12.0479774339464, perceived latency: 0.0335588324946023
+  Total time: 56159.0640766069
+  Latency: 151.710242425616
+  Relative latency: 0.00270143822586978
+
+It. No. 4610: 
+  Ex. time: 12.4001467177109, perceived latency: 0.0330227555688223
+  Total time: 56280.5018768077
+  Latency: 152.040827462027
+  Relative latency: 0.00270148314943653
+
+It. No. 4620: 
+  Ex. time: 11.9588033374602, perceived latency: 0.0326028547708708
+  Total time: 56403.1431484337
+  Latency: 152.370929386252
+  Relative latency: 0.00270146167183032
+
+It. No. 4630: 
+  Ex. time: 12.3985409297396, perceived latency: 0.033526678916275
+  Total time: 56526.1891760946
+  Latency: 152.701533911995
+  Relative latency: 0.00270142983522714
+
+It. No. 4640: 
+  Ex. time: 12.4572038450325, perceived latency: 0.0323880436097265
+  Total time: 56648.407498897
+  Latency: 153.031069124232
+  Relative latency: 0.00270141873144821
+
+It. No. 4650: 
+  Ex. time: 12.0291651231723, perceived latency: 0.0332333413543471
+  Total time: 56770.5935909301
+  Latency: 153.361793806184
+  Relative latency: 0.00270143016138351
+
+It. No. 4660: 
+  Ex. time: 11.9146200967914, perceived latency: 0.0328046155192852
+  Total time: 56892.7702232701
+  Latency: 153.688917474096
+  Relative latency: 0.0027013786966421
+
+It. No. 4670: 
+  Ex. time: 12.2782221575041, perceived latency: 0.0324643027396085
+  Total time: 57014.4320843997
+  Latency: 154.017633712209
+  Relative latency: 0.00270137977493512
+
+It. No. 4680: 
+  Ex. time: 11.9175645465084, perceived latency: 0.0335645041825947
+  Total time: 57136.6919448191
+  Latency: 154.348211043593
+  Relative latency: 0.00270138514831516
+
+It. No. 4690: 
+  Ex. time: 11.9527907681588, perceived latency: 0.0327056621758851
+  Total time: 57258.0983915229
+  Latency: 154.678969129939
+  Relative latency: 0.00270143391895877
+
+It. No. 4700: 
+  Ex. time: 11.9795781511099, perceived latency: 0.0328430573293419
+  Total time: 57380.2073495532
+  Latency: 155.006651545029
+  Relative latency: 0.00270139580710727
+
+It. No. 4710: 
+  Ex. time: 12.1462410347613, perceived latency: 0.0328271615646124
+  Total time: 57501.5868466998
+  Latency: 155.337037017585
+  Relative latency: 0.0027014391347445
+
+It. No. 4720: 
+  Ex. time: 11.9973774090733, perceived latency: 0.0331504500206859
+  Total time: 57623.8416428005
+  Latency: 155.667099764901
+  Relative latency: 0.0027014356441185
+
+It. No. 4730: 
+  Ex. time: 11.949380306218, perceived latency: 0.0334887110735962
+  Total time: 57745.4900324477
+  Latency: 155.999034466655
+  Relative latency: 0.00270149295432418
+
+It. No. 4740: 
+  Ex. time: 12.3303420939875, perceived latency: 0.0325925797575293
+  Total time: 57867.6465491662
+  Latency: 156.329762308383
+  Relative latency: 0.00270150544614874
+
+It. No. 4750: 
+  Ex. time: 11.9438096922596, perceived latency: 0.032499150074061
+  Total time: 57989.861822854
+  Latency: 156.657847749321
+  Relative latency: 0.00270146958149125
+
+It. No. 4760: 
+  Ex. time: 12.1538352386422, perceived latency: 0.0326859236835696
+  Total time: 58111.3605671422
+  Latency: 156.984121301268
+  Relative latency: 0.0027014359975256
+
+It. No. 4770: 
+  Ex. time: 11.9676491470181, perceived latency: 0.0322800228611354
+  Total time: 58233.2876536935
+  Latency: 157.314028224622
+  Relative latency: 0.00270144507657115
+
+It. No. 4780: 
+  Ex. time: 12.0874198695297, perceived latency: 0.0325432743007435
+  Total time: 58355.7853024308
+  Latency: 157.642588915984
+  Relative latency: 0.00270140463535871
+
+It. No. 4790: 
+  Ex. time: 12.0528807710237, perceived latency: 0.0325122292961791
+  Total time: 58478.0180244824
+  Latency: 157.972339346271
+  Relative latency: 0.00270139694680032
+
+It. No. 4800: 
+  Ex. time: 12.0012077236039, perceived latency: 0.033528642004281
+  Total time: 58599.5566869328
+  Latency: 158.302978866645
+  Relative latency: 0.0027014364581694
+
+It. No. 4810: 
+  Ex. time: 12.1909716594909, perceived latency: 0.0332499523279813
+  Total time: 58721.4640883954
+  Latency: 158.630047992755
+  Relative latency: 0.00270139803997332
+
+It. No. 4820: 
+  Ex. time: 12.1086277945054, perceived latency: 0.0333935166763497
+  Total time: 58843.1208120259
+  Latency: 158.960361204779
+  Relative latency: 0.0027014264201346
+
+It. No. 4830: 
+  Ex. time: 12.1931268375509, perceived latency: 0.0328831291713536
+  Total time: 58965.1265166265
+  Latency: 159.290076730236
+  Relative latency: 0.00270142855854504
+
+It. No. 4840: 
+  Ex. time: 12.3309826717459, perceived latency: 0.0331630420323184
+  Total time: 59087.5642982836
+  Latency: 159.621857321091
+  Relative latency: 0.00270144588318608
+
+It. No. 4850: 
+  Ex. time: 12.210744828447, perceived latency: 0.0322284660894168
+  Total time: 59209.5860786963
+  Latency: 159.951688939621
+  Relative latency: 0.00270144919991548
+
+It. No. 4860: 
+  Ex. time: 12.4868670348099, perceived latency: 0.0336172009897073
+  Total time: 59332.4938741816
+  Latency: 160.282656479652
+  Relative latency: 0.00270143130709358
+
+It. No. 4870: 
+  Ex. time: 12.2264615729188, perceived latency: 0.0325870966244044
+  Total time: 59454.1732406123
+  Latency: 160.612830498364
+  Relative latency: 0.0027014559574878
+
+It. No. 4880: 
+  Ex. time: 12.1987234123671, perceived latency: 0.0321879098198458
+  Total time: 59576.5430668322
+  Latency: 160.941772038852
+  Relative latency: 0.00270142851118955
+
+It. No. 4890: 
+  Ex. time: 12.4530515837339, perceived latency: 0.0336186925350632
+  Total time: 59700.1641655568
+  Latency: 161.271125355838
+  Relative latency: 0.00270135145539317
+
+It. No. 4900: 
+  Ex. time: 12.3289051196743, perceived latency: 0.0332925817398616
+  Total time: 59822.2079278223
+  Latency: 161.598995898612
+  Relative latency: 0.00270132115641046
+
+It. No. 4910: 
+  Ex. time: 12.0856897407796, perceived latency: 0.0328185763189156
+  Total time: 59944.2224983787
+  Latency: 161.927360730647
+  Relative latency: 0.00270130054210023
+
+It. No. 4920: 
+  Ex. time: 12.4472034483603, perceived latency: 0.0334271266950122
+  Total time: 60064.9184929118
+  Latency: 162.254974665586
+  Relative latency: 0.00270132681000364
+
+It. No. 4930: 
+  Ex. time: 12.1330489422325, perceived latency: 0.0328838556946053
+  Total time: 60187.4703704544
+  Latency: 162.585782511209
+  Relative latency: 0.00270132274226665
+
+It. No. 4940: 
+  Ex. time: 12.5170204181938, perceived latency: 0.0321864143169877
+  Total time: 60310.0580960086
+  Latency: 162.916008474344
+  Relative latency: 0.00270130743722705
+
+It. No. 4950: 
+  Ex. time: 12.4969821698603, perceived latency: 0.0322834731276254
+  Total time: 60433.0850150774
+  Latency: 163.245653160622
+  Relative latency: 0.00270126294429441
+
+It. No. 4960: 
+  Ex. time: 12.4010767784087, perceived latency: 0.0337811494700752
+  Total time: 60555.6274073733
+  Latency: 163.575329263536
+  Relative latency: 0.00270124076434915
+
+It. No. 4970: 
+  Ex. time: 12.3002924866812, perceived latency: 0.0332519488370819
+  Total time: 60677.6958855476
+  Latency: 163.903565211691
+  Relative latency: 0.00270121603695783
+
+It. No. 4980: 
+  Ex. time: 12.1231389039941, perceived latency: 0.0334889021106606
+  Total time: 60799.9591695271
+  Latency: 164.235417383948
+  Relative latency: 0.00270124223152871
+
+It. No. 4990: 
+  Ex. time: 11.9994582786718, perceived latency: 0.0333921675687971
+  Total time: 60921.677513078
+  Latency: 164.566498345185
+  Relative latency: 0.00270127982457242
+
+It. No. 5000: 
+  Ex. time: 12.0551453469961, perceived latency: 0.0325564583238503
+  Total time: 61044.070328659
+  Latency: 164.896371594572
+  Relative latency: 0.0027012676367545
+
+It. No. 5010: 
+  Ex. time: 12.3239964193882, perceived latency: 0.0321419387283461
+  Total time: 61166.663685899
+  Latency: 165.228471805157
+  Relative latency: 0.00270128304943413
+
+It. No. 5020: 
+  Ex. time: 12.4528522364659, perceived latency: 0.0322783673467079
+  Total time: 61288.6050951864
+  Latency: 165.559075462284
+  Relative latency: 0.00270130271695948
+
+It. No. 5030: 
+  Ex. time: 12.391184241597, perceived latency: 0.0335997548343111
+  Total time: 61411.9979313841
+  Latency: 165.891254856242
+  Relative latency: 0.00270128412108646
+
+It. No. 5040: 
+  Ex. time: 12.1590325996295, perceived latency: 0.0326043486724639
+  Total time: 61533.727997389
+  Latency: 166.222158096863
+  Relative latency: 0.00270131785455801
+
+It. No. 5050: 
+  Ex. time: 12.2658656405952, perceived latency: 0.0333281114966472
+  Total time: 61657.3914463361
+  Latency: 166.553228099416
+  Relative latency: 0.00270126945354761
+
+It. No. 5060: 
+  Ex. time: 12.1518258113346, perceived latency: 0.0333129637643948
+  Total time: 61779.1735206762
+  Latency: 166.884346592647
+  Relative latency: 0.00270130429208145
+
+It. No. 5070: 
+  Ex. time: 12.3568097440906, perceived latency: 0.0321629290572651
+  Total time: 61900.9922253872
+  Latency: 167.21322703828
+  Relative latency: 0.00270130123971909
+
+It. No. 5080: 
+  Ex. time: 11.9763016043573, perceived latency: 0.0333227359553097
+  Total time: 62023.4511579258
+  Latency: 167.540460346032
+  Relative latency: 0.00270124375890396
+
+It. No. 5090: 
+  Ex. time: 12.4028580664087, perceived latency: 0.0321381015508677
+  Total time: 62146.0645606703
+  Latency: 167.871330058115
+  Relative latency: 0.00270123830438579
+
+It. No. 5100: 
+  Ex. time: 12.038603757404, perceived latency: 0.0324086510426285
+  Total time: 62267.7916339004
+  Latency: 168.201154218261
+  Relative latency: 0.00270125452990512
+
+It. No. 5110: 
+  Ex. time: 12.2898575563859, perceived latency: 0.0327538056495537
+  Total time: 62390.2280757583
+  Latency: 168.530883473154
+  Relative latency: 0.00270123845786415
+
+It. No. 5120: 
+  Ex. time: 12.217641755417, perceived latency: 0.0335019960921286
+  Total time: 62512.4231034358
+  Latency: 168.860498009805
+  Relative latency: 0.00270123104539398
+
+It. No. 5130: 
+  Ex. time: 12.2942153573972, perceived latency: 0.0336903479412478
+  Total time: 62634.6337554407
+  Latency: 169.190557534243
+  Relative latency: 0.00270123009252124
+
+It. No. 5140: 
+  Ex. time: 12.3378795097859, perceived latency: 0.0321736843509367
+  Total time: 62757.0222911065
+  Latency: 169.518468783958
+  Relative latency: 0.0027011872551509
+
+It. No. 5150: 
+  Ex. time: 12.2097746171601, perceived latency: 0.0332670201652152
+  Total time: 62878.8349543448
+  Latency: 169.848834379507
+  Relative latency: 0.00270120835576599
+
+It. No. 5160: 
+  Ex. time: 12.1665443178612, perceived latency: 0.0329894560735614
+  Total time: 63001.1612104996
+  Latency: 170.178317731007
+  Relative latency: 0.00270119335042742
+
+It. No. 5170: 
+  Ex. time: 12.4183247178141, perceived latency: 0.0335914864462237
+  Total time: 63122.8482883967
+  Latency: 170.506646798922
+  Relative latency: 0.0027011874689163
+
+It. No. 5180: 
+  Ex. time: 12.1320463881202, perceived latency: 0.0327602935930475
+  Total time: 63246.048413596
+  Latency: 170.835399526498
+  Relative latency: 0.00270112368774922
+
+It. No. 5190: 
+  Ex. time: 12.4881708523184, perceived latency: 0.0334621629370197
+  Total time: 63368.7251354869
+  Latency: 171.167378171045
+  Relative latency: 0.00270113337147114
+
+It. No. 5200: 
+  Ex. time: 12.1786571131748, perceived latency: 0.0332281362083973
+  Total time: 63490.6409913128
+  Latency: 171.496328000084
+  Relative latency: 0.0027011276831108
+
+It. No. 5210: 
+  Ex. time: 12.0723992237191, perceived latency: 0.0336233344332663
+  Total time: 63612.4487756896
+  Latency: 171.824531174576
+  Relative latency: 0.00270111486794769
+
+It. No. 5220: 
+  Ex. time: 12.3313326851177, perceived latency: 0.0327152913133678
+  Total time: 63734.6678704801
+  Latency: 172.152223488939
+  Relative latency: 0.00270107665484006
+
+It. No. 5230: 
+  Ex. time: 12.4386621127178, perceived latency: 0.0337469071422212
+  Total time: 63857.6513435497
+  Latency: 172.483983965096
+  Relative latency: 0.0027010699632084
+
+It. No. 5240: 
+  Ex. time: 12.058631960728, perceived latency: 0.0324313204436232
+  Total time: 63980.1993757019
+  Latency: 172.814721783645
+  Relative latency: 0.00270106569641726
+
+It. No. 5250: 
+  Ex. time: 12.1267164243185, perceived latency: 0.0322582359130742
+  Total time: 64102.0673132392
+  Latency: 173.143733656517
+  Relative latency: 0.00270106317804757
+
+It. No. 5260: 
+  Ex. time: 12.1278169454833, perceived latency: 0.0330429720151462
+  Total time: 64223.6507719983
+  Latency: 173.471305364623
+  Relative latency: 0.00270105020937641
+
+It. No. 5270: 
+  Ex. time: 12.0136723581245, perceived latency: 0.0333098913413558
+  Total time: 64344.7830901456
+  Latency: 173.80224537056
+  Relative latency: 0.0027011085751438
+
+It. No. 5280: 
+  Ex. time: 12.2685726498, perceived latency: 0.0329763074380979
+  Total time: 64467.0155466114
+  Latency: 174.133453917488
+  Relative latency: 0.00270112479135295
+
+It. No. 5290: 
+  Ex. time: 12.5207774383566, perceived latency: 0.0325333736590836
+  Total time: 64589.4327561065
+  Latency: 174.460901786102
+  Relative latency: 0.00270107499542343
+
+It. No. 5300: 
+  Ex. time: 12.0163965112864, perceived latency: 0.032576149149008
+  Total time: 64711.3967921032
+  Latency: 174.790819316075
+  Relative latency: 0.00270108246739939
+
+It. No. 5310: 
+  Ex. time: 12.1296512663867, perceived latency: 0.0334524508714829
+  Total time: 64833.7959140645
+  Latency: 175.1205367938
+  Relative latency: 0.0027010686992
+
+It. No. 5320: 
+  Ex. time: 11.955433770788, perceived latency: 0.0329617980493029
+  Total time: 64956.192642746
+  Latency: 175.451147044793
+  Relative latency: 0.00270106882664384
+
+It. No. 5330: 
+  Ex. time: 12.2844155847948, perceived latency: 0.0323053283845212
+  Total time: 65077.4051298853
+  Latency: 175.777689142538
+  Relative latency: 0.00270105559359213
+
+It. No. 5340: 
+  Ex. time: 12.0552524578034, perceived latency: 0.0338068797152461
+  Total time: 65199.6418729527
+  Latency: 176.108293031117
+  Relative latency: 0.0027010622753769
+
+It. No. 5350: 
+  Ex. time: 12.0341420359862, perceived latency: 0.0325208305812932
+  Total time: 65321.3356097951
+  Latency: 176.438881884325
+  Relative latency: 0.00270109115554991
+
+It. No. 5360: 
+  Ex. time: 12.2046684307217, perceived latency: 0.0322391061353014
+  Total time: 65444.2175193038
+  Latency: 176.768672474883
+  Relative latency: 0.00270105869052132
+
+It. No. 5370: 
+  Ex. time: 12.380200776399, perceived latency: 0.0325182816562092
+  Total time: 65565.7135435171
+  Latency: 177.097224643746
+  Relative latency: 0.00270106455146261
+
+It. No. 5380: 
+  Ex. time: 12.2424341296773, perceived latency: 0.0330457420809206
+  Total time: 65687.6564203769
+  Latency: 177.427895497859
+  Relative latency: 0.00270108427011593
+
+It. No. 5390: 
+  Ex. time: 12.3182680491255, perceived latency: 0.0327805507480327
+  Total time: 65809.158012557
+  Latency: 177.758447035762
+  Relative latency: 0.00270112021493792
+
+It. No. 5400: 
+  Ex. time: 11.9266590417059, perceived latency: 0.032885843011783
+  Total time: 65930.3311291937
+  Latency: 178.089524778505
+  Relative latency: 0.0027011774660972
+
+It. No. 5410: 
+  Ex. time: 12.0878137335623, perceived latency: 0.0334781001968727
+  Total time: 66052.6676764566
+  Latency: 178.420371769482
+  Relative latency: 0.00270118343506475
+
+It. No. 5420: 
+  Ex. time: 11.9162021471552, perceived latency: 0.0332475798593174
+  Total time: 66174.0063578362
+  Latency: 178.751309452288
+  Relative latency: 0.00270123148484752
+
+It. No. 5430: 
+  Ex. time: 12.0863631964015, perceived latency: 0.0321709915229784
+  Total time: 66295.9882393557
+  Latency: 179.079330581593
+  Relative latency: 0.00270120915816269
+
+It. No. 5440: 
+  Ex. time: 12.2841461915828, perceived latency: 0.0335353843174709
+  Total time: 66417.9489758231
+  Latency: 179.407526490595
+  Relative latency: 0.00270119040495968
+
+It. No. 5450: 
+  Ex. time: 12.223515334688, perceived latency: 0.033356987005886
+  Total time: 66540.5984454391
+  Latency: 179.73541617074
+  Relative latency: 0.00270113915969837
+
+It. No. 5460: 
+  Ex. time: 12.4215600022066, perceived latency: 0.0331092173614732
+  Total time: 66662.9483720231
+  Latency: 180.06384080986
+  Relative latency: 0.00270110826489379
+
+It. No. 5470: 
+  Ex. time: 12.126335939442, perceived latency: 0.0329475437166855
+  Total time: 66784.9240606943
+  Latency: 180.392789401374
+  Relative latency: 0.00270110046449155
+
+It. No. 5480: 
+  Ex. time: 12.4093879115673, perceived latency: 0.0326273865431321
+  Total time: 66907.7882814547
+  Latency: 180.720474561083
+  Relative latency: 0.0027010379389745
+
+It. No. 5490: 
+  Ex. time: 12.4735729436375, perceived latency: 0.0326806513348704
+  Total time: 67030.2421718141
+  Latency: 181.047454932952
+  Relative latency: 0.00270098166240972
+
+It. No. 5500: 
+  Ex. time: 12.1701947672114, perceived latency: 0.033010930079004
+  Total time: 67152.1543101989
+  Latency: 181.378235398734
+  Relative latency: 0.00270100397019112
+
+It. No. 5510: 
+  Ex. time: 12.1112191194664, perceived latency: 0.0332696097304699
+  Total time: 67273.2177677878
+  Latency: 181.709229099731
+  Relative latency: 0.00270106344142703
+
+It. No. 5520: 
+  Ex. time: 12.0152639715263, perceived latency: 0.0333540964602657
+  Total time: 67395.3326878738
+  Latency: 182.037768299917
+  Relative latency: 0.00270104413821925
+
+It. No. 5530: 
+  Ex. time: 12.4376749566187, perceived latency: 0.0326280724199151
+  Total time: 67517.8748254074
+  Latency: 182.367078861546
+  Relative latency: 0.00270101923872936
+
+It. No. 5540: 
+  Ex. time: 12.097301297379, perceived latency: 0.0327152749905408
+  Total time: 67639.9289998549
+  Latency: 182.697267360473
+  Relative latency: 0.00270102689434912
+
+It. No. 5550: 
+  Ex. time: 12.428546120732, perceived latency: 0.032123641902058
+  Total time: 67761.5757875562
+  Latency: 183.0277092066
+  Relative latency: 0.00270105449997832
+
+It. No. 5560: 
+  Ex. time: 12.253077255631, perceived latency: 0.0334789485398684
+  Total time: 67883.7427458648
+  Latency: 183.357182698018
+  Relative latency: 0.00270104704427463
+
+It. No. 5570: 
+  Ex. time: 12.1776116743857, perceived latency: 0.0337532893746661
+  Total time: 68005.8396187708
+  Latency: 183.687840648505
+  Relative latency: 0.00270105981601327
+
+It. No. 5580: 
+  Ex. time: 12.4893567276355, perceived latency: 0.0329354731640322
+  Total time: 68128.1781524681
+  Latency: 184.016851072723
+  Relative latency: 0.00270103877812351
+
+It. No. 5590: 
+  Ex. time: 12.1544256578319, perceived latency: 0.032699924139309
+  Total time: 68250.5375901211
+  Latency: 184.346262013051
+  Relative latency: 0.00270102285670105
+
+It. No. 5600: 
+  Ex. time: 12.3269813552958, perceived latency: 0.0321229116984159
+  Total time: 68372.5498228428
+  Latency: 184.67552224647
+  Relative latency: 0.00270101850413616
+
+It. No. 5610: 
+  Ex. time: 12.1677165005804, perceived latency: 0.032918495282627
+  Total time: 68494.6240422801
+  Latency: 185.003440300088
+  Relative latency: 0.00270099212729294
+
+It. No. 5620: 
+  Ex. time: 12.1479386428258, perceived latency: 0.0324028595738678
+  Total time: 68616.26977824
+  Latency: 185.333096585919
+  Relative latency: 0.00270100804349893
+
+It. No. 5630: 
+  Ex. time: 12.3921138194485, perceived latency: 0.0329946940509561
+  Total time: 68738.703798631
+  Latency: 185.662199275234
+  Relative latency: 0.00270098487482582
+
+It. No. 5640: 
+  Ex. time: 12.0050375302129, perceived latency: 0.0336600288017946
+  Total time: 68859.9098861071
+  Latency: 185.991902677607
+  Relative latency: 0.0027010186766906
+
+It. No. 5650: 
+  Ex. time: 11.9051336284175, perceived latency: 0.0322798443791229
+  Total time: 68981.8700862434
+  Latency: 186.319845594341
+  Relative latency: 0.00270099731076293
+
+It. No. 5660: 
+  Ex. time: 12.1420302761745, perceived latency: 0.032147056737607
+  Total time: 69103.4345466919
+  Latency: 186.648932607663
+  Relative latency: 0.00270100804441996
+
+It. No. 5670: 
+  Ex. time: 12.4542444915199, perceived latency: 0.0328048462384379
+  Total time: 69225.8961119303
+  Latency: 186.974757622268
+  Relative latency: 0.002700936616551
+
+It. No. 5680: 
+  Ex. time: 12.202740820193, perceived latency: 0.0338088657074833
+  Total time: 69348.4788442494
+  Latency: 187.305866242327
+  Relative latency: 0.00270093691114695
+
+It. No. 5690: 
+  Ex. time: 12.1004332631733, perceived latency: 0.0335249533217019
+  Total time: 69469.9947732463
+  Latency: 187.636703423604
+  Relative latency: 0.00270097477387266
+
+It. No. 5700: 
+  Ex. time: 12.4686031242314, perceived latency: 0.0336549842184888
+  Total time: 69592.0632443365
+  Latency: 187.966920755324
+  Relative latency: 0.00270098215216547
+
+It. No. 5710: 
+  Ex. time: 12.1741426448875, perceived latency: 0.0332321824879498
+  Total time: 69713.8786444298
+  Latency: 188.29537991797
+  Relative latency: 0.00270097408979862
+
+It. No. 5720: 
+  Ex. time: 12.124949935439, perceived latency: 0.032488541400061
+  Total time: 69835.8573215279
+  Latency: 188.62605769693
+  Relative latency: 0.00270099150968371
+
+It. No. 5730: 
+  Ex. time: 12.0577319385477, perceived latency: 0.0329265640132702
+  Total time: 69957.9448836111
+  Latency: 188.957628117976
+  Relative latency: 0.00270101742457336
+
+It. No. 5740: 
+  Ex. time: 12.425867430634, perceived latency: 0.0333770993337663
+  Total time: 70080.6932599021
+  Latency: 189.286653161039
+  Relative latency: 0.00270098145945914
+
+It. No. 5750: 
+  Ex. time: 12.1955050013513, perceived latency: 0.0325298779360318
+  Total time: 70202.0444897886
+  Latency: 189.614851036972
+  Relative latency: 0.00270098759110289
+
+It. No. 5760: 
+  Ex. time: 12.4944720657013, perceived latency: 0.0331638934314159
+  Total time: 70324.7529849447
+  Latency: 189.942932225694
+  Relative latency: 0.00270093991323877
+
+It. No. 5770: 
+  Ex. time: 12.4359069891684, perceived latency: 0.0322821455623627
+  Total time: 70446.7449013307
+  Latency: 190.273235360506
+  Relative latency: 0.00270095141552682
+
+It. No. 5780: 
+  Ex. time: 11.9885440193935, perceived latency: 0.0333905838444206
+  Total time: 70567.8315305379
+  Latency: 190.605333860928
+  Relative latency: 0.00270102296934609
+
+It. No. 5790: 
+  Ex. time: 12.1555779528844, perceived latency: 0.0327856959323523
+  Total time: 70689.6629449352
+  Latency: 190.935563807063
+  Relative latency: 0.00270103938613762
+
+It. No. 5800: 
+  Ex. time: 12.4727645753535, perceived latency: 0.0333019092183699
+  Total time: 70812.8201892385
+  Latency: 191.264672838893
+  Relative latency: 0.00270098934525925
+
+It. No. 5810: 
+  Ex. time: 12.3807774814143, perceived latency: 0.0335211118442678
+  Total time: 70935.2284885956
+  Latency: 191.595935718893
+  Relative latency: 0.00270099835866034
+
+It. No. 5820: 
+  Ex. time: 12.3389550652343, perceived latency: 0.03311672797015
+  Total time: 71058.2130367735
+  Latency: 191.928486865953
+  Relative latency: 0.00270100356684494
+
+It. No. 5830: 
+  Ex. time: 12.5134079970668, perceived latency: 0.0336718410555905
+  Total time: 71179.7484902817
+  Latency: 192.257323641331
+  Relative latency: 0.00270101156184305
+
+It. No. 5840: 
+  Ex. time: 12.4962911378773, perceived latency: 0.0332632363278131
+  Total time: 71301.8026226942
+  Latency: 192.586966671198
+  Relative latency: 0.00270101118887982
+
+It. No. 5850: 
+  Ex. time: 11.9353986991513, perceived latency: 0.033371928821275
+  Total time: 71423.8698505563
+  Latency: 192.918067670583
+  Relative latency: 0.00270103073488227
+
+It. No. 5860: 
+  Ex. time: 11.9764721995314, perceived latency: 0.0329932452060023
+  Total time: 71545.2881977945
+  Latency: 193.248837561902
+  Relative latency: 0.00270107008343646
+
+It. No. 5870: 
+  Ex. time: 12.3693194011072, perceived latency: 0.0329243670421567
+  Total time: 71668.5282283952
+  Latency: 193.577543056811
+  Relative latency: 0.00270101183660298
+
+It. No. 5880: 
+  Ex. time: 12.2576674421393, perceived latency: 0.0338011245654447
+  Total time: 71790.4060466427
+  Latency: 193.908866483988
+  Relative latency: 0.00270104150627041
+
+It. No. 5890: 
+  Ex. time: 12.2798251825219, perceived latency: 0.0324030820080088
+  Total time: 71911.7991339987
+  Latency: 194.237995239175
+  Relative latency: 0.00270105876335031
+
+It. No. 5900: 
+  Ex. time: 12.4090657609893, perceived latency: 0.0325245844449654
+  Total time: 72033.5264535883
+  Latency: 194.568140670817
+  Relative latency: 0.00270107754333225
+
+It. No. 5910: 
+  Ex. time: 11.9949961852057, perceived latency: 0.0327290836534565
+  Total time: 72154.6224822037
+  Latency: 194.898689345498
+  Relative latency: 0.00270112548081819
+
+It. No. 5920: 
+  Ex. time: 12.2357172751967, perceived latency: 0.0324726522372041
+  Total time: 72276.6473705501
+  Latency: 195.228282822089
+  Relative latency: 0.00270112532781421
+
+It. No. 5930: 
+  Ex. time: 12.3054559944906, perceived latency: 0.0327233196360789
+  Total time: 72399.2298237
+  Latency: 195.555998929151
+  Relative latency: 0.00270107844248276
+
+It. No. 5940: 
+  Ex. time: 12.3593022261114, perceived latency: 0.0326690083152696
+  Total time: 72521.1626183402
+  Latency: 195.885025390779
+  Relative latency: 0.00270107398059337
+
+It. No. 5950: 
+  Ex. time: 12.1597927701787, perceived latency: 0.0336961331372061
+  Total time: 72643.0783177893
+  Latency: 196.216095244929
+  Relative latency: 0.00270109829854056
+
+It. No. 5960: 
+  Ex. time: 12.0767538419106, perceived latency: 0.0321560716167374
+  Total time: 72765.0214448363
+  Latency: 196.54258896694
+  Relative latency: 0.00270105862768062
+
+It. No. 5970: 
+  Ex. time: 11.9032768761573, perceived latency: 0.0326967347152789
+  Total time: 72887.771000956
+  Latency: 196.871498325282
+  Relative latency: 0.0027010223473935
+
+It. No. 5980: 
+  Ex. time: 12.4122199315874, perceived latency: 0.0331613668327221
+  Total time: 73010.3569900408
+  Latency: 197.202485541001
+  Relative latency: 0.00270102069995221
+
+It. No. 5990: 
+  Ex. time: 12.3357993032262, perceived latency: 0.0336452047833058
+  Total time: 73132.1254742601
+  Latency: 197.533555603613
+  Relative latency: 0.00270105038411795
+
+It. No. 6000: 
+  Ex. time: 12.5079804268895, perceived latency: 0.0331193320648778
+  Total time: 73254.245624161
+  Latency: 197.862559157334
+  Relative latency: 0.00270103879265223
+
+It. No. 6010: 
+  Ex. time: 12.5070217560942, perceived latency: 0.032754340276852
+  Total time: 73375.7316497985
+  Latency: 198.193963126332
+  Relative latency: 0.00270108329648085
+
+It. No. 6020: 
+  Ex. time: 12.4522163291368, perceived latency: 0.033140034732115
+  Total time: 73498.0755558011
+  Latency: 198.522372118743
+  Relative latency: 0.00270105537617813
+
+It. No. 6030: 
+  Ex. time: 12.3582922400741, perceived latency: 0.032685160738229
+  Total time: 73619.6710090943
+  Latency: 198.853166860791
+  Relative latency: 0.00270108741502291
+
+It. No. 6040: 
+  Ex. time: 12.1435066007066, perceived latency: 0.0336789072344831
+  Total time: 73740.4627655745
+  Latency: 199.182106434598
+  Relative latency: 0.00270112362961174
+
+It. No. 6050: 
+  Ex. time: 12.1552420863825, perceived latency: 0.0322049872906493
+  Total time: 73862.954434881
+  Latency: 199.512908631977
+  Relative latency: 0.00270112277742521
+
+It. No. 6060: 
+  Ex. time: 12.3578731840639, perceived latency: 0.0325860029635049
+  Total time: 73984.7554043671
+  Latency: 199.842563772378
+  Relative latency: 0.00270113164097291
+
+It. No. 6070: 
+  Ex. time: 12.255119538934, perceived latency: 0.032911565267948
+  Total time: 74106.8925534955
+  Latency: 200.170102651604
+  Relative latency: 0.00270109966501574
+
+It. No. 6080: 
+  Ex. time: 12.1875942171185, perceived latency: 0.0329721655266493
+  Total time: 74229.2570514214
+  Latency: 200.500028453897
+  Relative latency: 0.00270109167757132
+
+It. No. 6090: 
+  Ex. time: 12.2878097815818, perceived latency: 0.0325937546649184
+  Total time: 74351.1224666224
+  Latency: 200.826956254352
+  Relative latency: 0.00270106152525818
+
+It. No. 6100: 
+  Ex. time: 12.5130253635829, perceived latency: 0.0325362385513981
+  Total time: 74474.0959429438
+  Latency: 201.157420121329
+  Relative latency: 0.00270103876488061
+
+It. No. 6110: 
+  Ex. time: 12.1122435876835, perceived latency: 0.0331522219000072
+  Total time: 74596.4667500128
+  Latency: 201.487720651145
+  Relative latency: 0.00270103571160239
+
+It. No. 6120: 
+  Ex. time: 12.0445630083513, perceived latency: 0.0326111857775549
+  Total time: 74717.7981384762
+  Latency: 201.818292192138
+  Relative latency: 0.00270107387021902
+
+It. No. 6130: 
+  Ex. time: 11.9438400637545, perceived latency: 0.0327110180296921
+  Total time: 74839.2829195769
+  Latency: 202.149377225184
+  Relative latency: 0.0027011132300989
+
+It. No. 6140: 
+  Ex. time: 12.1204090526051, perceived latency: 0.0322245056271233
+  Total time: 74962.4226244131
+  Latency: 202.475745707052
+  Relative latency: 0.0027010299109665
+
+It. No. 6150: 
+  Ex. time: 12.4020965318772, perceived latency: 0.0324111575759122
+  Total time: 75084.639877947
+  Latency: 202.804398191377
+  Relative latency: 0.00270101046660201
+
+It. No. 6160: 
+  Ex. time: 12.4770580866711, perceived latency: 0.0326436391789913
+  Total time: 75206.7325525825
+  Latency: 203.132520551262
+  Relative latency: 0.00270098851069268
+
+It. No. 6170: 
+  Ex. time: 12.430157823278, perceived latency: 0.0333570221817592
+  Total time: 75328.6178786058
+  Latency: 203.462680445189
+  Relative latency: 0.00270100110920759
+
+It. No. 6180: 
+  Ex. time: 12.0099435273181, perceived latency: 0.0332938858805214
+  Total time: 75451.0446124022
+  Latency: 203.793326477187
+  Relative latency: 0.00270100072867234
+
+It. No. 6190: 
+  Ex. time: 12.1944277130796, perceived latency: 0.0326246738827895
+  Total time: 75573.0578955319
+  Latency: 204.121737551688
+  Relative latency: 0.00270098555273302
+
+It. No. 6200: 
+  Ex. time: 12.2823852216125, perceived latency: 0.0325707508341226
+  Total time: 75695.1530887089
+  Latency: 204.450213252339
+  Relative latency: 0.00270096835675514
+
+It. No. 6210: 
+  Ex. time: 12.140774825222, perceived latency: 0.0329271701503588
+  Total time: 75817.5219917376
+  Latency: 204.779660548582
+  Relative latency: 0.00270095428034299
+
+It. No. 6220: 
+  Ex. time: 12.4382982355943, perceived latency: 0.033101250230863
+  Total time: 75940.1650868717
+  Latency: 205.109074691747
+  Relative latency: 0.00270093006062224
+
+It. No. 6230: 
+  Ex. time: 12.5099567518218, perceived latency: 0.0337173601856919
+  Total time: 76063.2646396103
+  Latency: 205.439918007844
+  Relative latency: 0.00270090850006535
+
+It. No. 6240: 
+  Ex. time: 12.3734338359516, perceived latency: 0.0324858450381406
+  Total time: 76185.0887536786
+  Latency: 205.769819047759
+  Relative latency: 0.00270091985733656
+
+It. No. 6250: 
+  Ex. time: 12.4815996459563, perceived latency: 0.0321428424873947
+  Total time: 76307.2671637191
+  Latency: 206.10077276049
+  Relative latency: 0.00270093243305772
+
+It. No. 6260: 
+  Ex. time: 12.1836522038666, perceived latency: 0.0326616229304029
+  Total time: 76429.1496690162
+  Latency: 206.430567774378
+  Relative latency: 0.00270094026517821
+
+It. No. 6270: 
+  Ex. time: 12.1777055142108, perceived latency: 0.0333921458068647
+  Total time: 76551.6359075065
+  Latency: 206.76049907099
+  Relative latency: 0.00270092855129587
+
+It. No. 6280: 
+  Ex. time: 12.3925437345423, perceived latency: 0.0323577909739453
+  Total time: 76673.5846640887
+  Latency: 207.088252840475
+  Relative latency: 0.00270090740830418
+
+It. No. 6290: 
+  Ex. time: 11.9889923844037, perceived latency: 0.0337669595155566
+  Total time: 76795.9950866919
+  Latency: 207.42021868789
+  Relative latency: 0.00270092494346537
+
+It. No. 6300: 
+  Ex. time: 11.928593775383, perceived latency: 0.0324194287532239
+  Total time: 76916.8772803222
+  Latency: 207.746664356773
+  Relative latency: 0.00270092431859453
+
+It. No. 6310: 
+  Ex. time: 11.946439660373, perceived latency: 0.0322659936487536
+  Total time: 77038.3231248674
+  Latency: 208.076941602272
+  Relative latency: 0.00270095367035717
+
+It. No. 6320: 
+  Ex. time: 12.4146786467363, perceived latency: 0.0334376540839473
+  Total time: 77160.9977163133
+  Latency: 208.408488808551
+  Relative latency: 0.00270095637662406
+
+It. No. 6330: 
+  Ex. time: 11.9698069192104, perceived latency: 0.0325776223742854
+  Total time: 77281.7247339259
+  Latency: 208.73672214157
+  Relative latency: 0.00270098426064159
+
+It. No. 6340: 
+  Ex. time: 11.9808196385924, perceived latency: 0.0337055532489779
+  Total time: 77403.6162004816
+  Latency: 209.066119539863
+  Relative latency: 0.00270098646293689
+
+It. No. 6350: 
+  Ex. time: 12.2782345359789, perceived latency: 0.0336099284160909
+  Total time: 77525.7396344235
+  Latency: 209.397213668572
+  Relative latency: 0.00270100246261429
+
+It. No. 6360: 
+  Ex. time: 12.1376156022327, perceived latency: 0.0325111906356648
+  Total time: 77647.5781213761
+  Latency: 209.725781459503
+  Relative latency: 0.00270099578806781
+
+It. No. 6370: 
+  Ex. time: 12.0631301819391, perceived latency: 0.0325797639246226
+  Total time: 77770.1022207743
+  Latency: 210.057316375311
+  Relative latency: 0.00270100347533296
+
+It. No. 6380: 
+  Ex. time: 12.1359397960171, perceived latency: 0.0336004197789224
+  Total time: 77892.70421644
+  Latency: 210.385069266602
+  Relative latency: 0.00270095988299503
+
+It. No. 6390: 
+  Ex. time: 11.9856327099564, perceived latency: 0.0322376433914612
+  Total time: 78014.6500165634
+  Latency: 210.713820208088
+  Relative latency: 0.00270095193868524
+
+It. No. 6400: 
+  Ex. time: 12.0037194381251, perceived latency: 0.0326643451770803
+  Total time: 78136.563987695
+  Latency: 211.042153699632
+  Relative latency: 0.00270093977683568
+
+It. No. 6410: 
+  Ex. time: 12.1066056455407, perceived latency: 0.0326489123991754
+  Total time: 78259.6717633268
+  Latency: 211.370777064053
+  Relative latency: 0.00270089015582996
+
+It. No. 6420: 
+  Ex. time: 11.9776664208574, perceived latency: 0.0326145144250494
+  Total time: 78381.0885305715
+  Latency: 211.702958731557
+  Relative latency: 0.0027009443566095
+
+It. No. 6430: 
+  Ex. time: 12.2506374021007, perceived latency: 0.0330647654288859
+  Total time: 78503.1961700415
+  Latency: 212.032041919575
+  Relative latency: 0.00270093514995624
+
+It. No. 6440: 
+  Ex. time: 12.2510162941095, perceived latency: 0.0335990412912259
+  Total time: 78623.8782056651
+  Latency: 212.361612168588
+  Relative latency: 0.00270098113976381
+
+It. No. 6450: 
+  Ex. time: 12.3945135521303, perceived latency: 0.0337703922011952
+  Total time: 78745.6103034829
+  Latency: 212.693521898869
+  Relative latency: 0.00270102068012624
+
+It. No. 6460: 
+  Ex. time: 12.5111207299455, perceived latency: 0.0325183150615588
+  Total time: 78867.3477459535
+  Latency: 213.022357124566
+  Relative latency: 0.00270102093214483
+
+It. No. 6470: 
+  Ex. time: 12.353370407595, perceived latency: 0.0334106463535907
+  Total time: 78989.8097122278
+  Latency: 213.353886497155
+  Relative latency: 0.00270103051614425
+
+It. No. 6480: 
+  Ex. time: 12.4341558522334, perceived latency: 0.0324553269363844
+  Total time: 79112.5210924159
+  Latency: 213.686320763325
+  Relative latency: 0.00270104299310227
+
+It. No. 6490: 
+  Ex. time: 12.4632293937422, perceived latency: 0.0330127031391992
+  Total time: 79235.6722576845
+  Latency: 214.017275920262
+  Relative latency: 0.002701021772419
+
+It. No. 6500: 
+  Ex. time: 12.121874876981, perceived latency: 0.0335645664303969
+  Total time: 79357.4253166602
+  Latency: 214.346232680165
+  Relative latency: 0.00270102302115849
+
+It. No. 6510: 
+  Ex. time: 12.149610518918, perceived latency: 0.0337047619272363
+  Total time: 79479.8805350873
+  Latency: 214.676970802255
+  Relative latency: 0.00270102281680561
+
+It. No. 6520: 
+  Ex. time: 12.4306298296763, perceived latency: 0.0337764969219635
+  Total time: 79603.11302724
+  Latency: 215.007481914923
+  Relative latency: 0.0027009933875494
+
+It. No. 6530: 
+  Ex. time: 12.4303785431983, perceived latency: 0.0334783867532565
+  Total time: 79725.6396031785
+  Latency: 215.335507768392
+  Relative latency: 0.00270095679181992
+
+It. No. 6540: 
+  Ex. time: 12.1648470690156, perceived latency: 0.0331698175863228
+  Total time: 79848.0675602605
+  Latency: 215.666310196019
+  Relative latency: 0.00270095841747527
+
+It. No. 6550: 
+  Ex. time: 12.3235829860875, perceived latency: 0.03324212509787
+  Total time: 79970.8292033826
+  Latency: 215.995876487695
+  Relative latency: 0.00270093331079977
+
+It. No. 6560: 
+  Ex. time: 12.1218349062929, perceived latency: 0.0337950839637702
+  Total time: 80092.7231454087
+  Latency: 216.325780784111
+  Relative latency: 0.00270094176210453
+
+It. No. 6570: 
+  Ex. time: 12.3761179898512, perceived latency: 0.0330515995621097
+  Total time: 80214.5825906273
+  Latency: 216.656564011868
+  Relative latency: 0.00270096230653681
+
+It. No. 6580: 
+  Ex. time: 12.1973329166695, perceived latency: 0.0327512627429905
+  Total time: 80337.3519578926
+  Latency: 216.98571677358
+  Relative latency: 0.00270093190135654
+
+It. No. 6590: 
+  Ex. time: 11.988200368454, perceived latency: 0.0326493179538018
+  Total time: 80459.0577417997
+  Latency: 217.31683059593
+  Relative latency: 0.00270096166541397
+
+It. No. 6600: 
+  Ex. time: 12.3867673132065, perceived latency: 0.0325939619232546
+  Total time: 80581.9583026806
+  Latency: 217.646867346843
+  Relative latency: 0.00270093792619586
+
+It. No. 6610: 
+  Ex. time: 11.9991689808818, perceived latency: 0.0331928983030343
+  Total time: 80703.3646744198
+  Latency: 217.975847252564
+  Relative latency: 0.00270095117015183
+
+It. No. 6620: 
+  Ex. time: 12.004705532604, perceived latency: 0.0334356825849698
+  Total time: 80826.0460769149
+  Latency: 218.306208380268
+  Relative latency: 0.00270093885543437
+
+It. No. 6630: 
+  Ex. time: 11.9453679198764, perceived latency: 0.0336585783075536
+  Total time: 80948.854254321
+  Latency: 218.637400691405
+  Relative latency: 0.0027009326160998
+
+It. No. 6640: 
+  Ex. time: 12.5194871277135, perceived latency: 0.0331446734710867
+  Total time: 81071.1877675058
+  Latency: 218.965952261581
+  Relative latency: 0.00270090963622646
+
+It. No. 6650: 
+  Ex. time: 12.479243172332, perceived latency: 0.0322586517735812
+  Total time: 81193.6945185988
+  Latency: 219.295751971101
+  Relative latency: 0.00270089633525504
+
+It. No. 6660: 
+  Ex. time: 12.3935181963923, perceived latency: 0.033673209412963
+  Total time: 81316.5200684784
+  Latency: 219.624901690966
+  Relative latency: 0.00270086449230753
+
+It. No. 6670: 
+  Ex. time: 12.5149326382958, perceived latency: 0.0327088236045428
+  Total time: 81438.1684302696
+  Latency: 219.954633787423
+  Relative latency: 0.00270087893707674
+
+It. No. 6680: 
+  Ex. time: 11.973580062822, perceived latency: 0.0331421172253714
+  Total time: 81560.5175870515
+  Latency: 220.283297525253
+  Relative latency: 0.00270085703281786
+
+It. No. 6690: 
+  Ex. time: 11.9175170570064, perceived latency: 0.0331863531375378
+  Total time: 81682.4029029246
+  Latency: 220.612267079306
+  Relative latency: 0.00270085427508166
+
+It. No. 6700: 
+  Ex. time: 12.2338116898624, perceived latency: 0.0336112288842327
+  Total time: 81804.5423212145
+  Latency: 220.940475743065
+  Relative latency: 0.00270083383481957
+
+It. No. 6710: 
+  Ex. time: 12.4465201273384, perceived latency: 0.0335397670697364
+  Total time: 81926.9743216755
+  Latency: 221.269469115495
+  Relative latency: 0.00270081338835619
+
+It. No. 6720: 
+  Ex. time: 11.984352383967, perceived latency: 0.0338071238325946
+  Total time: 82048.9678947445
+  Latency: 221.599898227072
+  Relative latency: 0.00270082493312223
+
+It. No. 6730: 
+  Ex. time: 12.4327264984935, perceived latency: 0.0325351851827052
+  Total time: 82171.5571196222
+  Latency: 221.928090568569
+  Relative latency: 0.0027007896448341
+
+It. No. 6740: 
+  Ex. time: 12.2651086222505, perceived latency: 0.0336759898893222
+  Total time: 82293.3974962399
+  Latency: 222.261938049768
+  Relative latency: 0.00270084775707459
+
+It. No. 6750: 
+  Ex. time: 12.2271471373096, perceived latency: 0.033303925721241
+  Total time: 82414.6098883303
+  Latency: 222.590782057131
+  Relative latency: 0.00270086556690295
+
+It. No. 6760: 
+  Ex. time: 12.0525226781415, perceived latency: 0.0329712601915277
+  Total time: 82536.5000362227
+  Latency: 222.919798894344
+  Relative latency: 0.00270086323985765
+
+It. No. 6770: 
+  Ex. time: 11.9898782238504, perceived latency: 0.0324869948755757
+  Total time: 82658.5058743043
+  Latency: 223.251389498276
+  Relative latency: 0.00270088827685521
+
+It. No. 6780: 
+  Ex. time: 12.4483859921551, perceived latency: 0.032658836470949
+  Total time: 82780.7489127308
+  Latency: 223.579415398128
+  Relative latency: 0.00270086243884831
+
+It. No. 6790: 
+  Ex. time: 12.4823135454904, perceived latency: 0.0332837902017834
+  Total time: 82902.7065980421
+  Latency: 223.909709616199
+  Relative latency: 0.00270087333459252
+
+It. No. 6800: 
+  Ex. time: 12.154918535667, perceived latency: 0.0337976308994752
+  Total time: 83025.3267103302
+  Latency: 224.240934608038
+  Relative latency: 0.0027008738597368
+
+It. No. 6810: 
+  Ex. time: 12.2828292832847, perceived latency: 0.0331366719731083
+  Total time: 83146.3532182699
+  Latency: 224.572475332328
+  Relative latency: 0.00270092994629357
+
+It. No. 6820: 
+  Ex. time: 11.9074837684753, perceived latency: 0.0327830144856572
+  Total time: 83268.5150587201
+  Latency: 224.905315567774
+  Relative latency: 0.00270096464923355
+
+It. No. 6830: 
+  Ex. time: 12.4534914992265, perceived latency: 0.0325939982500863
+  Total time: 83390.6807310173
+  Latency: 225.234269752746
+  Relative latency: 0.00270095252584945
+
+It. No. 6840: 
+  Ex. time: 12.1177132235067, perceived latency: 0.0335816315909831
+  Total time: 83512.7003513004
+  Latency: 225.563215927142
+  Relative latency: 0.00270094506558043
+
+It. No. 6850: 
+  Ex. time: 12.5014463906489, perceived latency: 0.0333559068006516
+  Total time: 83634.6483132533
+  Latency: 225.894667186041
+  Relative latency: 0.00270096989396014
+
+It. No. 6860: 
+  Ex. time: 12.0285733738229, perceived latency: 0.0332628535727137
+  Total time: 83755.4911761695
+  Latency: 226.224214850686
+  Relative latency: 0.00270100755990853
+
+It. No. 6870: 
+  Ex. time: 11.8986633459579, perceived latency: 0.0323999713278028
+  Total time: 83876.6471243161
+  Latency: 226.551862058724
+  Relative latency: 0.00270101237741353
+
+It. No. 6880: 
+  Ex. time: 12.1971463065121, perceived latency: 0.0335836540100326
+  Total time: 83998.2037224757
+  Latency: 226.881563046419
+  Relative latency: 0.00270102874813871
+
+It. No. 6890: 
+  Ex. time: 12.2070987538703, perceived latency: 0.0332047601425146
+  Total time: 84120.45068447
+  Latency: 227.212638123897
+  Relative latency: 0.00270103923927079
+
+It. No. 6900: 
+  Ex. time: 12.3997878775249, perceived latency: 0.03359502921923
+  Total time: 84241.9990144097
+  Latency: 227.543356951559
+  Relative latency: 0.00270106787129585
+
+It. No. 6910: 
+  Ex. time: 12.3772249390524, perceived latency: 0.0332057879137965
+  Total time: 84364.3775938989
+  Latency: 227.873205816174
+  Relative latency: 0.00270105952672439
+
+It. No. 6920: 
+  Ex. time: 11.9220892085079, perceived latency: 0.0328242200650684
+  Total time: 84486.5885520926
+  Latency: 228.202156767527
+  Relative latency: 0.00270104593733031
+
+It. No. 6930: 
+  Ex. time: 12.148758785152, perceived latency: 0.0337618597539472
+  Total time: 84608.3262133435
+  Latency: 228.5322532586
+  Relative latency: 0.00270106103603027
+
+It. No. 6940: 
+  Ex. time: 12.1153288386874, perceived latency: 0.0335855261235094
+  Total time: 84730.3444531634
+  Latency: 228.863388992875
+  Relative latency: 0.00270107941222149
+
+It. No. 6950: 
+  Ex. time: 12.1775947881798, perceived latency: 0.0324698373911149
+  Total time: 84852.3776340318
+  Latency: 229.191716993901
+  Relative latency: 0.00270106417032183
+
+It. No. 6960: 
+  Ex. time: 12.1192940244767, perceived latency: 0.0329443762230591
+  Total time: 84974.9035063122
+  Latency: 229.520210122623
+  Relative latency: 0.00270103525455105
+
+It. No. 6970: 
+  Ex. time: 12.0519194999732, perceived latency: 0.0337543749583877
+  Total time: 85097.3411861938
+  Latency: 229.848312767114
+  Relative latency: 0.00270100463261482
+
+It. No. 6980: 
+  Ex. time: 12.3151325016385, perceived latency: 0.0325906690916671
+  Total time: 85219.3537679853
+  Latency: 230.177888051681
+  Relative latency: 0.00270100485246994
+
+It. No. 6990: 
+  Ex. time: 11.9955885955531, perceived latency: 0.0331225980378809
+  Total time: 85341.5610035881
+  Latency: 230.507699828481
+  Relative latency: 0.00270100168215565
+
+It. No. 7000: 
+  Ex. time: 12.2451571083799, perceived latency: 0.0327602456865658
+  Total time: 85463.9276857778
+  Latency: 230.835377243397
+  Relative latency: 0.00270096850793122
+
+It. No. 7010: 
+  Ex. time: 12.3791101063471, perceived latency: 0.0331790796640955
+  Total time: 85586.4695008503
+  Latency: 231.164516156663
+  Relative latency: 0.00270094697800762
+
+It. No. 7020: 
+  Ex. time: 12.1854293573499, perceived latency: 0.0329798297048345
+  Total time: 85708.1750471573
+  Latency: 231.495814131549
+  Relative latency: 0.00270097705387121
+
+It. No. 7030: 
+  Ex. time: 11.9132927734766, perceived latency: 0.0335115522602608
+  Total time: 85829.6941576558
+  Latency: 231.823802671799
+  Relative latency: 0.00270097435330452
+
+It. No. 7040: 
+  Ex. time: 11.9984308270714, perceived latency: 0.0337610590292999
+  Total time: 85951.855098294
+  Latency: 232.152460051242
+  Relative latency: 0.00270095927290637
+
+It. No. 7050: 
+  Ex. time: 12.3706682539409, perceived latency: 0.033772668213713
+  Total time: 86074.3339917771
+  Latency: 232.481676271425
+  Relative latency: 0.00270094075074266
+
+It. No. 7060: 
+  Ex. time: 11.938614048059, perceived latency: 0.0325329272375588
+  Total time: 86195.6857780886
+  Latency: 232.808416169193
+  Relative latency: 0.00270092886978776
+
+It. No. 7070: 
+  Ex. time: 12.1355433725495, perceived latency: 0.0324768444562448
+  Total time: 86318.3279306529
+  Latency: 233.137014850486
+  Relative latency: 0.0027008981804859
+
+It. No. 7080: 
+  Ex. time: 12.4791492744837, perceived latency: 0.0323526852819869
+  Total time: 86440.1961656902
+  Latency: 233.464640591724
+  Relative latency: 0.00270088050406797
+
+It. No. 7090: 
+  Ex. time: 12.2140590424545, perceived latency: 0.0327458150746593
+  Total time: 86562.2747344595
+  Latency: 233.793477561401
+  Relative latency: 0.00270087030728561
+
+It. No. 7100: 
+  Ex. time: 11.9096024619038, perceived latency: 0.0323724676768342
+  Total time: 86684.5851449404
+  Latency: 234.123984265575
+  Relative latency: 0.00270087217784004
+
+It. No. 7110: 
+  Ex. time: 12.1620346273025, perceived latency: 0.0323217063795973
+  Total time: 86806.8637207442
+  Latency: 234.453377315421
+  Relative latency: 0.00270086220451015
+
+It. No. 7120: 
+  Ex. time: 12.5085847404463, perceived latency: 0.0328489724757551
+  Total time: 86929.1224212608
+  Latency: 234.783221450741
+  Relative latency: 0.0027008580658732
+
+It. No. 7130: 
+  Ex. time: 12.4286140918366, perceived latency: 0.0336932133633811
+  Total time: 87051.4730884633
+  Latency: 235.115607117128
+  Relative latency: 0.00270088028123544
+
+It. No. 7140: 
+  Ex. time: 12.4396301453652, perceived latency: 0.0338044457025808
+  Total time: 87173.6523979953
+  Latency: 235.446391895161
+  Relative latency: 0.00270088937905481
+
+It. No. 7150: 
+  Ex. time: 11.9500131147006, perceived latency: 0.032411550023625
+  Total time: 87295.0636874858
+  Latency: 235.774726687608
+  Relative latency: 0.00270089414828398
+
+It. No. 7160: 
+  Ex. time: 12.114248325901, perceived latency: 0.0323252641489156
+  Total time: 87416.8672809935
+  Latency: 236.103874865786
+  Relative latency: 0.00270089608801528
+
+It. No. 7170: 
+  Ex. time: 12.476374974416, perceived latency: 0.0336870677292666
+  Total time: 87538.9546328822
+  Latency: 236.435839584058
+  Relative latency: 0.00270092144206672
+
+It. No. 7180: 
+  Ex. time: 12.3625255014533, perceived latency: 0.0325625439065881
+  Total time: 87661.0648067789
+  Latency: 236.7664047229
+  Relative latency: 0.00270093005651684
+
+It. No. 7190: 
+  Ex. time: 12.0216064912969, perceived latency: 0.0321250541312596
+  Total time: 87783.8787381807
+  Latency: 237.09334556916
+  Relative latency: 0.00270087570721614
+
+It. No. 7200: 
+  Ex. time: 11.9048809508408, perceived latency: 0.0321722397846828
+  Total time: 87905.6887469677
+  Latency: 237.42244335391
+  Relative latency: 0.00270087689133885
+
+It. No. 7210: 
+  Ex. time: 12.3013106708994, perceived latency: 0.0336460352352739
+  Total time: 88027.4570384646
+  Latency: 237.752357773765
+  Relative latency: 0.00270088862921345
+
+It. No. 7220: 
+  Ex. time: 12.3885389122086, perceived latency: 0.0337983018972464
+  Total time: 88150.077471392
+  Latency: 238.082699238754
+  Relative latency: 0.00270087906974354
+
+It. No. 7230: 
+  Ex. time: 12.3876565967231, perceived latency: 0.0334976761985707
+  Total time: 88272.7166286256
+  Latency: 238.411609248045
+  Relative latency: 0.00270085274763971
+
+It. No. 7240: 
+  Ex. time: 12.4921823528588, perceived latency: 0.0333805807477749
+  Total time: 88394.2275627298
+  Latency: 238.743130125873
+  Relative latency: 0.00270089050731788
+
+It. No. 7250: 
+  Ex. time: 12.0859114972448, perceived latency: 0.0324030001301453
+  Total time: 88515.4601763521
+  Latency: 239.07198795962
+  Relative latency: 0.00270090657025687
+
+It. No. 7260: 
+  Ex. time: 12.1097190179643, perceived latency: 0.0332928353530112
+  Total time: 88638.0572531348
+  Latency: 239.400641303318
+  Relative latency: 0.00270087870517775
+
+It. No. 7270: 
+  Ex. time: 11.8994342306785, perceived latency: 0.0336233130334686
+  Total time: 88759.9234720759
+  Latency: 239.73302896053
+  Relative latency: 0.00270091522821052
+
+It. No. 7280: 
+  Ex. time: 12.2321074330401, perceived latency: 0.032708279195672
+  Total time: 88882.0583543653
+  Latency: 240.063723165288
+  Relative latency: 0.00270092443413241
+
+It. No. 7290: 
+  Ex. time: 11.9250458165614, perceived latency: 0.0334917368080281
+  Total time: 89004.4247349511
+  Latency: 240.39586585273
+  Relative latency: 0.00270094286400493
+
+It. No. 7300: 
+  Ex. time: 12.1430065419916, perceived latency: 0.0321595204315397
+  Total time: 89126.3932887498
+  Latency: 240.723546230297
+  Relative latency: 0.00270092323213849
+
+It. No. 7310: 
+  Ex. time: 11.9293332829706, perceived latency: 0.0326164937193695
+  Total time: 89248.8270716828
+  Latency: 241.055641432955
+  Relative latency: 0.00270093904135395
+
+It. No. 7320: 
+  Ex. time: 12.0832122672294, perceived latency: 0.0325907698288749
+  Total time: 89371.2188830964
+  Latency: 241.383580921794
+  Relative latency: 0.00270090957624221
+
+It. No. 7330: 
+  Ex. time: 12.0296611765378, perceived latency: 0.0323411254943184
+  Total time: 89494.0243146807
+  Latency: 241.70937920315
+  Relative latency: 0.00270084378319212
+
+It. No. 7340: 
+  Ex. time: 12.3651478186698, perceived latency: 0.0327554792848856
+  Total time: 89615.7040441345
+  Latency: 242.039080233926
+  Relative latency: 0.00270085564595603
+
+It. No. 7350: 
+  Ex. time: 12.3566582919038, perceived latency: 0.0330135050518056
+  Total time: 89737.86291232
+  Latency: 242.368950350793
+  Relative latency: 0.00270085493998898
+
+It. No. 7360: 
+  Ex. time: 12.2930708307459, perceived latency: 0.0322863229441158
+  Total time: 89859.6927552076
+  Latency: 242.699364691817
+  Relative latency: 0.00270087018161713
+
+It. No. 7370: 
+  Ex. time: 12.2720621177479, perceived latency: 0.0334235227228197
+  Total time: 89981.5300172124
+  Latency: 243.031730274485
+  Relative latency: 0.00270090684419342
+
+It. No. 7380: 
+  Ex. time: 12.1525515149431, perceived latency: 0.0331500627302433
+  Total time: 90104.168212758
+  Latency: 243.362283123592
+  Relative latency: 0.00270089928080745
+
+It. No. 7390: 
+  Ex. time: 12.0910541680231, perceived latency: 0.0325331258928346
+  Total time: 90225.7093270092
+  Latency: 243.691480181821
+  Relative latency: 0.00270090955227183
+
+It. No. 7400: 
+  Ex. time: 12.0587768548365, perceived latency: 0.0334960495226596
+  Total time: 90346.8150800213
+  Latency: 244.024914635753
+  Relative latency: 0.00270097971267296
+
+It. No. 7410: 
+  Ex. time: 12.0747453432656, perceived latency: 0.0334387595291815
+  Total time: 90468.715781823
+  Latency: 244.354114912406
+  Relative latency: 0.00270097914843511
+
+It. No. 7420: 
+  Ex. time: 12.3494278243163, perceived latency: 0.0329423462629486
+  Total time: 90590.5318237966
+  Latency: 244.684758086208
+  Relative latency: 0.0027009970375506
+
+It. No. 7430: 
+  Ex. time: 12.4822900227729, perceived latency: 0.0329518648178837
+  Total time: 90712.7239350439
+  Latency: 245.014430869144
+  Relative latency: 0.00270099298357074
+
+It. No. 7440: 
+  Ex. time: 12.2127628732187, perceived latency: 0.0323869156428643
+  Total time: 90835.1684550303
+  Latency: 245.345850241974
+  Relative latency: 0.00270100066323361
+
+It. No. 7450: 
+  Ex. time: 12.4157427310877, perceived latency: 0.0321656943759263
+  Total time: 90957.9928079218
+  Latency: 245.676034190812
+  Relative latency: 0.00270098346067961
+
+It. No. 7460: 
+  Ex. time: 12.1987674438037, perceived latency: 0.0325796185795077
+  Total time: 91079.5442694299
+  Latency: 246.007868469951
+  Relative latency: 0.00270102217180858
+
+It. No. 7470: 
+  Ex. time: 12.3753851601787, perceived latency: 0.0322825259911404
+  Total time: 91201.9720250179
+  Latency: 246.337894815681
+  Relative latency: 0.00270101500379957
+
+It. No. 7480: 
+  Ex. time: 12.346027533345, perceived latency: 0.0333271032247432
+  Total time: 91323.8992175976
+  Latency: 246.667938319053
+  Relative latency: 0.00270102284760441
+
+It. No. 7490: 
+  Ex. time: 12.1289957801675, perceived latency: 0.0328196199328024
+  Total time: 91445.8097819749
+  Latency: 246.997090863037
+  Relative latency: 0.00270102141860768
+
+It. No. 7500: 
+  Ex. time: 12.2990224410013, perceived latency: 0.0328479448296458
+  Total time: 91568.0886319012
+  Latency: 247.325904615823
+  Relative latency: 0.0027010054300692
+
+It. No. 7510: 
+  Ex. time: 12.3793491534311, perceived latency: 0.0337605502292894
+  Total time: 91690.4496928926
+  Latency: 247.657405433907
+  Relative latency: 0.00270101636826309
+
+It. No. 7520: 
+  Ex. time: 12.503723556487, perceived latency: 0.0336951912036517
+  Total time: 91812.3945661941
+  Latency: 247.990261944843
+  Relative latency: 0.00270105428702275
+
+It. No. 7530: 
+  Ex. time: 12.0861413530474, perceived latency: 0.0321974537226339
+  Total time: 91934.0342105612
+  Latency: 248.320577531225
+  Relative latency: 0.00270107343448546
+
+It. No. 7540: 
+  Ex. time: 12.2622710774897, perceived latency: 0.0331338584259805
+  Total time: 92056.0280008746
+  Latency: 248.653593437857
+  Relative latency: 0.00270111147349846
+
+It. No. 7550: 
+  Ex. time: 11.9487043675536, perceived latency: 0.0329923425798055
+  Total time: 92177.8480743698
+  Latency: 248.986791366036
+  Relative latency: 0.00270115647704371
+
+It. No. 7560: 
+  Ex. time: 12.0761932644261, perceived latency: 0.0330140805215977
+  Total time: 92299.2425521836
+  Latency: 249.316489738409
+  Relative latency: 0.0027011759018223
+
+It. No. 7570: 
+  Ex. time: 12.2452220068797, perceived latency: 0.0326698307609124
+  Total time: 92421.8698222767
+  Latency: 249.643855856635
+  Relative latency: 0.00270113401012865
+
+It. No. 7580: 
+  Ex. time: 12.3203910770904, perceived latency: 0.0326122307801495
+  Total time: 92544.3739414614
+  Latency: 249.974056662845
+  Relative latency: 0.00270112645443974
+
+It. No. 7590: 
+  Ex. time: 11.9572609670853, perceived latency: 0.0333479730352413
+  Total time: 92666.3662891084
+  Latency: 250.303891243755
+  Relative latency: 0.00270112988420022
+
+It. No. 7600: 
+  Ex. time: 11.9088832335666, perceived latency: 0.0323495712150344
+  Total time: 92787.8901079415
+  Latency: 250.630013774711
+  Relative latency: 0.00270110693845016
+
+It. No. 7610: 
+  Ex. time: 12.1299628739472, perceived latency: 0.0332697937484195
+  Total time: 92910.9000567104
+  Latency: 250.96173431868
+  Relative latency: 0.00270110109971489
+
+It. No. 7620: 
+  Ex. time: 11.9577294343605, perceived latency: 0.0329097274234333
+  Total time: 93032.5577877753
+  Latency: 251.292327528754
+  Relative latency: 0.00270112241890628
+
+It. No. 7630: 
+  Ex. time: 11.9141952119291, perceived latency: 0.0334080656779551
+  Total time: 93154.8142174757
+  Latency: 251.620952480683
+  Relative latency: 0.00270110519348209
+
+It. No. 7640: 
+  Ex. time: 12.3764517963841, perceived latency: 0.0328318025094567
+  Total time: 93276.333172521
+  Latency: 251.952806126438
+  Relative latency: 0.00270114398322707
+
+It. No. 7650: 
+  Ex. time: 12.3599221114594, perceived latency: 0.0328783426058571
+  Total time: 93398.8125808054
+  Latency: 252.284477948305
+  Relative latency: 0.00270115294806384
+
+It. No. 7660: 
+  Ex. time: 12.4399260936623, perceived latency: 0.0337002968468006
+  Total time: 93521.3698289858
+  Latency: 252.614172176574
+  Relative latency: 0.00270113849528195
+
+It. No. 7670: 
+  Ex. time: 11.9651329046471, perceived latency: 0.0325580792449691
+  Total time: 93642.3504830083
+  Latency: 252.943706621088
+  Relative latency: 0.00270116785104604
+
+It. No. 7680: 
+  Ex. time: 12.4824089484428, perceived latency: 0.0334741267378805
+  Total time: 93764.7125339264
+  Latency: 253.274983194981
+  Relative latency: 0.00270117591522867
+
+It. No. 7690: 
+  Ex. time: 12.460814155165, perceived latency: 0.0330830697930861
+  Total time: 93887.5170371685
+  Latency: 253.604695065069
+  Relative latency: 0.00270115456312122
+
+It. No. 7700: 
+  Ex. time: 12.3632647559548, perceived latency: 0.0328441276648318
+  Total time: 94009.5174908332
+  Latency: 253.936230314672
+  Relative latency: 0.00270117576488395
+
+It. No. 7710: 
+  Ex. time: 11.9381148757284, perceived latency: 0.0333120005829817
+  Total time: 94131.4957478505
+  Latency: 254.262723786008
+  Relative latency: 0.00270114398763088
+
+It. No. 7720: 
+  Ex. time: 12.26183031585, perceived latency: 0.0328693735367636
+  Total time: 94253.272784943
+  Latency: 254.591645902129
+  Relative latency: 0.00270114382641151
+
+It. No. 7730: 
+  Ex. time: 12.2620038987809, perceived latency: 0.0330816317822572
+  Total time: 94375.6570584335
+  Latency: 254.922854031326
+  Relative latency: 0.00270115050826601
+
+It. No. 7740: 
+  Ex. time: 12.1566396276697, perceived latency: 0.0325186120489958
+  Total time: 94498.1710322884
+  Latency: 255.251101369479
+  Relative latency: 0.00270112213369996
+
+It. No. 7750: 
+  Ex. time: 11.9115008923083, perceived latency: 0.0322486662593614
+  Total time: 94620.4819616511
+  Latency: 255.578964689225
+  Relative latency: 0.00270109557033126
+
+It. No. 7760: 
+  Ex. time: 12.3346375378563, perceived latency: 0.0333551199237195
+  Total time: 94743.1402067569
+  Latency: 255.909324948128
+  Relative latency: 0.00270108552861622
+
+It. No. 7770: 
+  Ex. time: 12.0734343900711, perceived latency: 0.0332292609097494
+  Total time: 94865.3410706706
+  Latency: 256.238565132808
+  Relative latency: 0.0027010767287699
+
+It. No. 7780: 
+  Ex. time: 12.0681855905061, perceived latency: 0.0333851564320139
+  Total time: 94987.6203392649
+  Latency: 256.567555878024
+  Relative latency: 0.00270106309602924
+
+It. No. 7790: 
+  Ex. time: 11.9813203632619, perceived latency: 0.0329863943712834
+  Total time: 95108.7783630627
+  Latency: 256.895431507311
+  Relative latency: 0.00270106961658843
+
+It. No. 7800: 
+  Ex. time: 12.3343417426354, perceived latency: 0.032953498681381
+  Total time: 95231.0714884474
+  Latency: 257.227313991962
+  Relative latency: 0.00270108600030995
+
+It. No. 7810: 
+  Ex. time: 12.2483518928779, perceived latency: 0.0327611319316791
+  Total time: 95353.7801303809
+  Latency: 257.559437837827
+  Relative latency: 0.00270109310281832
+
+It. No. 7820: 
+  Ex. time: 11.9515359000623, perceived latency: 0.0321626117044759
+  Total time: 95475.6474212975
+  Latency: 257.88763222211
+  Relative latency: 0.00270108283303019
+
+It. No. 7830: 
+  Ex. time: 12.154494643905, perceived latency: 0.0323757982050673
+  Total time: 95597.6532302777
+  Latency: 258.215742337353
+  Relative latency: 0.00270106779415764
+
+It. No. 7840: 
+  Ex. time: 11.9187993796933, perceived latency: 0.0333541003728948
+  Total time: 95719.3454953855
+  Latency: 258.545021722453
+  Relative latency: 0.00270107385695525
+
+It. No. 7850: 
+  Ex. time: 12.4669302252983, perceived latency: 0.0333328139492794
+  Total time: 95841.4879139315
+  Latency: 258.875000220551
+  Relative latency: 0.00270107451225119
+
+It. No. 7860: 
+  Ex. time: 12.195658955533, perceived latency: 0.0330844633833732
+  Total time: 95963.38756706
+  Latency: 259.205738901703
+  Relative latency: 0.00270108992057588
+
+It. No. 7870: 
+  Ex. time: 12.0280840289877, perceived latency: 0.0327764724620726
+  Total time: 96085.0427595334
+  Latency: 259.535188792413
+  Relative latency: 0.00270109874896905
+
+It. No. 7880: 
+  Ex. time: 12.2193555703205, perceived latency: 0.0329382878070111
+  Total time: 96207.2747519015
+  Latency: 259.865435042048
+  Relative latency: 0.00270109963838168
+
+It. No. 7890: 
+  Ex. time: 12.2090697809064, perceived latency: 0.0333873810166839
+  Total time: 96329.3899922617
+  Latency: 260.196238569777
+  Relative latency: 0.0027011095844236
+
+It. No. 7900: 
+  Ex. time: 12.4305098543407, perceived latency: 0.0327509125658417
+  Total time: 96451.6744200159
+  Latency: 260.525943484303
+  Relative latency: 0.00270110337690766
+
+It. No. 7910: 
+  Ex. time: 12.1756144809323, perceived latency: 0.0334566947513972
+  Total time: 96573.6101125578
+  Latency: 260.85748385057
+  Relative latency: 0.00270112594472276
+
+It. No. 7920: 
+  Ex. time: 12.1250935349599, perceived latency: 0.0321797867587666
+  Total time: 96696.1244933325
+  Latency: 261.185785809288
+  Relative latency: 0.00270109879974866
+
+It. No. 7930: 
+  Ex. time: 12.4758734362555, perceived latency: 0.0331959061653326
+  Total time: 96818.1670984517
+  Latency: 261.514425362319
+  Relative latency: 0.00270108837214809
+
+It. No. 7940: 
+  Ex. time: 12.2130486257627, perceived latency: 0.0331340846184496
+  Total time: 96941.033365483
+  Latency: 261.844594901468
+  Relative latency: 0.00270107080367374
+
+It. No. 7950: 
+  Ex. time: 12.1140966684462, perceived latency: 0.0323235636030408
+  Total time: 97063.4436302156
+  Latency: 262.172704581246
+  Relative latency: 0.00270104474739275
+
+It. No. 7960: 
+  Ex. time: 12.15331271329, perceived latency: 0.032616783110638
+  Total time: 97185.4438209559
+  Latency: 262.498782371458
+  Relative latency: 0.0027010092463544
+
+It. No. 7970: 
+  Ex. time: 12.279688291823, perceived latency: 0.0329825856103557
+  Total time: 97308.0294820712
+  Latency: 262.829598132562
+  Relative latency: 0.0027010062739066
+
+It. No. 7980: 
+  Ex. time: 12.1339734210412, perceived latency: 0.032642925465073
+  Total time: 97430.2629381118
+  Latency: 263.156236674141
+  Relative latency: 0.00270097019897503
+
+It. No. 7990: 
+  Ex. time: 12.5135167094891, perceived latency: 0.0321735388759256
+  Total time: 97552.8828009622
+  Latency: 263.484341578543
+  Relative latency: 0.00270093854751716
+
+It. No. 8000: 
+  Ex. time: 12.1590620961113, perceived latency: 0.0328771898776426
+  Total time: 97675.7341857951
+  Latency: 263.812780907515
+  Relative latency: 0.00270090399736029
+
+It. No. 8010: 
+  Ex. time: 12.3310189441117, perceived latency: 0.0330169892101653
+  Total time: 97797.5381471802
+  Latency: 264.142417750099
+  Relative latency: 0.00270091070546764
+
+It. No. 8020: 
+  Ex. time: 12.1851592885615, perceived latency: 0.033216844814484
+  Total time: 97919.3627215377
+  Latency: 264.471642390467
+  Relative latency: 0.00270091261870821
+
+It. No. 8030: 
+  Ex. time: 12.0280682291858, perceived latency: 0.0328131372827729
+  Total time: 98041.4562687449
+  Latency: 264.802409645592
+  Relative latency: 0.00270092285165301
+
+It. No. 8040: 
+  Ex. time: 12.5118168166521, perceived latency: 0.0321763861866015
+  Total time: 98162.9892837712
+  Latency: 265.132685369882
+  Relative latency: 0.00270094347476962
+
+It. No. 8050: 
+  Ex. time: 12.4385991727194, perceived latency: 0.0323553660359027
+  Total time: 98285.2600248849
+  Latency: 265.460411703288
+  Relative latency: 0.00270091783484193
+
+It. No. 8060: 
+  Ex. time: 12.4825760951733, perceived latency: 0.0326374152954453
+  Total time: 98407.5610293367
+  Latency: 265.789403056446
+  Relative latency: 0.00270090428292609
+
+It. No. 8070: 
+  Ex. time: 12.1000700283868, perceived latency: 0.0336627709241551
+  Total time: 98530.2705144101
+  Latency: 266.117545245824
+  Relative latency: 0.00270087094916587
+
+It. No. 8080: 
+  Ex. time: 12.0910883559277, perceived latency: 0.0327857398396076
+  Total time: 98651.2926697916
+  Latency: 266.445207280367
+  Relative latency: 0.00270087902621023
+
+It. No. 8090: 
+  Ex. time: 12.4365050779158, perceived latency: 0.0329172420667628
+  Total time: 98773.850805109
+  Latency: 266.776195554031
+  Relative latency: 0.00270087875869503
+
+It. No. 8100: 
+  Ex. time: 12.1747889646091, perceived latency: 0.032674655473361
+  Total time: 98896.3568732349
+  Latency: 267.106709149127
+  Relative latency: 0.00270087511404999
+
+It. No. 8110: 
+  Ex. time: 12.0919242989305, perceived latency: 0.0321760616792906
+  Total time: 99018.5885983062
+  Latency: 267.437441343769
+  Relative latency: 0.00270088116917821
+
+It. No. 8120: 
+  Ex. time: 11.9887572735662, perceived latency: 0.0326588146633561
+  Total time: 99140.3257013714
+  Latency: 267.76337146979
+  Relative latency: 0.00270085224731198
+
+It. No. 8130: 
+  Ex. time: 11.937213294503, perceived latency: 0.0330398797250839
+  Total time: 99262.0428405329
+  Latency: 268.092759679767
+  Relative latency: 0.00270085877751342
+
+It. No. 8140: 
+  Ex. time: 11.9592440888948, perceived latency: 0.0331456547505739
+  Total time: 99383.6177818809
+  Latency: 268.420595602474
+  Relative latency: 0.00270085353696403
+
+It. No. 8150: 
+  Ex. time: 12.0586210121312, perceived latency: 0.0332737323338422
+  Total time: 99504.7852311616
+  Latency: 268.75208157105
+  Relative latency: 0.00270089605185023
+
+It. No. 8160: 
+  Ex. time: 12.3008100861853, perceived latency: 0.0336101076365433
+  Total time: 99626.0916604859
+  Latency: 269.082378231743
+  Relative latency: 0.0027009227577525
+
+It. No. 8170: 
+  Ex. time: 11.9704627856418, perceived latency: 0.032758741049254
+  Total time: 99748.2764570499
+  Latency: 269.41221032226
+  Relative latency: 0.00270092095714822
+
+It. No. 8180: 
+  Ex. time: 12.4835720118993, perceived latency: 0.0333795206567602
+  Total time: 99871.0811882266
+  Latency: 269.7425467002
+  Relative latency: 0.00270090744478691
+
+It. No. 8190: 
+  Ex. time: 12.1922646438659, perceived latency: 0.0332890906340269
+  Total time: 99992.0468640641
+  Latency: 270.073375444584
+  Relative latency: 0.00270094856455674
+
+It. No. 8200: 
+  Ex. time: 12.2451351890267, perceived latency: 0.0328389746623395
+  Total time: 100113.168498164
+  Latency: 270.405824377511
+  Relative latency: 0.00270100156087328
+
+It. No. 8210: 
+  Ex. time: 12.1043477801397, perceived latency: 0.0325083801470005
+  Total time: 100233.975653308
+  Latency: 270.734876258731
+  Relative latency: 0.00270102901230972
+
+It. No. 8220: 
+  Ex. time: 12.2729921726143, perceived latency: 0.0331345224872981
+  Total time: 100355.87814317
+  Latency: 271.063706290668
+  Relative latency: 0.0027010247063352
+
+It. No. 8230: 
+  Ex. time: 12.409703270808, perceived latency: 0.0321786370866539
+  Total time: 100478.924210666
+  Latency: 271.391223708366
+  Relative latency: 0.00270097660619217
+
+It. No. 8240: 
+  Ex. time: 12.2115566055205, perceived latency: 0.0336164218136479
+  Total time: 100601.672718347
+  Latency: 271.720011556482
+  Relative latency: 0.00270094924084625
+
+It. No. 8250: 
+  Ex. time: 12.4128079671613, perceived latency: 0.0334769002124444
+  Total time: 100723.794358006
+  Latency: 272.049390546845
+  Relative latency: 0.00270094462069102
+
+It. No. 8260: 
+  Ex. time: 12.224014475237, perceived latency: 0.0322368293127041
+  Total time: 100846.497714998
+  Latency: 272.380270647448
+  Relative latency: 0.00270093931687367
+
+It. No. 8270: 
+  Ex. time: 12.2058510993101, perceived latency: 0.0328136301362616
+  Total time: 100969.281997092
+  Latency: 272.708324844556
+  Relative latency: 0.00270090387344153
+
+It. No. 8280: 
+  Ex. time: 12.4485136443376, perceived latency: 0.0334915286561639
+  Total time: 101092.599370686
+  Latency: 273.038042469748
+  Relative latency: 0.00270087072811903
+
+It. No. 8290: 
+  Ex. time: 12.0318666064702, perceived latency: 0.0336911849557261
+  Total time: 101215.195078122
+  Latency: 273.365507128957
+  Relative latency: 0.00270083466141582
+
+It. No. 8300: 
+  Ex. time: 12.0636016938282, perceived latency: 0.0334165821094033
+  Total time: 101337.849753779
+  Latency: 273.695849521377
+  Relative latency: 0.00270082550780757
+
+It. No. 8310: 
+  Ex. time: 12.2395336883625, perceived latency: 0.0329312489464565
+  Total time: 101460.708421564
+  Latency: 274.025928054122
+  Relative latency: 0.00270080834558693
+
+It. No. 8320: 
+  Ex. time: 11.9125759439172, perceived latency: 0.0329795172699916
+  Total time: 101581.824994227
+  Latency: 274.352537176639
+  Relative latency: 0.0027008033887187
+
+It. No. 8330: 
+  Ex. time: 11.9196082865141, perceived latency: 0.0330139309229748
+  Total time: 101703.23617965
+  Latency: 274.683998132176
+  Relative latency: 0.00270083832580284
+
+It. No. 8340: 
+  Ex. time: 12.3106763565699, perceived latency: 0.0332791424346367
+  Total time: 101825.878682359
+  Latency: 275.01288255383
+  Relative latency: 0.00270081521625479
+
+It. No. 8350: 
+  Ex. time: 12.2779783915896, perceived latency: 0.0322676818552829
+  Total time: 101947.136138468
+  Latency: 275.342391782545
+  Relative latency: 0.0027008349838152
+
+It. No. 8360: 
+  Ex. time: 12.2394053323207, perceived latency: 0.032190308464549
+  Total time: 102069.470661711
+  Latency: 275.671248728802
+  Relative latency: 0.00270081981361948
+
+It. No. 8370: 
+  Ex. time: 12.3927612856383, perceived latency: 0.0333596120445942
+  Total time: 102192.035975774
+  Latency: 276.001673229878
+  Relative latency: 0.00270081391954366
+
+It. No. 8380: 
+  Ex. time: 12.0986552273876, perceived latency: 0.0325061904414108
+  Total time: 102312.946589626
+  Latency: 276.334278041359
+  Relative latency: 0.00270087302978113
+
+It. No. 8390: 
+  Ex. time: 12.4662520231463, perceived latency: 0.0330879888400439
+  Total time: 102435.36586451
+  Latency: 276.664724963455
+  Relative latency: 0.00270087115546986
+
+It. No. 8400: 
+  Ex. time: 12.2286204831236, perceived latency: 0.0328697571649225
+  Total time: 102557.395479184
+  Latency: 276.9955002408
+  Relative latency: 0.00270088274908484
+
+It. No. 8410: 
+  Ex. time: 12.129880951327, perceived latency: 0.0331654116920769
+  Total time: 102679.876705177
+  Latency: 277.325434650118
+  Relative latency: 0.00270087424672703
+
+It. No. 8420: 
+  Ex. time: 12.3823779965647, perceived latency: 0.0327885551706423
+  Total time: 102802.175172686
+  Latency: 277.657345849481
+  Relative latency: 0.00270088979521178
+
+It. No. 8430: 
+  Ex. time: 11.9739968579689, perceived latency: 0.0321602854339627
+  Total time: 102924.413559594
+  Latency: 277.983906009809
+  Relative latency: 0.00270085489337137
+
+It. No. 8440: 
+  Ex. time: 11.9404752958042, perceived latency: 0.0325804739565759
+  Total time: 103046.096903542
+  Latency: 278.314372270581
+  Relative latency: 0.00270087252825403
+
+It. No. 8450: 
+  Ex. time: 12.5090231248847, perceived latency: 0.0326935592145399
+  Total time: 103169.02009796
+  Latency: 278.645327861585
+  Relative latency: 0.00270086240614682
+
+It. No. 8460: 
+  Ex. time: 12.1539665707779, perceived latency: 0.0326300802331284
+  Total time: 103291.974796562
+  Latency: 278.975654662842
+  Relative latency: 0.00270084539686937
+
+It. No. 8470: 
+  Ex. time: 12.0826851854532, perceived latency: 0.0332953472096746
+  Total time: 103414.162353395
+  Latency: 279.30708974269
+  Relative latency: 0.00270085918008233
+
+It. No. 8480: 
+  Ex. time: 12.3418431610222, perceived latency: 0.0326337450880328
+  Total time: 103535.74050227
+  Latency: 279.637813383615
+  Relative latency: 0.00270088195657889
+
+It. No. 8490: 
+  Ex. time: 12.1850423024406, perceived latency: 0.0333099184164338
+  Total time: 103657.664408421
+  Latency: 279.967201884616
+  Relative latency: 0.00270088279031175
+
+It. No. 8500: 
+  Ex. time: 12.3099010603374, perceived latency: 0.0330916575878962
+  Total time: 103779.705962635
+  Latency: 280.298951006395
+  Relative latency: 0.00270090330673431
+
+It. No. 8510: 
+  Ex. time: 12.4495941212605, perceived latency: 0.0322978572847379
+  Total time: 103901.67198188
+  Latency: 280.626214940795
+  Relative latency: 0.00270088257087659
+
+It. No. 8520: 
+  Ex. time: 11.9241751984341, perceived latency: 0.0334742324166521
+  Total time: 104023.403647714
+  Latency: 280.954479339477
+  Relative latency: 0.00270087758607628
+
+It. No. 8530: 
+  Ex. time: 12.4869759825322, perceived latency: 0.0327605922305591
+  Total time: 104145.972020463
+  Latency: 281.282196865849
+  Relative latency: 0.00270084566314847
+
+It. No. 8540: 
+  Ex. time: 11.9769817338122, perceived latency: 0.0321751998263096
+  Total time: 104268.450781514
+  Latency: 281.610319574386
+  Relative latency: 0.00270082002239083
+
+It. No. 8550: 
+  Ex. time: 12.3036394269336, perceived latency: 0.0326212470653072
+  Total time: 104391.151053828
+  Latency: 281.938733433409
+  Relative latency: 0.0027007914999235
+
+It. No. 8560: 
+  Ex. time: 12.1828369550237, perceived latency: 0.032780174026412
+  Total time: 104512.924381161
+  Latency: 282.271210887298
+  Relative latency: 0.00270082587927449
+
+It. No. 8570: 
+  Ex. time: 11.9919334454498, perceived latency: 0.0325433969171839
+  Total time: 104635.564837204
+  Latency: 282.600084347598
+  Relative latency: 0.00270080335292574
+
+It. No. 8580: 
+  Ex. time: 12.5225694976765, perceived latency: 0.0328394544112762
+  Total time: 104758.20349175
+  Latency: 282.928442179321
+  Relative latency: 0.00270077600368169
+
+It. No. 8590: 
+  Ex. time: 12.3606902256456, perceived latency: 0.0324173726265211
+  Total time: 104881.038188264
+  Latency: 283.2562926227
+  Relative latency: 0.00270073883244984
+
+It. No. 8600: 
+  Ex. time: 12.1238152537776, perceived latency: 0.033468932787403
+  Total time: 105003.037965299
+  Latency: 283.585430009054
+  Relative latency: 0.00270073547874654
+
+It. No. 8610: 
+  Ex. time: 12.1987209882224, perceived latency: 0.0335565234010816
+  Total time: 105125.041391269
+  Latency: 283.915685062155
+  Relative latency: 0.00270074267086789
+
+It. No. 8620: 
+  Ex. time: 11.9504036113472, perceived latency: 0.0325824581515229
+  Total time: 105247.059606158
+  Latency: 284.24462201718
+  Relative latency: 0.0027007369429687
+
+It. No. 8630: 
+  Ex. time: 12.3454262442834, perceived latency: 0.0328999597292864
+  Total time: 105369.349059553
+  Latency: 284.574266950033
+  Relative latency: 0.00270073099520806
+
+It. No. 8640: 
+  Ex. time: 12.3501197980827, perceived latency: 0.0324676586755254
+  Total time: 105491.993596088
+  Latency: 284.903354743574
+  Relative latency: 0.00270071068932894
+
+It. No. 8650: 
+  Ex. time: 11.8995547777904, perceived latency: 0.0330002258809611
+  Total time: 105613.123501089
+  Latency: 285.231868476275
+  Relative latency: 0.00270072372656731
+
+It. No. 8660: 
+  Ex. time: 11.9592231990888, perceived latency: 0.0323745155122275
+  Total time: 105734.903305151
+  Latency: 285.560360383915
+  Relative latency: 0.00270071992745656
+
+It. No. 8670: 
+  Ex. time: 12.3964567717716, perceived latency: 0.0329742284764419
+  Total time: 105856.382364369
+  Latency: 285.891812609675
+  Relative latency: 0.0027007517754159
+
+It. No. 8680: 
+  Ex. time: 12.3922928807599, perceived latency: 0.0336739362251351
+  Total time: 105978.432134069
+  Latency: 286.222425091222
+  Relative latency: 0.00270076108249207
+
+It. No. 8690: 
+  Ex. time: 12.0908905058912, perceived latency: 0.0326460373749624
+  Total time: 106099.958238659
+  Latency: 286.549700822633
+  Relative latency: 0.00270075224891299
+
+It. No. 8700: 
+  Ex. time: 12.5137717657249, perceived latency: 0.0323091484377529
+  Total time: 106222.15329167
+  Latency: 286.878399665542
+  Relative latency: 0.00270073982475029
+
+It. No. 8710: 
+  Ex. time: 12.2151146297618, perceived latency: 0.0331510898189801
+  Total time: 106344.443428858
+  Latency: 287.209660841445
+  Relative latency: 0.00270074910903627
+
+It. No. 8720: 
+  Ex. time: 12.3847444810843, perceived latency: 0.033226261042755
+  Total time: 106466.066327103
+  Latency: 287.538936672323
+  Relative latency: 0.00270075665037625
+
+It. No. 8730: 
+  Ex. time: 11.9441379209854, perceived latency: 0.0337487030176884
+  Total time: 106588.30563971
+  Latency: 287.867526278306
+  Relative latency: 0.0027007421175392
+
+It. No. 8740: 
+  Ex. time: 12.0397829661775, perceived latency: 0.0328075410116891
+  Total time: 106710.30197563
+  Latency: 288.199362300873
+  Relative latency: 0.00270076419019684
+
+It. No. 8750: 
+  Ex. time: 12.4679694130363, perceived latency: 0.0328415826791433
+  Total time: 106832.321513425
+  Latency: 288.52944465878
+  Relative latency: 0.00270076921077224
+
+It. No. 8760: 
+  Ex. time: 12.3972856965928, perceived latency: 0.0326667347471608
+  Total time: 106954.154068048
+  Latency: 288.856329957563
+  Relative latency: 0.00270074904967022
+
+It. No. 8770: 
+  Ex. time: 12.0035717559877, perceived latency: 0.033589227107646
+  Total time: 107075.220731313
+  Latency: 289.1896109708
+  Relative latency: 0.00270080798335661
+
+It. No. 8780: 
+  Ex. time: 12.1002526311538, perceived latency: 0.0325487579369208
+  Total time: 107197.753769259
+  Latency: 289.517741302616
+  Relative latency: 0.00270078178994121
+
+It. No. 8790: 
+  Ex. time: 12.1229229399344, perceived latency: 0.0322488422465809
+  Total time: 107320.572626757
+  Latency: 289.848150091027
+  Relative latency: 0.00270076969398096
+
+It. No. 8800: 
+  Ex. time: 12.187577022719, perceived latency: 0.0321534013600039
+  Total time: 107442.928223398
+  Latency: 290.178766939056
+  Relative latency: 0.00270077120697707
+
+It. No. 8810: 
+  Ex. time: 12.4534729513414, perceived latency: 0.0334887260486524
+  Total time: 107565.463216043
+  Latency: 290.507295706999
+  Relative latency: 0.00270074880004486
+
+It. No. 8820: 
+  Ex. time: 12.0857826959698, perceived latency: 0.0334935585808483
+  Total time: 107686.789217078
+  Latency: 290.838705259633
+  Relative latency: 0.00270078351647529
+
+It. No. 8830: 
+  Ex. time: 12.1026365328352, perceived latency: 0.0336359471684494
+  Total time: 107808.666629285
+  Latency: 291.167466434649
+  Relative latency: 0.00270077977530201
+
+It. No. 8840: 
+  Ex. time: 12.2043798496202, perceived latency: 0.0326878139226742
+  Total time: 107930.702559649
+  Latency: 291.495675033777
+  Relative latency: 0.00270076695621137
+
+It. No. 8850: 
+  Ex. time: 11.9129961370653, perceived latency: 0.0326872617420782
+  Total time: 108052.189923257
+  Latency: 291.822960207971
+  Relative latency: 0.00270075933134937
+
+It. No. 8860: 
+  Ex. time: 12.0193675805265, perceived latency: 0.0331914978857212
+  Total time: 108173.511274141
+  Latency: 292.155692498426
+  Relative latency: 0.00270080622379008
+
+It. No. 8870: 
+  Ex. time: 12.4687177535611, perceived latency: 0.0324013425066768
+  Total time: 108295.941994438
+  Latency: 292.484107787746
+  Relative latency: 0.00270078548098108
+
+It. No. 8880: 
+  Ex. time: 12.465974280135, perceived latency: 0.0337542689143324
+  Total time: 108419.337055327
+  Latency: 292.816441773094
+  Relative latency: 0.0027007769068323
+
+It. No. 8890: 
+  Ex. time: 12.0178026332995, perceived latency: 0.032943630523989
+  Total time: 108541.249522763
+  Latency: 293.143608547055
+  Relative latency: 0.00270075763671375
+
+It. No. 8900: 
+  Ex. time: 12.2259649250343, perceived latency: 0.0325664247819135
+  Total time: 108663.49976733
+  Latency: 293.471132537365
+  Relative latency: 0.00270073330203558
+
+It. No. 8910: 
+  Ex. time: 12.4613045391692, perceived latency: 0.0334117569820743
+  Total time: 108787.051025279
+  Latency: 293.802864820256
+  Relative latency: 0.00270071540731428
+
+It. No. 8920: 
+  Ex. time: 11.9501828392353, perceived latency: 0.0336131582346699
+  Total time: 108908.759204243
+  Latency: 294.134122713228
+  Relative latency: 0.00270073890164906
+
+It. No. 8930: 
+  Ex. time: 12.4498152479262, perceived latency: 0.0326854707845575
+  Total time: 109031.40240122
+  Latency: 294.464636226142
+  Relative latency: 0.0027007323554599
+
+It. No. 8940: 
+  Ex. time: 12.1240303993896, perceived latency: 0.0325522683846836
+  Total time: 109153.573671581
+  Latency: 294.797255385083
+  Relative latency: 0.00270075679127155
+
+It. No. 8950: 
+  Ex. time: 12.4719561050186, perceived latency: 0.0326815312930109
+  Total time: 109275.614056529
+  Latency: 295.127608505332
+  Relative latency: 0.00270076367040739
+
+It. No. 8960: 
+  Ex. time: 12.1428645796578, perceived latency: 0.0335175120539436
+  Total time: 109396.940465358
+  Latency: 295.458506785862
+  Relative latency: 0.00270079314402238
+
+It. No. 8970: 
+  Ex. time: 11.9687900225821, perceived latency: 0.0326961364514706
+  Total time: 109519.269541996
+  Latency: 295.787710149339
+  Relative latency: 0.0027007823498669
+
+It. No. 8980: 
+  Ex. time: 11.9283626162455, perceived latency: 0.0327682007565166
+  Total time: 109640.831421744
+  Latency: 296.117181311839
+  Relative latency: 0.00270079292059358
+
+It. No. 8990: 
+  Ex. time: 12.5015962881641, perceived latency: 0.0336020393751006
+  Total time: 109762.163875674
+  Latency: 296.448468323639
+  Relative latency: 0.00270082565663903
+
+It. No. 9000: 
+  Ex. time: 12.060302734088, perceived latency: 0.0327670963701327
+  Total time: 109884.139296687
+  Latency: 296.7797095453
+  Relative latency: 0.00270084210009595
+
+It. No. 9010: 
+  Ex. time: 12.3158644449266, perceived latency: 0.0331387368146609
+  Total time: 110007.200884662
+  Latency: 297.108715508871
+  Relative latency: 0.00270081152069652
+
+It. No. 9020: 
+  Ex. time: 11.9680782535778, perceived latency: 0.0334649896721478
+  Total time: 110128.778710318
+  Latency: 297.438145984629
+  Relative latency: 0.00270082125188194
+
+It. No. 9030: 
+  Ex. time: 12.1239109410144, perceived latency: 0.0321772540415711
+  Total time: 110251.326610604
+  Latency: 297.768311613438
+  Relative latency: 0.00270081386562472
+
+It. No. 9040: 
+  Ex. time: 12.1621480063636, perceived latency: 0.0335820786501799
+  Total time: 110372.992752268
+  Latency: 298.101041280527
+  Relative latency: 0.00270085130290535
+
+It. No. 9050: 
+  Ex. time: 12.4893945727505, perceived latency: 0.0321400479491884
+  Total time: 110495.526503447
+  Latency: 298.42950728598
+  Relative latency: 0.00270082886366146
+
+It. No. 9060: 
+  Ex. time: 12.1301192441095, perceived latency: 0.0326625018966092
+  Total time: 110617.904967369
+  Latency: 298.758558879186
+  Relative latency: 0.00270081555935558
+
+It. No. 9070: 
+  Ex. time: 12.49000512657, perceived latency: 0.0334272466096129
+  Total time: 110740.047256982
+  Latency: 299.087831567141
+  Relative latency: 0.00270081004095186
+
+It. No. 9080: 
+  Ex. time: 12.2674363828517, perceived latency: 0.0323371662979218
+  Total time: 110862.157014233
+  Latency: 299.41619084538
+  Relative latency: 0.0027007970881077
+
+It. No. 9090: 
+  Ex. time: 12.3990513801454, perceived latency: 0.0333921358308416
+  Total time: 110983.918825902
+  Latency: 299.746743994884
+  Relative latency: 0.00270081239846188
+
+It. No. 9100: 
+  Ex. time: 11.9955670266717, perceived latency: 0.0325971809903699
+  Total time: 111106.134206457
+  Latency: 300.075082518433
+  Relative latency: 0.00270079671713566
+
+It. No. 9110: 
+  Ex. time: 12.3887120318288, perceived latency: 0.0327902464608271
+  Total time: 111229.410537759
+  Latency: 300.404981272626
+  Relative latency: 0.00270076933627771
+
+It. No. 9120: 
+  Ex. time: 12.4177720965043, perceived latency: 0.0323802437215706
+  Total time: 111351.217624117
+  Latency: 300.734425829439
+  Relative latency: 0.00270077357254066
+
+It. No. 9130: 
+  Ex. time: 11.9771243597681, perceived latency: 0.032228494387093
+  Total time: 111473.256795279
+  Latency: 301.064619562245
+  Relative latency: 0.00270077889726637
+
+It. No. 9140: 
+  Ex. time: 12.4298610568248, perceived latency: 0.0321262819323546
+  Total time: 111595.483308095
+  Latency: 301.394577619935
+  Relative latency: 0.00270077756451702
+
+It. No. 9150: 
+  Ex. time: 12.454279690894, perceived latency: 0.0329961399366398
+  Total time: 111716.833185753
+  Latency: 301.725660159282
+  Relative latency: 0.00270080749297288
+
+It. No. 9160: 
+  Ex. time: 11.9752051039954, perceived latency: 0.0322866909091626
+  Total time: 111839.633247007
+  Latency: 302.055508664808
+  Relative latency: 0.0027007913017534
+
+It. No. 9170: 
+  Ex. time: 12.4590022329621, perceived latency: 0.0324987675661579
+  Total time: 111961.316809817
+  Latency: 302.384641902735
+  Relative latency: 0.00270079569014342
+
+It. No. 9180: 
+  Ex. time: 12.1108685701819, perceived latency: 0.0327384283908313
+  Total time: 112083.44402327
+  Latency: 302.714872547423
+  Relative latency: 0.00270079916963094
+
+It. No. 9190: 
+  Ex. time: 12.4863876291429, perceived latency: 0.0333436647638449
+  Total time: 112206.969116252
+  Latency: 303.046821795396
+  Relative latency: 0.00270078431119038
+
+It. No. 9200: 
+  Ex. time: 12.4142512266396, perceived latency: 0.032650666106421
+  Total time: 112329.524320185
+  Latency: 303.375462879862
+  Relative latency: 0.00270076335421058
+
+It. No. 9210: 
+  Ex. time: 12.4976298480243, perceived latency: 0.0335847482401133
+  Total time: 112452.411091859
+  Latency: 303.704198952272
+  Relative latency: 0.00270073532442256
+
+It. No. 9220: 
+  Ex. time: 12.0278862941229, perceived latency: 0.0324111982326151
+  Total time: 112573.978333746
+  Latency: 304.032855993104
+  Relative latency: 0.00270073830998265
+
+It. No. 9230: 
+  Ex. time: 12.3820503571096, perceived latency: 0.0322304278414607
+  Total time: 112695.513512348
+  Latency: 304.364386883102
+  Relative latency: 0.00270076755850404
+
+It. No. 9240: 
+  Ex. time: 12.4939760207914, perceived latency: 0.0323905834334214
+  Total time: 112817.845917555
+  Latency: 304.695012109674
+  Relative latency: 0.00270076963118352
+
+It. No. 9250: 
+  Ex. time: 11.9654423991721, perceived latency: 0.0324733352184842
+  Total time: 112939.795628735
+  Latency: 305.025142338406
+  Relative latency: 0.00270077646803177
+
+It. No. 9260: 
+  Ex. time: 11.9266368243644, perceived latency: 0.0334882527370531
+  Total time: 113061.786228413
+  Latency: 305.355277420526
+  Relative latency: 0.00270078235632713
+
+It. No. 9270: 
+  Ex. time: 12.4201841353505, perceived latency: 0.0334789437478819
+  Total time: 113183.696943236
+  Latency: 305.685035162851
+  Relative latency: 0.00270078680427056
+
+It. No. 9280: 
+  Ex. time: 12.0743116161357, perceived latency: 0.0329603720164721
+  Total time: 113306.150011782
+  Latency: 306.016102925834
+  Relative latency: 0.00270078987675438
+
+It. No. 9290: 
+  Ex. time: 12.5122083101896, perceived latency: 0.032510834515571
+  Total time: 113428.339159807
+  Latency: 306.344853167339
+  Relative latency: 0.00270077879510989
+
+It. No. 9300: 
+  Ex. time: 12.1024232973233, perceived latency: 0.0326834853992895
+  Total time: 113549.744912142
+  Latency: 306.672481476766
+  Relative latency: 0.0027007764897583
+
+It. No. 9310: 
+  Ex. time: 12.4782968794283, perceived latency: 0.0336638109655047
+  Total time: 113672.391260176
+  Latency: 306.999094191527
+  Relative latency: 0.00270073577926993
+
+It. No. 9320: 
+  Ex. time: 12.2993455922607, perceived latency: 0.0327235303803551
+  Total time: 113794.242525633
+  Latency: 307.328249224683
+  Relative latency: 0.0027007363677073
+
+It. No. 9330: 
+  Ex. time: 12.2242848122734, perceived latency: 0.0331249392433006
+  Total time: 113916.630985556
+  Latency: 307.660312490721
+  Relative latency: 0.00270074974855718
+
+It. No. 9340: 
+  Ex. time: 12.4117534545951, perceived latency: 0.032177185428071
+  Total time: 114038.869816425
+  Latency: 307.989872154068
+  Relative latency: 0.00270074469038371
+
+It. No. 9350: 
+  Ex. time: 12.4979185772454, perceived latency: 0.0333309885952621
+  Total time: 114161.009952512
+  Latency: 308.319564682404
+  Relative latency: 0.00270074314173164
+
+It. No. 9360: 
+  Ex. time: 12.1526281638677, perceived latency: 0.032413889552991
+  Total time: 114284.208531706
+  Latency: 308.648759084983
+  Relative latency: 0.00270071222481584
+
+It. No. 9370: 
+  Ex. time: 12.5160686976435, perceived latency: 0.0328027562552916
+  Total time: 114406.517997637
+  Latency: 308.976903578352
+  Relative latency: 0.0027006931858964
+
+It. No. 9380: 
+  Ex. time: 11.9513815755818, perceived latency: 0.0331287880240465
+  Total time: 114527.739277767
+  Latency: 309.306068719036
+  Relative latency: 0.00270070875990023
+
+It. No. 9390: 
+  Ex. time: 12.1460826008394, perceived latency: 0.0328358765726115
+  Total time: 114648.38009003
+  Latency: 309.634608502744
+  Relative latency: 0.00270073252024666
+
+It. No. 9400: 
+  Ex. time: 12.3907679155924, perceived latency: 0.0331152755408501
+  Total time: 114770.382601341
+  Latency: 309.964473826492
+  Relative latency: 0.00270073573687703
+
+It. No. 9410: 
+  Ex. time: 12.3004037920694, perceived latency: 0.0336984270194958
+  Total time: 114893.472989049
+  Latency: 310.293113244644
+  Relative latency: 0.00270070270461943
+
+It. No. 9420: 
+  Ex. time: 12.3593413564837, perceived latency: 0.0327512671445014
+  Total time: 115015.196543911
+  Latency: 310.62375998748
+  Relative latency: 0.00270071929033212
+
+It. No. 9430: 
+  Ex. time: 11.9101797914703, perceived latency: 0.0321339914710573
+  Total time: 115136.707047829
+  Latency: 310.951779343302
+  Relative latency: 0.0027007180187473
+
+It. No. 9440: 
+  Ex. time: 12.3599525835472, perceived latency: 0.0334370683153599
+  Total time: 115258.277473308
+  Latency: 311.279990763588
+  Relative latency: 0.00270071701215278
+
+It. No. 9450: 
+  Ex. time: 12.5217446843378, perceived latency: 0.0333657962948614
+  Total time: 115380.238273137
+  Latency: 311.610163704039
+  Relative latency: 0.00270072387063693
+
+It. No. 9460: 
+  Ex. time: 11.944343150172, perceived latency: 0.0336912052336936
+  Total time: 115502.415495055
+  Latency: 311.939686573666
+  Relative latency: 0.00270072002595498
+
+It. No. 9470: 
+  Ex. time: 12.3854458840563, perceived latency: 0.0327974517403732
+  Total time: 115624.438457093
+  Latency: 312.270630682788
+  Relative latency: 0.00270073208440851
+
+It. No. 9480: 
+  Ex. time: 11.9843828420593, perceived latency: 0.0322501176132788
+  Total time: 115745.608936529
+  Latency: 312.600933519021
+  Relative latency: 0.00270075846843089
+
+It. No. 9490: 
+  Ex. time: 12.2939116576102, perceived latency: 0.033494287861047
+  Total time: 115867.482255153
+  Latency: 312.930307991399
+  Relative latency: 0.00270076040232142
+
+It. No. 9500: 
+  Ex. time: 12.3983083471387, perceived latency: 0.0324724926105996
+  Total time: 115990.01649185
+  Latency: 313.261100659518
+  Relative latency: 0.00270075916991983
+
+It. No. 9510: 
+  Ex. time: 11.9849774552468, perceived latency: 0.033530233949902
+  Total time: 116110.782269549
+  Latency: 313.59028048457
+  Relative latency: 0.00270078518424392
+
+It. No. 9520: 
+  Ex. time: 12.4125184352375, perceived latency: 0.0336393364538213
+  Total time: 116232.482739615
+  Latency: 313.921528741708
+  Relative latency: 0.00270080722137681
+
+It. No. 9530: 
+  Ex. time: 11.9679905700422, perceived latency: 0.0330965217478328
+  Total time: 116354.925785253
+  Latency: 314.252406755282
+  Relative latency: 0.00270080879373575
+
+It. No. 9540: 
+  Ex. time: 12.2700361532483, perceived latency: 0.0327396243917781
+  Total time: 116477.157824453
+  Latency: 314.581946288408
+  Relative latency: 0.00270080376413824
+
+It. No. 9550: 
+  Ex. time: 12.1785627995422, perceived latency: 0.0331831262986974
+  Total time: 116598.667062935
+  Latency: 314.909691688085
+  Relative latency: 0.00270080010021136
+
+It. No. 9560: 
+  Ex. time: 12.3306967393009, perceived latency: 0.0325222910295145
+  Total time: 116721.118184288
+  Latency: 315.240580642525
+  Relative latency: 0.00270080158197935
+
+It. No. 9570: 
+  Ex. time: 12.411216140619, perceived latency: 0.0331750528343242
+  Total time: 116842.458073341
+  Latency: 315.57105746429
+  Relative latency: 0.00270082521942673
+
+It. No. 9580: 
+  Ex. time: 12.4498701168699, perceived latency: 0.0327269569459176
+  Total time: 116964.379762809
+  Latency: 315.901065431467
+  Relative latency: 0.00270083136483158
+
+It. No. 9590: 
+  Ex. time: 11.9918841686003, perceived latency: 0.0335784717171428
+  Total time: 117086.41636757
+  Latency: 316.231164120771
+  Relative latency: 0.00270083562151245
+
+It. No. 9600: 
+  Ex. time: 12.5170342347106, perceived latency: 0.0331675712971896
+  Total time: 117209.955087415
+  Latency: 316.55897111871
+  Relative latency: 0.00270078570444481
+

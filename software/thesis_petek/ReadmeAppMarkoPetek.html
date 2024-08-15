@@ -1,0 +1,559 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+    <title>Software for Modeling Oscillators - ReadMe</title>
+    <meta content="Igor Grešovnik, Marko Petek" name="author">
+    <meta content="This file provides basic information about the
+      oscillator modeling software that was developed by Marko Petek in
+      the scope of his graduate thesis." name="description">
+	  			  		
+	<!-- Google Analitics - account Software 
+	property Software all -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-96841644-1', 'auto');
+	  ga('send', 'pageview');
+	</script>	  
+
+    <!-- Google Analitics - account IGLib -->
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-76143121-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+	
+
+  </head>
+  <body>
+    <table cellpadding="2" cellspacing="2" align="center" border="0"
+      height="251" width="800">
+      <tbody>
+        <tr>
+          <td colspan="1" rowspan="1" height="70" valign="top">
+            <h1 align="center">AppMarkoPetek ReadMe</h1>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" height="150" valign="top" width="800">This
+            directory contains a C# project for Visual Studio Express
+            (2010 and above) which focuses on <b>plotting resonance
+              curves</b> for oscillators, that can be described by
+            ordinary differential equations. It has been written as a
+            part of my graduate thesis (BA) and strives to conform to
+            OOP standards set by its base library: the<i>&nbsp;</i> <a
+href="http://www2.arnes.si/%7Eljc3m2/igor/iglib/index.html"><i>Investigative
+
+
+
+
+
+                Generic Library</i></a> (<i>IGLib</i>)<i></i>. Since
+            IGLib is not (yet) open source, only the necessary binaries
+            are included. <br>
+            <br>
+            The application can be run in one of the following ways
+            (sorted from lowest to highest by the amount of effort
+            required, which is of course proportional to the flexibility
+            it provides):<br>
+            <ol>
+              <li>Running preset examples thorugh a one-click batch
+                file.</li>
+              <li>Running a modifiable script, allowing you to write and
+                execute C# code without any third party software.</li>
+              <li>Loading the project into VS Express and running it
+                from there. Allows the modification of the whole project
+                (instead of a single script file).<br>
+              </li>
+            </ol>
+            I shall describe each of these possibilities and hopefully
+            show you a couple of interesting examples on the way. Before
+            we start, you should unpack the compressed directory
+            anywhere on your disk.<br>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td height="300" valign="top">
+            <h2>A quick peek: Preset examples<br>
+            </h2>
+            <div align="left">The included examples are intended to give
+              you a quick impression of this project. Open the file
+              "examples.cmd" in notepad (Right click &gt; Edit). To try
+              different available examples, you will need to uncomment
+              lines one by one and then comment them back again. You can
+              explore the examples yourself or follow this guide
+              (recommended).<br>
+              <br>
+              <hr size="2" width="100%"><b>Example 1</b><b>:
+                Manipulating the graph.</b> Simply remove the capital C
+              at the start of the line that reads:<br>
+              <i>C 02DrivenPlotSolution</i><br>
+              Save the file (ctrl + s) and run (double-click) the batch
+              file examples.bat. A linear oscillator solution plot is
+              shown. You can manipulate the plot in the following ways:<br>
+              <ul>
+                <li>Pan the curve by holding down the middle mouse
+                  button (MMB),</li>
+                <li> Zoom in and out by scrolling the MMB.</li>
+                <li>Focus on specific areas by drawing a rectangle
+                  around it. Just hold the LMB and drag. This is useful
+                  for getting the entire curve to fill the graph pane
+                  without any gaps.</li>
+                <li>If you're zoomed in too much and don't want to
+                  scroll all the way back, just press RMB for the
+                  context menu to pop up and then choose "Set Scale to
+                  Default".</li>
+              </ul>
+              <p>Make sure to add back the capital C (recomment the
+                line) after you're done. The interpreter that reads the
+                file ignores the lines with capital C in the begining.
+                It also ignores empty lines, but be careful not to have
+                any blank spaces in the empty line. Such a line will
+                seem empty to you, but not to the interpreter - it will
+                cause errors.<br>
+                <br>
+              </p>
+              <hr size="2" width="100%">
+              <p><b>Example 2</b><b>: </b><b>Showcasing interp</b><b>reter
+
+                  arguments.</b>&nbsp; The command that gets passed to
+                the interpreter is the same as in example 1. This time
+                you can modify some additional parameters of the linear
+                oscillator:<br>
+              </p>
+              <ul>
+                <li>The square of its eigenfrequncy (<i>w0^2</i>),</li>
+                <li>the damping coefficient (<i>b</i>),</li>
+                <li>starting time (<i>start</i>),</li>
+                <li>ending time (<i>end</i>),</li>
+                <li>solving method step size (<i>stepSize</i>)<br>
+                </li>
+                <li>whether individual calculated points are being
+                  plotted (<i>Pnts</i>) or an interpolated line (<i>Lns</i>),</li>
+                <li>point size or, in case of a line, line width (<i>PntSize</i>).</li>
+              </ul>
+              <p>This example shows, that commands can also get passed
+                to the interpreter with optional arguments (where these
+                are implemented). As you have seen, the command <i>02DrivenPlotSolution
+
+                </i>has seven optional arguments, when none are
+                specified the default values are used. The
+                implementation is usually "all or none": If you decide
+                to pass optional arguments, you must pass them all.<br>
+                <br>
+              </p>
+              <hr size="2" width="100%"><b>Example 3: A resonance curve
+                for the linear oscillator. </b>The curve that gets
+              plotted is actually an analytical expression - the
+              resonance curve for the linear oscillator can be written
+              in a closed form. The blue dots on top are numerically
+              calculated points. This way the accuracy of the method,
+              that finds the steady-state amplitude of a single
+              solution, can be observed. Zoom in to a single suspicious
+              point and look for deviations (you shouldn't find any
+              since the accuracy of the numerical method is set to one
+              millionth of a unit). The optional parameter "samples"
+              governs the number of numerical points that get
+              calculated.<br>
+              <br>
+              <hr size="2" width="100%"><b>Example 4: Plotting multiple
+                resonance curves on the same graph. </b>This example
+              does not allow any optional arguments. I haven't bothered
+              to add them. Those will be available in the later
+              examples, while plotting multiple curves for the nonlinear
+              oscillator. All of the curves on the graph are analytical.<br>
+              <br>
+              <hr size="2" width="100%">
+              <p><b>Example 5: The nonlinear magnetic oscillator in the
+                  chaotic regime. </b>A solution in the chaotic regime
+                is plotted. No periodicity is visible. When you close
+                the graph, a second (phase space) graph is plotted.<br>
+                <br>
+              </p>
+              <hr size="2" width="100%">
+              <p><b>Example 6: Nonlinear resonance curve and the
+                  disappearance of steady-state amplitude.</b> At high
+                driving amplitudes the slopes of the resonance curve of
+                the magnetic oscillator become almost straight.<br>
+              </p>
+              <p>Try the following: change the driving amplitude
+                parameter (M0/J) to 70 and run the app. The console will
+                report, that the amplitude of the oscillations does not
+                want to stabilise. If this ever happens to you, just
+                input any letter in the console and press 'enter'. A
+                plot of the solution as it appeared in the last
+                iteration will be presented.<br>
+              </p>
+              <p>As you can see, the plot looks periodic. Nothing is
+                wrong with the solution, it's just that the
+                IterationLimitIncrement was set too low and the
+                amplitude has not had the chance to stabilise. Simply
+                close the plot and the calculation will continue for
+                another 10 periods, however the amplitude will still not
+                stabilise and the same message will apear. Input the
+                ineteger '50' and press 'enter' to extend the iteration
+                limit incrment to 10 + 50 = 60, the calculation will
+                continue.<br>
+              </p>
+              <p>After a while the same message will appear again - even
+                after extending the solution for 60 periods in each
+                iteration, the solution did not want to stabilise. You
+                should be suspicious. Instead of extending the
+                IterationLimitIncrement any further, plot the last
+                iteration (by entering any letter in the console). You
+                will see that the solution is starting to wobble. This
+                means, that the period of the oscillations has become a
+                multiple of the driving period. You can make sure of
+                this by measuring the period on the graph (measure the
+                distance between the highest peaks) and comparing it to
+                the driving period displayed in the console. In this
+                case the period has tripled.<br>
+              </p>
+              <p>While such behaviour is still periodic, it is a sign
+                that the oscillator will be entering the chaotic regime
+                soon. And even though the function is periodic, the
+                steady-state amplitude will not be found even if you
+                extend the IterationLimitIncrement by a large number,
+                because of the way the searching method works. Let's try
+                it: close the plot and enter '1000' in to the console. A
+                different message will appear, informing you, that an
+                error has occured (oscillating period does not equal the
+                driving period) and the last iteration plot will be
+                shown automatically. The only way to fix this (in this
+                case), is to close the program altogether (just close
+                the console window) and enter more modest parameters (a
+                lower M0/J), so that the steady-state amplitude exists
+                everywhere.<br>
+              </p>
+              <p>However, sometimes this same message will be displayed
+                (without prior requests to extend
+                IterationLimitIncrement), but the plotted solution will
+                look completely fine. In this case, only close the plot.
+                You will be requested to enter a new
+                InitialSolvingDepth. Enter a larger one and the
+                calculation should continue without any problems.<br>
+                <br>
+              </p>
+              <hr size="2" width="100%">
+              <p><b>Example 7: Phase scanned high driving amplitude
+                  nonlinear resonance</b>. This is similar to the 6th
+                example, only this time some points are plotted for
+                different driving phases (at the start). At driving
+                frequencies where two steady-state amplitudes exist, it
+                matters how the driving is initiated - in what relation
+                are the oscillator's motion and the driving force. The
+                final steady-state amplitude depends on this.<br>
+              </p>
+              <p>The program plots multiple curves with the same
+                parameters but different driving phases (gamma). The
+                points of each curve are sligtly displaced from each
+                other and colored differently, so that you can
+                distinguish points with different driving phases. The
+                relevant parameters for this are:<br>
+              </p>
+              <ul>
+                <li>Starting gamma (<i>st. gamma</i>), which tells the
+                  gamma of the first curve.</li>
+                <li>Ending gamma (<i>end gamma</i>), which tells the
+                  gamma of the last curve.</li>
+                <li>The number of curves (<i>gammaCurves</i>) tells how
+                  many curves with different gammas reside on the
+                  interval defined by <i>st. gamma </i>and <i>end
+                    gamma</i>. The minimum is 1, which is just one curve
+                  at gamma = starting gamma.<br>
+                </li>
+                <li>The number of sample points in each curve (<i>samples</i>).
+                  Together with the width of the freqency interval and
+                  the number of curves, this determines the density of
+                  the plot.<br>
+                </li>
+              </ul>
+              <p>The calculation time is proportional to the product
+                of&nbsp; <i>gammaCurves*</i><i>samples.</i></p>
+              <hr size="2" width="100%"><b>Example 8: Magnetic
+                oscillator with a hard spring.</b> This example plots
+              multiple phase scanned curves. The color coding now only
+              represents different curves and not different driving
+              phases, as in the previous example (even though each curve
+              is phase scanned). The behaviour of the Duffing oscillator
+              is more prominent here.<br>
+              <br>
+              For each curve the parameters:<br>
+              <ul>
+                <li><i>st. gamma,</i></li>
+                <li> <i>end gamma,</i></li>
+                <li><i>gammaCurves </i>and</li>
+                <li><i>samples</i></li>
+              </ul>
+              <p>have the same meaning as in the previous example and
+                only effect a single visible (points of the same color)
+                curve. The three new parameters are:<br>
+              </p>
+              <ul>
+                <li><i>start M0/J</i>, which tells the driving amplitude
+                  of the first curve,</li>
+                <li><i>end M0/J</i>, which tells the driving amplitude
+                  of hte last curve,</li>
+                <li><i>NCurves</i> tells how many curves reside on the
+                  interval specified by start <i>M0/J</i> and <i>end
+                    M0/J </i>and thus ultimately, how many curves are
+                  visible on the plot. The minimum is 1, which is just
+                  one curve at M0/J = <i>end M0/J.</i></li>
+              </ul>
+              <p>There is a reason, that the calculation begins at the
+                curve with the highest driving amplitude: If on any of
+                the curves the oscillator will enter the chaotic regime
+                (where the steady-state amplitude disappears), it is
+                going to be the highest one first. Therefore the user
+                gets notified of the bad choice of <i>end M0/J </i>(too
+                high) as soon as possible (instead of waiting until the
+                end of the calculation just to learn, that it failed).<br>
+              </p>
+              <p>The calculation time is proportional to the product
+                of&nbsp; <i>gammaCurves*</i><i>samples*NCurves.<br>
+                  <br>
+                </i></p>
+              <hr size="2" width="100%">This concludes the preset
+              examples showcase. There are more examples left in the
+              examples.cmd file, Those were used in the graphs, which
+              appeared in my thesis.<br>
+              <p></p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div align="center"><br>
+    </div>
+    <br>
+    Things are run via the application's command-line interpreter.<br>
+    <br>
+    In order to <b>run the examples</b>: <br>
+    <br>
+    You can run the example command script file <b><i>examples.cmd</i></b>
+    in which you uncomment (delete the Cs in front of commands) or
+    modify the lines of interest and run the script by typing the
+    following command in the command prompt (witht the current directory
+    set to the directory containing the executable):<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; guest_marko_petek.exe Run examples.cmd<br>
+    <br>
+    You can also <b>run individual commands</b> directly by copying the
+    desired command and its arguments to the command line, e.g.:<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; guest_marko_petek.exe
+    07ResonanceCurveHarmonicFamily 0.2 1 5 100<br>
+    <br>
+    <h2>Adding Custom Functionality via Script Files<br>
+    </h2>
+    <br>
+    &nbsp;&nbsp; Additional flexbility is enabled by <b>using the
+      application's C# script interpreter</b>. You can create your own
+    script in C#, with custom commands added, and run these custom
+    commands through the script. An example of such custom script is
+    provided in the file <i><b>script.cs</b></i>, which you can extend
+    with your own stuff. Since the script class inherits from the
+    application's main script class, your extended script will already
+    have all the existing commands installed.<br>
+    <br>
+    In order to try the C# scripting functionality, you can <b>run
+      custom script commands</b> by uncommenting the desired lines and
+    running another command script file, the <i><b>runscript.cmd</b></i>:<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; guest_marko_petek.exe Run runscript.cmd<br>
+    <br>
+    As before, do not forget to uncomment the lines that you would like
+    to run. In this command script file, there are commands that load
+    the custom script file <b><i>script.cs</i></b>, compile it on the
+    fly, and execute the specified script commands. This is done by the
+    <b>RunScript</b> built-in command. You can also execute individual
+    lines from the custom script file, e.g.<br>
+    <br>
+    &nbsp; &nbsp;&nbsp; guest_marko_petek.exe RunScript script.cs
+    TestDerived arg1 arg2 arg3 arg3<br>
+    <br>
+    In the command above, <b><i>RunScript</i></b>&nbsp; is the name of
+    the command that loads scripts and executes their commands, <i>TestDerived</i>
+    is the name of a new command that is defined and installed by the
+    script contained in <i>script.cs</i>, and <i>arg1</i>, <i>arg2</i>
+    and <i>arg3</i> are parameter passed to the command. This command
+    is not available in the existing application, therefore the
+    following would not work:<br>
+    <br>
+    &nbsp; &nbsp;&nbsp; guest_marko_petek.exe TestDerived arg1 arg2 arg3
+    arg3&nbsp; <font color="#666666"><i>- does not work!</i></font><br>
+    <br>
+    On the other side, the script contained in <i>script.cs</i>
+    implements existing applicatino commands via inheritance, therefore
+    these commands can be run either via the script or directly (since
+    they are pre-installed on the application):<br>
+    <br>
+    <font color="#666666">Running a pre-installed command through the
+      custom script:</font><br>
+    &nbsp;&nbsp;&nbsp; guest_marko_petek.exe RunScript script.cs
+    07ResonanceCurveHarmonicFamily 0.2 1 5 100&nbsp; <br>
+    <br>
+    <font color="#666666">Running the pre-installed command directly by
+      the application:</font><br>
+    &nbsp;&nbsp;&nbsp; guest_marko_petek.exe
+    07ResonanceCurveHarmonicFamily 0.2 1 5 100&nbsp; <br>
+    <br>
+    &nbsp; Another command that is installed by the script file
+    script.cs is <i>ExampleDerived</i>. This commands&nbsp; plots a
+    family of resonance curves for different damping coefficients as a
+    3D surface. You can run the coommand e.g. as follows: <br>
+    <br>
+    &nbsp;&nbsp;&nbsp; guest_marko_petek.exe RunScript script.cs&nbsp;
+    ExampleDerived&nbsp; 0.2 0.6 10 50 <br>
+    <br>
+    This command dose similar as the built-in
+    07ResonanceCurveHarmonicFamily3d, only that it is implemented in a
+    script so that the user can change its function without needing to
+    recompile the code. The majority of the implementation of what is
+    behind the command is in the class <i>AuxResonance</i> that is
+    defined within the script file, so you can modify its methods and
+    changes will have immediate effect when you run the script command
+    again.<br>
+    <br>
+    &nbsp; By using the custom script file (or creating a new one
+    according to the rules) one can easily add new functionality to the
+    application without having to have access to the source code. You
+    can define new classes and methods within the file by using the
+    complete object oriented syntax of the C# language and many of the
+    classes contained in the linked libraries. <br>
+    <br>
+    In order to install a new interpreter command by the script file (<i>script.cs</i>),
+
+
+
+
+    you must follow these steps:<br>
+    <ol>
+      <li>Implement the command method within the script class (i.e. the
+        first class in the script file). <br>
+      </li>
+    </ol>
+    <blockquote>
+      <ul>
+        <li>Note that the script class must always be defined in the
+          IG.Script namespace, it must be public and have default
+          constructor, it must implement the ILoadableScript interface,
+          and before class declaration there may not be any appearance
+          of the "class" string (regardless the capitalization), not
+          even in comments. <br>
+        </li>
+        <li>The command method must return a string and must have a
+          single argument of type string[] (array of strings).<br>
+        </li>
+      </ul>
+    </blockquote>
+    <ol>
+      <li>Define two constants - one for command name and one being a
+        short help string.</li>
+      <li>Install the command method on the interpreter.</li>
+    </ol>
+    <blockquote>
+      <ul>
+        <li>A new command method is installed by appropriate line of
+          code within the <i>Script_AddCommands</i> method by a call to
+          <i>Script_AddCommand</i>(...). Copy one of the existing
+          command installation calls and just replace the command name,
+          command method, and command help string (the 3rd, 4th and 5th
+          parameters, respectively).<br>
+        </li>
+      </ul>
+    </blockquote>
+    <br>
+    <h2> <b>Additional Information</b></h2>
+    <br>
+    The application's binary (<i>guest_marko_petek.exe</i>) is already
+    in the root directory together with the libraries and can be readily
+    run from this location. This is a console application controlled by
+    a built-in command-line interpreter, therefore you must run it with
+    command arguments that launch specific actions. A small number of
+    examples are listed in the example command file (a file with the <i>.cmd</i>
+    extension) within the root directory.<br>
+    <br>
+    &nbsp; For example, you can launch a particular demonstration 2D
+    graphic plot by running the following command:<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; guest_marko_petek.exe Shell Internal
+    IG.Script.ScriptGraphics2dBase Graph CurvePlotLissajous 5 4<br>
+    <br>
+    &nbsp; This example is listed in the command file so command-line
+    arguments can be just copied to the console where the application is
+    run. Here "<i>guest_marko_petek.exe</i>" is the name of the
+    application's compiled program, "<i>Shell</i>" is the command and
+    the rest are arguments to this command. In the particular case,
+    actually, "<i>Shell</i>" is the command that launches another nested
+    command-line interpreter, "<i>Internal</i>" is the command of that
+    nested interpreter that launches the internal (built-in) scripts, "<i>IG.Script.ScriptGraphics2dBase</i>"
+    is a full name of such an internal script, "<i>Graph</i>" is a
+    command built in this internal script, "<i>CurvePlotLissajous </i>"
+    is parameter of this command that specifies which type of
+    demonstration graph is launched, and 5 and 4 are two further
+    parameters of this graph that define the final appearance of the
+    plotted curve.<br>
+    <br>
+    In the .cmd file, the first examples are related to Marko's graduate
+    thesis. For example, the command<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; guest_marko_petek.exe
+    07ResonanceCurveHarmonicFamily 0.2 1 5 100 <br>
+    <br>
+    will drat some resonance curves at different values of the dumping
+    coefficient. The command <br>
+    <br>
+    &nbsp;&nbsp;&nbsp; guest_marko_petek.exe
+    07ResonanceCurveHarmonicFamily3d 0.2 0.6 10 50 <br>
+    <br>
+    does the similar thing, but instead of a familiy of curves a 3D
+    surface plot is shown. <u><i>See the .cmd file for more examples</i></u>.<br>
+    <br>
+    &nbsp; Source code of the Marko's code is included in the code
+    directory. Sources are in two project directories, namely the <i>Guest_Marko_Petek_Lib</i>
+    and the <i>Guest_Marko_Petek_App</i> directory. The latter is the
+    project that generates an executable and can be run. Both projects
+    are loaded in Visual Studio or in Mono Develop if you open the file
+    <i>Guest_Marko_Petek_App/Bin_Guest_Marko_Petek_App.sln</i>. Both
+    solutions reference a number of dll-s from the directory containing
+    the complete application.<br>
+    <br>
+    &nbsp; The <i>IGLib</i> depends on a number of third party
+    libraries. Please read the <a href="ReadMe_IGLib.html">IGLib's
+      ReadMe file</a> included in the root directory for information
+    about these libraries and the IGLib itself. <br>
+    <br>
+    More information about <i>IGLib</i> and the libraries on which it
+    depends can be found on the library's home page:<br>
+    <br>
+    <a href="http://www2.arnes.si/%7Eljc3m2/igor/iglib/">http://www2.arnes.si/~ljc3m2/igor/iglib/</a><br>
+    <br>
+    The complete code documentation can also be found at this address.<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </body>
+</html>

@@ -1,0 +1,3062 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+  <head>
+    <title>HashForm &amp; HashShell - Calculation of File and Text Hash
+      Functions, Symmetric and Asymmetric Encryption, Password
+      Verification, and other Cryptographic Utilities.</title>
+    <meta name="author" content="Igor Grešovnik - Gresovnik">
+    <meta name="keywords" content="file verification, cryptographic hash
+      function, cryptography, checksum, MD5, SHA-1, SHA-256, SHA-512,
+      encryption, decryption, symmetric algorithm, public key, password,
+      Rfc2898, Rijndael, AES, DES, TripleDES, RC2, RSA, DSA, software,
+      shell, form, GUI, application, .NET, Igor Gresovnik, Igor &lt;meta
+      name=" description"="">
+    <meta name="Classification" content="software/security">
+    <meta name="GENERATOR" content="Netscape 7 Composer">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rev="made"
+href="http://www.google.com/search?hl=en&amp;q=Igor+Gre%C5%A1ovnik&amp;btnG=Google+Search&amp;meta=">
+    <link rel="SHORTCUT ICON" href="ig.ico">
+    <!-- Google Analitics - account Software 
+	property Software HashForm -->
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-96841644-4', 'auto');
+	  ga('send', 'pageview');
+	</script>
+    <!-- Google Analitics - account Software 
+	property Software HashShell -->
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-96841644-5', 'auto');
+	  ga('send', 'pageview');
+	</script>
+    <!-- Google Analitics - account Software 
+	property Software all -->
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-96841644-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+    <!-- Google Analitics - account IGLib -->
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-76143121-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+  </head>
+  <body style=" color: rgb(0, 0, 0); background-color: rgb(255, 255,
+    255);" vlink="#006600" link="#0000ee" alink="#fe0000">
+    <div align="right"><small>&nbsp; </small>
+      <table width="100%" cellspacing="2" cellpadding="2" border="0">
+        <tbody>
+          <tr>
+            <td valign="top"><small><small>&nbsp;&nbsp; &nbsp; &nbsp;</small><small><big><big>
+                      <small><a href="./"><big>./ <small>(directory)</small></big></a></small></big></big>
+                  &nbsp;&nbsp;<small> <a href="../index.html"><span
+                        style="font-weight: bold;">&lt;&lt;</span></a>
+                    &nbsp;&nbsp; <a href="../index.html"><span
+                        style="font-weight: bold;">&lt; back</span></a>
+                    &nbsp;&nbsp;</small></small></small>&nbsp;&nbsp; <small><a
+                  href="index.html#search" style="font-weight: bold;">Search</a></small>
+              &nbsp;<small><small><small> &nbsp; </small></small></small></td>
+            <td valign="top" align="right"><small>&nbsp; <a
+                  href="index.html"><i>IGShell</i></a> &nbsp;&nbsp; <a
+                  href="../../iglib/index.html"><span style="font-style:
+                    italic;">IGLib</span></a> &nbsp; &nbsp;&nbsp; </small></td>
+          </tr>
+        </tbody>
+      </table>
+      <font size="-1"><a href="http://www.c3m.si/igor"> </a></font></div>
+    <center>
+      <div style="text-align: left;">
+        <div style="text-align: right;">&nbsp;&nbsp;<span
+            style="font-style: italic;"> </span><font color="#000000"><span
+              style="font-style: italic;"><br>
+            </span></font></div>
+      </div>
+    </center>
+    <table nosave="" style="width: 100%;" cols="2" cellspacing="5"
+      cellpadding="0">
+      <tbody>
+        <tr nosave="" valign="top">
+          <td nosave="" style="vertical-align: middle; text-align: left;
+            width: 90%;"> <span style="font-weight: bold;"></span><br>
+            <h1 style="text-align: center;"><big><b><i><font><font><b><i><font><font><big><big><b><i><font><font><b><i><font
+                                                  color="#cc0000"><font
+                                                    size="+2"><big><font
+                                                        size="+2">HashForm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                        <font size="+2">&amp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          HashShell</font></font><br>
+                                                    </big></font></font></i></b></font></font></i></b></big></big></font></font></i></b></font></font></i></b></big></h1>
+            <p style="text-align: left;"><b>Freeware for calculation of
+                hash values of files and text. MD5, SHA-1, SHA-256 and
+                SHA-512 checksums are supported. <br>
+              </b></p>
+            <font color="#000000"> </font><span style="font-weight:
+              bold;"></span><br>
+            <font color="#000000"> </font> </td>
+          <td style="text-align: right;" nosave="">&nbsp;&nbsp; <img
+              src="doc/hash.jpg" alt="HashForm &amp; HashShell
+              screenshot." style="width: 336px; height: 256px;"
+              width="336" height="256"><b> &nbsp; &nbsp;
+              &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; </b></td>
+        </tr>
+      </tbody>
+    </table>
+    <p><b><br>
+      </b></p>
+    <p> </p>
+    <hr width="100%">
+    <center>
+      <table nosave="" cols="2" width="100%">
+        <tbody>
+          <tr nosave="" valign="top">
+            <td nosave=""> <span style="font-weight: bold;">Contents:<br>
+              </span>
+              <ul>
+                <li><a href="#about">About the Software</a>&nbsp; <br>
+                </li>
+                <ul>
+                  <li><a href="#hashform">HashForm</a> (<a
+                      href="doc/HashForm_help.html">User manual</a>)&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <br>
+                  </li>
+                  <li><a href="#hashshell">HashShell</a>&nbsp; <br>
+                  </li>
+                </ul>
+                <ul>
+                </ul>
+                <li><a href="#doc"><span style="text-decoration:
+                      underline;">Documentation</span></a>&nbsp; <br>
+                </li>
+                <li><a href="#download">Download</a>&nbsp; <br>
+                </li>
+                <ul>
+                  <li><a href="#versions">Other Versions</a>&nbsp; <br>
+                  </li>
+                </ul>
+                <ul>
+                  <li><a href="#other_software">Other Software</a>&nbsp;
+                    <br>
+                  </li>
+                </ul>
+                <li><a href="#seealso">See Also</a> (a list of useful
+                  links) <br>
+                </li>
+                <ul>
+                </ul>
+              </ul>
+              <br>
+              <font color="#000000"><span style="font-weight: bold;"></span></font></td>
+            <td nosave="" align="right">&nbsp;&nbsp;&nbsp; <br>
+              &nbsp;&nbsp; <a href="#search" style="font-weight: bold;">Search</a>
+              &nbsp; <br>
+              &nbsp;&nbsp;&nbsp;&nbsp; <b><br>
+                &nbsp; &nbsp; &nbsp; <br>
+              </b></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+    </center>
+    <hr width="100%">&nbsp;&nbsp; <br>
+    <center>
+      <h1> <a name="about"></a><b><i><font color="#cc0000"><font
+                size="+2">About the Software<br>
+              </font></font></i></b></h1>
+    </center>
+    &nbsp; <a href="#hashform"><i><b>HashForm</b></i></a> is a simple
+    applications for generation of MD5, SHA-1, SHA-256 and SHA-512
+    hashes (checksums) from files and text. In addition, a supposed
+    checksum can be verified for a file. <a href="#hashshell"><b><i>HashShell</i></b></a>
+    provides this functionality in form of shell application, and
+    includes in addition an extensive set of cryptographic utilities
+    (symmetric and asymmetric encryption, certificate manipulation,
+    etc.). It can be used as stand-alone tool for performing your
+    cryptographic tasks, or as a module incorporated in other software
+    and called via shell interface. Both applications are based on the <a
+      href="https://en.wikipedia.org/wiki/.NET_Framework"><i>.NET
+        framework</i></a> and the <a href="../../iglib/index.html"><i>IGLib</i></a>
+    library. You can freely download and use the applications from the <a
+      href="#download"><b>Download Section</b></a>.<br>
+    <br>
+    &nbsp; <a
+      href="http://en.wikipedia.org/wiki/Cryptographic_hash_function">Hash
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      functions</a> are used to verify the integrity of files and
+    messages, and are commonly used to <span class="st">to guard
+      against malicious changes to protected data</span>. Algorithms for
+    calculation of hash values (or checksums) produce a string of
+    certain length for each file or text. Small changes of text produce
+    very different hash values and it is usually difficult to
+    intentionally produce a text with the same hash value as the
+    specified. Therefore, matching hash value for a given text or file
+    is a guarantee that the your version of text or file is the same as
+    the original.<br>
+    <br>
+    &nbsp; Hashing algorithms differ significantly according to how
+    difficult it is to compromise them (i.e., how difficult is to
+    produce a different file or message that has the same value). While
+    one needs to verify that a file has not undergone unintentional
+    changes during transfer (e.g. via communication routes),
+    verification of MD5 or SHA-1 checksums may be sufficient as the
+    probability of two different files having the same values is small.
+    When one must guard the file against intentional malicious attempts
+    of replacing the original, one should used stronger algorithms such
+    as SHA-256 or SHA-512, for which it is believed that such
+    modifications of contents that produce the same hashes of these
+    types are hard (practically impossible) on modern computers.<br>
+    &nbsp; The HashForm and HashShell applications were created by Igor
+    Grešovnik in the scope of the <i><a href="index.html">IGShell
+        project</a></i>, which demonstrates the use of the <a
+      href="../../iglib/index.html"><i>IGLib</i></a> libraries.<br>
+    <br>
+    <h1 style="text-align: center;"><small><a name="hashform"></a><span
+          style="color: rgb(204, 0, 0);">HashForm<br>
+        </span></small></h1>
+    <br>
+    &nbsp; <a href="doc/HashForm_help.html">HashForm</a> is a GUI
+    application for calculation and verification of file or text hashes.
+    Simply choose a file whose hash you want to calculate, and click on
+    the generation button. Alternatively, you can insert a supposed hash
+    value into a text box and verify if this value actually matches any
+    type of supported hash values (checksums) of the specified file or
+    text. You can switch between calculation of hashes for files or
+    arbitrary text that you insert in the text box at the bottom of the
+    application's window.<br>
+    &nbsp; Application is designed for comfortable operation that
+    permits little possibilities of mistakes. Easy switching between
+    file and text operation is supported by distinctive colors that
+    unambiguously describe the current mode of operation. Files or text
+    can be simply dragged &amp; dropped to the large text box at the
+    bottom. In file mode, the text box provides a quick preview to make
+    sure that one operates on the intended file. Preview changes
+    background color when a binary file is worked, which accounts for
+    possibility that preview does not show file contents precisely. <br>
+    Hash values are calculated immediately when the hash text or file is
+    specified. The generate and clear buttons are there to make really
+    sure that you know what shown hashes correspond to. Hash values can
+    be picked by the copy buttons, which makes sure that no characters
+    are unintentionally modified or extra characters appear. A supposed
+    hash value can be readily verified by similar safe &amp; comfortable
+    manipulation. In order to alleviate manual comparison, hexadecimal
+    hash strings can be generated both in upper or lower case.<br>
+    &nbsp; Finally, the calculated hash values can be saved to a text
+    file whose name is generated by adding the ".chk" extension to the
+    hashed file. This file can be stored for later verification that
+    file contents have not been modified, either intentionally or
+    unintentionally.<br>
+    <br>
+    &nbsp; Download a single executable <a href="download/HashForm.exe">here</a>
+    (see the <a href="#download">Download Section</a> for more details,
+    including the hashes). The software is freeware.<br>
+    &nbsp; <a href="doc/HashForm_help.pdf"><b>User manual</b></a> is
+    available in <a href="doc/HashForm_help.html">HTML</a> or <a
+      href="doc/HashForm_help.pdf">PDF</a> form. Software has the
+    following features:<br>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <p class="MsoNormal"
+      style="margin-left:72.0pt;text-indent:-18.0pt;mso-list:l0 level1
+      lfo1"><!--[if !supportLists]--><span
+style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span
+          style="mso-list:Ignore">·<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+          </span></span></span><!--[endif]-->Calculation and
+      verification of standard checksums (hash values):<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->MD5<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->SHA1<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->SHA256<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->SHA512<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->User
+can
+
+
+
+
+
+
+
+
+
+      select which checksums are calculated (important for large files)<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->Possibility
+of
+
+
+
+
+
+
+
+
+
+      saving calculated checksums to a file<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:72.0pt;text-indent:-18.0pt;mso-list:l0 level1
+      lfo1"><!--[if !supportLists]--><span
+style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span
+          style="mso-list:Ignore">·<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+          </span></span></span><!--[endif]-->Calculation of checksums
+      (hash values) of arbitrary files<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->Specify
+the
+
+
+
+
+
+
+
+
+
+      file by browsing or drag &amp; drop a file from a file manager or
+      by specifying file path<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->Directory
+of
+
+
+
+
+
+
+
+
+
+      last selected file is remembered <o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->Immediate
+calculation
+
+
+
+
+
+
+
+
+
+      of checksums after selection of a file <o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:72.0pt;text-indent:-18.0pt;mso-list:l0 level1
+      lfo1"><!--[if !supportLists]--><span
+style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span
+          style="mso-list:Ignore">·<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+          </span></span></span><!--[endif]-->Calculation of checksum of
+      arbitrary text <o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->Text
+can
+
+
+
+
+
+
+
+
+
+      be typed in by user<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->Text
+can
+
+
+
+
+
+
+
+
+
+      also be dragged &amp; dropped from a text editor, office
+      application, browser, or any other application that supports
+      selection and drag &amp; drop of text<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:144.0pt;text-indent:-18.0pt;mso-list: l0 level3
+      lfo1"><!--[if !supportLists]--><span style="font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings"><span
+          style="mso-list:Ignore">§<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp; </span></span></span><!--[endif]-->Immediate
+hash
+
+
+
+
+
+
+
+
+
+      calculation when text is dragged into the working area<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:72.0pt;text-indent:-18.0pt;mso-list:l0 level1
+      lfo1"><!--[if !supportLists]--><span
+style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span
+          style="mso-list:Ignore">·<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+          </span></span></span><!--[endif]-->Easy switching between
+      calculation of checksums for files or for text<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->Switching
+is
+
+
+
+
+
+
+
+
+
+      automatic:<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:144.0pt;text-indent:-18.0pt;mso-list: l0 level3
+      lfo1"><!--[if !supportLists]--><span style="font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings"><span
+          style="mso-list:Ignore">§<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp; </span></span></span><!--[endif]-->when
+text
+
+
+
+
+
+
+
+
+
+      or file is dragged &amp; dropped into the working area<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:144.0pt;text-indent:-18.0pt;mso-list: l0 level3
+      lfo1"><!--[if !supportLists]--><span style="font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings"><span
+          style="mso-list:Ignore">§<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp; </span></span></span><!--[endif]-->when
+a
+
+
+
+
+
+
+
+
+
+      file is selected either by browsing or by specifying file path<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:72.0pt;text-indent:-18.0pt;mso-list:l0 level1
+      lfo1"><!--[if !supportLists]--><span
+style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span
+          style="mso-list:Ignore">·<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+          </span></span></span><!--[endif]-->Easy to use user interface,
+      optimized to speed up work and reduce possibility of mistakes<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->Help
+file
+
+
+
+
+
+
+
+
+
+      – user manual can be displayed by clicking a button<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->Responsive
+user
+
+
+
+
+
+
+
+
+
+      interface in case of large files<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->Possibility
+to
+
+
+
+
+
+
+
+
+
+      cancel calculation of checksums (important for very large files)<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->Automatic
+calculation
+
+
+
+
+
+
+
+
+
+      of checksums when possible, no need to click a button:<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:144.0pt;text-indent:-18.0pt;mso-list: l0 level3
+      lfo1"><!--[if !supportLists]--><span style="font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings"><span
+          style="mso-list:Ignore">§<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp; </span></span></span><!--[endif]-->After
+drag
+
+
+
+
+
+
+
+
+
+      &amp; drop of file or text<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:144.0pt;text-indent:-18.0pt;mso-list: l0 level3
+      lfo1"><!--[if !supportLists]--><span style="font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings"><span
+          style="mso-list:Ignore">§<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp; </span></span></span><!--[endif]-->After
+selection
+
+
+
+
+
+
+
+
+
+      of a new file<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->Copying
+of
+
+
+
+
+
+
+
+
+
+      calculated checksums by clicking a button to minimize possibility
+      of errors<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->Pasting
+checksums
+
+
+
+
+
+
+
+
+
+      to be verified from clipboard by clicking a button<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:108.0pt;text-indent:-18.0pt;mso-list: l0 level2
+      lfo1"><!--[if !supportLists]--><span
+        style="font-family:&quot;Courier New&quot;;
+        mso-fareast-font-family:&quot;Courier New&quot;"><span
+          style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]-->Indicator
+lights
+
+
+
+
+
+
+
+
+
+      indicates status: no results provided, results calculated, busy,
+      error occurred.<o:p></o:p></p>
+    <p class="MsoNormal"
+      style="margin-left:72.0pt;text-indent:-18.0pt;mso-list:l0 level1
+      lfo1"><!--[if !supportLists]--><span
+style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span
+          style="mso-list:Ignore">·<span style="font:7.0pt &quot;Times
+            New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+          </span></span></span><!--[endif]-->Cross-platform, runs on
+      Windows, Lunux or Mac. On non-Windows systems, the Mono framework
+      must be installed in order to run HashForm. The same executable is
+      run on different platforms.<o:p></o:p></p>
+    <meta name="ProgId" content="Word.Document">
+    <meta name="Generator" content="Microsoft Word 14">
+    <meta name="Originator" content="Microsoft Word 14">
+    <link rel="File-List"
+href="file:///C:%5CUsers%5Cigor%5CAppData%5CLocal%5CTemp%5Cmsohtmlclip1%5C01%5Cclip_filelist.xml">
+    <link rel="Preview"
+href="file:///C:%5CUsers%5Cigor%5CAppData%5CLocal%5CTemp%5Cmsohtmlclip1%5C01%5Cclip_preview.wmf">
+    <!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:TargetScreenSize>800x600</o:TargetScreenSize>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+    <link rel="themeData"
+href="file:///C:%5CUsers%5Cigor%5CAppData%5CLocal%5CTemp%5Cmsohtmlclip1%5C01%5Cclip_themedata.thmx">
+    <link rel="colorSchemeMapping"
+href="file:///C:%5CUsers%5Cigor%5CAppData%5CLocal%5CTemp%5Cmsohtmlclip1%5C01%5Cclip_colorschememapping.xml">
+    <!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="0" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+    <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	layout-grid-mode:line;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:2083021463;
+	mso-list-type:hybrid;
+	mso-list-template-ids:294041948 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:108.0pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:144.0pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:180.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:216.0pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:252.0pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:288.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:324.0pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:360.0pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><br>
+    <br>
+    <br>
+    <h2 style="text-align: center;"><small><a
+          name="hashform_screenshots"></a><span style="color: rgb(204,
+          0, 0);">Screenshots&nbsp; <br>
+        </span></small></h2>
+    <br>
+    <img alt="HashForm screenshot."
+      src="screenshots/hashform/01_hashform_file.jpg" width="881"
+      height="499"><br>
+    HashForm in action.<br>
+    <br>
+    <img src="screenshots/hashform/02_hashform_verification.jpg"
+      alt="Checksum verification" width="881" height="499"><br>
+    Checksum verification. Paste shecksum (hash) from clipboard and
+    click "Verify Hash".<br>
+    <br>
+    <img src="screenshots/hashform/02_hashform_verification_fails.jpg"
+      alt="Checksum verification fails." width="881" height="554"><br>
+    When the hash provided by source does not match the calculated hash
+    of the file, this is clearly indicated.<br>
+    <br>
+    <img src="screenshots/hashform/03_hashform_calculating.jpg"
+      alt="Calculationg..." width="881" height="554"><br>
+    Calculating. You can cancel calculation for large files. Indicator
+    light in the top-right corner indicated that calculation is being
+    performed and final results are not ready yet. In "File Contents
+    Preview", different color indicates that the file in question is a
+    binary file.<br>
+    <br>
+    <img src="screenshots/hashform/03_hashform_dragdrop_file.jpg"
+      alt="Drag and drop files (e.g. from Windows Explorer)."
+      width="814" height="524"><br>
+    You can simply drag files from a file manager such as Windows
+    Explorer, Total Commander (Windows), Midnight Commander, Dolphin,
+    Krusader, Konqueror, GNOME Commander (Linux), etc. Files can be
+    dropped into the file path text box (beside "File:") or into the
+    preview box below (under "File Contents Preview:").<br>
+    <br>
+    <br>
+    <img src="screenshots/hashform/03_hashform_browsefile.jpg"
+      alt="Browse for file." width="685" height="441"><br>
+    Users can also browse for the file. Location of the last file is
+    remembered and browsing always starts form this location.<br>
+    <br>
+    <img src="screenshots/hashform/06_hashform_textmode_when_typing.jpg"
+      alt="Text mode." width="881" height="554"><br>
+    In text mode (as opposed to file mode) checksums (hashes) are
+    calculated for arbitrary text that user inserts into text box at the
+    bottom (note that now the "Text" radio button is checked in the
+    top-left part of the window). Hashes can be checked immediately as
+    user types (the "Calculate when Typing") checkbox. As always, the
+    indicator light in the top-right corner informs the user whether
+    calculation is in progress, it is finished, or the application is
+    idle.<br>
+    <br>
+    <img src="screenshots/hashform/08_hashform_savehashes.jpg" alt="Save
+      calculated hashes." width="881" height="499"><br>
+    Calculated file hashes can be saved to a file. Just check the "Save
+    Hashes to Files".<br>
+    <br>
+    <img src="screenshots/hashform/10_hashform_textdragdrop.jpg"
+      alt="Drag and drop text." width="748" height="425"><br>
+    Text can also be dragged and dropped into the text box at the bottom
+    of application window. In any application shat supports selection
+    and dragging of text (browsers, office applications, word
+    processors, text editors, etc.), select the text whose hashes need
+    to be calculated, and simply drag the text into the textbox at the
+    bottom. If in file mode, the application automatically switches to
+    text mode when text is dropped.<br>
+    <br>
+    <img src="screenshots/hashform/10_hashform_linux.jpg" alt="HashForm
+      running on Ubuntu Linux." width="827" height="547"><br>
+    HashForm is cross-platform. Here it is running on Ubuntu Linux.<br>
+    <br>
+    <h1 style="text-align: center;"><small><a name="hashshell"></a><span
+          style="color: rgb(204, 0, 0);">HashShell<br>
+        </span></small></h1>
+    &nbsp;&nbsp; <a href="download/HashShell.zip"> HashShell</a> is a
+    command-line application that contains commands for a number of
+    cryptographic utilities. As shell application, it is suitable for
+    use in batch files.<br>
+    The available cryptographic utilities include:<br>
+    <ul>
+      <li>Calculation of cryptographic file hashes (checksums):</li>
+      <ul>
+        <li>MD5, SHA-1, SHA-256, SHA-512 haches are computed.</li>
+        <li>Calculation of hashes for strings, byte arrays, or files</li>
+        <li>Bulk shecksums:</li>
+        <ul>
+          <li>File hashes can easily be calculated for all files from
+            the specified directories and all their recursive
+            subdirectories, with possibility to use wildcard filters and
+            to specify recursive directory level.</li>
+          <li>Hashes stored to a file can easily be verified by a single
+            command at a later time, providing a mechanism for easy
+            monitoring directory trees for changes.</li>
+        </ul>
+      </ul>
+      <li>Password hashing, key derivation, and password authentication.</li>
+      <li>Symmetric encryption:</li>
+      <ul>
+        <li>Rijndael, AES (Advanced Encryption Standard), TripleDes,
+          DES, RC2 encryption algorithms.</li>
+        <li>Encryption of strings, byte arrays, or files.</li>
+        <ul>
+          <li>Input/output in string form or in hexadecimal or base 64
+            encoding binary form is supported.</li>
+        </ul>
+        <li>Easy and safe bulk encryption of all files from the
+          specified directories and all their recursive subdirectories,
+          with possibility to use wildcard filters and to specify
+          recursive directory level.</li>
+        <ul>
+          <li>Originals are deleted only after encryption/decryption</li>
+          <li>It is possible to separate the encryption/decryption and
+            cleaning stage.</li>
+          <li>One version of a file (original or encrypted) always
+            remains in its location. Special cleaning commands must be
+            performed to delete all versions of a file.</li>
+        </ul>
+        <li>Various levels of commands - from basic (intended for expert
+          users) to safer high level commands with greater level of
+          automatism and less options.</li>
+      </ul>
+      <li>Public key cryptography (asymmetric algorithms) - not yet
+        implemented in free versions of software:</li>
+      <ul>
+        <li>RSA, DSA public key algorithms.<br>
+        </li>
+        <li>Asymmetric encryption, decryption, and signatures.</li>
+        <li>Key generation.</li>
+        <li>Encryption of strings, byte arrays, or files.</li>
+        <li>Bulk encryption of files.</li>
+        <ul>
+          <li>The same simplicity and safety as for symmetric
+            encryption, although files are not commonly encrypted by
+            asymmetric algorithms.</li>
+        </ul>
+      </ul>
+      <li>Elaborated user interface:<br>
+      </li>
+      <ul>
+        <li>Countless possibilities through parameters that modify
+          behavior of commands.</li>
+        <li>Uniform and mnemonic semantics of parameters. <br>
+        </li>
+        <li>Easy selection of multiple input files by commands.</li>
+        <li>Uniform, safe and comfortable policy of handling file
+          overwrites and deletions.</li>
+        <ul>
+          <li>By default, overwrites and deletions need user
+            confirmation. <br>
+          </li>
+          <li>Within a single command, confirmations can be done for all
+            affected files by a single instruction.</li>
+          <li>Easy to repeat previous choices.</li>
+          <li>Additional options to control automatic overwrites or
+            deletions, or automatic skipping, make possible to use the
+            shell in batch files.<br>
+          </li>
+        </ul>
+        <li>Input of strings and byte arrays in different forms. <br>
+        </li>
+      </ul>
+      <li>A number of helper utilities.</li>
+      <ul>
+        <li>File cleaning:</li>
+        <ul>
+          <li>Easily remove originals, encrypted files, or decrypted
+            files.</li>
+          <li>Safe behavior - at least one version of each file will
+            remain, unless special options are used.</li>
+        </ul>
+        <li>Key generation:</li>
+        <ul>
+          <li>Key derivation functions for generation of cryptographic
+            keys or initialization vectors from passwords.</li>
+          <li>Provided or randomly generated password salts can be used.
+            Easy switch between both through command parameters.</li>
+          <li>Time measuring functionality provided to assess the number
+            of iterations to use in order to achieve sufficient level of
+            security.</li>
+        </ul>
+        <li>Handy conversion utilities:</li>
+        <ul>
+          <li>Convert between strings, arrays of bytes in hexadecimal or
+            base-64 encoding, or integers.<br>
+          </li>
+        </ul>
+      </ul>
+      <li>Easy learning <a href="excrypto.cmd.html">by example</a>.</li>
+    </ul>
+    <br>
+    &nbsp; Rather than having extensive documentation, use of
+    cryptographic utilities is documented by the example command file <a
+      href="excrypto.cmd.html"><i>excrypto.cmd</i></a> (<a
+      href="examples/crypto/excrypto.cmd">text version</a>). This file
+    contains explaining comments and a number of example commands that
+    should be run from the containing directory <a
+      href="examples/crypto/">examples/crypto/</a>. The best way to run
+    the commands is to download and extract the <a
+      href="download/examples.zip">examples directory</a>, go to the <a
+      href="examples/crypto/">examples/crypto/</a> subdirectory and run
+    the shell in interactive mode by the following command:<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; <i><b>HashShell.exe Interactive </b></i><br>
+    <br>
+    This launches a shell with interactive command prompt where you can
+    copy commands from the example command file and execute them one by
+    one. It is important that the current directory is set to the
+    directory that contains the&nbsp; <a href="excrypto.cmd.html"><i>excrypto.cmd</i></a>
+    file (<a href="examples/crypto/excrypto.cmd">text version</a>),
+    since many of the commands use auxiliary files and directories that
+    are included in this directory. Some examples of commands that you
+    can run by the application can also be found in the <i><a
+        href="download/HashShell.cmd">HashShell.cmd</a></i> file, but
+    this is far less exhaustive than <i>excrypto.cmd</i>. <br>
+    <br>
+    You can run the applications in several ways. The most common is to
+    execute a single application's command:<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; <i><b>HashShell.exe CommandName &lt;Arg1&gt;
+        &lt;Arg2&gt; ...</b></i><br>
+    <br>
+    For example, the following command will calculate hash values of the
+    executable itself:<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; <i><b>HashShell.exe GetFileHash HashShell.exe
+        false</b></i><br>
+    <br>
+    In the above case, the "false" argument instructs the command not to
+    write the calculated hashes to a file. If this argument was true,
+    the hash values would be written to the file named
+    "HashShell.exe.chk", located in the same directory as the file whose
+    hashes are calculated.<br>
+    <br>
+    From HashShell, you can also launch the GUI application <a
+      href="#hashform">HashForm</a> for calculation and verification of
+    file/string cryptographic hashes:<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; <i><b>HashShell.exe HashForm</b></i><br>
+    <br>
+    <br>
+    <b>&nbsp;&nbsp;&nbsp; Other ways of using HashShell:</b><br>
+    <br>
+    The application can be launched in <font color="#cc0000"><b>interactive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        mode</b></font> by running <br>
+    <br>
+    &nbsp;&nbsp;&nbsp; <i><b>HashShell.exe Interactive</b></i><br>
+    <br>
+    or shortly<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; <i><b>HashShell.exe int</b></i><br>
+    <br>
+    In the interactive mode, you can insert commands one by one. You can
+    copy commands from the example command file (<a
+      href="download/HashShell.cmd">HashShell.cmd</a> or <a
+      href="examples/crypto/excrypto.cmd">excrypto.cmd</a> / <a
+      href="excrypto.cmd.html">html</a>), e.g.<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; <i><b>Cmd&gt;GetFileHash HashShell.exe false</b></i><br>
+    <br>
+    Yet another way to use the application is to run a command file,
+    which is executed by teh application's command-line interpreter:<br>
+    <br>
+    &nbsp; &nbsp; <i><b>HashShell.exe Run HashShell.cmd</b></i><br>
+    <br>
+    This will run commands from HashShell.cmd line by line. Note that C
+    stands for comment, and you can selectively comment or uncomment
+    commands from the interpreted file.<br>
+    <br>
+    <b>Cryptographic utilities:</b><br>
+    &nbsp; HashShell provides an exhaustive set of cryptographic
+    utilities that can be used in countless ways. In order to learn
+    more, download and unpack the <a href="download/examples.zip"><i>examples</i></a>,
+    go to the directory exemples/crypto within the unpack examples, run
+    the shell in interactive mode, open the example command file <a
+      href="excrypto.cmd.html"><i>excrypto.cmd</i></a> and read its
+    comments or try to execute example commands. It is important to run
+    the shell in the above mentioned directory as some demonstrative
+    examples depend on the files that are included in the directory.
+    Only some basic examples are given below.<br>
+    <br>
+    In order to run the shell interactively, type <br>
+    <br>
+    &nbsp; <i>HashShell.exe Interactive</i> <br>
+    <br>
+    The "Cmd&gt;" prompt appears. Cryptographic commands are invoked by
+    the <i>Crypto</i> groub command followed by specific command and
+    its parameters. <br>
+    <br>
+    The following command will calculate the SHA1 hash of the string "My
+    String":<br>
+    <br>
+    &nbsp; <i>Crypto CheckSum -t SHA1 -s "My String"</i><br>
+    <br>
+    We can verify that the specifiied hash corresponds to the given
+    string by using the -c option (for "check") and specify the presumed
+    hash value after the -h option: <br>
+    <br>
+    &nbsp; <i>Crypto CheckSum -t SHA1 -s "My String" -c -h
+      07841b2e0fda6cfbf7c6bf00f179233cf4e3247b</i><br>
+    <br>
+    To calculate file hashes, omit the -s option. Hashes for groups of
+    files can be calculated, stored to a file, and verified at a later
+    time. The followind will calculate hashes for all files contained
+    directly in the current directory:<br>
+    <br>
+    &nbsp; <i>Crypto CheckSum -t MD5 *.* </i><br>
+    <br>
+    One of the strong points of the <i>HashShell</i> is that operations
+    can be performed on large number of files by single command. One can
+    choose between all files contains in the specified directories and
+    their recursive sub-directories, filter files by using wildcards,
+    etc.<br>
+    <br>
+    The following command calculates hthe SHA-256 hashes (the -t
+    parameter) for all files with ".txt" or ".cmd" extensions (the -rp
+    options) contained in the current directory and all its
+    sub-directories (the -rd parameter) and stores them to the&nbsp;
+    "hashes.SHA256" file:<br>
+    <br>
+    &nbsp; <i>Crypto CheckSum -t SHA-256&nbsp; -o hashes.SHA256 -rd ./
+      -rp *.txt -rp *.cmd </i><br>
+    <br>
+    Once file hashes are stored to a file, it is easy to check whether
+    all the files still have the same hash values (which guarantees that
+    the files have not been modified since the hashes were calculated
+    and stored):<br>
+    <br>
+    &nbsp; <i>Crypto CheckSum -c hashes.SHA256 </i><br>
+    <br>
+    Encryption of text or files is another task that can be performed by
+    the shell. To encrypt one or more strings, type the following
+    command:<br>
+    <br>
+    &nbsp; <i>Crypto EncryptPlain -s -pw MyPassword11 -iv
+      MyInitializationVector "Encrypted string No. 1"&nbsp; "Encrypted
+      string No. 2"</i><br>
+    <br>
+    Above, the -pw parameter specifies the password (which must be
+    secret) and the -iv parameter specified the initialization vector
+    for the symmetric encryption algorithm used, free parameters are
+    strings to be encrypted, and encryption algorithm is not specified
+    (since there is no -t parameter) meaning that the default algorithm
+    is used (which is Rijndael). One of the two strings is restored by
+    the <i>Decrypt</i> command (where the same password and
+    initialization vector must be provided, and the free parameter is
+    the encrypted string returned by the previous command):<br>
+    <br>
+    &nbsp; <i>Crypto DecryptPlain -s -pw MyPassword11 -iv
+      MyInitializationVector&nbsp;
+      dggQxTn7y2m2tDw44rR/oYfhlHfVt6j1Ug0f8UYI2fM=</i><br>
+    <br>
+    Without the -s parameter, files are encrypted. As with hash
+    calculation, whole groups of files can be encrypted at once,
+    including all files contained in the specified directories and their
+    nested sub-directories:<br>
+    <br>
+    &nbsp; <i>Crypto EncryptPlain *.* -pw MyPassword11 -iv
+      MyInitializationVector </i><br>
+    <br>
+    By default, original files remain intact (which contributes to safer
+    use and reduces the chances to accidentally lose the original
+    contents), and encrypted contents are stored to the files with the
+    same names (and in the same directories) but with the distinctive
+    extension ".ig_enc" appended.<br>
+    <br>
+    The opposite operation is decryption. Here we will use the -delorig
+    option in order to delete the (decrypted) input files after the
+    operation has been performed. The -delorig parameter also causes the
+    decrypted files have the same names as the original files from which
+    we started the procedures, causing the originals be overwritten
+    (after user confirmation is obtained): <br>
+    <br>
+    &nbsp; <i>Crypto DecryptPlain -delorig *.* -pw MyPassword11 -iv
+      MyInitializationVector </i><br>
+    <br>
+    Without the -delorig option, the enxrzpted files would remain on the
+    system, and decrypted contents would be stored to the files with
+    distinctive extension ".ig_dec", and also the input files (i.e. the
+    encrypted versions) would remain intact. Encryption / decryption can
+    be combined by file hashes in order to make sure that the restored
+    original files actually match the originals. It is always a good
+    idea to store hashes of original files, to be able to verify later
+    that the encrypted / decrypted files match the originals. <br>
+    <br>
+    Finally, there are countless possibilities to modify the behavior of
+    commands and to use auxiliary tools. We went through it only very
+    briefly, and for more information you should check the example file.
+    <br>
+    <br>
+    Auxiliary utilities include Cleaning the remaining unnecessary files
+    produced by encryption / decryption:<br>
+    <br>
+    &nbsp; <i>IG.Script.AppBase Crypto CleanFiles -deldecrypted
+      -delencrypted *.*</i><br>
+    <br>
+    There are a number of other auxiliary utilities. Por example, the <i>Convert</i>
+    command helps you when conversions need to be performed between
+    strings, byte arrays in hexadecimal, and byte arrays in base-64
+    encoding:<br>
+    <br>
+    &nbsp; <i>Crypto Convert Luxembourg London Ljubljana </i><br>
+    <br>
+    Then, there exists a command that generates a password or an
+    initialization vector on basis of provided parameters, including the
+    specified number of iterations in an iterative process to extract
+    the unique key from provided parameters: <br>
+    <br>
+    &nbsp; <i>Internal IG.Script.AppBase Crypto GetKey -pw
+      TestPassword1 -sl MySalt123 21</i><br>
+    <br>
+    The key generated in such a way can be used asa&nbsp; key for
+    symmetric encryption or decryption. If we depend on key extraction
+    algorithm, we must be able to specify enough iterations, such that
+    time necessary for generation of a key is large enough to enable
+    good security.&nbsp; The <i>TimeKeyGeneration</i> command makes
+    possible to measure times necessary for key extraction with specific
+    parameters such as number of iterations, length of the key, and
+    initialization vector<br>
+    <br>
+    &nbsp; <i>TimeKeyGeneration -pwlen 60 -sllen 50 -pwit 100 </i><br>
+    <br>
+    <br>
+    &nbsp;&nbsp; Some <b>other commands</b> enable, for example,
+    running system commands (Sys) or calculate expressions by a built-in
+    calculator (Calc). The calculator is convenient because you can
+    store values (including values of expressions) in variables that you
+    can use in later calculations. See the <a
+      href="download/HashShell.cmd">HashShell.cmd</a> file for basic
+    examples.<br>
+    <br>
+    <b>Example of using the calculator:</b><br>
+    Below is transcription of user input and output of the application
+    after running the following command:<br>
+    &nbsp; <i><b>HashShell Interactive Calc </b></i><br>
+    <font color="#666666">JS&gt; a=2<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 2<br>
+      JS&gt; b=5<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 5<br>
+      JS&gt; c=2*(a+b)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 14<br>
+      JS&gt; sin(c*const_pi/3)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 0.8660254037844393<br>
+      JS&gt; exp(const_e)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 15.154262241479262<br>
+      JS&gt; 1.5*(4+8+9-3)*(5+22+pow(3,5))<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 7290<br>
+      JS&gt; pow(2,10)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 1024<br>
+      JS&gt; log(64,2)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 6<br>
+      JS&gt; /q<br>
+      Command-line JavaScript expression evaluator stopped.</font><br>
+    <br>
+    &nbsp;&nbsp; When running the application in interactive mode, a
+    single calculator command can be evaluated at any rime by preceding
+    it by the <i>Calc</i> command. This executes a single command in
+    the calculator, as opposed to launching a command shell where
+    multiple commands can be inserted and executed. The calculator will
+    maintain its state during the lifetime of the application,
+    regardless of whether its command are inserted interactively or not.
+    This is demonstrated by the following sequence of commands inserted
+    in the shell's interactive command-line:<br>
+    <br>
+    <br>
+    <font color="#666666">Cmd&gt;Calc x = 16<br>
+      <br>
+      &nbsp; = 16<br>
+      &nbsp; = 16<br>
+      Cmd&gt;Calc pow(x, 4)<br>
+      <br>
+      &nbsp; = 65536<br>
+      &nbsp; = 65536<br>
+      Cmd&gt;</font><br>
+    <br>
+    <br>
+    <br>
+    <b>&nbsp;&nbsp;&nbsp; The CheckSum Command:</b><br>
+    <br>
+    &nbsp; The <b>CheckSum</b> command calculates or verifies various
+    type of checksums (hash functions MD5, SHA-1, SHA-256, SHA-512) of
+    files or strings. Use of the <i>CheckSum</i> function is summarized
+    here as example, but this should not be considered a complete
+    specification of the command. For more exhaustive specification,
+    please consider the examples in the <a
+      href="examples/crypto/excrypto.cmd">examples/crypto/excrypto.cmd</a>
+    file. Examples should be run in the directory containing this file (<a
+      href="download/examples.zip">available here</a>) in order to use
+    the auxiliary files properly.<br>
+    <br>
+    &nbsp; Usage: <br>
+    &nbsp;&nbsp;&nbsp; <b>CheckSum &lt;-c&gt; &lt;-s string&gt; &lt;-h
+      hash&gt; &lt;-t hashType&gt; &lt;-o outputFile&gt;
+      &lt;inputFile1&gt; &lt;inputFile2&gt; ...</b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -t hashType: specifies hash type
+    (MD5, SHA-1, SHA-256, SHA-512)<br>
+    &nbsp; &nbsp; &nbsp; -c: verification rather than calculation of
+    hashes.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -s: hash is calculated or verified
+    for the specified string rather than file(s).<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -h hash: hash value to be verified.<br>
+    &nbsp;&nbsp;&nbsp; &nbsp; -o outputFile: output file where
+    calculated hashes are written.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inputFile1 inputFile2 ...: input
+    files, either files whose hashes are calculated, or files containing
+    hash values to be verified (in the case of -c option).<br>
+    <br>
+    <b>CheckSum Examples:</b><br>
+    <br>
+    Calculate MD5 checksums of several files &amp; store them to the
+    file hashes.MD5:<br>
+    &nbsp;&nbsp;&nbsp; HashShell.exe <font color="#3333ff">CheckSum -t
+      MD5 -o hashes.MD5 app.cmd examples.cmd excrypto.cmd </font><i><br>
+    </i> This generates console output looking like this (provided that
+    all stated files exist):<br>
+    <font color="#999999"><small>MD5: 207fbc52a83a3f2538713e6e1f73697d
+        app.cmd<br>
+        MD5: 49b2f24d614e092d49ec16b87f5a3a0c examples.cmd<br>
+        MD5: c8fff3c43002a72258474b092465813d excrypto.cmd<br>
+        Hashes written to file: hashes.MD5</small></font><br>
+    Contents of the generated file hashes.MD5 are something like this:<br>
+    <font color="#999999"><small>207fbc52a83a3f2538713e6e1f73697d
+        app.cmd<br>
+        49b2f24d614e092d49ec16b87f5a3a0c examples.cmd<br>
+        c8fff3c43002a72258474b092465813d excrypto.cmd</small></font><br>
+    <br>
+    In order to verify previously calculated checksums, run the
+    following command (note the -c option; stated files are now checked
+    for stored hash information):<br>
+    &nbsp;&nbsp;&nbsp; HashShell.exe <font color="#3333ff">CheckSum -t
+      MD5 -c hashes.MD5</font><br>
+    This generates console output like this:<br>
+    <font color="#999999"><small>From input file hashes.MD5:<br>
+        MD5 OK: app.cmd<br>
+        MD5 OK: examples.cmd<br>
+        MD5 OK: excrypto.cmd<br>
+        All files OK.<br>
+        &nbsp; = True</small></font><br>
+    If you change contents of any of the verified files (say
+    examples.cmd) and run the same command again then the test will not
+    pass for that file (or more files if more of them were modified) and
+    console output will be as follows:<br>
+    <small><font color="#999999">From input file hashes.MD5:<br>
+        MD5 OK: app.cmd<br>
+        MD5 NOT PASSED: examples.cmd<br>
+        MD5 OK: excrypto.cmd<br>
+        2 files passed, 1 NOT PASSED.<br>
+        &nbsp; = False</font></small><br>
+    <br>
+    To calculate &amp; verify other kinds of checksums (e.g. SHA-1,
+    SHA-256, SHA-512), change the type parameter:<br>
+    &nbsp;&nbsp;&nbsp; HashShell.exe <font color="#3333ff">CheckSum -t
+      SHA-256 -o hashes.SHA256 app.cmd examples.cmd excrypto.cmd</font><br>
+    &nbsp;&nbsp;&nbsp; HashShell.exe <font color="#3333ff">CheckSum -t
+      SHA-256 -c hashes.SHA256</font><br>
+    <br>
+    To calculate hash for a single file (without writing it to a file):<br>
+    &nbsp;&nbsp;&nbsp; HashShell.exe <font color="#3333ff">CheckSum -t
+      SHA-1 app.cmd</font><br>
+    This will generate console output that looks something like this:<br>
+    <font color="#999999"><small>SHA1:
+        68dc05d41fde142774c081ed83a927daf07294dd app.cmd</small></font><br>
+    <br>
+    Direct verification of specified hash value of a file (note the
+    assumed hash value after the -h option):<br>
+    &nbsp;&nbsp;&nbsp; HashShell.exe <font color="#3333ff">CheckSum -t
+      MD5 -c app.cmd -h 207fbc52a83a3f2538713e6e1f73697d </font><br>
+    This generates console output that looks something like this: <br>
+    <small><font color="#999999">File MD5: OK.<br>
+        &nbsp; = True</font></small><br>
+    If you change the contents of the checked file, or if you change the
+    hash value to be verified, and run the same command again, the test
+    will not pass and the console output will be as follows:<br>
+    <font color="#999999"><small>File MD5: NOT PASSED.<br>
+        &nbsp; = False</small></font><br>
+    <br>
+    To calculate hashes (of various types) of the specified string (in
+    this case "My String"), run the following:<br>
+    &nbsp;&nbsp;&nbsp; HashShell.exe <font color="#3333ff">CheckSum -t
+      MD5 -s "My String"</font><br>
+    &nbsp;&nbsp;&nbsp; HashShell.exe <font color="#3333ff">CheckSum -t
+      SHA1 -s "My String"</font><br>
+    &nbsp;&nbsp;&nbsp; HashShell.exe <font color="#3333ff">CheckSum -t
+      SHA256 -s "My String"</font><br>
+    &nbsp;&nbsp;&nbsp; HashShell.exe <font color="#3333ff">CheckSum -t
+      SHA512 -s "My String"</font><br>
+    The first command generates the following console output:<br>
+    <font color="#999999"><small>MD5: 4545102cc40ea0a85124cf4b31574661<br>
+        &nbsp; = 4545102cc40ea0a85124cf4b31574661</small></font><br>
+    <br>
+    In order to verify hash value of the specified string, run the
+    following commands:<br>
+    &nbsp;&nbsp;&nbsp; HashShell.exe <font color="#3333ff">CheckSum -t
+      MD5 -c -s "My String" -h 4545102cc40ea0a85124cf4b31574661</font><br>
+    &nbsp;&nbsp;&nbsp; HashShell.exe <font color="#3333ff">CheckSum -t
+      SHA256 -c -s "My String" -h
+      8a7046a0b97e45470b13f30448c9d7d959aa5eea583d2f007921736b2141ac75</font><br>
+    The first command produces the following output:<br>
+    <font color="#999999"><small>String MD5: OK.<br>
+        &nbsp; = True</small></font><br>
+    <br>
+    <br>
+    <br>
+    <img alt="HashForm screenshot." src="doc/hashshell.jpg" width="651"
+      height="421"><br>
+    <br>
+    <center>
+      <h1> <a name="doc"></a><b><i><font color="#cc0000"><font
+                size="+2">Documentation<br>
+              </font></font></i></b></h1>
+    </center>
+    &nbsp; <a href="Readme_IGShell.html"><b>IGShell ReadMe file</b></a>.
+    Contains very basic information about the software, which also
+    applies to HashForm and HashShell.<br>
+    <br>
+    &nbsp; <a href="License_IGShel.html"><b>IGShell license Agreement</b></a>.
+    Contains terms of use of the <i>IGShell</i>. <i>HashForm</i> and <i>HashShell</i>
+    can be downloaded either as individual applications or as integral
+    part of <a href="index.html"><i>IGShell</i></a>. In the latter
+    case, the <i>IGShell</i> license applies for use of the software.<br>
+    <br>
+    <br>
+    <br>
+    <h2 style="text-align: center;"><small><a name="doc_hashshform"></a><span
+          style="color: rgb(204, 0, 0);">HashForm Documentation&nbsp; <br>
+        </span></small></h2>
+    <br>
+    &nbsp; <b><a href="License_HashForm.html">HashForm License
+        Agreement</a></b> contains terms of use. HashForm is a freeware
+    copyrighted by Igor Grešovnik. It uses IGLib and other libraries
+    with their own license agreements.<br>
+    &nbsp; <a href="doc/HashForm_help.pdf"><b>User Manual</b> in PDF</a>.
+    <br>
+    &nbsp; <a href="doc/HashForm_help.html">User Manual in HTML</a>. <br>
+    <h2 style="text-align: center;"><small><a name="doc_hashshell"></a><span
+          style="color: rgb(204, 0, 0);">HashShell Documentation&nbsp; <br>
+        </span></small></h2>
+    <br>
+    &nbsp; <b><a href="License_HashShell.html">HashShell License
+        Agreement</a></b> contains terms of use. HashShell is a freeware
+    copyrighted by Igor Grešovnik. It uses IGLib and other libraries
+    with their own license agreements.<br>
+    &nbsp; <b>Example command file</b>, <a href="excrypto.cmd.html"><b>excrypto.cmd</b></a>
+    (<a href="examples/crypto/excrypto.cmd">text version</a>, complete <b><a
+        href="download/examples.zip">examples directory</a></b>).
+    Equipped with rich comments and a number of example commands, this
+    is the reference source for learning how to use the cryptographic
+    utilities of <a href="index.html"><i>IGShell</i></a> and <a
+      href="#hashshell"><i>HashShell</i></a>. To learn from the file, <a
+      href="#download_hashshell">download</a> and install hashshell,
+    then download and unpack the <a href="download/examples.zip">examples
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      directory</a>, launch the application interactively in the <a
+      href="examples/crypto/">examples/crypto/</a> sub-directory of the
+    downloaded examples, and execute commands from the file one by one.
+    Shell is started interactively by running<br>
+    <blockquote><i>hashshell.exe int</i><br>
+    </blockquote>
+    Commands are commented by single comments (the 'C' character at
+    beginning of lines), and are written in fulll form, i.e. beginning
+    with "<i>Internal IG.Script.AppBase Crypto</i>". This is necessary
+    in the <i>IGShell</i>, but in <i>HashShell</i> you can type in
+    short versions of commands that begin simply with "<i>Crypto</i>",
+    i.e. you can omit the script loader command ("<i>Internal</i>") and
+    the application class name ("<i>IG.Script.AppBase</i>").<br>
+    <br>
+    <br>
+    &nbsp; <span style="font-weight: bold;">See also:</span> <br>
+    <ul>
+      <li><a href="../../iglib/index.html">IGLib</a> home page. Contains
+        information on the <i>Investigative Generic Library</i>, the
+        code base for this software, including the complete <a
+          href="../codedoc/generated/iglib/html/index.html">code
+          documentation</a> (and <a
+          href="../codedoc/generated/iglib/index.html">wider code
+          documentation</a>). <br>
+      </li>
+    </ul>
+    <br>
+    <br>
+    <center>
+      <h1> <a name="download"></a><b><i><font color="#cc0000"><font
+                size="+2">Download<br>
+              </font></font></i></b></h1>
+    </center>
+    <br>
+    Notice: HashForm 1.6.1 was uploaded on May 13, 2017. It contains
+    several GUI improvement and bug fixes in comparison with HashForm
+    1.6. See <a href="versions/1.6.1/doc/HashForm_help.pdf">User Manual</a>
+    (<a href="versions/1.6.1/doc/HashForm_help.html">in HTML</a>) for
+    details.<br>
+    <br>
+    <b><a name="download_hashform"></a>HashForm:</b><br>
+    Download <a href="download/HashForm.exe">HashForm.exe</a>. Just
+    click the link, save the file and double-click on it to run.<br>
+    On some systems, the single executable file will not work. In this
+    case, you can download the <a href="download/HashForm.zip">HashForm.zip</a>,
+    unpack the contents to some directory, and then run the contained
+    HashForm.exe from the unpacked directory (note that the dll files
+    must remain with the executable in this case).<br>
+    See also:<br>
+    <ul>
+      <li><b><a href="License_HashForm.html">HashForm License Agreement</a></b>
+        contains terms of use. HashForm is a freeware copyrighted by
+        Igor Grešovnik. It uses IGLib and other libraries with their own
+        license agreements.</li>
+      <li><a href="doc/HashForm_help.pdf"><b>User Manual</b> in PDF</a>.
+      </li>
+      <li><a href="doc/HashForm_help.html">User Manual in HTML</a>. </li>
+    </ul>
+    <br>
+    <b><a href="download/HashForm.exe.chk">Checksums</a> for
+      <a href="download/HashForm.exe"> HashForm.exe</a></b> (5.453.312
+    bytes) - this file is still an older version (1.6.0):<br>
+    <ul>
+      <li>MD5: c4d13239233e1a98fa5ee2764b74b620<br>
+      </li>
+      <li>SHA-1: 2f9060802841e182c87bb23c48b2ee38198f9769<br>
+      </li>
+      <li>SHA-256:
+        81cddd4a86d31a6dc33ec2ed6bc44e04789b6f4517c5800554a76b99fa100776</li>
+      <li>6d18a02aaf2d8a9beef0aadc2735b94ca2c135f7df374e8189fc0cbb4addbf42c8ba6abf823182f92c3b57b05c0ced81f8147c157456858e6a949f270653a1cf<br>
+      </li>
+    </ul>
+    <br>
+    <b><a href="download/HashForm.zip.chk">Checksums</a> for
+      <a href="download/HashForm.zip"> HashForm.zip</a></b> (1,032,486
+    bytes):<br>
+    <ul>
+      <li>MD5: 855b18bc197640c577c719358e777ad0<br>
+      </li>
+      <li>SHA-1: 4d1dfc15d292ad80998b5608a0e187856062a250<br>
+      </li>
+      <li>SHA-256:
+        7a1e74c1c7da9c1033f58f48dfa61e94dad3e5bab711ca4009912a8006f2a89d</li>
+      <li>SHA-512:
+538bd3e5c88d7f5b6aa49e026f5558f97a71315abe868063487186a46e67f05daa63238e49c112f8f78d802c46df930bd49a89e99b87caa22701e361198eba1f<br>
+      </li>
+    </ul>
+    <br>
+    <b><a href="download/HashForm_with_help_files.zip.chk">Checksums</a>
+      for <a href="download/HashForm_with_help_files.zip">HashForm_with_help_files.zip</a></b>
+    (3.750.378 bytes):<br>
+    <ul>
+      <li>MD5: 03ab4fa73c928e7b0b1303354d5fc4fb<br>
+      </li>
+      <li>SHA-1: 1c84f898c73f091daa62537e8c9de91c0f671b32<br>
+      </li>
+      <li>SHA-256:
+        03ee4a223bce869e805cad7749a62851e580ab1b4bfcdfd3e259e37eab590dfd<br>
+      </li>
+      <li>SHA-512:
+c0cc38cb38fff22fe462eb686d81e5153bd777eb4b453e7cbd2436d8017faa0cf2f3c2c39be0a2a5ef02ecb697075c1322a2830f5c275b8a070e24a6632ac2b9<br>
+      </li>
+    </ul>
+    <br>
+    <b><a name="download_hashshell"></a>HashShell:</b><br>
+    Download <a href="download/HashShell.exe">HashShell.exe</a> and
+    eventually <a href="download/HashShell.cmd">HashShell.cmd</a>. Then
+    open a command shell and run<br>
+    &nbsp; HashShell.exe Interactive<br>
+    In the interactive mode, you can execute example commands from the
+    HashShell.cmd file. For more detailed instructions, see the <a
+      href="#hashshell">HashShell Section</a>.<br>
+    On some systems, the single executable file will not work. In this
+    case, you can download the <a href="download/HashShell.zip">HashShell.zip</a>,
+    unpack the contents to some directory, and then run the contained
+    HashShell.exe from the unpacked directory (note that the dll files
+    must remain with the executable in this case).<br>
+    See also:<br>
+    <ul>
+      <li><b><a href="License_HashShell.html">HashShell License
+            Agreement</a></b>&nbsp; <br>
+      </li>
+      <li> <a href="#doc_hashshell">Documentation Section</a>
+        &nbsp;&nbsp; <br>
+      </li>
+    </ul>
+    <br>
+    <b><a href="download/HashShell.exe.chk">Checksums</a> for
+      <a href="download/HashShell.exe"> HashShell.exe</a></b>:<br>
+    <ul>
+      <li>HashShell.exe:</li>
+      <li>MD5: ce3d08350a3a9f04df4d9a86e4ee748e<br>
+      </li>
+      <li>SHA-1: ebb53e078a8ad85b44cbf64e6a2447c1a4391bff<br>
+      </li>
+      <li>SHA-256:
+        63ac033c26005fb13e58f59e6e35b18927fb7308e798f1055e55ed73f60f8941<br>
+      </li>
+    </ul>
+    <br>
+    <b><a href="download/HashShell.zip.chk">Checksums</a> for
+      <a href="download/HashShell.zip"> HashShell.zip</a></b>:<br>
+    <ul>
+      <li>MD5: 081eec371651468d687b8bdf901e2483<br>
+      </li>
+      <li>SHA-1: c3d1fbf7360e5a8d0c466e3b679333f1cbe3d966<br>
+      </li>
+      <li>SHA-256:
+        d46dc7b8f4bc5239a842e6d9bb37ecb2a16201234b3cef7bc7570a31987bad1a</li>
+    </ul>
+    <p><br>
+    </p>
+    <h2 style="text-align: center;"><small><a name="versions"></a><span
+          style="color: rgb(204, 0, 0);">Other Versions&nbsp; <br>
+        </span></small></h2>
+    <p><br>
+    </p>
+    <ul>
+      <li><a
+href="http://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/versions/1.6/HashForm.html#hashform">HashForm
+
+
+
+
+
+          1.6</a>&nbsp; <br>
+      </li>
+      <li><a
+href="http://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/versions/1.6.1/HashForm.html#hashform">HashForm
+
+
+
+
+
+          1.6.1</a> - Released on May 13, 2017.&nbsp; <br>
+      </li>
+    </ul>
+    <ul>
+    </ul>
+    <h2 style="text-align: center;"><small><a name="other_software"></a><span
+          style="color: rgb(204, 0, 0);">Other Software&nbsp; <br>
+        </span></small></h2>
+    <i>HashForm</i> and <i>HashShell</i> are based on the <a
+      href="http://www2.arnes.si/%7Eljc3m2/igor/iglib/index.html"><i>Investigative
+
+
+
+
+
+
+
+
+
+
+
+        Generic Library (IGLib.NET)</i></a>.<br>
+    Some other publically available software based on this library
+    includes: <br>
+    <ul>
+      <li>&nbsp;<span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+          font-family:&quot;Times New
+          Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times
+          New Roman&quot;;
+          mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
+
+
+
+
+
+
+
+
+
+
+
+          layout-grid-mode:line"><a
+            href="http://www2.arnes.si/%7Eljc3m2/igor/software/NeurApp/index.html">NeurApp</a>
+          – an educational application for visually exploring features
+          of function approximation with artificial neural networks
+          (ANN). It creates 1D and 2D ANN models of user defined
+          functions and provides visualization capabilities to compare
+          these models with originals. It can be <a
+            href="http://www.softpedia.com/get/Science-CAD/NeurApp.shtml">downloaded
+
+
+
+
+
+
+
+
+
+
+
+            from Softpedia</a>.<br>
+        </span></li>
+      <li>&nbsp;<i style="mso-bidi-font-style:normal"><span
+            style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times
+
+
+
+
+
+
+
+
+
+
+
+            New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New
+            Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+            EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line"><a
+              href="http://www2.arnes.si/%7Eljc3m2/igor/software/AnnApp/index.html">AnnApp</a></span></i><span
+          style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times
+
+
+
+
+
+
+
+
+
+
+
+          New Roman&quot;,&quot;serif&quot;;
+          mso-fareast-font-family:&quot;Times New
+          Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+          EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line"> –
+          software for exploring multidimensional ANN-based models.</span></li>
+      <li><a
+href="http://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/index.html"><span
+            style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+            font-family:&quot;Times New
+            Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times
+            New Roman&quot;;
+            mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
+
+
+
+
+
+
+
+
+
+
+
+            layout-grid-mode:line"><i>IGShell</i></span></a> - <span
+          style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+          font-family:&quot;Times New
+          Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times
+          New Roman&quot;;
+          mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
+
+
+
+
+
+
+
+
+
+
+
+          layout-grid-mode:line">a shell application based on <i>IGLib</i>.</span></li>
+      <li><i style="mso-bidi-font-style:normal"><span
+            style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times
+
+
+
+
+
+
+
+
+
+
+
+            New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New
+            Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+            EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line"><a
+href="http://www2.arnes.si/%7Eljc3m2/igor/software/thesis_petek/index.html">Oscillator
+
+
+
+
+
+
+
+
+
+
+
+              Modeller</a></span></i><span
+          style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+          font-family:&quot;Times New
+          Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times
+          New Roman&quot;;
+          mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
+
+
+
+
+
+
+
+
+
+
+
+          layout-grid-mode:line"> – an educational application for
+          playing with nonlinear driven oscillators and their resonance
+          curves. <br>
+        </span></li>
+    </ul>
+    <center>
+      <h1> <a name="seealso"></a><b><i><font color="#cc0000"><font
+                size="+2">See Also<br>
+              </font></font></i></b></h1>
+    </center>
+    <br>
+    <ul>
+      <li><a href="http://www.garykessler.net/library/crypto.html"><b>An
+            Overview of Cryptography</b></a> by Garry C. Kessler.</li>
+      <li><a
+          href="https://www.owasp.org/index.php/Guide_to_Cryptography"><b>Guide
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            to Cryptography</b></a>., from Open Web Application Security
+        Project (OWASP).</li>
+      <li><a href="https://en.wikibooks.org/wiki/Cryptography"><b>Cryptography</b></a>
+        at WikiBooks <br>
+      </li>
+      <ul>
+        <li><a
+href="https://en.wikibooks.org/wiki/Cryptography/Open_Source_Cryptography">Open
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Source Cryptography Projects</a> <br>
+        </li>
+      </ul>
+      <li><b><a href="https://en.wikipedia.org/wiki/Cryptography">Cryptography
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            at Wikipedia</a></b>. <br>
+      </li>
+      <ul>
+        <li><a
+            href="https://en.wikipedia.org/wiki/Outline_of_cryptography">Outline
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            of Cryptography</a>. <br>
+        </li>
+        <li><a
+            href="https://en.wikipedia.org/wiki/Cryptographic_hash_function">Cryptographic
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            hash function</a>&nbsp;</li>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/MD5">MD5</a>&nbsp;</li>
+          <li><a href="https://en.wikipedia.org/wiki/SHA-1">SHA-1</a>&nbsp;</li>
+          <li><a href="https://en.wikipedia.org/wiki/SHA-2">SHA-2</a>
+            (including <a
+              href="https://en.wikipedia.org/w/index.php?title=SHA-256">SHA-256</a>
+            and <a
+              href="https://en.wikipedia.org/w/index.php?title=SHA-512">SHA-512</a>)
+            <br>
+          </li>
+        </ul>
+        <li><a
+            href="https://en.wikipedia.org/wiki/Symmetric-key_algorithm">Symmetric-key
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Algorithm</a> <br>
+        </li>
+        <ul>
+          <li><a
+              href="https://en.wikipedia.org/w/index.php?title=Rijndael_algorithm">Rijndael
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              algorithm</a>&nbsp;</li>
+          <li><a
+              href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">Advanced
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Encryption Standard</a> (AES)</li>
+          <li><a
+              href="https://en.wikipedia.org/wiki/Data_Encryption_Standard">Data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Encryption Standard</a> (DES)&nbsp;</li>
+          <li><a href="https://en.wikipedia.org/wiki/Triple_DES">Triple
+              DES</a>&nbsp;</li>
+          <li><a href="https://en.wikipedia.org/wiki/RC4">RC4</a> <br>
+          </li>
+        </ul>
+        <li><a
+            href="https://en.wikipedia.org/wiki/Public-key_cryptography">Public-key
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            cryptography</a> (asymmetric-key algorithms) <br>
+        </li>
+        <ul>
+          <li><a
+              href="https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29">RSA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Cryptosystem</a>&nbsp;</li>
+          <li><a
+              href="https://en.wikipedia.org/wiki/Digital_Signature_Algorithm">Digital
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Signature algorithm</a> (DSA) <br>
+          </li>
+          <li><a href="https://en.wikipedia.org/wiki/PKCS#12">Public Key
+              Cryptography Standards</a> (PKCS)&nbsp;</li>
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/PKCS_12">PCKS 12</a>
+              <br>
+            </li>
+          </ul>
+          <li><a href="https://en.wikipedia.org/wiki/X.509">X.509
+              standard</a> for <a
+              href="https://en.wikipedia.org/wiki/Public_key_infrastructure"
+              title="Public key infrastructure">Public Key
+              Infrastructure</a> (PKI) and <a
+              href="https://en.wikipedia.org/wiki/Privilege_Management_Infrastructure"
+              title="Privilege Management Infrastructure">Privilege
+              Management Infrastructure</a> (PMI)&nbsp;</li>
+          <li><a
+              href="https://en.wikipedia.org/wiki/Public_key_certificate">Digital
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Certificate</a>&nbsp;</li>
+          <ul>
+            <li><a
+href="https://en.wikipedia.org/w/index.php?title=Certificate_revocation_list">Certificate
+
+
+
+
+
+
+
+
+
+
+
+
+
+                Revocation List</a>&nbsp;&nbsp;</li>
+            <li><a
+                href="https://en.wikipedia.org/wiki/Authorization_certificate">Authorization
+
+
+
+
+
+
+
+
+
+
+
+
+
+                Certificate</a> <br>
+            </li>
+            <li><a
+href="https://en.wikipedia.org/wiki/Certification_path_validation_algorithm">Certification
+
+
+
+
+
+
+
+
+
+
+
+
+
+                Path Validation</a>&nbsp;&nbsp;</li>
+          </ul>
+        </ul>
+        <li><a href="https://en.wikipedia.org/wiki/Hybrid_cryptosystem">Hybrid
+
+
+
+
+
+
+
+
+
+
+
+
+
+            CryptoSystem</a>&nbsp; <br>
+        </li>
+        <ul>
+          <ul>
+          </ul>
+        </ul>
+        <li><a href="https://en.wikipedia.org/wiki/Digital_signature">Digital
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Signature</a>&nbsp;</li>
+        <li><a href="https://en.wikipedia.org/wiki/Checksum">Checksum</a>&nbsp;</li>
+        <ul>
+          <li><a
+              href="https://en.wikipedia.org/wiki/Cyclic_redundancy_check">Cyclic
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Redundancy Check</a> (CRC) <br>
+          </li>
+          <li><a
+              href="https://en.wikipedia.org/w/index.php?title=Message_digest">Message
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Digest</a>&nbsp;&nbsp;</li>
+        </ul>
+        <li>Security <br>
+        </li>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Cryptanalysis">CryptAnalysis&nbsp;</a></li>
+          <li><a
+              href="https://en.wikipedia.org/wiki/Cryptanalysis#Symmetric_ciphers">Symmetric
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Cypher Attacks</a> <br>
+          </li>
+          <li><a
+              href="https://en.wikipedia.org/wiki/Cryptanalysis#Asymmetric_ciphers">Asymmetric
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Cypher Attacks</a>&nbsp;</li>
+          <li><a
+href="https://en.wikipedia.org/wiki/Cryptanalysis#Attacking_cryptographic_hash_systems">Hash
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Systems Attacks</a>&nbsp;</li>
+          <li><a
+              href="https://en.wikipedia.org/wiki/Side-channel_attack">Side-channel
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Attacks</a>&nbsp;</li>
+          <ul>
+            <li><a
+                href="https://en.wikipedia.org/wiki/Cryptanalysis#Side-channel_attacks">List</a>
+              of Side Channel Attacks <br>
+            </li>
+          </ul>
+        </ul>
+      </ul>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr width="100%"><br>
+    <br>
+    <!-- SiteSearch Google --> <a name="search"><b>Search within this
+        site:</b> <br>
+      <script>
+	  (function() {
+		var cx = '005529250561729632597:c5xdncmbwjo';
+		var gcse = document.createElement('script');
+		gcse.type = 'text/javascript';
+		gcse.async = true;
+		gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(gcse, s);
+	  })();
+	</script> <gcse:search></gcse:search>
+      <!-- SiteSearch Google -->
+      <p> </p>
+      <p> </p>
+      <br>
+      <hr>
+      <center>
+        <table nosave="" cellpadding="2" border="3" bgcolor="#ffffff">
+          <tbody>
+            <tr nosave="">
+              <td nosave="" valign="top" align="center">
+                <center>&nbsp;&nbsp; <a
+                    href="http://www.c3m.si/inverse/doc/phd/"><br>
+                  </a></center>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </center>
+      &nbsp;
+      <div align="right">
+        <table nosave="" cellpadding="2" border="3" bgcolor="#ffffff">
+          <tbody>
+            <tr nosave="">
+              <td nosave="" valign="top" align="left">
+                <div align="right"><font size="-1">&nbsp; Maintained by
+                    <a href="http://www2.arnes.si/%7Eljc3m2/igor/">Igor
+                      Grešovnik</a>&nbsp; <br>
+                  </font></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        &nbsp; &nbsp; &nbsp;&nbsp; </div>
+      <center>
+        <table nosave="" cellpadding="2" border="3">
+          <tbody>
+            <tr nosave="">
+              <td nosave="" valign="top" align="left">
+                <center><i>&nbsp; Updated in June 2016 &nbsp; <br>
+                  </i></center>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </center>
+      <ul>
+        &nbsp; <br>
+        <br>
+      </ul>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </a>
+  </body>
+</html>

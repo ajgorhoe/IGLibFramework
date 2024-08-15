@@ -1,0 +1,3087 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1250">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="help_files/filelist.xml">
+<link rel=Edit-Time-Data href="help_files/editdata.mso">
+<link rel=OLE-Object-Data href="help_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Neurapp - Learning Approximation with Artificial Neural Networks</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="country-region"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="City"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Subject>User manual for NeurApp, a software for learning artificial neural network approximation, based on IGLib.</o:Subject>
+  <o:Author>Igor Grešovnik, Tadej Kodelja</o:Author>
+  <o:Keywords>Software, Freeware, Neural Networks, Approximation, Teaching</o:Keywords>
+  <o:LastAuthor>Admin</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>45573</o:TotalTime>
+  <o:LastPrinted>2013-02-28T14:06:00Z</o:LastPrinted>
+  <o:Created>2013-04-18T14:50:00Z</o:Created>
+  <o:LastSaved>2013-04-18T14:50:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1482</o:Words>
+  <o:Characters>8450</o:Characters>
+  <o:Category>Software</o:Category>
+  <o:Lines>70</o:Lines>
+  <o:Paragraphs>19</o:Paragraphs>
+  <o:CharactersWithSpaces>9913</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:ActiveWritingStyle Lang="EN-US" VendorID="8" DLLVersion="513" NLCheck="0">1</w:ActiveWritingStyle>
+  <w:ActiveWritingStyle Lang="EN-GB" VendorID="8" DLLVersion="513" NLCheck="0">1</w:ActiveWritingStyle>
+  <w:DoNotHyphenateCaps/>
+  <w:DrawingGridHorizontalSpacing>5.65 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>5.65 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DrawingGridHorizontalOrigin>0 pt</w:DrawingGridHorizontalOrigin>
+  <w:DrawingGridVerticalOrigin>0 pt</w:DrawingGridVerticalOrigin>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+   <w:UseWord97LineBreakingRules/>
+   <w:SelectEntireFieldWithStartOrEnd/>
+   <w:UseWord2002TableStyleRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:238;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520077569 -1073717157 41 0 66047 0;}
+@font-face
+	{font-family:KaiTi_GB2312;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"\@KaiTi_GB2312";
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+h1
+	{mso-style-next:Normal;
+	margin-top:20.0pt;
+	margin-right:1.0cm;
+	margin-bottom:16.0pt;
+	margin-left:0cm;
+	text-align:center;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-list:l10 level1 lfo1;
+	tab-stops:list 22.7pt;
+	font-size:18.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	font-variant:small-caps;
+	mso-font-kerning:14.0pt;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+h2
+	{mso-style-next:Normal;
+	margin-top:20.0pt;
+	margin-right:42.55pt;
+	margin-bottom:14.0pt;
+	margin-left:0cm;
+	text-align:center;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-list:l10 level2 lfo1;
+	tab-stops:list 0cm left 28.8pt;
+	font-size:16.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+h3
+	{mso-style-next:Normal;
+	margin-top:24.0pt;
+	margin-right:1.0cm;
+	margin-bottom:18.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-list:l10 level3 lfo1;
+	tab-stops:list 0cm left 36.0pt;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+h4
+	{mso-style-next:Normal;
+	margin-top:8.0pt;
+	margin-right:1.0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	mso-list:l10 level4 lfo1;
+	tab-stops:list 0cm left 43.2pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+h5
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	mso-list:l10 level5 lfo1;
+	tab-stops:list 0cm left 50.4pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+h6
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:6;
+	mso-list:l10 level6 lfo1;
+	tab-stops:list 0cm left 57.6pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;
+	font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:7;
+	mso-list:l10 level7 lfo1;
+	tab-stops:list 0cm left 64.8pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:8;
+	mso-list:l10 level8 lfo1;
+	tab-stops:list 0cm left 72.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:9;
+	mso-list:l10 level9 lfo1;
+	tab-stops:list 0cm left 79.2pt;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:24.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:48.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:84.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:96.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoNormalIndent, li.MsoNormalIndent, div.MsoNormalIndent
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-noshow:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-noshow:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	tab-stops:center 216.0pt right 432.0pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	tab-stops:center 216.0pt right 432.0pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:5.65pt;
+	margin-bottom:6.0pt;
+	margin-left:14.2pt;
+	text-indent:14.2pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.MsoFootnoteReference
+	{mso-style-noshow:yes;
+	mso-style-parent:"";
+	vertical-align:super;}
+span.MsoCommentReference
+	{mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-ansi-font-size:8.0pt;}
+span.MsoEndnoteReference
+	{mso-style-noshow:yes;
+	mso-style-parent:"";
+	vertical-align:super;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{mso-style-noshow:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{mso-style-update:auto;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	tab-stops:list 18.0pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:36.0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoBodyTextFirstIndent, li.MsoBodyTextFirstIndent, div.MsoBodyTextFirstIndent
+	{mso-style-parent:"Body Text";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:10.5pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoBodyTextFirstIndent2, li.MsoBodyTextFirstIndent2, div.MsoBodyTextFirstIndent2
+	{mso-style-parent:"Body Text Indent";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:14.15pt;
+	text-align:justify;
+	text-indent:10.5pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoNoteHeading, li.MsoNoteHeading, div.MsoNoteHeading
+	{mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	text-indent:36.0pt;
+	mso-pagination:widow-orphan;
+	font-size:24.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-indent:36.0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0cm;
+	margin-right:99.2pt;
+	margin-bottom:0cm;
+	margin-left:99.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+a:link, span.MsoHyperlink
+	{mso-style-parent:"";
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-parent:"";
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+em
+	{mso-style-parent:"";
+	mso-bidi-font-style:normal;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-noshow:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-language:AR-SA;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-noshow:yes;
+	mso-style-parent:"Comment Text";
+	mso-style-next:"Comment Text";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.Literatura, li.Literatura, div.Literatura
+	{mso-style-name:Literatura;
+	mso-style-parent:Caption;
+	margin-top:6.0pt;
+	margin-right:5.65pt;
+	margin-bottom:0cm;
+	margin-left:51.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-34.0pt;
+	mso-pagination:widow-orphan;
+	tab-stops:35.45pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;}
+p.code, li.code, div.code
+	{mso-style-name:code;
+	mso-style-link:"code Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.equation, li.equation, div.equation
+	{mso-style-name:equation;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:36.0pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 212.65pt right 411.1pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.alg, li.alg, div.alg
+	{mso-style-name:a_lg;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:1.0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.code0, li.code0, div.code0
+	{mso-style-name:c_ode;
+	mso-style-link:"c_ode Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:85.1pt;
+	margin-bottom:.0001pt;
+	text-indent:-70.9pt;
+	mso-pagination:widow-orphan;
+	tab-stops:right 17.0cm;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.eq, li.eq, div.eq
+	{mso-style-name:e_q;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:36.0pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 8.0cm right 474.85pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.lit, li.lit, div.lit
+	{mso-style-name:l_it;
+	mso-style-parent:Caption;
+	margin-top:6.0pt;
+	margin-right:5.65pt;
+	margin-bottom:0cm;
+	margin-left:51.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-34.0pt;
+	mso-pagination:widow-orphan;
+	tab-stops:49.6pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;}
+p.sbullet1, li.sbullet1, div.sbullet1
+	{mso-style-name:s_bullet1;
+	mso-style-link:"s_bullet1 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l13 level1 lfo4;
+	tab-stops:list 18.0pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.small, li.small, div.small
+	{mso-style-name:s_mall;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:36.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+span.codeChar
+	{mso-style-name:"c_ode Char";
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:c_ode;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+span.codeChar0
+	{mso-style-name:"code Char";
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:code;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.sbullet1Char
+	{mso-style-name:"s_bullet1 Char";
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:s_bullet1;
+	mso-ansi-font-size:12.0pt;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.x, li.x, div.x
+	{mso-style-name:x;
+	mso-style-link:"x Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:36.0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+span.xChar
+	{mso-style-name:"x Char";
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:x;
+	mso-ansi-font-size:12.0pt;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+p.StyleCaptionNotLatinBold, li.StyleCaptionNotLatinBold, div.StyleCaptionNotLatinBold
+	{mso-style-name:"Style Caption + Not \(Latin\) Bold";
+	mso-style-parent:Caption;
+	margin-top:6.0pt;
+	margin-right:5.65pt;
+	margin-bottom:6.0pt;
+	margin-left:14.2pt;
+	text-indent:14.2pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;}
+p.sbullet3, li.sbullet3, div.sbullet3
+	{mso-style-name:s_bullet3;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l11 level1 lfo33;
+	tab-stops:list 72.0pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	layout-grid-mode:line;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("help_files/header.html") fs;
+	mso-footnote-continuation-separator:url("help_files/header.html") fcs;
+	mso-endnote-separator:url("help_files/header.html") es;
+	mso-endnote-continuation-separator:url("help_files/header.html") ecs;
+	mso-footnote-numbering-restart:each-page;
+	mso-endnote-numbering-style:arabic;
+	mso-endnote-numbering-restart:each-section;}
+@page Section1
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 2.0cm 70.9pt 2.0cm;
+	mso-header-margin:2.0cm;
+	mso-footer-margin:70.9pt;
+	mso-page-numbers:roman-lower;
+	mso-page-numbers-chapter-separator:period;
+	mso-even-header:url("help_files/header.html") eh1;
+	mso-header:url("help_files/header.html") h1;
+	mso-even-footer:url("help_files/header.html") ef1;
+	mso-footer:url("help_files/header.html") f1;
+	mso-first-header:url("help_files/header.html") fh1;
+	mso-first-footer:url("help_files/header.html") ff1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;
+	mso-footnote-numbering-restart:each-page;
+	mso-endnote-numbering-style:arabic;
+	mso-endnote-numbering-restart:each-section;}
+@page Section2
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 2.0cm 70.9pt 2.0cm;
+	mso-header-margin:2.0cm;
+	mso-footer-margin:70.9pt;
+	mso-page-numbers:roman-lower;
+	mso-page-numbers-chapter-separator:period;
+	mso-even-header:url("help_files/header.html") eh1;
+	mso-header:url("help_files/header.html") h1;
+	mso-even-footer:url("help_files/header.html") ef1;
+	mso-footer:url("help_files/header.html") f2;
+	mso-first-header:url("help_files/header.html") fh1;
+	mso-first-footer:url("help_files/header.html") ff1;
+	mso-paper-source:0;}
+div.Section2
+	{page:Section2;
+	mso-footnote-numbering-restart:each-page;
+	mso-endnote-numbering-style:arabic;
+	mso-endnote-numbering-restart:each-section;}
+@page Section3
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 2.0cm 70.9pt 2.0cm;
+	mso-header-margin:2.0cm;
+	mso-footer-margin:70.9pt;
+	mso-page-numbers:0;
+	mso-page-numbers-chapter-separator:period;
+	mso-even-header:url("help_files/header.html") eh1;
+	mso-header:url("help_files/header.html") h3;
+	mso-even-footer:url("help_files/header.html") ef1;
+	mso-footer:url("help_files/header.html") f3;
+	mso-first-header:url("help_files/header.html") fh1;
+	mso-first-footer:url("help_files/header.html") ff1;
+	mso-paper-source:0;}
+div.Section3
+	{page:Section3;
+	mso-footnote-numbering-restart:each-page;
+	mso-endnote-numbering-style:arabic;
+	mso-endnote-numbering-restart:each-section;}
+@page Section4
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 2.0cm 70.9pt 2.0cm;
+	mso-header-margin:2.0cm;
+	mso-footer-margin:70.9pt;
+	mso-page-numbers-chapter-separator:period;
+	mso-even-header:url("help_files/header.html") eh1;
+	mso-header:url("help_files/header.html") h4;
+	mso-even-footer:url("help_files/header.html") ef1;
+	mso-footer:url("help_files/header.html") f3;
+	mso-first-header:url("help_files/header.html") fh1;
+	mso-first-footer:url("help_files/header.html") ff1;
+	mso-paper-source:0;}
+div.Section4
+	{page:Section4;
+	mso-footnote-numbering-restart:each-page;
+	mso-endnote-numbering-style:arabic;
+	mso-endnote-numbering-restart:each-section;}
+@page Section5
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 2.0cm 70.9pt 2.0cm;
+	mso-header-margin:2.0cm;
+	mso-footer-margin:70.9pt;
+	mso-page-numbers-chapter-separator:period;
+	mso-even-header:url("help_files/header.html") eh1;
+	mso-header:url("help_files/header.html") h5;
+	mso-even-footer:url("help_files/header.html") ef1;
+	mso-footer:url("help_files/header.html") f3;
+	mso-first-header:url("help_files/header.html") fh1;
+	mso-first-footer:url("help_files/header.html") ff1;
+	mso-paper-source:0;}
+div.Section5
+	{page:Section5;
+	mso-footnote-numbering-restart:each-page;
+	mso-endnote-numbering-style:arabic;
+	mso-endnote-numbering-restart:each-section;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:-132;
+	mso-list-type:simple;
+	mso-list-template-ids:-887315036;}
+@list l0:level1
+	{mso-level-tab-stop:74.6pt;
+	mso-level-number-position:left;
+	margin-left:74.6pt;
+	text-indent:-18.0pt;}
+@list l1
+	{mso-list-id:-131;
+	mso-list-type:simple;
+	mso-list-template-ids:851075528;}
+@list l1:level1
+	{mso-level-tab-stop:60.45pt;
+	mso-level-number-position:left;
+	margin-left:60.45pt;
+	text-indent:-18.0pt;}
+@list l2
+	{mso-list-id:-130;
+	mso-list-type:simple;
+	mso-list-template-ids:-1097163510;}
+@list l2:level1
+	{mso-level-tab-stop:46.3pt;
+	mso-level-number-position:left;
+	margin-left:46.3pt;
+	text-indent:-18.0pt;}
+@list l3
+	{mso-list-id:-129;
+	mso-list-type:simple;
+	mso-list-template-ids:-129234748;}
+@list l3:level1
+	{mso-level-tab-stop:32.15pt;
+	mso-level-number-position:left;
+	margin-left:32.15pt;
+	text-indent:-18.0pt;}
+@list l4
+	{mso-list-id:-128;
+	mso-list-type:simple;
+	mso-list-template-ids:711785850;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:74.6pt;
+	mso-level-number-position:left;
+	margin-left:74.6pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:-127;
+	mso-list-type:simple;
+	mso-list-template-ids:-286642722;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:60.45pt;
+	mso-level-number-position:left;
+	margin-left:60.45pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:-126;
+	mso-list-type:simple;
+	mso-list-template-ids:381610272;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:46.3pt;
+	mso-level-number-position:left;
+	margin-left:46.3pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:-125;
+	mso-list-type:simple;
+	mso-list-template-ids:-123054750;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:32.15pt;
+	mso-level-number-position:left;
+	margin-left:32.15pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l8
+	{mso-list-id:-120;
+	mso-list-type:simple;
+	mso-list-template-ids:-329499684;}
+@list l8:level1
+	{mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l9
+	{mso-list-id:-119;
+	mso-list-type:simple;
+	mso-list-template-ids:-124764588;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l10
+	{mso-list-id:-5;
+	mso-list-template-ids:990156082;}
+@list l10:level1
+	{mso-level-style-link:"Heading 1";
+	mso-level-text:%1;
+	mso-level-tab-stop:22.7pt;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l10:level2
+	{mso-level-style-link:"Heading 2";
+	mso-level-text:"%1\.%2";
+	mso-level-tab-stop:0cm;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l10:level3
+	{mso-level-style-link:"Heading 3";
+	mso-level-text:"%1\.%2\.%3";
+	mso-level-tab-stop:0cm;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l10:level4
+	{mso-level-style-link:"Heading 4";
+	mso-level-text:"%1\.%2\.%3\.%4";
+	mso-level-tab-stop:0cm;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l10:level5
+	{mso-level-style-link:"Heading 5";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5";
+	mso-level-tab-stop:0cm;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l10:level6
+	{mso-level-style-link:"Heading 6";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6";
+	mso-level-tab-stop:0cm;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l10:level7
+	{mso-level-style-link:"Heading 7";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7";
+	mso-level-tab-stop:0cm;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l10:level8
+	{mso-level-style-link:"Heading 8";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
+	mso-level-tab-stop:0cm;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l10:level9
+	{mso-level-style-link:"Heading 9";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+	mso-level-tab-stop:0cm;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l11
+	{mso-list-id:12221912;
+	mso-list-type:hybrid;
+	mso-list-template-ids:444894298 889324218 69468163 69468165 69468161 69468163 69468165 69468161 69468163 69468165;}
+@list l11:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:s_bullet3;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l12
+	{mso-list-id:226840678;
+	mso-list-type:hybrid;
+	mso-list-template-ids:728902098 1585588612 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l12:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:74.45pt;
+	mso-level-number-position:left;
+	margin-left:74.45pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;
+	color:windowtext;}
+@list l13
+	{mso-list-id:245652025;
+	mso-list-type:simple;
+	mso-list-template-ids:-45202008;}
+@list l13:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:s_bullet1;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l14
+	{mso-list-id:307442578;
+	mso-list-type:hybrid;
+	mso-list-template-ids:838131642 1585588612 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l14:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:74.45pt;
+	mso-level-number-position:left;
+	margin-left:74.45pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;
+	color:windowtext;}
+@list l15
+	{mso-list-id:326637924;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1948373364 69468161 69468163 69468165 69468161 69468163 69468165 69468161 69468163 69468165;}
+@list l15:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l16
+	{mso-list-id:338697275;
+	mso-list-template-ids:-1896560860;}
+@list l16:level1
+	{mso-level-number-format:image;
+	list-style-image:url("help_files/image001.gif");
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l16:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	margin-left:108.0pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l16:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	margin-left:144.0pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l16:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	margin-left:180.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l16:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	margin-left:216.0pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l16:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	margin-left:252.0pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l16:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	margin-left:288.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l16:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	margin-left:324.0pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l16:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:360.0pt;
+	mso-level-number-position:left;
+	margin-left:360.0pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l17
+	{mso-list-id:427772633;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1178245944 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l17:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l18
+	{mso-list-id:447940623;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-928872680 438885704 -1859875360 1342756484 564158034 56232820 -1527379354 1205527610 1097382600 1151792024;}
+@list l18:level1
+	{mso-level-number-format:image;
+	list-style-image:url("help_files/image001.gif");
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l19
+	{mso-list-id:488636480;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1896560860 438885704 69468163 69468165 69468161 69468163 69468165 69468161 69468163 69468165;}
+@list l19:level1
+	{mso-level-number-format:image;
+	list-style-image:url("help_files/image001.gif");
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l20
+	{mso-list-id:637344322;
+	mso-list-type:hybrid;
+	mso-list-template-ids:477907848 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l20:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l21
+	{mso-list-id:741027888;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-755189216 69468161 69468163 69468165 69468161 69468163 69468165 69468161 69468163 69468165;}
+@list l21:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l21:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	margin-left:108.0pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l21:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	margin-left:144.0pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l21:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	margin-left:180.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l22
+	{mso-list-id:847448349;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1021692772 69468161 69468163 69468165 69468161 69468163 69468165 69468161 69468163 69468165;}
+@list l22:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l23
+	{mso-list-id:1164125480;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-582593972 69468161 69468163 69468165 69468161 69468163 69468165 69468161 69468163 69468165;}
+@list l23:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l24
+	{mso-list-id:1244756597;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1962460610 69468161 69468163 69468165 69468161 69468163 69468165 69468161 69468163 69468165;}
+@list l24:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l25
+	{mso-list-id:1287005616;
+	mso-list-type:hybrid;
+	mso-list-template-ids:206461520 438885704 69468163 69468165 69468161 69468163 69468165 69468161 69468163 69468165;}
+@list l25:level1
+	{mso-level-number-format:image;
+	list-style-image:url("help_files/image001.gif");
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l26
+	{mso-list-id:1294603855;
+	mso-list-type:hybrid;
+	mso-list-template-ids:114343136 69468161 69468163 69468165 69468161 69468163 69468165 69468161 69468163 69468165;}
+@list l26:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l27
+	{mso-list-id:1464619455;
+	mso-list-type:hybrid;
+	mso-list-template-ids:39100100 69468161 69468163 69468165 69468161 69468163 69468165 69468161 69468163 69468165;}
+@list l27:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l28
+	{mso-list-id:1646348149;
+	mso-list-type:hybrid;
+	mso-list-template-ids:288098072 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l28:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l28:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	margin-left:108.0pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l29
+	{mso-list-id:1880431353;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-320803298 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l29:level1
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;}
+@list l30
+	{mso-list-id:2052613313;
+	mso-list-template-ids:-1416216216;}
+@list l30:level1
+	{mso-level-text:%1;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l30:level2
+	{mso-level-text:"%1\.%2";
+	mso-level-tab-stop:0cm;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l30:level3
+	{mso-level-text:"%1\.%2\.%3";
+	mso-level-tab-stop:0cm;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l30:level4
+	{mso-level-text:"%1\.%2\.%3\.%4";
+	mso-level-tab-stop:0cm;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l30:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5";
+	mso-level-tab-stop:0cm;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l30:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6";
+	mso-level-tab-stop:0cm;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l30:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7";
+	mso-level-tab-stop:0cm;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l30:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
+	mso-level-tab-stop:0cm;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l30:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+	mso-level-tab-stop:0cm;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l31
+	{mso-list-id:2074502621;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1271684398 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l31:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l32
+	{mso-list-id:2140880626;
+	mso-list-template-ids:0;}
+@list l32:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l32:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	margin-left:36.0pt;
+	text-indent:-18.0pt;}
+@list l32:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"%3\)";
+	mso-level-tab-stop:54.0pt;
+	mso-level-number-position:left;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;}
+@list l32:level4
+	{mso-level-text:"\(%4\)";
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;}
+@list l32:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:90.0pt;
+	mso-level-number-position:left;
+	margin-left:90.0pt;
+	text-indent:-18.0pt;}
+@list l32:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	margin-left:108.0pt;
+	text-indent:-18.0pt;}
+@list l32:level7
+	{mso-level-tab-stop:126.0pt;
+	mso-level-number-position:left;
+	margin-left:126.0pt;
+	text-indent:-18.0pt;}
+@list l32:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	margin-left:144.0pt;
+	text-indent:-18.0pt;}
+@list l32:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:162.0pt;
+	mso-level-number-position:left;
+	margin-left:162.0pt;
+	text-indent:-18.0pt;}
+@list l32:level1 lfo2
+	{mso-level-numbering:continue;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l32:level2 lfo2
+	{mso-level-numbering:continue;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l32:level3 lfo2
+	{mso-level-numbering:continue;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l32:level4 lfo2
+	{mso-level-numbering:continue;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l32:level5 lfo2
+	{mso-level-numbering:continue;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l32:level6 lfo2
+	{mso-level-numbering:continue;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l32:level7 lfo2
+	{mso-level-numbering:continue;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l32:level8 lfo2
+	{mso-level-numbering:continue;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l32:level9 lfo2
+	{mso-level-numbering:continue;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=SL link=blue vlink=purple style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<p class=equation style='tab-stops:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=equation style='tab-stops:36.0pt'><span lang=EN-US style='font-size:
+16.0pt;color:red'>Wo<a name="_Hlt55798112">rk in progress!</a></span><span
+style='mso-bookmark:_Hlt55798112'><span lang=EN-US style='font-size:16.0pt'><span
+style='mso-spacerun:yes'>  </span><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" alt="This page is under construction. Icon is missing."
+ style='width:28.5pt;height:28.5pt'>
+ <v:imagedata src="help_files/image002.gif" o:href="file:///D:\users\igor\www\www\igor\work.gif"/>
+ <o:lock v:ext="edit" cropping="t"/>
+</v:shape><![endif]--><![if !vml]><img width=38 height=38
+src="help_files/image002.gif"
+alt="This page is under construction. Icon is missing." v:shapes="_x0000_i1025"><![endif]><o:p></o:p></span></span></p>
+
+<span style='mso-bookmark:_Hlt55798112'></span>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent2 style='text-indent:0cm'><a name=maintitle></a><a
+name="_Hlt56855137"></a><a name="_Hlt107204618"></a><span style='mso-bookmark:
+maintitle'><span lang=EN-US>NeuralParametricDemo</span></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent2 style='text-indent:0cm'><span lang=EN-US
+style='font-size:20.0pt;font-style:normal;mso-bidi-font-style:italic'><span
+style='mso-spacerun:yes'> </span>Exploring ANN Models Parametric Studies<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent2 style='text-indent:0cm'><a name="_Hlt503798010"></a><span
+lang=EN-US style='font-size:20.0pt;font-weight:normal;mso-bidi-font-weight:
+bold;font-style:normal;mso-bidi-font-style:italic'>User Manual<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-size:16.0pt'>Version <a name=revision>0.0</a>,
+<a name=year>May 201</a>3.</span></i><i style='mso-bidi-font-style:normal'><span
+style='font-size:16.0pt;mso-ansi-language:SL'><o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:14.0pt'>by <a name=authors>Igor Gre</a></span><span
+style='mso-bookmark:authors'><span style='font-size:14.0pt;mso-ansi-language:
+SL'>šovnik &amp; Tadej Kodelja</span></span><span style='font-size:14.0pt;
+mso-ansi-language:SL'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="_x0000_s1031" type="#_x0000_t202" style='position:absolute;
+ left:0;text-align:left;margin-left:-.3pt;margin-top:214.95pt;width:486pt;
+ height:162.5pt;z-index:1' filled="f" stroked="f"/><![endif]--><![if !vml]><span
+style='mso-ignore:vglayout;position:absolute;z-index:1;left:0px;margin-left:
+0px;margin-top:287px;width:652px;height:220px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=652 height=220 style='vertical-align:top'><![endif]><![if !mso]><span
+  style='position:absolute;mso-ignore:vglayout;left:0pt;z-index:1'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div v:shape="_x0000_s1031" style='padding:3.6pt 7.2pt 3.6pt 7.2pt'
+    class=shape>
+    <p class=MsoNormal align=right style='text-align:right'><span lang=EN-US><!--[if gte vml 1]><v:shape
+     id="_x0000_i1027" type="#_x0000_t75" alt="Dragonfly Server&#13;&#10;              Logo."
+     style='width:73.5pt;height:56.25pt'>
+     <v:imagedata src="help_files/image003.jpg" o:href="http://www2.arnes.si/%7Eljc3m2/igor/iglib/dragonfly_server_small.jpg"/>
+    </v:shape><![endif]--><![if !vml]><img width=98 height=75
+    src="help_files/image004.jpg" alt="Dragonfly Server&#13;&#10;              Logo."
+    v:shapes="_x0000_i1027"><![endif]></span></p>
+    <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+    <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+    style='font-size:10.0pt'>This software is based on the Investigative
+    Generic Library (IGLib). <o:p></o:p></span></p>
+    <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>It was created
+    as auxiliary tool for performing parametric studies on ANN - based models. <o:p></o:p></span></p>
+    <p class=MsoNormal style='tab-stops:right 467.8pt'><span lang=EN-US><!--[if gte vml 1]><v:shape
+     id="_x0000_i1028" type="#_x0000_t75" alt="CO BIK" style='width:111pt;
+     height:42pt'>
+     <v:imagedata src="help_files/image005.png" o:href="http://www.cobik.si/assets/templates/cobik/images/logo-eng.gif"/>
+    </v:shape><![endif]--><![if !vml]><img width=148 height=56
+    src="help_files/image006.jpg" alt="CO BIK" v:shapes="_x0000_i1028"><![endif]><span
+    style='mso-tab-count:1'>                                                                           </span><!--[if gte vml 1]><v:shape
+     id="_x0000_i1029" type="#_x0000_t75" style='width:133.5pt;height:42pt'>
+     <v:imagedata src="help_files/image007.png" o:href="http://www.cobik.si/assets/templates/cobik/images/eu_skladeng.gif"/>
+    </v:shape><![endif]--><![if !vml]><img width=178 height=56
+    src="help_files/image008.jpg" v:shapes="_x0000_i1029"><![endif]></span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  </span><![endif]><![if !mso & !vml]>&nbsp;<![endif]><![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><span lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1026"
+ type="#_x0000_t75" style='width:225pt;height:188.25pt'>
+ <v:imagedata src="help_files/image009.png" o:title="20_A(Ti)"/>
+</v:shape><![endif]--><![if !vml]><img width=300 height=251
+src="help_files/image010.gif" v:shapes="_x0000_i1026"><![endif]></span><span
+lang=EN-US style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line'><br
+clear=all style='page-break-before:auto;mso-break-type:section-break'>
+</span>
+
+<div class=Section2><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:10.0pt'>Contents:<o:p></o:p></span></i></b></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoToc1 style='tab-stops:24.0pt right dotted 481.45pt'><!--[if supportFields]><span
+lang=EN-US><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>TOC \o &quot;1-3&quot; \h \z \u <span
+style='mso-element:field-separator'></span></span><![endif]--><span lang=EN-US><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc354066810">1<span
+lang=SL style='mso-bidi-font-size:12.0pt;color:windowtext;mso-ansi-language:
+SL;mso-fareast-language:SL;mso-bidi-language:HE;layout-grid-mode:both;
+font-weight:normal;font-style:normal;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1'>      </span></span>Introduction<span style='color:
+windowtext;display:none;mso-hide:screen;text-decoration:none;text-underline:
+none'><span style='mso-tab-count:1 dotted'>. </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span></span><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'> PAGEREF _Toc354066810 \h </span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>1</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003300350034003000360036003800310030000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span></span></span><span
+style='mso-bidi-font-size:12.0pt;mso-ansi-language:SL;mso-fareast-language:
+SL;mso-bidi-language:HE;layout-grid-mode:both;font-weight:normal;font-style:
+normal;mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc1 style='tab-stops:24.0pt right dotted 481.45pt'><span
+class=MsoHyperlink><span lang=EN-US style='mso-no-proof:yes'><a
+href="#_Toc354066811">2<span lang=SL style='mso-bidi-font-size:12.0pt;
+color:windowtext;mso-ansi-language:SL;mso-fareast-language:SL;mso-bidi-language:
+HE;layout-grid-mode:both;font-weight:normal;font-style:normal;text-decoration:
+none;text-underline:none'><span style='mso-tab-count:1'>      </span></span>Short
+User Manual<span style='color:windowtext;display:none;mso-hide:screen;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1 dotted'> </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span></span><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'> PAGEREF _Toc354066811 \h </span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>1</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003300350034003000360036003800310031000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
+style='mso-bidi-font-size:12.0pt;mso-ansi-language:SL;mso-fareast-language:
+SL;mso-bidi-language:HE;layout-grid-mode:both;font-weight:normal;font-style:
+normal;mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:48.0pt right dotted 481.45pt'><span
+class=MsoHyperlink><span lang=EN-US style='mso-no-proof:yes'><a
+href="#_Toc354066812">2.1<span lang=SL style='font-size:12.0pt;color:windowtext;
+mso-ansi-language:SL;mso-fareast-language:SL;mso-bidi-language:HE;layout-grid-mode:
+both;font-weight:normal;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1'>       </span></span>Installation and Use<span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-tab-count:1 dotted'>. </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span></span><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'> PAGEREF _Toc354066812 \h </span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>1</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003300350034003000360036003800310032000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
+style='font-size:12.0pt;mso-ansi-language:SL;mso-fareast-language:SL;
+mso-bidi-language:HE;layout-grid-mode:both;font-weight:normal;mso-no-proof:
+yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:48.0pt right dotted 481.45pt'><span
+class=MsoHyperlink><span lang=EN-US style='mso-no-proof:yes'><a
+href="#_Toc354066813">2.2<span lang=SL style='font-size:12.0pt;color:windowtext;
+mso-ansi-language:SL;mso-fareast-language:SL;mso-bidi-language:HE;layout-grid-mode:
+both;font-weight:normal;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1'>       </span></span>Calculating Model Output<span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-tab-count:1 dotted'> </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span></span><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'> PAGEREF _Toc354066813 \h </span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>1</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003300350034003000360036003800310033000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
+style='font-size:12.0pt;mso-ansi-language:SL;mso-fareast-language:SL;
+mso-bidi-language:HE;layout-grid-mode:both;font-weight:normal;mso-no-proof:
+yes'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 481.45pt'><span
+class=MsoHyperlink><span lang=EN-US style='mso-no-proof:yes'><a
+href="#_Toc354066814">2.2.1<span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>. </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span></span><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'> PAGEREF _Toc354066814 \h </span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>2</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003300350034003000360036003800310034000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
+style='font-size:12.0pt;mso-ansi-language:SL;mso-fareast-language:SL;
+mso-bidi-language:HE;layout-grid-mode:both;mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:48.0pt right dotted 481.45pt'><span
+class=MsoHyperlink><span lang=EN-US style='mso-no-proof:yes'><a
+href="#_Toc354066815">2.3<span lang=SL style='font-size:12.0pt;color:windowtext;
+mso-ansi-language:SL;mso-fareast-language:SL;mso-bidi-language:HE;layout-grid-mode:
+both;font-weight:normal;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1'>       </span></span>Accessing Help and Web Pages<span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-tab-count:1 dotted'>. </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span></span><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'> PAGEREF _Toc354066815 \h </span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>2</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003300350034003000360036003800310035000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
+style='font-size:12.0pt;mso-ansi-language:SL;mso-fareast-language:SL;
+mso-bidi-language:HE;layout-grid-mode:both;font-weight:normal;mso-no-proof:
+yes'><o:p></o:p></span></p>
+
+<p class=MsoToc1 style='tab-stops:24.0pt right dotted 481.45pt'><span
+class=MsoHyperlink><span lang=EN-US style='mso-no-proof:yes'><a
+href="#_Toc354066816">3<span lang=SL style='mso-bidi-font-size:12.0pt;
+color:windowtext;mso-ansi-language:SL;mso-fareast-language:SL;mso-bidi-language:
+HE;layout-grid-mode:both;font-weight:normal;font-style:normal;text-decoration:
+none;text-underline:none'><span style='mso-tab-count:1'>      </span></span>Screenshots<span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-tab-count:1 dotted'>. </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span></span><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'> PAGEREF _Toc354066816 \h </span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>3</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003300350034003000360036003800310036000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
+style='mso-bidi-font-size:12.0pt;mso-ansi-language:SL;mso-fareast-language:
+SL;mso-bidi-language:HE;layout-grid-mode:both;font-weight:normal;font-style:
+normal;mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc1 style='tab-stops:24.0pt right dotted 481.45pt'><span
+class=MsoHyperlink><span lang=EN-US style='mso-no-proof:yes'><a
+href="#_Toc354066817">4<span lang=SL style='mso-bidi-font-size:12.0pt;
+color:windowtext;mso-ansi-language:SL;mso-fareast-language:SL;mso-bidi-language:
+HE;layout-grid-mode:both;font-weight:normal;font-style:normal;text-decoration:
+none;text-underline:none'><span style='mso-tab-count:1'>      </span></span>About
+the Software<span style='color:windowtext;display:none;mso-hide:screen;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1 dotted'>. </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span></span><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'> PAGEREF _Toc354066817 \h </span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>3</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003300350034003000360036003800310037000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
+style='mso-bidi-font-size:12.0pt;mso-ansi-language:SL;mso-fareast-language:
+SL;mso-bidi-language:HE;layout-grid-mode:both;font-weight:normal;font-style:
+normal;mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc1 style='tab-stops:24.0pt right dotted 481.45pt'><span
+class=MsoHyperlink><span lang=EN-US style='mso-no-proof:yes'><a
+href="#_Toc354066818">5<span lang=SL style='mso-bidi-font-size:12.0pt;
+color:windowtext;mso-ansi-language:SL;mso-fareast-language:SL;mso-bidi-language:
+HE;layout-grid-mode:both;font-weight:normal;font-style:normal;text-decoration:
+none;text-underline:none'><span style='mso-tab-count:1'>      </span></span>Sandbox<span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-tab-count:1 dotted'>. </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span></span><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'> PAGEREF _Toc354066818 \h </span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>6</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003300350034003000360036003800310038000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
+style='mso-bidi-font-size:12.0pt;mso-ansi-language:SL;mso-fareast-language:
+SL;mso-bidi-language:HE;layout-grid-mode:both;font-weight:normal;font-style:
+normal;mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><!--[if supportFields]><span
+lang=EN-US><span style='mso-element:field-end'></span></span><![endif]--><span
+lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=equation style='tab-stops:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line'><br
+clear=all style='page-break-before:auto;mso-break-type:section-break'>
+</span>
+
+<div class=Section3>
+
+<p class=equation style='tab-stops:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line'><br
+clear=all style='mso-special-character:line-break;page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='text-indent:36.0pt'><a name="_Hlt480655247"></a><span
+lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=equation style='tab-stops:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<h1 style='margin-left:0cm;text-indent:0cm'><a name="_Toc354066810"></a><a
+name="_Toc349256589"></a><a name="_Ref185235514"></a><a name="_Ref162060045"></a><a
+name="_Ref111196421"></a><a name="_Toc96668344"></a><a name="_Toc96668183"><span
+style='mso-bookmark:_Toc96668344'><span style='mso-bookmark:_Ref111196421'><span
+style='mso-bookmark:_Ref162060045'><span style='mso-bookmark:_Ref185235514'><span
+style='mso-bookmark:_Toc349256589'><span style='mso-bookmark:_Toc354066810'><![if !supportLists]><span
+lang=EN-US style='font-variant:normal !important;text-transform:uppercase'><span
+style='mso-list:Ignore'>1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR><span lang=EN-US style='font-variant:
+normal !important;text-transform:uppercase'>Introduction</span></span></span></span></span></span></span></span></a><span
+lang=EN-US style='font-variant:normal !important;text-transform:uppercase'><o:p></o:p></span></h1>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<h1 style='margin-left:0cm;text-indent:0cm'><a name="_Toc354066811"></a><a
+name="_Toc349256590"></a><a name="_Hlt96752675"></a><![if !supportLists]><span
+style='mso-bookmark:_Toc354066811'><span style='mso-bookmark:_Toc349256590'><span
+lang=EN-US style='font-variant:normal !important;text-transform:uppercase'><span
+style='mso-list:Ignore'>2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span></span><![endif]><span dir=LTR><span
+style='mso-bookmark:_Toc354066811'><span style='mso-bookmark:_Toc349256590'><span
+lang=EN-US style='font-variant:normal !important;text-transform:uppercase'>Short
+User Manual</span></span></span></span><span lang=EN-US style='font-variant:
+normal !important;text-transform:uppercase'><o:p></o:p></span></h1>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<h2 style='margin-left:0cm;text-indent:0cm'><a name="_Toc354066812"></a><a
+name="_Toc349256591"><span style='mso-bookmark:_Toc354066812'><![if !supportLists]><span
+lang=EN-US><span style='mso-list:Ignore'>2.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR><span lang=EN-US>Installation and
+Use</span></span></span></a></h2>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US>Installing and using
+the software is extremely simple. In order to install the software, just grab
+the archive, expand it, and copy the contained file into some directory. Double-click
+on the executable file in any file browser (such as the Windows Explorer) in
+order to execute the software.</span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US>In order to
+start using the software, ... </span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<h2 style='margin-left:0cm;text-indent:0cm'><a name="_Toc354066813"><![if !supportLists]><span
+lang=EN-US><span style='mso-list:Ignore'>2.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR><span lang=EN-US>Calculating Model
+Output</span></span></a></h2>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:SL'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1030" type="#_x0000_t75" style='width:537pt;height:335.25pt'
+ o:ole="">
+ <v:imagedata src="help_files/image011.emz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=716 height=447
+src="help_files/image012.gif" v:shapes="_x0000_i1030"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1427809118">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+
+<p class=MsoCaption style='margin-top:0cm'><span lang=EN-US>Figure <span
+style='mso-field-code:" SEQ Figure \\* ARABIC "'><span style='mso-no-proof:
+yes'>1</span></span>:</span><span lang=EN-US style='font-weight:normal'> GUI
+for calculating output values of the model at chosen input parameters. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<h3 style='margin-left:0cm;text-indent:0cm'><a name="_Toc354066814"></a><![if !supportLists]><span
+lang=EN-US><span style='mso-list:Ignore'>2.2.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR><span lang=EN-US><o:p>&nbsp;</o:p></span></span></h3>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<h2 style='margin-left:0cm;text-indent:0cm'><a name="_Toc354066815"></a><a
+name="_Toc349256594"><span style='mso-bookmark:_Toc354066815'><![if !supportLists]><span
+lang=EN-US><span style='mso-list:Ignore'>2.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR><span lang=EN-US>Accessing Help
+and Web Pages</span></span></span></a></h2>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<h1 style='margin-left:0cm;text-indent:0cm'><a name="_Toc354066816"></a><a
+name="_Toc349256595"><span style='mso-bookmark:_Toc354066816'><![if !supportLists]><span
+lang=EN-US style='font-variant:normal !important;text-transform:uppercase'><span
+style='mso-list:Ignore'>3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR><span lang=EN-US style='font-variant:
+normal !important;text-transform:uppercase'>Screenshots</span></span></span></a><span
+lang=EN-US style='font-variant:normal !important;text-transform:uppercase'><o:p></o:p></span></h1>
+
+<p class=MsoNormal style='text-indent:36.0pt;tab-stops:224.85pt'><span
+lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt;tab-stops:224.85pt'><span
+lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US><!--[if gte vml 1]><v:shape
+   id="_x0000_i1031" type="#_x0000_t75" style='width:226.5pt;height:190.5pt'>
+   <v:imagedata src="help_files/image013.png" o:title="19_A(Cu)"/>
+  </v:shape><![endif]--><![if !vml]><img width=302 height=254
+  src="help_files/image014.gif" v:shapes="_x0000_i1031"><![endif]></span></p>
+  </td>
+  <td width=329 valign=top style='width:246.4pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US><!--[if gte vml 1]><v:shape
+   id="_x0000_i1032" type="#_x0000_t75" style='width:226.5pt;height:190.5pt'>
+   <v:imagedata src="help_files/image015.png" o:title="19_A(Cu)"/>
+  </v:shape><![endif]--><![if !vml]><img width=302 height=254
+  src="help_files/image016.gif" v:shapes="_x0000_i1032"><![endif]></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoCaption style='margin-top:0cm'><span lang=EN-US>Figure <span
+style='mso-field-code:" SEQ Figure \\* ARABIC "'><span style='mso-no-proof:
+yes'>2</span></span>:</span><span lang=EN-US style='font-weight:normal'>
+Elongation as a function of the Copper concentration (Cu), calculated by the
+ANN model on centered verification point (red line) and centered training point
+(blue line). <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt;tab-stops:224.85pt'><span
+lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt;tab-stops:224.85pt'><span
+lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt;tab-stops:224.85pt'><span
+lang=EN-US><!--[if gte vml 1]><v:shape id="_x0000_i1033" type="#_x0000_t75"
+ style='width:226.5pt;height:189.75pt'>
+ <v:imagedata src="help_files/image017.png" o:title="14_Rm(S)"/>
+</v:shape><![endif]--><![if !vml]><img width=302 height=253
+src="help_files/image018.gif" v:shapes="_x0000_i1033"><![endif]></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoCaption style='margin-top:0cm'><span lang=EN-US>Figure <span
+style='mso-field-code:" SEQ Figure \\* ARABIC "'><span style='mso-no-proof:
+yes'>3</span></span>:</span><span lang=EN-US style='font-weight:normal'>
+Tensile strength as a function of the Sulphur concentration (S), calculated by
+the ANN model on centered verification. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=328 valign=top style='width:246.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US><!--[if gte vml 1]><v:shape
+   id="_x0000_i1034" type="#_x0000_t75" style='width:226.5pt;height:190.5pt'>
+   <v:imagedata src="help_files/image019.png" o:title="15_Rm(Cr)"/>
+  </v:shape><![endif]--><![if !vml]><img width=302 height=254
+  src="help_files/image020.gif" v:shapes="_x0000_i1034"><![endif]></span></p>
+  </td>
+  <td width=329 valign=top style='width:246.4pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US><!--[if gte vml 1]><v:shape
+   id="_x0000_i1035" type="#_x0000_t75" style='width:226.5pt;height:190.5pt'>
+   <v:imagedata src="help_files/image021.png" o:title="15_Rm(Cr)"/>
+  </v:shape><![endif]--><![if !vml]><img width=302 height=254
+  src="help_files/image022.gif" v:shapes="_x0000_i1035"><![endif]></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:36.0pt;tab-stops:224.85pt'><span
+lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt;tab-stops:224.85pt'><span
+lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt;tab-stops:224.85pt'><span
+lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt;tab-stops:224.85pt'><span
+lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt;tab-stops:224.85pt'><span
+lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt;tab-stops:224.85pt'><span
+lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt;tab-stops:224.85pt'><span
+lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<h1 style='margin-left:0cm;text-indent:0cm'><a name="_Toc354066817"></a><a
+name="_Toc349256596"><span style='mso-bookmark:_Toc354066817'><![if !supportLists]><span
+lang=EN-US style='font-variant:normal !important;text-transform:uppercase'><span
+style='mso-list:Ignore'>4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR><span lang=EN-US style='font-variant:
+normal !important;text-transform:uppercase'>About the Software</span></span></span></a><span
+lang=EN-US style='font-variant:normal !important;text-transform:uppercase'><o:p></o:p></span></h1>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US>Software was
+developed by Igor Grešovnik and Tadej Kodelja as an easy to use and intuitive
+tool for performing parametric studies on the artificial neural networks (ANNs)
+- based models. Authors have developed the software while working on ANN-based
+model of process parameters in material production in the Centre of Excellence
+for Biosensors, Instrumentation and Process Control (<a
+href="http://www.cobik.si/index?lang=eng">COBIK</a>). In the scope of his work
+at COBIK, Tadej Kodelja was also working on his Ph.D. thesis under supervision
+of Prof. Božidar Šarler and Igor Grešovnik.</span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US>The software is
+based on the <i>Investigative Generic Library</i> (<i>IGLib</i>), a framework
+library for development of technical applications. The library itself is based
+on the .NET framework and relies on a number of third party libraries. It has
+been used by commercial as well as research projects. Among the others, it
+serves as code base for the software for industrial ANN-based modeling, which
+is developed by the authors of the application. That is a complex software used
+as support to tackle most challenging ANN modeling problems in industry. It
+requires some expertise and skills to use that software, but with the benefit
+of a powerful and flexible problem solving tool. The software is used
+internally for performing research and providing services to industry, but
+authors are open for all kinds of collaboration where the software can be
+utilized.</span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line'><br
+clear=all style='page-break-before:auto;mso-break-type:section-break'>
+</span>
+
+<div class=Section4>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line'><br
+clear=all style='mso-special-character:line-break;page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><a name=references></a><a
+name="_Hlt96670121"></a><span style='mso-bookmark:references'><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>Some References</span></i></b></span><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></i></b></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US>Below there is a
+collection of selected references and links that are in some way related to the
+software. They are mainly related to the authors’ past work that brought to the
+situation where the software was created. References <span style='mso-field-code:
+" REF _Ref342050823 \\h "'>[<span style='mso-no-proof:yes'>1</span><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003300340032003000350030003800320033000000</w:data>
+</xml><![endif]--></span>] - <span style='mso-field-code:" REF _Ref342050851 \\h "'>[<span
+style='mso-no-proof:yes'>3</span><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003300340032003000350030003800350031000000</w:data>
+</xml><![endif]--></span>] are some papers published within the scope of our
+work at the Centre of Excellence for Biosensors, Instrumentation and Process
+Control. <span style='mso-field-code:" REF _Ref343474114 \\h "'>[<span
+style='mso-no-proof:yes'>4</span><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003300340033003400370034003100310034000000</w:data>
+</xml><![endif]--></span>] - <span style='mso-field-code:" REF _Ref349458151 \\h "'>[<span
+style='mso-no-proof:yes'>9</span><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003300340039003400350038003100350031000000</w:data>
+</xml><![endif]--></span>] are references related to optimization shell <i>Inverse</i>,
+which is a complex industrial &amp; research optimization software written in C
+that preceded the <i>IGLib</i> library, and where many concepts and ideas used
+in the <i>IGLib</i> library (a framework library for development of technical
+applications reference developed by Igor Gre</span><span style='mso-ansi-language:
+SL'>šovnik, reference</span> <span lang=EN-US><span style='mso-field-code:" REF _Ref342050944 \\h "'>[<span
+style='mso-no-proof:yes'>10</span><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003300340032003000350030003900340034000000</w:data>
+</xml><![endif]--></span>]) come from. Aforge.Net (reference <span
+style='mso-field-code:" REF _Ref340767727 \\h "'>[<span style='mso-no-proof:
+yes'>11</span><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003300340030003700360037003700320037000000</w:data>
+</xml><![endif]--></span>]) is a library that is used as neural networks
+computation engine in <span style='mso-field-code:" REF softwarename \\h "'>NeurApp<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D00000073006F006600740077006100720065006E0061006D0065000000</w:data>
+</xml><![endif]--></span>. </span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US>References <span
+style='mso-field-code:" REF _Ref349458686 \\h "'>[<span style='mso-no-proof:
+yes'>12</span><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003300340039003400350038003600380036000000</w:data>
+</xml><![endif]--></span>] and <span style='mso-field-code:" REF _Ref349458689 \\h "'>[<span
+style='mso-no-proof:yes'>13</span><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003300340039003400350038003600380039000000</w:data>
+</xml><![endif]--></span>] are links to the institution </span><span
+lang=EN-US style='mso-bidi-font-size:14.0pt'>Centre of Excellence for
+biosensors, instrumentation and process control </span><span lang=EN-US>(COBIK)
+and the laboratory where the authors currently work. Within COBIK, authors are
+developing methodologies for application of artificial neural networks to
+modeling of industrial processes. The problem solving software developed in the
+scope of this work is based on the IGLib (<span style='mso-field-code:" REF _Ref342050944 \\h "'>[<span
+style='mso-no-proof:yes'>10</span><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003300340032003000350030003900340034000000</w:data>
+</xml><![endif]--></span>]). This is also the case with this software, which is
+a side product of the above work initially developed as a simple tool for inspecting
+features of ANN-based models. </span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US>The more
+professional software used for actual research &amp; industrial work is quite
+complex and requires a high level of expertise from the user, and it is
+interpreter - centered rather than a GUI - based. It is used internally for
+performing research tasks and to offer services to industry, with interfaces to
+a number of partner software and with some specialized interfaces for users in
+partner institutions. This software is designed to be highly flexible and
+quickly adaptable to new problems and customer requirements. It does not target
+any specific range of tasks, but is a good base for a wide range of specialized
+modules or applications for specific and well defined tasks. The software is
+not available for purchase, but authors will welcome any suggestion for
+collaboration on research, development or industrial projects or request for
+development of software needed, where they can provide reliable and
+professional service. </span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=lit style='tab-stops:49.65pt'><a name="_Ref78865871"></a><a
+name="_Ref472079565"></a><a name="_Ref343779729"></a><a name="_Ref342050823"></a><a
+name="_Hlt81754371"></a><span style='mso-bookmark:_Ref78865871'><span
+style='mso-bookmark:_Ref472079565'><span style='mso-bookmark:_Ref343779729'><span
+style='mso-bookmark:_Ref342050823'><span lang=EN-US>[<span style='mso-field-code:
+" SEQ \[ \\* ARABIC "'><span style='mso-no-proof:yes'>1</span></span></span></span><span
+lang=EN-US>]<span style='mso-tab-count:1'>      </span></span></span></span></span><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+style='mso-bookmark:_Ref343779729'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt'>Grešovnik, <st1:place w:st="on">I.</st1:place>; Kodelja, T.; Vertnik,
+R.; Šarler, B. (2012): A software Framework for Optimization Parameters in
+Material Production. Applied Mechanics and Materialds, vol. 101-102, pp. 838-841.
+Trans Tech Publications, <st1:place w:st="on"><st1:country-region w:st="on">Switzerland</st1:country-region></st1:place>.</span></span></span></span><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+lang=EN-US style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></span></span></p>
+
+<p class=lit style='tab-stops:49.65pt'><span style='mso-bookmark:_Ref78865871'><span
+style='mso-bookmark:_Ref472079565'><a name="_Ref341342485"><span lang=EN-US>[<span
+style='mso-field-code:" SEQ \[ \\* ARABIC "'><span style='mso-no-proof:yes'>2</span></span></span></a><span
+lang=EN-US>]<span style='mso-tab-count:1'>      </span></span></span></span><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+lang=EN-US style='mso-bidi-font-size:12.0pt'>Grešovnik, <st1:place w:st="on">I.</st1:place>;
+Kodelja, T.; Vertnik, R.; Šarler, B. (2012): </span><span lang=EN-US>Application
+of artificial neural networks to improve steel production process. Bruzzone, A.
+G.; Hamza, M. H. Proceedings of the 15th International Conference on Artificial
+Intelligence and Soft Computing, <st1:place w:st="on"><st1:City w:st="on">Napoli</st1:City>,
+ <st1:country-region w:st="on">Italy</st1:country-region></st1:place>, pp.
+249-255.</span></span></span></p>
+
+<p class=lit style='tab-stops:49.65pt'><span style='mso-bookmark:_Ref78865871'><span
+style='mso-bookmark:_Ref472079565'><a name="_Ref340647856"></a><a
+name="_Ref342050851"><span style='mso-bookmark:_Ref340647856'><span lang=EN-US>[<span
+style='mso-field-code:" SEQ \[ \\* ARABIC "'><span style='mso-no-proof:yes'>3</span></span></span></span></a><span
+style='mso-bookmark:_Ref340647856'><span lang=EN-US>]<span style='mso-tab-count:
+1'>      </span>Grešovnik, <st1:place w:st="on">I.</st1:place>; Kodelja, T.;
+Vertnik, R.; Senčič. B.; Kovačič, M.; Šarler, B. (2012): Application of
+artificial neural networks in design of steel production path. Computers,
+Materials and Continua, vol. 30, pp. 19-38.</span></span></span></span></p>
+
+<p class=lit style='tab-stops:49.65pt'><span style='mso-bookmark:_Ref78865871'><span
+style='mso-bookmark:_Ref472079565'><span style='mso-bookmark:_Ref340647856'><a
+name="_Ref343474114"><span lang=EN-US>[<span style='mso-field-code:" SEQ \[ \\* ARABIC "'><span
+style='mso-no-proof:yes'>4</span></span></span></a><span lang=EN-US>]<span
+style='mso-tab-count:1'>      </span>Gresovnik, I. (2000): A General Purpose
+Computational Shell for Solving Inverse and Optimisation Problems -
+Applications to Metal Forming Processes, Ph. D. thesis, University of Wales
+Swansea, U.K.</span></span></span></span></p>
+
+<p class=lit style='tab-stops:49.65pt'><span style='mso-bookmark:_Ref78865871'><span
+style='mso-bookmark:_Ref472079565'><span style='mso-bookmark:_Ref340647856'><span
+lang=EN-US>[<span style='mso-field-code:" SEQ \[ \\* ARABIC "'><span
+style='mso-no-proof:yes'>5</span></span>]<span style='mso-tab-count:1'>      </span></span></span></span></span><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+style='mso-bookmark:_Ref340647856'><span lang=EN-US style='mso-fareast-font-family:
+KaiTi_GB2312'>Grešovnik, <st1:place w:st="on">I.</st1:place> (2012):
+Optimization shell Inverse, </span></span></span></span><a
+href="http://www2.arnes.si/~ljc3m2/inverse/"><span style='mso-bookmark:_Ref78865871'><span
+style='mso-bookmark:_Ref472079565'><span style='mso-bookmark:_Ref340647856'><span
+lang=EN-US style='mso-fareast-font-family:KaiTi_GB2312'>http://www2.arnes.si/~ljc3m2/inverse/</span></span></span></span><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+style='mso-bookmark:_Ref340647856'></span></span></span></a><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+style='mso-bookmark:_Ref340647856'><span lang=EN-US style='mso-fareast-font-family:
+KaiTi_GB2312'>.</span></span></span></span></p>
+
+<p class=lit style='tab-stops:49.65pt'><span style='mso-bookmark:_Ref78865871'><span
+style='mso-bookmark:_Ref472079565'><span style='mso-bookmark:_Ref340647856'><a
+name="_Ref342050943"><span lang=EN-US>[<span style='mso-field-code:" SEQ \[ \\* ARABIC "'><span
+style='mso-no-proof:yes'>6</span></span></span></a><span lang=EN-US>]<span
+style='mso-tab-count:1'>      </span></span></span></span></span><a
+name="_Ref295434474"><span style='mso-bookmark:_Ref340647856'><span
+style='mso-bookmark:_Ref472079565'><span style='mso-bookmark:_Ref78865871'><span
+lang=EN-US style='mso-fareast-font-family:KaiTi_GB2312'>Grešovnik, </span></span></span></span></a><st1:place
+w:st="on"><span style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:
+ _Ref472079565'><span style='mso-bookmark:_Ref340647856'><span
+ style='mso-bookmark:_Ref295434474'><span lang=EN-US style='mso-fareast-font-family:
+ KaiTi_GB2312'>I.</span></span></span></span></span></st1:place><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+style='mso-bookmark:_Ref340647856'><span style='mso-bookmark:_Ref295434474'><span
+lang=EN-US style='mso-fareast-font-family:KaiTi_GB2312'> (2012): IoptLib User
+Manual. </span><span lang=EN-US>Available at:</span></span></span></span></span><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+style='mso-bookmark:_Ref340647856'><span style='mso-bookmark:_Ref295434474'><span
+lang=EN-US style='mso-fareast-font-family:KaiTi_GB2312'> </span></span></span></span></span><a
+href="http://www2.arnes.si/~ljc3m2/igor/ioptlib/doc/optlib.pdf"><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+style='mso-bookmark:_Ref340647856'><span style='mso-bookmark:_Ref295434474'><span
+lang=EN-US style='mso-fareast-font-family:KaiTi_GB2312'>http://www2.arnes.si/~ljc3m2/igor/ioptlib/doc/optlib.pdf</span></span></span></span></span><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+style='mso-bookmark:_Ref340647856'><span style='mso-bookmark:_Ref295434474'></span></span></span></span></a><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+style='mso-bookmark:_Ref340647856'><span style='mso-bookmark:_Ref295434474'><span
+lang=EN-US style='mso-fareast-font-family:KaiTi_GB2312'>.</span></span></span></span></span></p>
+
+<p class=lit style='tab-stops:49.65pt'><span style='mso-bookmark:_Ref78865871'><span
+style='mso-bookmark:_Ref472079565'><span style='mso-bookmark:_Ref340647856'><span
+lang=EN-US>[<span style='mso-field-code:" SEQ \[ \\* ARABIC "'><span
+style='mso-no-proof:yes'>7</span></span>]<span style='mso-tab-count:1'>      </span></span></span></span></span><a
+name="_Ref295434476"><span style='mso-bookmark:_Ref340647856'><span
+style='mso-bookmark:_Ref472079565'><span style='mso-bookmark:_Ref78865871'><span
+lang=EN-US style='mso-fareast-font-family:KaiTi_GB2312'>Grešovnik, </span></span></span></span></a><st1:place
+w:st="on"><span style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:
+ _Ref472079565'><span style='mso-bookmark:_Ref340647856'><span
+ style='mso-bookmark:_Ref295434476'><span lang=EN-US style='mso-fareast-font-family:
+ KaiTi_GB2312'>I.</span></span></span></span></span></st1:place><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+style='mso-bookmark:_Ref340647856'><span style='mso-bookmark:_Ref295434476'><span
+lang=EN-US style='mso-fareast-font-family:KaiTi_GB2312'> (2007): The use of
+moving least squares for a smooth approximation of sampled data. Journal of
+Mechanical Engineering, vol. 9, pp. 582-598.</span></span></span></span></span></p>
+
+<p class=lit style='tab-stops:49.65pt'><span style='mso-bookmark:_Ref78865871'><span
+style='mso-bookmark:_Ref472079565'><span style='mso-bookmark:_Ref340647856'><span
+lang=EN-US>[<span style='mso-field-code:" SEQ \[ \\* ARABIC "'><span
+style='mso-no-proof:yes'>8</span></span>]<span style='mso-tab-count:1'>      </span></span></span></span></span><a
+name="_Ref295434555"><span style='mso-bookmark:_Ref340647856'><span
+style='mso-bookmark:_Ref472079565'><span style='mso-bookmark:_Ref78865871'><span
+lang=EN-US style='mso-fareast-font-family:KaiTi_GB2312'>Grešovnik, </span></span></span></span></a><st1:place
+w:st="on"><span style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:
+ _Ref472079565'><span style='mso-bookmark:_Ref340647856'><span
+ style='mso-bookmark:_Ref295434555'><span lang=EN-US style='mso-fareast-font-family:
+ KaiTi_GB2312'>I.</span></span></span></span></span></st1:place><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+style='mso-bookmark:_Ref340647856'><span style='mso-bookmark:_Ref295434555'><span
+lang=EN-US style='mso-fareast-font-family:KaiTi_GB2312'> (2009): Simplex
+Algorithms for Nonlinear Constrained Optimization Problems, technical report.
+Available at: </span></span></span></span></span><a
+href="http://www2.arnes.si/~ljc3m2/igor/doc/rep/optalgsimplex.pdf"><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+style='mso-bookmark:_Ref340647856'><span style='mso-bookmark:_Ref295434555'><span
+lang=EN-US style='mso-fareast-font-family:KaiTi_GB2312'>http://www2.arnes.si/~ljc3m2/igor/doc/rep/optalgsimplex.pdf</span></span></span></span></span><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+style='mso-bookmark:_Ref340647856'><span style='mso-bookmark:_Ref295434555'></span></span></span></span></a><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+style='mso-bookmark:_Ref340647856'><span style='mso-bookmark:_Ref295434555'><span
+lang=EN-US style='mso-fareast-font-family:KaiTi_GB2312'>.</span></span></span></span></span></p>
+
+<p class=lit style='tab-stops:49.65pt'><span style='mso-bookmark:_Ref78865871'><span
+style='mso-bookmark:_Ref472079565'><span style='mso-bookmark:_Ref340647856'><a
+name="_Ref349458151"><span lang=EN-US>[<span style='mso-field-code:" SEQ \[ \\* ARABIC "'><span
+style='mso-no-proof:yes'>9</span></span></span></a><span lang=EN-US>]<span
+style='mso-tab-count:1'>      </span></span></span></span></span><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+style='mso-bookmark:_Ref340647856'><span lang=EN-US style='mso-fareast-font-family:
+KaiTi_GB2312'>Grešovnik, <st1:place w:st="on">I.</st1:place> (2012): </span><span
+lang=EN-US>IOptLib – library for solving inverse and optimization problems.
+Available at: </span></span></span></span><a
+href="http://www2.arnes.si/~ljc3m2/igor/ioptlib/"><span style='mso-bookmark:
+_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span style='mso-bookmark:
+_Ref340647856'><span lang=EN-US>http://www2.arnes.si/~ljc3m2/igor/ioptlib/</span></span></span></span><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+style='mso-bookmark:_Ref340647856'></span></span></span></a><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+style='mso-bookmark:_Ref340647856'><span lang=EN-US> </span></span></span></span></p>
+
+<p class=lit style='tab-stops:49.65pt'><span style='mso-bookmark:_Ref78865871'><span
+style='mso-bookmark:_Ref472079565'><span style='mso-bookmark:_Ref340647856'><a
+name="_Ref342050944"><span lang=EN-US>[<span style='mso-field-code:" SEQ \[ \\* ARABIC "'><span
+style='mso-no-proof:yes'>10</span></span></span></a></span><span lang=EN-US>]<span
+style='mso-tab-count:1'>    </span>Grešovnik, <st1:place w:st="on">I.</st1:place>
+(2012): IGLib.net - investigative generic library. Available at: </span></span></span><a
+href="http://www2.arnes.si/~ljc3m2/igor/iglib/"><span style='mso-bookmark:_Ref78865871'><span
+style='mso-bookmark:_Ref472079565'><span lang=EN-US>http://www2.arnes.si/~ljc3m2/igor/iglib/</span></span></span><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'></span></span></a><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+lang=EN-US>. </span></span></span></p>
+
+<p class=lit style='tab-stops:49.65pt'><span style='mso-bookmark:_Ref78865871'><span
+style='mso-bookmark:_Ref472079565'><a name="_Ref340767727"><span lang=EN-US>[<span
+style='mso-field-code:" SEQ \[ \\* ARABIC "'><span style='mso-no-proof:yes'>11</span></span></span></a><span
+lang=EN-US>]<span style='mso-tab-count:1'>    </span></span></span></span><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+lang=EN-US style='mso-bidi-font-size:14.0pt'>Aforge.Net. (2012): Artificial
+intelligence library. Available at: </span></span></span><a
+href="http://www.aforgenet.com/"><span style='mso-bookmark:_Ref78865871'><span
+style='mso-bookmark:_Ref472079565'><span lang=EN-US style='mso-bidi-font-size:
+14.0pt'>http://www.aforgenet.com/</span></span></span><span style='mso-bookmark:
+_Ref78865871'><span style='mso-bookmark:_Ref472079565'></span></span></a><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+lang=EN-US style='mso-bidi-font-size:14.0pt'>.<o:p></o:p></span></span></span></p>
+
+<p class=lit style='tab-stops:49.65pt'><span style='mso-bookmark:_Ref78865871'><span
+style='mso-bookmark:_Ref472079565'><a name="_Ref349458686"><span lang=EN-US>[<span
+style='mso-field-code:" SEQ \[ \\* ARABIC "'><span style='mso-no-proof:yes'>12</span></span></span></a><span
+lang=EN-US>]<span style='mso-tab-count:1'>    </span></span></span></span><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+lang=EN-US style='mso-bidi-font-size:14.0pt'>Centre of Excellence for
+biosensors, instrumentation and process control (COBIK) </span></span></span><a
+href="http://www.cobik.si/index?lang=eng"><span style='mso-bookmark:_Ref78865871'><span
+style='mso-bookmark:_Ref472079565'><span lang=EN-US style='mso-bidi-font-size:
+14.0pt'>http://www.cobik.si/index?lang=eng</span></span></span><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'></span></span></a><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+lang=EN-US style='mso-bidi-font-size:14.0pt'>.<o:p></o:p></span></span></span></p>
+
+<p class=lit style='tab-stops:49.65pt 217.35pt'><span style='mso-bookmark:_Ref78865871'><span
+style='mso-bookmark:_Ref472079565'><a name="_Ref349458689"><span lang=EN-US>[<span
+style='mso-field-code:" SEQ \[ \\* ARABIC "'><span style='mso-no-proof:yes'>13</span></span></span></a><span
+lang=EN-US>]<span style='mso-tab-count:1'>    </span><span style='mso-tab-count:
+1'> </span>Laboratory for Advanced Materials Systems, COBIK: </span></span></span><a
+href="http://www.cobik.si/laboratoriji/laboratorij-za-sisteme-z-naprednimi-materiali?lang=eng"><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'><span
+lang=EN-US>http://www.cobik.si/laboratoriji/laboratorij-za-sisteme-z-naprednimi-materiali?lang=eng</span></span></span><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'></span></span></a><span
+style='mso-bookmark:_Ref78865871'><span style='mso-bookmark:_Ref472079565'></span></span></p>
+
+<span style='mso-bookmark:_Ref472079565'></span><span style='mso-bookmark:_Ref78865871'></span>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line'><br
+clear=all style='page-break-before:auto;mso-break-type:section-break'>
+</span>
+
+<div class=Section5>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line'><br
+clear=all style='mso-special-character:line-break;page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><b><span lang=EN-US>To do:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US>1D forma:</span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US>Ni jasno, kaj so
+to Verification Error-ji (kako točno so pridobljene verifikacijske to</span><span
+style='mso-ansi-language:SL'>čke</span><span lang=EN-US>) – to je treba
+napisati v navodilih.</span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US>2D forma:</span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span style='mso-ansi-language:
+SL'>Če ne zapreš okna z originalno funkcijo in podatkov za trening, se program
+sesuje, ko prikažeš še rezultate (aproksimacijo) v novem oknu.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span style='mso-ansi-language:
+SL'>Če dvakrat zaporedoma izrišeš graf (npr. aproksimacije), so grafični
+objekti podvojeni. To rešiš le, če pritisneš vmes gumb Reset. Morda bi bilo
+bolje, če ne bi uporabil starih objektov in bi objekte in morda grafično okno
+naredil vsakič na novo.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span style='mso-ansi-language:
+SL'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span style='mso-ansi-language:
+SL'><o:p>&nbsp;</o:p></span></p>
+
+<h1 style='margin-left:0cm;text-indent:0cm'><![if !supportLists]><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-variant:normal !important;
+color:red;text-transform:uppercase'><span style='mso-list:Ignore'>5<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></i><![endif]><span dir=LTR><span style='font-variant:
+normal !important;text-transform:uppercase;mso-ansi-language:SL'><span
+style='mso-spacerun:yes'>  </span></span></span><a name="_Toc354066818"></a><a
+name="_Toc349256597"></a><a name=sandbox><span style='mso-bookmark:_Toc349256597'><span
+style='mso-bookmark:_Toc354066818'><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-variant:normal !important;color:red;text-transform:uppercase'>Sandbox</span></i></span></span></a><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-variant:normal !important;
+color:red;text-transform:uppercase'><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></i></h1>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=lit><span lang=EN-US>[<span style='mso-field-code:" SEQ \[ \\* ARABIC "'><span
+style='mso-no-proof:yes'>14</span></span>]<span style='mso-tab-count:1'>    </span></span></p>
+
+<p class=lit style='tab-stops:49.65pt'><span lang=EN-US>[<span
+style='mso-field-code:" SEQ \[ \\* ARABIC "'><span style='mso-no-proof:yes'>15</span></span>]<span
+style='mso-tab-count:1'>    </span></span></p>
+
+<p class=lit><span lang=EN-US>[<span style='mso-field-code:" SEQ \[ \\* ARABIC "'><span
+style='mso-no-proof:yes'>16</span></span>]<span style='mso-tab-count:1'>    </span></span></p>
+
+<p class=lit style='tab-stops:49.65pt'><span lang=EN-US>[<span
+style='mso-field-code:" SEQ \[ \\* ARABIC "'><span style='mso-no-proof:yes'>17</span></span>]<span
+style='mso-tab-count:1'>    </span></span></p>
+
+<p class=lit style='tab-stops:49.65pt'><span lang=EN-US>[<span
+style='mso-field-code:" SEQ \[ \\* ARABIC "'><span style='mso-no-proof:yes'>18</span></span>]<span
+style='mso-tab-count:1'>    </span></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span style='mso-ansi-language:
+SL'><!--[if gte vml 1]><v:shape id="_x0000_i1036" type="#_x0000_t75" style='width:421.5pt;
+ height:258pt' o:ole="">
+ <v:imagedata src="help_files/image023.emz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=562 height=344
+src="help_files/image024.gif" v:shapes="_x0000_i1036"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1036"
+  DrawAspect="Content" ObjectID="_1427809119">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:36.0pt'><span
+style='mso-ansi-language:SL'><!--[if gte vml 1]><v:shape id="_x0000_i1037"
+ type="#_x0000_t75" style='width:351.75pt;height:290.25pt' o:ole="">
+ <v:imagedata src="help_files/image025.emz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=469 height=387
+src="help_files/image026.gif" v:shapes="_x0000_i1037"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1427809120">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+
+<p class=MsoCaption style='margin-top:0cm'><span lang=EN-US>Figure <span
+style='mso-field-code:" SEQ Figure \\* ARABIC "'><span style='mso-no-proof:
+yes'>12</span></span>:</span><span lang=EN-US style='font-weight:normal'> xxx. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <title>Ioptlib - investigative optimization library</title>
+  <meta name="author" content="Igor Gresovnik">
+  <meta name="keywords"
+ content="IOptLib, numerics, optimization, library, ANSI C">
+  <meta name="description"
+ content="Ioptlib (investigative optimization library)">
+  <meta name="Classification" content="numerics/library">
+  <meta name="GENERATOR" content="Netscape 7 Composer">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rev="made" href="mailto:ajgorhoe@yahoo.com">
+  <link rel="SHORTCUT ICON" href="ig.ico">
+  <meta http-equiv="REFRESH" content="0;URL=./index_dotnet.html"
+ charset="UTF-8">
+  <meta name="Comment"
+ content="The meta tag http-equiv above defines redirection, first number in content defines time before redirecting in seconds and the replacing URL.">
+</head>
+<body alink="#fe0000" vlink="#006600" link="#0000ee"
+ style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+<div align="right"><small>&nbsp; </small>
+<table cellpadding="2" cellspacing="2" border="0" width="100%">
+  <tbody>
+    <tr>
+      <td valign="top"><small><small>&nbsp;&nbsp; &nbsp; &nbsp;</small><small><big><big>
+      <small><a href="./"><big>./ <small>(directory)</small></big></a></small></big></big>
+&nbsp;&nbsp;<small> <a href="../index.html"><span
+ style="font-weight: bold;">&lt;&lt;</span></a> &nbsp;&nbsp; <a
+ href="../index.html"><span style="font-weight: bold;">&lt; back</span></a>
+&nbsp;&nbsp; </small></small></small></td>
+      <td valign="top" align="right"><small>&nbsp; &nbsp; <a
+ href="http://www.c3m.si/staff/gresovnik.html">Igor Gresovnik</a>
+&nbsp;&nbsp; <a href="http://www.c3m.si/inverse/"><span
+ style="font-style: italic;">Inverse</span></a> &nbsp; &nbsp; <a
+ href="http://www.c3m.si/">C3M</a> &nbsp; <small>&nbsp;</small> </small></td>
+    </tr>
+  </tbody>
+</table>
+<font size="-1"><a href="http://www.c3m.si/igor"> </a></font></div>
+<center>
+<br>
+<h1><big><b><i><font><font><b><i><font><font><big><big><b><i><font><font><b><i><font
+ color="#cc0000"><font size="+2"><big> Ioptlib</big></font></font></i></b></font></font></i></b></big></big></font></font></i></b></font></font></i></b></big><big><b><i><font><font><b><i><font><font><big><big><b><i><font><font><b><i><font
+ color="#cc0000"><font size="+2"><big></big></font></font></i></b></font></font></i></b></big></big></font></font></i></b></font></font></i></b></big></h1>
+</center>
+<p><b><span style="font-style: italic;">&nbsp; </span>This page
+provides some information about the </b><b><span
+ style="font-style: italic;">Ioptlib</span> (Investigative Optimization
+Library) </b><b>, whose experimental version should be released soon
+(see comment on <a href="#availability">availability</a>).</b><b><br>
+</b><b></b></p>
+<p> </p>
+<hr width="100%">
+<center>
+<table cols="2" width="100%" nosave="">
+  <tbody>
+    <tr valign="top" nosave="">
+      <td nosave=""> <span style="font-weight: bold;">Contents:<br>
+      </span>
+      <ul>
+        <li><a href="#instructions"></a>&nbsp;&nbsp; <a href="#about">About
+the library</a>&nbsp; <br>
+        </li>
+        <ul>
+          <li><a href="#availability"><small>Availability</small></a>&nbsp;
+            <br>
+          </li>
+        </ul>
+        <li><br>
+        </li>
+        <li><font color="#000000"><a href="#hribi"></a>&nbsp;&nbsp; <span
+ style="font-weight: bold;">This site is under construction.</span>
+&nbsp; <a href="../index.html"><img src="../work.gif" title=""
+ alt="This page is under construction. Icon is missing."
+ style="border: 0px solid ; width: 38px; height: 38px;"></a><br>
+          </font></li>
+      </ul>
+      <font color="#000000"><br>
+      </font> </td>
+      <td align="right" nosave="">&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp; <br>
+&nbsp; <a href="#search" style="font-weight: bold;">Search</a> &nbsp; <br>
+      <b>&nbsp; &nbsp; &nbsp;&nbsp; <br>
+      </b></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+</center>
+<hr width="100%">&nbsp;&nbsp; <br>
+<br>
+<br>
+<center>
+<h1> <a name="about"></a><b><i><font color="#cc0000"><font size="+2">About
+the library<br>
+</font></font></i></b></h1>
+</center>
+&nbsp;
+<br>
+&nbsp; Ioptlib (a shortcut for Investigative Optimization Library) is
+an open optimization library designed to sustain development and
+testing of algorithms for solving practical optimization problems. A
+priority goal is to develop algorithms suited to problems with
+computationally expensive and possibly noisy evaluation of the response
+(i.e. objective and constraint) functions. The library is intended to
+provide modular building blocks for constructing such algorithms,
+standardized templates for interfacing tools obtained form other
+libraries, and testing environment where different performance aspects
+of algorithms can be readily extensively tested during and after the
+development stage. Currently most of the efforts are devoted to
+algorithms based on successive solution of approximated problems
+obtained by local sampling and approximation of the response functions.
+Such algorithms have complex designs and involve solution of many
+sub-problems such as non-linear or quadratic programming problems,
+matrix algebra, optimal sampling strategies, etc. The intention is
+therefore to gradually accumulate efficient routines for solving these
+problems, which will lead to broader serviceability of the library. Any
+attempt was made to keep open the possibility of starting development
+of new algorithms or attaching to the existent functionality at any
+level. The basic library is therefore intended to be distributed as
+free open source under certain conditions. A couple of algorithms will
+be available under different negotiable terms since this is necessary
+to provide the funding for library development, however their building
+blocks together with a set of quite useful algorithms will be provided
+with the basic set that is more open what concerns availability.<br>
+<br>
+&nbsp; The original motivation for the library was obtained in
+optimization of forming processes where evaluation of objective and
+constraint functions typically involves complex numerical simulation
+with hundreds of thousands of degrees of freedom, very non-linear and
+path dependent materials, multi-physics and multi-scale phenomena etc.
+As result, not only the calculation of the objective and constraint
+functions takes very long times even on the fastest computers or
+parallel architectures, but these functions often contain substantial
+amount of numerical noise. These conditions impose a substantial turn
+in how algorithm performance is viewed. On one hand the most important
+measure of algorithm efficiency becomes the number of function
+evaluations it takes for calculating optimum up to a given accuracy.
+The CPU time spent by the algorithm becomes somehow less important
+because function evaluations will normally require incomparably more
+computational time. Because running optimization procedures will often
+be just on the limit of affordable, the goal will not always be to find
+an optimal solution up to a specified accuracy, but rather to achieve
+significant improvement within affordable computational time. <br>
+<br>
+&nbsp; The targeted scope of the library is beyond the area of its
+original motivation. It is intended to provide a pool of algorithms for
+different problems and facilities for extending this pool. Beside that,
+interaction with other libraries and use of the library in existing or
+future software is accounted for as much as possible. A lot of stress
+is put on defining standard data types and function prototypes used for
+different purposes, such as evaluation of response functions and their
+derivatives or for storing results of such evaluation and their use in
+building approximations. These standards are defined in such a way that
+routines for similar tasks from other libraries can be easily
+incorporated in the system, and functions that are consistent with
+library standards can be easily exported in standard forms required in
+other software environments. Wrapping functions and data converters are
+provided for some common cases, and the way how one can create own
+tools for this is being documented in manuals. The standards are
+designed in such a way that they are suitable for any environment, in
+particular to allow recursive calls and work in multi-threaded
+environment. <br>
+<br>
+&nbsp; The library comes with a set of basic utilities that are
+extensively used in implementation of basic building blocks and
+algorithms. This includes e.g. basic matrix and vector operations and
+generic implementation of data containers such as stacks. These
+utilities are well documented in source code while overview is given in
+documentation.<br>
+<br>
+&nbsp; Many of elementary utilities make use of other free libraries.
+Contribution of people who designed these libraries and made them
+available is gratefully acknowledged.<br>
+<br>
+<br>
+<h2 style="text-align: center;"><small><a name="availability"></a><span
+ style="color: rgb(204, 0, 0);">Availability<br>
+</span></small></h2>
+<p><br>
+</p>
+<p>&nbsp; I hope the library will be available by october 2005 at the
+latest. Until then I must write some documentation and implement some
+routines which will make the library useful for other users. I intend
+to release an experimental version first, which is mainly intended for
+those who have an interest in contributing to the library or
+cooperating at decisions about library design. After a given period,
+the official version will be released. In the official versions, I will
+attempt to enforce backward compatibility as much as possible for the
+functionality that is intended for average users, while the
+experimental version may be subject to changes in function names and
+organization.<br>
+&nbsp; The main user of the library will be C3M and the library will be
+at some stage included in <a href="../../inverse/index.html"><span
+ style="font-style: italic;">Inverse</span></a>. However, a part of the
+library will be publically available in order to promote the exchange
+of ideas between researchers working on similar problems in
+optimization. Some commercial algorithms will not be freely available,
+but I will do my best to make them easily available for research
+purposes in exchange for quotation, exchange of results,&nbsp; or
+contributions to the library.<br>
+</p>
+<br>
+<br>
+<br>
+<hr width="100%"><br>
+<br>
+<!-- SiteSearch Google -->
+<form method="get" action="http://www.google.com/search">
+  <div style="text-align: right;"> </div>
+  <table style="width: 60%;" cellspacing="4" cellpadding="4">
+    <tbody>
+      <tr>
+        <td style="text-align: right; font-style: italic;"><a
+ href="http://www.google.com/"> </a><a name="search"></a><a
+ href="http://www.google.com/"><img
+ src="http://www.google.com/logos/Logo_25wht.gif"
+ style="border: 0px solid ; width: 75px; height: 32px;" alt="Google"
+ title=""></a></td>
+        <td> <input type="text" name="q" size="31" maxlength="255"
+ value=""><input type="submit" name="btnG" value="Google Search"> <font
+ size="-1"><input type="hidden" name="domains" value="../"><br>
+        <input type="radio" name="sitesearch" value="" checked="checked">WWW&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="sitesearch" value="../">../&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="sitesearch" value="./">./&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="sitesearch"
+ value="http://www2.arnes.si/%7Eljc3m2/"> Igor at Arnes&nbsp;&nbsp; <input
+ type="radio" name="sitesearch" value="hhttp://igor.mrfreehost.com/">
+Igor at Mrfreesite <br>
+        </font> </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<!-- SiteSearch Google -->
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<br>
+<hr>
+<center>
+<table border="3" cellpadding="2" bgcolor="#ffffff" nosave="">
+  <tbody>
+    <tr nosave="">
+      <td align="center" valign="top" nosave="">
+      <center>&nbsp;&nbsp; <a href="http://www.c3m.si/inverse/doc/phd/"><br>
+      </a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+&nbsp;
+<div align="right">
+<table border="3" cellpadding="2" bgcolor="#ffffff" nosave="">
+  <tbody>
+    <tr nosave="">
+      <td align="left" valign="top" nosave="">
+      <div align="right"><font size="-1">&nbsp;&nbsp; <br>
+      </font></div>
+&nbsp;&nbsp; <font size="-1"> </font></td>
+    </tr>
+  </tbody>
+</table>
+&nbsp; &nbsp; &nbsp;&nbsp;
+</div>
+<center>
+<table border="3" cellpadding="2" nosave="">
+  <tbody>
+    <tr nosave="">
+      <td align="left" valign="top" nosave="">
+      <center><i>Updated in February 2005</i></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<ul>
+&nbsp;<br>
+</ul>
+<br>
+<big style="color: rgb(204, 0, 0);"><span style="font-weight: bold;">Note:</span></big><span
+ style="color: rgb(204, 0, 0);"> </span><span
+ style="font-weight: bold; color: rgb(204, 0, 0);">This site is under
+construction.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+ href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/"><img
+ src="../construct.gif" title="Click for Igor's pages"
+ alt="Could not find an image."
+ style="border: 0px solid ; width: 113px; height: 113px;"></a>&nbsp; <br>
+<br>
+<br>
+<br>
+<small>Number of accesses since April
+2005:&nbsp;&nbsp;&nbsp;&nbsp; </small><a
+ href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/index.html"><img
+ src="http://www.arnes.si/cgi-bin/counter?md=7%7Cdd=B%7Cid=IGarnes_igor_ioptlib_index"
+ title=""
+ alt="If you don't see the access counter properly then click on the link!"
+ style="border: 0px solid ; width: 172px; height: 28px;"></a><small>&nbsp;&nbsp;&nbsp;
+If you don't see the access counter properly then please follow <a
+ href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/index.html">this link</a>!</small><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<XML_DIZ_INFO>
+  <MASTER_PAD_VERSION_INFO>
+    <MASTER_PAD_VERSION>4.0</MASTER_PAD_VERSION>
+    <MASTER_PAD_EDITOR>AppVisor 1.0.43</MASTER_PAD_EDITOR>
+    <MASTER_PAD_EDITOR_URL>http://publisher.appvisor.com</MASTER_PAD_EDITOR_URL>
+    <MASTER_PAD_INFO>Portable Application Description, or PAD(TM) 2004 Association of Software Professionals (ASP)http://www.asp-shareware.org/pad is a data set standard and specification that is commercialsoftware publishers to disseminate certified information about their software application. The PAD format is copyright of the ASP and cannot be used without the formal licensing and permission of both the Association of Software Professionals and its agent AppVisor.com.</MASTER_PAD_INFO>
+    <CERTIFIED>N</CERTIFIED>
+    <CERTIFICATE_ID></CERTIFICATE_ID>
+    <CERTIFICATE_LICENSE></CERTIFICATE_LICENSE>
+  </MASTER_PAD_VERSION_INFO>
+  <RoboSoft>
+    <Company_UIN>CMP-CF00441458C5</Company_UIN>
+    <Product_UIN>APP-DF00FA2BA8C5</Product_UIN>
+    <Publish_on_CD>N</Publish_on_CD>
+    <NewsFeed_Search_String></NewsFeed_Search_String>
+    <Search_String>AnnApPar</Search_String>
+    <Press_Release_Search_String></Press_Release_Search_String>
+    <Backlink></Backlink>
+    <Comments_For_Reviewer></Comments_For_Reviewer>
+    <Search_String_Unique>AnnApPar</Search_String_Unique>
+    <Search_Engine_Search_String></Search_Engine_Search_String>
+    <Web_Directories_Search_String></Web_Directories_Search_String>
+    <Company_Description></Company_Description>
+  </RoboSoft>
+  <Company_Info>
+    <PublisherID>pid-bf001a1128c5</PublisherID>
+    <BrandID>bid-cf00441458c5</BrandID>
+    <Company_Name>Igor Gre&#x161;ovnik</Company_Name>
+    <Country>Slovenia</Country>
+    <State_Province>Slovenia</State_Province>
+    <City_Town>Dravograd</City_Town>
+    <Zip_Postal_Code>2370</Zip_Postal_Code>
+    <Address_1>&#x10C;rne&#x10D;e 147</Address_1>
+    <Address_2></Address_2>
+    <Company_WebSite_URL>http://www2.arnes.si/~ljc3m2/igor/iglib/</Company_WebSite_URL>
+    <Contact_Info>
+      <Contact_First_Name>Igor</Contact_First_Name>
+      <Contact_Last_Name>Gre&#x161;ovnik</Contact_Last_Name>
+      <Contact_Email>ajgorhoe@gmail.com</Contact_Email>
+      <Author_First_Name>Igor</Author_First_Name>
+      <Author_Last_Name>Gre&#x161;ovnik</Author_Last_Name>
+      <Author_Email>ajgorhoe@gmail.com</Author_Email>
+      <Contact_Phone></Contact_Phone>
+    </Contact_Info>
+    <Support_Info>
+      <Sales_Email>ajgorhoe@gmail.com</Sales_Email>
+      <Support_Email>ajgorhoe@gmail.com</Support_Email>
+      <General_Email>ajgorhoe@gmail.com</General_Email>
+      <Sales_Phone></Sales_Phone>
+      <Support_Phone></Support_Phone>
+      <General_Phone></General_Phone>
+      <Fax_Phone></Fax_Phone>
+    </Support_Info>
+    <GooglePlusPage></GooglePlusPage>
+    <LinkedinPage>https://www.linkedin.com/in/igor-gre%C5%A1ovnik-2907387</LinkedinPage>
+    <TwitterCompanyPage></TwitterCompanyPage>
+    <FacebookCompanyPage></FacebookCompanyPage>
+  </Company_Info>
+  <Program_Info>
+    <AppID>app-df00fa2ba8c5</AppID>
+    <Program_Name>AnnApPar</Program_Name>
+    <Program_Version>1.0</Program_Version>
+    <Program_Release_Month>04</Program_Release_Month>
+    <Program_Release_Day>21</Program_Release_Day>
+    <Program_Release_Year>2015</Program_Release_Year>
+    <Program_Cost_Dollars>0</Program_Cost_Dollars>
+    <Program_Type>Freeware</Program_Type>
+    <Program_Category_Class>Graphic Apps::Viewers</Program_Category_Class>
+    <Program_Specific_Category></Program_Specific_Category>
+    <Program_Categories>Home &amp; Hobby :: Education,Education :: Training Tools,Education :: Mathematics,Education :: Science,Programming :: .NET,Utilities :: Miscellaneous</Program_Categories>
+    <Program_Release_Status>Major Update</Program_Release_Status>
+    <Program_Install_Support>No Install Support</Program_Install_Support>
+    <Program_Target_Platform>Windows</Program_Target_Platform>
+    <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
+    <Program_Language>English</Program_Language>
+    <Program_Change_Info>This is an initial release. 
+Included functionality:
+  - Load artificial neural neetwork-based model
+  - Examine input and output data of the model
+  - Calculate model values
+  - Plot 1D parametric plots
+  - Plot 2D parametric plots</Program_Change_Info>
+    <Program_System_Requirements>.NET or Mono, Windows Vista or later, Linux</Program_System_Requirements>
+    <Limitations>/</Limitations>
+    <Awards></Awards>
+    <File_Info>
+      <File_Size_Bytes>3537920</File_Size_Bytes>
+      <File_Size_K>3455</File_Size_K>
+      <File_Size_MB>3.37</File_Size_MB>
+    </File_Info>
+    <Expire_Info>
+      <Has_Expire_Info>N</Has_Expire_Info>
+      <Expire_Count></Expire_Count>
+      <Expire_Based_On></Expire_Based_On>
+      <Expire_Year></Expire_Year>
+      <Expire_Other_Info></Expire_Other_Info>
+      <Expire_Month></Expire_Month>
+      <Expire_Day></Expire_Day>
+    </Expire_Info>
+    <FacebookFanPage></FacebookFanPage>
+    <VideoLink1URL></VideoLink1URL>
+    <VideoLink2URL></VideoLink2URL>
+    <Includes_JAVA_VM></Includes_JAVA_VM>
+    <Includes_DirectX></Includes_DirectX>
+    <Includes_VB_Runtime></Includes_VB_Runtime>
+    <GooglePlusFanPage></GooglePlusFanPage>
+  </Program_Info>
+  <Web_Info>
+    <Application_URLs>
+      <Application_Info_URL>http://www2.arnes.si/~ljc3m2/igor/software/AnnApp/AnnApPar.html</Application_Info_URL>
+      <Application_Order_URL>http://www2.arnes.si/~ljc3m2/igor/software/AnnApp/AnnApPar.html</Application_Order_URL>
+      <Application_Screenshot_URL>http://www2.arnes.si/~ljc3m2/igor/software/AnnApp/screenshots/parametric2d_1.jpg</Application_Screenshot_URL>
+      <Application_Icon_URL>http://www2.arnes.si/~ljc3m2/igor/software/AnnApp/ig.ico</Application_Icon_URL>
+      <Application_XML_File_URL>http://repository.appvisor.com/app-df00fa2ba8c5/site-01/AnnApPar_pad.xml</Application_XML_File_URL>
+    </Application_URLs>
+    <Download_URLs>
+      <Primary_Download_URL>http://www2.arnes.si/~ljc3m2/igor/software/AnnApp/download/AnnApp.zip</Primary_Download_URL>
+      <Secondary_Download_URL></Secondary_Download_URL>
+      <Additional_Download_URL_1></Additional_Download_URL_1>
+      <Additional_Download_URL_2></Additional_Download_URL_2>
+    </Download_URLs>
+  </Web_Info>
+  <Program_Descriptions>
+    <English>
+      <Keywords>artificial neural networks, ANN, freeware, ANN modeling, model metadata, model description, AnnApPar, IGLib, .NET</Keywords>
+      <Char_Desc_45>IGLib-based ANN models visualization.</Char_Desc_45>
+      <Char_Desc_80>IGLib-based ANN models visualization.</Char_Desc_80>
+      <Char_Desc_250>Software for visualization of artificial neural networks-based models, based on IGLib.</Char_Desc_250>
+      <Char_Desc_450>Software for visualization of artificial neural networks-based models, based on IGLib.  Functionality:   - View model information:      - Model name and description      - Descriptions of input parameters and output values (name, description, units, default values, etc.)   - 1D parametric plots   - 2D parametric plots  Further info:  http://www2.arnes.si/~ljc3m2/igor/software/AnnApp/AnnApPar.html  http://www2.arnes.si/~ljc3m2/igor/iglib/</Char_Desc_450>
+      <Char_Desc_2000>Software for visualization of artificial neural networks-based models created with IGLib.
+Functionality:
+  - View model information:
+    - Model name and description
+    - Descriptions of input parameters and output values (name, description, units, default values, etc.)
+  - Calculation of model outputs at any set of chosen values of input parameters
+  - 1D parametric plots
+  - 2D parametric plots
+This is an initial version of the software and will be significantly extended later. Primary purpose of the software is to provide a model viewer for artificial neural networks (ANN) - based models of industrial processes, products, phenomena, etc. User can evaluate model outputs at any combination of input parameters, or visualize the model by creating one or two dimensional parametric plots. With parametric plots, one or two parameters are allowed to vary within the specified bounds while the remaining parameters are fixed.
+The secondary purpose of the software is to give user a hint how ANN-based models can be used in industry. For this purpose, an example model is provided, which can be viewed by the application.
+Further info:
+http://www2.arnes.si/~ljc3m2/igor/software/AnnApp/AnnApPar.html
+http://www2.arnes.si/~ljc3m2/igor/iglib/</Char_Desc_2000>
+    </English>
+  </Program_Descriptions>
+  <Permissions>
+    <Distribution_Permissions>The trial version of AnnApPar can be freely distributed over the internet in an unchanged form.</Distribution_Permissions>
+    <EULA>AnnApPar License Agreement
+
+This is a license agreement for the AnnApPar software ('the software') and its documentation, which are owned and copyrighted by Igor Gre&#x161;ovnik. The software subject to this license agreement includes all files that are contained in the software directory (i.e. the root directory where this license file is located, and all its subdirectories).
+
+The software and its documentation are developed and copyrighted by Igor Gre&#x161;ovnik, Ljubljana, Slovenia ('the author'). The following terms apply to all files associated with the software unless explicitly disclaimed in individual files.
+
+The author hereby grant the non-exclusive rights to use the software free of charge to anyone, provided that the following conditions are met:
+
+    The user will use the software on his/her own responsibility.
+    The user will use the software only in binary form, and will not attempt to reverse-engineer the software.
+    The user will not distribute the software to the third parties, neither for payment nor free of charge. The user can however send links to the original locations of the software to anyone at will.
+
+The present license agreement is the agreement between the author and the licensees that defines the terms and conditions for use of the software. By using the software, licensees accept the terms of this license agreement. Any user is solely responsible for execution of the terms of this license agreement.
+Disclaimer
+
+IN NO EVENT SHALL THE AUTHORS OR DISTRIBUTORS BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OF THIS SOFTWARE, ITS DOCUMENTATION, OR ANY DERIVATIVES THEREOF, EVEN IF THE AUTHORS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+THE AUTHORS AND DISTRIBUTORS SPECIFICALLY DISCLAIM ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. THIS SOFTWARE AND ITS DOCUMENTATION ARE PROVIDED ON AN &#x201E;AS IS&#x201C; BASIS, AND THE AUTHORS AND DISTRIBUTORS HAVE NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.</EULA>
+  </Permissions>
+  <Affiliates>
+    <Affiliates_Regsoft_Order_Page></Affiliates_Regsoft_Order_Page>
+    <Affiliates_Regnow_Order_Page></Affiliates_Regnow_Order_Page>
+    <Affiliates_Regsoft_Vendor_ID></Affiliates_Regsoft_Vendor_ID>
+    <Affiliates_Regnow_Vendor_ID></Affiliates_Regnow_Vendor_ID>
+    <Affiliates_Regsoft_Product_ID></Affiliates_Regsoft_Product_ID>
+    <Affiliates_Regnow_Product_ID></Affiliates_Regnow_Product_ID>
+    <Affiliates_FORM></Affiliates_FORM>
+    <Affiliates_FORM_VER></Affiliates_FORM_VER>
+    <Affiliates_VERSION></Affiliates_VERSION>
+    <Affiliates_URL></Affiliates_URL>
+    <Affiliates_Information_Page></Affiliates_Information_Page>
+    <Affiliates_Avangate_Order_Page></Affiliates_Avangate_Order_Page>
+    <Affiliates_Avangate_Vendor_ID></Affiliates_Avangate_Vendor_ID>
+    <Affiliates_Avangate_Product_ID></Affiliates_Avangate_Product_ID>
+    <Affiliates_Avangate_Maximum_Commission_Rate></Affiliates_Avangate_Maximum_Commission_Rate>
+    <Affiliates_BMTMicro_Order_Page></Affiliates_BMTMicro_Order_Page>
+    <Affiliates_BMTMicro_Vendor_ID></Affiliates_BMTMicro_Vendor_ID>
+    <Affiliates_BMTMicro_Product_ID></Affiliates_BMTMicro_Product_ID>
+    <Affiliates_BMTMicro_Maximum_Commission_Rate></Affiliates_BMTMicro_Maximum_Commission_Rate>
+    <Affiliates_eSellerate_Order_Page></Affiliates_eSellerate_Order_Page>
+    <Affiliates_eSellerate_Vendor_ID></Affiliates_eSellerate_Vendor_ID>
+    <Affiliates_eSellerate_Product_ID></Affiliates_eSellerate_Product_ID>
+    <Affiliates_eSellerate_Maximum_Commission_Rate></Affiliates_eSellerate_Maximum_Commission_Rate>
+    <Affiliates_Kagi_Order_Page></Affiliates_Kagi_Order_Page>
+    <Affiliates_Kagi_Vendor_ID></Affiliates_Kagi_Vendor_ID>
+    <Affiliates_Kagi_Product_ID></Affiliates_Kagi_Product_ID>
+    <Affiliates_Kagi_Maximum_Commission_Rate></Affiliates_Kagi_Maximum_Commission_Rate>
+    <Affiliates_Order1_Order_Page></Affiliates_Order1_Order_Page>
+    <Affiliates_Order1_Vendor_ID></Affiliates_Order1_Vendor_ID>
+    <Affiliates_Order1_Product_ID></Affiliates_Order1_Product_ID>
+    <Affiliates_Order1_Maximum_Commission_Rate></Affiliates_Order1_Maximum_Commission_Rate>
+    <Affiliates_Regnet_Order_Page></Affiliates_Regnet_Order_Page>
+    <Affiliates_Regnet_Vendor_ID></Affiliates_Regnet_Vendor_ID>
+    <Affiliates_Regnet_Product_ID></Affiliates_Regnet_Product_ID>
+    <Affiliates_Regnet_Maximum_Commission_Rate></Affiliates_Regnet_Maximum_Commission_Rate>
+    <Affiliates_Regnow_Maximum_Commission_Rate></Affiliates_Regnow_Maximum_Commission_Rate>
+    <Affiliates_Regsoft_Maximum_Commission_Rate></Affiliates_Regsoft_Maximum_Commission_Rate>
+    <Affiliates_ShareIt_Order_Page></Affiliates_ShareIt_Order_Page>
+    <Affiliates_ShareIt_Vendor_ID></Affiliates_ShareIt_Vendor_ID>
+    <Affiliates_ShareIt_Product_ID></Affiliates_ShareIt_Product_ID>
+    <Affiliates_ShareIt_Maximum_Commission_Rate></Affiliates_ShareIt_Maximum_Commission_Rate>
+    <Affiliates_SWReg_Order_Page></Affiliates_SWReg_Order_Page>
+    <Affiliates_SWReg_Vendor_ID></Affiliates_SWReg_Vendor_ID>
+    <Affiliates_SWReg_Product_ID></Affiliates_SWReg_Product_ID>
+    <Affiliates_SWReg_Maximum_Commission_Rate></Affiliates_SWReg_Maximum_Commission_Rate>
+  </Affiliates>
+  <NewsFeed>
+    <NewsFeed_FORM></NewsFeed_FORM>
+    <NewsFeed_VERSION></NewsFeed_VERSION>
+    <NewsFeed_URL></NewsFeed_URL>
+    <NewsFeed_DESCRIPTION></NewsFeed_DESCRIPTION>
+    <NewsFeed_Feed_URL></NewsFeed_Feed_URL>
+    <NewsFeed_Type></NewsFeed_Type>
+    <NewsFeed_Site_URL></NewsFeed_Site_URL>
+    <NewsFeed_Author_First_Name>Igor</NewsFeed_Author_First_Name>
+    <NewsFeed_Author_Last_Name>Gre&#x161;ovnik</NewsFeed_Author_Last_Name>
+    <NewsFeed_Author_Email>ajgorhoe@gmail.com</NewsFeed_Author_Email>
+    <NewsFeed_Language></NewsFeed_Language>
+    <NewsFeed_Title></NewsFeed_Title>
+    <NewsFeed_Description_70></NewsFeed_Description_70>
+    <NewsFeed_Description_250></NewsFeed_Description_250>
+    <NewsFeed_Purpose></NewsFeed_Purpose>
+    <NewsFeed_Site_Name></NewsFeed_Site_Name>
+  </NewsFeed>
+  <Press_Release>
+    <Press_Release></Press_Release>
+    <Headline></Headline>
+    <Summary></Summary>
+    <Press_Release_Plain></Press_Release_Plain>
+  </Press_Release>
+  <Site>
+    <Site_FORM></Site_FORM>
+    <Site_VERSION></Site_VERSION>
+    <Site_URL></Site_URL>
+    <Site_DESCRIPTION></Site_DESCRIPTION>
+    <Site_Site_Title>AnnApPar, exploring artificial neural networks (ANN) - based</Site_Site_Title>
+    <Site_Site_URL>http://www2.arnes.si/~ljc3m2/igor/software/AnnApp/AnnApPar.html</Site_Site_URL>
+    <Site_Keywords>artificial neural networks, ANN, freeware, ANN modeling, model metadata, model description, AnnApPar, IGLib, .NET</Site_Keywords>
+    <Site_Description_100>Software for visualization of artificial neural networks-based models, based on IGLib.</Site_Description_100>
+    <Site_Description_250>Software for visualization of artificial neural networks-based models, based on IGLib.</Site_Description_250>
+    <Site_Description_450>Software for visualization of artificial neural networks-based models, based on IGLib. 
+Functionality:
+  - View model information:
+     - Model name and description
+     - Descriptions of input parameters and output values (name, description, units, default values, etc.)
+  - 1D parametric plots
+  - 2D parametric plots 
+Further info: 
+http://www2.arnes.si/~ljc3m2/igor/software/AnnApp/AnnApPar.html 
+http://www2.arnes.si/~ljc3m2/igor/iglib/</Site_Description_450>
+    <Site_Contact_First_Name>Igor</Site_Contact_First_Name>
+    <Site_Contact_Last_Name>Gre&#x161;ovnik</Site_Contact_Last_Name>
+    <Site_Contact_Email>ajgorhoe@gmail.com</Site_Contact_Email>
+  </Site>
+  <Download_Link_Points_To_Non_Binary_File>Y</Download_Link_Points_To_Non_Binary_File>
+  <Dynamic_PAD>
+    <General>
+      <DP_Pad_Enabled>TRUE</DP_Pad_Enabled>
+      <DP_AtFormFill_Enabled>TRUE</DP_AtFormFill_Enabled>
+      <DP_Distributive_Enabled>TRUE</DP_Distributive_Enabled>
+      <DP_Script_Base_URL>http://repository.appvisor.com/</DP_Script_Base_URL>
+      <DP_Pad_Mask>AnnApPar_pad.xml</DP_Pad_Mask>
+      <DP_Distributive_Primary_URL>http://www2.arnes.si/~ljc3m2/igor/software/AnnApp/download/AnnApp.zip</DP_Distributive_Primary_URL>
+      <DP_Distributive_Mask>AnnApp.zip</DP_Distributive_Mask>
+    </General>
+  </Dynamic_PAD>
+</XML_DIZ_INFO>
