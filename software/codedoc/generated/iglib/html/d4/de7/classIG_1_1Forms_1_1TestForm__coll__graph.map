@@ -1,0 +1,4 @@
+<map id="IG.Forms.TestForm" name="IG.Forms.TestForm">
+<area shape="rect" id="node5" href="$d8/dc1/classIG_1_1Forms_1_1TestControl.html" title="Test control." alt="" coords="133,117,279,143"/>
+<area shape="rect" id="node4" href="$d3/d68/interfaceIG_1_1Forms_1_1IClosableFromContainedForm.html" title="Marker interface indicating that a form can be closed from the contained control." alt="" coords="434,109,605,151"/>
+</map>

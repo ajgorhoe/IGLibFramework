@@ -1,0 +1,4 @@
+<map id="IG.Lib.InterpreterCommandBase" name="IG.Lib.InterpreterCommandBase">
+<area shape="rect" id="node3" href="$d3/d58/classIG_1_1Lib_1_1CommandLine.html" title="Represents a single command&#45;line that can be executed. $A Igor Feb09;" alt="" coords="37,155,180,181"/>
+<area shape="rect" id="node2" href="$d2/dc2/interfaceIG_1_1Lib_1_1IInterpreterCommandData.html" title="IInterpreterCommandData" alt="" coords="24,5,193,32"/>
+</map>

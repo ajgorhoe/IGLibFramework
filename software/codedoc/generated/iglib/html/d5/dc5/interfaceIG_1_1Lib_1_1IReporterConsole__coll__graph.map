@@ -1,0 +1,7 @@
+<map id="IG.Lib.IReporterConsole" name="IG.Lib.IReporterConsole">
+<area shape="rect" id="node2" href="$db/db1/interfaceIG_1_1Lib_1_1IReporter.html" title="Interface from which majority of reporters inherit. Includes generic reporting functionality plus tra..." alt="" coords="201,155,275,181"/>
+<area shape="rect" id="node4" href="$de/d0d/interfaceIG_1_1Lib_1_1IReporterBase.html" title="Interface from which all reporters inherit." alt="" coords="266,5,370,32"/>
+<area shape="rect" id="node5" href="$d2/d8e/interfaceIG_1_1Lib_1_1IReporterTextWriter.html" title="Reporters that utilize writing messages to files. Messages are typically formatted as multi&#45;line mess..." alt="" coords="171,80,305,107"/>
+<area shape="rect" id="node6" href="$d1/ddb/interfaceIG_1_1Lib_1_1IReporterTextLogger.html" title="Reporters that utilize logging messages to files. IReporterTextLogger typically outputs (to a file) m..." alt="" coords="330,80,469,107"/>
+<area shape="rect" id="node7" href="$d0/d0e/interfaceIG_1_1Lib_1_1IReporterTrace.html" title="Reporters that utilize system&#39;s trace utility." alt="" coords="493,80,599,107"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="IG.Num.ParallelJobDispatcherBase&lt; JobContainerType &gt;" name="IG.Num.ParallelJobDispatcherBase&lt; JobContainerType &gt;">
+<area shape="rect" id="node2" href="$d1/d6b/classIG_1_1Num_1_1ParallelJobDispatcherBase.html" title="Base class for parallel job dispatchers. Accepts job requests and dispatches jobs to parallel job ser..." alt="" coords="14,80,191,107"/>
+<area shape="rect" id="node3" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="11,5,88,32"/>
+<area shape="rect" id="node4" href="$dc/d79/interfaceIG_1_1Lib_1_1IIdentifiable.html" title="Classes whose instances have unique integer IDs." alt="" coords="113,5,199,32"/>
+</map>

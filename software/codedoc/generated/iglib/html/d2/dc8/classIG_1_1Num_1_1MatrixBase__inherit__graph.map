@@ -1,0 +1,6 @@
+<map id="IG.Num.MatrixBase" name="IG.Num.MatrixBase">
+<area shape="rect" id="node3" href="$d4/d1d/classIG_1_1Num_1_1Matrix.html" title="Real matrix class. Some operations are performed by the MathNet.Numerics.LinearAlgebra.Matrix class." alt="" coords="5,155,112,181"/>
+<area shape="rect" id="node4" href="$da/d89/classIG_1_1Num_1_1Matrix2d.html" title="Matrix in a 2 dimensional space." alt="" coords="136,155,256,181"/>
+<area shape="rect" id="node5" href="$da/d2e/classIG_1_1Num_1_1Matrix3d.html" title="Matrix in a 3 dimensional space." alt="" coords="280,155,400,181"/>
+<area shape="rect" id="node2" href="$d8/d86/interfaceIG_1_1Num_1_1IMatrix.html" title="Real matrix interface." alt="" coords="165,5,227,32"/>
+</map>

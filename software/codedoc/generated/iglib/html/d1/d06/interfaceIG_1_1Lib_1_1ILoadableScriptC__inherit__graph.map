@@ -1,0 +1,7 @@
+<map id="IG.Lib.ILoadableScriptC" name="IG.Lib.ILoadableScriptC">
+<area shape="rect" id="node3" href="$d7/d31/classIG_1_1Lib_1_1LoadableScriptOptShellBaseControllable.html" title="Controllable version of LoadableScriptOptBase, implements the ILoadableScriptC interface." alt="" coords="5,155,172,196"/>
+<area shape="rect" id="node4" href="$d6/d59/classIG_1_1Lib_1_1LoadableScriptShellBase.html" title="Loadable script base class for the shell application that includes tols for definition of optiimizati..." alt="" coords="46,244,251,271"/>
+<area shape="rect" id="node2" href="$d7/d66/interfaceIG_1_1Lib_1_1ILoadableScript.html" title="Interface for classes that can be dynamically loadeded from scripts and run, which provides functiona..." alt="" coords="93,5,204,32"/>
+<area shape="rect" id="node5" href="$dc/d0c/classIG_1_1Script_1_1LoadableScriptShellNeuralBase.html" title="Base class for loadable scripts that are used as custom applications that inclued neural networks app..." alt="" coords="67,319,230,360"/>
+<area shape="rect" id="node6" href="$d1/d30/classIG_1_1Script_1_1LoadableScriptShellNeural.html" title="Base class for loadable scripts that are used as custom applications that inclued neural networks app..." alt="" coords="67,408,230,449"/>
+</map>

@@ -1,0 +1,27 @@
+var classIG_1_1Neural_1_1NeuralFileConst =
+[
+    [ "DirPrefix", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#a1e79d3e54a1b192df6731904a9521c5f", null ],
+    [ "LockFileMutex", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#a59df735c0c7446bf861b2b3891d28a74", null ],
+    [ "NeuralNetworkFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#a73e47794831cb9511fb212210d6cf2a1", null ],
+    [ "NeuralDataDefinitionFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#ab41d859a8df8a65d851c873bdacd8edd", null ],
+    [ "SimulationDataDefinitionFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#a5e987c99f7dcce1f592857f89ca13076", null ],
+    [ "MappingDefinitionFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#a750cf86173b2e0a21072b66a03bc59a0", null ],
+    [ "NeuralTrainingDataFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#a0ad697ec6f8a515a9e7dfaae50aeceae", null ],
+    [ "NeuralVerificationDataFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#ac4042366d731b0ddc6d213bd8fd09cc6", null ],
+    [ "NeuralOptimalTrainingParametersFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#ae09eb950170e21c305416efc0959ffb7", null ],
+    [ "NeuralTrainingParametersFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#aa95731ab5474cddb8a353dc1cf1ffa86", null ],
+    [ "NeuralTrainingLimitsFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#ad336ff77b4db0f5a103eadece91ea0ec", null ],
+    [ "NeuralTrainingResultsFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#a1d87accf2cf9ce071b056e230dfc0869", null ],
+    [ "NeuralTrainingResultsCSVFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#a45d9cffbcbe08303748c3ddf63b3e511", null ],
+    [ "NeuralInputFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#aeb76e3c40e02a56f7828aa04b613c970", null ],
+    [ "NeuralInputXmlFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#a784a4f2d768b053bd7d6ceb8227571d5", null ],
+    [ "NeuralOutputFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#a249bfe26ca434842381ef5763680eb80", null ],
+    [ "NeuralOutputeXmlFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#ae9c0c6654149fe60aeccd484c75b9328", null ],
+    [ "FunctionInputFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#a0496e2687f4444acc3cbbd359118f32b", null ],
+    [ "FunctiOutputFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#ab2fc12612703f93df10d676719bef168", null ],
+    [ "MsgNeuralBusyFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#a414ade7d4507c57251b43f8719cf03ef", null ],
+    [ "MsgNeuralInputReadyFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#a5b83b622431e63f0ef114b0ca07043aa", null ],
+    [ "MsgNeuralOutputReadyFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#a661d53bf0a5ba58dc07d4662063a986c", null ],
+    [ "MsgFunctionInputReadyFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#acb0ed776c235e1131595a61ce9137ccf", null ],
+    [ "MsgFunctionOutputReadyFilename", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html#af2b5454176364f50bf5886f4fc0721dc", null ]
+];

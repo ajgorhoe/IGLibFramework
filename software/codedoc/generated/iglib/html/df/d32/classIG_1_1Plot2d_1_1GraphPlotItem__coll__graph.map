@@ -1,0 +1,6 @@
+<map id="IG.Plot2d.GraphPlotItem" name="IG.Plot2d.GraphPlotItem">
+<area shape="rect" id="node2" href="$d6/d7e/classIG_1_1Plot2d_1_1GraphItem.html" title="Base lass for all items that can be put on a graph (including axes, labels, etc.)." alt="" coords="45,247,128,273"/>
+<area shape="rect" id="node3" href="$d7/db4/classIG_1_1Plot2d_1_1GraphBase.html" title="Graph data &amp; control class." alt="" coords="14,157,159,184"/>
+<area shape="rect" id="node4" href="$de/d26/interfaceIG_1_1Plot2d_1_1IGraph.html" title="Interface for graph plotting objects." alt="" coords="99,81,159,108"/>
+<area shape="rect" id="node5" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="48,5,125,32"/>
+</map>

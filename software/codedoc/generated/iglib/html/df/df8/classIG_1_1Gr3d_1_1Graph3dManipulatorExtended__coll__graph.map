@@ -1,0 +1,11 @@
+<map id="IG.Gr3d.Graph3dManipulatorExtended" name="IG.Gr3d.Graph3dManipulatorExtended">
+<area shape="rect" id="node5" href="$d5/daf/classIG_1_1Gr3d_1_1Graph3dManipulatorBasic.html" title="Basic manipulation of VTK&#45;based 3D hraphs." alt="" coords="1676,525,1863,566"/>
+<area shape="rect" id="node10" href="$d1/db7/classIG_1_1Gr3d_1_1VtkControlBase.html" title="Basic control encapsulating the VTK&#39;s render control of type Kitware.VTK.RenderWindowControl." alt="" coords="653,200,816,227"/>
+<area shape="rect" id="node14" href="$d8/d45/classIG_1_1Gr3d_1_1Graph3dManipulator.html" title="Basic control for manipulating 3D graphics." alt="" coords="955,429,1141,456"/>
+<area shape="rect" id="node3" href="$dc/d11/interfaceIG_1_1Gr3d_1_1IVtkFormContainer.html" title="This interface is implemented by the forms that contain the VTK control that can render VTK graphics..." alt="" coords="645,708,824,735"/>
+<area shape="rect" id="node6" href="$d9/d71/classIG_1_1Gr3d_1_1Graph3dManipulatorWindow.html" title="A form for manipulation of 3D graphics." alt="" coords="1316,371,1503,413"/>
+<area shape="rect" id="node4" href="$d2/d39/interfaceIG_1_1Gr3d_1_1IVtkFormContainerGen_3_01VtkControlType_01_4.html" title="This interface is implemented by the forms that contain the VTK control that can render VTK graphics..." alt="" coords="5,682,256,723"/>
+<area shape="rect" id="node11" href="$dc/d11/interfaceIG_1_1Gr3d_1_1IVtkFormContainer.html" title="This interface is implemented by the forms that contain the VTK control that can render VTK graphics..." alt="" coords="306,215,437,241"/>
+<area shape="rect" id="node8" href="$d3/d68/interfaceIG_1_1Forms_1_1IClosableFromContainedForm.html" title="Marker interface indicating that a form can be closed from the contained control." alt="" coords="963,262,1133,303"/>
+<area shape="rect" id="node12" href="$d5/def/interfaceIG_1_1Gr3d_1_1I3dGraphicsControl.html" title="Interface for 3D graphics controls that can be manipulated via a standard set of commands for rotatio..." alt="" coords="305,265,437,292"/>
+</map>

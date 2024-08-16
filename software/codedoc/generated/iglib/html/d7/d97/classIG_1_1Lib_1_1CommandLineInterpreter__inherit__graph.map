@@ -1,0 +1,8 @@
+<map id="IG.Lib.CommandLineInterpreter" name="IG.Lib.CommandLineInterpreter">
+<area shape="rect" id="node2" href="$d6/d66/classIG_1_1Lib_1_1InterpreterBase_3_01TCommand_00_01TCommandData_01_4.html" title="InterpreterBase\&lt; Command\lLine, CommandLineData \&gt;" alt="" coords="224,5,405,47"/>
+<area shape="rect" id="node3" href="$db/d1d/interfaceIG_1_1Lib_1_1IInterpreter_3_01TCommand_00_01TCommandData_01_4.html" title="IInterpreter\&lt; TCommand,\l TCommandData \&gt;" alt="" coords="5,5,171,47"/>
+<area shape="rect" id="node4" href="$db/d1d/interfaceIG_1_1Lib_1_1IInterpreter_3_01TCommand_00_01TCommandData_01_4.html" title="IInterpreter\&lt; CommandLine,\l CommandLineData \&gt;" alt="" coords="223,71,406,112"/>
+<area shape="rect" id="node5" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="276,137,353,163"/>
+<area shape="rect" id="node7" href="$df/dfd/interfaceIG_1_1Lib_1_1IRegisterable_3_01T_01_4.html" title="Objects of this type have a unique ID (unique for all objects of a given type) and can be registered ..." alt="" coords="219,239,411,280"/>
+<area shape="rect" id="node8" href="$dc/d79/interfaceIG_1_1Lib_1_1IIdentifiable.html" title="Classes whose instances have unique integer IDs." alt="" coords="45,246,131,273"/>
+</map>

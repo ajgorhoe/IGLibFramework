@@ -1,0 +1,6 @@
+<map id="IG.Num.SampledDataCsv" name="IG.Num.SampledDataCsv">
+<area shape="rect" id="node2" href="$d1/d01/classIG_1_1Lib_1_1StringTable.html" title="2D tables of data represented by strings. Maps to CSV files." alt="" coords="5,81,92,108"/>
+<area shape="rect" id="node3" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="10,5,87,32"/>
+<area shape="rect" id="node4" href="$d5/dd5/classIG_1_1Num_1_1InputOutputDataDefiniton.html" title="Definition of input and output data for vector functions, approximations, etc. Contains descriptiove ..." alt="" coords="116,81,331,108"/>
+<area shape="rect" id="node5" href="$d4/d29/classIG_1_1Num_1_1SampledDataSet.html" title="Sampled data consisting of elements of which each contains vector of input parameters and output valu..." alt="" coords="355,81,523,108"/>
+</map>

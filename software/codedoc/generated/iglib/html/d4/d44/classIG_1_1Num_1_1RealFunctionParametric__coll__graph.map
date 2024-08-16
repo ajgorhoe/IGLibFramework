@@ -1,0 +1,7 @@
+<map id="IG.Num.RealFunctionParametric" name="IG.Num.RealFunctionParametric">
+<area shape="rect" id="node2" href="$d1/d20/classIG_1_1Num_1_1RealFunctionParametricBase.html" title="Base class for parameterized real&#45;valued functions of single variable. Parameters that completely def..." alt="" coords="31,157,222,184"/>
+<area shape="rect" id="node3" href="$d6/d30/classIG_1_1Num_1_1RealFunctionBase.html" title="Base class for real functions of real variable." alt="" coords="62,81,190,108"/>
+<area shape="rect" id="node4" href="$db/d0e/interfaceIG_1_1Num_1_1IRealFunction.html" title="Interface for real functions." alt="" coords="8,5,109,32"/>
+<area shape="rect" id="node5" href="$d1/dfb/interfaceIG_1_1Num_1_1IRealFunctionParametric.html" title="Parameterized real&#45;valued functions of single variable." alt="" coords="215,81,379,108"/>
+<area shape="rect" id="node6" href="$d3/d24/interfaceIG_1_1Num_1_1IVector.html" title="Real vector intrface." alt="" coords="298,157,408,184"/>
+</map>

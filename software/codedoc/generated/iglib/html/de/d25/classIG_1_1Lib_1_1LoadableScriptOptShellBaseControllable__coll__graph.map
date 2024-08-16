@@ -1,0 +1,12 @@
+<map id="IG.Lib.LoadableScriptOptShellBaseControllable" name="IG.Lib.LoadableScriptOptShellBaseControllable">
+<area shape="rect" id="node2" href="$d5/d05/classIG_1_1Lib_1_1LoadableScriptOptBase.html" title="Base class for loadable scripts for optimization problems. AGREEMENTS: The first argument to initiali..." alt="" coords="720,191,879,217"/>
+<area shape="rect" id="node3" href="$d7/d15/classIG_1_1Lib_1_1LoadableScriptBase.html" title="Base class for classes that can be dynamically loadeded from scripts and run, which provides function..." alt="" coords="393,115,532,141"/>
+<area shape="rect" id="node4" href="$d7/d66/interfaceIG_1_1Lib_1_1ILoadableScript.html" title="Interface for classes that can be dynamically loadeded from scripts and run, which provides functiona..." alt="" coords="55,47,166,73"/>
+<area shape="rect" id="node11" href="$d1/dca/interfaceIG_1_1Lib_1_1ILoadableScriptC.html" title="Controllable loadable script, provides more control over loading and execution." alt="" coords="576,5,696,32"/>
+<area shape="rect" id="node5" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="72,255,149,281"/>
+<area shape="rect" id="node8" href="$de/de7/classIG_1_1Lib_1_1StopWatch1.html" title="Timer for measuring execution times and other intervals of time elapsed between successive events..." alt="" coords="397,368,529,395"/>
+<area shape="rect" id="node6" href="$de/dfd/interfaceIG_1_1Lib_1_1ICommandLineApplicationInterpreter.html" title="Interface for simple command&#45;line applicatino interpreters." alt="" coords="5,107,216,149"/>
+<area shape="rect" id="node7" href="$d5/d59/interfaceIG_1_1Num_1_1IAnalysis.html" title="Interface for direct analysis classes used in optimization problems." alt="" coords="401,216,524,243"/>
+<area shape="rect" id="node9" href="$dc/d79/interfaceIG_1_1Lib_1_1IIdentifiable.html" title="Classes whose instances have unique integer IDs." alt="" coords="67,384,154,411"/>
+<area shape="rect" id="node10" href="$d4/d43/interfaceIG_1_1Num_1_1IRandomGenerator.html" title="Uniform random number generator." alt="" coords="373,267,552,293"/>
+</map>

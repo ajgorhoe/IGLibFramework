@@ -1,0 +1,7 @@
+<map id="IG.Num.DistanceComparer&lt; PointContainerType, PointType &gt;" name="IG.Num.DistanceComparer&lt; PointContainerType, PointType &gt;">
+<area shape="rect" id="node5" href="$da/dba/classIG_1_1Num_1_1DistanceComparer_3_01PointContainerType_00_01PointType_01_4_1_1StoredDistanceComparerClass.html" title="Compares two point containers according to their StoredDistance property." alt="" coords="648,5,927,61"/>
+<area shape="rect" id="node6" href="$d2/daa/classIG_1_1Num_1_1DistanceComparerSampledDataElement.html" title="Distance comparer for point clouds where point type is SampledDataElement." alt="" coords="673,86,901,127"/>
+<area shape="rect" id="node7" href="$d7/d0f/classIG_1_1Num_1_1DistanceComparerVector.html" title="IG.Num.DistanceComparerVector" alt="" coords="680,152,895,179"/>
+<area shape="rect" id="node2" href="$df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html" title="Interface used for distance comparers in point clouds. " alt="" coords="232,79,375,135"/>
+<area shape="rect" id="node4" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="265,159,342,185"/>
+</map>

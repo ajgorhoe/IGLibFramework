@@ -1,0 +1,7 @@
+<map id="IG.Num.SimKosecFileManagerConv2" name="IG.Num.SimKosecFileManagerConv2">
+<area shape="rect" id="node2" href="$df/dee/classIG_1_1Num_1_1SimKosecFileManagerConvBase.html" title="Base class for interface with simulator of G. Kosec for convection problems in a cave with obstacles..." alt="" coords="79,185,290,212"/>
+<area shape="rect" id="node3" href="$d9/dfc/classIG_1_1Num_1_1SimKosecFileManagerBase.html" title="File manager for interfacing (for optimization purposes) the simulation code of Gregor Kosec..." alt="" coords="197,109,380,136"/>
+<area shape="rect" id="node4" href="$d6/d7c/interfaceIG_1_1Num_1_1IResponseEvaluatorVectorSimple.html" title="Interface for simulators and other systems (used e.g. for optimization) that can calculate vector res..." alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node5" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="250,13,327,39"/>
+<area shape="rect" id="node6" href="$db/d5e/interfaceIG_1_1Num_1_1IBoundingBox.html" title="Bounding box, defines minimum and maximum co&#45;ordinates of domains, geometric objects and their groups..." alt="" coords="387,13,537,39"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="IG.Gr.QuadriLateralFacePrimitive" name="IG.Gr.QuadriLateralFacePrimitive">
+<area shape="rect" id="node2" href="$df/db0/classIG_1_1Gr_1_1GraphicPrimitiveSimple.html" title="GraphicPrimitive that has a protected Coordinates[] array." alt="" coords="5,349,161,376"/>
+<area shape="rect" id="node3" href="$d3/d1a/classIG_1_1Gr_1_1GraphicPrimitive.html" title="Abstract base class for all graphic primitives such as lines, facets, etc." alt="" coords="25,273,141,300"/>
+<area shape="rect" id="node4" href="$d0/da2/classIG_1_1Gr_1_1GraphicObject.html" title="Graphic object, a tree &#45; like collection of graphic primitives." alt="" coords="144,184,284,211"/>
+<area shape="rect" id="node5" href="$dc/d46/classIG_1_1Gr_1_1GrPrimitiveSettings.html" title="Settings for graphic primitive." alt="" coords="26,95,194,121"/>
+<area shape="rect" id="node6" href="$dd/d52/structIG_1_1Lib_1_1color.html" title="Extended color representation. Stores RGB components and opacity as double numbers ranging fom 0 to 1..." alt="" coords="66,5,154,32"/>
+<area shape="rect" id="node7" href="$df/d16/structIG_1_1Num_1_1vec3.html" title="3D vector, struct implementation." alt="" coords="186,349,282,376"/>
+</map>

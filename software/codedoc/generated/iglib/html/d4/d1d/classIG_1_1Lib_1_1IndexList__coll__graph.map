@@ -1,0 +1,4 @@
+<map id="IG.Lib.IndexList" name="IG.Lib.IndexList">
+<area shape="rect" id="node2" href="$dd/dc5/classIG_1_1Lib_1_1SortedUniqueItemList_3_01Type_01_4.html" title="Sorted list of unique items. It is guaranteed that at all times the list of containing items is sorte..." alt="" coords="5,80,152,121"/>
+<area shape="rect" id="node3" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="40,5,117,32"/>
+</map>

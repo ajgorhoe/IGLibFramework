@@ -1,0 +1,27 @@
+var classIG_1_1Lib_1_1NamedPipeClientBase =
+[
+    [ "NamedPipeClientBase", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#ab8f6f3235645e6caf7dac1244026e37f", null ],
+    [ "NamedPipeClientBase", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#a19d6719b72dd122509efef67fa5e4cff", null ],
+    [ "NamedPipeClientBase", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#a61417668629fea07e8af1a0cf6ee9651", null ],
+    [ "NamedPipeClientBase", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#add17bff03f539f75b5301cc057293b40", null ],
+    [ "ClosePipe", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#ac0c1d53030754dc416fa43831554b87b", null ],
+    [ "CloseConnection", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#aca62acbac844489191488da4dbe23e7f", null ],
+    [ "IsConnected", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#a83860020c35148ed9d43f61b7aee79d3", null ],
+    [ "Connect", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#a1943aff5aead396285f7666bae4563be", null ],
+    [ "Connect", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#a03f549614063de9bf4a5d7ced30ed1e5", null ],
+    [ "ToString", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#aec336dca4ac4d04b191a9b7244f0631b", null ],
+    [ "_pipeName", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#a97a96e3cc2b0a776e845112c5dd6f7b6", null ],
+    [ "_defaultServerAddress", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#af579f9d0e236754c46f66d7e37449b76", null ],
+    [ "_serverAddress", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#a4b8c96ea9da3c48d57d988e7abb0886c", null ],
+    [ "_clientPipe", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#ab46a1b3f26fb06fc87254d7b26b5ac2f", null ],
+    [ "_test", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#ab20aa1b0feb64cba75d20af658556c64", null ],
+    [ "_inputStream", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#a240b730f723c596672f6e265998c0105", null ],
+    [ "_outputStream", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#af9756ed291c381720f19371814b97634", null ],
+    [ "Name", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#aa172ca7bbd1ccc5da030f8f8f739dce9", null ],
+    [ "PipeName", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#a057a3c5e6bf060d1d514b429952794b4", null ],
+    [ "DefaultServerAddress", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#ae013640aa38fe547bba9c70c874f72c2", null ],
+    [ "ServerAddress", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#a5326e5e1b02680f485c5db61d142da05", null ],
+    [ "ClientPipe", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#acfcea5091216eebd1412a2f208a2bf3c", null ],
+    [ "InputStream", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#a92e34180b5360539c060df34eddd8302", null ],
+    [ "OutputStream", "d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html#a61687539e8ad4ca36f026dddb05ea9e9", null ]
+];

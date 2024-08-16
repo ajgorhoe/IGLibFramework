@@ -1,0 +1,8 @@
+<map id="IG.Num.ScalarFunctionBase" name="IG.Num.ScalarFunctionBase">
+<area shape="rect" id="node2" href="$d2/d9e/classIG_1_1Num_1_1ScalarFunctionUntransformedBase.html" title="Base class for defining scalar functions without possibility of affine transformation of parameters..." alt="" coords="251,5,473,32"/>
+<area shape="rect" id="node3" href="$d8/d56/interfaceIG_1_1Num_1_1IScalarFunctionUntransformed.html" title="Scalar functions of vector arguments." alt="" coords="5,29,201,56"/>
+<area shape="rect" id="node4" href="$dd/d1e/interfaceIG_1_1Num_1_1IScalarFunction.html" title="Scalar functions of vector arguments, with eventual affine transformation of parameters. If transformation is defined then actual function is evaluated as reference function evaluated at inverse affine transformed parameters." alt="" coords="306,56,418,83"/>
+<area shape="rect" id="node5" href="$d8/d86/interfaceIG_1_1Num_1_1IMatrix.html" title="Real matrix interface." alt="" coords="307,107,417,133"/>
+<area shape="rect" id="node6" href="$d3/d24/interfaceIG_1_1Num_1_1IVector.html" title="Real vector intrface." alt="" coords="307,161,417,188"/>
+<area shape="rect" id="node7" href="$d5/d50/interfaceIG_1_1Num_1_1IAffineTransformation.html" title="Affine Transformation." alt="" coords="267,212,457,239"/>
+</map>

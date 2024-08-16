@@ -1,0 +1,13 @@
+<map id="IG.Lib.LoadableScriptOptBase.AnalysisScript" name="IG.Lib.LoadableScriptOptBase.AnalysisScript">
+<area shape="rect" id="node2" href="$dd/d1e/classIG_1_1Num_1_1AnalysisBase.html" title="Base class for direct analysis classes that define optimization problems. Represent the complete defi..." alt="" coords="709,5,811,32"/>
+<area shape="rect" id="node3" href="$d5/d59/interfaceIG_1_1Num_1_1IAnalysis.html" title="Interface for direct analysis classes used in optimization problems." alt="" coords="425,39,500,65"/>
+<area shape="rect" id="node4" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="72,107,149,133"/>
+<area shape="rect" id="node5" href="$d5/d05/classIG_1_1Lib_1_1LoadableScriptOptBase.html" title="Base class for loadable scripts for optimization problems. AGREEMENTS: The first argument to initiali..." alt="" coords="661,191,859,217"/>
+<area shape="rect" id="node6" href="$d7/d15/classIG_1_1Lib_1_1LoadableScriptBase.html" title="Base class for classes that can be dynamically loadeded from scripts and run, which provides function..." alt="" coords="393,292,532,319"/>
+<area shape="rect" id="node10" href="$de/de7/classIG_1_1Lib_1_1StopWatch1.html" title="Timer for measuring execution times and other intervals of time elapsed between successive events..." alt="" coords="397,191,529,217"/>
+<area shape="rect" id="node7" href="$d7/d66/interfaceIG_1_1Lib_1_1ILoadableScript.html" title="Interface for classes that can be dynamically loadeded from scripts and run, which provides functiona..." alt="" coords="55,333,166,360"/>
+<area shape="rect" id="node8" href="$de/dfd/interfaceIG_1_1Lib_1_1ICommandLineApplicationInterpreter.html" title="Interface for simple command&#45;line applicatino interpreters." alt="" coords="5,258,216,299"/>
+<area shape="rect" id="node9" href="$d5/d59/interfaceIG_1_1Num_1_1IAnalysis.html" title="Interface for direct analysis classes used in optimization problems." alt="" coords="401,140,524,167"/>
+<area shape="rect" id="node11" href="$dc/d79/interfaceIG_1_1Lib_1_1IIdentifiable.html" title="Classes whose instances have unique integer IDs." alt="" coords="67,191,154,217"/>
+<area shape="rect" id="node12" href="$d4/d43/interfaceIG_1_1Num_1_1IRandomGenerator.html" title="Uniform random number generator." alt="" coords="373,241,552,268"/>
+</map>

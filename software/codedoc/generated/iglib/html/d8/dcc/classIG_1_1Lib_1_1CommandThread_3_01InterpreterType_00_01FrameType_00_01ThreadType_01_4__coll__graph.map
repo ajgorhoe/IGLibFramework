@@ -1,0 +1,6 @@
+<map id="IG.Lib.CommandThread&lt; InterpreterType, FrameType, ThreadType &gt;" name="IG.Lib.CommandThread&lt; InterpreterType, FrameType, ThreadType &gt;">
+<area shape="rect" id="node2" href="$dd/dd7/classIG_1_1Lib_1_1CommandThreadBase.html" title="Base class for classes of type CommandThread{InterpreterType, FrameType, ThreadType}. Contains everything that is not dependent on generic frame and other parameters." alt="" coords="77,171,228,197"/>
+<area shape="rect" id="node3" href="$dc/d79/interfaceIG_1_1Lib_1_1IIdentifiable.html" title="Classes whose instances have unique integer IDs." alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node5" href="$de/de7/classIG_1_1Lib_1_1StopWatch1.html" title="Timer for measuring execution times and other intervals of time elapsed between successive events..." alt="" coords="87,81,219,108"/>
+<area shape="rect" id="node4" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="218,5,295,32"/>
+</map>

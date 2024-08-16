@@ -1,0 +1,8 @@
+<map id="IG.Lib.VarTypeBase" name="IG.Lib.VarTypeBase">
+<area shape="rect" id="node2" href="$d8/d2d/interfaceIG_1_1Lib_1_1IVarType.html" title="Defines classes that can represent variables of different types. Used e.g. in interpreters and variab..." alt="" coords="120,229,193,256"/>
+<area shape="rect" id="node3" href="$dd/d2c/interfaceIG_1_1Lib_1_1IXmlConvertable.html" title="Defines classes that can be converted to/from Xml elements." alt="" coords="32,155,145,181"/>
+<area shape="rect" id="node4" href="$d6/d87/interfaceIG_1_1Lib_1_1IFromXml.html" title="Defines classes whose instances can be converted to Xml elements. Conversion is different from that u..." alt="" coords="5,80,81,107"/>
+<area shape="rect" id="node5" href="$da/d7e/interfaceIG_1_1Lib_1_1ITypeName.html" title="Classes that provide separate type names. Classes used e.g. in interpreter systems to represent types..." alt="" coords="45,5,132,32"/>
+<area shape="rect" id="node6" href="$d3/dd7/interfaceIG_1_1Lib_1_1IToXml.html" title="Defines classes whose instances can be created from Xml elements. Conversion is different from that u..." alt="" coords="105,80,165,107"/>
+<area shape="rect" id="node7" href="$d2/d80/interfaceIG_1_1Lib_1_1IStringParsable.html" title="Defines classes that can be converted to strings and whose values can be parsed from strings..." alt="" coords="169,155,280,181"/>
+</map>

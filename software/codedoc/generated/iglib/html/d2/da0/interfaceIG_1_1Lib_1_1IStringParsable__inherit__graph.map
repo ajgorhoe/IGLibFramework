@@ -1,0 +1,6 @@
+<map id="IG.Lib.IStringParsable" name="IG.Lib.IStringParsable">
+<area shape="rect" id="node2" href="$d8/d2d/interfaceIG_1_1Lib_1_1IVarType.html" title="Defines classes that can represent variables of different types. Used e.g. in interpreters and variab..." alt="" coords="85,80,195,107"/>
+<area shape="rect" id="node3" href="$d0/dc6/classIG_1_1Lib_1_1VarTypeBase.html" title="DO NOT USE! The base class implementing the IVarType interface." alt="" coords="71,155,209,181"/>
+<area shape="rect" id="node4" href="$da/d4c/classIG_1_1Lib_1_1CounterVar.html" title="IG.Lib.CounterVar" alt="" coords="5,229,131,256"/>
+<area shape="rect" id="node5" href="$d9/d24/classIG_1_1Lib_1_1ScalarVar.html" title="Scalar variable." alt="" coords="155,229,272,256"/>
+</map>

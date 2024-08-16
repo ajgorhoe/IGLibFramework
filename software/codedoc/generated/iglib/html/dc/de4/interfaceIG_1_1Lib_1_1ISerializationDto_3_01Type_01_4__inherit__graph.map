@@ -1,0 +1,6 @@
+<map id="IG.Lib.ISerializationDto&lt; Type &gt;" name="IG.Lib.ISerializationDto&lt; Type &gt;">
+<area shape="rect" id="node4" href="$dd/d8a/classIG_1_1Lib_1_1SerializationDto_3_01Type_01_4.html" title="Generic base class for Data Transfer Objects (DTO). This class is used as template for producing conc..." alt="" coords="7,273,158,315"/>
+<area shape="rect" id="node2" href="$d0/df7/interfaceIG_1_1Lib_1_1ISerializationDto_3_01Type_00_01BaseType_01_4.html" title="Interface for Data Transfer Objects (DTO). This class is used as template for producing concrete DTO ..." alt="" coords="21,95,145,136"/>
+<area shape="rect" id="node3" href="$db/da2/interfaceIG_1_1Lib_1_1ISerializationDtoAux_3_01Type_01_4.html" title="This interface facilitates use of static helper methods for copying on the SerializationDtoBase class..." alt="" coords="13,5,152,47"/>
+<area shape="rect" id="node5" href="$d2/d6e/classIG_1_1Lib_1_1IndexListDto.html" title="Data Transfer Object (DTO) for index lists of type IndexList. Used to store, transfer, serialize and deserialize objects of type IndexList." alt="" coords="17,363,149,389"/>
+</map>

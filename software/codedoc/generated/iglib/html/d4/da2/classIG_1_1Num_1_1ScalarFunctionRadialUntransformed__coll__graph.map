@@ -1,0 +1,5 @@
+<map id="IG.Num.ScalarFunctionRadialUntransformed" name="IG.Num.ScalarFunctionRadialUntransformed">
+<area shape="rect" id="node2" href="$d2/d9e/classIG_1_1Num_1_1ScalarFunctionUntransformedBase.html" title="Base class for defining scalar functions without possibility of affine transformation of parameters..." alt="" coords="96,81,319,108"/>
+<area shape="rect" id="node3" href="$d8/d56/interfaceIG_1_1Num_1_1IScalarFunctionUntransformed.html" title="Scalar functions of vector arguments." alt="" coords="5,5,201,32"/>
+<area shape="rect" id="node4" href="$db/d0e/interfaceIG_1_1Num_1_1IRealFunction.html" title="Interface for real functions." alt="" coords="343,81,493,108"/>
+</map>

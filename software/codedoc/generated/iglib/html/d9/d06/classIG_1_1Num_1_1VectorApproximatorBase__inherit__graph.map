@@ -1,0 +1,7 @@
+<map id="IG.Num.VectorApproximatorBase" name="IG.Num.VectorApproximatorBase">
+<area shape="rect" id="node3" href="$dc/db5/classIG_1_1Num_1_1NeuralApproximatorBase.html" title="Base class for neural network approximators." alt="" coords="393,78,608,105"/>
+<area shape="rect" id="node2" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="5,78,83,105"/>
+<area shape="rect" id="node4" href="$da/d91/classIG_1_1Neural_1_1NeuralApproximatorAforge.html" title="Approximator of response by using neural networks, based on the AforgeDotNet library. $A Igor Mar11;" alt="" coords="656,5,851,47"/>
+<area shape="rect" id="node5" href="$dd/d0e/classIG_1_1Num_1_1NeuralApproximatorAforgeFake.html" title="IG.Num.NeuralApproximator\lAforgeFake" alt="" coords="661,71,845,112"/>
+<area shape="rect" id="node6" href="$df/d0d/classIG_1_1Num_1_1NeuralApproximatorAforgeIT.html" title="Approximator of response by using neural networks, based on the AforgeDotNet library. $A Igor Mar11;" alt="" coords="661,136,845,177"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="IG.Lib.RegisterableExamples.ExampleIRegistrable" name="IG.Lib.RegisterableExamples.ExampleIRegistrable">
+<area shape="rect" id="node2" href="$df/dfd/interfaceIG_1_1Lib_1_1IRegisterable_3_01T_01_4.html" title="Objects of this type have a unique ID (unique for all objects of a given type) and can be registered ..." alt="" coords="5,80,245,107"/>
+<area shape="rect" id="node3" href="$dc/d79/interfaceIG_1_1Lib_1_1IIdentifiable.html" title="Classes whose instances have unique integer IDs." alt="" coords="82,5,169,32"/>
+</map>

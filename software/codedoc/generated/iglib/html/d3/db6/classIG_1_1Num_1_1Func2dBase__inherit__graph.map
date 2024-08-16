@@ -1,0 +1,26 @@
+<map id="IG.Num.Func2dBase" name="IG.Num.Func2dBase">
+<area shape="rect" id="node5" href="$d9/dc1/classIG_1_1Neural_1_1Func2dFromApproximator.html" title="Approximator function of 2 variables that is based on a general approximator function of vector argum..." alt="" coords="711,257,941,283"/>
+<area shape="rect" id="node6" href="$d8/d1b/classIG_1_1Num_1_1Func2dBaseNoGradient.html" title="Base class for scalar functions of 2 variables (implementations of the IFunc2d interface). that do not implement calculation of function Hessian (second derivatives) or gradient. " alt="" coords="722,307,930,334"/>
+<area shape="rect" id="node8" href="$da/dee/classIG_1_1Num_1_1Func2dBaseNoHessian.html" title="Base class for scalar functions of 2 variables (implementations of the IFunc2d interface). that do not implement calculation of the Hessian (second derivatives). " alt="" coords="723,358,929,385"/>
+<area shape="rect" id="node17" href="$d3/d2f/classIG_1_1Num_1_1Func2dFromScalarFunction.html" title="Scalar function of 2 variables that is based on a general scalar function of vector argument..." alt="" coords="711,485,941,511"/>
+<area shape="rect" id="node19" href="$d0/d88/classIG_1_1Num_1_1Func2dVectorFormBase.html" title="Base class for scalar functions of 2 variables (base for implementation of IFunc2d interface)..." alt="" coords="721,586,931,613"/>
+<area shape="rect" id="node22" href="$df/d17/classIG_1_1Num_1_1Func3d2dBase_1_1ComponentFunctionBase.html" title="Base function for component functions, provides internal variable for vector function." alt="" coords="713,720,939,761"/>
+<area shape="rect" id="node2" href="$d2/d9e/classIG_1_1Num_1_1ScalarFunctionUntransformedBase.html" title="Base class for defining scalar functions without possibility of affine transformation of parameters..." alt="" coords="249,409,472,435"/>
+<area shape="rect" id="node3" href="$d8/d56/interfaceIG_1_1Num_1_1IScalarFunctionUntransformed.html" title="Scalar functions of vector arguments." alt="" coords="5,383,201,410"/>
+<area shape="rect" id="node4" href="$d8/d15/interfaceIG_1_1Num_1_1IFunc2d.html" title="Represents scalar functions of 2 variables." alt="" coords="327,459,395,486"/>
+<area shape="rect" id="node7" href="$d6/dc1/classIG_1_1Gr3d_1_1VtkPlotBase_1_1ExampleFunc2dShifted.html" title="Function defined as some other function shifted for the specified value." alt="" coords="1007,5,1206,47"/>
+<area shape="rect" id="node9" href="$db/da2/classIG_1_1Gr3d_1_1VtkPlotBase_1_1ExampleFunc2dLinear.html" title="Function f(x,y)=x+y." alt="" coords="1007,71,1206,112"/>
+<area shape="rect" id="node10" href="$d8/d3a/classIG_1_1Gr3d_1_1VtkPlotBase_1_1ExampleFunc2dSquare.html" title="Function f(x,y)=x*x+y*y." alt="" coords="1007,136,1206,177"/>
+<area shape="rect" id="node11" href="$d5/d33/classIG_1_1Gr3d_1_1VtkPlotBase_1_1ExampleFunc2dXY.html" title="Function f(x,y)=x*y." alt="" coords="1007,201,1206,243"/>
+<area shape="rect" id="node12" href="$d8/d7b/classIG_1_1Gr3d_1_1VtkPlotBase_1_1ExampleFuncDiff.html" title="Difference between the two auxiliary functions." alt="" coords="1007,267,1206,308"/>
+<area shape="rect" id="node13" href="$df/de1/classIG_1_1Gr3d_1_1VtkPlotBase_1_1Func2dX.html" title="2D function that returns the first parameter. Used as the first componnet of parametric definition of..." alt="" coords="1007,333,1206,359"/>
+<area shape="rect" id="node14" href="$db/d2e/classIG_1_1Gr3d_1_1VtkPlotBase_1_1Func2dY.html" title="2D function that returns the second parameter. Used as the second componnet of parametric definition ..." alt="" coords="1007,383,1207,410"/>
+<area shape="rect" id="node15" href="$d7/d4d/classIG_1_1Gr3d_1_1VtkPlotBase_1_1Func2dZero.html" title="Auxiliary 2D function that returns 0." alt="" coords="999,434,1215,461"/>
+<area shape="rect" id="node16" href="$df/d8b/classIG_1_1Num_1_1Func2dExamples_1_1Func2dXY.html" title="Function f(x, y) = x * y. " alt="" coords="989,485,1224,511"/>
+<area shape="rect" id="node18" href="$d5/da9/classIG_1_1Num_1_1Func2dFromScalarScript.html" title="Scalar function of 2 variables that is generated from expressions for evaluation of function value..." alt="" coords="999,535,1214,562"/>
+<area shape="rect" id="node20" href="$db/d84/classIG_1_1Num_1_1Func2dLinear.html" title="Linear (Affine) function of 2 variables. " alt="" coords="1033,586,1181,613"/>
+<area shape="rect" id="node21" href="$de/d0a/classIG_1_1Num_1_1Func2dQuadratic.html" title="Quadratic function of 2 variables. " alt="" coords="1022,637,1191,663"/>
+<area shape="rect" id="node23" href="$db/d2c/classIG_1_1Num_1_1Func3d2dBase_1_1ComponentFunction1.html" title="Class that represents a scalar function of 2 variables that is the first component of the specified 3..." alt="" coords="993,688,1220,729"/>
+<area shape="rect" id="node24" href="$d9/dbc/classIG_1_1Num_1_1Func3d2dBase_1_1ComponentFunction2.html" title="Class that represents a scalar function of 2 variables that is the first component of the specified 3..." alt="" coords="993,753,1220,795"/>
+<area shape="rect" id="node25" href="$db/d01/classIG_1_1Num_1_1Func3d2dBase_1_1ComponentFunction3.html" title="Class that represents a scalar function of 2 variables that is the third component of the specified 3..." alt="" coords="993,819,1220,860"/>
+</map>

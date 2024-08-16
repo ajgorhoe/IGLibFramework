@@ -1,0 +1,5 @@
+<map id="IG.Num.IRealFunctionOneParametric" name="IG.Num.IRealFunctionOneParametric">
+<area shape="rect" id="node4" href="$d0/d78/classIG_1_1Num_1_1RealFunctionOneParametric.html" title="Base class for one parametric families of real&#45;valued functions of single variable. Parameters that completely define the function out of parametric family of functions can be queried or set." alt="" coords="7,229,240,256"/>
+<area shape="rect" id="node2" href="$d1/dfb/interfaceIG_1_1Num_1_1IRealFunctionParametric.html" title="Parameterized real&#45;valued functions of single variable." alt="" coords="101,80,265,107"/>
+<area shape="rect" id="node3" href="$db/d0e/interfaceIG_1_1Num_1_1IRealFunction.html" title="Interface for real functions." alt="" coords="73,5,174,32"/>
+</map>

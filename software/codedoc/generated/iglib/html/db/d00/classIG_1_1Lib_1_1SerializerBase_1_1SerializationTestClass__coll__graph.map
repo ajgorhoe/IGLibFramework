@@ -1,0 +1,5 @@
+<map id="IG.Lib.SerializerBase.SerializationTestClass" name="IG.Lib.SerializerBase.SerializationTestClass">
+<area shape="rect" id="node2" href="$d5/d02/interfaceIG_1_1Lib_1_1SerializerBase_1_1ISerializationTestClass.html" title="Interface for classes for testing serialization." alt="" coords="5,89,160,115"/>
+<area shape="rect" id="node3" href="$da/d22/classIG_1_1Lib_1_1SerializerBase_1_1SerializationTestArrayMember.html" title="Member of arrays in test classes for testing serialization." alt="" coords="184,81,403,123"/>
+<area shape="rect" id="node4" href="$d3/d29/interfaceIG_1_1Lib_1_1SerializerBase_1_1ISerializationTestArrayMember.html" title="Interface for members of arrays in classes for testing serialization." alt="" coords="194,5,393,32"/>
+</map>

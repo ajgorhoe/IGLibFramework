@@ -1,0 +1,98 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$d0/d86/classHelloVTKForm_1_1Form1.html" title="HelloVTKForm.Form1" alt="" coords="583,360,729,387"/>
+<area shape="rect" id="node3" href="$d3/de3/classIG_1_1Forms_1_1AlignmentTestForm.html" title="Test form, used only to test if control can be inclded in the form.." alt="" coords="559,1537,753,1564"/>
+<area shape="rect" id="node4" href="$d4/dc9/classIG_1_1Forms_1_1AssemblyInfoForm.html" title="IG.Forms.AssemblyInfoForm" alt="" coords="562,411,750,437"/>
+<area shape="rect" id="node5" href="$d3/d68/classIG_1_1Forms_1_1BrowserSimpleForm.html" title="IG.Forms.BrowserSimpleForm" alt="" coords="557,461,755,488"/>
+<area shape="rect" id="node6" href="$d7/d49/classIG_1_1Forms_1_1BrowserSimpleWindow.html" title="IG.Forms.BrowserSimpleWindow" alt="" coords="549,512,763,539"/>
+<area shape="rect" id="node7" href="$d0/d44/classIG_1_1Forms_1_1ControlViewerForm.html" title="Windows form (System.Windows.Forms.Form) that can launch and show arbitrary controls and can create t..." alt="" coords="561,563,751,589"/>
+<area shape="rect" id="node8" href="$d8/d0e/classIG_1_1Forms_1_1CookingTimerForm.html" title="IG.Forms.CookingTimerForm" alt="" coords="561,613,751,640"/>
+<area shape="rect" id="node9" href="$db/de0/classIG_1_1Forms_1_1DialogForm.html" title="IG.Forms.DialogForm" alt="" coords="583,664,729,691"/>
+<area shape="rect" id="node10" href="$d6/df5/classIG_1_1Forms_1_1DialogFormDemoForm.html" title="IG.Forms.DialogFormDemoForm" alt="" coords="551,715,761,741"/>
+<area shape="rect" id="node11" href="$d0/d47/classIG_1_1Forms_1_1FileViewerForm.html" title="IG.Forms.FileViewerForm" alt="" coords="571,765,741,792"/>
+<area shape="rect" id="node12" href="$d3/d83/classIG_1_1Forms_1_1GraphWindowTemplate__Old.html" title="Form used for plots." alt="" coords="535,816,777,843"/>
+<area shape="rect" id="node13" href="$df/d8d/classIG_1_1Forms_1_1HashForm.html" title="IG.Forms.HashForm" alt="" coords="586,867,726,893"/>
+<area shape="rect" id="node14" href="$de/d2b/classIG_1_1Forms_1_1ImageViewerForm.html" title="IG.Forms.ImageViewerForm" alt="" coords="564,917,748,944"/>
+<area shape="rect" id="node15" href="$dd/d44/classIG_1_1Forms_1_1IndicatorLightTestForm.html" title="IG.Forms.IndicatorLightTestForm" alt="" coords="550,968,762,995"/>
+<area shape="rect" id="node16" href="$d5/dc2/classIG_1_1Forms_1_1InputOutputDataDefinitionForm.html" title="IG.Forms.InputOutputData\lDefinitionForm" alt="" coords="569,1019,743,1061"/>
+<area shape="rect" id="node17" href="$d4/dd9/classIG_1_1Forms_1_1MessageBoxLauncher.html" title="An exemple form that launches various message boxes. " alt="" coords="551,1085,761,1112"/>
+<area shape="rect" id="node18" href="$da/d6f/classIG_1_1Forms_1_1ResourceViewerForm.html" title="IG.Forms.ResourceViewerForm" alt="" coords="554,1136,758,1163"/>
+<area shape="rect" id="node19" href="$db/dab/classIG_1_1Forms_1_1ScalarFunctionEvaluatorForm.html" title="Control for test evaluation of scalar functions. " alt="" coords="531,1187,781,1213"/>
+<area shape="rect" id="node20" href="$d3/d8a/classIG_1_1Forms_1_1ScalarFunctionScriptForm.html" title="Window for definition of scalar functions by user defined expressions (through script loader)..." alt="" coords="541,1237,771,1264"/>
+<area shape="rect" id="node21" href="$dd/d69/classIG_1_1Forms_1_1SoundPlayerFormSimple.html" title="IG.Forms.SoundPlayerForm\lSimple" alt="" coords="564,1289,748,1330"/>
+<area shape="rect" id="node22" href="$db/db9/classIG_1_1Forms_1_1TestForm.html" title="Test form." alt="" coords="589,1588,723,1615"/>
+<area shape="rect" id="node23" href="$d8/d86/classIG_1_1Forms_1_1TestLayoutForm.html" title="IG.Forms.TestLayoutForm" alt="" coords="569,5,743,32"/>
+<area shape="rect" id="node24" href="$d3/d6f/classIG_1_1Forms_1_1TimerForm.html" title="IG.Forms.TimerForm" alt="" coords="585,56,727,83"/>
+<area shape="rect" id="node25" href="$dd/d10/classIG_1_1Forms_1_1VectorFunctionPlotter1dForm.html" title="IG.Forms.VectorFunctionPlotter1dForm" alt="" coords="531,107,781,133"/>
+<area shape="rect" id="node26" href="$d4/def/classIG_1_1Forms_1_1VectorFunctionPlotter2dForm.html" title="IG.Forms.VectorFunctionPlotter2dForm" alt="" coords="531,157,781,184"/>
+<area shape="rect" id="node27" href="$db/d68/classIG_1_1Forms_1_1VectorFunctionScriptForm.html" title="IG.Forms.VectorFunctionScriptForm" alt="" coords="540,208,772,235"/>
+<area shape="rect" id="node28" href="$d8/def/classIG_1_1Forms_1_1WindowPositionerForm.html" title="Windows form for testing window positioning./summary&gt; $A Igor xx Oct09; " alt="" coords="549,1355,763,1381"/>
+<area shape="rect" id="node29" href="$dd/d58/classIG_1_1Forms_1_1XmlTreeViewForm.html" title="IG.Forms.XmlTreeViewForm" alt="" coords="564,259,748,285"/>
+<area shape="rect" id="node30" href="$d9/d71/classIG_1_1Gr3d_1_1Graph3dManipulatorWindow.html" title="A form for manipulation of 3D graphics." alt="" coords="563,1406,749,1447"/>
+<area shape="rect" id="node31" href="$d4/d92/classIG_1_1Gr3d_1_1Graph3dManipulatorWindowExtended.html" title="A form for manipulating 3D graphics." alt="" coords="563,1471,749,1513"/>
+<area shape="rect" id="node32" href="$d3/d52/classIG_1_1Gr3d_1_1VtkForm.html" title="Windows form for presenting VTK graphics. " alt="" coords="595,1689,717,1716"/>
+<area shape="rect" id="node33" href="$dc/dfa/classIG_1_1Gr3d_1_1VtkFormPlain.html" title="Windows form for presenting VTK graphics. " alt="" coords="581,1639,731,1665"/>
+<area shape="rect" id="node34" href="$da/deb/classIG_1_1Plot2d_1_1GraphWindowTemplate.html" title="Template for stand&#45;alone graph windows." alt="" coords="549,309,763,336"/>
+<area shape="rect" id="node35" href="$d7/ddb/classIG_1_1Plot2d_1_1GraphWindowNPlot.html" title="Stand&#45;alone graph window using NPlot as plotting engine. For layout, GraphWindowTemplate class is inh..." alt="" coords="829,309,1023,336"/>
+<area shape="rect" id="node37" href="$d8/d91/classIG_1_1Forms_1_1ConsoleForm.html" title="Console replacement." alt="" coords="577,2009,735,2036"/>
+<area shape="rect" id="node38" href="$d1/d96/classIG_1_1Forms_1_1FadingMessage.html" title="Manages a fading message window. Windows containing a message are launched in separate threads..." alt="" coords="570,1791,742,1817"/>
+<area shape="rect" id="node39" href="$d6/d8a/classIG_1_1Forms_1_1FadingMessageOld.html" title="Manages a fading message window. Windows containing a message are launched in separate threads..." alt="" coords="560,2060,752,2087"/>
+<area shape="rect" id="node40" href="$df/db8/classIG_1_1Forms_1_1ReporterConf.html" title="Reporter configuration." alt="" coords="579,2111,733,2137"/>
+<area shape="rect" id="node42" href="$d0/d66/classIG_1_1Forms_1_1ReporterConfigurationForm.html" title="Reporter configuration." alt="" coords="539,2212,773,2239"/>
+<area shape="rect" id="node43" href="$d2/d4a/classIG_1_1Forms_1_1Test_1_1ColorConverterForm.html" title="IG.Forms.Test.ColorConverterForm" alt="" coords="545,2263,767,2289"/>
+<area shape="rect" id="node44" href="$d7/d7e/classIG_1_1Forms_1_1Test_1_1MessageBoxBuilder.html" title="IG.Forms.Test.MessageBox\lBuilder" alt="" coords="563,2314,749,2355"/>
+<area shape="rect" id="node45" href="$d4/d06/classIG_1_1Forms_1_1XMLTestPath.html" title="IG.Forms.XMLTestPath" alt="" coords="577,2380,735,2407"/>
+<area shape="rect" id="node46" href="$d4/dee/classIG_1_1Forms_1_1XMLTestPathForm.html" title="IG.Forms.XMLTestPathForm" alt="" coords="563,1740,749,1767"/>
+<area shape="rect" id="node47" href="$d5/d34/classIG_1_1Forms_1_1XMLTreeView.html" title="Summary description for XMLTreeView. " alt="" coords="577,1841,735,1868"/>
+<area shape="rect" id="node48" href="$d8/d23/classIG_1_1Forms_1_1XMLTreeViewFormOld__Keep__Some__time.html" title="Summary description for XMLTreeView. " alt="" coords="562,1893,750,1934"/>
+<area shape="rect" id="node49" href="$d0/d64/classIG_1_1Gr_1_1ZedGraphWindow.html" title="Window form containing a Zedgraph control for plotting graphs." alt="" coords="577,1959,735,1985"/>
+<area shape="rect" id="node41" href="$d5/d8d/classIG_1_1Lib_1_1ReporterConfSpeech.html" title="This class is extension of ReporterConf that enables reporting via speech." alt="" coords="837,2111,1015,2137"/>
+<area shape="rect" id="node50" href="$d5/def/interfaceIG_1_1Gr3d_1_1I3dGraphicsControl.html" title="Interface for 3D graphics controls that can be manipulated via a standard set of commands for rotatio..." alt="" coords="267,2431,448,2457"/>
+<area shape="rect" id="node51" href="$d1/db7/classIG_1_1Gr3d_1_1VtkControlBase.html" title="Basic control encapsulating the VTK&#39;s render control of type Kitware.VTK.RenderWindowControl." alt="" coords="575,2431,737,2457"/>
+<area shape="rect" id="node52" href="$d3/d68/interfaceIG_1_1Forms_1_1IClosableFromContainedForm.html" title="Marker interface indicating that a form can be closed from the contained control." alt="" coords="232,1537,483,1564"/>
+<area shape="rect" id="node53" href="$d6/d7a/interfaceIG_1_1Forms_1_1IFileViewer.html" title="IG.Forms.IFileViewer" alt="" coords="286,2608,429,2635"/>
+<area shape="rect" id="node54" href="$d8/d8b/classIG_1_1Forms_1_1FileViewerControl.html" title="IG.Forms.FileViewerControl" alt="" coords="565,2633,747,2660"/>
+<area shape="rect" id="node55" href="$d1/d6d/classIG_1_1Forms_1_1ImageViewerControl.html" title="IG.Forms.ImageViewerControl" alt="" coords="559,2583,753,2609"/>
+<area shape="rect" id="node57" href="$d8/dc1/classIG_1_1Forms_1_1TestControl.html" title="Test control." alt="" coords="583,2161,729,2188"/>
+<area shape="rect" id="node59" href="$d2/de2/classIG_1_1Forms_1_1BrowserSimpleControl.html" title="IG.Forms.BrowserSimpleControl" alt="" coords="552,2532,760,2559"/>
+<area shape="rect" id="node60" href="$d2/d39/interfaceIG_1_1Gr3d_1_1IVtkFormContainerGen_3_01VtkControlType_01_4.html" title="This interface is implemented by the forms that contain the VTK control that can render VTK graphics..." alt="" coords="5,1817,184,1858"/>
+<area shape="rect" id="node61" href="$dc/d11/interfaceIG_1_1Gr3d_1_1IVtkFormContainer.html" title="This interface is implemented by the forms that contain the VTK control that can render VTK graphics..." alt="" coords="268,1824,447,1851"/>
+<area shape="rect" id="node62" href="$dc/dd2/classIG_1_1Gr3d_1_1VtkControlWin.html" title="Control for presenting VTK graphics, intended for use in stand&#45;alone windows." alt="" coords="579,2481,733,2508"/>
+<area shape="rect" id="node64" href="$d2/d08/classIG_1_1Forms_1_1AlignmentControl.html" title="Control for setting horizontal and vertical alignment of items." alt="" coords="567,2751,745,2777"/>
+<area shape="rect" id="node65" href="$d0/dc2/classIG_1_1Forms_1_1AlignmentControlOld.html" title="Control for adjusting alignment. " alt="" coords="557,2801,755,2828"/>
+<area shape="rect" id="node66" href="$dc/d45/classIG_1_1Forms_1_1AssemblyInfoControl.html" title="IG.Forms.AssemblyInfoControl" alt="" coords="557,2852,755,2879"/>
+<area shape="rect" id="node67" href="$d0/d46/classIG_1_1Forms_1_1AssemblySelector.html" title="IG.Forms.AssemblySelector" alt="" coords="563,2903,749,2929"/>
+<area shape="rect" id="node68" href="$d6/d52/classIG_1_1Forms_1_1ControlViewerControl.html" title="IG.Forms.ControlViewerControl" alt="" coords="555,2953,757,2980"/>
+<area shape="rect" id="node69" href="$d5/db4/classIG_1_1Forms_1_1CookingTimerControl.html" title="IG.Forms.CookingTimerControl" alt="" coords="556,3004,756,3031"/>
+<area shape="rect" id="node70" href="$d2/d28/classIG_1_1Forms_1_1DialogControl.html" title="Highly configurable interactive message box with custom buttons, message, and possibly editable text..." alt="" coords="577,3055,735,3081"/>
+<area shape="rect" id="node71" href="$d3/db8/classIG_1_1Forms_1_1DialogFormDemoControl.html" title="IG.Forms.DialogFormDemoControl" alt="" coords="545,3105,767,3132"/>
+<area shape="rect" id="node72" href="$d7/daf/classIG_1_1Forms_1_1DirectorySelector.html" title="IG.Forms.DirectorySelector" alt="" coords="566,3156,746,3183"/>
+<area shape="rect" id="node73" href="$d4/d12/classIG_1_1Forms_1_1DllSelector.html" title="IG.Forms.DllSelector" alt="" coords="585,3207,727,3233"/>
+<area shape="rect" id="node74" href="$d6/d0b/classIG_1_1Forms_1_1FileSelector.html" title="IG.Forms.FileSelector" alt="" coords="581,3257,731,3284"/>
+<area shape="rect" id="node75" href="$d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html" title="Simple control that allows font selection." alt="" coords="559,3308,753,3335"/>
+<area shape="rect" id="node76" href="$d7/d96/classIG_1_1Forms_1_1HashControl.html" title="IG.Forms.HashControl" alt="" coords="581,3359,731,3385"/>
+<area shape="rect" id="node77" href="$de/d72/classIG_1_1Forms_1_1IndicatorLight.html" title="IG.Forms.IndicatorLight" alt="" coords="577,3409,735,3436"/>
+<area shape="rect" id="node78" href="$d6/db0/classIG_1_1Forms_1_1IndicatorLightTestControl.html" title="IG.Forms.IndicatorLightTest\lControl" alt="" coords="565,3461,747,3502"/>
+<area shape="rect" id="node79" href="$d7/da9/classIG_1_1Forms_1_1InpuOrOutputtDataDefinitionControl.html" title="Control for editing input or output data definitions (only one of these two at a time). " alt="" coords="562,3526,750,3567"/>
+<area shape="rect" id="node80" href="$d8/deb/classIG_1_1Forms_1_1InputOutputDataDefinitionControl.html" title="IG.Forms.InputOutputData\lDefinitionControl" alt="" coords="569,3591,743,3633"/>
+<area shape="rect" id="node81" href="$dc/de6/classIG_1_1Forms_1_1InputParametersControl.html" title="Control for editing input parameter values." alt="" coords="569,3657,743,3698"/>
+<area shape="rect" id="node82" href="$d0/d97/classIG_1_1Forms_1_1InputParameterSelectorMinMax.html" title="Selection of parameter to be varied, together with bounds &#45; for parametric tests." alt="" coords="548,3722,764,3763"/>
+<area shape="rect" id="node83" href="$dc/de7/classIG_1_1Forms_1_1OutputValueSelector.html" title="Selection of the output value of interest in an ANN model." alt="" coords="556,3788,756,3815"/>
+<area shape="rect" id="node84" href="$d3/dc3/classIG_1_1Forms_1_1ResourceSelector.html" title="IG.Forms.ResourceSelector" alt="" coords="565,3839,747,3865"/>
+<area shape="rect" id="node85" href="$dc/db5/classIG_1_1Forms_1_1ResourceViewerControl.html" title="IG.Forms.ResourceViewerControl" alt="" coords="549,3889,763,3916"/>
+<area shape="rect" id="node86" href="$d1/d79/classIG_1_1Forms_1_1ScalarFunctionEvaluatorControl.html" title="Control for test evaluation of scalar functions. " alt="" coords="546,3941,766,3982"/>
+<area shape="rect" id="node87" href="$de/de4/classIG_1_1Forms_1_1ScalarFunctionScriptControl.html" title="Control for definition of scalar functions by user defined expressions (through a script loader)..." alt="" coords="555,4006,757,4047"/>
+<area shape="rect" id="node88" href="$dc/d40/classIG_1_1Forms_1_1SoundPlayerControlSimple.html" title="IG.Forms.SoundPlayerControl\lSimple" alt="" coords="559,4071,753,4113"/>
+<area shape="rect" id="node89" href="$d1/db8/classIG_1_1Forms_1_1TestLayoutControl.html" title="IG.Forms.TestLayoutControl" alt="" coords="563,4137,749,4164"/>
+<area shape="rect" id="node90" href="$db/d1b/classIG_1_1Forms_1_1TestTestControl.html" title="IG.Forms.TestTestControl" alt="" coords="571,4188,741,4215"/>
+<area shape="rect" id="node91" href="$d0/d5b/classIG_1_1Forms_1_1TimerControl.html" title="IG.Forms.TimerControl" alt="" coords="579,4239,733,4265"/>
+<area shape="rect" id="node92" href="$dc/dfc/classIG_1_1Forms_1_1VectorFunctionPlotter1d.html" title="Form for training artificial neural networks." alt="" coords="546,4289,766,4316"/>
+<area shape="rect" id="node93" href="$d4/d68/classIG_1_1Forms_1_1VectorFunctionPlotter2d.html" title="Form for simple parametric tests (variation of selected parameter) performed on ANN models..." alt="" coords="546,4340,766,4367"/>
+<area shape="rect" id="node94" href="$dc/d28/classIG_1_1Forms_1_1VectorFunctionScriptControl.html" title="IG.Forms.VectorFunctionScript\lControl" alt="" coords="555,4391,757,4433"/>
+<area shape="rect" id="node95" href="$d0/de6/classIG_1_1Forms_1_1WindowPositionerControl.html" title="Control for testing window positioning." alt="" coords="564,4457,748,4498"/>
+<area shape="rect" id="node96" href="$d9/d9c/classIG_1_1Forms_1_1WindowShiftControlNumeric.html" title="Control for setting window positions, relative positions, sizes, positions, shifts, etc." alt="" coords="559,4522,753,4563"/>
+<area shape="rect" id="node97" href="$d8/dfa/classIG_1_1Forms_1_1WindowShiftControlText.html" title="Control for setting window positions, relative positions, sizes, positions, shifts, etc." alt="" coords="547,4588,765,4615"/>
+<area shape="rect" id="node98" href="$dd/da5/classIG_1_1Forms_1_1XmlTreeViewControl.html" title="IG.Forms.XmlTreeViewControl" alt="" coords="559,4639,753,4665"/>
+<area shape="rect" id="node99" href="$d8/d45/classIG_1_1Gr3d_1_1Graph3dManipulator.html" title="Basic control for manipulating 3D graphics." alt="" coords="563,4689,749,4716"/>
+<area shape="rect" id="node100" href="$d5/daf/classIG_1_1Gr3d_1_1Graph3dManipulatorBasic.html" title="Basic manipulation of VTK&#45;based 3D hraphs." alt="" coords="563,4741,749,4782"/>
+<area shape="rect" id="node101" href="$d0/d54/classIG_1_1Gr3d_1_1Graph3dManipulatorExtended.html" title="Extended control for manipulation of 3D VTK graphics. Contains the standard control plus additional b..." alt="" coords="563,2685,749,2726"/>
+</map>

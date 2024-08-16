@@ -1,0 +1,7 @@
+<map id="IG.Gr3d.VtkSurfacePlotBase" name="IG.Gr3d.VtkSurfacePlotBase">
+<area shape="rect" id="node5" href="$de/d93/classIG_1_1Gr3d_1_1VtkCurvePlot.html" title="Handles 3D curve plots in VTK render window accessed through the VtkPlotter class. " alt="" coords="5,229,152,256"/>
+<area shape="rect" id="node6" href="$d9/de8/classIG_1_1Gr3d_1_1VtkSurfacePlot.html" title="Handles surface plots in VTK render window accessed through the VtkPlotter class. ..." alt="" coords="177,229,335,256"/>
+<area shape="rect" id="node2" href="$de/dac/classIG_1_1Gr3d_1_1VtkPlotBase.html" title="Base class for plotting classes that plot on VTK windows (class VtkPlotter). " alt="" coords="119,80,214,107"/>
+<area shape="rect" id="node3" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="75,5,152,32"/>
+<area shape="rect" id="node7" href="$d8/dc2/classIG_1_1Gr3d_1_1VtkContourPlot.html" title="Plots contours on surfaces in 3D." alt="" coords="177,304,335,331"/>
+</map>

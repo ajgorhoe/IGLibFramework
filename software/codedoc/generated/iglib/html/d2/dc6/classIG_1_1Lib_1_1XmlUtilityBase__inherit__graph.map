@@ -1,0 +1,4 @@
+<map id="IG.Lib.XmlUtilityBase" name="IG.Lib.XmlUtilityBase">
+<area shape="rect" id="node2" href="$d3/d02/classIG_1_1Lib_1_1XmlParser.html" title="Base class for classes taht contain an Xml document that can be parsed. Provides comfortable utilitie..." alt="" coords="18,80,137,107"/>
+<area shape="rect" id="node3" href="$d8/d6b/classIG_1_1Lib_1_1XmlBuilder.html" title="Class that enables custom parsing and building of an Xml document." alt="" coords="17,155,138,181"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="IG.Num.SimKosecFileManagerBase" name="IG.Num.SimKosecFileManagerBase">
+<area shape="rect" id="node2" href="$d6/d7c/interfaceIG_1_1Num_1_1IResponseEvaluatorVectorSimple.html" title="Interface for simulators and other systems (used e.g. for optimization) that can calculate vector res..." alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node3" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="205,13,282,39"/>
+<area shape="rect" id="node4" href="$db/d5e/interfaceIG_1_1Num_1_1IBoundingBox.html" title="Bounding box, defines minimum and maximum co&#45;ordinates of domains, geometric objects and their groups..." alt="" coords="307,13,457,39"/>
+</map>

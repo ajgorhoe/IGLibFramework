@@ -1,0 +1,28 @@
+var classIG_1_1Lib_1_1XmlUtilityBase =
+[
+    [ "GetDefaultNameSpaceUri", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#a249acb3c24bbd0023fddf9916cf6531e", null ],
+    [ "GetDefaultNameSpaceUri", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#aa5a088b63f9aff969439a45bce92e3a6", null ],
+    [ "GetDefaultNameSpaceUri", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#aa0937ffb705e7598f8bad7f3f6e6a57d", null ],
+    [ "GetNamespaceAttributeName", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#a2e5333007a0f0546b8530e79beafe39c", null ],
+    [ "GetNameSpaceUri0", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#a3c427e6a8e766934ce683dbe60832a50", null ],
+    [ "GetNameSpaceUri", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#a4ecf88ed36cd48b411dbc3ca8793e83e", null ],
+    [ "GetNameSpaceUri", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#ac2469a70456ff50725daa0da702bbdf7", null ],
+    [ "GetNameSpaceUri", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#a6b3a046f5bcb0543324400562a64ae39", null ],
+    [ "SetDocument", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#af0d17c6990fbc2be5c16002db1923634", null ],
+    [ "Load", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#a2dacc7db90e2682651248e7946079f10", null ],
+    [ "LoadXml", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#aacaea9f618641a641a425a1030eb70eb", null ],
+    [ "ContainedInDocument", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#ad1355714656cf242b391e340ae3a2872", null ],
+    [ "ContainedInNode", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#a9abcac13179bdbbea71f73e6058f0e66", null ],
+    [ "_hasDefaultNameSpace", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#a7d7fa0d050a49df65c1f7cf99c6c8f43", null ],
+    [ "DefaultNameSpace", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#ae395a6821b26a0c8a3b3ae85cbe0e381", null ],
+    [ "DefaultNameSpacePrefix", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#a49ce9da78eff17f1364d8ba830715c21", null ],
+    [ "XmlNsAttribute", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#a7ef273c3beb3b6874334b26539ade12a", null ],
+    [ "_filename", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#a798d4d96f4ffb92ad7a29bd7d7215832", null ],
+    [ "_doc", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#a810af0670f2c297886c14d5b421c78ba", null ],
+    [ "_root", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#ab9f3ed71cf250b81554c7c03c4a10abe", null ],
+    [ "R", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#a2af8da5ced6b068298af6f97a1d8ad62", null ],
+    [ "HasDefaultNameSpace", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#acdf7e005a07c018702b4e8c1192b8b26", null ],
+    [ "FileName", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#a7da6a7964d3797e7ba4fb96f2c1520f6", null ],
+    [ "Doc", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#a7a047bd71c100e40a0ffb0e2a1e449ca", null ],
+    [ "Root", "d9/da0/classIG_1_1Lib_1_1XmlUtilityBase.html#af44e5f99663d973a311dde4ec8de0cfc", null ]
+];

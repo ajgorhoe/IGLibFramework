@@ -1,0 +1,9 @@
+<map id="IG.Lib.SerializationDtoTypedBase&lt; Type, BaseType &gt;.SerializationDtoTyped&lt; CommonType &gt;" name="IG.Lib.SerializationDtoTypedBase&lt; Type, BaseType &gt;.SerializationDtoTyped&lt; CommonType &gt;">
+<area shape="rect" id="node2" href="$d3/ddf/classIG_1_1Lib_1_1SerializationDtoTypedBase_3_01Type_00_01BaseType_01_4.html" title="SerializationDtoTypedBase\l\&lt; CommonType, CommonType \&gt;" alt="" coords="563,5,777,47"/>
+<area shape="rect" id="node3" href="$d8/dd9/classIG_1_1Lib_1_1SerializationDtoBase_3_01Type_00_01BaseType_01_4.html" title="Generic base class for Data Transfer Objects (DTO). This class is used as template for producing conc..." alt="" coords="372,71,515,112"/>
+<area shape="rect" id="node8" href="$d3/ddf/classIG_1_1Lib_1_1SerializationDtoTypedBase_3_01Type_00_01BaseType_01_4.html" title="ISerializationDto\&lt;\l CommonType \&gt;" alt="" coords="608,71,732,112"/>
+<area shape="rect" id="node4" href="$da/d46/classIG_1_1Lib_1_1SerializationDto.html" title="Auxiliary base class for DTOs, contains some static methods. Provided for simplicity, such that one does not need to state type parameters" alt="" coords="201,19,315,46"/>
+<area shape="rect" id="node5" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="219,137,297,163"/>
+<area shape="rect" id="node6" href="$d0/df7/interfaceIG_1_1Lib_1_1ISerializationDto_3_01Type_00_01BaseType_01_4.html" title="Interface for Data Transfer Objects (DTO). This class is used as template for producing concrete DTO ..." alt="" coords="192,71,324,112"/>
+<area shape="rect" id="node7" href="$db/da2/interfaceIG_1_1Lib_1_1ISerializationDtoAux_3_01Type_01_4.html" title="This interface facilitates use of static helper methods for copying on the SerializationDtoBase class..." alt="" coords="5,71,144,112"/>
+</map>

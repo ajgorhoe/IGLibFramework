@@ -1,0 +1,25 @@
+var interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4 =
+[
+    [ "GetPointCoordinates", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#a6502f5100dd33168491d21c11ec582e4", null ],
+    [ "SetCoordinateScales", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#a53b193a7691a20101b16914ed9b1ee75", null ],
+    [ "GetRelativeCoordinates", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#aedbc272bfcfc3e9fe27ed00373254d34", null ],
+    [ "SetOutputScales", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#a6cf426405722b2c7ab68f6f96e396931", null ],
+    [ "GetOutputRelativeCoordinates", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#a2d04049fcdba3a2cd0ea1b202171c0a3", null ],
+    [ "OutputDistance", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#a1887007bdf0a7e00e747ead742aaabb0", null ],
+    [ "Distance", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#a128cc85797e7d508cfaf599d05c2e8df", null ],
+    [ "Distance", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#a81686c65b3dbb01d37b14abb5987fba6", null ],
+    [ "Distance", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#aa366d5116bc297f496216da48d3bea98", null ],
+    [ "Distance", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#a8697adea7ae2d61c5c55e8baf7675b58", null ],
+    [ "Distance", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#a3752e731114f7308e1a7504d01b504a5", null ],
+    [ "Distance", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#a5502d44cb19fdaf34433b0ffdc42e68f", null ],
+    [ "Sort", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#abb5faaf893163f1c5e9d3ebc4ce8022c", null ],
+    [ "SortUsingStoredDistance", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#a4d759c8417a99bf1257d00bb0b5f931e", null ],
+    [ "ReferencePoint", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#ac85fa01fc24161143d98bc0724ec589f", null ],
+    [ "LengthScales", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#a23812d926089ce9993154b1d091911fa", null ],
+    [ "Min", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#acf77a897f61abf3910a71f1ced4e2a42", null ],
+    [ "Max", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#a49ce31c5064f6eb7305f3302bd6f2fd2", null ],
+    [ "OutputLengthScales", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#a1bc6146874c7cce779324270995718e9", null ],
+    [ "OutputMin", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#ae024d489db1df530e25e3f3c5d73bd4b", null ],
+    [ "OutputMax", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#abcdf0eca588e08a0596881a657f0ff4c", null ],
+    [ "StoredDistanceComparer", "df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html#a543e614fa7743f0bfa74e61e434ec6a0", null ]
+];

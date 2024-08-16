@@ -1,0 +1,10 @@
+<map id="IG.Num.VectorFunctionBaseComponentWise" name="IG.Num.VectorFunctionBaseComponentWise">
+<area shape="rect" id="node5" href="$da/d4f/classIG_1_1Num_1_1LinearBasis.html" title="Vector function containing lineer basis in a n&#45;dimensional vector space. Composed of n+1 functions: 1..." alt="" coords="27,326,165,353"/>
+<area shape="rect" id="node7" href="$d2/de4/classIG_1_1Num_1_1QuadraticBasis.html" title="Vector function containing quadratic basis in a n&#45;dimensional vector space. Composed of (n+1)*(n+2)/2..." alt="" coords="205,326,363,353"/>
+<area shape="rect" id="node9" href="$db/db9/classIG_1_1Num_1_1VectorFunctionFromScalar.html" title="IG.Num.VectorFunctionFrom\lScalar" alt="" coords="387,319,575,360"/>
+<area shape="rect" id="node2" href="$dc/d23/classIG_1_1Num_1_1VectorFunctionBaseGeneral.html" title="Base class for VectorFunctionBase and VectorFunctionBaseComponentwise. In general, use &#160;and &#160;in order to derive from. " alt="" coords="191,155,377,181"/>
+<area shape="rect" id="node3" href="$da/d06/interfaceIG_1_1Num_1_1IVectorFunction.html" title="Vector function of a vector argument." alt="" coords="282,80,395,107"/>
+<area shape="rect" id="node4" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="205,5,283,32"/>
+<area shape="rect" id="node6" href="$d9/d57/classIG_1_1Num_1_1LinearBasisSafer.html" title="The same as LinearBasis, just that it has more meaningful error reporting (but is therefore slower)..." alt="" coords="5,408,173,435"/>
+<area shape="rect" id="node8" href="$d6/d46/classIG_1_1Num_1_1QuadraticBasisSafer.html" title="The same as QuadraticBasis, just that it has more meaningful exceptions." alt="" coords="197,408,387,435"/>
+</map>

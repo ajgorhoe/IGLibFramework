@@ -1,0 +1,5 @@
+<map id="IG.Num.OptimizationResults" name="IG.Num.OptimizationResults">
+<area shape="rect" id="node2" href="$d0/d1f/classIG_1_1Num_1_1OptimizationResultsBase.html" title="Base class for storage of optimization results. Stores optimal analysis results, best current guess..." alt="" coords="101,124,271,151"/>
+<area shape="rect" id="node3" href="$d4/d34/interfaceIG_1_1Num_1_1IAnalysisResults.html" title="Single objective optimization analysis results. Used to transfer parameters input (e..." alt="" coords="5,5,172,32"/>
+<area shape="rect" id="node4" href="$dd/d7b/interfaceIG_1_1Num_1_1IOptimizationData.html" title="Information about optimization data and algorithm parameters." alt="" coords="197,5,370,32"/>
+</map>

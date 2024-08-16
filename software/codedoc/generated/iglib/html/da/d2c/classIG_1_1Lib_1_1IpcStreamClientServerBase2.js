@@ -1,0 +1,27 @@
+var classIG_1_1Lib_1_1IpcStreamClientServerBase2 =
+[
+    [ "IsErrorResponse", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a8b27f87a95bef07621b9e5fd309d3a48", null ],
+    [ "GetErrorMessage", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#ac8bb21333cb371e26cc5d3d93f343ba9", null ],
+    [ "ClosePipe", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#abf5054915e12d09be7ffa6c5c9a46ece", null ],
+    [ "CloseInput", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a27bb401d649b10df76993fd1f074d646", null ],
+    [ "CloseOutput", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a27f0eeaf4a33c0c5f2607c3c50c83fc0", null ],
+    [ "ClearData", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a6b1db10a279b9a3b16326df453ca057a", null ],
+    [ "CloseConnection", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a8a49988b4ea904ff7908b196bf6ced07", null ],
+    [ "IsConnected", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a2397db572aac79644f7a09c24063dab0", null ],
+    [ "_defaultPipeName", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a922accf7c273ab17770debd9dfa8e5f6", null ],
+    [ "_defaultErrorBegin", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a8172679abc9321a9038070f171a2bffe", null ],
+    [ "_errorBegin", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#ac1b68049e119aa760f0f1581e1b9c663", null ],
+    [ "Name", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a3a93801d3c917d3f8f5c47bae44adfd3", null ],
+    [ "DefaultPipeName", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#aaf764a89cc9840c29ba132268c23a94a", null ],
+    [ "DefaultErrorBegin", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#aa06db6ce4e08e48b454060f14fe7370a", null ],
+    [ "ErrorBegin", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a8a3fba41c5d389f2a4f0278d299c628b", null ],
+    [ "InputStream", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a6653f45e28b1e9deb13ccb129279c227", null ],
+    [ "OutputStream", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a8367b9ae44fa9fddb2ac3261fda4b47a", null ],
+    [ "IsError", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a535245bf157e1c4fe15174d0303b49ea", null ],
+    [ "RequestString", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a7eac26e028cd570953cb538c767d6adc", null ],
+    [ "ResponseString", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a2e3d47d06820fe320bf3fb83952c52b2", null ],
+    [ "LastException", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a9e849fc69aad256da4d125259b34980f", null ],
+    [ "LastErrorMessage", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#ae185f23ff0f91a646ec9e184cd100119", null ],
+    [ "LastRequestString", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a02dd46e3d4372dd228bf1594a71ac17d", null ],
+    [ "LastResponseString", "da/d2c/classIG_1_1Lib_1_1IpcStreamClientServerBase2.html#a6e9fa6e190e089f3af029d0bc2878f84", null ]
+];

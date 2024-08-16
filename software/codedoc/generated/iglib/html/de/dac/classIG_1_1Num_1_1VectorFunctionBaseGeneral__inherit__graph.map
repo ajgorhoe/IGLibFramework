@@ -1,0 +1,12 @@
+<map id="IG.Num.VectorFunctionBaseGeneral" name="IG.Num.VectorFunctionBaseGeneral">
+<area shape="rect" id="node4" href="$da/de7/classIG_1_1Num_1_1VectorFunctionBase.html" title="Base class for defining Vector functions whose evaluation is defined in bulk, and evaluation of indiv..." alt="" coords="528,26,716,53"/>
+<area shape="rect" id="node6" href="$dc/df8/classIG_1_1Num_1_1VectorFunctionBaseComponentWise.html" title="Base class for defining Vector functions whose component&#45;wise evaluation is defined directly..." alt="" coords="528,103,716,144"/>
+<area shape="rect" id="node2" href="$da/d06/interfaceIG_1_1Num_1_1IVectorFunction.html" title="Vector function of a vector argument." alt="" coords="131,106,244,133"/>
+<area shape="rect" id="node3" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="5,81,83,107"/>
+<area shape="rect" id="node5" href="$dc/d48/classIG_1_1Num_1_1VectorFunctionExamples_1_1RosenrockAndCircle.html" title="Example &#45; 2 component vector function of 2 variables. The first component is the Rosenbrock function ..." alt="" coords="764,5,984,47"/>
+<area shape="rect" id="node7" href="$da/d4f/classIG_1_1Num_1_1LinearBasis.html" title="Vector function containing lineer basis in a n&#45;dimensional vector space. Composed of n+1 functions: 1..." alt="" coords="805,71,943,98"/>
+<area shape="rect" id="node9" href="$d2/de4/classIG_1_1Num_1_1QuadraticBasis.html" title="Vector function containing quadratic basis in a n&#45;dimensional vector space. Composed of (n+1)*(n+2)/2..." alt="" coords="795,122,953,149"/>
+<area shape="rect" id="node11" href="$db/db9/classIG_1_1Num_1_1VectorFunctionFromScalar.html" title="IG.Num.VectorFunctionFrom\lScalar" alt="" coords="780,173,968,215"/>
+<area shape="rect" id="node8" href="$d9/d57/classIG_1_1Num_1_1LinearBasisSafer.html" title="The same as LinearBasis, just that it has more meaningful error reporting (but is therefore slower)..." alt="" coords="1043,71,1211,98"/>
+<area shape="rect" id="node10" href="$d6/d46/classIG_1_1Num_1_1QuadraticBasisSafer.html" title="The same as QuadraticBasis, just that it has more meaningful exceptions." alt="" coords="1032,122,1221,149"/>
+</map>

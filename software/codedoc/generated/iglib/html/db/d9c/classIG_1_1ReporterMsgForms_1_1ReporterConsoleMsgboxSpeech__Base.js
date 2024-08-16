@@ -1,0 +1,28 @@
+var classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base =
+[
+    [ "ReadAppSettingsBasic", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#a154021f0d383662d8e1f234ceaf4ab76", null ],
+    [ "Report", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#a8ad3d225385b051fd427272287de65cc", null ],
+    [ "Articulate", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#a8326037f3eb850871e3c63c6beba757f", null ],
+    [ "Articulate", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#ab54c34e6c60f5a665928a366c796d518", null ],
+    [ "DefaultReport_Speech", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#aca5aae68f905fe41a13914eaa865877b", null ],
+    [ "ThreadArticulate", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#a92ad670489225f2efc5894cdcbde3d8f", null ],
+    [ "DefaultReportLocation_Speech", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#aaf752f98e9882591aad245c6dd6e39f2", null ],
+    [ "DefaultReportMessage_Speech", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#acfda3b2ea09ef123f24c533a104e7005", null ],
+    [ "Report_Speech", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#a5c69f6b265c762c240791e7ad98564fe", null ],
+    [ "KeyUseSpeech", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#aa933d7845292a74511bda612c05f7857", null ],
+    [ "_UseSpeech", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#a3fd432ebb4e619ae7d298f908db09c06", null ],
+    [ "_SpeechLevelSignal", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#a37a97b54f37a9d50ab8dc48e7f715383", null ],
+    [ "_SpeechLevelMessage", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#ab06f3cd5c11eede3f581a3b4b394f888", null ],
+    [ "_voice", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#a81e030345b569c0f5715a7b09b70fe43", null ],
+    [ "_voiceLock", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#a1293fd64da9689c4f07eec9b238ccd26", null ],
+    [ "_numSpeaking", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#a740b7a53da7419c03b1f6a558f090c5c", null ],
+    [ "ReportDlgSpeech", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#a2105c9f27381c9f579e07c2f5d11a6ca", null ],
+    [ "ReportLocationDlgSpeech", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#aaf004ebf02616211720f1af12f78cb3a", null ],
+    [ "ReportMessageDlgSpeech", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#a9f14ec9b4dfe4c21104364a2f693709d", null ],
+    [ "ArticulateText", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#aefd90d603752552987e41928f8cdd78e", null ],
+    [ "UseSpeech", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#a0ee7442f6388b592d2c38e434e00f04f", null ],
+    [ "SpeechLevelSignal", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#accf0284d8a7255539e157b12d2d2cbc4", null ],
+    [ "SpeechLevelMessage", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#a539055124bdecf3f0fbc5f5f01b25819", null ],
+    [ "VoiceLock", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#a8079ed7e2b26a74371d03bf45e406b27", null ],
+    [ "Voice", "db/d9c/classIG_1_1ReporterMsgForms_1_1ReporterConsoleMsgboxSpeech__Base.html#aa5d8ce5bd68a600ecd581f99decb68b7", null ]
+];

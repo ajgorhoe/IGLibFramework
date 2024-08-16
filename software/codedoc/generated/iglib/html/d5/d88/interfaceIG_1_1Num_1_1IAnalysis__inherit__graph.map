@@ -1,0 +1,6 @@
+<map id="IG.Num.IAnalysis" name="IG.Num.IAnalysis">
+<area shape="rect" id="node2" href="$da/dba/classIG_1_1Lib_1_1LoadableScriptOptBase_1_1AnalysisScript.html" title="IG.Lib.LoadableScriptOpt\lBase.AnalysisScript" alt="" coords="425,16,591,57"/>
+<area shape="rect" id="node3" href="$de/dac/classIG_1_1Neural_1_1AnalysisFileServerNeural.html" title="Class containing direct analysis (in optimization) based on neural network optimization." alt="" coords="176,32,363,73"/>
+<area shape="rect" id="node4" href="$dd/d1e/classIG_1_1Num_1_1AnalysisBase.html" title="Base class for direct analysis classes that define optimization problems. Represent the complete defi..." alt="" coords="194,98,345,124"/>
+<area shape="rect" id="node5" href="$dc/d51/classIG_1_1Num_1_1OptFileAnalysisClient.html" title="File analysis client. Passes direct analysis request to the server and gets analysis results from it..." alt="" coords="411,123,605,150"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="IG.Lib.ReporterConsoleMsgboxSpeech_Base" name="IG.Lib.ReporterConsoleMsgboxSpeech_Base">
+<area shape="rect" id="node13" href="$d5/dbc/classIG_1_1Lib_1_1ReporterConsoleMsgboxSpeech.html" title="IG.Lib.ReporterConsoleMsgbox\lSpeech" alt="" coords="157,543,359,584"/>
+<area shape="rect" id="node2" href="$d2/d58/classIG_1_1Forms_1_1ReporterConsoleMsgbox__Base.html" title="Base class for reporter classes that contain either reporting via system console, reporting via messa..." alt="" coords="85,379,287,405"/>
+<area shape="rect" id="node3" href="$da/df9/classIG_1_1Lib_1_1ReporterConsole__Base.html" title="Base class for reporter classes that contain either reporting via system console, reporting via messa..." alt="" coords="98,304,253,331"/>
+<area shape="rect" id="node4" href="$d4/de2/classIG_1_1Lib_1_1ReporterBase.html" title="Base IGlib class for reporting, tracing and logging; provides a global reporter and a basis for creat..." alt="" coords="51,229,153,256"/>
+<area shape="rect" id="node5" href="$db/db1/interfaceIG_1_1Lib_1_1IReporter.html" title="Interface from which majority of reporters inherit. Includes generic reporting functionality plus tra..." alt="" coords="201,155,275,181"/>
+<area shape="rect" id="node11" href="$dd/d3c/interfaceIG_1_1Lib_1_1IReporterConsole.html" title="IReporterConsole" alt="" coords="177,229,299,256"/>
+<area shape="rect" id="node12" href="$d4/d96/interfaceIG_1_1Forms_1_1IReporterSpeech.html" title="IReporterSpeech" alt="" coords="277,304,396,331"/>
+<area shape="rect" id="node7" href="$de/d0d/interfaceIG_1_1Lib_1_1IReporterBase.html" title="Interface from which all reporters inherit." alt="" coords="266,5,370,32"/>
+<area shape="rect" id="node8" href="$d2/d8e/interfaceIG_1_1Lib_1_1IReporterTextWriter.html" title="Reporters that utilize writing messages to files. Messages are typically formatted as multi&#45;line mess..." alt="" coords="171,80,305,107"/>
+<area shape="rect" id="node9" href="$d1/ddb/interfaceIG_1_1Lib_1_1IReporterTextLogger.html" title="Reporters that utilize logging messages to files. IReporterTextLogger typically outputs (to a file) m..." alt="" coords="330,80,469,107"/>
+<area shape="rect" id="node10" href="$d0/d0e/interfaceIG_1_1Lib_1_1IReporterTrace.html" title="Reporters that utilize system&#39;s trace utility." alt="" coords="493,80,599,107"/>
+</map>

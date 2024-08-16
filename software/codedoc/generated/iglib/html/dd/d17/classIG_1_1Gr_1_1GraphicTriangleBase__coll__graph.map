@@ -1,0 +1,7 @@
+<map id="IG.Gr.GraphicTriangleBase" name="IG.Gr.GraphicTriangleBase">
+<area shape="rect" id="node2" href="$d4/d1f/classIG_1_1Gr_1_1GraphicPrimitiveBase.html" title="Base class for graphic primitives." alt="" coords="205,109,351,136"/>
+<area shape="rect" id="node3" href="$dd/d5f/interfaceIG_1_1Gr_1_1IGraphicPrimitive.html" title="IGraphicPrimitive" alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node4" href="$d2/d42/interfaceIG_1_1Gr_1_1IGraphicSet.html" title="Graphic set that contain graphic primitives and other graphic sets." alt="" coords="149,5,274,32"/>
+<area shape="rect" id="node5" href="$df/d16/structIG_1_1Num_1_1vec3.html" title="3D vector, struct implementation." alt="" coords="298,5,394,32"/>
+<area shape="rect" id="node6" href="$dd/d52/structIG_1_1Lib_1_1color.html" title="Extended color representation. Stores RGB components and opacity as double numbers ranging fom 0 to 1..." alt="" coords="418,5,506,32"/>
+</map>

@@ -1,0 +1,4 @@
+var classIG_1_1Lib_1_1SerializationDtoTypedBase_3_01Type_00_01BaseType_01_4_1_1SerializationDtoTyped_3_01CommonType_01_4 =
+[
+    [ "SerializationDtoTyped", "d8/d52/classIG_1_1Lib_1_1SerializationDtoTypedBase_3_01Type_00_01BaseType_01_4_1_1SerializationDtoTyped_3_01CommonType_01_4.html#abc4d82e507197b199d1926aa5cf56f88", null ]
+];

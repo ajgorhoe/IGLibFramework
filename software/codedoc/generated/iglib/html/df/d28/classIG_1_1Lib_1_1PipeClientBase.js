@@ -1,0 +1,27 @@
+var classIG_1_1Lib_1_1PipeClientBase =
+[
+    [ "PipeClientBase", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#ad3f9431102475119a261885b41f59d11", null ],
+    [ "PipeClientBase", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#a28b9e4a8d02135657ab1de4320ea077d", null ],
+    [ "PipeClientBase", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#a5ec52598ee643fe8d234d46214be05b0", null ],
+    [ "PipeClientBase", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#ac8dc8560141e2b407f6858e9bc7c06f9", null ],
+    [ "ExecuteSvnCommandWithFileInput", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#a3272580d99425c7c77a2db3ac63e0f82", null ],
+    [ "ClosePipe", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#ab953b7a9579b462fb45d56894e7f6492", null ],
+    [ "Connect", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#a44b63e08dd9b41ad07ff0f3cd36fcbc1", null ],
+    [ "Connect", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#a2739ec742659e7b765baaf310a692fd1", null ],
+    [ "CloseConnection", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#a66e50db925666a5322d7d34084ce08e7", null ],
+    [ "IsConnected", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#acc56d357a45549b69f4a55dc7d5faa43", null ],
+    [ "ToString", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#a7bb15a0cc2f276b3ad2a8611d2356841", null ],
+    [ "_pipeName", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#a1ca099cc54c179a6a870a80557ff4449", null ],
+    [ "_defaultServerAddress", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#ab41cd294b871eae3b98ea167d1f54a7f", null ],
+    [ "_serverAddress", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#a60e279b7a0ca9794a72d04fe8dcc7b2f", null ],
+    [ "_clientPipe", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#a590932d6f0cab089343ded5ff66dacd4", null ],
+    [ "_inputStream", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#a2a6e57c1ebb90d654517d0c7461a16b0", null ],
+    [ "_outputStream", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#a2bab1e56acf5807d9231dbb781e7eace", null ],
+    [ "Name", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#a9741783eef0778242073440b7122a961", null ],
+    [ "PipeName", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#a5485b2f18791038d43d02ae51f15d76e", null ],
+    [ "DefaultServerAddress", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#a43f1de1cc829d8a4f5c835ab8fbfa595", null ],
+    [ "ServerAddress", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#afca98b2cb0c3ba25ad5b42a0c9ee5c15", null ],
+    [ "ClientPipe", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#afb8aa95c177ad150c26c46823e0b773c", null ],
+    [ "InputStream", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#a02bbbc87d57eaad8b171eac64faf0695", null ],
+    [ "OutputStream", "df/d28/classIG_1_1Lib_1_1PipeClientBase.html#a89a6dcc4365fa82341d3590b15a81294", null ]
+];

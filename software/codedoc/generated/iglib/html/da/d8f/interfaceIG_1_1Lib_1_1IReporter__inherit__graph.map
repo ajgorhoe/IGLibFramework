@@ -1,0 +1,20 @@
+<map id="IG.Lib.IReporter" name="IG.Lib.IReporter">
+<area shape="rect" id="node7" href="$d8/d87/interfaceIG_1_1Forms_1_1IReporterConsoleForm.html" title="IG.Forms.IReporterConsoleForm" alt="" coords="507,5,716,32"/>
+<area shape="rect" id="node8" href="$d4/d7e/interfaceIG_1_1Forms_1_1IReporterFadeMessage.html" title="IG.Forms.IReporterFadeMessage" alt="" coords="504,56,719,83"/>
+<area shape="rect" id="node9" href="$d7/dc0/interfaceIG_1_1Forms_1_1IReporterMessageBox.html" title="IG.Forms.IReporterMessageBox" alt="" coords="1008,259,1216,285"/>
+<area shape="rect" id="node13" href="$d4/d96/interfaceIG_1_1Forms_1_1IReporterSpeech.html" title="IG.Forms.IReporterSpeech" alt="" coords="1024,107,1200,133"/>
+<area shape="rect" id="node15" href="$dd/d3c/interfaceIG_1_1Lib_1_1IReporterConsole.html" title="IG.Lib.IReporterConsole" alt="" coords="532,309,691,336"/>
+<area shape="rect" id="node19" href="$d4/de2/classIG_1_1Lib_1_1ReporterBase.html" title="Base IGlib class for reporting, tracing and logging; provides a global reporter and a basis for creat..." alt="" coords="542,208,681,235"/>
+<area shape="rect" id="node3" href="$de/d0d/interfaceIG_1_1Lib_1_1IReporterBase.html" title="Interface from which all reporters inherit." alt="" coords="5,157,109,184"/>
+<area shape="rect" id="node4" href="$d2/d8e/interfaceIG_1_1Lib_1_1IReporterTextWriter.html" title="Reporters that utilize writing messages to files. Messages are typically formatted as multi&#45;line mess..." alt="" coords="159,233,294,260"/>
+<area shape="rect" id="node5" href="$d1/ddb/interfaceIG_1_1Lib_1_1IReporterTextLogger.html" title="Reporters that utilize logging messages to files. IReporterTextLogger typically outputs (to a file) m..." alt="" coords="157,81,296,108"/>
+<area shape="rect" id="node6" href="$d0/d0e/interfaceIG_1_1Lib_1_1IReporterTrace.html" title="Reporters that utilize system&#39;s trace utility." alt="" coords="173,132,280,159"/>
+<area shape="rect" id="node10" href="$d3/d40/classIG_1_1Forms_1_1ReporterConsoleMsgbox.html" title="IG.Forms.ReporterConsole\lMsgbox" alt="" coords="1277,318,1453,359"/>
+<area shape="rect" id="node11" href="$d2/d9f/classIG_1_1Forms_1_1ReporterMsgbox.html" title="IG.Forms.ReporterMsgbox" alt="" coords="1278,216,1453,243"/>
+<area shape="rect" id="node12" href="$d5/dbc/classIG_1_1Lib_1_1ReporterConsoleMsgboxSpeech.html" title="IG.Lib.ReporterConsoleMsgbox\lSpeech" alt="" coords="1515,205,1717,246"/>
+<area shape="rect" id="node14" href="$db/dcb/classIG_1_1Lib_1_1ReporterConsoleMsgboxSpeech__Base.html" title="Base class for reporter classes that contain either reporting via system console, via message box..." alt="" coords="1264,150,1467,191"/>
+<area shape="rect" id="node16" href="$de/df1/classIG_1_1Lib_1_1ReporterConsole.html" title="IG.Lib.ReporterConsole" alt="" coords="1034,309,1190,336"/>
+<area shape="rect" id="node17" href="$da/df9/classIG_1_1Lib_1_1ReporterConsole__Base.html" title="Base class for reporter classes that contain either reporting via system console, reporting via messa..." alt="" coords="767,259,960,285"/>
+<area shape="rect" id="node18" href="$d2/d58/classIG_1_1Forms_1_1ReporterConsoleMsgbox__Base.html" title="Base class for reporter classes that contain either reporting via system console, reporting via messa..." alt="" coords="1024,193,1200,234"/>
+<area shape="rect" id="node20" href="$d0/d73/classIG_1_1Forms_1_1ReporterForms.html" title="Reporting system that in particular utilizes forms. Beside the main delegates for assembling location..." alt="" coords="780,208,947,235"/>
+</map>

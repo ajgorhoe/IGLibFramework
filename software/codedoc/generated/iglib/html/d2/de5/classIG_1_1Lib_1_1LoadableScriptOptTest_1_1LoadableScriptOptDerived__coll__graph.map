@@ -1,0 +1,11 @@
+<map id="IG.Lib.LoadableScriptOptTest.LoadableScriptOptDerived" name="IG.Lib.LoadableScriptOptTest.LoadableScriptOptDerived">
+<area shape="rect" id="node2" href="$d5/d05/classIG_1_1Lib_1_1LoadableScriptOptBase.html" title="Base class for loadable scripts for optimization problems. AGREEMENTS: The first argument to initiali..." alt="" coords="661,171,820,197"/>
+<area shape="rect" id="node3" href="$d7/d15/classIG_1_1Lib_1_1LoadableScriptBase.html" title="Base class for classes that can be dynamically loadeded from scripts and run, which provides function..." alt="" coords="393,81,532,108"/>
+<area shape="rect" id="node4" href="$d7/d66/interfaceIG_1_1Lib_1_1ILoadableScript.html" title="Interface for classes that can be dynamically loadeded from scripts and run, which provides functiona..." alt="" coords="55,5,166,32"/>
+<area shape="rect" id="node5" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="72,145,149,172"/>
+<area shape="rect" id="node8" href="$de/de7/classIG_1_1Lib_1_1StopWatch1.html" title="Timer for measuring execution times and other intervals of time elapsed between successive events..." alt="" coords="397,247,529,273"/>
+<area shape="rect" id="node6" href="$de/dfd/interfaceIG_1_1Lib_1_1ICommandLineApplicationInterpreter.html" title="Interface for simple command&#45;line applicatino interpreters." alt="" coords="5,61,216,102"/>
+<area shape="rect" id="node7" href="$d5/d59/interfaceIG_1_1Num_1_1IAnalysis.html" title="Interface for direct analysis classes used in optimization problems." alt="" coords="401,196,524,223"/>
+<area shape="rect" id="node9" href="$dc/d79/interfaceIG_1_1Lib_1_1IIdentifiable.html" title="Classes whose instances have unique integer IDs." alt="" coords="67,247,154,273"/>
+<area shape="rect" id="node10" href="$d4/d43/interfaceIG_1_1Num_1_1IRandomGenerator.html" title="Uniform random number generator." alt="" coords="373,297,552,324"/>
+</map>

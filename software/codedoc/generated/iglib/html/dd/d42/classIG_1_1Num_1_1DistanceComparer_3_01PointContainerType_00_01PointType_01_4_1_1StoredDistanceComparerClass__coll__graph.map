@@ -1,0 +1,6 @@
+<map id="IG.Num.DistanceComparer&lt; PointContainerType, PointType &gt;.StoredDistanceComparerClass" name="IG.Num.DistanceComparer&lt; PointContainerType, PointType &gt;.StoredDistanceComparerClass">
+<area shape="rect" id="node2" href="$d5/d5a/classIG_1_1Num_1_1DistanceComparer_3_01PointContainerType_00_01PointType_01_4.html" title="Class that is used to calculate and compare distances between point containers." alt="" coords="290,168,469,209"/>
+<area shape="rect" id="node3" href="$df/d88/interfaceIG_1_1Num_1_1IDistanceComparer_3_01PointContainerType_00_01PointType_01_4.html" title="Interface used for distance comparers in point clouds. " alt="" coords="308,259,451,315"/>
+<area shape="rect" id="node4" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="282,5,359,32"/>
+<area shape="rect" id="node5" href="$d3/d24/interfaceIG_1_1Num_1_1IVector.html" title="Real vector intrface." alt="" coords="384,5,495,32"/>
+</map>

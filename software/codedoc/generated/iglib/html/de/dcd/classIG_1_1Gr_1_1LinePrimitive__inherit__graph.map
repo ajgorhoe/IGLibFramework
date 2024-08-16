@@ -1,0 +1,4 @@
+<map id="IG.Gr.LinePrimitive" name="IG.Gr.LinePrimitive">
+<area shape="rect" id="node2" href="$df/db0/classIG_1_1Gr_1_1GraphicPrimitiveSimple.html" title="GraphicPrimitive that has a protected Coordinates[] array." alt="" coords="5,80,161,107"/>
+<area shape="rect" id="node3" href="$d3/d1a/classIG_1_1Gr_1_1GraphicPrimitive.html" title="Abstract base class for all graphic primitives such as lines, facets, etc." alt="" coords="25,5,141,32"/>
+</map>

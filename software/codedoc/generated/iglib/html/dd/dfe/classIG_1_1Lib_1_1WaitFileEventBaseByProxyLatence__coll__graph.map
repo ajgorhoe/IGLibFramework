@@ -1,0 +1,10 @@
+<map id="IG.Lib.WaitFileEventBaseByProxyLatence" name="IG.Lib.WaitFileEventBaseByProxyLatence">
+<area shape="rect" id="node2" href="$df/dea/classIG_1_1Lib_1_1WaitConditionBase.html" title="Base class for objects that perform waiting until a condition is fulfilled." alt="" coords="5,157,139,184"/>
+<area shape="rect" id="node7" href="$da/d67/classIG_1_1Lib_1_1WaitCondition.html" title="Provides a framework for blocking execution until the specified condition becomes satisfied..." alt="" coords="191,259,294,285"/>
+<area shape="rect" id="node3" href="$de/d1e/interfaceIG_1_1Lib_1_1IWaitCondition.html" title="Interface for classes that implement blocking until a specified condition is met." alt="" coords="333,81,440,108"/>
+<area shape="rect" id="node5" href="$d2/d48/interfaceIG_1_1Lib_1_1IWaitFileEvent.html" title="Interface for classes that provide waiting for specific file events (such as ceration or deletion of ..." alt="" coords="398,208,503,235"/>
+<area shape="rect" id="node6" href="$d4/d27/classIG_1_1Lib_1_1WaitFileEventLatenceBase.html" title="Base class for classes that impelement methods that block until a file or directory is created or del..." alt="" coords="223,335,439,361"/>
+<area shape="rect" id="node4" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="271,5,348,32"/>
+<area shape="rect" id="node8" href="$de/de7/classIG_1_1Lib_1_1StopWatch1.html" title="Timer for measuring execution times and other intervals of time elapsed between successive events..." alt="" coords="177,81,309,108"/>
+<area shape="rect" id="node9" href="$dc/d79/interfaceIG_1_1Lib_1_1IIdentifiable.html" title="Classes whose instances have unique integer IDs." alt="" coords="62,5,149,32"/>
+</map>

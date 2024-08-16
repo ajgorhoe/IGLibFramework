@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$dd/d71/classIG_1_1Lib_1_1CommandStackFrameBase.html" title="Base class for classes of type CommandStackFrame{InterpreterType, ThreadType}see cref=&quot;&quot;/&gt;. Contains everyting that does not depend on specific type of generic parameters." alt="" coords="5,13,225,39"/>
+<area shape="rect" id="node2" href="$d9/da4/classIG_1_1Lib_1_1CommandStackFrame_3_01InterpreterType_00_01ThreadType_01_4.html" title="Stack frame for a block of command&#45;line interpreter commands." alt="" coords="273,5,480,47"/>
+<area shape="rect" id="node3" href="$de/d9b/classIG_1_1Lib_1_1CommandStackFrame_3_01InterpreterType_01_4.html" title="Stack frame for a block of command&#45;line interpreter commands." alt="" coords="528,5,719,47"/>
+</map>

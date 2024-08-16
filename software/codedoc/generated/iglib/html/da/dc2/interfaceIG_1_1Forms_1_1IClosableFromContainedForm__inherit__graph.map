@@ -1,0 +1,9 @@
+<map id="IG.Forms.IClosableFromContainedForm" name="IG.Forms.IClosableFromContainedForm">
+<area shape="rect" id="node2" href="$d3/de3/classIG_1_1Forms_1_1AlignmentTestForm.html" title="Test form, used only to test if control can be inclded in the form.." alt="" coords="315,5,508,32"/>
+<area shape="rect" id="node3" href="$db/db9/classIG_1_1Forms_1_1TestForm.html" title="Test form." alt="" coords="344,56,479,83"/>
+<area shape="rect" id="node4" href="$d8/def/classIG_1_1Forms_1_1WindowPositionerForm.html" title="Windows form for testing window positioning./summary&gt; $A Igor xx Oct09; " alt="" coords="304,107,519,133"/>
+<area shape="rect" id="node5" href="$d9/d71/classIG_1_1Gr3d_1_1Graph3dManipulatorWindow.html" title="A form for manipulation of 3D graphics." alt="" coords="318,158,505,199"/>
+<area shape="rect" id="node6" href="$d4/d92/classIG_1_1Gr3d_1_1Graph3dManipulatorWindowExtended.html" title="A form for manipulating 3D graphics." alt="" coords="318,223,505,265"/>
+<area shape="rect" id="node7" href="$d3/d52/classIG_1_1Gr3d_1_1VtkForm.html" title="Windows form for presenting VTK graphics. " alt="" coords="351,289,472,316"/>
+<area shape="rect" id="node8" href="$dc/dfa/classIG_1_1Gr3d_1_1VtkFormPlain.html" title="Windows form for presenting VTK graphics. " alt="" coords="336,340,487,367"/>
+</map>

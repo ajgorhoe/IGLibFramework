@@ -1,0 +1,5 @@
+<map id="IG.Num.AffineTransformationDiagonal" name="IG.Num.AffineTransformationDiagonal">
+<area shape="rect" id="node2" href="$de/d0d/classIG_1_1Num_1_1AffineTransformationSquare.html" title="Invertible Affine transformation with square transformation matrix." alt="" coords="55,80,235,107"/>
+<area shape="rect" id="node3" href="$d5/d50/interfaceIG_1_1Num_1_1IAffineTransformation.html" title="Affine Transformation." alt="" coords="5,5,148,32"/>
+<area shape="rect" id="node4" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="203,5,281,32"/>
+</map>

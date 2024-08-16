@@ -1,0 +1,8 @@
+<map id="IG.Num.ILinearSolver" name="IG.Num.ILinearSolver">
+<area shape="rect" id="node3" href="$df/de1/classIG_1_1Num_1_1CholeskyDecomposition.html" title="Cholesky decomposition of a matrix. Available for symmetric positive definite matrices. " alt="" coords="334,5,545,32"/>
+<area shape="rect" id="node4" href="$dd/d87/classIG_1_1Num_1_1EigenValueDecomposition.html" title="Eigenvalue decomposition of a matrix. " alt="" coords="328,56,551,83"/>
+<area shape="rect" id="node5" href="$db/dc0/classIG_1_1Num_1_1LUDecomposition.html" title="LU decomposition of a matrix. " alt="" coords="353,107,525,133"/>
+<area shape="rect" id="node6" href="$d3/d52/classIG_1_1Num_1_1QRDecomposition.html" title="QR decomposition of a matrix. " alt="" coords="352,157,527,184"/>
+<area shape="rect" id="node7" href="$d5/de5/classIG_1_1Num_1_1SingularValueDecomposition.html" title="Singular value decomposition of a matrix. " alt="" coords="321,208,557,235"/>
+<area shape="rect" id="node2" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="5,107,83,133"/>
+</map>

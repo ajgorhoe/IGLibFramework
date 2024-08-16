@@ -1,0 +1,6 @@
+<map id="IG.Neural.DataMapperSimple" name="IG.Neural.DataMapperSimple">
+<area shape="rect" id="node2" href="$df/dec/classIG_1_1Neural_1_1DataMapperIdentity.html" title="DataMapperIdentity" alt="" coords="189,35,324,61"/>
+<area shape="rect" id="node3" href="$d0/d0b/interfaceIG_1_1Neural_1_1IDataMapper.html" title="IDataMapper" alt="" coords="5,5,100,32"/>
+<area shape="rect" id="node4" href="$d5/dd5/classIG_1_1Num_1_1InputOutputDataDefiniton.html" title="Definition of input and output data for vector functions, approximations, etc. Contains descriptiove ..." alt="" coords="149,85,364,112"/>
+<area shape="rect" id="node5" href="$d9/d40/classIG_1_1Neural_1_1MappingDefinition.html" title="Definition of input and output data mapping. Contains Mapped and Original Index, descriptiove informa..." alt="" coords="165,136,348,163"/>
+</map>

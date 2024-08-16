@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d7/d39/classIG_1_1Crypto_1_1PasswordAlgorithmBase.html" title="Base class for algorithms that generate passwords, encryption initialization vectors, and salts from the specified keys/passwords and salts." alt="" coords="5,71,228,98"/>
+<area shape="rect" id="node2" href="$db/d6f/classIG_1_1Crypto_1_1PasswordAlgorithmDeriveBytes.html" title="Key generation algorithm that uses a Rfc2898DeriveBytes object (PBKDF2 algorithm)." alt="" coords="291,5,484,47"/>
+<area shape="rect" id="node3" href="$de/d99/classIG_1_1Crypto_1_1PasswordAlgorithmNone.html" title="Key generation &quot;algorithm&quot; that generates key as an (eventually padded and truncated) copy of its ori..." alt="" coords="276,71,499,98"/>
+<area shape="rect" id="node4" href="$d4/dbc/classIG_1_1Crypto_1_1PasswordAlgorithmRfc2898.html" title="Key generation algorithm that uses a Rfc2898DeriveBytes object (PBKDF2 algorithm)." alt="" coords="291,123,484,164"/>
+</map>

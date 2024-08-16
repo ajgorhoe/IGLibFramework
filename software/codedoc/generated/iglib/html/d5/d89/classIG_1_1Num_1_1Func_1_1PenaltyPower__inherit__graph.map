@@ -1,0 +1,6 @@
+<map id="IG.Num.Func.PenaltyPower" name="IG.Num.Func.PenaltyPower">
+<area shape="rect" id="node2" href="$d5/d83/classIG_1_1Num_1_1RealFunction.html" title="Represents a real function of a real variabe." alt="" coords="57,155,156,181"/>
+<area shape="rect" id="node3" href="$d6/d30/classIG_1_1Num_1_1RealFunctionBase.html" title="Base class for real functions of real variable." alt="" coords="43,80,171,107"/>
+<area shape="rect" id="node4" href="$db/d0e/interfaceIG_1_1Num_1_1IRealFunction.html" title="Interface for real functions." alt="" coords="5,5,107,32"/>
+<area shape="rect" id="node6" href="$d7/d8a/interfaceIG_1_1Num_1_1IRealFunctionPenalty.html" title="Interface that must be satisfied by penalty functions. Penalty functions have small values where argu..." alt="" coords="211,155,357,181"/>
+</map>

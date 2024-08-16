@@ -1,0 +1,6 @@
+<map id="IG.Lib.LoadableScriptRealFunctionBase" name="IG.Lib.LoadableScriptRealFunctionBase">
+<area shape="rect" id="node5" href="$dc/d6c/classIG_1_1Script_1_1ScritpRealFunctionExample.html" title="Example script for definition of a new real function class." alt="" coords="26,244,213,285"/>
+<area shape="rect" id="node2" href="$d7/d15/classIG_1_1Lib_1_1LoadableScriptBase.html" title="Base class for classes that can be dynamically loadeded from scripts and run, which provides function..." alt="" coords="50,80,189,107"/>
+<area shape="rect" id="node3" href="$d7/d66/interfaceIG_1_1Lib_1_1ILoadableScript.html" title="Interface for classes that can be dynamically loadeded from scripts and run, which provides functiona..." alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node4" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="141,5,218,32"/>
+</map>

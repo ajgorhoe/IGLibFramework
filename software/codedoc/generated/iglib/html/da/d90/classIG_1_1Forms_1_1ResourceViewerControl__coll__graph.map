@@ -1,0 +1,10 @@
+<map id="IG.Forms.ResourceViewerControl" name="IG.Forms.ResourceViewerControl">
+<area shape="rect" id="node4" href="$d1/d6d/classIG_1_1Forms_1_1ImageViewerControl.html" title="IG.Forms.ImageViewerControl" alt="" coords="296,101,491,127"/>
+<area shape="rect" id="node8" href="$d3/dc3/classIG_1_1Forms_1_1ResourceSelector.html" title="IG.Forms.ResourceSelector" alt="" coords="1077,905,1260,931"/>
+<area shape="rect" id="node9" href="$d0/d46/classIG_1_1Forms_1_1AssemblySelector.html" title="IG.Forms.AssemblySelector" alt="" coords="677,931,864,958"/>
+<area shape="rect" id="node10" href="$d6/d0b/classIG_1_1Forms_1_1FileSelector.html" title="IG.Forms.FileSelector" alt="" coords="319,955,468,982"/>
+<area shape="rect" id="node11" href="$d8/d8b/classIG_1_1Forms_1_1FileViewerControl.html" title="IG.Forms.FileViewerControl" alt="" coords="303,417,484,443"/>
+<area shape="rect" id="node12" href="$dc/d40/classIG_1_1Forms_1_1SoundPlayerControlSimple.html" title="IG.Forms.SoundPlayerControl\lSimple" alt="" coords="296,609,491,651"/>
+<area shape="rect" id="node3" href="$d6/d7a/interfaceIG_1_1Forms_1_1IFileViewer.html" title="IG.Forms.IFileViewer" alt="" coords="1097,1359,1240,1386"/>
+<area shape="rect" id="node5" href="$d6/d7a/interfaceIG_1_1Forms_1_1IFileViewer.html" title="IFileViewer" alt="" coords="8,6,93,33"/>
+</map>

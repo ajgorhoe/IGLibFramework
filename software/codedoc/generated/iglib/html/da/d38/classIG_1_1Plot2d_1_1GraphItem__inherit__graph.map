@@ -1,0 +1,4 @@
+<map id="IG.Plot2d.GraphItem" name="IG.Plot2d.GraphItem">
+<area shape="rect" id="node2" href="$d8/d1b/classIG_1_1Plot2d_1_1GraphPlotItem.html" title="Representation of a plottable item contained in a graph. This excludes markup markups such as axes..." alt="" coords="6,80,169,107"/>
+<area shape="rect" id="node3" href="$d9/df0/classIG_1_1Plot2d_1_1GraphLineItem.html" title="Plottable item that consists of multiple line segments." alt="" coords="5,155,169,181"/>
+</map>

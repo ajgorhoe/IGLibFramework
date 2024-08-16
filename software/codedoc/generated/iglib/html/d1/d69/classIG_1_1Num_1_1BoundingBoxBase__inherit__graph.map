@@ -1,0 +1,7 @@
+<map id="IG.Num.BoundingBoxBase" name="IG.Num.BoundingBoxBase">
+<area shape="rect" id="node3" href="$d4/d6b/classIG_1_1Num_1_1BoundingBox.html" title="Bounding box, defines lower and upper bounds on vector quantities such as coordinates of geometrix ob..." alt="" coords="5,155,152,181"/>
+<area shape="rect" id="node4" href="$df/d6d/classIG_1_1Num_1_1BoundingBox1d.html" title="An 1D bounding box." alt="" coords="177,155,338,181"/>
+<area shape="rect" id="node5" href="$dd/dcf/classIG_1_1Num_1_1BoundingBox2d.html" title="A 2D bounding box." alt="" coords="362,155,523,181"/>
+<area shape="rect" id="node6" href="$d5/da6/classIG_1_1Num_1_1BoundingBox3d.html" title="A 3D bounding box." alt="" coords="547,155,709,181"/>
+<area shape="rect" id="node2" href="$db/d5e/interfaceIG_1_1Num_1_1IBoundingBox.html" title="Bounding box, defines minimum and maximum co&#45;ordinates of domains, geometric objects and their groups..." alt="" coords="298,5,401,32"/>
+</map>

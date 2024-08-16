@@ -1,0 +1,25 @@
+var classIG_1_1Lib_1_1WaitCondition =
+[
+    [ "WaitCondition", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#a04f23817bad352a47932ab44ccf832d3", null ],
+    [ "WaitCondition", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#a00bf4caa2c5a038b1ee443788b04b4da", null ],
+    [ "WaitCondition", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#ab35742616e727f6644fa673a79f53fed", null ],
+    [ "InitWaitCondition", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#a2cc78152e273159b35d5f63ee423a723", null ],
+    [ "InitWaitCondition", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#a4560b7cda5b7ec36b899a679fa09ab63", null ],
+    [ "InitWaitCondition", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#a131771eb7b77c6591d8678bd215de1ca", null ],
+    [ "Condition", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#a79b317d35866702cd83c009720239d26", null ],
+    [ "ConditionFunction", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#af0dd3d9b7c571fdaf218ad20aaed151b", null ],
+    [ "Wait", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#a8418ae6b6a315535d9d794184dcd63bd", null ],
+    [ "ToString", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#ab9aba1142599c2fdffbeddbe4840d655", null ],
+    [ "_conditionDelegate", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#a977eb579396c605865fb855342def99a", null ],
+    [ "_minSleepMs", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#a4855057ef5b37d971a4e427e9995d04a", null ],
+    [ "_maxSleepMs", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#a58886eef1556d0d60cd54361e72527be", null ],
+    [ "_maxRelativeLatency", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#a4d0408b808f617fbb8b5494e787f99f6", null ],
+    [ "_sleepFirst", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#a95b74fceb05fc972a1129dd40ed821d0", null ],
+    [ "_timer", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#a312907f17baef52c9aeffd4e154e518c", null ],
+    [ "ConditionDelegate", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#a71e22079609a2dbf3b83370d73ce0366", null ],
+    [ "MinSleepMs", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#aa0a6018e02ff47ae75c4336bf492ca1d", null ],
+    [ "MaxSleepMs", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#aa3a0e6323a488e77ebb3d3f5d743e630", null ],
+    [ "MaxRelativeLatency", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#a7cbf3866c481f20bb9c1e15fbf697d02", null ],
+    [ "SleepFirst", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#a6527533f0d705856c379eee371b3c8cb", null ],
+    [ "Timer", "da/d67/classIG_1_1Lib_1_1WaitCondition.html#a1bf98a5896a09ed49357514b01a844b3", null ]
+];

@@ -1,0 +1,6 @@
+<map id="IG.Num.Matrix" name="IG.Num.Matrix">
+<area shape="rect" id="node2" href="$d9/db9/classIG_1_1Num_1_1MatrixBase.html" title="Base class for matrices." alt="" coords="73,171,161,197"/>
+<area shape="rect" id="node3" href="$d8/d86/interfaceIG_1_1Num_1_1IMatrix.html" title="Real matrix interface." alt="" coords="5,81,67,108"/>
+<area shape="rect" id="node4" href="$d9/dd3/classIG_1_1Num_1_1MatrixStore.html" title="Matrix store. " alt="" coords="91,81,229,108"/>
+<area shape="rect" id="node5" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="121,5,199,32"/>
+</map>

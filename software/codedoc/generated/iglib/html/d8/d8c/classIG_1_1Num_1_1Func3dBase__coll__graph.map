@@ -1,0 +1,5 @@
+<map id="IG.Num.Func3dBase" name="IG.Num.Func3dBase">
+<area shape="rect" id="node2" href="$d2/d9e/classIG_1_1Num_1_1ScalarFunctionUntransformedBase.html" title="Base class for defining scalar functions without possibility of affine transformation of parameters..." alt="" coords="67,80,289,107"/>
+<area shape="rect" id="node3" href="$d8/d56/interfaceIG_1_1Num_1_1IScalarFunctionUntransformed.html" title="Scalar functions of vector arguments." alt="" coords="5,5,201,32"/>
+<area shape="rect" id="node4" href="$d5/d03/interfaceIG_1_1Num_1_1IFunc3d.html" title="Represents scalar functions of 2 variables." alt="" coords="313,80,381,107"/>
+</map>

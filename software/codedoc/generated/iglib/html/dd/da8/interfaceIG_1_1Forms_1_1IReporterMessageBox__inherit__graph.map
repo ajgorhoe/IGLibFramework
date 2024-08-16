@@ -1,0 +1,10 @@
+<map id="IG.Forms.IReporterMessageBox" name="IG.Forms.IReporterMessageBox">
+<area shape="rect" id="node8" href="$d3/d40/classIG_1_1Forms_1_1ReporterConsoleMsgbox.html" title="IG.Forms.ReporterConsole\lMsgbox" alt="" coords="736,41,912,82"/>
+<area shape="rect" id="node9" href="$d2/d9f/classIG_1_1Forms_1_1ReporterMsgbox.html" title="IG.Forms.ReporterMsgbox" alt="" coords="737,107,911,133"/>
+<area shape="rect" id="node10" href="$d5/dbc/classIG_1_1Lib_1_1ReporterConsoleMsgboxSpeech.html" title="IG.Lib.ReporterConsoleMsgbox\lSpeech" alt="" coords="723,158,925,199"/>
+<area shape="rect" id="node2" href="$db/db1/interfaceIG_1_1Lib_1_1IReporter.html" title="Interface from which majority of reporters inherit. Includes generic reporting functionality plus tra..." alt="" coords="344,107,419,133"/>
+<area shape="rect" id="node4" href="$de/d0d/interfaceIG_1_1Lib_1_1IReporterBase.html" title="Interface from which all reporters inherit." alt="" coords="5,132,109,159"/>
+<area shape="rect" id="node5" href="$d2/d8e/interfaceIG_1_1Lib_1_1IReporterTextWriter.html" title="Reporters that utilize writing messages to files. Messages are typically formatted as multi&#45;line mess..." alt="" coords="159,107,294,133"/>
+<area shape="rect" id="node6" href="$d1/ddb/interfaceIG_1_1Lib_1_1IReporterTextLogger.html" title="Reporters that utilize logging messages to files. IReporterTextLogger typically outputs (to a file) m..." alt="" coords="157,157,296,184"/>
+<area shape="rect" id="node7" href="$d0/d0e/interfaceIG_1_1Lib_1_1IReporterTrace.html" title="Reporters that utilize system&#39;s trace utility." alt="" coords="173,208,280,235"/>
+</map>

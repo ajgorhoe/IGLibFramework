@@ -1,0 +1,6 @@
+<map id="IG.Num.ParallelJobServerBase&lt; JobContainerType &gt;" name="IG.Num.ParallelJobServerBase&lt; JobContainerType &gt;">
+<area shape="rect" id="node4" href="$dd/d2b/classIG_1_1Num_1_1ParallelJobServerGen_3_01InputType_00_01ResultType_00_01JobContainerType_01_4.html" title="Parallel job server for job containers that inherit from ParallelJobContainerGen{IT,RT}." alt="" coords="9,169,200,225"/>
+<area shape="rect" id="node2" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="13,5,90,32"/>
+<area shape="rect" id="node3" href="$dc/d79/interfaceIG_1_1Lib_1_1IIdentifiable.html" title="Classes whose instances have unique integer IDs." alt="" coords="115,5,201,32"/>
+<area shape="rect" id="node5" href="$d0/d53/classIG_1_1Num_1_1ParallelJobServerGen_3_01InputType_00_01ResultType_01_4.html" title="Parallel job server for job containers that inherit from ParallelJobContainerGen{InputType, ResultType}." alt="" coords="5,273,204,315"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="IG.Num.VectorFunctionResultsDto" name="IG.Num.VectorFunctionResultsDto">
+<area shape="rect" id="node2" href="$d6/d7d/classIG_1_1Num_1_1VectorFunctionRequestDTO.html" title="DTO (Data Transfer Objects) for storing contents of vector function evaluation request." alt="" coords="43,124,227,151"/>
+<area shape="rect" id="node4" href="$dc/dec/classIG_1_1Lib_1_1VectorDtoBase.html" title="DTO (data transfer object) for vector interface (IVector)." alt="" coords="201,20,349,47"/>
+<area shape="rect" id="node5" href="$d1/d42/classIG_1_1Lib_1_1MatrixDtoBase.html" title="DTO (data transfer object) for matrix interface (IMatrix)." alt="" coords="360,124,507,151"/>
+</map>

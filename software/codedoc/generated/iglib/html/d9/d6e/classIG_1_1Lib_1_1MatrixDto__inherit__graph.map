@@ -1,0 +1,8 @@
+<map id="IG.Lib.MatrixDto" name="IG.Lib.MatrixDto">
+<area shape="rect" id="node2" href="$d7/dfb/classIG_1_1Lib_1_1MatrixDtoBase_3_01MatrixType_01_4.html" title="Base class for various matrix DTO (Data Transfer Objects) for matrixs. Used to store a state of a mat..." alt="" coords="98,273,266,300"/>
+<area shape="rect" id="node3" href="$d8/dd9/classIG_1_1Lib_1_1SerializationDtoBase_3_01Type_00_01BaseType_01_4.html" title="Generic base class for Data Transfer Objects (DTO). This class is used as template for producing conc..." alt="" coords="103,184,261,225"/>
+<area shape="rect" id="node4" href="$da/d46/classIG_1_1Lib_1_1SerializationDto.html" title="Auxiliary base class for DTOs, contains some static methods. Provided for simplicity, such that one does not need to state type parameters" alt="" coords="5,102,119,129"/>
+<area shape="rect" id="node5" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="143,102,221,129"/>
+<area shape="rect" id="node6" href="$d0/df7/interfaceIG_1_1Lib_1_1ISerializationDto_3_01Type_00_01BaseType_01_4.html" title="Interface for Data Transfer Objects (DTO). This class is used as template for producing concrete DTO ..." alt="" coords="245,95,377,136"/>
+<area shape="rect" id="node7" href="$db/da2/interfaceIG_1_1Lib_1_1ISerializationDtoAux_3_01Type_01_4.html" title="This interface facilitates use of static helper methods for copying on the SerializationDtoBase class..." alt="" coords="242,5,381,47"/>
+</map>

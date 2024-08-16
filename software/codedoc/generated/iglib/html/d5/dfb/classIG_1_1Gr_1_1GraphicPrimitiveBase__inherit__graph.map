@@ -1,0 +1,7 @@
+<map id="IG.Gr.GraphicPrimitiveBase" name="IG.Gr.GraphicPrimitiveBase">
+<area shape="rect" id="node3" href="$d1/daf/classIG_1_1Gr_1_1GraphicLineBase.html" title="Base class for graphic line primitive." alt="" coords="428,5,584,32"/>
+<area shape="rect" id="node4" href="$d6/dab/classIG_1_1Gr_1_1GraphicPointBase.html" title="Base class for graphic line primitive." alt="" coords="425,56,587,83"/>
+<area shape="rect" id="node5" href="$da/dd8/classIG_1_1Gr_1_1GraphicQuadriLateralBase.html" title="Base class for graphic line primitive." alt="" coords="401,107,611,133"/>
+<area shape="rect" id="node6" href="$d3/db4/classIG_1_1Gr_1_1GraphicTriangleBase.html" title="Base class for graphic line primitive." alt="" coords="417,157,595,184"/>
+<area shape="rect" id="node2" href="$dd/d5f/interfaceIG_1_1Gr_1_1IGraphicPrimitive.html" title="IGraphicPrimitive" alt="" coords="5,81,124,108"/>
+</map>

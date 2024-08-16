@@ -1,0 +1,6 @@
+<map id="IG.Num.ScalarFunctionQuadratic" name="IG.Num.ScalarFunctionQuadratic">
+<area shape="rect" id="node2" href="$d2/d9e/classIG_1_1Num_1_1ScalarFunctionUntransformedBase.html" title="Base class for defining scalar functions without possibility of affine transformation of parameters..." alt="" coords="251,35,473,61"/>
+<area shape="rect" id="node3" href="$d8/d56/interfaceIG_1_1Num_1_1IScalarFunctionUntransformed.html" title="Scalar functions of vector arguments." alt="" coords="5,5,201,32"/>
+<area shape="rect" id="node4" href="$d8/d86/interfaceIG_1_1Num_1_1IMatrix.html" title="Real matrix interface." alt="" coords="307,85,417,112"/>
+<area shape="rect" id="node5" href="$d3/d24/interfaceIG_1_1Num_1_1IVector.html" title="Real vector intrface." alt="" coords="307,136,417,163"/>
+</map>

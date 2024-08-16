@@ -1,0 +1,354 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+  <head>
+    <title>IGLib.NET Documentation - Investigative Generic Library</title>
+    <meta name="author" content="Igor Gresovnik">
+    <meta name="keywords" content="optimization, optimization library,
+      optimization algorithm, successive approximation, moving least
+      squares, inverse problems, weighted least squares, approximation,
+      Igor Gresovnik, Igor Grešovnik">
+    <meta name="description" content="IGLib.NET (Investigative Generic
+      Library) is a base library for technical applications, developed
+      in C#.">
+    <meta name="Classification" content="software/numerical">
+    <meta name="GENERATOR" content="Netscape 7 Composer">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rev="made"
+href="http://www.google.com/search?hl=en&amp;q=Igor+Gre%C5%A1ovnik&amp;btnG=Google+Search&amp;meta=">
+    <link rel="SHORTCUT ICON" href="ig.ico">
+    <!-- Google Analitics - account IGLib property Code Documentation -->
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-76143121-3', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+  </head>
+  <body style="color: rgb(0, 0, 0); background-color: rgb(255, 255,
+    255);" vlink="#006600" link="#0000ee" alink="#fe0000">
+    <div align="right"><small>&nbsp; </small>
+      <table width="100%" cellspacing="2" cellpadding="2" border="0">
+        <tbody>
+          <tr>
+            <td valign="top"><small><small>&nbsp;&nbsp; &nbsp; &nbsp;</small><small><big><big>
+                      <small><a href="./"><big>./ <small>(directory)</small></big></a></small></big></big>
+                  &nbsp;<small><a href="../index.html"><span
+                        style="font-weight: bold;"></span></a>
+                    &nbsp;&nbsp;</small></small></small>&nbsp;&nbsp; <small><a
+                  href="index.html#search" style="font-weight: bold;">Search</a></small>
+              &nbsp;<small><small><small> &nbsp; </small></small></small></td>
+            <td valign="top" align="right"><small>&nbsp; <a
+                  href="../links.html">Optimization links</a>&nbsp;
+                &nbsp; <a href="../index.html">Igor Grešovnik</a>
+                &nbsp;&nbsp; <a href="../../inverse/index.html"><span
+                    style="font-style: italic;">Inverse</span></a>
+                &nbsp; &nbsp;&nbsp; </small></td>
+          </tr>
+        </tbody>
+      </table>
+      <font size="-1"><a href="http://www.c3m.si/igor"> </a></font></div>
+    <center>
+      <div style="text-align: left;">
+        <div style="text-align: right;">&nbsp;&nbsp;<span
+            style="font-style: italic;"> </span><font color="#000000"><span
+              style="font-style: italic;"><br>
+            </span></font></div>
+      </div>
+    </center>
+    <table nosave="" style="width: 100%;" cols="2" cellspacing="5"
+      cellpadding="0">
+      <tbody>
+        <tr nosave="" valign="top">
+          <td nosave="" style="vertical-align: middle; text-align: left;
+            width: 90%;"> <span style="font-weight: bold;"></span><br>
+            <h1 style="text-align: center;"><big><b><i><font><font><b><i><font><font><big><big><b><i><font><font><b><i><font
+                                                  color="#cc0000"><font
+                                                    size="+2"><big>
+                                                      IGLib.NET Code
+                                                      Documentation <br>
+                                                    </big></font></font></i></b></font></font></i></b></big></big></font></font></i></b></font></font></i></b></big></h1>
+            <p style="text-align: left;"><b><span style="font-style:
+                  italic;">&nbsp; </span></b><b>This page contains code
+                documentation for <a
+                  href="http://www2.arnes.si/%7Eljc3m2/igor/iglib/"><span
+                    style="font-style: italic;">IGLib.NET</span></a></b><b>
+                (Investigative Generic Library)</b><b>. Currently, IGLib
+                is used by the author and his partner institutions for
+                their projects, but there is an intention to release it
+                as free open source library when it reaches sufficient
+                maturity level</b><b>.<br>
+              </b></p>
+            <font color="#000000"> </font><span style="font-weight:
+              bold;"></span><br>
+            <font color="#000000"> </font> </td>
+          <td style="text-align: right;" nosave="">&nbsp;&nbsp; <br>
+            <b> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; </b></td>
+        </tr>
+      </tbody>
+    </table>
+    <p><b><br>
+      </b><b></b></p>
+    <p> </p>
+    <hr width="100%">
+    <center>
+      <table nosave="" cols="2" width="100%">
+        <tbody>
+          <tr nosave="" valign="top">
+            <td nosave=""> <span style="font-weight: bold;">Contents:<br>
+              </span>
+              <ul>
+                <li><a href="index.html#doc"><span
+                      style="text-decoration: underline;">Documentation</span></a>
+                  (<a style="font-weight: bold;" href="html/index.html">=&gt;</a>)&nbsp;
+
+
+
+
+
+
+
+
+
+
+                  <br>
+                </li>
+              </ul>
+              <br>
+              <font color="#000000"><span style="font-weight: bold;"></span></font></td>
+            <td nosave="" align="right">&nbsp;&nbsp;&nbsp; <br>
+              &nbsp;&nbsp; <a href="#search" style="font-weight: bold;">Search</a>
+              &nbsp; <br>
+              &nbsp;&nbsp;&nbsp;&nbsp; <b><br>
+                &nbsp; &nbsp; &nbsp; <br>
+              </b></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+    </center>
+    <hr width="100%">&nbsp;&nbsp; <br>
+    <br>
+    <center>
+      <h1> <a name="doc"></a><b><i><font color="#cc0000"><font
+                size="+2">Documentation<br>
+              </font></font></i></b></h1>
+    </center>
+    <br>
+    &nbsp; <a href="html/index.html"><span style="font-weight: bold;">IGLib
+
+
+
+
+
+
+
+
+
+
+        Code Documentation</span></a>. Code documentation for the
+    library, automatically generated from documentation comments by <a
+      href="http://www.stack.nl/%7Edimitri/doxygen/">Doxygen</a>, a
+    remarkable documentation generation tool.<br>
+    <ul>
+      <li><a href="html/annotated.html">Class list</a>.&nbsp; <br>
+      </li>
+      <li><a href="html/hierarchy.html">Class Hierarchy</a>. <br>
+      </li>
+      <li><a href="html/namespaces.html">Namespace list</a>.</li>
+      <li><a href="html/files.html">File list</a>. <br>
+      </li>
+    </ul>
+    <br>
+    &nbsp; <a
+href="file:///U:/igor/www/www/igor/software/codedoc/generated/iglib/ReadMe_IGLib.html"><span
+        style="font-weight: bold;">Readme File</span></a>. Contains some
+    basic information about the library.<br>
+    <br>
+    &nbsp; <a
+href="file:///U:/igor/www/www/igor/software/codedoc/generated/iglib/License_IGLib_Redistributable.html"><span
+        style="font-weight: bold;">Redistributable License Agreement</span></a>.
+    Contains redistributable license agreement for the IGLib binaries
+    that come with some applications such as <i><a
+        href="file:///U:/igor/www/www/igor/software/IGLibShellApp/index.html">IGShell</a></i>.
+    <br>
+    <br>
+    &nbsp; <a
+href="file:///U:/igor/www/www/igor/software/codedoc/generated/iglib/License_IGLib_Partner.html"><span
+        style="font-weight: bold;">Partner License Agreement</span></a>.
+    Example license agreement for partner groups that use the library. <br>
+    <br>
+    &nbsp; <a style="font-weight: bold;"
+      href="http://www2.arnes.si/%7Eljc3m2/igor/iglib/">More
+      information.</a> You will find additional information on the
+    library's home page. <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr width="100%"><br>
+    <br>
+    <!-- SiteSearch Google -->
+    <form method="get" action="http://www.google.com/search">
+      <div style="text-align: right;"> </div>
+      <table style="width: 60%;" cellspacing="4" cellpadding="4">
+        <tbody>
+          <tr>
+            <td style="text-align: right; font-style: italic;"><a
+                href="http://www.google.com/"> </a><a name="search"></a><a
+                href="http://www.google.com/"><img
+                  src="http://www.google.com/logos/Logo_25wht.gif"
+                  style="border: 0px solid ; width: 75px; height: 32px;"
+                  alt="Google" title=""></a></td>
+            <td> <input name="q" size="31" maxlength="255" type="text"><input name="btnG" value="Google Search" type="submit"> <font size="-1"><input name="domains" value="../" type="hidden"><br>
+                <input name="sitesearch" value="" checked="checked" type="radio">WWW&nbsp;&nbsp;&nbsp; <input name="sitesearch" value="../" type="radio">../&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <input name="sitesearch" value="./" type="radio">./&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <input name="sitesearch" value="http://www2.arnes.si/%7Eljc3m2/" type="radio">
+                Igor at Arnes&nbsp;&nbsp; <input name="sitesearch" value="hhttp://igor.mrfreehost.com/" type="radio">
+                Igor at Mrfreesite <br>
+              </font> </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <!-- SiteSearch Google -->
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <br>
+    <hr>
+    <center>
+      <table nosave="" cellpadding="2" border="3" bgcolor="#ffffff">
+        <tbody>
+          <tr nosave="">
+            <td nosave="" valign="top" align="center">
+              <center>&nbsp;&nbsp; <a href="http://www.c3m.si/inverse/doc/phd/"><br>
+                </a></center>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+    &nbsp;
+    <div align="right">
+      <table nosave="" cellpadding="2" border="3" bgcolor="#ffffff">
+        <tbody>
+          <tr nosave="">
+            <td nosave="" valign="top" align="left">
+              <div align="right"><font size="-1">&nbsp; Maintained by <a href="http://www2.arnes.si/%7Eljc3m2/igor/">Igor
+                    Grešovnik</a>&nbsp; <br>
+                </font></div>
+              <font size="-1"></font></td>
+          </tr>
+        </tbody>
+      </table>
+      &nbsp; &nbsp; &nbsp;&nbsp; </div>
+    <center>
+      <table nosave="" cellpadding="2" border="3">
+        <tbody>
+          <tr nosave="">
+            <td nosave="" valign="top" align="left">
+              <center><i>&nbsp; Updated in September 2007 <br>
+                </i></center>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+    <ul>
+      &nbsp;<br>
+    </ul>
+    <br>
+    <big style="color: rgb(204, 0, 0);"><span style="font-weight: bold;">Note:</span></big><span style="color: rgb(204, 0, 0);"> </span><span style="font-weight:
+      bold; color: rgb(204, 0, 0);">This site is under construction.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+    <a href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/"><font color="#000000"></font></a><font color="#000000"><a href="../index.html"><img src="../work.gif" title="" alt="This
+          page is under construction. Icon is missing." style="border:
+          0px solid ; width: 38px; height: 38px;"></a></font>&nbsp; <br>
+    <br>
+    <br>
+    <br>
+    <small>Number of accesses:&nbsp;&nbsp;&nbsp;&nbsp; </small><a href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/index.html"><img src="http://www.arnes.si/cgi-bin/counter?md=7%7Cdd=B%7Cid=IGarnes_igor_ioptlib_index" title="" alt="If you don't see the access counter properly then
+        click on the link!" style="border: 0px solid ; width: 172px;
+        height: 28px;"></a><small>&nbsp;&nbsp;&nbsp; If you don't see
+      the access counter properly then please follow <a href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/index.html">this
+
+
+
+
+
+
+
+
+
+
+
+
+        link</a>!</small><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+
+</body></html>

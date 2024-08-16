@@ -1,0 +1,7 @@
+<map id="IG.Lib.ExpressionEvaluatorJs" name="IG.Lib.ExpressionEvaluatorJs">
+<area shape="rect" id="node6" href="$d0/d06/classIG_1_1Lib_1_1ExpressionEvaluatorJint.html" title="JavaScript Evaluator with command&#45;line interpreter, based on Jint." alt="" coords="621,56,820,83"/>
+<area shape="rect" id="node2" href="$dd/dec/classIG_1_1Lib_1_1ExpressionEvaluatorCompiled.html" title="Base class for expression evaluators that utilize the functionality of CodeDomProvider class..." alt="" coords="140,31,335,57"/>
+<area shape="rect" id="node3" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="10,5,87,32"/>
+<area shape="rect" id="node4" href="$dc/d79/interfaceIG_1_1Lib_1_1IIdentifiable.html" title="Classes whose instances have unique integer IDs." alt="" coords="5,81,92,108"/>
+<area shape="rect" id="node5" href="$df/dfd/interfaceIG_1_1Lib_1_1IRegisterable_3_01T_01_4.html" title="Objects of this type have a unique ID (unique for all objects of a given type) and can be registered ..." alt="" coords="150,133,325,174"/>
+</map>

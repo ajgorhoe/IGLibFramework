@@ -1,0 +1,10 @@
+<map id="IG.Lib.LoadableScriptOptBase" name="IG.Lib.LoadableScriptOptBase">
+<area shape="rect" id="node5" href="$d7/d31/classIG_1_1Lib_1_1LoadableScriptOptShellBaseControllable.html" title="Controllable version of LoadableScriptOptBase, implements the ILoadableScriptC interface." alt="" coords="613,5,779,47"/>
+<area shape="rect" id="node9" href="$d2/dae/classIG_1_1Lib_1_1LoadableScriptOptTest_1_1LoadableScriptOptDerived.html" title="IG.Lib.LoadableScriptOpt\lTest.LoadableScriptOptDerived" alt="" coords="596,71,796,112"/>
+<area shape="rect" id="node2" href="$d7/d15/classIG_1_1Lib_1_1LoadableScriptBase.html" title="Base class for classes that can be dynamically loadeded from scripts and run, which provides function..." alt="" coords="164,46,303,73"/>
+<area shape="rect" id="node3" href="$d7/d66/interfaceIG_1_1Lib_1_1ILoadableScript.html" title="Interface for classes that can be dynamically loadeded from scripts and run, which provides functiona..." alt="" coords="5,9,116,35"/>
+<area shape="rect" id="node4" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="22,85,99,111"/>
+<area shape="rect" id="node6" href="$d6/d59/classIG_1_1Lib_1_1LoadableScriptShellBase.html" title="Loadable script base class for the shell application that includes tols for definition of optiimizati..." alt="" coords="844,13,1049,39"/>
+<area shape="rect" id="node7" href="$dc/d0c/classIG_1_1Script_1_1LoadableScriptShellNeuralBase.html" title="Base class for loadable scripts that are used as custom applications that inclued neural networks app..." alt="" coords="1097,5,1260,47"/>
+<area shape="rect" id="node8" href="$d1/d30/classIG_1_1Script_1_1LoadableScriptShellNeural.html" title="Base class for loadable scripts that are used as custom applications that inclued neural networks app..." alt="" coords="1308,5,1471,47"/>
+</map>

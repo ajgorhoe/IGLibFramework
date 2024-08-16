@@ -1,0 +1,7 @@
+<map id="IG.Gr.GraphicSetBase" name="IG.Gr.GraphicSetBase">
+<area shape="rect" id="node2" href="$d2/d42/interfaceIG_1_1Gr_1_1IGraphicSet.html" title="Graphic set that contain graphic primitives and other graphic sets." alt="" coords="5,185,131,212"/>
+<area shape="rect" id="node3" href="$d5/da6/classIG_1_1Num_1_1BoundingBox3d.html" title="A 3D bounding box." alt="" coords="155,185,317,212"/>
+<area shape="rect" id="node4" href="$df/d61/classIG_1_1Num_1_1BoundingBoxBase.html" title="Base class for bounding boxes that define minimal and maximal co&#45;ordinates of objects, groups of objects, and regions in space." alt="" coords="239,109,369,136"/>
+<area shape="rect" id="node5" href="$db/d5e/interfaceIG_1_1Num_1_1IBoundingBox.html" title="Bounding box, defines minimum and maximum co&#45;ordinates of domains, geometric objects and their groups..." alt="" coords="150,5,253,32"/>
+<area shape="rect" id="node6" href="$d3/d24/interfaceIG_1_1Num_1_1IVector.html" title="Real vector intrface." alt="" coords="277,5,387,32"/>
+</map>

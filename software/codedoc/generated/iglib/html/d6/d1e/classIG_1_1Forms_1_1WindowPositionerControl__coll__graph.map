@@ -1,0 +1,7 @@
+<map id="IG.Forms.WindowPositionerControl" name="IG.Forms.WindowPositionerControl">
+<area shape="rect" id="node8" href="$d8/dfa/classIG_1_1Forms_1_1WindowShiftControlText.html" title="Control for setting window positions, relative positions, sizes, positions, shifts, etc." alt="" coords="337,138,556,165"/>
+<area shape="rect" id="node9" href="$d2/d08/classIG_1_1Forms_1_1AlignmentControl.html" title="Control for setting horizontal and vertical alignment of items." alt="" coords="357,189,536,216"/>
+<area shape="rect" id="node4" href="$df/d0e/classIG_1_1Forms_1_1WindowPositioner.html" title="Takes care of windows positioning, relative of absolute to the screen and/or other windows..." alt="" coords="355,449,539,476"/>
+<area shape="rect" id="node5" href="$d4/da1/structIG_1_1Lib_1_1Alignment.html" title="Defines alignment (vertical and horizontal) of some object." alt="" coords="5,512,124,538"/>
+<area shape="rect" id="node6" href="$dc/daf/structIG_1_1Num_1_1vec2.html" title="2D vector, struct implementation." alt="" coords="17,601,113,628"/>
+</map>

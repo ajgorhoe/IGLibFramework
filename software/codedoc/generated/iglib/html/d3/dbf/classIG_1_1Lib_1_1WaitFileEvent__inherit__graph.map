@@ -1,0 +1,11 @@
+<map id="IG.Lib.WaitFileEvent" name="IG.Lib.WaitFileEvent">
+<area shape="rect" id="node7" href="$d9/d46/classIG_1_1Lib_1_1WaitDirectoryCreation.html" title="Blocking execution of the current thread until the specified directory begins to exist." alt="" coords="835,5,1022,32"/>
+<area shape="rect" id="node8" href="$d3/da5/classIG_1_1Lib_1_1WaitDirectoryRemoval.html" title="Blocking execution of the current thread until the specified directory ceases to exist." alt="" coords="835,56,1023,83"/>
+<area shape="rect" id="node9" href="$d1/d1e/classIG_1_1Lib_1_1WaitFileCreation.html" title="Blocking execution of the current thread until the specified file begins to exist." alt="" coords="851,107,1007,133"/>
+<area shape="rect" id="node10" href="$d6/de8/classIG_1_1Lib_1_1WaitFileRemoval.html" title="Blocking execution of the current thread until the specified file ceases to exist." alt="" coords="850,157,1007,184"/>
+<area shape="rect" id="node2" href="$d5/d42/classIG_1_1Lib_1_1WaitFileEventBase.html" title="Base class for classes that provide blocking until a file or directory is created/removed." alt="" coords="467,81,599,108"/>
+<area shape="rect" id="node3" href="$df/dea/classIG_1_1Lib_1_1WaitConditionBase.html" title="Base class for objects that perform waiting until a condition is fulfilled." alt="" coords="285,81,419,108"/>
+<area shape="rect" id="node4" href="$de/d1e/interfaceIG_1_1Lib_1_1IWaitCondition.html" title="Interface for classes that implement blocking until a specified condition is met." alt="" coords="131,132,237,159"/>
+<area shape="rect" id="node6" href="$d2/d48/interfaceIG_1_1Lib_1_1IWaitFileEvent.html" title="Interface for classes that provide waiting for specific file events (such as ceration or deletion of ..." alt="" coords="299,132,405,159"/>
+<area shape="rect" id="node5" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="5,107,83,133"/>
+</map>

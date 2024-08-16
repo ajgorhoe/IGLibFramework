@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$dd/d6e/classIG_1_1Gr_1_1Mesh.html" title="Base class for all mesh classes." alt="" coords="5,31,95,57"/>
+<area shape="rect" id="node2" href="$d7/d1d/classIG_1_1Gr_1_1Mesh2D.html" title="IG.Gr.Mesh2D" alt="" coords="143,5,248,32"/>
+<area shape="rect" id="node3" href="$d5/ddb/classIG_1_1Gr_1_1Mesh3D.html" title="IG.Gr.Mesh3D" alt="" coords="143,56,248,83"/>
+<area shape="rect" id="node4" href="$d9/d83/classIG_1_1Gr_1_1SurfceMesh3D.html" title="Surface mesh in 3 dimensions." alt="" coords="296,56,439,83"/>
+<area shape="rect" id="node5" href="$d5/da1/classIG_1_1Gr_1_1StructuredSurfaceMesh3D.html" title="IG.Gr.StructuredSurfaceMesh3D" alt="" coords="487,56,696,83"/>
+</map>

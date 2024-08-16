@@ -1,0 +1,4 @@
+<map id="IG.Num.BoundingBox2d" name="IG.Num.BoundingBox2d">
+<area shape="rect" id="node2" href="$df/d61/classIG_1_1Num_1_1BoundingBoxBase.html" title="Base class for bounding boxes that define minimal and maximal co&#45;ordinates of objects, groups of objects, and regions in space." alt="" coords="73,80,203,107"/>
+<area shape="rect" id="node3" href="$db/d5e/interfaceIG_1_1Num_1_1IBoundingBox.html" title="Bounding box, defines minimum and maximum co&#45;ordinates of domains, geometric objects and their groups..." alt="" coords="35,5,137,32"/>
+</map>

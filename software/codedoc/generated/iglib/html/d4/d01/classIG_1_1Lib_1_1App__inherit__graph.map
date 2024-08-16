@@ -1,0 +1,6 @@
+<map id="IG.Lib.App" name="IG.Lib.App">
+<area shape="rect" id="node4" href="$d9/def/classIG_1_1Forms_1_1AppTestForms.html" title="Test application for forms. Usage: AppTestForms.Init()." alt="" coords="5,229,171,256"/>
+<area shape="rect" id="node5" href="$d1/ddf/classIG_1_1Lib_1_1AppTest.html" title="IG.Lib.AppTest" alt="" coords="195,229,303,256"/>
+<area shape="rect" id="node2" href="$dd/d1b/classIG_1_1Lib_1_1ModuleBase.html" title="Manages basic program informatin and resources such as directories, expiration time, etc." alt="" coords="163,80,258,107"/>
+<area shape="rect" id="node3" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="129,5,207,32"/>
+</map>

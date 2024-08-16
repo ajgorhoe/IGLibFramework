@@ -1,0 +1,7 @@
+<map id="IG.Num.ParallelJobDispatcherGen&lt; InputType, ResultType &gt;" name="IG.Num.ParallelJobDispatcherGen&lt; InputType, ResultType &gt;">
+<area shape="rect" id="node2" href="$da/db9/classIG_1_1Num_1_1ParallelJobDispatcherGen_3_01InputType_00_01ResultType_00_01JobContainerType_01_4.html" title="Parallel job dispatcher for job containers that inherit from ParallelJobContainerGen{InputType, ResultType}." alt="" coords="591,49,773,119"/>
+<area shape="rect" id="node3" href="$d7/db4/classIG_1_1Num_1_1ParallelJobDispatcherBase_3_01JobContainerType_01_4.html" title="Parallel job dispatcher. Accepts job requests and dispatches jobs to parallel job servers when availa..." alt="" coords="365,63,543,105"/>
+<area shape="rect" id="node4" href="$d1/d6b/classIG_1_1Num_1_1ParallelJobDispatcherBase.html" title="Base class for parallel job dispatchers. Accepts job requests and dispatches jobs to parallel job ser..." alt="" coords="140,71,317,97"/>
+<area shape="rect" id="node5" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="10,12,87,39"/>
+<area shape="rect" id="node6" href="$dc/d79/interfaceIG_1_1Lib_1_1IIdentifiable.html" title="Classes whose instances have unique integer IDs." alt="" coords="5,129,92,156"/>
+</map>

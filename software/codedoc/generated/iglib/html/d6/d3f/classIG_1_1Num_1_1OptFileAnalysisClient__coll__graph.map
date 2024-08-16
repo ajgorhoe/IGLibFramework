@@ -1,0 +1,12 @@
+<map id="IG.Num.OptFileAnalysisClient" name="IG.Num.OptFileAnalysisClient">
+<area shape="rect" id="node2" href="$dd/d1e/classIG_1_1Num_1_1AnalysisBase.html" title="Base class for direct analysis classes that define optimization problems. Represent the complete defi..." alt="" coords="66,199,169,225"/>
+<area shape="rect" id="node3" href="$d5/d59/interfaceIG_1_1Num_1_1IAnalysis.html" title="Interface for direct analysis classes used in optimization problems." alt="" coords="5,109,80,136"/>
+<area shape="rect" id="node4" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="117,109,195,136"/>
+<area shape="rect" id="node9" href="$d2/d92/classIG_1_1Num_1_1OptFileManager.html" title="Performs elementary operations for optimization and analysis servers and clients that exchange data a..." alt="" coords="244,199,407,225"/>
+<area shape="rect" id="node5" href="$d5/d4e/classIG_1_1Num_1_1AnalysisResults.html" title="Single objective optimization analysis results. Used to transfer parameters input (e..." alt="" coords="507,109,671,136"/>
+<area shape="rect" id="node6" href="$d4/d34/interfaceIG_1_1Num_1_1IAnalysisResults.html" title="Single objective optimization analysis results. Used to transfer parameters input (e..." alt="" coords="391,5,510,32"/>
+<area shape="rect" id="node7" href="$d8/d86/interfaceIG_1_1Num_1_1IMatrix.html" title="Real matrix interface." alt="" coords="535,5,644,32"/>
+<area shape="rect" id="node8" href="$d3/d24/interfaceIG_1_1Num_1_1IVector.html" title="Real vector intrface." alt="" coords="674,5,785,32"/>
+<area shape="rect" id="node10" href="$d5/d59/interfaceIG_1_1Num_1_1IAnalysis.html" title="Interface for direct analysis classes used in optimization problems." alt="" coords="219,109,341,136"/>
+<area shape="rect" id="node11" href="$d1/d02/interfaceIG_1_1Lib_1_1ISerializer.html" title="Interface for helper classes that perform serialization/deserialization of objects." alt="" coords="365,109,483,136"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="IG.Gr.GraphicPrimitiveSimple" name="IG.Gr.GraphicPrimitiveSimple">
+<area shape="rect" id="node3" href="$df/d95/classIG_1_1Gr_1_1LinePrimitive.html" title="IG.Gr.LinePrimitive" alt="" coords="449,5,579,32"/>
+<area shape="rect" id="node4" href="$d1/da1/classIG_1_1Gr_1_1PointPrimitive.html" title="IG.Gr.PointPrimitive" alt="" coords="446,56,582,83"/>
+<area shape="rect" id="node5" href="$d4/d10/classIG_1_1Gr_1_1QuadriLateralFacePrimitive.html" title="IG.Gr.QuadriLateralFacePrimitive" alt="" coords="408,107,620,133"/>
+<area shape="rect" id="node6" href="$d5/d30/classIG_1_1Gr_1_1TextPrimitive.html" title="IG.Gr.TextPrimitive" alt="" coords="449,157,579,184"/>
+<area shape="rect" id="node7" href="$d7/d61/classIG_1_1Gr_1_1TrilateralFacePrimitive.html" title="IG.Gr.TrilateralFacePrimitive" alt="" coords="422,208,606,235"/>
+<area shape="rect" id="node2" href="$d3/d1a/classIG_1_1Gr_1_1GraphicPrimitive.html" title="Abstract base class for all graphic primitives such as lines, facets, etc." alt="" coords="5,107,121,133"/>
+</map>

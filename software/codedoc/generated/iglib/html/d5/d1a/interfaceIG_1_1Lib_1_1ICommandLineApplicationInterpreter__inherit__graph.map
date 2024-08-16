@@ -1,0 +1,5 @@
+<map id="IG.Lib.ICommandLineApplicationInterpreter" name="IG.Lib.ICommandLineApplicationInterpreter">
+<area shape="rect" id="node2" href="$de/dcf/classIG_1_1Lib_1_1CommandLineApplicationInterpreter.html" title="Simple command&#45;line application interpreters, holds a set of commands that can be executed by name..." alt="" coords="264,64,471,105"/>
+<area shape="rect" id="node3" href="$d2/d86/classIG_1_1Lib_1_1CommandLineApplicationScriptInterpreter.html" title="Command&#45;line interpreters adapted for executing script commands." alt="" coords="519,5,725,47"/>
+<area shape="rect" id="node4" href="$d6/d30/classIG_1_1Lib_1_1NeuralApplicationInterpreter.html" title="Command line application interpreter that contains some neural networks &#45; related commands..." alt="" coords="541,71,703,112"/>
+</map>

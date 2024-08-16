@@ -1,0 +1,7 @@
+<map id="IG.Num.LinearSolverBase" name="IG.Num.LinearSolverBase">
+<area shape="rect" id="node2" href="$df/de1/classIG_1_1Num_1_1CholeskyDecomposition.html" title="Cholesky decomposition of a matrix. Available for symmetric positive definite matrices. " alt="" coords="237,5,447,32"/>
+<area shape="rect" id="node3" href="$dd/d87/classIG_1_1Num_1_1EigenValueDecomposition.html" title="Eigenvalue decomposition of a matrix. " alt="" coords="231,56,453,83"/>
+<area shape="rect" id="node4" href="$db/dc0/classIG_1_1Num_1_1LUDecomposition.html" title="LU decomposition of a matrix. " alt="" coords="256,107,428,133"/>
+<area shape="rect" id="node5" href="$d3/d52/classIG_1_1Num_1_1QRDecomposition.html" title="QR decomposition of a matrix. " alt="" coords="255,157,429,184"/>
+<area shape="rect" id="node6" href="$d5/de5/classIG_1_1Num_1_1SingularValueDecomposition.html" title="Singular value decomposition of a matrix. " alt="" coords="224,208,460,235"/>
+</map>

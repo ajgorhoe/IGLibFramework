@@ -1,0 +1,10 @@
+<map id="IG.Gr.GraphicPrimitive" name="IG.Gr.GraphicPrimitive">
+<area shape="rect" id="node2" href="$df/db0/classIG_1_1Gr_1_1GraphicPrimitiveSimple.html" title="GraphicPrimitive that has a protected Coordinates[] array." alt="" coords="204,132,395,159"/>
+<area shape="rect" id="node8" href="$d2/da6/classIG_1_1Gr_1_1SurfaceGridPrimitive.html" title="IG.Gr.SurfaceGridPrimitive" alt="" coords="212,212,387,239"/>
+<area shape="rect" id="node3" href="$df/d95/classIG_1_1Gr_1_1LinePrimitive.html" title="IG.Gr.LinePrimitive" alt="" coords="483,5,614,32"/>
+<area shape="rect" id="node4" href="$d1/da1/classIG_1_1Gr_1_1PointPrimitive.html" title="IG.Gr.PointPrimitive" alt="" coords="481,56,617,83"/>
+<area shape="rect" id="node5" href="$d4/d10/classIG_1_1Gr_1_1QuadriLateralFacePrimitive.html" title="IG.Gr.QuadriLateralFacePrimitive" alt="" coords="443,107,655,133"/>
+<area shape="rect" id="node6" href="$d5/d30/classIG_1_1Gr_1_1TextPrimitive.html" title="IG.Gr.TextPrimitive" alt="" coords="483,157,614,184"/>
+<area shape="rect" id="node7" href="$d7/d61/classIG_1_1Gr_1_1TrilateralFacePrimitive.html" title="IG.Gr.TrilateralFacePrimitive" alt="" coords="457,208,641,235"/>
+<area shape="rect" id="node9" href="$d8/d07/classIG_1_1Gr_1_1StructuredSurfaceGridPrimitive.html" title="IG.Gr.StructuredSurfaceGrid\lPrimitive" alt="" coords="456,259,641,301"/>
+</map>

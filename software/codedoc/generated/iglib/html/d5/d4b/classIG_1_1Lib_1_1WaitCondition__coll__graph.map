@@ -1,0 +1,7 @@
+<map id="IG.Lib.WaitCondition" name="IG.Lib.WaitCondition">
+<area shape="rect" id="node2" href="$df/dea/classIG_1_1Lib_1_1WaitConditionBase.html" title="Base class for objects that perform waiting until a condition is fulfilled." alt="" coords="28,157,161,184"/>
+<area shape="rect" id="node3" href="$de/d1e/interfaceIG_1_1Lib_1_1IWaitCondition.html" title="Interface for classes that implement blocking until a specified condition is met." alt="" coords="79,81,185,108"/>
+<area shape="rect" id="node4" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="33,5,111,32"/>
+<area shape="rect" id="node5" href="$de/de7/classIG_1_1Lib_1_1StopWatch1.html" title="Timer for measuring execution times and other intervals of time elapsed between successive events..." alt="" coords="210,81,342,108"/>
+<area shape="rect" id="node6" href="$dc/d79/interfaceIG_1_1Lib_1_1IIdentifiable.html" title="Classes whose instances have unique integer IDs." alt="" coords="233,5,319,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="IG.Lib.CharacterBuffer" name="IG.Lib.CharacterBuffer">
+<area shape="rect" id="node2" href="$dc/d03/interfaceIG_1_1Lib_1_1ICharacterBuffer.html" title="Interface for all implementations of read&#45;write character buffer. Classes that implement this interfa..." alt="" coords="81,80,196,107"/>
+<area shape="rect" id="node3" href="$d0/d9c/interfaceIG_1_1Lib_1_1ICharacterBufferReadOnly.html" title="Interface for all implementations of read&#45;only character buffer. Classes that implement this interfac..." alt="" coords="5,5,176,32"/>
+</map>

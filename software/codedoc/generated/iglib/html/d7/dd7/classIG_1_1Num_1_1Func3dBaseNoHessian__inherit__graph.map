@@ -1,0 +1,9 @@
+<map id="IG.Num.Func3dBaseNoHessian" name="IG.Num.Func3dBaseNoHessian">
+<area shape="rect" id="node6" href="$d1/d3b/classIG_1_1Gr3d_1_1VtkPlotBase_1_1Func3dZ.html" title="3D function that returns the third component of its 3D vector argument. Used e.g. for coloring graphs..." alt="" coords="939,5,1137,32"/>
+<area shape="rect" id="node7" href="$d0/d4d/classIG_1_1Gr3d_1_1VtkPlotBase_1_1Func3dZero.html" title="3D function that returns 0. Used e.g. for coloring graphs by heights." alt="" coords="930,56,1146,83"/>
+<area shape="rect" id="node8" href="$db/dd6/classIG_1_1Num_1_1Func3dExamples_1_1Func3dXYZ.html" title="Function f(x, y, z) = x * y * z. " alt="" coords="917,107,1159,133"/>
+<area shape="rect" id="node2" href="$d4/d29/classIG_1_1Num_1_1Func3dBase.html" title="Base class for scalar functions of 3 variables (base for implementation of IFunc3d interface)..." alt="" coords="520,56,615,83"/>
+<area shape="rect" id="node3" href="$d2/d9e/classIG_1_1Num_1_1ScalarFunctionUntransformedBase.html" title="Base class for defining scalar functions without possibility of affine transformation of parameters..." alt="" coords="249,56,472,83"/>
+<area shape="rect" id="node4" href="$d8/d56/interfaceIG_1_1Num_1_1IScalarFunctionUntransformed.html" title="Scalar functions of vector arguments." alt="" coords="5,5,201,32"/>
+<area shape="rect" id="node5" href="$d5/d03/interfaceIG_1_1Num_1_1IFunc3d.html" title="Represents scalar functions of 2 variables." alt="" coords="327,107,395,133"/>
+</map>

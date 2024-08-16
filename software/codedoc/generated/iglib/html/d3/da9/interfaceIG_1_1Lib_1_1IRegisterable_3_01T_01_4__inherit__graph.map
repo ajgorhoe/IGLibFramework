@@ -1,0 +1,8 @@
+<map id="IG.Lib.IRegisterable&lt; T &gt;" name="IG.Lib.IRegisterable&lt; T &gt;">
+<area shape="rect" id="node3" href="$d3/d58/classIG_1_1Lib_1_1CommandLine.html" title="Represents a single command&#45;line that can be executed. $A Igor Feb09;" alt="" coords="384,5,527,32"/>
+<area shape="rect" id="node4" href="$d7/db9/classIG_1_1Lib_1_1CommandLineInterpreter.html" title="Base class for all command line interpreters." alt="" coords="355,56,556,83"/>
+<area shape="rect" id="node5" href="$d0/d06/classIG_1_1Lib_1_1ExpressionEvaluatorJint.html" title="JavaScript Evaluator with command&#45;line interpreter, based on Jint." alt="" coords="604,132,803,159"/>
+<area shape="rect" id="node6" href="$da/d42/classIG_1_1Lib_1_1ExpressionEvaluatorJs.html" title="JavaScript Evaluator with command&#45;line interpreter." alt="" coords="360,157,551,184"/>
+<area shape="rect" id="node7" href="$dd/d2e/classIG_1_1Lib_1_1RegisterableExamples_1_1ExampleIRegistrable.html" title="Example implementation of IIdentifiable interface." alt="" coords="358,209,553,250"/>
+<area shape="rect" id="node2" href="$dc/d79/interfaceIG_1_1Lib_1_1IIdentifiable.html" title="Classes whose instances have unique integer IDs." alt="" coords="5,107,92,133"/>
+</map>

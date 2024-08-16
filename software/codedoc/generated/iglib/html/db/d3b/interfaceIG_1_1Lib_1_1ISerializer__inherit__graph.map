@@ -1,0 +1,5 @@
+<map id="IG.Lib.ISerializer" name="IG.Lib.ISerializer">
+<area shape="rect" id="node2" href="$d0/d1b/classIG_1_1Lib_1_1SerializerBase.html" title="Base class for serialization helper classes." alt="" coords="5,80,149,107"/>
+<area shape="rect" id="node3" href="$d0/d1a/classIG_1_1Lib_1_1SerializerJsonBase.html" title="Helper class for JSON serialization and deserialization. This class does not enable formatting of the..." alt="" coords="47,155,217,181"/>
+<area shape="rect" id="node4" href="$d4/d1f/classIG_1_1Lib_1_1SerializerJson.html" title="Helper class for JSON serialization and deserialization. This class enables formatting of the generat..." alt="" coords="61,229,203,256"/>
+</map>

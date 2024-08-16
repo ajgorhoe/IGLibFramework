@@ -1,0 +1,9 @@
+<map id="IG.Neural.Func2dFromApproximator" name="IG.Neural.Func2dFromApproximator">
+<area shape="rect" id="node2" href="$da/d29/classIG_1_1Num_1_1Func2dBase.html" title="Base class for scalar functions of 2 variables (base for implementation of IFunc2d interface)..." alt="" coords="241,157,336,184"/>
+<area shape="rect" id="node3" href="$d2/d9e/classIG_1_1Num_1_1ScalarFunctionUntransformedBase.html" title="Base class for defining scalar functions without possibility of affine transformation of parameters..." alt="" coords="141,81,364,108"/>
+<area shape="rect" id="node4" href="$d8/d56/interfaceIG_1_1Num_1_1IScalarFunctionUntransformed.html" title="Scalar functions of vector arguments." alt="" coords="5,5,201,32"/>
+<area shape="rect" id="node5" href="$d8/d15/interfaceIG_1_1Num_1_1IFunc2d.html" title="Represents scalar functions of 2 variables." alt="" coords="388,81,456,108"/>
+<area shape="rect" id="node6" href="$d7/db4/interfaceIG_1_1Num_1_1INeuralApproximator.html" title="Approximator of response by using neural networks. $A Igor Mar11;" alt="" coords="457,157,643,184"/>
+<area shape="rect" id="node7" href="$dc/d13/interfaceIG_1_1Num_1_1IVectorApproximator.html" title="Interface for vector function approximators." alt="" coords="480,81,620,108"/>
+<area shape="rect" id="node8" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="645,81,722,108"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="IG.Lib.CommandLineApplicationInterpreter" name="IG.Lib.CommandLineApplicationInterpreter">
+<area shape="rect" id="node4" href="$d2/d86/classIG_1_1Lib_1_1CommandLineApplicationScriptInterpreter.html" title="Command&#45;line interpreters adapted for executing script commands." alt="" coords="539,5,745,47"/>
+<area shape="rect" id="node5" href="$d6/d30/classIG_1_1Lib_1_1NeuralApplicationInterpreter.html" title="Command line application interpreter that contains some neural networks &#45; related commands..." alt="" coords="561,71,723,112"/>
+<area shape="rect" id="node2" href="$de/dfd/interfaceIG_1_1Lib_1_1ICommandLineApplicationInterpreter.html" title="Interface for simple command&#45;line applicatino interpreters." alt="" coords="5,21,236,47"/>
+<area shape="rect" id="node3" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="82,71,159,98"/>
+</map>

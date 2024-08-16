@@ -1,0 +1,5 @@
+<map id="IG.Num.RandomGeneratorSystem" name="IG.Num.RandomGeneratorSystem">
+<area shape="rect" id="node4" href="$d4/d9b/classIG_1_1Num_1_1RandGeneratorThreadSafe.html" title="Generator of uniformly distributed random numbers. Based on the default random generator. Instance members are thread safe!" alt="" coords="5,155,228,181"/>
+<area shape="rect" id="node5" href="$d2/dae/classIG_1_1Num_1_1RandomGenerator.html" title="Default generator of uniformly distributed random numbers. Provides a global generator and a static f..." alt="" coords="252,155,427,181"/>
+<area shape="rect" id="node3" href="$d4/d43/interfaceIG_1_1Num_1_1IRandomGenerator.html" title="Uniform random number generator." alt="" coords="238,5,369,32"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d2/d80/interfaceIG_1_1Lib_1_1IStringParsable.html" title="Defines classes that can be converted to strings and whose values can be parsed from strings..." alt="" coords="343,5,491,32"/>
+<area shape="rect" id="node2" href="$d8/d2d/interfaceIG_1_1Lib_1_1IVarType.html" title="Defines classes that can represent variables of different types. Used e.g. in interpreters and variab..." alt="" coords="540,31,651,57"/>
+<area shape="rect" id="node3" href="$d0/dc6/classIG_1_1Lib_1_1VarTypeBase.html" title="DO NOT USE! The base class implementing the IVarType interface." alt="" coords="699,31,837,57"/>
+<area shape="rect" id="node4" href="$da/d4c/classIG_1_1Lib_1_1CounterVar.html" title="IG.Lib.CounterVar" alt="" coords="885,5,1011,32"/>
+<area shape="rect" id="node5" href="$d9/d24/classIG_1_1Lib_1_1ScalarVar.html" title="Scalar variable." alt="" coords="889,56,1007,83"/>
+<area shape="rect" id="node6" href="$da/d7e/interfaceIG_1_1Lib_1_1ITypeName.html" title="Classes that provide separate type names. Classes used e.g. in interpreter systems to represent types..." alt="" coords="5,56,131,83"/>
+<area shape="rect" id="node7" href="$d6/d87/interfaceIG_1_1Lib_1_1IFromXml.html" title="Defines classes whose instances can be converted to Xml elements. Conversion is different from that u..." alt="" coords="179,31,293,57"/>
+<area shape="rect" id="node9" href="$d3/dd7/interfaceIG_1_1Lib_1_1IToXml.html" title="Defines classes whose instances can be created from Xml elements. Conversion is different from that u..." alt="" coords="187,81,285,108"/>
+<area shape="rect" id="node8" href="$dd/d2c/interfaceIG_1_1Lib_1_1IXmlConvertable.html" title="Defines classes that can be converted to/from Xml elements." alt="" coords="341,56,492,83"/>
+</map>

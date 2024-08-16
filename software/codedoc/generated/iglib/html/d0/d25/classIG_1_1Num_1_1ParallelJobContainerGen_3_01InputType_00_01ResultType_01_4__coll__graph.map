@@ -1,0 +1,6 @@
+<map id="IG.Num.ParallelJobContainerGen&lt; InputType, ResultType &gt;" name="IG.Num.ParallelJobContainerGen&lt; InputType, ResultType &gt;">
+<area shape="rect" id="node2" href="$d3/dbb/classIG_1_1Num_1_1ParallelJobContainerBase.html" title="Contains input data and results of a parallel job to be executed, oropertied indicating the state of ..." alt="" coords="109,171,280,197"/>
+<area shape="rect" id="node3" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="5,5,83,32"/>
+<area shape="rect" id="node5" href="$d1/d6b/classIG_1_1Num_1_1ParallelJobDispatcherBase.html" title="Base class for parallel job dispatchers. Accepts job requests and dispatches jobs to parallel job ser..." alt="" coords="82,81,307,108"/>
+<area shape="rect" id="node4" href="$dc/d79/interfaceIG_1_1Lib_1_1IIdentifiable.html" title="Classes whose instances have unique integer IDs." alt="" coords="302,5,389,32"/>
+</map>

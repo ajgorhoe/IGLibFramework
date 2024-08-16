@@ -1,0 +1,9 @@
+<map id="IG.Gr3d.Graph3dManipulatorWindow" name="IG.Gr3d.Graph3dManipulatorWindow">
+<area shape="rect" id="node3" href="$d3/d68/interfaceIG_1_1Forms_1_1IClosableFromContainedForm.html" title="Marker interface indicating that a form can be closed from the contained control." alt="" coords="963,57,1133,98"/>
+<area shape="rect" id="node4" href="$dc/d11/interfaceIG_1_1Gr3d_1_1IVtkFormContainer.html" title="This interface is implemented by the forms that contain the VTK control that can render VTK graphics..." alt="" coords="645,153,824,180"/>
+<area shape="rect" id="node12" href="$d8/d45/classIG_1_1Gr3d_1_1Graph3dManipulator.html" title="Basic control for manipulating 3D graphics." alt="" coords="955,403,1141,429"/>
+<area shape="rect" id="node5" href="$d2/d39/interfaceIG_1_1Gr3d_1_1IVtkFormContainerGen_3_01VtkControlType_01_4.html" title="This interface is implemented by the forms that contain the VTK control that can render VTK graphics..." alt="" coords="5,250,256,291"/>
+<area shape="rect" id="node9" href="$dc/d11/interfaceIG_1_1Gr3d_1_1IVtkFormContainer.html" title="This interface is implemented by the forms that contain the VTK control that can render VTK graphics..." alt="" coords="306,513,437,540"/>
+<area shape="rect" id="node7" href="$d1/db7/classIG_1_1Gr3d_1_1VtkControlBase.html" title="Basic control encapsulating the VTK&#39;s render control of type Kitware.VTK.RenderWindowControl." alt="" coords="653,531,816,557"/>
+<area shape="rect" id="node10" href="$d5/def/interfaceIG_1_1Gr3d_1_1I3dGraphicsControl.html" title="Interface for 3D graphics controls that can be manipulated via a standard set of commands for rotatio..." alt="" coords="305,564,437,591"/>
+</map>

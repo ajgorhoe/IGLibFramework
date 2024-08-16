@@ -1,0 +1,5 @@
+<map id="IG.Lib.SettingsReaderBase" name="IG.Lib.SettingsReaderBase">
+<area shape="rect" id="node4" href="$df/d82/classIG_1_1Lib_1_1SettingsReaderAppConfig.html" title="Provides functionality for retrieving settings from various sources such as application settings file..." alt="" coords="40,155,212,196"/>
+<area shape="rect" id="node2" href="$d9/df4/interfaceIG_1_1Lib_1_1ISettingsRreader.html" title="Interface for settings readers, which read pairs key/vvalue from various files or configuration serve..." alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node3" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="149,5,226,32"/>
+</map>

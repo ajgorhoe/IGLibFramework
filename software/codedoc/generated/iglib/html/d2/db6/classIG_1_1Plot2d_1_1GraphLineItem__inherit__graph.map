@@ -1,0 +1,4 @@
+<map id="IG.Plot2d.GraphLineItem" name="IG.Plot2d.GraphLineItem">
+<area shape="rect" id="node2" href="$d8/d1b/classIG_1_1Plot2d_1_1GraphPlotItem.html" title="Representation of a plottable item contained in a graph. This excludes markup markups such as axes..." alt="" coords="35,80,140,107"/>
+<area shape="rect" id="node3" href="$d6/d7e/classIG_1_1Plot2d_1_1GraphItem.html" title="Base lass for all items that can be put on a graph (including axes, labels, etc.)." alt="" coords="46,5,129,32"/>
+</map>

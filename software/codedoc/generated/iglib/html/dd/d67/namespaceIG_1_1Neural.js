@@ -1,0 +1,27 @@
+var namespaceIG_1_1Neural =
+[
+    [ "AnalysisFileServerNeural", "de/dac/classIG_1_1Neural_1_1AnalysisFileServerNeural.html", "de/dac/classIG_1_1Neural_1_1AnalysisFileServerNeural" ],
+    [ "ApproximationFileServerNeural", "d2/dba/classIG_1_1Neural_1_1ApproximationFileServerNeural.html", "d2/dba/classIG_1_1Neural_1_1ApproximationFileServerNeural" ],
+    [ "DataMapperIdentity", "df/dec/classIG_1_1Neural_1_1DataMapperIdentity.html", "df/dec/classIG_1_1Neural_1_1DataMapperIdentity" ],
+    [ "DataMapperSimple", "d7/d70/classIG_1_1Neural_1_1DataMapperSimple.html", "d7/d70/classIG_1_1Neural_1_1DataMapperSimple" ],
+    [ "Func2dFromApproximator", "d9/dc1/classIG_1_1Neural_1_1Func2dFromApproximator.html", "d9/dc1/classIG_1_1Neural_1_1Func2dFromApproximator" ],
+    [ "IDataMapper", "d0/d0b/interfaceIG_1_1Neural_1_1IDataMapper.html", "d0/d0b/interfaceIG_1_1Neural_1_1IDataMapper" ],
+    [ "INeuralApproximatorContainer", "dd/d82/interfaceIG_1_1Neural_1_1INeuralApproximatorContainer.html", "dd/d82/interfaceIG_1_1Neural_1_1INeuralApproximatorContainer" ],
+    [ "InputMappingDefinitionElement", "da/d85/classIG_1_1Neural_1_1InputMappingDefinitionElement.html", "da/d85/classIG_1_1Neural_1_1InputMappingDefinitionElement" ],
+    [ "MapDataDefinitionDto", "d3/d99/classIG_1_1Neural_1_1MapDataDefinitionDto.html", "d3/d99/classIG_1_1Neural_1_1MapDataDefinitionDto" ],
+    [ "MapImputElementDefinitionDto", "da/d0a/classIG_1_1Neural_1_1MapImputElementDefinitionDto.html", "da/d0a/classIG_1_1Neural_1_1MapImputElementDefinitionDto" ],
+    [ "MapNeuralImputOutputElementDefinitionDto< ElementType >", "da/dcb/classIG_1_1Neural_1_1MapNeuralImputOutputElementDefinitionDto_3_01ElementType_01_4.html", "da/dcb/classIG_1_1Neural_1_1MapNeuralImputOutputElementDefinitionDto_3_01ElementType_01_4" ],
+    [ "MapOutputElementDefinitionDto", "de/de5/classIG_1_1Neural_1_1MapOutputElementDefinitionDto.html", "de/de5/classIG_1_1Neural_1_1MapOutputElementDefinitionDto" ],
+    [ "MappingApproximationFileManager", "de/d55/classIG_1_1Neural_1_1MappingApproximationFileManager.html", "de/d55/classIG_1_1Neural_1_1MappingApproximationFileManager" ],
+    [ "MappingApproximationFileServerNeural", "d9/db1/classIG_1_1Neural_1_1MappingApproximationFileServerNeural.html", "d9/db1/classIG_1_1Neural_1_1MappingApproximationFileServerNeural" ],
+    [ "MappingDefinition", "d9/d40/classIG_1_1Neural_1_1MappingDefinition.html", "d9/d40/classIG_1_1Neural_1_1MappingDefinition" ],
+    [ "MappingDefinitionElement", "da/df7/classIG_1_1Neural_1_1MappingDefinitionElement.html", "da/df7/classIG_1_1Neural_1_1MappingDefinitionElement" ],
+    [ "NeuraApproximationFileManager", "d5/de7/classIG_1_1Neural_1_1NeuraApproximationFileManager.html", "d5/de7/classIG_1_1Neural_1_1NeuraApproximationFileManager" ],
+    [ "NeuralAllpicationCommands", "d2/d15/classIG_1_1Neural_1_1NeuralAllpicationCommands.html", "d2/d15/classIG_1_1Neural_1_1NeuralAllpicationCommands" ],
+    [ "NeuralApplicationCommandsTadej", "dd/d3e/classIG_1_1Neural_1_1NeuralApplicationCommandsTadej.html", "dd/d3e/classIG_1_1Neural_1_1NeuralApplicationCommandsTadej" ],
+    [ "NeuralApproximatorAforge", "da/d91/classIG_1_1Neural_1_1NeuralApproximatorAforge.html", "da/d91/classIG_1_1Neural_1_1NeuralApproximatorAforge" ],
+    [ "NeuralApproximatorAForgeDto", "d1/d9c/classIG_1_1Neural_1_1NeuralApproximatorAForgeDto.html", "d1/d9c/classIG_1_1Neural_1_1NeuralApproximatorAForgeDto" ],
+    [ "NeuralFileConst", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst.html", "d1/de7/classIG_1_1Neural_1_1NeuralFileConst" ],
+    [ "NeuralTadej", "de/df2/classIG_1_1Neural_1_1NeuralTadej.html", "de/df2/classIG_1_1Neural_1_1NeuralTadej" ],
+    [ "OutputMappingDefinitionElement", "d6/d84/classIG_1_1Neural_1_1OutputMappingDefinitionElement.html", "d6/d84/classIG_1_1Neural_1_1OutputMappingDefinitionElement" ]
+];

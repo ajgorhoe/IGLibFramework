@@ -1,0 +1,7 @@
+<map id="IG.Lib.LoadableScriptInterpreterBase" name="IG.Lib.LoadableScriptInterpreterBase">
+<area shape="rect" id="node2" href="$d8/dff/interfaceIG_1_1Lib_1_1ILoadableScriptInterpreter.html" title="Interface for interpreters that can install commands from loadable scripts and run them..." alt="" coords="5,95,175,121"/>
+<area shape="rect" id="node3" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="91,5,169,32"/>
+<area shape="rect" id="node4" href="$d3/d40/classIG_1_1Lib_1_1ScriptLoaderBase.html" title="Dynamically compiles, loads and instantiates classes of type ILoadableScript from files or from strin..." alt="" coords="199,95,362,121"/>
+<area shape="rect" id="node5" href="$d7/d66/interfaceIG_1_1Lib_1_1ILoadableScript.html" title="Interface for classes that can be dynamically loadeded from scripts and run, which provides functiona..." alt="" coords="199,5,349,32"/>
+<area shape="rect" id="node6" href="$d7/df0/classIG_1_1Lib_1_1Logger.html" title="Temporary logging of errors, warnings and infos for later processing. It is used to log multiple even..." alt="" coords="373,5,471,32"/>
+</map>

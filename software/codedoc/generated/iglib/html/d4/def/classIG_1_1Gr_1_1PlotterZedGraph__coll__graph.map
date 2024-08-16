@@ -1,0 +1,8 @@
+<map id="IG.Gr.PlotterZedGraph" name="IG.Gr.PlotterZedGraph">
+<area shape="rect" id="node2" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="5,185,83,212"/>
+<area shape="rect" id="node4" href="$dd/d52/structIG_1_1Lib_1_1color.html" title="Extended color representation. Stores RGB components and opacity as double numbers ranging fom 0 to 1..." alt="" coords="221,185,309,212"/>
+<area shape="rect" id="node5" href="$dd/dcf/classIG_1_1Num_1_1BoundingBox2d.html" title="A 2D bounding box." alt="" coords="350,185,511,212"/>
+<area shape="rect" id="node6" href="$df/d61/classIG_1_1Num_1_1BoundingBoxBase.html" title="Base class for bounding boxes that define minimal and maximal co&#45;ordinates of objects, groups of objects, and regions in space." alt="" coords="434,109,563,136"/>
+<area shape="rect" id="node7" href="$db/d5e/interfaceIG_1_1Num_1_1IBoundingBox.html" title="Bounding box, defines minimum and maximum co&#45;ordinates of domains, geometric objects and their groups..." alt="" coords="345,5,447,32"/>
+<area shape="rect" id="node8" href="$d3/d24/interfaceIG_1_1Num_1_1IVector.html" title="Real vector intrface." alt="" coords="471,5,582,32"/>
+</map>

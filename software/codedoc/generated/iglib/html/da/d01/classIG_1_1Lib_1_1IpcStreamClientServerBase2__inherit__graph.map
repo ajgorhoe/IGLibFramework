@@ -1,0 +1,12 @@
+<map id="IG.Lib.IpcStreamClientServerBase2" name="IG.Lib.IpcStreamClientServerBase2">
+<area shape="rect" id="node4" href="$da/d66/classIG_1_1Lib_1_1IpcStreamClientBase.html" title="Client to the pipe server (classes derived from IpcStreamClientServerBase2)." alt="" coords="596,63,779,90"/>
+<area shape="rect" id="node8" href="$d1/d4d/classIG_1_1Lib_1_1IpcStreamServerBase.html" title="Server that creates a named pipe, listens on its input stream, and sends responses to the client..." alt="" coords="595,114,780,141"/>
+<area shape="rect" id="node2" href="$d5/dd9/classIG_1_1Lib_1_1IpcStreamClientServerBase.html" title="Base class for client and server classes with stream&#45;based communication." alt="" coords="131,114,311,141"/>
+<area shape="rect" id="node3" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="5,89,83,115"/>
+<area shape="rect" id="node5" href="$d3/d53/classIG_1_1Lib_1_1NamedPipeClientBase.html" title="Client to the pipe server (classes derived from IpcStreamClientServerBase2)." alt="" coords="829,13,1020,39"/>
+<area shape="rect" id="node7" href="$df/d28/classIG_1_1Lib_1_1PipeClientBase.html" title="Client to the pipe server (classes derived from IpcStreamClientServerBase2)." alt="" coords="850,63,999,90"/>
+<area shape="rect" id="node6" href="$df/d39/classIG_1_1Lib_1_1CommandLineApplicationInterpreter_1_1InterpreterPipeClient.html" title="Client to the interpreter pipe server (classes derived from InterpreterPipeServer)." alt="" coords="1069,5,1276,47"/>
+<area shape="rect" id="node9" href="$d3/d6a/classIG_1_1Lib_1_1NamedPipeServerBase.html" title="Server that creates a named pipe, listens on its input stream, and sends responses to the client..." alt="" coords="828,114,1021,141"/>
+<area shape="rect" id="node11" href="$d9/db5/classIG_1_1Lib_1_1PipeServerBase.html" title="Server that creates a named pipe, listens on its input stream, and sends responses to the client..." alt="" coords="849,165,1001,191"/>
+<area shape="rect" id="node10" href="$da/d87/classIG_1_1Lib_1_1CommandLineApplicationInterpreter_1_1InterpreterPipeServer.html" title="Command&#45;line interpreter&#39;s server that creates a named pipe, listens on its input stream for client r..." alt="" coords="1069,107,1276,148"/>
+</map>

@@ -1,0 +1,25 @@
+var interfaceIG_1_1Num_1_1IMatrix =
+[
+    [ "GetCopy", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#a35bc288dde018d88963ce5357c15e62a", null ],
+    [ "GetNew", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#a7253b3ebe0901fe7194cdfbb1577c99c", null ],
+    [ "GetNew", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#a366e8bae31a34026818a12553ef66916", null ],
+    [ "GetNewVector", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#a62d88dc175e5f7a6b090d740b16fd4c4", null ],
+    [ "SetConstant", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#af19f1c2ad1f251a24af34b8a80f3fe8a", null ],
+    [ "SetIdentity", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#a274ab79bc85063df3f595fbfadd9816f", null ],
+    [ "SetRandom", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#abc71946fcb113a4edf10aefaf62fd361", null ],
+    [ "SetRandom", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#a85b042ec3cf48cb03b50c8455ce49b11", null ],
+    [ "SetDiagonal", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#ad0bdab0a1a989defb51811db8f9c4b58", null ],
+    [ "SetDiagonal", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#a0ab8a46ce21a38337be6e44e4b4f6957", null ],
+    [ "IsSquare", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#aee9f4d3745491a9099152a9fad9019a3", null ],
+    [ "IsSymmetric", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#a2589ea15bae021813203001a0cbe3772", null ],
+    [ "IsSymmetric", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#a427386c0afd423fc2331e014ece54e30", null ],
+    [ "ToStringReadable", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#aea11c10bcb4e880a4aeefdc073f76efc", null ],
+    [ "ToStringNewlines", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#a9d72da2a5559a1c378405885d2d0d30a", null ],
+    [ "ToStringNewlines", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#a6e00619c00f5da2e8b3209712e5a3994", null ],
+    [ "ToStringMath", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#aefc4ea0c8ac0d53b96f325befc53130f", null ],
+    [ "ToString", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#ae409d488d612812e582fa49894a23cdb", null ],
+    [ "ToString", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#acedceb6c268da0fa665f67cbf22c56a4", null ],
+    [ "ToStringMath", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#a1a15d24aac4e0c35dc4ae3a482ac4bc2", null ],
+    [ "GetHashFunctionInt", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#a819915443ca310f889ea5f58ef9a71b6", null ],
+    [ "GetHashFunctionString", "d8/d86/interfaceIG_1_1Num_1_1IMatrix.html#a60ebb06e2dab2e90f76006241928f11d", null ]
+];

@@ -1,0 +1,5 @@
+<map id="IG.Lib.ScriptLoaderIGLib.ScriptLoaderTest" name="IG.Lib.ScriptLoaderIGLib.ScriptLoaderTest">
+<area shape="rect" id="node2" href="$d3/dc9/classIG_1_1Lib_1_1ScriptLoaderIGLib.html" title="Base script loader class for IGLib." alt="" coords="77,155,202,181"/>
+<area shape="rect" id="node3" href="$d3/d40/classIG_1_1Lib_1_1ScriptLoaderBase.html" title="Dynamically compiles, loads and instantiates classes of type ILoadableScript from files or from strin..." alt="" coords="127,80,253,107"/>
+<area shape="rect" id="node4" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="51,5,129,32"/>
+</map>

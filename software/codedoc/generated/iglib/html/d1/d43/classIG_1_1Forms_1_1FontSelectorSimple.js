@@ -1,0 +1,27 @@
+var classIG_1_1Forms_1_1FontSelectorSimple =
+[
+    [ "FontSelectorSimple", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#acc120d8c461b2c18b93e94fcc15d3537", null ],
+    [ "FontSelectorSimple", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#a09bb50be57dd55617f7c81a2dfeecad6", null ],
+    [ "FontDescriptionShort", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#a22cddb9bc830d3992cc06e2b78a2bfe8", null ],
+    [ "FontDesctiptionShort", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#af6d9471980a5983be2e316823af98322", null ],
+    [ "UpdateAppearance", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#aa58b044ea6aeab33bd66c2cd48b8c631", null ],
+    [ "OpenFontDialog", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#ac9e6b2ec417fb6ad34da684658674d80", null ],
+    [ "OnFontSelected", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#a565aa7f8f78fb3e1079195b0591b2bd6", null ],
+    [ "OnFontSelectedFirstTime", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#a8069d5614378a03c600f8564c579ebeb", null ],
+    [ "btnOpenDialog_Click", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#a208ac5f18c853e3077b29b7e791b740f", null ],
+    [ "lblFontDescription_Click", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#a5bcc50c86080e43e34dc8102ab445384", null ],
+    [ "InitializeComponent", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#a2c0308b68a5b2fae0d4e1920b54ef071", null ],
+    [ "_isFontSelected", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#ad711f156867ed540cc76e738d763798c", null ],
+    [ "_selectedFont", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#a10fa8bbb30b871851fd976c099eacacd", null ],
+    [ "_initialFontLabelText", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#ab9ef8f06729c1be26942a352dff64a17", null ],
+    [ "btnOpenDialog", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#aa75d89b38ba39ed55615579d489a5685", null ],
+    [ "fontDialog1", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#a4a453d426c536508c861dd93f940181c", null ],
+    [ "lblFontDescription", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#a6ab1bab7aec123cfbdc7774ce77c9d30", null ],
+    [ "IsFontSelected", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#adedd6e60b2791e74fcec941d52c2fe5a", null ],
+    [ "SelectedFont", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#a14156605168fef7de56af5cc56cffb2b", null ],
+    [ "InitialFontLabelText", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#aa2e37b6e969d9e6682d51a6bb0550723", null ],
+    [ "InitialFontLabelForeColor", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#a04d93f89baa8b1b8d1f95a0c86807272", null ],
+    [ "NormalFontLabelForeColor", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#a84b88f1050cd5d48763cfa6a822fd4ee", null ],
+    [ "FontSelected", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#a497147515ceb4db7146113622212904d", null ],
+    [ "FontSelectedFirstTime", "d1/d43/classIG_1_1Forms_1_1FontSelectorSimple.html#a4953b455aae838ac544615cce6fcac91", null ]
+];

@@ -1,0 +1,8 @@
+<map id="IG.Lib.IToXml" name="IG.Lib.IToXml">
+<area shape="rect" id="node3" href="$dd/d2c/interfaceIG_1_1Lib_1_1IXmlConvertable.html" title="Defines classes that can be converted to/from Xml elements." alt="" coords="65,155,215,181"/>
+<area shape="rect" id="node2" href="$da/d7e/interfaceIG_1_1Lib_1_1ITypeName.html" title="Classes that provide separate type names. Classes used e.g. in interpreter systems to represent types..." alt="" coords="97,5,183,32"/>
+<area shape="rect" id="node4" href="$d8/d2d/interfaceIG_1_1Lib_1_1IVarType.html" title="Defines classes that can represent variables of different types. Used e.g. in interpreters and variab..." alt="" coords="85,229,195,256"/>
+<area shape="rect" id="node5" href="$d0/dc6/classIG_1_1Lib_1_1VarTypeBase.html" title="DO NOT USE! The base class implementing the IVarType interface." alt="" coords="71,304,209,331"/>
+<area shape="rect" id="node6" href="$da/d4c/classIG_1_1Lib_1_1CounterVar.html" title="IG.Lib.CounterVar" alt="" coords="5,379,131,405"/>
+<area shape="rect" id="node7" href="$d9/d24/classIG_1_1Lib_1_1ScalarVar.html" title="Scalar variable." alt="" coords="155,379,272,405"/>
+</map>

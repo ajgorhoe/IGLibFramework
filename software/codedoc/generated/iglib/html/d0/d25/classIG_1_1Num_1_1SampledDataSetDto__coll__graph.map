@@ -1,0 +1,6 @@
+<map id="IG.Num.SampledDataSetDto" name="IG.Num.SampledDataSetDto">
+<area shape="rect" id="node2" href="$da/d46/classIG_1_1Lib_1_1SerializationDto.html" title="SerializationDto\&lt; Sampled\lDataSet \&gt;" alt="" coords="5,124,181,165"/>
+<area shape="rect" id="node3" href="$d5/d0e/classIG_1_1Num_1_1SampledDataElementDto.html" title="DTO (data transfer object) for sampled data element (one point with vectors of input and output param..." alt="" coords="205,131,421,158"/>
+<area shape="rect" id="node4" href="$da/d46/classIG_1_1Lib_1_1SerializationDto.html" title="SerializationDto\&lt; Sampled\lDataElement \&gt;" alt="" coords="132,5,308,47"/>
+<area shape="rect" id="node5" href="$dc/dec/classIG_1_1Lib_1_1VectorDtoBase.html" title="DTO (data transfer object) for vector interface (IVector)." alt="" coords="333,13,481,39"/>
+</map>

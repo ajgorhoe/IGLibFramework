@@ -1,0 +1,5 @@
+<map id="IG.Plot2d.IGraph" name="IG.Plot2d.IGraph">
+<area shape="rect" id="node3" href="$d7/db4/classIG_1_1Plot2d_1_1GraphBase.html" title="Graph data &amp; control class." alt="" coords="6,155,151,181"/>
+<area shape="rect" id="node2" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="40,5,117,32"/>
+<area shape="rect" id="node4" href="$dc/dcc/classIG_1_1Plot2d_1_1GraphNPlot.html" title="NPlot graphs plotting object." alt="" coords="5,229,152,256"/>
+</map>

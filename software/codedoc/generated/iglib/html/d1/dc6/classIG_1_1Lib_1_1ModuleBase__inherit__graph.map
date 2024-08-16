@@ -1,0 +1,8 @@
+<map id="IG.Lib.ModuleBase" name="IG.Lib.ModuleBase">
+<area shape="rect" id="node3" href="$df/d9a/classIG_1_1Lib_1_1App.html" title="Base class for all application classes. Provides some basic functionality such as keeping information..." alt="" coords="208,155,291,181"/>
+<area shape="rect" id="node6" href="$db/dc7/classIG_1_1Lib_1_1Module.html" title="General module (or library) management class, a base class for specific module classes. Provides some basic functionality such as keeping information about the module, managing module directories and basic files, etc. Global module object is not implemented (in contrary to global program object), but it should be implemented in speciffic module classes derived from this one. " alt="" coords="327,155,430,181"/>
+<area shape="rect" id="node2" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="269,5,347,32"/>
+<area shape="rect" id="node4" href="$d9/def/classIG_1_1Forms_1_1AppTestForms.html" title="Test application for forms. Usage: AppTestForms.Init()." alt="" coords="5,229,171,256"/>
+<area shape="rect" id="node5" href="$d1/ddf/classIG_1_1Lib_1_1AppTest.html" title="IG.Lib.AppTest" alt="" coords="195,229,303,256"/>
+<area shape="rect" id="node7" href="$d6/d4c/classIG_1_1Lib_1_1ModuleTest.html" title="IG.Lib.ModuleTest" alt="" coords="327,229,454,256"/>
+</map>

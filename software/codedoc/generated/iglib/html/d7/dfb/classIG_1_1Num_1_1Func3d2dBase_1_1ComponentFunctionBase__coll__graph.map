@@ -1,0 +1,7 @@
+<map id="IG.Num.Func3d2dBase.ComponentFunctionBase" name="IG.Num.Func3d2dBase.ComponentFunctionBase">
+<area shape="rect" id="node2" href="$da/d29/classIG_1_1Num_1_1Func2dBase.html" title="Base class for scalar functions of 2 variables (base for implementation of IFunc2d interface)..." alt="" coords="160,157,255,184"/>
+<area shape="rect" id="node3" href="$d2/d9e/classIG_1_1Num_1_1ScalarFunctionUntransformedBase.html" title="Base class for defining scalar functions without possibility of affine transformation of parameters..." alt="" coords="96,81,319,108"/>
+<area shape="rect" id="node4" href="$d8/d56/interfaceIG_1_1Num_1_1IScalarFunctionUntransformed.html" title="Scalar functions of vector arguments." alt="" coords="5,5,201,32"/>
+<area shape="rect" id="node5" href="$d8/d15/interfaceIG_1_1Num_1_1IFunc2d.html" title="Represents scalar functions of 2 variables." alt="" coords="343,81,411,108"/>
+<area shape="rect" id="node6" href="$d3/d6f/interfaceIG_1_1Num_1_1IFunc3d2d.html" title="Represents 3D vector functions of 2 variables." alt="" coords="279,157,410,184"/>
+</map>

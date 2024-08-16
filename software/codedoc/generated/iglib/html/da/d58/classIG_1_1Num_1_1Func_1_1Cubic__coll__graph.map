@@ -1,0 +1,8 @@
+<map id="IG.Num.Func.Cubic" name="IG.Num.Func.Cubic">
+<area shape="rect" id="node2" href="$d5/d83/classIG_1_1Num_1_1RealFunction.html" title="Represents a real function of a real variabe." alt="" coords="81,293,180,320"/>
+<area shape="rect" id="node8" href="$d7/d61/classIG_1_1Num_1_1Func_1_1Quadratic.html" title="Quadratic function, f(x) = a2*x*x + a1*x + a0. Specific properties: Zero &#45; returns a zero..." alt="" coords="94,369,253,396"/>
+<area shape="rect" id="node3" href="$d6/d30/classIG_1_1Num_1_1RealFunctionBase.html" title="Base class for real functions of real variable." alt="" coords="93,81,221,108"/>
+<area shape="rect" id="node6" href="$d5/d83/classIG_1_1Num_1_1RealFunction.html" title="Represents a real function of a real variabe." alt="" coords="152,166,299,193"/>
+<area shape="rect" id="node4" href="$db/d0e/interfaceIG_1_1Num_1_1IRealFunction.html" title="Interface for real functions." alt="" coords="39,5,140,32"/>
+<area shape="rect" id="node7" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="277,369,355,396"/>
+</map>

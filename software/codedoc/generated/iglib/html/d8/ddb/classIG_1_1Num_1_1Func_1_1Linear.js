@@ -1,0 +1,25 @@
+var classIG_1_1Num_1_1Func_1_1Linear =
+[
+    [ "Linear", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#aad4229424f56c2ae6bd0c45690171fe0", null ],
+    [ "SetCoefficients", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#af506307d3e70dcec5da815f2d233818a", null ],
+    [ "SetInterpolation", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#a1767f1266760e929d4193a63dc4b816b", null ],
+    [ "SetInterpolation", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#ab2b7e8d5b286fc717f0795f05dab0900", null ],
+    [ "RefValue", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#aac774ce31faf9b23c6270051f3ad787e", null ],
+    [ "RefDerivative", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#a8247454dc44a5c546fc5819570263320", null ],
+    [ "RefSecondDerivative", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#ad14e5f310140d6ee8d3a1e3ddadd1755", null ],
+    [ "RefDerivative", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#a1f7fc18fd4a3e112e8f511fe0cef962f", null ],
+    [ "HigherDerivativeDefined", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#a65ab50efddd689aeddfb8370cb724740", null ],
+    [ "RefIntegral", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#a3f8fbfd19d3ffe9f91035fbe2d012241", null ],
+    [ "RefInverse", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#a0d6bf362f6ab280aa2423a3e4ce73ff8", null ],
+    [ "_a0", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#a0224b7269bae63dac3c5d16861b5ebd1", null ],
+    [ "_a1", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#a5bb3636174baa2f515a25b6227a46096", null ],
+    [ "a0", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#a279104cfa4fe6678fe6d5a4895cbbd93", null ],
+    [ "a1", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#a4a6a1508431056f059b899732a150090", null ],
+    [ "Zero", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#ae71e82d15bc2c02242826da29b847a82", null ],
+    [ "HasZero", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#ae2e9024cd73685cd6e1ad5dd9f1a75a7", null ],
+    [ "ValueDefined", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#adb19c0a868aac949509eddc5c40b3ff0", null ],
+    [ "DerivativeDefined", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#a11cc54784c30083be1dd756e539aebeb", null ],
+    [ "SecondDerivativeDefined", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#a0f17f56dd6166d4a02740d52afc0511b", null ],
+    [ "IntegralDefined", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#aec17b0f02e15471d4e08d3fae6daba84", null ],
+    [ "InverseDefined", "d8/ddb/classIG_1_1Num_1_1Func_1_1Linear.html#af479f680752fc769bfc34ba5d00d741f", null ]
+];

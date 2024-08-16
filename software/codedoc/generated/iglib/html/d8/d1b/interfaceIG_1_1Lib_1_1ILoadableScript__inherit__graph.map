@@ -1,0 +1,22 @@
+<map id="IG.Lib.ILoadableScript" name="IG.Lib.ILoadableScript">
+<area shape="rect" id="node2" href="$d1/dca/interfaceIG_1_1Lib_1_1ILoadableScriptC.html" title="Controllable loadable script, provides more control over loading and execution." alt="" coords="451,107,609,134"/>
+<area shape="rect" id="node5" href="$dc/d0c/classIG_1_1Script_1_1LoadableScriptShellNeuralBase.html" title="Base class for loadable scripts that are used as custom applications that inclued neural networks app..." alt="" coords="1183,53,1345,95"/>
+<area shape="rect" id="node6" href="$d1/d30/classIG_1_1Script_1_1LoadableScriptShellNeural.html" title="Base class for loadable scripts that are used as custom applications that inclued neural networks app..." alt="" coords="1393,24,1556,65"/>
+<area shape="rect" id="node7" href="$d7/d15/classIG_1_1Lib_1_1LoadableScriptBase.html" title="Base class for classes that can be dynamically loadeded from scripts and run, which provides function..." alt="" coords="203,431,379,458"/>
+<area shape="rect" id="node8" href="$d5/d05/classIG_1_1Lib_1_1LoadableScriptOptBase.html" title="Base class for loadable scripts for optimization problems. AGREEMENTS: The first argument to initiali..." alt="" coords="431,158,629,185"/>
+<area shape="rect" id="node11" href="$dc/d6c/classIG_1_1Script_1_1ScritpRealFunctionExample.html" title="Example script for definition of a new real function class." alt="" coords="688,331,875,372"/>
+<area shape="rect" id="node13" href="$d5/de0/classIG_1_1Script_1_1ScritpScalarFunctionExample.html" title="Example script for definition of a new real function class." alt="" coords="682,533,881,575"/>
+<area shape="rect" id="node14" href="$d4/d2e/classIG_1_1Script_1_1LoadableScriptExample.html" title="Example cls. for testing function of loadable scripts." alt="" coords="449,260,611,301"/>
+<area shape="rect" id="node15" href="$da/d52/classIG_1_1Script_1_1LoadableScriptSpecialFunctionBase.html" title="Base cls. for various special function loadable scripts." alt="" coords="449,741,611,783"/>
+<area shape="rect" id="node16" href="$db/da4/classIG_1_1Script_1_1ScriptAppBase.html" title="Partial class definition containing tests of CSV utilities. " alt="" coords="699,778,863,805"/>
+<area shape="rect" id="node17" href="$d5/d63/classIG_1_1Script_1_1AppBase.html" title="Base cls. for application scripts that can also be used on its own." alt="" coords="967,778,1097,805"/>
+<area shape="rect" id="node18" href="$d0/dec/classIG_1_1Script_1_1AppExtBase.html" title="Internal script for running embedded applications." alt="" coords="1189,734,1339,761"/>
+<area shape="rect" id="node19" href="$d4/d8c/classIG_1_1Script_1_1ScriptGraphics2dBase.html" title="Base class for script classes with 2D graphics examples." alt="" coords="427,326,633,353"/>
+<area shape="rect" id="node20" href="$d2/d7e/classIG_1_1Script_1_1ScriptGraphics3DBase.html" title="Base class for script classes with graphics examples." alt="" coords="445,508,615,549"/>
+<area shape="rect" id="node21" href="$de/dec/classIG_1_1Script_1_1TestIglibExt__ToDelete.html" title="Base class for script classes with graphics examples." alt="" coords="457,573,603,615"/>
+<area shape="rect" id="node3" href="$d7/d31/classIG_1_1Lib_1_1LoadableScriptOptShellBaseControllable.html" title="Controllable version of LoadableScriptOptBase, implements the ILoadableScriptC interface." alt="" coords="698,155,865,196"/>
+<area shape="rect" id="node4" href="$d6/d59/classIG_1_1Lib_1_1LoadableScriptShellBase.html" title="Loadable script base class for the shell application that includes tols for definition of optiimizati..." alt="" coords="929,103,1135,130"/>
+<area shape="rect" id="node10" href="$d0/d74/classIG_1_1Lib_1_1LoadableScriptRealFunctionBase.html" title="Base class for loadable scripts that define real functions of one variable." alt="" coords="444,377,616,419"/>
+<area shape="rect" id="node12" href="$d7/dba/classIG_1_1Lib_1_1LoadableScriptScalarFunctionBase.html" title="Base class for loadable scripts that define scalar functions of several variables." alt="" coords="439,443,621,484"/>
+<area shape="rect" id="node9" href="$d2/dae/classIG_1_1Lib_1_1LoadableScriptOptTest_1_1LoadableScriptOptDerived.html" title="IG.Lib.LoadableScriptOpt\lTest.LoadableScriptOptDerived" alt="" coords="681,220,881,261"/>
+</map>

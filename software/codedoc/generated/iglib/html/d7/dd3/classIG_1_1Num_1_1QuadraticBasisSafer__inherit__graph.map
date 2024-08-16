@@ -1,0 +1,7 @@
+<map id="IG.Num.QuadraticBasisSafer" name="IG.Num.QuadraticBasisSafer">
+<area shape="rect" id="node2" href="$d2/de4/classIG_1_1Num_1_1QuadraticBasis.html" title="Vector function containing quadratic basis in a n&#45;dimensional vector space. Composed of (n+1)*(n+2)/2..." alt="" coords="99,304,210,331"/>
+<area shape="rect" id="node3" href="$dc/df8/classIG_1_1Num_1_1VectorFunctionBaseComponentWise.html" title="Base class for defining Vector functions whose component&#45;wise evaluation is defined directly..." alt="" coords="36,229,272,256"/>
+<area shape="rect" id="node4" href="$dc/d23/classIG_1_1Num_1_1VectorFunctionBaseGeneral.html" title="Base class for VectorFunctionBase and VectorFunctionBaseComponentwise. In general, use &#160;and &#160;in order to derive from. " alt="" coords="62,155,247,181"/>
+<area shape="rect" id="node5" href="$da/d06/interfaceIG_1_1Num_1_1IVectorFunction.html" title="Vector function of a vector argument." alt="" coords="199,80,312,107"/>
+<area shape="rect" id="node6" href="$d3/db6/interfaceIG_1_1Lib_1_1ILockable.html" title="Lockable object, has a Lock property that returns object on which lock must be performed in order to ..." alt="" coords="25,5,102,32"/>
+</map>

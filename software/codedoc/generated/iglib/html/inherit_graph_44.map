@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$db/d98/classIG_1_1Lib_1_1ApplicationCommandlineBase.html" title="Base class for main application classes that have the main method of the application based on command..." alt="" coords="5,143,239,170"/>
+<area shape="rect" id="node2" href="$d7/d7b/classIG_1_1Lib_1_1LoadableScriptBase_1_1StoredScriptSettings.html" title="In methods of this class you will find all the settings that apply to this script." alt="" coords="303,5,483,47"/>
+<area shape="rect" id="node3" href="$d4/db4/classIG_1_1Lib_1_1LoadableScriptShellBase_1_1StoredScriptSettings.html" title="In methods of this class you will find all the settings that apply to this script." alt="" coords="305,71,481,112"/>
+<area shape="rect" id="node4" href="$d6/da0/classIG_1_1Lib_1_1ShellApplication_3_01InterpreterType_01_4.html" title="Class encapsulating a command&#45;line shell. Used as embedded shell application that can be installed on..." alt="" coords="316,136,469,177"/>
+<area shape="rect" id="node5" href="$d1/d1f/classIG_1_1Script_1_1LoadableScriptShellNeural_1_1StoredScriptSettings.html" title="In methods of this class you will find all the settings that apply to this script." alt="" coords="287,201,499,243"/>
+<area shape="rect" id="node6" href="$d2/df1/classIG_1_1Script_1_1LoadableScriptShellNeuralBase_1_1StoredScriptSettings.html" title="In methods of this class you will find all the settings that apply to this script." alt="" coords="295,267,490,323"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="IG.Lib.LoadableScalarFunctionBase" name="IG.Lib.LoadableScalarFunctionBase">
+<area shape="rect" id="node6" href="$db/d3b/classIG_1_1Script_1_1ScritpScalarFunctionExample_1_1Container_1_1Function.html" title="IG.Script.ScritpScalarFunction\lExample.Container.Function" alt="" coords="113,304,312,345"/>
+<area shape="rect" id="node2" href="$d2/d85/classIG_1_1Num_1_1ScalarFunctionBase.html" title="Base class for scalar functions with affine transformation of co&#45;ordinates. The reference function is..." alt="" coords="143,155,282,181"/>
+<area shape="rect" id="node3" href="$d2/d9e/classIG_1_1Num_1_1ScalarFunctionUntransformedBase.html" title="Base class for defining scalar functions without possibility of affine transformation of parameters..." alt="" coords="5,80,228,107"/>
+<area shape="rect" id="node4" href="$d8/d56/interfaceIG_1_1Num_1_1IScalarFunctionUntransformed.html" title="Scalar functions of vector arguments." alt="" coords="115,5,311,32"/>
+<area shape="rect" id="node5" href="$dd/d1e/interfaceIG_1_1Num_1_1IScalarFunction.html" title="Scalar functions of vector arguments, with eventual affine transformation of parameters. If transformation is defined then actual function is evaluated as reference function evaluated at inverse affine transformed parameters." alt="" coords="253,80,365,107"/>
+</map>

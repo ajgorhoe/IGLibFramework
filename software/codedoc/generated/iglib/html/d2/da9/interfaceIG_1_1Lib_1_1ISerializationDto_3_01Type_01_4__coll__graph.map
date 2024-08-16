@@ -1,0 +1,4 @@
+<map id="IG.Lib.ISerializationDto&lt; Type &gt;" name="IG.Lib.ISerializationDto&lt; Type &gt;">
+<area shape="rect" id="node2" href="$d0/df7/interfaceIG_1_1Lib_1_1ISerializationDto_3_01Type_00_01BaseType_01_4.html" title="Interface for Data Transfer Objects (DTO). This class is used as template for producing concrete DTO ..." alt="" coords="21,95,145,136"/>
+<area shape="rect" id="node3" href="$db/da2/interfaceIG_1_1Lib_1_1ISerializationDtoAux_3_01Type_01_4.html" title="This interface facilitates use of static helper methods for copying on the SerializationDtoBase class..." alt="" coords="13,5,152,47"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="IG.Lib.ReporterConsole" name="IG.Lib.ReporterConsole">
+<area shape="rect" id="node2" href="$da/df9/classIG_1_1Lib_1_1ReporterConsole__Base.html" title="Base class for reporter classes that contain either reporting via system console, reporting via messa..." alt="" coords="203,399,358,425"/>
+<area shape="rect" id="node3" href="$d4/de2/classIG_1_1Lib_1_1ReporterBase.html" title="Base IGlib class for reporting, tracing and logging; provides a global reporter and a basis for creat..." alt="" coords="187,323,289,349"/>
+<area shape="rect" id="node4" href="$db/db1/interfaceIG_1_1Lib_1_1IReporter.html" title="Interface from which majority of reporters inherit. Includes generic reporting functionality plus tra..." alt="" coords="201,157,275,184"/>
+<area shape="rect" id="node10" href="$d4/de2/classIG_1_1Lib_1_1ReporterBase.html" title="Base IGlib class for reporting, tracing and logging; provides a global reporter and a basis for creat..." alt="" coords="169,233,307,260"/>
+<area shape="rect" id="node11" href="$dd/d3c/interfaceIG_1_1Lib_1_1IReporterConsole.html" title="IReporterConsole" alt="" coords="335,323,456,349"/>
+<area shape="rect" id="node6" href="$de/d0d/interfaceIG_1_1Lib_1_1IReporterBase.html" title="Interface from which all reporters inherit." alt="" coords="266,5,370,32"/>
+<area shape="rect" id="node7" href="$d2/d8e/interfaceIG_1_1Lib_1_1IReporterTextWriter.html" title="Reporters that utilize writing messages to files. Messages are typically formatted as multi&#45;line mess..." alt="" coords="171,81,305,108"/>
+<area shape="rect" id="node8" href="$d1/ddb/interfaceIG_1_1Lib_1_1IReporterTextLogger.html" title="Reporters that utilize logging messages to files. IReporterTextLogger typically outputs (to a file) m..." alt="" coords="330,81,469,108"/>
+<area shape="rect" id="node9" href="$d0/d0e/interfaceIG_1_1Lib_1_1IReporterTrace.html" title="Reporters that utilize system&#39;s trace utility." alt="" coords="493,81,599,108"/>
+</map>
