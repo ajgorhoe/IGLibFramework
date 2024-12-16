@@ -1,0 +1,70 @@
+﻿body {font:74.5%/1.15 times,'times new roman',sans-serif,arial,helvetica,verdana; margin:0;}
+#ARRSkategorizacija table {border-collapse:collapse; empty-cells:show;}
+#ARRSkategorizacija table caption {font-size:1.1em; font-weight:bold; text-align:center !important ; margin:0 auto; padding:1em;}
+#ARRSkategorizacija table th {font-size:8pt; border:1px solid #7F7F7F; background-color:#C0C0C0; text-align:right; vertical-align:middle; padding:0.2em;}
+#ARRSkategorizacija table th.lft {font-size:8pt; border:1px solid #7F7F7F; background-color:#C0C0C0; text-align:left;vertical-align:middle; padding:0.2em;}
+#ARRSkategorizacija table th.cntr {font-size:8pt; border:1px solid #7F7F7F; background-color:#C0C0C0; text-align:center;vertical-align:middle;white-space:nowrap;padding:0.2em;}
+#ARRSkategorizacija table th.dubBrd {font-size:8pt; border-right:2px solid #7F7F7F; background-color:#C0C0C0; text-align:center;vertical-align:middle;white-space:nowrap;padding:0.2em;}
+#ARRSkategorizacija table td {font-size:8pt; border:1px solid #7F7F7F; vertical-align:top; text-align :right;  width: 13px; padding:0.2em;}
+#ARRSkategorizacija table td.lft {font-size:8pt; border:1px solid #7F7F7F; vertical-align:top; text-align:left; padding:0.2em;}
+#ARRSkategorizacija table td.lftBld {font-size:8pt; border:1px solid #7F7F7F; font-weight:bold; vertical-align:top; text-align:left; padding:0.2em;}
+#ARRSkategorizacija table td.bld {font-size:8pt; border:1px solid #7F7F7F; font-weight:bold; vertical-align:top; text-align:right; padding:0.2em;}
+#ARRSkategorizacija table td.zamik {font-size:8pt; border:1px solid #7F7F7F; vertical-align:top; text-align:left; padding:0.2em; padding:0.2em 0.2em 0.2em 2em;}
+#ARRSkategorizacija table td.dubBrd {font-size:8pt; border-right:2px solid #7F7F7F; vertical-align:top; text-align :right;  width: 13px; padding:0.2em;}
+#ARRSkategorizacija table td.dubBrdLftBld {font-size:8pt; border-right:2px solid #7F7F7F; vertical-align:top; font-weight:bold; text-align :left;  width: 270px; padding:0.2em;}
+#legenda table {border-collapse:collapse; empty-cells:show; width:100%; font-size:7pt;}
+#legenda table caption {font-size:8pt;font-weight:bold; text-align:left} !important ; margin:0 auto; padding:0;}
+#legenda table td {font-size:7pt;vertical-align:top; text-align:left; padding:0.2em;}
+#legenda table td.bld {font-size:7pt;vertical-align:top; font-weight:bold; text-align:left; padding:0.2em;}
+#legenda A {color: #CD5B45;}
+
+#ocena table {border-collapse:collapse; empty-cells:show; font-size:1em;}
+#ocena table td {font-size:1em;vertical-align:top; text-align:left; padding:0.2em;}
+#ocena table td.rgh {font-size:1em;vertical-align:top; text-align:right; padding:0.2em;}
+#ocena table td.red {font-size:1em;vertical-align:top; text-align:left; padding:0.2em; color: red}
+#ocena table td.zamik {font-size:1em;vertical-align:top; text-align:left; padding:0.2em 0.2em 0.2em 2em;}
+#ocena table td.zamik2 {font-size:1em;vertical-align:top; text-align:left; padding:0.2em 0.2em 0.2em 4em;}
+#legenda2 table {border-collapse:collapse; empty-cells:show; width:100%; font-size:8pt;}
+#legenda2 table caption {font-size:8pt;font-weight:bold; text-align:left} !important ; margin:0 auto; padding:0;}
+#legenda2 table td {font-size:8pt;vertical-align:top; text-align:left; padding:0.2em;}
+#legenda2 table td.bld {font-size:8pt;vertical-align:top; font-weight:bold; text-align:left; padding:0.2em;}
+
+#citati table {border-collapse:collapse; empty-cells:show;}
+#citati table caption {font-size:1.1em; font-weight:bold; text-align:center !important ; margin:0 auto; padding:1em;}
+#citati table th {font-size:8pt; border:1px solid #7F7F7F; background-color:#C0C0C0; width: 25px; text-align:center;vertical-align:middle;white-space:nowrap;padding:0.2em;}
+#citati table th.cobiss {font-size:8pt; border:1px solid #7F7F7F; background-color:#C0C0C0; width: 75px; text-align:left;vertical-align:middle;white-space:nowrap;padding:0.2em;}
+#citati table th.lft {font-size:8pt; border:1px solid #7F7F7F; background-color:#C0C0C0; width: 25px; text-align:left;vertical-align:middle;white-space:nowrap;padding:0.2em;}
+#citati table th.rgh {font-size:8pt; border:1px solid #7F7F7F; background-color:#C0C0C0; width: 25px; text-align:right;vertical-align:middle;white-space:nowrap;padding:0.2em;}
+#citati table th.lftLng {font-size:8pt; border:1px solid #7F7F7F; background-color:#C0C0C0; width: 120px; text-align:left;vertical-align:middle;white-space:nowrap;padding:0.2em;}
+#citati table th.lftLng2 {font-size:8pt; border:1px solid #7F7F7F; background-color:#C0C0C0; width: 200px; text-align:left;vertical-align:middle;white-space:nowrap;padding:0.2em;}
+#citati table td.lftLng {font-size:8pt; border:1px solid #7F7F7F; width: 120px; text-align:left;vertical-align:top;word-wrap: break-word; padding:0.2em;}
+#citati table td.lftLng2 {font-size:8pt; border:1px solid #7F7F7F; width: 200px; text-align:left;vertical-align:top;word-wrap: break-word;padding:0.2em;}
+#citati table th.sht {font-size:8pt; border:1px solid #7F7F7F; background-color:#C0C0C0; text-align:right; width: 15px; vertical-align:middle;white-space:nowrap;padding:0.2em;}
+#citati table td {font-size:8pt; border:1px solid #7F7F7F; vertical-align:top; text-align :right; width: 25px;  padding:0.2em;}
+#citati table td.lft {font-size:8pt; border:1px solid #7F7F7F; vertical-align:top; text-align :left; width: 25px;  padding:0.2em;}
+#citati table td.rghBld {font-size:8pt; border:1px solid #7F7F7F; background-color:#E0E0E0; font-weight:bold; text-align:right; width: 15px; vertical-align:top;white-space:nowrap;padding:0.2em;}
+#citati table td.dubBrd {font-size:8pt; border-right:2px solid #7F7F7F; vertical-align:top; text-align :right; width: 25px;  padding:0.2em;}
+#citati table th.dubBrd {font-size:8pt; border-right:2px solid #7F7F7F; background-color:#C0C0C0; width: 25px; text-align:center;vertical-align:middle;white-space:nowrap;padding:0.2em;}
+#citati table td.lftBld {font-size:8pt; font-weight:bold; vertical-align:top; width: 25px; text-align:left; padding:0.2em;}
+#citati table td.lftBldDubBrd {font-size:8pt; font-weight:bold; border-right:2px solid #7F7F7F; vertical-align:top; width: 25px; text-align:left; padding:0.2em;}
+#citati table td.lftBldDubBrdG {font-size:8pt; font-weight:bold; border-right:2px solid #7F7F7F; background-color:#E0E0E0; vertical-align:top; width: 25px; text-align:left; padding:0.2em;}
+#citati table td.dubBrdG {font-size:8pt; font-weight:bold; border-right:2px solid #7F7F7F; background-color:#E0E0E0; vertical-align:top; text-align :right; width: 25px;  padding:0.2em;}
+#citati A {color: #CD5B45;}
+
+
+
+.style-small {font-size: xx-small;}
+
+h2 {font-size:1.5em;}
+h3 {font-size:1.3em;}
+
+p {font-size:1em;}
+sup { line-height: 0 }
+sub { line-height: 0 }
+
+a.red:link {color: #CD5B45;}
+a.red:visited {color: #A00000;}
+
+
+
+#nena {display:none;}
