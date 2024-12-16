@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Mozilla/4.04 [en] (X11; I; HP-UX
+      B.10.20 9000/780) [Netscape]">
+    <meta name="Author" content="Igor Gresovnik">
+    <meta name="Keywords" content="software, library, graphics,
+      engineering">
+    <meta name="Classification" content="computers/software/graphical
+      library">
+    <title>Igor Gresovnik, IGS - graphic library for easy use in
+      engineering</title>
+  </head>
+  <body nosave="" vlink="#009900" text="#000000" link="#0000EE"
+    bgcolor="#FFFFFF" background="gr.gif" alink="#FE0000">
+    <center><b><i><tt><sup><font color="#A0522D"><font size="+4">IGS</font></font></sup></tt></i></b></center>
+    <p> </p>
+    <hr width="100%">
+    <center><b><i><font color="#008000"><font size="+1">Introduction</font></font></i></b></center>
+    <p>IGS is a graphic library that enables the user to easily
+      programmatically define graphics in two or three dimensions. Basic
+      idea of IGS is to enable the user programming of graphics without
+      worrying about how to implement rotations of graphic objects,
+      surface hiding in three dimensions, output in different graphic
+      formats and similar things. </p>
+    <p> </p>
+    <hr width="100%">
+    <center><b><i><font color="#008000"><font size="+1">Technical
+              Aspects of the System</font></font></i></b></center>
+    <p>How the system is built can be best seen from a <b><i><font
+            size="+1"><a href="igs.gif">scheme</a></font></i></b> of a
+      typical IGS-based application (you can download <a
+        href="igssl.ps">the same scheme in PostScript</a> and view it
+      with <a href="http://www.cs.wisc.edu/~ghost/index.html">Ghostview</a>).
+
+    </p>
+    <p>The most basic part of the system is a simple graphic interface
+      (module <b><i><font color="#FF1493">grint</font></i></b>) which
+      can be based on an arbitrary graphic library installed on the
+      machine where IGS is used. This interface is the only part of IGS
+      which is platform dependent, all other parts need only standard
+      ANSI C for compilation. So, if you want to build IGS on a
+      different platform, only this module must be reprogrammed. This is
+      usually not a hard task because module <b><i><font
+            color="#FF1493">grint</font></i></b> contains only the most
+      basic graphic functions such as for opening and closing windows,
+      drawing primitives (lines, triangles, fourangles, circles, faces,
+      text) in a window, etc. The first library on which module <b><i><font
+            color="#FF1493">grint</font></i></b> (and IGS) was built was
+      PEXlib. Later IGS was also built on Borland's BGI (which did not
+      work out very well because of problems with memory - BGI runs only
+      on DOS) and Xlib. Implementation built on Xlib is presently the
+      most often used; there can still be some problems with colors an
+      fonts with this implementation, but otherways it works quite well
+      and is much faster than the implementation built on PEXlib). </p>
+    <p>The central part of IGS is module <b><i><font color="#FF1493">gro</font></i></b>.
+      This module contains the definitions which constitute the basic
+      concepts of graphic objects construction and manipulation in IGS.
+      It includes the definitions of data types with which graphic
+      objects are represented. </p>
+    <p>Further on, it includes auxiliary functions for construction of
+      complex graphic objects. </p>
+    <p>Functions for manipulation of graphics objects follow, i.e.
+      functions for different kinds of geometric transforms, for sorting
+      primitive objects according to their depth, etc. </p>
+    <p>Another part of this module takes care of plotting of complex
+      graphic objects on screen and to files in different formats. This
+      part is unified in new versions of IGS (in old versions there were
+      separated sub-modules for plotting in different formats). IGS
+      currently supports output of graphics in various formats such as <a
+        href="https://en.wikipedia.org/wiki/Tcl" moz-do-not-send="true">Tcl</a>,
+      <a href="https://en.wikipedia.org/wiki/PostScript"
+        moz-do-not-send="true">PostScript</a>, and <a
+        moz-do-not-send="true"
+        href="https://en.wikipedia.org/wiki/AutoCAD_DXF">DXF</a>. A
+      plotting part of the <i>gro</i> module includes many auxiliary
+      functions that help to achieve a specific look of graphs, such as
+      functions for lighting and plotting in different perspectives. </p>
+    <p>Beside the basic modules described above, IGS is extended with
+      some higher level modules. These modules provide functions for
+      construction of graphic objects which are often used in graphs,
+      for example different kinds of grids, simple function plots,
+      parametric function plots, polar plots etc. The <b><i><font
+            color="#FF1493">gr3d</font></i></b> module provides a set of
+      such functions for plotting in three dimensions, while the <b><i><font
+            color="#FF1493">gr2d</font></i></b> module provides similar
+      functions for plotting in two dimensions. Development of
+      additional module which will provide some FEM post-processing
+      extensions was started in May 1997. These modules can read finite
+      element meshes and values of various calculated quantities
+      (temperatures, displacements, velocities, strains, stresses, etc.)
+      from simulation input and result files, and presents them
+      graphically on screen or exports them to graphic files.<br>
+    </p>
+    <center><b><i><font color="#FF1493">Using IGS in Applications</font></i></b></center>
+    <p>It is quite simple to use IGS in an application. Basic steps of
+      plotting a graph in an application using IGS are shown in this <a
+        href="igs.gif">figure</a>. </p>
+    <p>First, graphic objects are constructed for things user wants to
+      plot. This is the only step user must program alone. Therefore the
+      only graphic thing users must care about when using IGS is how the
+      graph he wants to produce and plot is built in sense of primitive
+      graphic objects like lines and faces. Auxiliary functions for
+      construction of complex graphics objects using primitive objects
+      are provided by the <b><i><font color="#FF1493">gro</font></i></b>
+      module.</p>
+    <p>The next step is putting primitives from a tree structure created
+      by the user to a stack. This must be doe only at plotting in three
+      dimensions as a preparation for sorting graphic primitives by
+      their depth. Functions for this task are provided in module <b><i><font
+            color="#FF1493">gro</font></i></b>. </p>
+    <p>Before plotting can start, initialization of graphic interface
+      must be done and windows must be open using functions from module
+      <b><i><font color="#FF1493">grint</font></i></b>. </p>
+    <p>Plotting can now be performed in a loop. All tasks are performed
+      by functions from module <b><i><font color="#FF1493">gro</font></i></b>:
+      First, geometric transformations are applied to graphic object and
+      geometric limits are set. Next, primitives are sorted by their
+      depth and finally they are plotted one by one in order to obtain a
+      possibly three-dimensional plot of our graph. If necessary, user
+      can export a plot to a file in one of the formats supported by
+      IGS. </p>
+    <p>For more better feeling about details you can check the <i><b><a
+            href="igs.pdf" moz-do-not-send="true">programmer's handbook</a></b></i>
+      in PDF (<b><i><font color="#FF1493">only available in Slovenian
+            language</font></i></b>), or download the <a
+        moz-do-not-send="true" href="igs.ps">PostScript version</a> and
+      view it by <a href="https://en.wikipedia.org/wiki/Ghostview"
+        moz-do-not-send="true">Ghostview</a> or print it by a PostScript
+      printer.</p>
+    <p> </p>
+    <hr width="100%">
+    <center><b><i><font color="#008000"><font size="+1">History and
+              Further Development</font></font></i></b></center>
+    <p>IGS is a shortcut for "Igor's Graphic System". IGS is primarily
+      used internally in C3M and by our partners). I began to develop it
+      in April 1996. By the end of 1996, IGS was sufficiently developed
+      to be used for building applications with it. In February 1997, I
+      started with introduction of IGS to other members of our staff,
+      who made their first applications based on IGS in spring. My goal
+      is to encourage other members of staff to use IGS in their
+      applications so that IGS would begin to live. Another goal is to
+      draw another people in development of the system itself to gain
+      experience in close team work. </p>
+    <p> </p>
+    <hr width="100%">
+    <div align="right"><a href="../../index.html">Back to Igor's main
+        page</a></div>
+    <div align="right"><a href="http://www.c3m.si">C3M main page</a></div>
+  </body>
+</html>
