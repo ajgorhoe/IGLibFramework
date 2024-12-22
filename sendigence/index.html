@@ -1,352 +1,373 @@
-<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <!-- Below: definition of canonical form of this page's URL -->
+  <link rel="canonical" href="./">
   <title>SendIgence - intelligent Batch Email Sender</title>
   <meta name="author" content="Igor Gresovnik">
   <meta name="keywords"
- content="e-mail, bulk mails, periodic mails, e-mail management, e-mail address extraction, Igor Gresovnik, Igor Grešovnik">
-  <meta name="description"
- content="SendIgence, a program for management of periodic and bulk e-mail  sending.">
+    content="e-mail, bulk mails, periodic mails, e-mail management, e-mail address extraction, Igor Gresovnik, Igor Grešovnik">
+  <meta name="description" content="SendIgence, a program for management of periodic and bulk e-mail  sending.">
   <meta name="Classification" content="software/email">
   <meta name="GENERATOR" content="Netscape 7 Composer">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <!-- Tags below define icons, CSSs, and scripts. Leave them as absolute URLs. -->
-	<link rel="icon" type="image/png" href="https://www2.arnes.si/~ljc3m2/icons/IGLibIcon_128x128.png">
-	<link rel="stylesheet" href="https://www2.arnes.si/~ljc3m2/scripts/IgsScriptSupport.css" />
-    <!-- The following two script elements perform canonical redirect: -->
-    <script src="https://www2.arnes.si/~ljc3m2/scripts/IgsScriptTools.js"></script>
-    <script defer>igsCanonicalRedirect();</script>
+  <!-- Tags below define icons, CSSs, and scripts. Leave them as absolute URLs. -->
+  <link rel="icon" type="image/png" href="https://www2.arnes.si/~ljc3m2/icons/IGLibIcon_128x128.png">
+  <link rel="stylesheet" href="https://www2.arnes.si/~ljc3m2/scripts/IgsScriptSupport.css" />
+  <!-- The following two script elements perform canonical redirect: -->
+  <script src="https://www2.arnes.si/~ljc3m2/scripts/IgsScriptTools.js"></script>
+  <script defer>igsCanonicalRedirect();</script>
+
+  <!-- Tags below define icons, CSSs, and scripts. Leave them as absolute URLs. -->
+  <link rel="icon" href="https://ajgorhoe.github.io/icons/IGLibIcon_128x128.png" />
+  <link rel="stylesheet" href="https://ajgorhoe.github.io/scripts/IgsScriptSupport.css" />
+  <!-- The following two script elements perform canonical redirect: -->
+  <script src="https://ajgorhoe.github.io/scripts/IgsScriptTools.js"></script>
+  <script>igsCanonicalRedirect();</script>
 </head>
-<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"
- alink="#fe0000" link="#0000ee" vlink="#006600">
-<div align="right"><small>&nbsp; </small>
-<table border="0" cellpadding="2" cellspacing="2" width="100%">
-  <tbody>
-    <tr>
-      <td valign="top"><small><small>&nbsp;&nbsp; &nbsp; &nbsp;</small><small><big><big>
-      <small><a href="./"><big>./ <small>(directory)</small></big></a></small></big></big>
-&nbsp;&nbsp;<small> <a href="../index.html"><span
- style="font-weight: bold;">&lt;&lt;</span></a> &nbsp;&nbsp; <a
- href="../index.html"><span style="font-weight: bold;">&lt; back</span></a>
-&nbsp;&nbsp;</small></small></small>&nbsp;&nbsp; <small><a
- href="index.html#search" style="font-weight: bold;">Search</a></small>
-&nbsp;<small><small><small> &nbsp; </small></small></small></td>
-      <td align="right" valign="top"><small>&nbsp; <a
- href="../links.html">Optimization links</a>&nbsp; &nbsp; <a
- href="../index.html">Igor Grešovnik</a> &nbsp; <a
- href="../ioptlib/index.html"><span style="font-style: italic;">IoptLib</span></a>&nbsp;
-      <a href="http://www.c3m.si/inverse/"><span
- style="font-style: italic;">Inverse</span></a> &nbsp; &nbsp;<br>
-      </small></td>
-    </tr>
-  </tbody>
-</table>
-<font size="-1"><a href="http://www.c3m.si/igor"> </a></font></div>
-<center>
-<div style="text-align: left;">
-<div style="text-align: right;">&nbsp;&nbsp;<span
- style="font-style: italic;">&nbsp;</span><font color="#000000"><span
- style="font-style: italic;">&nbsp;&nbsp;&nbsp; <br>
-</span></font></div>
-</div>
-</center>
-<table nosave="" style="width: 100%;" cellpadding="0" cellspacing="5"
- cols="2">
-  <tbody>
-    <tr nosave="" valign="top">
-      <td nosave=""
- style="vertical-align: middle; text-align: left; width: 90%;"> <span
- style="font-weight: bold;"></span><br>
-      <h1 style="text-align: center;"><big><b><i><font><font><b><i><font><font><big><big><b><i><font><font><b><i><font
- color="#cc0000"><font size="+2"><big> SendIgence</big></font></font></i></b></font></font></i></b></big></big></font></font></i></b></font></font></i></b></big></h1>
-      <p style="text-align: left;"><b><span style="font-style: italic;">&nbsp;
-      </span></b><b>This page
-provides information about the <span style="font-style: italic;">SendIgence</span></b><b>,
-a program for management of periodic or bulk e-mail.</b><b> </b><b><span
- style="font-style: italic;">SendIgence</span></b><b> is freeware</b><b>.<br>
-      </b></p>
-      <font color="#000000"> </font><span style="font-weight: bold;"></span><br>
-      <font color="#000000"> </font> </td>
-      <td style="text-align: right;" nosave="">&nbsp;&nbsp; <a
- href="sendigence.jpg"><img title="Sendigence title image"
- src="sendigence_small.jpg" alt=""
- style="border: 0px solid ; width: 300px; height: 222px;"></a><b>
-&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; </b></td>
-    </tr>
-  </tbody>
-</table>
-<p><b><br>
-</b><b></b></p>
-<p> </p>
-<hr width="100%">
-<center>
-<table nosave="" cols="2" width="100%">
-  <tbody>
-    <tr nosave="" valign="top">
-      <td nosave=""> <span style="font-weight: bold;">Contents:<br>
-      </span>
-      <ul>
-        <li>&nbsp;&nbsp; <a href="#about">About
-the software</a> <br>
-        </li>
-        <li><a href="#download">Download</a>&nbsp;&nbsp; <br>
-        </li>
-        <ul>
-          <li><a href="#download_windows">MS Windows</a>&nbsp; <br>
-          </li>
-        </ul>
-        <li><a href="#doc"><span style="text-decoration: underline;">Documentation</span></a>&nbsp;
-          <br>
-        </li>
-      </ul>
-      <br>
-      <font color="#000000"><span style="font-weight: bold;"></span></font></td>
-      <td nosave="" align="right">&nbsp;&nbsp;&nbsp; <br>
-&nbsp;&nbsp; <a href="#search" style="font-weight: bold;">Search</a>
-&nbsp; <br>
-&nbsp;&nbsp;&nbsp;&nbsp; <b><br>
-&nbsp; &nbsp; &nbsp; <br>
-      </b></td>
-    </tr>
-  </tbody>
-</table>
-<br>
-</center>
-<hr width="100%">&nbsp;&nbsp; <br>
-<center>
-<h1> <a name="about"></a><b><i><font color="#cc0000"><font size="+2">About
-the SendIgence<br>
-</font></font></i></b></h1>
-</center>
-&nbsp;
-<br>
-&nbsp; SendIgence is a software for efficient management of periodic or
-bulk e-mail sending.&nbsp; It is simple to use and it can be run either
-interactively or by using configuration files in XML format.
-Configuration files are usually prepared in interactive SendIgence
-session or edited manually (an XML editor is recommended).<br>
-<br>
-&nbsp; The software incorporates an easy-to-use but powerful set of
-utilities for sending large amount of e-mails, dividing recipients to
-smaller groups, timing the process of sending e-mails, extracting
-addresses from files, etc.<br>
-<br>
-<span style="font-weight: bold;">Features:</span><br>
-<ul>
-  <li>Use of different command line e-mail clients (although sendEmail
-is recommended).</li>
-  <li>Sending mails to large number of addresses.</li>
-  <li>Dividing the whole set of addresses to smaller subgroups.</li>
-  <li>Defining pause between sending the mail to subgroups of
-recipients.</li>
-  <li>Storing sessions to XML files.</li>
-  <li>Checking the e-mails before sending to final recipients.</li>
-  <li>Extracting addresses from files.</li>
-  <li>Extracting addresses from multiple files (ability to browse
-directories recursively).</li>
-  <li>Eliminating repeating addresses.</li>
-  <li>Defining exclusion lists.</li>
-  <li>Distributing internet traffic more evenly by sending e-mails over
-larger periods of time.</li>
-  <li>Choosing the number of recipients and pause between messages
-randomly (with specified average and maximal deviation).</li>
-  <li>Address book in XML.</li>
-  <li>Address center with LDIF, XML and arbitrary text files containing
-e-mail addresses.<br>
-  </li>
-</ul>
-<br>
-The program is run from a terminal window and it is simple to use.
-Although it is not stand-alone and needs another e-mail client, this is
-not a major obstacle. The free <a
- href="http://caspian.dotconf.net/menu/Software/SendEmail/">command
-line e-mail client sendEmail</a> is included in the program's
-distribution packages. This e-mail client is used by default, however
-the program can be configured to utilize other e-mail clients that can
-be run form command-line.<br>
-<br>
-<center>
-<h1> <a name="download"></a><b><i><font color="#cc0000"><font size="+2">Download
-the program<br>
-</font></font></i></b></h1>
-</center>
-&nbsp;
-<br>
-&nbsp; Currently, only a MS Windows version is available. I hope
-somebody would provide the necessary assistance in order to create
-ports to other platforms. At least I would like to provide a version
-for Linux.<br>
-<br>
-&nbsp; The latest MS Windows distribution is available as a ZIP
-archive. Download the file, unzip it to a chosen directory (it doesn't
-matter which one) and copy all executables (actuallty the whole
-contents of the bin\ subdirectory) into a directory that is included in
-the system's path. Then just execute the program (e.g. by clicking on
-its from the Explorer or by typing its name in the command prompt) and
-enjoy exploring its capabilities. You will find all necessary
-information in the <a href="#doc">documentation</a>. <br>
-<br>
-<h2 style="text-align: left;"><small><span
- style="color: rgb(204, 0, 0);">&nbsp;&nbsp;&nbsp; <a
- name="download_windows"></a>MS Windows<br>
-</span></small></h2>
-<ul>
-  <li><a href="download/sendigence_windows.zip">Download the last
-version</a>&nbsp; <br>
-  </li>
-  <li><a href="download/sendigence_windows_1.4.zip">Download version 1.4</a>
-    <br>
-  </li>
-  <li><a href="download/sendigence_windows_1.3.zip">Download version 1.3</a>&nbsp;
-    <br>
-  </li>
-  <li><a href="download/sendigence_windows_1.2.zip">Download version 1.2</a>&nbsp;
-    <br>
-  </li>
-</ul>
-<p><br>
-<br>
-</p>
-<p></p>
-<center>
-<h1> <a name="doc"></a><b><i><font color="#cc0000"><font size="+2">Documentation<br>
-</font></font></i></b></h1>
-</center>
-<br>
-&nbsp; <a href="doc/sendigence.pdf"><span style="font-weight: bold;">SendIgence
-User's Manual in PDF</span></a>. This manual contais everything one
-needs to use the software.<br>
-<br>
-<br>
-&nbsp; <a href="doc/sendigence.html"><span style="font-weight: bold;">SendIgence
-User's Manual in HTML</span></a> - The same manual for easy online
-browsing.<br>
-<br>
-Both HTML and PDF manuals are included in software distributions.<br>
-<br>
-&nbsp; <a href="sendigence_screen.gif">screenshot</a> - SendIgence
-during interactive run (not much to see since this is a terminal
-application without a GUI). <br>
-<br>
-&nbsp; <a style="font-weight: bold;" href="../doc/index.html"><span
- style="text-decoration: underline;">Igor's documentation</span></a>.
-Collection of useful documents by Igor Grešovnik.<br>
-<br>
-<br>
-<br>
-<br>
-<hr width="100%"><br>
-<br>
-<!-- SiteSearch Google -->
-<form method="get" action="http://www.google.com/search">
-  <div style="text-align: right;"> </div>
-  <table style="width: 60%;" cellpadding="4" cellspacing="4">
+<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" alink="#fe0000" link="#0000ee" vlink="#006600">
+  <div align="right"><small>&nbsp; </small>
+    <table border="0" cellpadding="2" cellspacing="2" width="100%">
+      <tbody>
+        <tr>
+          <td valign="top"><small><small>&nbsp;&nbsp; &nbsp; &nbsp;</small><small><big><big>
+                    <small><a href="./"><big>./ <small>(directory)</small></big></a></small></big></big>
+                &nbsp;&nbsp;<small> <a href="../index.html"><span style="font-weight: bold;">&lt;&lt;</span></a>
+                  &nbsp;&nbsp; <a href="../index.html"><span style="font-weight: bold;">&lt; back</span></a>
+                  &nbsp;&nbsp;</small></small></small>&nbsp;&nbsp; <small><a href="index.html#search"
+                style="font-weight: bold;">Search</a></small>
+            &nbsp;<small><small><small> &nbsp; </small></small></small></td>
+          <td align="right" valign="top"><small>&nbsp; <a href="../links.html">Optimization links</a>&nbsp; &nbsp; <a
+                href="../index.html">Igor Grešovnik</a> &nbsp; <a href="../ioptlib/index.html"><span
+                  style="font-style: italic;">IoptLib</span></a>&nbsp;
+              <a href="http://www.c3m.si/inverse/"><span style="font-style: italic;">Inverse</span></a> &nbsp;
+              &nbsp;<br>
+            </small></td>
+        </tr>
+      </tbody>
+    </table>
+    <font size="-1"><a href="http://www.c3m.si/igor"> </a></font>
+  </div>
+  <center>
+    <div style="text-align: left;">
+      <div style="text-align: right;">&nbsp;&nbsp;<span style="font-style: italic;">&nbsp;</span>
+        <font color="#000000"><span style="font-style: italic;">&nbsp;&nbsp;&nbsp; <br>
+          </span></font>
+      </div>
+    </div>
+  </center>
+  <table nosave="" style="width: 100%;" cellpadding="0" cellspacing="5" cols="2">
     <tbody>
-      <tr>
-        <td style="text-align: right; font-style: italic;"><a
- href="http://www.google.com/"> </a><a name="search"></a><a
- href="http://www.google.com/"><img
- src="http://www.google.com/logos/Logo_25wht.gif"
- style="border: 0px solid ; width: 75px; height: 32px;" alt="Google"
- title=""></a></td>
-        <td> <input name="q" size="31" maxlength="255" value=""
- type="text"><input name="btnG" value="Google Search" type="submit"> <font
- size="-1"><input name="domains" value="../" type="hidden"><br>
-        <input name="sitesearch" value="" checked="checked" type="radio">WWW&nbsp;&nbsp;&nbsp;
-        <input name="sitesearch" value="../" type="radio">../&nbsp;&nbsp;&nbsp;
-        <input name="sitesearch" value="./" type="radio">./&nbsp;&nbsp;&nbsp;&nbsp;
-        <input name="sitesearch" value="http://www2.arnes.si/%7Eljc3m2/"
- type="radio"> Igor at Arnes&nbsp;&nbsp; <input name="sitesearch"
- value="hhttp://igor.mrfreehost.com/" type="radio">
-Igor at Mrfreesite <br>
-        </font> </td>
+      <tr nosave="" valign="top">
+        <td nosave="" style="vertical-align: middle; text-align: left; width: 90%;"> <span
+            style="font-weight: bold;"></span><br>
+          <h1 style="text-align: center;"><big><b><i>
+                  <font>
+                    <font><b><i>
+                          <font>
+                            <font><big><big><b><i>
+                                      <font>
+                                        <font><b><i>
+                                              <font color="#cc0000">
+                                                <font size="+2"><big> SendIgence</big></font>
+                                              </font>
+                                            </i></b></font>
+                                      </font>
+                                    </i></b></big></big></font>
+                          </font>
+                        </i></b></font>
+                  </font>
+                </i></b></big></h1>
+          <p style="text-align: left;"><b><span style="font-style: italic;">&nbsp;
+              </span></b><b>This page
+              provides information about the <span style="font-style: italic;">SendIgence</span></b><b>,
+              a program for management of periodic or bulk e-mail.</b><b> </b><b><span
+                style="font-style: italic;">SendIgence</span></b><b> is freeware</b><b>.<br>
+            </b></p>
+          <font color="#000000"> </font><span style="font-weight: bold;"></span><br>
+          <font color="#000000"> </font>
+        </td>
+        <td style="text-align: right;" nosave="">&nbsp;&nbsp; <a href="sendigence.jpg"><img
+              title="Sendigence title image" src="sendigence_small.jpg" alt=""
+              style="border: 0px solid ; width: 300px; height: 222px;"></a><b>
+            &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; </b></td>
       </tr>
     </tbody>
   </table>
-</form>
-<!-- SiteSearch Google -->
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-<br>
-<hr>
-<center>
-<table nosave="" bgcolor="#ffffff" border="3" cellpadding="2">
-  <tbody>
-    <tr nosave="">
-      <td nosave="" align="center" valign="top">
-      <center>&nbsp;&nbsp; <a href="http://www.c3m.si/inverse/doc/phd/"><br>
-      </a></center>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</center>
-&nbsp;
-<div align="right">
-<table nosave="" bgcolor="#ffffff" border="3" cellpadding="2">
-  <tbody>
-    <tr nosave="">
-      <td nosave="" align="left" valign="top">
-      <div align="right"><font size="-1">&nbsp; Maintained by <a
- href="http://www2.arnes.si/%7Eljc3m2/igor/">Igor Grešovnik</a>&nbsp; <br>
-      </font></div>
-      <font size="-1"></font></td>
-    </tr>
-  </tbody>
-</table>
-&nbsp; &nbsp; &nbsp;&nbsp;
-</div>
-<center>
-<table nosave="" border="3" cellpadding="2">
-  <tbody>
-    <tr nosave="">
-      <td nosave="" align="left" valign="top">
-      <center><i>&nbsp; Updated in September 2007 <br>
-      </i></center>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</center>
-<ul>
-&nbsp;<br>
-</ul>
-<br>
-<big style="color: rgb(204, 0, 0);"><span style="font-weight: bold;">Note:</span></big><span
- style="color: rgb(204, 0, 0);"> </span><span
- style="font-weight: bold; color: rgb(204, 0, 0);">This site is under
-construction.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
- href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/"><font
- color="#000000"></font></a><font color="#000000"><a
- href="../index.html"><img src="../work.gif" title=""
- alt="This page is under construction. Icon is missing."
- style="border: 0px solid ; width: 38px; height: 38px;"></a></font>&nbsp;
-<br>
-<br>
-<br>
-<br>
-<small>Number of accesses:&nbsp;&nbsp;&nbsp;&nbsp; </small><a
- href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/index.html"><img
- src="http://www.arnes.si/cgi-bin/counter?md=7%7Cdd=B%7Cid=IGarnes_igor_ioptlib_index"
- title=""
- alt="If you don't see the access counter properly then click on the link!"
- style="border: 0px solid ; width: 172px; height: 28px;"></a><small>&nbsp;&nbsp;&nbsp;
-If you don't see the access counter properly then please follow <a
- href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/index.html">this link</a>!</small><br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+  <p><b><br>
+    </b><b></b></p>
+  <p> </p>
+  <hr width="100%">
+  <center>
+    <table nosave="" cols="2" width="100%">
+      <tbody>
+        <tr nosave="" valign="top">
+          <td nosave=""> <span style="font-weight: bold;">Contents:<br>
+            </span>
+            <ul>
+              <li>&nbsp;&nbsp; <a href="#about">About
+                  the software</a> <br>
+              </li>
+              <li><a href="#download">Download</a>&nbsp;&nbsp; <br>
+              </li>
+              <ul>
+                <li><a href="#download_windows">MS Windows</a>&nbsp; <br>
+                </li>
+              </ul>
+              <li><a href="#doc"><span style="text-decoration: underline;">Documentation</span></a>&nbsp;
+                <br>
+              </li>
+            </ul>
+            <br>
+            <font color="#000000"><span style="font-weight: bold;"></span></font>
+          </td>
+          <td nosave="" align="right">&nbsp;&nbsp;&nbsp; <br>
+            &nbsp;&nbsp; <a href="#search" style="font-weight: bold;">Search</a>
+            &nbsp; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; <b><br>
+              &nbsp; &nbsp; &nbsp; <br>
+            </b></td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+  </center>
+  <hr width="100%">&nbsp;&nbsp; <br>
+  <center>
+    <h1> <a name="about"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">About
+              the SendIgence<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  &nbsp;
+  <br>
+  &nbsp; SendIgence is a software for efficient management of periodic or
+  bulk e-mail sending.&nbsp; It is simple to use and it can be run either
+  interactively or by using configuration files in XML format.
+  Configuration files are usually prepared in interactive SendIgence
+  session or edited manually (an XML editor is recommended).<br>
+  <br>
+  &nbsp; The software incorporates an easy-to-use but powerful set of
+  utilities for sending large amount of e-mails, dividing recipients to
+  smaller groups, timing the process of sending e-mails, extracting
+  addresses from files, etc.<br>
+  <br>
+  <span style="font-weight: bold;">Features:</span><br>
+  <ul>
+    <li>Use of different command line e-mail clients (although sendEmail
+      is recommended).</li>
+    <li>Sending mails to large number of addresses.</li>
+    <li>Dividing the whole set of addresses to smaller subgroups.</li>
+    <li>Defining pause between sending the mail to subgroups of
+      recipients.</li>
+    <li>Storing sessions to XML files.</li>
+    <li>Checking the e-mails before sending to final recipients.</li>
+    <li>Extracting addresses from files.</li>
+    <li>Extracting addresses from multiple files (ability to browse
+      directories recursively).</li>
+    <li>Eliminating repeating addresses.</li>
+    <li>Defining exclusion lists.</li>
+    <li>Distributing internet traffic more evenly by sending e-mails over
+      larger periods of time.</li>
+    <li>Choosing the number of recipients and pause between messages
+      randomly (with specified average and maximal deviation).</li>
+    <li>Address book in XML.</li>
+    <li>Address center with LDIF, XML and arbitrary text files containing
+      e-mail addresses.<br>
+    </li>
+  </ul>
+  <br>
+  The program is run from a terminal window and it is simple to use.
+  Although it is not stand-alone and needs another e-mail client, this is
+  not a major obstacle. The free <a href="http://caspian.dotconf.net/menu/Software/SendEmail/">command
+    line e-mail client sendEmail</a> is included in the program's
+  distribution packages. This e-mail client is used by default, however
+  the program can be configured to utilize other e-mail clients that can
+  be run form command-line.<br>
+  <br>
+  <center>
+    <h1> <a name="download"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">Download
+              the program<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  &nbsp;
+  <br>
+  &nbsp; Currently, only a MS Windows version is available. I hope
+  somebody would provide the necessary assistance in order to create
+  ports to other platforms. At least I would like to provide a version
+  for Linux.<br>
+  <br>
+  &nbsp; The latest MS Windows distribution is available as a ZIP
+  archive. Download the file, unzip it to a chosen directory (it doesn't
+  matter which one) and copy all executables (actuallty the whole
+  contents of the bin\ subdirectory) into a directory that is included in
+  the system's path. Then just execute the program (e.g. by clicking on
+  its from the Explorer or by typing its name in the command prompt) and
+  enjoy exploring its capabilities. You will find all necessary
+  information in the <a href="#doc">documentation</a>. <br>
+  <br>
+  <h2 style="text-align: left;"><small><span style="color: rgb(204, 0, 0);">&nbsp;&nbsp;&nbsp; <a
+          name="download_windows"></a>MS Windows<br>
+      </span></small></h2>
+  <ul>
+    <li><a href="download/sendigence_windows.zip">Download the last
+        version</a>&nbsp; <br>
+    </li>
+    <li><a href="download/sendigence_windows_1.4.zip">Download version 1.4</a>
+      <br>
+    </li>
+    <li><a href="download/sendigence_windows_1.3.zip">Download version 1.3</a>&nbsp;
+      <br>
+    </li>
+    <li><a href="download/sendigence_windows_1.2.zip">Download version 1.2</a>&nbsp;
+      <br>
+    </li>
+  </ul>
+  <p><br>
+    <br>
+  </p>
+  <p></p>
+  <center>
+    <h1> <a name="doc"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">Documentation<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  <br>
+  &nbsp; <a href="doc/sendigence.pdf"><span style="font-weight: bold;">SendIgence
+      User's Manual in PDF</span></a>. This manual contais everything one
+  needs to use the software.<br>
+  <br>
+  <br>
+  &nbsp; <a href="doc/sendigence.html"><span style="font-weight: bold;">SendIgence
+      User's Manual in HTML</span></a> - The same manual for easy online
+  browsing.<br>
+  <br>
+  Both HTML and PDF manuals are included in software distributions.<br>
+  <br>
+  &nbsp; <a href="sendigence_screen.gif">screenshot</a> - SendIgence
+  during interactive run (not much to see since this is a terminal
+  application without a GUI). <br>
+  <br>
+  &nbsp; <a style="font-weight: bold;" href="../doc/index.html"><span style="text-decoration: underline;">Igor's
+      documentation</span></a>.
+  Collection of useful documents by Igor Grešovnik.<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <hr width="100%"><br>
+  <br>
+  <!-- SiteSearch Google -->
+  <form method="get" action="http://www.google.com/search">
+    <div style="text-align: right;"> </div>
+    <table style="width: 60%;" cellpadding="4" cellspacing="4">
+      <tbody>
+        <tr>
+          <td style="text-align: right; font-style: italic;"><a href="http://www.google.com/"> </a><a
+              name="search"></a><a href="http://www.google.com/"><img src="http://www.google.com/logos/Logo_25wht.gif"
+                style="border: 0px solid ; width: 75px; height: 32px;" alt="Google" title=""></a></td>
+          <td> <input name="q" size="31" maxlength="255" value="" type="text"><input name="btnG" value="Google Search"
+              type="submit">
+            <font size="-1"><input name="domains" value="../" type="hidden"><br>
+              <input name="sitesearch" value="" checked="checked" type="radio">WWW&nbsp;&nbsp;&nbsp;
+              <input name="sitesearch" value="../" type="radio">../&nbsp;&nbsp;&nbsp;
+              <input name="sitesearch" value="./" type="radio">./&nbsp;&nbsp;&nbsp;&nbsp;
+              <input name="sitesearch" value="http://www2.arnes.si/%7Eljc3m2/" type="radio"> Igor at Arnes&nbsp;&nbsp;
+              <input name="sitesearch" value="hhttp://igor.mrfreehost.com/" type="radio">
+              Igor at Mrfreesite <br>
+            </font>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  <!-- SiteSearch Google -->
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <br>
+  <hr>
+  <center>
+    <table nosave="" bgcolor="#ffffff" border="3" cellpadding="2">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" align="center" valign="top">
+            <center>&nbsp;&nbsp; <a href="http://www.c3m.si/inverse/doc/phd/"><br>
+              </a></center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+  &nbsp;
+  <div align="right">
+    <table nosave="" bgcolor="#ffffff" border="3" cellpadding="2">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" align="left" valign="top">
+            <div align="right">
+              <font size="-1">&nbsp; Maintained by <a href="http://www2.arnes.si/%7Eljc3m2/igor/">Igor
+                  Grešovnik</a>&nbsp; <br>
+              </font>
+            </div>
+            <font size="-1"></font>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    &nbsp; &nbsp; &nbsp;&nbsp;
+  </div>
+  <center>
+    <table nosave="" border="3" cellpadding="2">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" align="left" valign="top">
+            <center><i>&nbsp; Updated in September 2007 <br>
+              </i></center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+  <ul>
+    &nbsp;<br>
+  </ul>
+  <br>
+  <big style="color: rgb(204, 0, 0);"><span style="font-weight: bold;">Note:</span></big><span
+    style="color: rgb(204, 0, 0);"> </span><span style="font-weight: bold; color: rgb(204, 0, 0);">This site is under
+    construction.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/">
+    <font color="#000000"></font>
+  </a>
+  <font color="#000000"><a href="../index.html"><img src="../work.gif" title=""
+        alt="This page is under construction. Icon is missing."
+        style="border: 0px solid ; width: 38px; height: 38px;"></a></font>&nbsp;
+  <br>
+  <br>
+  <br>
+  <br>
+  <small>Number of accesses:&nbsp;&nbsp;&nbsp;&nbsp; </small><a
+    href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/index.html"><img
+      src="http://www.arnes.si/cgi-bin/counter?md=7%7Cdd=B%7Cid=IGarnes_igor_ioptlib_index" title=""
+      alt="If you don't see the access counter properly then click on the link!"
+      style="border: 0px solid ; width: 172px; height: 28px;"></a><small>&nbsp;&nbsp;&nbsp;
+    If you don't see the access counter properly then please follow <a
+      href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/index.html">this link</a>!</small><br>
+  <br>
+  <br>
 </body>
+
 </html>
