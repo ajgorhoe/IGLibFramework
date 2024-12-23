@@ -1,17 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html;
-      charset=windows-1252">
-    <title>IGShell &amp; HashShell - To do list (sample daily ticket)</title>
-    <meta name="Author" content="Igor Grešovnik">
-    <meta name="keywords" content="cryptography, cryptographic shell,
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Below: definition of canonical form of this page's URL -->
+  <link rel="canonical" href="excrypto.cmd.html">
+  <title>IGShell &amp; HashShell - To do list (sample daily ticket)</title>
+  <meta name="Author" content="Igor GreÅ¡ovnik">
+  <meta name="keywords" content="cryptography, cryptographic shell,
       public key, encryption, decryption, asymmetric algorithms, RSA,
       DSA, symmetric algorithms, Rijndael, AES, DES, TripleDES, Rfc2898,
       cryptographic hash functions, MD5, SHA-512, SHA-256, SHA-1, Igor
-      Gresovnik, Igor Grešovnik, Investigative Generic Library, IGLib,
+      Gresovnik, Igor GreÅ¡ovnik, Investigative Generic Library, IGLib,
       shell application">
-    <meta name="description" content="HashShell is a shell application
+  <meta name="description" content="HashShell is a shell application
       based on the Investigative Generic Library (IGLib). It includes
       command-line, interpreters, calculator, cryptographic utilities,
       and several demonstration applications. A variety of cryptographic
@@ -19,1789 +21,1786 @@
       provide countless possibilities of how to use the tools, organized
       in easy-to-learn system. Example files with rich comments are
       provided to support learning-by-doing approach.">
-    <meta name="Classification" content="software/technical">
-  
-	<!-- Google Analitics - account IGLib -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <meta name="Classification" content="software/technical">
 
-	  ga('create', 'UA-76143121-1', 'auto');
-	  ga('send', 'pageview');
-	</script>
-			  		
-	<!-- Google Analitics - account Software 
+  <!-- Google Analitics - account IGLib -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-76143121-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- Google Analitics - account Software 
 	property Software all -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	  ga('create', 'UA-96841644-1', 'auto');
-	  ga('send', 'pageview');
-	</script>	  
-	
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-96841644-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 
-  </head>
-  <body>
-    <br>
-    <h1><i>ExCrypto.cmd</i> - example command file as reference guide to
-      cryptographic utilities available in <i>HashShelll</i><br>
-    </h1>
-    <h1> </h1>
-    <br>
-    <b>Remarks</b>: <br>
-    Commands in this example file are in long form, i. e. beginning with
-    "<i>Internal IG.Script.AppBase Crypto</i>". This is necessary in the
-    <i>IGShell</i>, but in <i>HashShell</i> you can type in short
-    versions of commands that begin simply with "<i>Crypto</i>". That
-    is, you can omit the script loader command ("<i>Internal</i>") and
-    the application class name ("<i>IG.Script.AppBase</i>"), but yo are
-    still allowed to use longer versions of commands.<br>
-    Commands from this file should be run within the examples/crypto
-    sub-directory of the <a href="download/examples.zip">downloaded
-      examples directory</a>. The best way for testing is to run the <i>HashShell</i>
-    interactively within that directory, which is done by running (after
-    the <a href="HashForm.html#download_hashshell">shell has been
-      downloaded</a>) the following command: <br>
-    <blockquote><i>HashShell.exe int </i><br>
-    </blockquote>
-    <br>
-    <br>
-    C *********************************************<br>
-    C Examples: Cryptographic utilities<br>
-    C *********************************************<br>
-    <br>
-    C C This file contains example commands for the IGLib cryptographic
-    <br>
-    C C utilities. In order to run the examples, you need IgShell or
-    HashShell:<br>
-    C C http://www2.arnes.si/~ljc3m2/igor/software/IGLibShellApp/<br>
-    C C
-    http://www2.arnes.si/~ljc3m2/igor/software/IGLibShellApp/HashForm.html<br>
-    <br>
-    C C Run the IGLib shell application (e.g. igs.exe) with commandline
-    arguments<br>
-    C C Copied from this file!<br>
-    C C You can also uncomment some lines and interpret this file. In
-    order<br>
-    C C to do this, run the application with Run as the first argument
-    and<br>
-    C C name of tis file as the second argument, i.e.<br>
-    C C <br>
-    C C&nbsp;&nbsp; igs.exe Run excrypto.cmd<br>
-    C C <br>
-    C C Command names are NOT CASE SENSITIVE in most shell applications.<br>
-    C C Lines commented by a SINGLE C can be executed in the shell,
-    while lines<br>
-    C C commented by double C are just comments.<br>
-    <br>
-    C C Print help on group of embedded applications or single app.:<br>
-    C Internal IG.Script.AppBase Crypto ?<br>
-    C Internal IG.Script.AppBase Crypto GetFileHash ?<br>
-    <br>
-    WriteLine "When running this file, uncomment the lines that you want
-    to execte!"<br>
-    <br>
-    <br>
-    C C
-****************************************************************************<br>
-    C C CALCULATION and verification OF HASH VALUES (CHECKSUMS)<br>
-    <br>
-    C C ==================<br>
-    C C HashForm:<br>
-    C C Launch a form for calculation and verification of file and text<br>
-    C C hash functions (checksums - MD5, SHA-1, SHA-256, SHA-512):<br>
-    C C ====<br>
-    <br>
-    C C == Examples:<br>
-    C Internal IG.Script.AppExtBase Crypto HashForm<br>
-    <br>
-    C C ==================<br>
-    C C GetFileHash:<br>
-    C C Calculate FILE HASHes for the specified file, eventually write
-    information<br>
-    C C to a file (last argument):<br>
-    <br>
-    C C Internal IG.Script.AppBase Crypto GetFileHash FilePath
-    &lt;WriteToFile&gt; &lt;HashFileName&gt; <br>
-    C C&nbsp;&nbsp; WriteToFile: whether hash values are written to a
-    file, default is false<br>
-    C C&nbsp;&nbsp; HashFileName: name of the file where hash values are
-    written. If not<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; specified then it is specified by adding
-    ".chk" to the hash file<br>
-    C C ====<br>
-    <br>
-    C C == Examples:<br>
-    C Internal IG.Script.AppBase Crypto GetFileHash excrypto.cmd true
-    excrypto.cmd.chk<br>
-    <br>
-    <br>
-    C C ==================<br>
-    C C CheckSum:<br>
-    C C Calculates / verify hashes of files or strings by the CheckSum
-    command:<br>
-    <br>
-    C C CheckSum &lt;-c&gt; &lt;-s&gt; &lt;-h hash&gt; &lt;-t
-    hashType&gt; &lt;-o outputFile&gt; &lt;inputFile1&gt;
-    &lt;inputFile2&gt; ...: <br>
-    C C&nbsp;&nbsp; Calculates or verifies various types of hash values
-    for files or strings. Calculated file hashes<br>
-    C C&nbsp;&nbsp; can be saved to a file.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -t hashType: specifies hash type (MD5,
-    SHA-1, SHA-256, SHA-512)<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -c: verification rather than calculation
-    of hashes.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -s: hash is calculated or verified for
-    the specified strings rather than files.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -h hash: hash value to be verified.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -o outputFile: output file where
-    calculated hashes are written. Should<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; be in the current directory,
-    otherwise checking may not work correctly.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; - inputFile1 inputFile2 ...: input
-    files, either files whose hashes are calculated, or files<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; containing hash values to be
-    verified (in the case of -c option)<br>
-    C C A number of other parameters are supported:<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -rd dir: input files will be recursively
-    searched for in the directory<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; named dir. Several
-    directories for recursive file search can be<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified, each following
-    its own -rd option.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; - rdl dir: similar to -rd, but order of
-    file listing is by directory<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; levels rather than in normal
-    tree traversal.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -rp ptrn: specifies that files that
-    match the specified pattern<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ptrn will be searched in a
-    recursive search. Patterns can contain<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; wildcards (e.g. "*.cmd" or
-    "a*.txt"). Several patterns can be <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified (each one by its
-    own -rp option) in which case all are<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; used with all recursive
-    directories.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -rl dirLevel: specifies the level of
-    directories for recursive search.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -1 means all levels of
-    subdirectories are searched, 0 means none<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -pa: specifies that file pathss are
-    output as absolute.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -pr: specifies that file paths are
-    output as relative paths.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -yo: specifies that files will be
-    automatically overwritten, withot<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; asking the user. This is
-    useful in batch executon.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -no: specifies that no files are
-    overwritten. In all possibilities<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of overwriting a file, the
-    operaton is automatically skipped <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; without asking a user
-    (meaning that some information may be lost)<br>
-    C C These options give an excellent flexibility, e.g. one can
-    iterates over<br>
-    C C all files of a directory recursively and store their hashes in
-    the <br>
-    C C specified output file for later verification (all by a single
-    command).<br>
-    C C ====<br>
-    <br>
-    C C == Examples:<br>
-    C C Calculate MD5 checksums of several files &amp; store them to
-    hashes.MD5:<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -t MD5 -o hashes.MD5
-    0readme_crypto.txt excrypto.cmd <br>
-    <br>
-    C C Verify previously calculated checksums (first command generates
-    them):<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -t MD5 -o hashes.MD5
-    0readme_crypto.txt excrypto.cmd <br>
-    C Internal IG.Script.AppBase Crypto CheckSum -t MD5 -c hashes.MD5 <br>
-    <br>
-    C C Calculate &amp; verify other kind of checksum (e.g. SHA-1,
-    SHA-256, SHA-512):<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -t SHA-256 -o
-    hashes.SHA256 *.cmd *.txt<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -t SHA-256 -c
-    hashes.SHA256<br>
-    <br>
-    C C Calculate hash for a single file (without writing to a file): <br>
-    C Internal IG.Script.AppBase Crypto CheckSum -t SHA-1 excrypto.cmd <br>
-    C C - or for multiple files: <br>
-    C Internal IG.Script.AppBase Crypto CheckSum -t SHA-1 *.cmd *.txt
-    cryptofiles/*<br>
-    <br>
-    C C Recursively calculate hashes for all files in a directory, store
-    them to<br>
-    C C a file, and later verify them:<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -t SHA-1 -rd ./ -o
-    hashes.SHA1 -no <br>
-    C Internal IG.Script.AppBase Crypto CheckSum -t SHA-1 -rd
-    ./cryptofiles -o hashes2.SHA1 -no <br>
-    C C Note the -no option, meaning that ouptu files that already exist
-    will be<br>
-    C C automatically skipped and are not overwritten. With the -yo
-    option, the <br>
-    C C opposite is achieved and files are automatically overwritten.<br>
-    C C - Afterwards, check consistency at later times (note use of
-    wildcards):<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -t SHA-1 -c *.SHA1<br>
-    C C If any file at any location in the observed directories would
-    change at<br>
-    C C a later time, this would be immediately noticed by the check.<br>
-    <br>
-    C C Search patterns with wildcards can be specified to filter files
-    in <br>
-    C C recursive directory listings: <br>
-    C Internal IG.Script.AppBase Crypto CheckSum -t MD5 -rd ./ -rp *.txt
-    -rp *.cmd <br>
-    C Internal IG.Script.AppBase Crypto CheckSum -t MD5 -rd ./ -rp
-    *1.1*.txt -rp *.cmd <br>
-    <br>
-    C C Direct verification of specified hash value of a file<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -t MD5 -c data1.txt -h
-    7ad479880f6f78223e93791d2cce600d <br>
-    C C If the result was negative, replace the checksum following the
-    -h option<br>
-    C C with the checksumm produced by the following command:<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -t MD5 data1.txt<br>
-    <br>
-    C C Calculation of hashes of various types of the string "My
-    String":<br>
-    C C MD5 = 4545102cc40ea0a85124cf4b31574661<br>
-    C C SHA1 = 07841b2e0fda6cfbf7c6bf00f179233cf4e3247b<br>
-    C C SHA256 =
-    8a7046a0b97e45470b13f30448c9d7d959aa5eea583d2f007921736b2141ac75<br>
-    C C SHA512 =
-d159694d78c06886143e08dadc50cb89a96a41c766b603fa07fe3de91e170bf2942545c1ca17e280f572fc829de6059a80e75f4623e736915265f8938bb19e39<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -s -t MD5 "My String"<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -s -t SHA1 "My String"<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -s -t SHA256 "My
-    String"<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -s -t SHA512 "My
-    String"<br>
-    <br>
-    C C Verification of a string hash value (change hash to make it not
-    pass):<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -t MD5 -c -s "My
-    String" -h 4545102cc40ea0a85124cf4b31574661<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -t SHA256 -c -s "My
-    String" -h
-    8a7046a0b97e45470b13f30448c9d7d959aa5eea583d2f007921736b2141ac75<br>
-    <br>
-    C C Hashes can also be calculated for multiple strings and byte
-    arrays<br>
-    C C specified in hexadecimal or base-64 encoding (also use -s option
-    for<br>
-    C C this purpose, and specify formats via -bfi* or -bf* options):<br>
-    C Internal IG.Script.AppBase Crypto Convert Luxembourg<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -s -t MD5 -bfii 23 55
-    685<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -s -t MD5 Str1 Str2
-    Luxembourg<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -s -t MD5 -bfix
-    4c-75-78-65-6d-62-6f-75-72-67<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -s -t MD5 -bfi64
-    THV4ZW1ib3VyZw==<br>
-    <br>
-    C C Hashes for byte arrays or long integers can aldo be verified:<br>
-    C Internal IG.Script.AppBase Crypto CheckSum -c -s -t MD5 -bfi64
-    THV4ZW1ib3VyZw== -h 06630c890abadde9228ea818ce52b621 <br>
-    C Internal IG.Script.AppBase Crypto CheckSum -c -s -t MD5 -bfix
-    4c-75-78-65-6d-62-6f-75-72-67 -h 06630c890abadde9228ea818ce52b621 <br>
-    <br>
-    C C ==== END: CheckSum<br>
-    <br>
-    <br>
-    C C ==================<br>
-    C C COMMENTS on OVERWRITE/DELETE CONFIRMATIONS<br>
-    C C Some operations may overwrite or delete a number of files. In
-    such cases,<br>
-    C C the default behavior is to ask the user for confirmations to
-    overwrite <br>
-    C C or delete each individual file. Usually, after the first
-    confirmation or<br>
-    C C rejection, the user is asked whether the decision shoulld be
-    applied to<br>
-    C C all further files that would be overwritten/deleted.<br>
-    C C To the questions that require a "yes" or "no" answer, user can
-    answer<br>
-    C C with "1", "y", "yes" or "true" to confirm and with "0", "n",
-    "no" or <br>
-    C C "false" to reject the operation. Sometimes, any nonzero number
-    will be<br>
-    C C considered as yes. Pressing &lt;Enter&gt; will accept the
-    default decision. <br>
-    C C Inserting a queston mark ("?") will print short instructions and
-    the<br>
-    C C current (default) value of the answer (taken when &lt;Enter&gt;
-    is pressed).<br>
-    <br>
-    <br>
-    C C
-****************************************************************************<br>
-    C C SYMMETRIC ENCRYPTION<br>
-    <br>
-    <br>
-    C C ==================<br>
-    C C EncryptPlain, DecryptPlain:<br>
-    C C Encrypt or decrypt files, strings, and byte values by using
-    symmetric-key<br>
-    C C algorithms. This is a plain variant where user directly provides
-    the key,<br>
-    C C initializaton vector, and other parameters for encryption.
-    Therefore, this<br>
-    C C class of functions is more difficult to use and is also less
-    safe for <br>
-    C C non-expert users,but enables more fine tunning options for
-    advanced users.<br>
-    C C Encrypt and decrypt use the same sets of parameters.<br>
-    <br>
-    C C Internal IG.Script.AppBase Crypto Encrypt input &lt;-k key&gt;
-    &lt;-sl salt&gt; <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;-iv IV&gt; &lt;-t
-    algorithm&gt; &lt;-o outputFile&gt;<br>
-    C C&nbsp;&nbsp; Encrypts input (which can be a string, byte field,
-    or a set of files)<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; by using the specified symmetric-key
-    algorithm.<br>
-    C C Parameters:<br>
-    C C&nbsp;&nbsp; input: an item (or a set of items) to be encrypted.
-    This can be strings,<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; byte arrays, or files, dependent on
-    other parameters.<br>
-    C C&nbsp;&nbsp; -t algorithm: type of the symmetric-key algorithm
-    used. <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; Default is RD or Rijndael(the Rijndael
-    algorithm, part of which is ued <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; in the Advanced Encryption Standard -
-    AES), and others include AES (the<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; previously mentioned algorithm from the
-    standard, a subset of RD),<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; TD or TripleDes, DES, and RC2.<br>
-    C C&nbsp;&nbsp; -k key: specifies the SECRET key used for
-    encryption. Key must be kept<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; secret in a carefully guarded safe
-    store, and only transferred in<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; encrypted form between parties in
-    communication (typically enxrypted<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; by a puclic-key algorithm)<br>
-    C C&nbsp;&nbsp; -iv IV: specifies the initialization vector used for
-    encryption. IV<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; can be kept secret, but this is not a
-    requirement. Specification of <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; IV is a request of symmetric algorithms,
-    and the same key must be used<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; in decryption. The best practice is to
-    randomly generate IV for each<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; session or each group of encrypted
-    items.<br>
-    C C&nbsp;&nbsp; -sl salt: Salt, a part that is added to the
-    encrypted test before <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; encryption. This makes more difficult
-    for potential attackers to guess the <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; original text or secret parameters (such
-    as keys and passwords), even<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; if they are able to intercept messages
-    and know the original and <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; decrypted text in some cases.<br>
-    C C&nbsp;&nbsp; -o outputFile: when specified, the encrypted text
-    (or a file) is stored<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; to the file defined by outputFile (which
-    must be a valid file path).<br>
-    C C A number of other parameters are supported:<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; - pw password: password used for
-    encryption, specified as string. If <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; key is not provided then the
-    password is used in place of the key.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -pwx password: binary password specified
-    in hexadecimal format.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "3dca9a", "3DCA9A",
-    "3dCa9a", "3D-ca-9a" are all accepted.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -bw64 password: binary password
-    specified in base64 encoding<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -sl salt: salt specified as string.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -slx salt: binary salt in hexadecimal
-    format.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -sl64 salt: binary salt specified in
-    base-64 encoding.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -bfx: Result (envrypted text) will be
-    returned as hexadecimal string <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; representation of the
-    generated byte array.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -bf64: Result (generated text) will be
-    returned in as base-64 encoded <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string representation of the
-    generated byte array.<br>
-    C C <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -rd dir: input files will be recursively
-    searched for in the directory<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; named dir. Several
-    directories for recursive file search can be<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified, each following
-    its own -rd option.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; - rdl dir: similar to -rd, but order of
-    file listing is by directory<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; levels rather than in normal
-    tree traversal.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -rp pttrn: specifies that files that
-    match the specified pattern<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ptrn will be searched in a
-    recursive search. Patterns can contain<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; wildcards (e.g. "*.cmd" or
-    "a*.txt"). Several patterns can be <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified (each one by its
-    own -rp option) in which case all are<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; used with all recursive
-    directories.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -rl dirLevel: specifies the level of
-    directories for recursive search.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -1 means all levels of
-    subdirectories are searched, 0 means none<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -pa: specifies that file pathss are
-    output as absolute.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -pr: specifies that file paths are
-    output as relative paths.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -yo: specifies that files will be
-    automatically overwritten, withot<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; asking the user. This is
-    useful in batch executon.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -no: specifies that no files are
-    overwritten. In all possibilities<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of overwriting a file, the
-    operaton is automatically skipped <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; without asking a user
-    (meaning that some information may be lost)<br>
-    C C ====<br>
-    <br>
-    C C == Examples:<br>
-    <br>
-    C C == Encrypt / decrypt STRINGS:<br>
-    <br>
-    C C Encrypt a number of strings (the -s option), with password (-pw)
-    and <br>
-    C C initialization vector (-iv) provided in string form:<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -s -pw MyPassword11
-    -iv MyInitializationVector "Encrypted string No. 1"&nbsp; "Encrypted
-    string No. 2"<br>
-    <br>
-    C C Decrypt the results in order to restore original strings:<br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -s -pw MyPassword11
-    -iv MyInitializationVector&nbsp;
-    dggQxTn7y2m2tDw44rR/oU4ffveVClIsO/chAo5TT30=&nbsp;
-    dggQxTn7y2m2tDw44rR/oYfhlHfVt6j1Ug0f8UYI2fM=<br>
-    <br>
-    C C If password or initialization vector is not specified then you
-    will be <br>
-    C C asked to insert them (below, insert "MyPassword1"):<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -s -iv
-    MyInitializationVector "Encrypted string No. 1"&nbsp; "Encrypted
-    string No. 2"<br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -s -iv
-    MyInitializationVector&nbsp;
-    AWeIDmTh2PkCda9RJ0lpyVCtcrfyMyGxaXt4xHyhP4E=
-    AWeIDmTh2PkCda9RJ0lpyUFaxm8P6So2hjJ/aBvOV6k=<br>
-    <br>
-    C C You can try to insert password in hexadecimal form or in
-    base-64. In the<br>
-    C C above examples, password in string form is "MyPassword1", which
-    corresponds<br>
-    C C to 4d-79-50-61-73-73-77-6f-72-64-31 in hexadecimal form or to <br>
-    C C TXlQYXNzd29yZDE= in base-64 encoding. Try to insert it in both
-    form (first,<br>
-    C C selsect binary form, then one of two encodings):<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -s -iv
-    MyInitializationVector "Encrypted string No. 1"&nbsp; "Encrypted
-    string No. 2"<br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -s -iv
-    MyInitializationVector&nbsp;
-    AWeIDmTh2PkCda9RJ0lpyVCtcrfyMyGxaXt4xHyhP4E=
-    AWeIDmTh2PkCda9RJ0lpyUFaxm8P6So2hjJ/aBvOV6k=<br>
-    <br>
-    C C We could see above that encryption of two similar strings
-    produces two <br>
-    C C similar outputs. This is because the same initialization vectors
-    are used <br>
-    C C and no salt. In real life situations, this can be exploited to
-    guess the<br>
-    C C original messages and sometimes even the passwords (which means
-    that<br>
-    C C all intercepted text can be decrypted). Therefore it is
-    important to<br>
-    C C use randomly generated initialization vectors and salts within
-    encryption <br>
-    C C process. Keys should also be generated from passwords with
-    proper <br>
-    C C cryptographic algorithms.<br>
-    <br>
-    C C Beside the password and initialization vector, we can specify
-    the salt,<br>
-    C C which is added to the text before encryption. Now results are
-    longer,<br>
-    C C and on deryption side we also need to specifiy the original salt
-    value:<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -s -sl MyTestSalt1
-    -pw MyPassword11 -iv MyInitializationVector "Encrypted string No. 1"<br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -s -sl MyTestSalt1
-    -pw MyPassword11 -iv MyInitializationVector&nbsp;
-    sZj+d0FH/bURmo9s39BY1j0zCn2LeUT1F7mktz9VpH6W69w9D80gT3hSaTS+Gu0y<br>
-    <br>
-    C C On decryption side, we can provide only the length of the salt,
-    rather <br>
-    C C than its content (which is 11 bytes, written out by encryption
-    part):<br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -s -sllen 11 -pw
-    MyPassword11 -iv MyInitializationVector&nbsp;
-    sZj+d0FH/bURmo9s39BY1j0zCn2LeUT1F7mktz9VpH6W69w9D80gT3hSaTS+Gu0y<br>
-    C C If we input the wrong salt length or do not input it, then the
-    decrypted<br>
-    C C string will contain parts of the salt or will be truncated:<br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -s -sllen 8 -pw
-    MyPassword11 -iv MyInitializationVector&nbsp;
-    sZj+d0FH/bURmo9s39BY1j0zCn2LeUT1F7mktz9VpH6W69w9D80gT3hSaTS+Gu0y<br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -s -sllen 17 -pw
-    MyPassword11 -iv MyInitializationVector&nbsp;
-    sZj+d0FH/bURmo9s39BY1j0zCn2LeUT1F7mktz9VpH6W69w9D80gT3hSaTS+Gu0y<br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -s -pw MyPassword11
-    -iv MyInitializationVector&nbsp;
-    sZj+d0FH/bURmo9s39BY1j0zCn2LeUT1F7mktz9VpH6W69w9D80gT3hSaTS+Gu0y<br>
-    <br>
-    C C Byte arrays to be encrypted and decrypted can be inserted in <br>
-    C C hexadecimal format (by use of the -bfix option) or in base-64
-    encoding<br>
-    C C (the -bfi64 option). In order to test this, let us first convert
-    some <br>
-    C C string to a byte array represented in hexadecimal or base-64
-    form:<br>
-    C Internal IG.Script.AppBase Crypto Convert "Encrypted string No. 1"<br>
-    C C Now encrypt/decrypt binary equivalent (i.e. byte array obtained
-    form <br>
-    C C the string) specified in hexadecimal and base-64 form:<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -s -bfix -bfx -pw
-    MyPassword11 -iv MyInitializationVector&nbsp;
-    456e6372797074656420737472696e67204e6f2e2031<br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -s -bfix -bfx -pw
-    MyPassword11 -iv MyInitializationVector&nbsp;
-    760810c539fbcb69b6b43c38e2b47fa14e1f7ef7950a522c3bf721028e534f7d <br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -s -bfi64 -bf64 -pw
-    MyPassword11 -iv MyInitializationVector&nbsp;
-    RW5jcnlwdGVkIHN0cmluZyBOby4gMQ==<br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -s -bfi64 -bf64 -pw
-    MyPassword11 -iv MyInitializationVector&nbsp;
-    dggQxTn7y2m2tDw44rR/oU4ffveVClIsO/chAo5TT30= <br>
-    <br>
-    C C You can input bytes to be encrypted in one format, and output
-    encrypted<br>
-    C C bytes in another format. When decryption is made, input and
-    utput <br>
-    C C formats are swapped:<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -s -bfix -bf64 -pw
-    MyPassword11 -iv MyInitializationVector&nbsp;
-    456e6372797074656420737472696e67204e6f2e2031<br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -s -bfi64 -bfx -pw
-    MyPassword11 -iv MyInitializationVector&nbsp;
-    dggQxTn7y2m2tDw44rR/oU4ffveVClIsO/chAo5TT30=<br>
-    <br>
-    <br>
-    C C == Encrypt / decrypt FILES:<br>
-    <br>
-    C C Encrypt the specified file and save encrypted content to the
-    specified <br>
-    C C file:<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -o
-    0readme_crypto.txt.encrypted 0readme_crypto.txt -pw MyPassword11 -iv
-    MyInitializationVector <br>
-    C C Then decrypt the encrypted file to another file:<br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -o
-    0readme_crypto.txt.decrypted 0readme_crypto.txt.encrypted -pw
-    MyPassword11 -iv MyInitializationVector<br>
-    <br>
-    C C The -o parameter for specifying the output file can only be used
-    when<br>
-    C C a single file is encrypted. Without this parameter, paths to the
-    output<br>
-    C C files are constructed by appending the file extension ".ig_enc"<br>
-    C C to encrypted files, and ".ig_dec" to decrypted files. In this
-    way, the <br>
-    C C original files are not deleted after the operation:<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain 0readme_crypto.txt
-    -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain
-    0readme_crypto.txt.ig_enc -pw MyPassword11 -iv
-    MyInitializationVector <br>
-    <br>
-    C C You can encrypt and decrypt multiple files:<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain cryptofiles/*.txt
-    -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain
-    cryptofiles/*.ig_enc -pw MyPassword11 -iv MyInitializationVector <br>
-    <br>
-    C C If you repeat one of the above two commands, yu will be asked
-    for every<br>
-    C C generated file whether you want to overwrite it. You can skip
-    this by <br>
-    C C specifying either the -no to automatically skip overwriting the
-    files, or<br>
-    C C -yo to automatically overwrite any existent files: <br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -yo
-    cryptofiles/*.txt -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -no
-    cryptofiles/*.txt -pw MyPassword11 -iv MyInitializationVector <br>
-    <br>
-    C C WARNING: Be extremely&nbsp; cautious with using automatic
-    overwrites. In <br>
-    C C particular you should well test the functionality with every new
-    version <br>
-    C C of the software to make sure this behaves as expected and that
-    you are <br>
-    C C able to restore files later.<br>
-    <br>
-    C C While encrypting files without specifying the output file,
-    encrypted files <br>
-    C C with distinctive extensions&nbsp; ".ig_enc" (denoting encrypted
-    contents) <br>
-    C C and "ig_dec" (denoting decrypted contents) are skipped. These
-    files can<br>
-    C C only be encrypted by explicitly specifying the output file with
-    the -o <br>
-    C C command-line parameter (which works only for one file at a
-    time).<br>
-    C C While decrypting, only files with distinctive extension
-    ".ig_dec" are<br>
-    C C processed. If you want to perform decryption on an arbitrary
-    file,<br>
-    C C you should use the -o option to explicitly specify the output
-    file.<br>
-    C C Repeat a pair of encryption / decryption operations twice to see
-    how this <br>
-    C C feature works:<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -yo cryptofiles/*.*
-    -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -yo cryptofiles/*.*
-    -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -yo cryptofiles/*.*
-    -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -yo cryptofiles/*.*
-    -pw MyPassword11 -iv MyInitializationVector <br>
-    <br>
-    C C In the above commands, the -yo option was used to automatically
-    confirm<br>
-    C C overwriting the files (in the opposite, you would be requested
-    to confirm<br>
-    C C overwriting eventually existent files).<br>
-    <br>
-    C C Encrypted files are decorated by the distinctive ".ig_enc"
-    extension<br>
-    C C (while not using the -o option to explicitlz specify the output
-    file),<br>
-    C C and decrypted files get this extension removed and are decorated
-    by<br>
-    C C the "ig_dec" extension. The original file is NOT affected when <br>
-    C C encrypting / decrypting.<br>
-    C C For example, encryption of "readme.txt" will produce
-    "readme.txt.ig_enc",<br>
-    C C and decryption will produce "readme.txt.ig_enc", with the
-    original file<br>
-    C C "readme.txt" left intact.<br>
-    <br>
-    C C Above can be changed by using the -delorig option. This causes
-    deletion of <br>
-    C C the original files after they are encrypted, and decryption does
-    not<br>
-    C C decorate output file names with a distinctive extension, causing
-    that <br>
-    C C the decrypted files have the same names as the originals (also
-    the file <br>
-    C C with encrypted contents is removed after decryption):<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -delorig -yd -yo
-    cryptofiles/*.* -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -delorig -yd -yo
-    cryptofiles/*.* -pw MyPassword11 -iv MyInitializationVector <br>
-    <br>
-    C C WARNING: Be extremely&nbsp; cautious with using the -delorig
-    option.<br>
-    C C Use this only when you are sure that wou will be able to restore
-    the <br>
-    C C original files. <br>
-    C C For this, you must be sure that encrypted/decrypted originals
-    exist from<br>
-    C C which restore can be achieved, that you know the correct
-    encryption or<br>
-    C C decryption options, and that you are able to run the correct
-    encryption<br>
-    C C or decryption algorithm that will restore the originals.<br>
-    C C The latter means (among the others) that you have tested enough
-    the <br>
-    C C algorithm with similar parameters, and you are sure the
-    algorithm<br>
-    C C works as you expect.<br>
-    C C In many cases, it is advisable that when encrypting files,
-    bakcup of the<br>
-    C C originals is kept somewhere (in case you forget the password or
-    some<br>
-    C C other inpredictable situation appears that would prevent
-    restoring the<br>
-    C C files from encrypted copies).<br>
-    <br>
-    C C The CleanFiles command can be used to clean the eventual
-    redundant files<br>
-    C C that remained after performing encryption or decryption
-    operations. Using<br>
-    C C this command can be an alternative to the -delorig option, which
-    causes<br>
-    C C automatic deletion of originals.<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -yo cryptofiles/*.*
-    -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -yo cryptofiles/*.*
-    -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto CleanFiles -deldecrypted
-    cryptofiles/*.*<br>
-    <br>
-    C C Options for RECURSIVE DIRECTORY listing can be used to encrypt
-    or decrypt<br>
-    C C all files (possibly satisfying one or more name patterns with
-    wildcards)<br>
-    C C from the given directories and its nested subdirectories (all or
-    up to <br>
-    C C the specified level). The command below will encrypt all files
-    with the <br>
-    C C ".txt" extension in the "cryptofiles" directoriy and all its
-    nested<br>
-    C C subdirectories. Afterwards, the created files are deleted by
-    using the<br>
-    C C CleanFiles command.<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -yo -rd
-    cryptofiles/ -rp *.txt -yo -pw MyPassword11 -iv
-    MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto CleanFiles -yd -deldecrypted
-    -delencrypted -rd cryptofiles/ -rp *.*<br>
-    <br>
-    C C Recursive listing of files only up to the specified level can be
-    used, <br>
-    C C the level being specified by the -rl option. In the example
-    below, all <br>
-    C C files with the ".txt" extension, contained in the&nbsp;
-    "cryptofiles" <br>
-    C C directoriy and its nested subdirectories up to the second level,
-    are<br>
-    C C encrypted. With the second command, created files are deleted: <br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -yo -rl 2 -rd
-    cryptofiles/ -rp *.txt -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto CleanFiles -yd&nbsp; -rl 2 -rd
-    cryptofiles/ -rp *.txt -deldecrypted -delencrypted <br>
-    <br>
-    C C In a rather typical scenario, one would want to encrypt all
-    files the <br>
-    C C specific directory (possibly in multiple directories and
-    satisfying some<br>
-    C C wildcard-based filters), check if everything went as expected,
-    and then <br>
-    C C delete the originals. At a later time, one might want to decrypt
-    the <br>
-    C C files to restore the original state of the directory.<br>
-    C C In the line below we will do this following these steps:<br>
-    C C&nbsp;&nbsp; - encrypt all the files in the directory and all ist
-    nested <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; subdirectories, store them beside
-    originals (which are kept intact).<br>
-    C C&nbsp;&nbsp; - decrypt the encrypted files and store themm beside
-    the originals, so <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; that the results can be checked.<br>
-    C C&nbsp;&nbsp; - verify the results by browsing through the
-    directory structure and<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; compare some original/decrypted pairs
-    (decrypted having the .ig_dec<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; extension).<br>
-    C C&nbsp;&nbsp; - delete the originals and decrypted files to keep
-    only encrypted ones<br>
-    C C&nbsp;&nbsp; - at a later time, decrypt the encrypted files to
-    produce the originals,<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; and simulltaneously delete the input
-    (encrypted) files to keep only<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; the decrypted originals.<br>
-    C C Lines below will perform the above steps one by one:<br>
-    C C -Encrypt all files in the directory and its subdirectories
-    (recursive):<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -yo -rd
-    cryptofiles/ -rp *.* -pw MyPassword11 -iv MyInitializationVector <br>
-    C C -Decrypt (for test) the encrypted files and store decrypted
-    files beside<br>
-    C C the decripted files and originals. After the operation, the
-    directory <br>
-    C C structure can be browsed and decrypted files compared with
-    originals:<br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -yo -rd
-    cryptofiles/ -rp *.* -pw MyPassword11 -iv MyInitializationVector <br>
-    C C -Clean the directory - delete the original and decrypted files
-    in order<br>
-    C C to keep only the encrypted files:<br>
-    C Internal IG.Script.AppBase Crypto CleanFiles -yd -delorig
-    -deldecrypted -rd cryptofiles/ -rp *.*<br>
-    C C -At a later time, decrypt the encrypted file to restore the
-    originals. In<br>
-    C C this case, we will automatically delete the encrypted files
-    after the<br>
-    C C operation (by the -delorig option), but we could also leave the
-    encrypted<br>
-    C C versions (e.g. by not specifying the -yd option and then not
-    confirming<br>
-    C the deletions), inspect the results and delete the encrypted
-    versions later<br>
-    C C by calling the CleanFiles command:<br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -delorig -yd -rd
-    cryptofiles/ -rp *.* -pw MyPassword11 -iv MyInitializationVector <br>
-    <br>
-    C C Below, we just repeat all the above steps without commenting
-    them:<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -yo -rd
-    cryptofiles/ -rp *.* -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -yo -rd
-    cryptofiles/ -rp *.* -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto CleanFiles -yd -delorig
-    -deldecrypted -rd cryptofiles/ -rp *.*<br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -delorig -yd -rd
-    cryptofiles/ -rp *.* -pw MyPassword11 -iv MyInitializationVector <br>
-    <br>
-    C C ==== END: EncryptPlain, DecryptPlain<br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    C C ==================<br>
-    C C AsymExportKey:<br>
-    C C Exports the specified asymmetric keys to a file, such that they
-    can be <br>
-    C C backed up or transferred to another computer.<br>
-    C C Warning: be careful when exporting private keys, not to
-    compromise the <br>
-    C C keys which should remain secret and should be carefully guarded.<br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    C C
-****************************************************************************<br>
-    C C ASYMMETRIC ENCRYPTION<br>
-    <br>
-    <br>
-    C C ==================<br>
-    C C AsymKeyInfo:<br>
-    C C Prints information about the specified asymmetric keys. This
-    command is <br>
-    C C also used to verify that you have access to the specific
-    asymmetric <br>
-    C C keys, you can see if you also have access to the private key, a
-    hash<br>
-    C C of the public key is printed (and returned) so you can check
-    whether<br>
-    C C the same keys as expected are accessed through the specified
-    parameters<br>
-    C C (i.e., the key in a container has not been changed, or the
-    specified key<br>
-    C C file still contains the same key as expected). A small <br>
-    C C encryption/decryption test is also performed to check whether
-    the key <br>
-    C C pair can perform encryption and decryption correctly (this only
-    applies<br>
-    C C when the private parts of the keys are also accessible).<br>
-    <br>
-    C C Internal IG.Script.AppBase Crypto AsymKeyInfo &lt;-akn
-    keyName&gt; &lt;-t type&gt;<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; &lt;-akxml keyFileXml&gt; &lt;-akf
-    flag1&gt; &lt;-akf flag2&gt; ...<br>
-    C C&nbsp;&nbsp; Prints information about the specified asymmetric
-    keys. Keys are defined<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; by commmandline parameters, which can
-    specify the user or machine<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; level named key container where keys are
-    obtained, or a file from<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; which keys are obtained, or keys are
-    generated anew.<br>
-    C C Parameters:<br>
-    C C&nbsp;&nbsp; -t type: specifies type of the asymmetric algorithm
-    for which key is<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; obtained and its information printed.
-    Supported types are "RSA"<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; (Rivest-Shamir-Adleman cryptosystem for
-    secure data transmission -<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; default value), or "DSA" (Digital
-    Signature Algorithm).<br>
-    C C&nbsp;&nbsp; -at type: the same as -t type.<br>
-    C C&nbsp;&nbsp; -akxml keyFileXml: keys are obtained from the
-    specified XML file.<br>
-    C C&nbsp;&nbsp; -ank KeyName: specifies the name of the key
-    container from which keys <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; are obtained. Can be user or machine
-    level container, which can <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; be defined by flags (default is user
-    level). If the container with <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; the specified name does not yet exist
-    then the container and the <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; keys are created, and keys are stored to
-    the container.<br>
-    C C&nbsp;&nbsp; -akf flag: sets the value of the CSP flags used when
-    keys are created.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; Values can include "UseMachineKeyStore",
-    "UseDefaultKeyContainer", <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; "UseExistingKey", "UseNonExportableKey",
-    "UseUserProtectedKey"<br>
-    C C&nbsp;&nbsp; -exportprivatekey: when present with this command,
-    this option <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; causes that the private key is also
-    printer (in standard XML form)<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; in the case that it is present. Use this
-    only when you are sure that<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; the private key can not be compromised,
-    as the private keys that<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; are actually used in secure
-    communication must be carefully guarded.<br>
-    C C ====<br>
-    <br>
-    C C == Examples:<br>
-    <br>
-    <br>
-    C C When called for the first time, this will create a new RSA key
-    pair<br>
-    C C and store it in the key container named "TestRsaKey". The
-    information <br>
-    C C about the key is printed. When called at any later time, the
-    previously<br>
-    C C created key pair is taken (which can be seen by the returned
-    hash value<br>
-    C C of the public key):<br>
-    C Internal IG.Script.AppBase Crypto AsymKeyInfo -akn
-    TestRsaKey&nbsp; <br>
-    C Internal IG.Script.AppBase Crypto AsymKeyInfo -akn
-    TestRsaKey&nbsp; <br>
-    C C If you change the key container name, a new key pair is created:<br>
-    C Internal IG.Script.AppBase Crypto AsymKeyInfo -akn
-    TestRsaKey&nbsp; 1<br>
-    <br>
-    C C By default, only information about the public key is printed in
-    XML <br>
-    C C format. The -exportprivatekey causes that private key parts are
-    also<br>
-    C C printed (which should generallz be avoided, therefore also such
-    a long<br>
-    C C name for this option):<br>
-    C Internal IG.Script.AppBase Crypto AsymKeyInfo -akn TestRsaKey
-    -exportprivatekey<br>
-    &nbsp;<br>
-    C C By the -t parameter, a different type of keys can be created.
-    The <br>
-    C C following will create DSA (Elliptic Curve Digital Signature
-    Algorithm) <br>
-    C C keys instead of RSA:<br>
-    C Internal IG.Script.AppBase Crypto AsymKeyInfo -akn TestDsaKey -t
-    DSA<br>
-    <br>
-    <br>
-    <br>
-    <br>
-    C C ==== END: AsymKeyInfo<br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    C C ==================<br>
-    C C CertInfo:<br>
-    C C Prints information about the specified certificate. It also
-    prints some<br>
-    C C information about the keys that are stored in the certificate.
-    If the<br>
-    C C private key is also accessible then a small
-    encryption/decryption<br>
-    C C check is performed, so you can check that the certificate can be
-    used<br>
-    C C for encryption/decryption.<br>
-    <br>
-    C C Internal IG.Script.AppBase Crypto CertInfo <br>
-    C C&nbsp;&nbsp; Prints information about the specified certificate.<br>
-    C C Parameters:<br>
-    C C&nbsp;&nbsp; input: <br>
-    C C ====<br>
-    <br>
-    C C == Examples:<br>
-    <br>
-    Internal IG.Script.AppBase Crypto AsymTest <br>
-    <br>
-    Internal IG.Script.AppBase Crypto CertInfo -cf&nbsp;
-    IGLibTestCert.cer <br>
-    <br>
-    Internal IG.Script.AppBase Crypto CertInfo -cp IGLibPwd -cf&nbsp;
-    IGLibTestCert.pfx <br>
-    <br>
-    Internal IG.Script.AppBase Crypto CertInfo -cpui -cf&nbsp;
-    IGLibTestCert.pfx <br>
-    <br>
-    <br>
-    <br>
-    Internal IG.Script.AppBase Crypto CertInfo -cf&nbsp;&nbsp;
-    IGLibTestCert11.p7b <br>
-    <br>
-    <br>
-    C C ==== END: CertInfo<br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    C C
-****************************************************************************<br>
-    C C Certificates and keys - external utilities<br>
-    <br>
-    C C Below the use of external utilities on Windows is documented in
-    order<br>
-    C C to generate test certificate and other data used in the examples
-    for<br>
-    C C cryptographic utilities of the IGLib. A Common password is used
-    for these<br>
-    C C demonstration files.<br>
-    C C Location of tools:<br>
-    C C&nbsp;&nbsp; On Windows 8.1: C:\Program Files (x86)\Windows
-    Kits\8.1\bin\x64\<br>
-    <br>
-    C C Test certificates &amp; keys Password: IGLibPwd<br>
-    <br>
-    C C To generate a certificate:<br>
-    C makecert -pe&nbsp; IGLibTestCert.cer -sky exchange -sv
-    IGLibTestCert.pvk -n "cn=IGLib Test Certificte No. 1" -b 03/01/2015
-    -e 03/01/2030 -r <br>
-    C C Additional useful options:<br>
-    C C -ss store - store name that stores the output certificate<br>
-    C C -sl storeLocation - either CurrentUser (default) or LocalMachine<br>
-    C C -sky exchange - this must be used if cert. iis used for
-    encryption/<br>
-    C C&nbsp;&nbsp; decryption rather than just for signing and
-    authentication (-ski signature)<br>
-    <br>
-    C C To convert certificate and key information to .pfx: <br>
-    C pvk2pfx -f -pvk IGLibTestCert.pvk -spc IGLibTestCert.cer -pfx
-    IGLibTestCert.pfx -pi IGLibPwd<br>
-    <br>
-    C C File formats:<br>
-    C C&nbsp;&nbsp; PKCS #12 (.pfx or .p12) - archive format for storing
-    several crypto <br>
-    C C objects in a single file. Used e.g. by Visual Studio for signing
-    <br>
-    C C assemblies. Used to bundle a private key with its X.509
-    certificate or to<br>
-    C C bundle all the members of a chain of trust.<br>
-    C C&nbsp;&nbsp; .pvk - file containing private key.<br>
-    C C&nbsp;&nbsp; .cer - certificate file.<br>
-    <br>
-    C C Remarks: <br>
-    C C Certificate often contains only a public key, which enables
-    decryption or <br>
-    C C checking signatures. <br>
-    C C Private keys are obtained either separately from the .pvk files,
-    or<br>
-    C C from the .p12 (or .pfx) files.<br>
-    <br>
-    C C Some explanations, but with older technology (using pvkimprt.exe
-    instead<br>
-    C C of pvk2pfx) can be found here:<br>
-    C C
-    http://www.grimes.nildram.co.uk/workshops/secWSThirteen.htm#2_0_x509Cert
-    <br>
-    <br>
-    C C ==== END: Certificates - external utilities<br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    C C
-****************************************************************************<br>
-    C C HELPER UTILITIES<br>
-    <br>
-    <br>
-    <br>
-    C C ==================<br>
-    C C CleanFiles:<br>
-    C C Cleans specific kinds of files remaining after encryption or
-    decryption.<br>
-    C C Encryption or decryption can leave behind a number of files that
-    you may<br>
-    C C wanto to keep for some time (e.g. for verification) but delete
-    later<br>
-    C C (e.g. to remove unencrypted files or to make the directory
-    contents <br>
-    C C clean and understandable). Usually, the "-delorig" is used to do
-    this<br>
-    C C automatically when encryption/decription is performed, but
-    sometimes <br>
-    C C you will not want to use this possibility immediately, e.g. to
-    verify<br>
-    C C that operations actually performed as you expect. In these
-    cases,<br>
-    C C you can combine encryption/decryption commands with CleanFiles.<br>
-    <br>
-    C C Internal IG.Script.AppBase Crypto &lt;-delencrypted&gt;
-    &lt;-deldecrypted&gt; &lt;-delorig&gt; file1 &lt;file2&gt;
-    &lt;file3&gt;&nbsp; ...<br>
-    C C Deletes the specific kinds of files associated witth the
-    specified input<br>
-    C C files. Parameters must define which type of files are to be
-    deleted. For<br>
-    C C each file specified (either by free parameters or by directory
-    listing<br>
-    C C parameters), the associated files are identified (such as
-    original, <br>
-    C C encrypted, or decrypted). Encrypted and decrypted files are
-    identified <br>
-    C C through the distinctive file extensions (".ig_enc" and
-    ".ig_dec", <br>
-    C C respectively). <br>
-    C C&nbsp;&nbsp; file1, file2, file3, ...: free parameters that
-    define files for which <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; the associated files will be deleted.
-    Wildcards can be used to define<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; mutiple files at once (as well as path
-    separators to define files in<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; locations other than current directory).
-    For each file, the associated<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; files (original, encrypted, decrypted)
-    will be identified and then,<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; according to parameters described below,
-    it will be decided which of<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; these files are deleted. Unless
-    otherwise specified, the user is <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; asked for confirmation. Also, without
-    the -delallversions option, <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; at least one version of the file will be
-    left even if the other<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; options instruct differently. <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; These file parameters can refer to any
-    of the group of associated <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; files (original, encrypted and
-    decrypted), in each case the other <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; files from the group will be discovered
-    within the same directory <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; (according to file names and extensions)
-    and tested for eligibility<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; for deletion.<br>
-    C C&nbsp;&nbsp; -delencrypted: This options causes that the
-    encrypted files (those with <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; the ".ig_enc" extension) from each group
-    of associated files (i.e.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; the original, the encrypted and the
-    decrypted) are deleted.<br>
-    C C&nbsp;&nbsp; -deldecrypted: This options causes that the
-    decrypted files (those with <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; the ".ig_dec" extension) from each group
-    of associated files are <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; deleted.<br>
-    C C&nbsp;&nbsp; -delorig: This options causes that the original
-    files (those with <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; the any disrinctive extension) from each
-    group of associated files are <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; deleted.<br>
-    C C&nbsp;&nbsp; -delallversions: This option specifies that it is
-    allowed to delete all <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; versions of a file from ech group of
-    files associated with input files <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; (i.e. the original, the encrypted and
-    the decrypted). <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; WARNING: use this option with extreme
-    caaution, as it will not be <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; possible to restore the original if all
-    the associated files are <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; deleted, unless the files are kept in a
-    separate backup.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -yd: specifies that files will be
-    automatically deleted, withot<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; asking for user's
-    confirmation. This is useful in batch executon.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -nd: specifies that no files are deleted
-    (all eventual deletions are\<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; skipped without asking for
-    user's confirmation). This might be <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; useful for just seeing the
-    list of files that would be deleted<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; by the operation, before
-    actually performing it.<br>
-    C C A number of other parameters are supported:<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -rd dir: input files will be recursively
-    searched for in the directory<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; named dir. Several
-    directories for recursive file search can be<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified, each one
-    following its own -rd option.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; - rdl dir: similar to -rd, but order of
-    file listing is by directory<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; levels rather than in normal
-    tree traversal order.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -rp ptrn: specifies that files that
-    match the specified pattern<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ptrn will be searched in a
-    recursive search. Patterns can contain<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; wildcards (e.g. "*.cmd" or
-    "a*.txt"). Several patterns can be <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified (each one by its
-    own -rp option), in which case all are<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; used with all recursive
-    directories.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -rl dirLevel: specifies the level of
-    directories for recursive search.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -1 means all levels of
-    subdirectories are searched, 0 means none<br>
-    <br>
-    C C == Examples:<br>
-    <br>
-    C C Examples for the CleanFiles command will be demonstrated by
-    combining the<br>
-    C C command with encryption and dectryption commands, in order to
-    first <br>
-    C C generate the files that can be cleaned later.<br>
-    <br>
-    C C In order to clean the generated encrypted and decrypted files
-    (here in<br>
-    C C the cryptofiles/ directory), specify the -deldecrypted and
-    -delencrypted<br>
-    C C options, with file definition options being the same as when
-    performing<br>
-    C C encryption/decryption. Both options can be specified in the
-    single <br>
-    C C command, but in the example below two separate commands are
-    exected<br>
-    C C for the two types of associated files:<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -yo cryptofiles/*.*
-    -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -yo cryptofiles/*.*
-    -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto CleanFiles -deldecrypted
-    cryptofiles/*.*<br>
-    C Internal IG.Script.AppBase Crypto CleanFiles -delencrypted
-    cryptofiles/*.*<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -yo cryptofiles/*.*
-    -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -yo cryptofiles/*.*
-    -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto CleanFiles -deldecrypted
-    cryptofiles/*.*<br>
-    C Internal IG.Script.AppBase Crypto CleanFiles -delencrypted
-    cryptofiles/*.*<br>
-    <br>
-    C C If options for deletion of all types of files (original,
-    encrypted, <br>
-    C C decrypted) are specified then at least one verson of the file in
-    each<br>
-    C C group will remain intact(priority original, then encrypted, then
-    <br>
-    C C decrypted) in order to make possible to restore the file. This
-    can be <br>
-    C C overridden by the -delallversions option.<br>
-    C C Because cleaning is a sensitive operation that may perform
-    unintended<br>
-    C C file deletions, it is a good idea to check which files would be
-    deleted<br>
-    C C by the specific command before actually invoking the command.
-    This is <br>
-    C C achieved by the -nd option (used in the first CleanFiles command
-    below).<br>
-    C C All deletions are skipped, but this is reported.<br>
-    C C Afterwards, deletion the -nd option is omitted such that
-    deletions are<br>
-    C C actually performed. The user is asked to confirm deletions, and
-    at <br>
-    C C least one version of the file from ech group of associated files
-    <br>
-    C C will remain intact:<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -yo cryptofiles/*.*
-    -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -yo cryptofiles/*.*
-    -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto CleanFiles -nd -delencrypted
-    -deldecrypted -delorig cryptofiles/*.*<br>
-    C Internal IG.Script.AppBase Crypto CleanFiles -delencrypted
-    -deldecrypted -delorig cryptofiles/*.*<br>
-    <br>
-    C C With the -nd option, some files that woluld be deleted may be
-    listed more <br>
-    C C than once. This happens when more than one file from the group
-    of<br>
-    C C associated files are included in the list e.g. the original file
-    and its<br>
-    C C associated encrypted file. We decided that correction of this
-    would not be<br>
-    C C worth the investment as it would spoil the code in other ways.<br>
-    <br>
-    C C Now that we are sure that CleanFiles works as expected, we can
-    use the <br>
-    C C -yd option in order to skip user confirmations for deleting the
-    files:<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -yo cryptofiles/*.*
-    -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -yo cryptofiles/*.*
-    -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto CleanFiles -yd&nbsp;
-    -delencrypted -deldecrypted -delorig cryptofiles/*.*<br>
-    <br>
-    C C Finally, options for recursive directory listing can be used to
-    delete <br>
-    C C the unnecessary files remaining after encryption/decryption form
-    the whole<br>
-    C C nested directory structures:<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -rd cryptofiles/
-    -rp *.txt -yo -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto DecryptPlain -rd cryptofiles/
-    -rp *.* -yo -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto CleanFiles -deldecrypted -rd
-    cryptofiles/ -rp *.*<br>
-    C Internal IG.Script.AppBase Crypto CleanFiles -delencrypted -rd
-    cryptofiles/ -rp *.*<br>
-    <br>
-    C C In the above commands, user is asked to confirm deleton of
-    files. See <br>
-    C C comments on overwrite/delete confirmations. This can be omitted
-    and <br>
-    C C files deleted automatically by specifying the -nd option:<br>
-    C Internal IG.Script.AppBase Crypto EncryptPlain -rd cryptofiles/
-    -rp *.txt -yo -pw MyPassword11 -iv MyInitializationVector <br>
-    C Internal IG.Script.AppBase Crypto CleanFiles -yd -deldecrypted
-    -delencrypted -rd cryptofiles/ -rp *.*<br>
-    <br>
-    C C ==== END: CleanFiles<br>
-    <br>
-    <br>
-    C C ==================<br>
-    C C Convert:<br>
-    C C Convers the inserted string or byte array to different formats.
-    Input can<br>
-    C C be a string or a byte array in hexadecimal or Base64 form.<br>
-    <br>
-    C C Internal IG.Script.AppBase Crypto Convert &lt;-bfx&gt;
-    &lt;-bf64&gt; &lt;-bfi&gt; input<br>
-    C C&nbsp;&nbsp; Takes input (string or byte array or long integer)
-    in various forms<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; and converts it to different
-    representations.<br>
-    C C&nbsp;&nbsp; input: user input. If not specified otherwise, this
-    is treated as string.<br>
-    C C&nbsp;&nbsp; -bfx: input is treated as byte array represented by
-    a hexadecimal string<br>
-    C C&nbsp;&nbsp; -bf64: input is treated as byte array in Base-64
-    representation<br>
-    C C&nbsp;&nbsp; -bfi: input is treated as integer number<br>
-    C C&nbsp;&nbsp; -sf: input is treated as string (this is also by
-    default)<br>
-    C C These options are equivalent in this command:<br>
-    C C&nbsp;&nbsp; -bfix and -bfx, -bf64 and -bfi64, -bfi and -bfii,
-    /sf and -sfi<br>
-    C C ====<br>
-    <br>
-    C C == Examples:<br>
-    <br>
-    C C Convert can handle multiple inputs. Below, plain ANSII strings
-    will be <br>
-    C C converted to different representations:<br>
-    C Internal IG.Script.AppBase Crypto Convert Luxembourg London
-    Ljubljana <br>
-    <br>
-    C C Now, check which bytes represent an integer and how is this
-    written in <br>
-    C C Base-64 encoding:<br>
-    C Internal IG.Script.AppBase Crypto Convert -bfi 39543786392000<br>
-    C Internal IG.Script.AppBase Crypto Convert -bfii&nbsp;
-    39543786392000<br>
-    C Internal IG.Script.AppBase Crypto Convert -bfii&nbsp; 260<br>
-    <br>
-    C C Decode a byte array specified in hexadecimal format:<br>
-    C Internal IG.Script.AppBase Crypto Convert -bfix
-    4c7578656d626f757267<br>
-    C C See if hexadecimal with separators is understood:<br>
-    C Internal IG.Script.AppBase Crypto Convert -bfix
-    4c-75-78-65-6d-62-6f-75-72-67<br>
-    C C Decode the same byte array specified in a Base-64 format:<br>
-    C Internal IG.Script.AppBase Crypto Convert -bfi64 THV4ZW1ib3VyZw==<br>
-    <br>
-    C C Finally, check how a string converts to a byte array (without
-    the quotes,<br>
-    C C input below would be treated as multiple short strings):<br>
-    C Internal IG.Script.AppBase Crypto Convert "This is a string to be
-    converted."<br>
-    C C Check if we can invert conversion properrly:<br>
-    C Internal IG.Script.AppBase Crypto Convert -bfi64
-    VGhpcyBpcyBhIHN0cmluZyB0byBiZSBjb252ZXJ0ZWQu<br>
-    <br>
-    C C Converter can handle multiple inputs: <br>
-    C Internal IG.Script.AppBase Crypto Convert London Ljubljana Berlin
-    Luxembourg<br>
-    C C This is also true for other input formats:<br>
-    C Internal IG.Script.AppBase Crypto Convert -bfi64 TG9uZG9u
-    TGp1YmxqYW5h QmVybGlu THV4ZW1ib3VyZw==<br>
-    <br>
-    C C ==== END: Convert<br>
-    <br>
-    <br>
-    C C&nbsp; ==================<br>
-    C C GetKey, GetInitializationVector or GetIV, GetSalt:<br>
-    C C Generate a secret key for encryption (GetKey) or initialization
-    vector for<br>
-    C C symmetric encryption (GetInitializationVector or GetIV) or a
-    salt (a<br>
-    C C random array of bytes added to encrypted or hashed entities in
-    order to<br>
-    C C make guessing of secret information more difficult. All three
-    types of<br>
-    C C generation functions take the same parameters, they differ only
-    in what<br>
-    C C they are generating.<br>
-    <br>
-    C C Internal IG.Script.AppBase Crypto GetKey &lt;-pwt algType&gt;
-    -pwlen len -pwit <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; numIt keyLength
-    &lt;numIt&gt; ...:<br>
-    C C&nbsp;&nbsp; Generates a key of the specified length on basis of
-    provided password<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; and salt (which can also be randomly
-    generated by the command), by<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; employing the specified generation
-    algorithm with specified number <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; of iterations. More iterations there
-    are, more time is spent for<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; key generation, which also makes more
-    difficult to guess the key<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; by brute force attack.<br>
-    C C&nbsp;&nbsp; Parameters:<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; keyLength: length of the generated key.
-    If not specified then <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; default key length is used.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; numIt: number of iterations of the key
-    generating algorithm.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -t algType: password generatiion
-    algorithm type, can be:<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Rfc for the RFC2898
-    algorithm (default)<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - DeriveBytes for a les
-    secure algorithm (.NET's PasswordDeriveBytes)<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - None for direct
-    transformation from password to generated key<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -pwlen length: length of the generated
-    key. Also used as length of<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; password when password is
-    not specified. Vice versa, when this <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parameter is not specified,
-    key length will be the same as length <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of the provided password.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -pwit numIt: number of iterations in key
-    generation<br>
-    C C A number of other parameters are supported:<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; - klen <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -pwt algType: password generation
-    algorithm type, the same as -t.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; - pw password: actual password used for
-    key generation (if not <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; provided then password is
-    randomly generated).<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -pwx password: binary password specified
-    in hexadecimal format<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "3dca9a", "3DCA9A",
-    "3dCa9a", "3D-ca-9a" are all accepted.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -bw64 password: binary password
-    specified in base64 encoding<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -sl salt: password salt specified as
-    string.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -slx salt: binary password salt in
-    hexadecimal format.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -sl64 salt: password salt specified as
-    base-64 encoded bytes.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -sllen saltLength: salt length. This is
-    used when salt is not <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified, in which case
-    salt is randomly generated with the <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified length (if also
-    length is not specified, then password<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; length is used).<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -bfx: Result (generated key) will be
-    returned in hexadecimal string <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; representation of the
-    generated byte array representing the key.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -bf64: Result (generated key) will be
-    returned in as base-64 encoded <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string representation of the
-    generated byte array.<br>
-    <br>
-    C C WARNINGs:<br>
-    C C Passwords must be strong, such that it is difficult to guess
-    them (they<br>
-    C C should not contain words appearing in dictionary, should mix
-    small and <br>
-    C C capital letters with numbers and other characters, should be
-    long enough<br>
-    C C (preferably at least eight characters, better more), etc. Salts
-    should be <br>
-    C C random and should not repeat over multiple encryptions or
-    password <br>
-    C C hashings (which is generation of a digest from a password by a <br>
-    C C cryptographic algorithm, such that correctness of the password
-    can be <br>
-    C C checked, but it is nearly impossible to restore the password
-    from the<br>
-    C C digest).<br>
-    C C When generating keys from passwords, it is also recommended that
-    <br>
-    C C sufficient number of iterations are performed by the key
-    generation <br>
-    C C algorithm. This makes generation take longer, which makes more
-    difficult<br>
-    C C to guess the generating passwords by trying large numbers of
-    combinations.<br>
-    C C ====<br>
-    <br>
-    C C == Examples:<br>
-    C C Generate a 20 bytes long key from the specified salt, password,
-    and<br>
-    C C number of iterations:<br>
-    C Internal IG.Script.AppBase Crypto GetKey -pw TestPassword1 -sl
-    MySalt123 21 <br>
-    <br>
-    C C In real&nbsp; situations, password and salt should be stronger
-    (see warnings<br>
-    C C above). If keys will be stored in a safe store and key
-    generation <br>
-    C C parameters will not be inserted by humans (meaning that it will
-    not be<br>
-    C C necessary for someone to memorize them), the generating password
-    and salt<br>
-    C C can be randomly generated (note the notification about random
-    generation):<br>
-    C Internal IG.Script.AppBase Crypto GetKey 21<br>
-    <br>
-    C C We can also specify the number of key generation iterations
-    (otherwise,<br>
-    C C default number of iterations is used), either by the pwit option
-    or<br>
-    C C by the second free parameter:<br>
-    C Internal IG.Script.AppBase Crypto GetKey -pwit 3500 21<br>
-    C Internal IG.Script.AppBase Crypto GetKey 21 3500 <br>
-    <br>
-    C C When randomly generating the password and salt from which key is
-    derived,<br>
-    C C we can still specify the lengths of the randomly generated
-    password and <br>
-    C C salt used to produce the key (otherwise, default values are
-    taken):<br>
-    C Internal IG.Script.AppBase Crypto GetKey -pwlen 14 -sllen 22 36
-    3200<br>
-    <br>
-    C C Default algorithm used to generate password is recommended, but
-    we can<br>
-    C C also explicitly specify the algorithm used by the -pwt or -t
-    option:<br>
-    C Internal IG.Script.AppBase Crypto GetKey -pwt DeriveBytes -pwlen
-    14 -sllen 22 36 <br>
-    C Internal IG.Script.AppBase Crypto GetKey -t DeriveBytes -pwlen 14
-    -sllen 22 36 <br>
-    <br>
-    C C Password and salt used in key generation can be specified in a
-    number of<br>
-    C C forms: as string (-pw and -sl options) or as byte arrays in
-    hexadecimal<br>
-    C C form (-pwx and -slx options) or in base-64 encoding (-pw64 or
-    -sl64<br>
-    C C options):<br>
-    C Internal IG.Script.AppBase Crypto GetKey 23 -pw Ljubljana123 -sl
-    Luxembourg123<br>
-    C Internal IG.Script.AppBase Crypto GetKey 23 -pwx
-    4c6a75626c6a616e61313233 -slx 4c7578656d626f757267313233<br>
-    C Internal IG.Script.AppBase Crypto GetKey 23 -pw64 TGp1YmxqYW5hMTIz
-    -sl64 THV4ZW1ib3VyZzEyMw==<br>
-    <br>
-    C C All the above commands produce the same retult because the same
-    password<br>
-    C C and salt are specified in different format. We can also mix the
-    formats:<br>
-    C Internal IG.Script.AppBase Crypto GetKey 23 -pw Ljubljana123 -slx
-    4c7578656d626f757267313233<br>
-    C Internal IG.Script.AppBase Crypto GetKey 23&nbsp; -pw64
-    TGp1YmxqYW5hMTIz -sl Luxembourg123<br>
-    C Internal IG.Script.AppBase Crypto GetKey 23&nbsp; -pwx
-    4c-6a-75-62-6c-6a-61-6e-61-31-32-33 -sl64 THV4ZW1ib3VyZzEyMw==<br>
-    <br>
-    C C Generated keys are output to console (in hexadecimal and base-64
-    encoding),<br>
-    C C but also returned as result of the script. The returned result
-    is in <br>
-    C C base-64 encoding (as if we used the -bf64 option), but we can
-    make it<br>
-    C C in the hexadecimal format by using the -bfx option:<br>
-    C Internal IG.Script.AppBase Crypto GetKey 23 -bfx -pw Ljubljana123
-    -slx 4c7578656d626f757267313233<br>
-    <br>
-    C C Beside secret keys, we can also generate initialization vectors
-    (IV) for<br>
-    C C symmetric encoding and salts. This is achieved by different
-    commands while<br>
-    C C parameter sets are exactly the same. However, for the same
-    values of <br>
-    C C parameters, each of these commands will generate a different
-    output:<br>
-    C Internal IG.Script.AppBase Crypto GetKey 23 -pwlen 15 -sllen 21 <br>
-    C Internal IG.Script.AppBase Crypto GetInitializationVector 23
-    -pwlen 15 -sllen 21&nbsp; <br>
-    C Internal IG.Script.AppBase Crypto GetSalt 23 -pwlen 15 -sllen
-    21&nbsp; <br>
-    <br>
-    C C ==== END: GetKey<br>
-    <br>
-    <br>
-    <br>
-    C C ==================<br>
-    C C TimeKeyGeneration:<br>
-    C C Calculates average key generation time for the specified key
-    generation <br>
-    C C algorithm, with specified password lengt, salt length, generated
-    key<br>
-    C C length, and numbef o iterations. <br>
-    C C This is very helpful in order to estimate how many iterations
-    should you<br>
-    C C take in order to meke your hashed passwords secure and to defend
-    against<br>
-    C C brute force and rainbow attacks.<br>
-    C C Command has very similar set of parameters than the GetKey
-    command, with<br>
-    C C the addition of the -time option.<br>
-    <br>
-    C C Internal IG.Script.AppBase Crypto TimeKeygeneration &lt;-pwt
-    algType&gt; <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;-pwlen len&gt; -pwit
-    numIt keyLength ...:<br>
-    C C&nbsp;&nbsp; Calculates average key generation execution
-    execution time.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; keyLength: length of the generated key.
-    If not specified then <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; default key length is used.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -t algType: password generatiion
-    algorithm type, can be:<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Rfc for the RFC2898
-    algorithm (default)<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - DeriveBytes for a les
-    secure algorithm (.NET's PasswordDeriveBytes)<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - None for direct
-    transformation from password to generated key<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -pwlen length: length of the generated
-    key. Also used as length of<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; password when password is
-    not specified. Vice versa, when this <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parameter is not specified,
-    key length will be the same as length <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of the provided password.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -pwit numIt: number of iterations in key
-    generation<br>
-    C C A number of other parameterrs are supported:<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; - klen <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -pwt algType: password generation
-    algorithm type, the same as -t.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; - pw password: actual password used for
-    key generation (if not <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; provided then password is
-    randomly generated).<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -pwx password: binary password specified
-    in hexadecimal format<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "3dca9a", "3DCA9A",
-    "3dCa9a", "3D-ca-9a" are all accepted.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -bw64 password: binary password
-    specified in base64 encoding<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -sl salt: password salt specified as
-    string.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -slx salt: binary password salt in
-    hexadecimal format.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -sl salt: password salt specified as
-    string.<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -sllen saltLength: salt length. This is
-    used when salt is not <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified, in which case
-    salt is randomly generated with the <br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified length (if also
-    length is not specified, then password<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; length is used).<br>
-    C C&nbsp;&nbsp;&nbsp;&nbsp; -time t: targeted total execution time,
-    default is 0.1 s.<br>
-    C C ====<br>
-    <br>
-    C C == Examples:<br>
-    C C Calculate time necessary for generation of passwords with the
-    RFC2898 <br>
-    C C algorithm, with password length 15, salt length 64, and with 100
-    <br>
-    C C iterations of generating algorithm:<br>
-    C Internal IG.Script.AppBase Crypto TimeKeygeneration -pwlen 15
-    -sllen 64 -pwit 100 <br>
-    <br>
-    C C You can try if the measurement is statistically precise enough
-    by <br>
-    C C repeating the test several times and whatching whether the
-    reposted speed <br>
-    C C changes. If seemed necessary, you can prolong expected time by
-    using the <br>
-    C C -time option (below, number of iterations was also increased):<br>
-    C Internal IG.Script.AppBase Crypto TimeKeygeneration -time 0.8
-    -pwlen 15 -sllen 64 -pwit 1000 <br>
-    <br>
-    C C Check what happens if password and salt length are increased:<br>
-    C Internal IG.Script.AppBase Crypto TimeKeygeneration -pwlen 15
-    -sllen 50 -pwit 100 <br>
-    C Internal IG.Script.AppBase Crypto TimeKeygeneration -pwlen 30
-    -sllen 50 -pwit 100 <br>
-    C Internal IG.Script.AppBase Crypto TimeKeygeneration -pwlen 60
-    -sllen 50 -pwit 100 <br>
-    C Internal IG.Script.AppBase Crypto TimeKeygeneration -pwlen 60
-    -sllen 100 -pwit 100 <br>
-    C Internal IG.Script.AppBase Crypto TimeKeygeneration -pwlen 60
-    -sllen 200 -pwit 100 <br>
-    C Internal IG.Script.AppBase Crypto TimeKeygeneration -pwlen 60
-    -sllen 200 -pwit 1000 <br>
-    <br>
-    C C You can also compare performance of difference algorithms:<br>
-    C Internal IG.Script.AppBase Crypto TimeKeygeneration -t Rfc -pwlen
-    20 -sllen 100 -pwit 1000 <br>
-    C Internal IG.Script.AppBase Crypto TimeKeygeneration -t DeriveBytes
-    -pwlen 20 -sllen 100 -pwit 1000 <br>
-    <br>
-    C C We can specify password and password salt from which keys are
-    generated by<br>
-    C C ourselves. These can be inserted as string, byte array in
-    hexadecimal <br>
-    C C form, or byte array in base64 encoding (formats can be mixed):<br>
-    C Internal IG.Script.AppBase Crypto TimeKeygeneration -pw MyPassword
-    -sl MySalt111 -pwit 1000 <br>
-    C Internal IG.Script.AppBase Crypto TimeKeygeneration -pwx
-    A353B49CFF -sl64 kjgif7gjdgd8f0a3 -pwit 1000 <br>
-    C Internal IG.Script.AppBase Crypto TimeKeygeneration -pw64
-    ajru79gkg7084jv7 -sl MySalt111 -pwit 1000 <br>
-    <br>
-    C C ==== END: TimeKeyGeneration<br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  </body>
+  <!-- Tags below define icons, CSSs, and scripts. Leave them as absolute URLs. -->
+  <link rel="icon" href="https://ajgorhoe.github.io/icons/IGLibIcon_128x128.png" />
+  <link rel="stylesheet" href="https://ajgorhoe.github.io/scripts/IgsScriptSupport.css" />
+  <!-- The following two script elements perform canonical redirect: -->
+  <script src="https://ajgorhoe.github.io/scripts/IgsScriptTools.js"></script>
+  <script>igsCanonicalRedirect();</script>
+</head>
+
+<body>
+  <br>
+  <h1><i>ExCrypto.cmd</i> - example command file as reference guide to
+    cryptographic utilities available in <i>HashShelll</i><br>
+  </h1>
+  <h1> </h1>
+  <br>
+  <b>Remarks</b>: <br>
+  Commands in this example file are in long form, i. e. beginning with
+  "<i>Internal IG.Script.AppBase Crypto</i>". This is necessary in the
+  <i>IGShell</i>, but in <i>HashShell</i> you can type in short
+  versions of commands that begin simply with "<i>Crypto</i>". That
+  is, you can omit the script loader command ("<i>Internal</i>") and
+  the application class name ("<i>IG.Script.AppBase</i>"), but yo are
+  still allowed to use longer versions of commands.<br>
+  Commands from this file should be run within the examples/crypto
+  sub-directory of the <a href="download/examples.zip">downloaded
+    examples directory</a>. The best way for testing is to run the <i>HashShell</i>
+  interactively within that directory, which is done by running (after
+  the <a href="HashForm.html#download_hashshell">shell has been
+    downloaded</a>) the following command: <br>
+  <blockquote><i>HashShell.exe int </i><br>
+  </blockquote>
+  <br>
+  <br>
+  C *********************************************<br>
+  C Examples: Cryptographic utilities<br>
+  C *********************************************<br>
+  <br>
+  C C This file contains example commands for the IGLib cryptographic
+  <br>
+  C C utilities. In order to run the examples, you need IgShell or
+  HashShell:<br>
+  C C http://www2.arnes.si/~ljc3m2/igor/software/IGLibShellApp/<br>
+  C C
+  http://www2.arnes.si/~ljc3m2/igor/software/IGLibShellApp/HashForm.html<br>
+  <br>
+  C C Run the IGLib shell application (e.g. igs.exe) with commandline
+  arguments<br>
+  C C Copied from this file!<br>
+  C C You can also uncomment some lines and interpret this file. In
+  order<br>
+  C C to do this, run the application with Run as the first argument
+  and<br>
+  C C name of tis file as the second argument, i.e.<br>
+  C C <br>
+  C C&nbsp;&nbsp; igs.exe Run excrypto.cmd<br>
+  C C <br>
+  C C Command names are NOT CASE SENSITIVE in most shell applications.<br>
+  C C Lines commented by a SINGLE C can be executed in the shell,
+  while lines<br>
+  C C commented by double C are just comments.<br>
+  <br>
+  C C Print help on group of embedded applications or single app.:<br>
+  C Internal IG.Script.AppBase Crypto ?<br>
+  C Internal IG.Script.AppBase Crypto GetFileHash ?<br>
+  <br>
+  WriteLine "When running this file, uncomment the lines that you want
+  to execte!"<br>
+  <br>
+  <br>
+  C C
+  ****************************************************************************<br>
+  C C CALCULATION and verification OF HASH VALUES (CHECKSUMS)<br>
+  <br>
+  C C ==================<br>
+  C C HashForm:<br>
+  C C Launch a form for calculation and verification of file and text<br>
+  C C hash functions (checksums - MD5, SHA-1, SHA-256, SHA-512):<br>
+  C C ====<br>
+  <br>
+  C C == Examples:<br>
+  C Internal IG.Script.AppExtBase Crypto HashForm<br>
+  <br>
+  C C ==================<br>
+  C C GetFileHash:<br>
+  C C Calculate FILE HASHes for the specified file, eventually write
+  information<br>
+  C C to a file (last argument):<br>
+  <br>
+  C C Internal IG.Script.AppBase Crypto GetFileHash FilePath
+  &lt;WriteToFile&gt; &lt;HashFileName&gt; <br>
+  C C&nbsp;&nbsp; WriteToFile: whether hash values are written to a
+  file, default is false<br>
+  C C&nbsp;&nbsp; HashFileName: name of the file where hash values are
+  written. If not<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; specified then it is specified by adding
+  ".chk" to the hash file<br>
+  C C ====<br>
+  <br>
+  C C == Examples:<br>
+  C Internal IG.Script.AppBase Crypto GetFileHash excrypto.cmd true
+  excrypto.cmd.chk<br>
+  <br>
+  <br>
+  C C ==================<br>
+  C C CheckSum:<br>
+  C C Calculates / verify hashes of files or strings by the CheckSum
+  command:<br>
+  <br>
+  C C CheckSum &lt;-c&gt; &lt;-s&gt; &lt;-h hash&gt; &lt;-t
+  hashType&gt; &lt;-o outputFile&gt; &lt;inputFile1&gt;
+  &lt;inputFile2&gt; ...: <br>
+  C C&nbsp;&nbsp; Calculates or verifies various types of hash values
+  for files or strings. Calculated file hashes<br>
+  C C&nbsp;&nbsp; can be saved to a file.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -t hashType: specifies hash type (MD5,
+  SHA-1, SHA-256, SHA-512)<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -c: verification rather than calculation
+  of hashes.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -s: hash is calculated or verified for
+  the specified strings rather than files.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -h hash: hash value to be verified.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -o outputFile: output file where
+  calculated hashes are written. Should<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; be in the current directory,
+  otherwise checking may not work correctly.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; - inputFile1 inputFile2 ...: input
+  files, either files whose hashes are calculated, or files<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; containing hash values to be
+  verified (in the case of -c option)<br>
+  C C A number of other parameters are supported:<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -rd dir: input files will be recursively
+  searched for in the directory<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; named dir. Several
+  directories for recursive file search can be<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified, each following
+  its own -rd option.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; - rdl dir: similar to -rd, but order of
+  file listing is by directory<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; levels rather than in normal
+  tree traversal.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -rp ptrn: specifies that files that
+  match the specified pattern<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ptrn will be searched in a
+  recursive search. Patterns can contain<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; wildcards (e.g. "*.cmd" or
+  "a*.txt"). Several patterns can be <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified (each one by its
+  own -rp option) in which case all are<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; used with all recursive
+  directories.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -rl dirLevel: specifies the level of
+  directories for recursive search.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -1 means all levels of
+  subdirectories are searched, 0 means none<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -pa: specifies that file pathss are
+  output as absolute.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -pr: specifies that file paths are
+  output as relative paths.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -yo: specifies that files will be
+  automatically overwritten, withot<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; asking the user. This is
+  useful in batch executon.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -no: specifies that no files are
+  overwritten. In all possibilities<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of overwriting a file, the
+  operaton is automatically skipped <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; without asking a user
+  (meaning that some information may be lost)<br>
+  C C These options give an excellent flexibility, e.g. one can
+  iterates over<br>
+  C C all files of a directory recursively and store their hashes in
+  the <br>
+  C C specified output file for later verification (all by a single
+  command).<br>
+  C C ====<br>
+  <br>
+  C C == Examples:<br>
+  C C Calculate MD5 checksums of several files &amp; store them to
+  hashes.MD5:<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -t MD5 -o hashes.MD5
+  0readme_crypto.txt excrypto.cmd <br>
+  <br>
+  C C Verify previously calculated checksums (first command generates
+  them):<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -t MD5 -o hashes.MD5
+  0readme_crypto.txt excrypto.cmd <br>
+  C Internal IG.Script.AppBase Crypto CheckSum -t MD5 -c hashes.MD5 <br>
+  <br>
+  C C Calculate &amp; verify other kind of checksum (e.g. SHA-1,
+  SHA-256, SHA-512):<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -t SHA-256 -o
+  hashes.SHA256 *.cmd *.txt<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -t SHA-256 -c
+  hashes.SHA256<br>
+  <br>
+  C C Calculate hash for a single file (without writing to a file): <br>
+  C Internal IG.Script.AppBase Crypto CheckSum -t SHA-1 excrypto.cmd <br>
+  C C - or for multiple files: <br>
+  C Internal IG.Script.AppBase Crypto CheckSum -t SHA-1 *.cmd *.txt
+  cryptofiles/*<br>
+  <br>
+  C C Recursively calculate hashes for all files in a directory, store
+  them to<br>
+  C C a file, and later verify them:<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -t SHA-1 -rd ./ -o
+  hashes.SHA1 -no <br>
+  C Internal IG.Script.AppBase Crypto CheckSum -t SHA-1 -rd
+  ./cryptofiles -o hashes2.SHA1 -no <br>
+  C C Note the -no option, meaning that ouptu files that already exist
+  will be<br>
+  C C automatically skipped and are not overwritten. With the -yo
+  option, the <br>
+  C C opposite is achieved and files are automatically overwritten.<br>
+  C C - Afterwards, check consistency at later times (note use of
+  wildcards):<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -t SHA-1 -c *.SHA1<br>
+  C C If any file at any location in the observed directories would
+  change at<br>
+  C C a later time, this would be immediately noticed by the check.<br>
+  <br>
+  C C Search patterns with wildcards can be specified to filter files
+  in <br>
+  C C recursive directory listings: <br>
+  C Internal IG.Script.AppBase Crypto CheckSum -t MD5 -rd ./ -rp *.txt
+  -rp *.cmd <br>
+  C Internal IG.Script.AppBase Crypto CheckSum -t MD5 -rd ./ -rp
+  *1.1*.txt -rp *.cmd <br>
+  <br>
+  C C Direct verification of specified hash value of a file<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -t MD5 -c data1.txt -h
+  7ad479880f6f78223e93791d2cce600d <br>
+  C C If the result was negative, replace the checksum following the
+  -h option<br>
+  C C with the checksumm produced by the following command:<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -t MD5 data1.txt<br>
+  <br>
+  C C Calculation of hashes of various types of the string "My
+  String":<br>
+  C C MD5 = 4545102cc40ea0a85124cf4b31574661<br>
+  C C SHA1 = 07841b2e0fda6cfbf7c6bf00f179233cf4e3247b<br>
+  C C SHA256 =
+  8a7046a0b97e45470b13f30448c9d7d959aa5eea583d2f007921736b2141ac75<br>
+  C C SHA512 =
+  d159694d78c06886143e08dadc50cb89a96a41c766b603fa07fe3de91e170bf2942545c1ca17e280f572fc829de6059a80e75f4623e736915265f8938bb19e39<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -s -t MD5 "My String"<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -s -t SHA1 "My String"<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -s -t SHA256 "My
+  String"<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -s -t SHA512 "My
+  String"<br>
+  <br>
+  C C Verification of a string hash value (change hash to make it not
+  pass):<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -t MD5 -c -s "My
+  String" -h 4545102cc40ea0a85124cf4b31574661<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -t SHA256 -c -s "My
+  String" -h
+  8a7046a0b97e45470b13f30448c9d7d959aa5eea583d2f007921736b2141ac75<br>
+  <br>
+  C C Hashes can also be calculated for multiple strings and byte
+  arrays<br>
+  C C specified in hexadecimal or base-64 encoding (also use -s option
+  for<br>
+  C C this purpose, and specify formats via -bfi* or -bf* options):<br>
+  C Internal IG.Script.AppBase Crypto Convert Luxembourg<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -s -t MD5 -bfii 23 55
+  685<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -s -t MD5 Str1 Str2
+  Luxembourg<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -s -t MD5 -bfix
+  4c-75-78-65-6d-62-6f-75-72-67<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -s -t MD5 -bfi64
+  THV4ZW1ib3VyZw==<br>
+  <br>
+  C C Hashes for byte arrays or long integers can aldo be verified:<br>
+  C Internal IG.Script.AppBase Crypto CheckSum -c -s -t MD5 -bfi64
+  THV4ZW1ib3VyZw== -h 06630c890abadde9228ea818ce52b621 <br>
+  C Internal IG.Script.AppBase Crypto CheckSum -c -s -t MD5 -bfix
+  4c-75-78-65-6d-62-6f-75-72-67 -h 06630c890abadde9228ea818ce52b621 <br>
+  <br>
+  C C ==== END: CheckSum<br>
+  <br>
+  <br>
+  C C ==================<br>
+  C C COMMENTS on OVERWRITE/DELETE CONFIRMATIONS<br>
+  C C Some operations may overwrite or delete a number of files. In
+  such cases,<br>
+  C C the default behavior is to ask the user for confirmations to
+  overwrite <br>
+  C C or delete each individual file. Usually, after the first
+  confirmation or<br>
+  C C rejection, the user is asked whether the decision shoulld be
+  applied to<br>
+  C C all further files that would be overwritten/deleted.<br>
+  C C To the questions that require a "yes" or "no" answer, user can
+  answer<br>
+  C C with "1", "y", "yes" or "true" to confirm and with "0", "n",
+  "no" or <br>
+  C C "false" to reject the operation. Sometimes, any nonzero number
+  will be<br>
+  C C considered as yes. Pressing &lt;Enter&gt; will accept the
+  default decision. <br>
+  C C Inserting a queston mark ("?") will print short instructions and
+  the<br>
+  C C current (default) value of the answer (taken when &lt;Enter&gt;
+  is pressed).<br>
+  <br>
+  <br>
+  C C
+  ****************************************************************************<br>
+  C C SYMMETRIC ENCRYPTION<br>
+  <br>
+  <br>
+  C C ==================<br>
+  C C EncryptPlain, DecryptPlain:<br>
+  C C Encrypt or decrypt files, strings, and byte values by using
+  symmetric-key<br>
+  C C algorithms. This is a plain variant where user directly provides
+  the key,<br>
+  C C initializaton vector, and other parameters for encryption.
+  Therefore, this<br>
+  C C class of functions is more difficult to use and is also less
+  safe for <br>
+  C C non-expert users,but enables more fine tunning options for
+  advanced users.<br>
+  C C Encrypt and decrypt use the same sets of parameters.<br>
+  <br>
+  C C Internal IG.Script.AppBase Crypto Encrypt input &lt;-k key&gt;
+  &lt;-sl salt&gt; <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;-iv IV&gt; &lt;-t
+  algorithm&gt; &lt;-o outputFile&gt;<br>
+  C C&nbsp;&nbsp; Encrypts input (which can be a string, byte field,
+  or a set of files)<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; by using the specified symmetric-key
+  algorithm.<br>
+  C C Parameters:<br>
+  C C&nbsp;&nbsp; input: an item (or a set of items) to be encrypted.
+  This can be strings,<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; byte arrays, or files, dependent on
+  other parameters.<br>
+  C C&nbsp;&nbsp; -t algorithm: type of the symmetric-key algorithm
+  used. <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; Default is RD or Rijndael(the Rijndael
+  algorithm, part of which is ued <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; in the Advanced Encryption Standard -
+  AES), and others include AES (the<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; previously mentioned algorithm from the
+  standard, a subset of RD),<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; TD or TripleDes, DES, and RC2.<br>
+  C C&nbsp;&nbsp; -k key: specifies the SECRET key used for
+  encryption. Key must be kept<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; secret in a carefully guarded safe
+  store, and only transferred in<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; encrypted form between parties in
+  communication (typically enxrypted<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; by a puclic-key algorithm)<br>
+  C C&nbsp;&nbsp; -iv IV: specifies the initialization vector used for
+  encryption. IV<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; can be kept secret, but this is not a
+  requirement. Specification of <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; IV is a request of symmetric algorithms,
+  and the same key must be used<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; in decryption. The best practice is to
+  randomly generate IV for each<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; session or each group of encrypted
+  items.<br>
+  C C&nbsp;&nbsp; -sl salt: Salt, a part that is added to the
+  encrypted test before <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; encryption. This makes more difficult
+  for potential attackers to guess the <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; original text or secret parameters (such
+  as keys and passwords), even<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; if they are able to intercept messages
+  and know the original and <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; decrypted text in some cases.<br>
+  C C&nbsp;&nbsp; -o outputFile: when specified, the encrypted text
+  (or a file) is stored<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; to the file defined by outputFile (which
+  must be a valid file path).<br>
+  C C A number of other parameters are supported:<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; - pw password: password used for
+  encryption, specified as string. If <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; key is not provided then the
+  password is used in place of the key.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -pwx password: binary password specified
+  in hexadecimal format.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "3dca9a", "3DCA9A",
+  "3dCa9a", "3D-ca-9a" are all accepted.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -bw64 password: binary password
+  specified in base64 encoding<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -sl salt: salt specified as string.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -slx salt: binary salt in hexadecimal
+  format.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -sl64 salt: binary salt specified in
+  base-64 encoding.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -bfx: Result (envrypted text) will be
+  returned as hexadecimal string <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; representation of the
+  generated byte array.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -bf64: Result (generated text) will be
+  returned in as base-64 encoded <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string representation of the
+  generated byte array.<br>
+  C C <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -rd dir: input files will be recursively
+  searched for in the directory<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; named dir. Several
+  directories for recursive file search can be<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified, each following
+  its own -rd option.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; - rdl dir: similar to -rd, but order of
+  file listing is by directory<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; levels rather than in normal
+  tree traversal.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -rp pttrn: specifies that files that
+  match the specified pattern<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ptrn will be searched in a
+  recursive search. Patterns can contain<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; wildcards (e.g. "*.cmd" or
+  "a*.txt"). Several patterns can be <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified (each one by its
+  own -rp option) in which case all are<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; used with all recursive
+  directories.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -rl dirLevel: specifies the level of
+  directories for recursive search.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -1 means all levels of
+  subdirectories are searched, 0 means none<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -pa: specifies that file pathss are
+  output as absolute.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -pr: specifies that file paths are
+  output as relative paths.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -yo: specifies that files will be
+  automatically overwritten, withot<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; asking the user. This is
+  useful in batch executon.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -no: specifies that no files are
+  overwritten. In all possibilities<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of overwriting a file, the
+  operaton is automatically skipped <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; without asking a user
+  (meaning that some information may be lost)<br>
+  C C ====<br>
+  <br>
+  C C == Examples:<br>
+  <br>
+  C C == Encrypt / decrypt STRINGS:<br>
+  <br>
+  C C Encrypt a number of strings (the -s option), with password (-pw)
+  and <br>
+  C C initialization vector (-iv) provided in string form:<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -s -pw MyPassword11
+  -iv MyInitializationVector "Encrypted string No. 1"&nbsp; "Encrypted
+  string No. 2"<br>
+  <br>
+  C C Decrypt the results in order to restore original strings:<br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -s -pw MyPassword11
+  -iv MyInitializationVector&nbsp;
+  dggQxTn7y2m2tDw44rR/oU4ffveVClIsO/chAo5TT30=&nbsp;
+  dggQxTn7y2m2tDw44rR/oYfhlHfVt6j1Ug0f8UYI2fM=<br>
+  <br>
+  C C If password or initialization vector is not specified then you
+  will be <br>
+  C C asked to insert them (below, insert "MyPassword1"):<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -s -iv
+  MyInitializationVector "Encrypted string No. 1"&nbsp; "Encrypted
+  string No. 2"<br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -s -iv
+  MyInitializationVector&nbsp;
+  AWeIDmTh2PkCda9RJ0lpyVCtcrfyMyGxaXt4xHyhP4E=
+  AWeIDmTh2PkCda9RJ0lpyUFaxm8P6So2hjJ/aBvOV6k=<br>
+  <br>
+  C C You can try to insert password in hexadecimal form or in
+  base-64. In the<br>
+  C C above examples, password in string form is "MyPassword1", which
+  corresponds<br>
+  C C to 4d-79-50-61-73-73-77-6f-72-64-31 in hexadecimal form or to <br>
+  C C TXlQYXNzd29yZDE= in base-64 encoding. Try to insert it in both
+  form (first,<br>
+  C C selsect binary form, then one of two encodings):<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -s -iv
+  MyInitializationVector "Encrypted string No. 1"&nbsp; "Encrypted
+  string No. 2"<br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -s -iv
+  MyInitializationVector&nbsp;
+  AWeIDmTh2PkCda9RJ0lpyVCtcrfyMyGxaXt4xHyhP4E=
+  AWeIDmTh2PkCda9RJ0lpyUFaxm8P6So2hjJ/aBvOV6k=<br>
+  <br>
+  C C We could see above that encryption of two similar strings
+  produces two <br>
+  C C similar outputs. This is because the same initialization vectors
+  are used <br>
+  C C and no salt. In real life situations, this can be exploited to
+  guess the<br>
+  C C original messages and sometimes even the passwords (which means
+  that<br>
+  C C all intercepted text can be decrypted). Therefore it is
+  important to<br>
+  C C use randomly generated initialization vectors and salts within
+  encryption <br>
+  C C process. Keys should also be generated from passwords with
+  proper <br>
+  C C cryptographic algorithms.<br>
+  <br>
+  C C Beside the password and initialization vector, we can specify
+  the salt,<br>
+  C C which is added to the text before encryption. Now results are
+  longer,<br>
+  C C and on deryption side we also need to specifiy the original salt
+  value:<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -s -sl MyTestSalt1
+  -pw MyPassword11 -iv MyInitializationVector "Encrypted string No. 1"<br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -s -sl MyTestSalt1
+  -pw MyPassword11 -iv MyInitializationVector&nbsp;
+  sZj+d0FH/bURmo9s39BY1j0zCn2LeUT1F7mktz9VpH6W69w9D80gT3hSaTS+Gu0y<br>
+  <br>
+  C C On decryption side, we can provide only the length of the salt,
+  rather <br>
+  C C than its content (which is 11 bytes, written out by encryption
+  part):<br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -s -sllen 11 -pw
+  MyPassword11 -iv MyInitializationVector&nbsp;
+  sZj+d0FH/bURmo9s39BY1j0zCn2LeUT1F7mktz9VpH6W69w9D80gT3hSaTS+Gu0y<br>
+  C C If we input the wrong salt length or do not input it, then the
+  decrypted<br>
+  C C string will contain parts of the salt or will be truncated:<br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -s -sllen 8 -pw
+  MyPassword11 -iv MyInitializationVector&nbsp;
+  sZj+d0FH/bURmo9s39BY1j0zCn2LeUT1F7mktz9VpH6W69w9D80gT3hSaTS+Gu0y<br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -s -sllen 17 -pw
+  MyPassword11 -iv MyInitializationVector&nbsp;
+  sZj+d0FH/bURmo9s39BY1j0zCn2LeUT1F7mktz9VpH6W69w9D80gT3hSaTS+Gu0y<br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -s -pw MyPassword11
+  -iv MyInitializationVector&nbsp;
+  sZj+d0FH/bURmo9s39BY1j0zCn2LeUT1F7mktz9VpH6W69w9D80gT3hSaTS+Gu0y<br>
+  <br>
+  C C Byte arrays to be encrypted and decrypted can be inserted in <br>
+  C C hexadecimal format (by use of the -bfix option) or in base-64
+  encoding<br>
+  C C (the -bfi64 option). In order to test this, let us first convert
+  some <br>
+  C C string to a byte array represented in hexadecimal or base-64
+  form:<br>
+  C Internal IG.Script.AppBase Crypto Convert "Encrypted string No. 1"<br>
+  C C Now encrypt/decrypt binary equivalent (i.e. byte array obtained
+  form <br>
+  C C the string) specified in hexadecimal and base-64 form:<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -s -bfix -bfx -pw
+  MyPassword11 -iv MyInitializationVector&nbsp;
+  456e6372797074656420737472696e67204e6f2e2031<br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -s -bfix -bfx -pw
+  MyPassword11 -iv MyInitializationVector&nbsp;
+  760810c539fbcb69b6b43c38e2b47fa14e1f7ef7950a522c3bf721028e534f7d <br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -s -bfi64 -bf64 -pw
+  MyPassword11 -iv MyInitializationVector&nbsp;
+  RW5jcnlwdGVkIHN0cmluZyBOby4gMQ==<br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -s -bfi64 -bf64 -pw
+  MyPassword11 -iv MyInitializationVector&nbsp;
+  dggQxTn7y2m2tDw44rR/oU4ffveVClIsO/chAo5TT30= <br>
+  <br>
+  C C You can input bytes to be encrypted in one format, and output
+  encrypted<br>
+  C C bytes in another format. When decryption is made, input and
+  utput <br>
+  C C formats are swapped:<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -s -bfix -bf64 -pw
+  MyPassword11 -iv MyInitializationVector&nbsp;
+  456e6372797074656420737472696e67204e6f2e2031<br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -s -bfi64 -bfx -pw
+  MyPassword11 -iv MyInitializationVector&nbsp;
+  dggQxTn7y2m2tDw44rR/oU4ffveVClIsO/chAo5TT30=<br>
+  <br>
+  <br>
+  C C == Encrypt / decrypt FILES:<br>
+  <br>
+  C C Encrypt the specified file and save encrypted content to the
+  specified <br>
+  C C file:<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -o
+  0readme_crypto.txt.encrypted 0readme_crypto.txt -pw MyPassword11 -iv
+  MyInitializationVector <br>
+  C C Then decrypt the encrypted file to another file:<br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -o
+  0readme_crypto.txt.decrypted 0readme_crypto.txt.encrypted -pw
+  MyPassword11 -iv MyInitializationVector<br>
+  <br>
+  C C The -o parameter for specifying the output file can only be used
+  when<br>
+  C C a single file is encrypted. Without this parameter, paths to the
+  output<br>
+  C C files are constructed by appending the file extension ".ig_enc"<br>
+  C C to encrypted files, and ".ig_dec" to decrypted files. In this
+  way, the <br>
+  C C original files are not deleted after the operation:<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain 0readme_crypto.txt
+  -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain
+  0readme_crypto.txt.ig_enc -pw MyPassword11 -iv
+  MyInitializationVector <br>
+  <br>
+  C C You can encrypt and decrypt multiple files:<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain cryptofiles/*.txt
+  -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain
+  cryptofiles/*.ig_enc -pw MyPassword11 -iv MyInitializationVector <br>
+  <br>
+  C C If you repeat one of the above two commands, yu will be asked
+  for every<br>
+  C C generated file whether you want to overwrite it. You can skip
+  this by <br>
+  C C specifying either the -no to automatically skip overwriting the
+  files, or<br>
+  C C -yo to automatically overwrite any existent files: <br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -yo
+  cryptofiles/*.txt -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -no
+  cryptofiles/*.txt -pw MyPassword11 -iv MyInitializationVector <br>
+  <br>
+  C C WARNING: Be extremely&nbsp; cautious with using automatic
+  overwrites. In <br>
+  C C particular you should well test the functionality with every new
+  version <br>
+  C C of the software to make sure this behaves as expected and that
+  you are <br>
+  C C able to restore files later.<br>
+  <br>
+  C C While encrypting files without specifying the output file,
+  encrypted files <br>
+  C C with distinctive extensions&nbsp; ".ig_enc" (denoting encrypted
+  contents) <br>
+  C C and "ig_dec" (denoting decrypted contents) are skipped. These
+  files can<br>
+  C C only be encrypted by explicitly specifying the output file with
+  the -o <br>
+  C C command-line parameter (which works only for one file at a
+  time).<br>
+  C C While decrypting, only files with distinctive extension
+  ".ig_dec" are<br>
+  C C processed. If you want to perform decryption on an arbitrary
+  file,<br>
+  C C you should use the -o option to explicitly specify the output
+  file.<br>
+  C C Repeat a pair of encryption / decryption operations twice to see
+  how this <br>
+  C C feature works:<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -yo cryptofiles/*.*
+  -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -yo cryptofiles/*.*
+  -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -yo cryptofiles/*.*
+  -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -yo cryptofiles/*.*
+  -pw MyPassword11 -iv MyInitializationVector <br>
+  <br>
+  C C In the above commands, the -yo option was used to automatically
+  confirm<br>
+  C C overwriting the files (in the opposite, you would be requested
+  to confirm<br>
+  C C overwriting eventually existent files).<br>
+  <br>
+  C C Encrypted files are decorated by the distinctive ".ig_enc"
+  extension<br>
+  C C (while not using the -o option to explicitlz specify the output
+  file),<br>
+  C C and decrypted files get this extension removed and are decorated
+  by<br>
+  C C the "ig_dec" extension. The original file is NOT affected when <br>
+  C C encrypting / decrypting.<br>
+  C C For example, encryption of "readme.txt" will produce
+  "readme.txt.ig_enc",<br>
+  C C and decryption will produce "readme.txt.ig_enc", with the
+  original file<br>
+  C C "readme.txt" left intact.<br>
+  <br>
+  C C Above can be changed by using the -delorig option. This causes
+  deletion of <br>
+  C C the original files after they are encrypted, and decryption does
+  not<br>
+  C C decorate output file names with a distinctive extension, causing
+  that <br>
+  C C the decrypted files have the same names as the originals (also
+  the file <br>
+  C C with encrypted contents is removed after decryption):<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -delorig -yd -yo
+  cryptofiles/*.* -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -delorig -yd -yo
+  cryptofiles/*.* -pw MyPassword11 -iv MyInitializationVector <br>
+  <br>
+  C C WARNING: Be extremely&nbsp; cautious with using the -delorig
+  option.<br>
+  C C Use this only when you are sure that wou will be able to restore
+  the <br>
+  C C original files. <br>
+  C C For this, you must be sure that encrypted/decrypted originals
+  exist from<br>
+  C C which restore can be achieved, that you know the correct
+  encryption or<br>
+  C C decryption options, and that you are able to run the correct
+  encryption<br>
+  C C or decryption algorithm that will restore the originals.<br>
+  C C The latter means (among the others) that you have tested enough
+  the <br>
+  C C algorithm with similar parameters, and you are sure the
+  algorithm<br>
+  C C works as you expect.<br>
+  C C In many cases, it is advisable that when encrypting files,
+  bakcup of the<br>
+  C C originals is kept somewhere (in case you forget the password or
+  some<br>
+  C C other inpredictable situation appears that would prevent
+  restoring the<br>
+  C C files from encrypted copies).<br>
+  <br>
+  C C The CleanFiles command can be used to clean the eventual
+  redundant files<br>
+  C C that remained after performing encryption or decryption
+  operations. Using<br>
+  C C this command can be an alternative to the -delorig option, which
+  causes<br>
+  C C automatic deletion of originals.<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -yo cryptofiles/*.*
+  -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -yo cryptofiles/*.*
+  -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto CleanFiles -deldecrypted
+  cryptofiles/*.*<br>
+  <br>
+  C C Options for RECURSIVE DIRECTORY listing can be used to encrypt
+  or decrypt<br>
+  C C all files (possibly satisfying one or more name patterns with
+  wildcards)<br>
+  C C from the given directories and its nested subdirectories (all or
+  up to <br>
+  C C the specified level). The command below will encrypt all files
+  with the <br>
+  C C ".txt" extension in the "cryptofiles" directoriy and all its
+  nested<br>
+  C C subdirectories. Afterwards, the created files are deleted by
+  using the<br>
+  C C CleanFiles command.<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -yo -rd
+  cryptofiles/ -rp *.txt -yo -pw MyPassword11 -iv
+  MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto CleanFiles -yd -deldecrypted
+  -delencrypted -rd cryptofiles/ -rp *.*<br>
+  <br>
+  C C Recursive listing of files only up to the specified level can be
+  used, <br>
+  C C the level being specified by the -rl option. In the example
+  below, all <br>
+  C C files with the ".txt" extension, contained in the&nbsp;
+  "cryptofiles" <br>
+  C C directoriy and its nested subdirectories up to the second level,
+  are<br>
+  C C encrypted. With the second command, created files are deleted: <br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -yo -rl 2 -rd
+  cryptofiles/ -rp *.txt -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto CleanFiles -yd&nbsp; -rl 2 -rd
+  cryptofiles/ -rp *.txt -deldecrypted -delencrypted <br>
+  <br>
+  C C In a rather typical scenario, one would want to encrypt all
+  files the <br>
+  C C specific directory (possibly in multiple directories and
+  satisfying some<br>
+  C C wildcard-based filters), check if everything went as expected,
+  and then <br>
+  C C delete the originals. At a later time, one might want to decrypt
+  the <br>
+  C C files to restore the original state of the directory.<br>
+  C C In the line below we will do this following these steps:<br>
+  C C&nbsp;&nbsp; - encrypt all the files in the directory and all ist
+  nested <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; subdirectories, store them beside
+  originals (which are kept intact).<br>
+  C C&nbsp;&nbsp; - decrypt the encrypted files and store themm beside
+  the originals, so <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; that the results can be checked.<br>
+  C C&nbsp;&nbsp; - verify the results by browsing through the
+  directory structure and<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; compare some original/decrypted pairs
+  (decrypted having the .ig_dec<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; extension).<br>
+  C C&nbsp;&nbsp; - delete the originals and decrypted files to keep
+  only encrypted ones<br>
+  C C&nbsp;&nbsp; - at a later time, decrypt the encrypted files to
+  produce the originals,<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; and simulltaneously delete the input
+  (encrypted) files to keep only<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; the decrypted originals.<br>
+  C C Lines below will perform the above steps one by one:<br>
+  C C -Encrypt all files in the directory and its subdirectories
+  (recursive):<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -yo -rd
+  cryptofiles/ -rp *.* -pw MyPassword11 -iv MyInitializationVector <br>
+  C C -Decrypt (for test) the encrypted files and store decrypted
+  files beside<br>
+  C C the decripted files and originals. After the operation, the
+  directory <br>
+  C C structure can be browsed and decrypted files compared with
+  originals:<br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -yo -rd
+  cryptofiles/ -rp *.* -pw MyPassword11 -iv MyInitializationVector <br>
+  C C -Clean the directory - delete the original and decrypted files
+  in order<br>
+  C C to keep only the encrypted files:<br>
+  C Internal IG.Script.AppBase Crypto CleanFiles -yd -delorig
+  -deldecrypted -rd cryptofiles/ -rp *.*<br>
+  C C -At a later time, decrypt the encrypted file to restore the
+  originals. In<br>
+  C C this case, we will automatically delete the encrypted files
+  after the<br>
+  C C operation (by the -delorig option), but we could also leave the
+  encrypted<br>
+  C C versions (e.g. by not specifying the -yd option and then not
+  confirming<br>
+  C the deletions), inspect the results and delete the encrypted
+  versions later<br>
+  C C by calling the CleanFiles command:<br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -delorig -yd -rd
+  cryptofiles/ -rp *.* -pw MyPassword11 -iv MyInitializationVector <br>
+  <br>
+  C C Below, we just repeat all the above steps without commenting
+  them:<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -yo -rd
+  cryptofiles/ -rp *.* -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -yo -rd
+  cryptofiles/ -rp *.* -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto CleanFiles -yd -delorig
+  -deldecrypted -rd cryptofiles/ -rp *.*<br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -delorig -yd -rd
+  cryptofiles/ -rp *.* -pw MyPassword11 -iv MyInitializationVector <br>
+  <br>
+  C C ==== END: EncryptPlain, DecryptPlain<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  C C ==================<br>
+  C C AsymExportKey:<br>
+  C C Exports the specified asymmetric keys to a file, such that they
+  can be <br>
+  C C backed up or transferred to another computer.<br>
+  C C Warning: be careful when exporting private keys, not to
+  compromise the <br>
+  C C keys which should remain secret and should be carefully guarded.<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  C C
+  ****************************************************************************<br>
+  C C ASYMMETRIC ENCRYPTION<br>
+  <br>
+  <br>
+  C C ==================<br>
+  C C AsymKeyInfo:<br>
+  C C Prints information about the specified asymmetric keys. This
+  command is <br>
+  C C also used to verify that you have access to the specific
+  asymmetric <br>
+  C C keys, you can see if you also have access to the private key, a
+  hash<br>
+  C C of the public key is printed (and returned) so you can check
+  whether<br>
+  C C the same keys as expected are accessed through the specified
+  parameters<br>
+  C C (i.e., the key in a container has not been changed, or the
+  specified key<br>
+  C C file still contains the same key as expected). A small <br>
+  C C encryption/decryption test is also performed to check whether
+  the key <br>
+  C C pair can perform encryption and decryption correctly (this only
+  applies<br>
+  C C when the private parts of the keys are also accessible).<br>
+  <br>
+  C C Internal IG.Script.AppBase Crypto AsymKeyInfo &lt;-akn
+  keyName&gt; &lt;-t type&gt;<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; &lt;-akxml keyFileXml&gt; &lt;-akf
+  flag1&gt; &lt;-akf flag2&gt; ...<br>
+  C C&nbsp;&nbsp; Prints information about the specified asymmetric
+  keys. Keys are defined<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; by commmandline parameters, which can
+  specify the user or machine<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; level named key container where keys are
+  obtained, or a file from<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; which keys are obtained, or keys are
+  generated anew.<br>
+  C C Parameters:<br>
+  C C&nbsp;&nbsp; -t type: specifies type of the asymmetric algorithm
+  for which key is<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; obtained and its information printed.
+  Supported types are "RSA"<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; (Rivest-Shamir-Adleman cryptosystem for
+  secure data transmission -<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; default value), or "DSA" (Digital
+  Signature Algorithm).<br>
+  C C&nbsp;&nbsp; -at type: the same as -t type.<br>
+  C C&nbsp;&nbsp; -akxml keyFileXml: keys are obtained from the
+  specified XML file.<br>
+  C C&nbsp;&nbsp; -ank KeyName: specifies the name of the key
+  container from which keys <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; are obtained. Can be user or machine
+  level container, which can <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; be defined by flags (default is user
+  level). If the container with <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; the specified name does not yet exist
+  then the container and the <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; keys are created, and keys are stored to
+  the container.<br>
+  C C&nbsp;&nbsp; -akf flag: sets the value of the CSP flags used when
+  keys are created.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; Values can include "UseMachineKeyStore",
+  "UseDefaultKeyContainer", <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; "UseExistingKey", "UseNonExportableKey",
+  "UseUserProtectedKey"<br>
+  C C&nbsp;&nbsp; -exportprivatekey: when present with this command,
+  this option <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; causes that the private key is also
+  printer (in standard XML form)<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; in the case that it is present. Use this
+  only when you are sure that<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; the private key can not be compromised,
+  as the private keys that<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; are actually used in secure
+  communication must be carefully guarded.<br>
+  C C ====<br>
+  <br>
+  C C == Examples:<br>
+  <br>
+  <br>
+  C C When called for the first time, this will create a new RSA key
+  pair<br>
+  C C and store it in the key container named "TestRsaKey". The
+  information <br>
+  C C about the key is printed. When called at any later time, the
+  previously<br>
+  C C created key pair is taken (which can be seen by the returned
+  hash value<br>
+  C C of the public key):<br>
+  C Internal IG.Script.AppBase Crypto AsymKeyInfo -akn
+  TestRsaKey&nbsp; <br>
+  C Internal IG.Script.AppBase Crypto AsymKeyInfo -akn
+  TestRsaKey&nbsp; <br>
+  C C If you change the key container name, a new key pair is created:<br>
+  C Internal IG.Script.AppBase Crypto AsymKeyInfo -akn
+  TestRsaKey&nbsp; 1<br>
+  <br>
+  C C By default, only information about the public key is printed in
+  XML <br>
+  C C format. The -exportprivatekey causes that private key parts are
+  also<br>
+  C C printed (which should generallz be avoided, therefore also such
+  a long<br>
+  C C name for this option):<br>
+  C Internal IG.Script.AppBase Crypto AsymKeyInfo -akn TestRsaKey
+  -exportprivatekey<br>
+  &nbsp;<br>
+  C C By the -t parameter, a different type of keys can be created.
+  The <br>
+  C C following will create DSA (Elliptic Curve Digital Signature
+  Algorithm) <br>
+  C C keys instead of RSA:<br>
+  C Internal IG.Script.AppBase Crypto AsymKeyInfo -akn TestDsaKey -t
+  DSA<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  C C ==== END: AsymKeyInfo<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  C C ==================<br>
+  C C CertInfo:<br>
+  C C Prints information about the specified certificate. It also
+  prints some<br>
+  C C information about the keys that are stored in the certificate.
+  If the<br>
+  C C private key is also accessible then a small
+  encryption/decryption<br>
+  C C check is performed, so you can check that the certificate can be
+  used<br>
+  C C for encryption/decryption.<br>
+  <br>
+  C C Internal IG.Script.AppBase Crypto CertInfo <br>
+  C C&nbsp;&nbsp; Prints information about the specified certificate.<br>
+  C C Parameters:<br>
+  C C&nbsp;&nbsp; input: <br>
+  C C ====<br>
+  <br>
+  C C == Examples:<br>
+  <br>
+  Internal IG.Script.AppBase Crypto AsymTest <br>
+  <br>
+  Internal IG.Script.AppBase Crypto CertInfo -cf&nbsp;
+  IGLibTestCert.cer <br>
+  <br>
+  Internal IG.Script.AppBase Crypto CertInfo -cp IGLibPwd -cf&nbsp;
+  IGLibTestCert.pfx <br>
+  <br>
+  Internal IG.Script.AppBase Crypto CertInfo -cpui -cf&nbsp;
+  IGLibTestCert.pfx <br>
+  <br>
+  <br>
+  <br>
+  Internal IG.Script.AppBase Crypto CertInfo -cf&nbsp;&nbsp;
+  IGLibTestCert11.p7b <br>
+  <br>
+  <br>
+  C C ==== END: CertInfo<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  C C
+  ****************************************************************************<br>
+  C C Certificates and keys - external utilities<br>
+  <br>
+  C C Below the use of external utilities on Windows is documented in
+  order<br>
+  C C to generate test certificate and other data used in the examples
+  for<br>
+  C C cryptographic utilities of the IGLib. A Common password is used
+  for these<br>
+  C C demonstration files.<br>
+  C C Location of tools:<br>
+  C C&nbsp;&nbsp; On Windows 8.1: C:\Program Files (x86)\Windows
+  Kits\8.1\bin\x64\<br>
+  <br>
+  C C Test certificates &amp; keys Password: IGLibPwd<br>
+  <br>
+  C C To generate a certificate:<br>
+  C makecert -pe&nbsp; IGLibTestCert.cer -sky exchange -sv
+  IGLibTestCert.pvk -n "cn=IGLib Test Certificte No. 1" -b 03/01/2015
+  -e 03/01/2030 -r <br>
+  C C Additional useful options:<br>
+  C C -ss store - store name that stores the output certificate<br>
+  C C -sl storeLocation - either CurrentUser (default) or LocalMachine<br>
+  C C -sky exchange - this must be used if cert. iis used for
+  encryption/<br>
+  C C&nbsp;&nbsp; decryption rather than just for signing and
+  authentication (-ski signature)<br>
+  <br>
+  C C To convert certificate and key information to .pfx: <br>
+  C pvk2pfx -f -pvk IGLibTestCert.pvk -spc IGLibTestCert.cer -pfx
+  IGLibTestCert.pfx -pi IGLibPwd<br>
+  <br>
+  C C File formats:<br>
+  C C&nbsp;&nbsp; PKCS #12 (.pfx or .p12) - archive format for storing
+  several crypto <br>
+  C C objects in a single file. Used e.g. by Visual Studio for signing
+  <br>
+  C C assemblies. Used to bundle a private key with its X.509
+  certificate or to<br>
+  C C bundle all the members of a chain of trust.<br>
+  C C&nbsp;&nbsp; .pvk - file containing private key.<br>
+  C C&nbsp;&nbsp; .cer - certificate file.<br>
+  <br>
+  C C Remarks: <br>
+  C C Certificate often contains only a public key, which enables
+  decryption or <br>
+  C C checking signatures. <br>
+  C C Private keys are obtained either separately from the .pvk files,
+  or<br>
+  C C from the .p12 (or .pfx) files.<br>
+  <br>
+  C C Some explanations, but with older technology (using pvkimprt.exe
+  instead<br>
+  C C of pvk2pfx) can be found here:<br>
+  C C
+  http://www.grimes.nildram.co.uk/workshops/secWSThirteen.htm#2_0_x509Cert
+  <br>
+  <br>
+  C C ==== END: Certificates - external utilities<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  C C
+  ****************************************************************************<br>
+  C C HELPER UTILITIES<br>
+  <br>
+  <br>
+  <br>
+  C C ==================<br>
+  C C CleanFiles:<br>
+  C C Cleans specific kinds of files remaining after encryption or
+  decryption.<br>
+  C C Encryption or decryption can leave behind a number of files that
+  you may<br>
+  C C wanto to keep for some time (e.g. for verification) but delete
+  later<br>
+  C C (e.g. to remove unencrypted files or to make the directory
+  contents <br>
+  C C clean and understandable). Usually, the "-delorig" is used to do
+  this<br>
+  C C automatically when encryption/decription is performed, but
+  sometimes <br>
+  C C you will not want to use this possibility immediately, e.g. to
+  verify<br>
+  C C that operations actually performed as you expect. In these
+  cases,<br>
+  C C you can combine encryption/decryption commands with CleanFiles.<br>
+  <br>
+  C C Internal IG.Script.AppBase Crypto &lt;-delencrypted&gt;
+  &lt;-deldecrypted&gt; &lt;-delorig&gt; file1 &lt;file2&gt;
+  &lt;file3&gt;&nbsp; ...<br>
+  C C Deletes the specific kinds of files associated witth the
+  specified input<br>
+  C C files. Parameters must define which type of files are to be
+  deleted. For<br>
+  C C each file specified (either by free parameters or by directory
+  listing<br>
+  C C parameters), the associated files are identified (such as
+  original, <br>
+  C C encrypted, or decrypted). Encrypted and decrypted files are
+  identified <br>
+  C C through the distinctive file extensions (".ig_enc" and
+  ".ig_dec", <br>
+  C C respectively). <br>
+  C C&nbsp;&nbsp; file1, file2, file3, ...: free parameters that
+  define files for which <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; the associated files will be deleted.
+  Wildcards can be used to define<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; mutiple files at once (as well as path
+  separators to define files in<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; locations other than current directory).
+  For each file, the associated<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; files (original, encrypted, decrypted)
+  will be identified and then,<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; according to parameters described below,
+  it will be decided which of<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; these files are deleted. Unless
+  otherwise specified, the user is <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; asked for confirmation. Also, without
+  the -delallversions option, <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; at least one version of the file will be
+  left even if the other<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; options instruct differently. <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; These file parameters can refer to any
+  of the group of associated <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; files (original, encrypted and
+  decrypted), in each case the other <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; files from the group will be discovered
+  within the same directory <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; (according to file names and extensions)
+  and tested for eligibility<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; for deletion.<br>
+  C C&nbsp;&nbsp; -delencrypted: This options causes that the
+  encrypted files (those with <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; the ".ig_enc" extension) from each group
+  of associated files (i.e.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; the original, the encrypted and the
+  decrypted) are deleted.<br>
+  C C&nbsp;&nbsp; -deldecrypted: This options causes that the
+  decrypted files (those with <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; the ".ig_dec" extension) from each group
+  of associated files are <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; deleted.<br>
+  C C&nbsp;&nbsp; -delorig: This options causes that the original
+  files (those with <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; the any disrinctive extension) from each
+  group of associated files are <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; deleted.<br>
+  C C&nbsp;&nbsp; -delallversions: This option specifies that it is
+  allowed to delete all <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; versions of a file from ech group of
+  files associated with input files <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; (i.e. the original, the encrypted and
+  the decrypted). <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; WARNING: use this option with extreme
+  caaution, as it will not be <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; possible to restore the original if all
+  the associated files are <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; deleted, unless the files are kept in a
+  separate backup.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -yd: specifies that files will be
+  automatically deleted, withot<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; asking for user's
+  confirmation. This is useful in batch executon.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -nd: specifies that no files are deleted
+  (all eventual deletions are\<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; skipped without asking for
+  user's confirmation). This might be <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; useful for just seeing the
+  list of files that would be deleted<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; by the operation, before
+  actually performing it.<br>
+  C C A number of other parameters are supported:<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -rd dir: input files will be recursively
+  searched for in the directory<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; named dir. Several
+  directories for recursive file search can be<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified, each one
+  following its own -rd option.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; - rdl dir: similar to -rd, but order of
+  file listing is by directory<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; levels rather than in normal
+  tree traversal order.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -rp ptrn: specifies that files that
+  match the specified pattern<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ptrn will be searched in a
+  recursive search. Patterns can contain<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; wildcards (e.g. "*.cmd" or
+  "a*.txt"). Several patterns can be <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified (each one by its
+  own -rp option), in which case all are<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; used with all recursive
+  directories.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -rl dirLevel: specifies the level of
+  directories for recursive search.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -1 means all levels of
+  subdirectories are searched, 0 means none<br>
+  <br>
+  C C == Examples:<br>
+  <br>
+  C C Examples for the CleanFiles command will be demonstrated by
+  combining the<br>
+  C C command with encryption and dectryption commands, in order to
+  first <br>
+  C C generate the files that can be cleaned later.<br>
+  <br>
+  C C In order to clean the generated encrypted and decrypted files
+  (here in<br>
+  C C the cryptofiles/ directory), specify the -deldecrypted and
+  -delencrypted<br>
+  C C options, with file definition options being the same as when
+  performing<br>
+  C C encryption/decryption. Both options can be specified in the
+  single <br>
+  C C command, but in the example below two separate commands are
+  exected<br>
+  C C for the two types of associated files:<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -yo cryptofiles/*.*
+  -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -yo cryptofiles/*.*
+  -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto CleanFiles -deldecrypted
+  cryptofiles/*.*<br>
+  C Internal IG.Script.AppBase Crypto CleanFiles -delencrypted
+  cryptofiles/*.*<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -yo cryptofiles/*.*
+  -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -yo cryptofiles/*.*
+  -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto CleanFiles -deldecrypted
+  cryptofiles/*.*<br>
+  C Internal IG.Script.AppBase Crypto CleanFiles -delencrypted
+  cryptofiles/*.*<br>
+  <br>
+  C C If options for deletion of all types of files (original,
+  encrypted, <br>
+  C C decrypted) are specified then at least one verson of the file in
+  each<br>
+  C C group will remain intact(priority original, then encrypted, then
+  <br>
+  C C decrypted) in order to make possible to restore the file. This
+  can be <br>
+  C C overridden by the -delallversions option.<br>
+  C C Because cleaning is a sensitive operation that may perform
+  unintended<br>
+  C C file deletions, it is a good idea to check which files would be
+  deleted<br>
+  C C by the specific command before actually invoking the command.
+  This is <br>
+  C C achieved by the -nd option (used in the first CleanFiles command
+  below).<br>
+  C C All deletions are skipped, but this is reported.<br>
+  C C Afterwards, deletion the -nd option is omitted such that
+  deletions are<br>
+  C C actually performed. The user is asked to confirm deletions, and
+  at <br>
+  C C least one version of the file from ech group of associated files
+  <br>
+  C C will remain intact:<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -yo cryptofiles/*.*
+  -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -yo cryptofiles/*.*
+  -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto CleanFiles -nd -delencrypted
+  -deldecrypted -delorig cryptofiles/*.*<br>
+  C Internal IG.Script.AppBase Crypto CleanFiles -delencrypted
+  -deldecrypted -delorig cryptofiles/*.*<br>
+  <br>
+  C C With the -nd option, some files that woluld be deleted may be
+  listed more <br>
+  C C than once. This happens when more than one file from the group
+  of<br>
+  C C associated files are included in the list e.g. the original file
+  and its<br>
+  C C associated encrypted file. We decided that correction of this
+  would not be<br>
+  C C worth the investment as it would spoil the code in other ways.<br>
+  <br>
+  C C Now that we are sure that CleanFiles works as expected, we can
+  use the <br>
+  C C -yd option in order to skip user confirmations for deleting the
+  files:<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -yo cryptofiles/*.*
+  -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -yo cryptofiles/*.*
+  -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto CleanFiles -yd&nbsp;
+  -delencrypted -deldecrypted -delorig cryptofiles/*.*<br>
+  <br>
+  C C Finally, options for recursive directory listing can be used to
+  delete <br>
+  C C the unnecessary files remaining after encryption/decryption form
+  the whole<br>
+  C C nested directory structures:<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -rd cryptofiles/
+  -rp *.txt -yo -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto DecryptPlain -rd cryptofiles/
+  -rp *.* -yo -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto CleanFiles -deldecrypted -rd
+  cryptofiles/ -rp *.*<br>
+  C Internal IG.Script.AppBase Crypto CleanFiles -delencrypted -rd
+  cryptofiles/ -rp *.*<br>
+  <br>
+  C C In the above commands, user is asked to confirm deleton of
+  files. See <br>
+  C C comments on overwrite/delete confirmations. This can be omitted
+  and <br>
+  C C files deleted automatically by specifying the -nd option:<br>
+  C Internal IG.Script.AppBase Crypto EncryptPlain -rd cryptofiles/
+  -rp *.txt -yo -pw MyPassword11 -iv MyInitializationVector <br>
+  C Internal IG.Script.AppBase Crypto CleanFiles -yd -deldecrypted
+  -delencrypted -rd cryptofiles/ -rp *.*<br>
+  <br>
+  C C ==== END: CleanFiles<br>
+  <br>
+  <br>
+  C C ==================<br>
+  C C Convert:<br>
+  C C Convers the inserted string or byte array to different formats.
+  Input can<br>
+  C C be a string or a byte array in hexadecimal or Base64 form.<br>
+  <br>
+  C C Internal IG.Script.AppBase Crypto Convert &lt;-bfx&gt;
+  &lt;-bf64&gt; &lt;-bfi&gt; input<br>
+  C C&nbsp;&nbsp; Takes input (string or byte array or long integer)
+  in various forms<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; and converts it to different
+  representations.<br>
+  C C&nbsp;&nbsp; input: user input. If not specified otherwise, this
+  is treated as string.<br>
+  C C&nbsp;&nbsp; -bfx: input is treated as byte array represented by
+  a hexadecimal string<br>
+  C C&nbsp;&nbsp; -bf64: input is treated as byte array in Base-64
+  representation<br>
+  C C&nbsp;&nbsp; -bfi: input is treated as integer number<br>
+  C C&nbsp;&nbsp; -sf: input is treated as string (this is also by
+  default)<br>
+  C C These options are equivalent in this command:<br>
+  C C&nbsp;&nbsp; -bfix and -bfx, -bf64 and -bfi64, -bfi and -bfii,
+  /sf and -sfi<br>
+  C C ====<br>
+  <br>
+  C C == Examples:<br>
+  <br>
+  C C Convert can handle multiple inputs. Below, plain ANSII strings
+  will be <br>
+  C C converted to different representations:<br>
+  C Internal IG.Script.AppBase Crypto Convert Luxembourg London
+  Ljubljana <br>
+  <br>
+  C C Now, check which bytes represent an integer and how is this
+  written in <br>
+  C C Base-64 encoding:<br>
+  C Internal IG.Script.AppBase Crypto Convert -bfi 39543786392000<br>
+  C Internal IG.Script.AppBase Crypto Convert -bfii&nbsp;
+  39543786392000<br>
+  C Internal IG.Script.AppBase Crypto Convert -bfii&nbsp; 260<br>
+  <br>
+  C C Decode a byte array specified in hexadecimal format:<br>
+  C Internal IG.Script.AppBase Crypto Convert -bfix
+  4c7578656d626f757267<br>
+  C C See if hexadecimal with separators is understood:<br>
+  C Internal IG.Script.AppBase Crypto Convert -bfix
+  4c-75-78-65-6d-62-6f-75-72-67<br>
+  C C Decode the same byte array specified in a Base-64 format:<br>
+  C Internal IG.Script.AppBase Crypto Convert -bfi64 THV4ZW1ib3VyZw==<br>
+  <br>
+  C C Finally, check how a string converts to a byte array (without
+  the quotes,<br>
+  C C input below would be treated as multiple short strings):<br>
+  C Internal IG.Script.AppBase Crypto Convert "This is a string to be
+  converted."<br>
+  C C Check if we can invert conversion properrly:<br>
+  C Internal IG.Script.AppBase Crypto Convert -bfi64
+  VGhpcyBpcyBhIHN0cmluZyB0byBiZSBjb252ZXJ0ZWQu<br>
+  <br>
+  C C Converter can handle multiple inputs: <br>
+  C Internal IG.Script.AppBase Crypto Convert London Ljubljana Berlin
+  Luxembourg<br>
+  C C This is also true for other input formats:<br>
+  C Internal IG.Script.AppBase Crypto Convert -bfi64 TG9uZG9u
+  TGp1YmxqYW5h QmVybGlu THV4ZW1ib3VyZw==<br>
+  <br>
+  C C ==== END: Convert<br>
+  <br>
+  <br>
+  C C&nbsp; ==================<br>
+  C C GetKey, GetInitializationVector or GetIV, GetSalt:<br>
+  C C Generate a secret key for encryption (GetKey) or initialization
+  vector for<br>
+  C C symmetric encryption (GetInitializationVector or GetIV) or a
+  salt (a<br>
+  C C random array of bytes added to encrypted or hashed entities in
+  order to<br>
+  C C make guessing of secret information more difficult. All three
+  types of<br>
+  C C generation functions take the same parameters, they differ only
+  in what<br>
+  C C they are generating.<br>
+  <br>
+  C C Internal IG.Script.AppBase Crypto GetKey &lt;-pwt algType&gt;
+  -pwlen len -pwit <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; numIt keyLength
+  &lt;numIt&gt; ...:<br>
+  C C&nbsp;&nbsp; Generates a key of the specified length on basis of
+  provided password<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; and salt (which can also be randomly
+  generated by the command), by<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; employing the specified generation
+  algorithm with specified number <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; of iterations. More iterations there
+  are, more time is spent for<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; key generation, which also makes more
+  difficult to guess the key<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; by brute force attack.<br>
+  C C&nbsp;&nbsp; Parameters:<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; keyLength: length of the generated key.
+  If not specified then <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; default key length is used.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; numIt: number of iterations of the key
+  generating algorithm.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -t algType: password generatiion
+  algorithm type, can be:<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Rfc for the RFC2898
+  algorithm (default)<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - DeriveBytes for a les
+  secure algorithm (.NET's PasswordDeriveBytes)<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - None for direct
+  transformation from password to generated key<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -pwlen length: length of the generated
+  key. Also used as length of<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; password when password is
+  not specified. Vice versa, when this <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parameter is not specified,
+  key length will be the same as length <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of the provided password.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -pwit numIt: number of iterations in key
+  generation<br>
+  C C A number of other parameters are supported:<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; - klen <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -pwt algType: password generation
+  algorithm type, the same as -t.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; - pw password: actual password used for
+  key generation (if not <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; provided then password is
+  randomly generated).<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -pwx password: binary password specified
+  in hexadecimal format<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "3dca9a", "3DCA9A",
+  "3dCa9a", "3D-ca-9a" are all accepted.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -bw64 password: binary password
+  specified in base64 encoding<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -sl salt: password salt specified as
+  string.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -slx salt: binary password salt in
+  hexadecimal format.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -sl64 salt: password salt specified as
+  base-64 encoded bytes.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -sllen saltLength: salt length. This is
+  used when salt is not <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified, in which case
+  salt is randomly generated with the <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified length (if also
+  length is not specified, then password<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; length is used).<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -bfx: Result (generated key) will be
+  returned in hexadecimal string <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; representation of the
+  generated byte array representing the key.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -bf64: Result (generated key) will be
+  returned in as base-64 encoded <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string representation of the
+  generated byte array.<br>
+  <br>
+  C C WARNINGs:<br>
+  C C Passwords must be strong, such that it is difficult to guess
+  them (they<br>
+  C C should not contain words appearing in dictionary, should mix
+  small and <br>
+  C C capital letters with numbers and other characters, should be
+  long enough<br>
+  C C (preferably at least eight characters, better more), etc. Salts
+  should be <br>
+  C C random and should not repeat over multiple encryptions or
+  password <br>
+  C C hashings (which is generation of a digest from a password by a <br>
+  C C cryptographic algorithm, such that correctness of the password
+  can be <br>
+  C C checked, but it is nearly impossible to restore the password
+  from the<br>
+  C C digest).<br>
+  C C When generating keys from passwords, it is also recommended that
+  <br>
+  C C sufficient number of iterations are performed by the key
+  generation <br>
+  C C algorithm. This makes generation take longer, which makes more
+  difficult<br>
+  C C to guess the generating passwords by trying large numbers of
+  combinations.<br>
+  C C ====<br>
+  <br>
+  C C == Examples:<br>
+  C C Generate a 20 bytes long key from the specified salt, password,
+  and<br>
+  C C number of iterations:<br>
+  C Internal IG.Script.AppBase Crypto GetKey -pw TestPassword1 -sl
+  MySalt123 21 <br>
+  <br>
+  C C In real&nbsp; situations, password and salt should be stronger
+  (see warnings<br>
+  C C above). If keys will be stored in a safe store and key
+  generation <br>
+  C C parameters will not be inserted by humans (meaning that it will
+  not be<br>
+  C C necessary for someone to memorize them), the generating password
+  and salt<br>
+  C C can be randomly generated (note the notification about random
+  generation):<br>
+  C Internal IG.Script.AppBase Crypto GetKey 21<br>
+  <br>
+  C C We can also specify the number of key generation iterations
+  (otherwise,<br>
+  C C default number of iterations is used), either by the pwit option
+  or<br>
+  C C by the second free parameter:<br>
+  C Internal IG.Script.AppBase Crypto GetKey -pwit 3500 21<br>
+  C Internal IG.Script.AppBase Crypto GetKey 21 3500 <br>
+  <br>
+  C C When randomly generating the password and salt from which key is
+  derived,<br>
+  C C we can still specify the lengths of the randomly generated
+  password and <br>
+  C C salt used to produce the key (otherwise, default values are
+  taken):<br>
+  C Internal IG.Script.AppBase Crypto GetKey -pwlen 14 -sllen 22 36
+  3200<br>
+  <br>
+  C C Default algorithm used to generate password is recommended, but
+  we can<br>
+  C C also explicitly specify the algorithm used by the -pwt or -t
+  option:<br>
+  C Internal IG.Script.AppBase Crypto GetKey -pwt DeriveBytes -pwlen
+  14 -sllen 22 36 <br>
+  C Internal IG.Script.AppBase Crypto GetKey -t DeriveBytes -pwlen 14
+  -sllen 22 36 <br>
+  <br>
+  C C Password and salt used in key generation can be specified in a
+  number of<br>
+  C C forms: as string (-pw and -sl options) or as byte arrays in
+  hexadecimal<br>
+  C C form (-pwx and -slx options) or in base-64 encoding (-pw64 or
+  -sl64<br>
+  C C options):<br>
+  C Internal IG.Script.AppBase Crypto GetKey 23 -pw Ljubljana123 -sl
+  Luxembourg123<br>
+  C Internal IG.Script.AppBase Crypto GetKey 23 -pwx
+  4c6a75626c6a616e61313233 -slx 4c7578656d626f757267313233<br>
+  C Internal IG.Script.AppBase Crypto GetKey 23 -pw64 TGp1YmxqYW5hMTIz
+  -sl64 THV4ZW1ib3VyZzEyMw==<br>
+  <br>
+  C C All the above commands produce the same retult because the same
+  password<br>
+  C C and salt are specified in different format. We can also mix the
+  formats:<br>
+  C Internal IG.Script.AppBase Crypto GetKey 23 -pw Ljubljana123 -slx
+  4c7578656d626f757267313233<br>
+  C Internal IG.Script.AppBase Crypto GetKey 23&nbsp; -pw64
+  TGp1YmxqYW5hMTIz -sl Luxembourg123<br>
+  C Internal IG.Script.AppBase Crypto GetKey 23&nbsp; -pwx
+  4c-6a-75-62-6c-6a-61-6e-61-31-32-33 -sl64 THV4ZW1ib3VyZzEyMw==<br>
+  <br>
+  C C Generated keys are output to console (in hexadecimal and base-64
+  encoding),<br>
+  C C but also returned as result of the script. The returned result
+  is in <br>
+  C C base-64 encoding (as if we used the -bf64 option), but we can
+  make it<br>
+  C C in the hexadecimal format by using the -bfx option:<br>
+  C Internal IG.Script.AppBase Crypto GetKey 23 -bfx -pw Ljubljana123
+  -slx 4c7578656d626f757267313233<br>
+  <br>
+  C C Beside secret keys, we can also generate initialization vectors
+  (IV) for<br>
+  C C symmetric encoding and salts. This is achieved by different
+  commands while<br>
+  C C parameter sets are exactly the same. However, for the same
+  values of <br>
+  C C parameters, each of these commands will generate a different
+  output:<br>
+  C Internal IG.Script.AppBase Crypto GetKey 23 -pwlen 15 -sllen 21 <br>
+  C Internal IG.Script.AppBase Crypto GetInitializationVector 23
+  -pwlen 15 -sllen 21&nbsp; <br>
+  C Internal IG.Script.AppBase Crypto GetSalt 23 -pwlen 15 -sllen
+  21&nbsp; <br>
+  <br>
+  C C ==== END: GetKey<br>
+  <br>
+  <br>
+  <br>
+  C C ==================<br>
+  C C TimeKeyGeneration:<br>
+  C C Calculates average key generation time for the specified key
+  generation <br>
+  C C algorithm, with specified password lengt, salt length, generated
+  key<br>
+  C C length, and numbef o iterations. <br>
+  C C This is very helpful in order to estimate how many iterations
+  should you<br>
+  C C take in order to meke your hashed passwords secure and to defend
+  against<br>
+  C C brute force and rainbow attacks.<br>
+  C C Command has very similar set of parameters than the GetKey
+  command, with<br>
+  C C the addition of the -time option.<br>
+  <br>
+  C C Internal IG.Script.AppBase Crypto TimeKeygeneration &lt;-pwt
+  algType&gt; <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;-pwlen len&gt; -pwit
+  numIt keyLength ...:<br>
+  C C&nbsp;&nbsp; Calculates average key generation execution
+  execution time.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; keyLength: length of the generated key.
+  If not specified then <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; default key length is used.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -t algType: password generatiion
+  algorithm type, can be:<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Rfc for the RFC2898
+  algorithm (default)<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - DeriveBytes for a les
+  secure algorithm (.NET's PasswordDeriveBytes)<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - None for direct
+  transformation from password to generated key<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -pwlen length: length of the generated
+  key. Also used as length of<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; password when password is
+  not specified. Vice versa, when this <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parameter is not specified,
+  key length will be the same as length <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of the provided password.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -pwit numIt: number of iterations in key
+  generation<br>
+  C C A number of other parameterrs are supported:<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; - klen <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -pwt algType: password generation
+  algorithm type, the same as -t.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; - pw password: actual password used for
+  key generation (if not <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; provided then password is
+  randomly generated).<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -pwx password: binary password specified
+  in hexadecimal format<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "3dca9a", "3DCA9A",
+  "3dCa9a", "3D-ca-9a" are all accepted.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -bw64 password: binary password
+  specified in base64 encoding<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -sl salt: password salt specified as
+  string.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -slx salt: binary password salt in
+  hexadecimal format.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -sl salt: password salt specified as
+  string.<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -sllen saltLength: salt length. This is
+  used when salt is not <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified, in which case
+  salt is randomly generated with the <br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; specified length (if also
+  length is not specified, then password<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; length is used).<br>
+  C C&nbsp;&nbsp;&nbsp;&nbsp; -time t: targeted total execution time,
+  default is 0.1 s.<br>
+  C C ====<br>
+  <br>
+  C C == Examples:<br>
+  C C Calculate time necessary for generation of passwords with the
+  RFC2898 <br>
+  C C algorithm, with password length 15, salt length 64, and with 100
+  <br>
+  C C iterations of generating algorithm:<br>
+  C Internal IG.Script.AppBase Crypto TimeKeygeneration -pwlen 15
+  -sllen 64 -pwit 100 <br>
+  <br>
+  C C You can try if the measurement is statistically precise enough
+  by <br>
+  C C repeating the test several times and whatching whether the
+  reposted speed <br>
+  C C changes. If seemed necessary, you can prolong expected time by
+  using the <br>
+  C C -time option (below, number of iterations was also increased):<br>
+  C Internal IG.Script.AppBase Crypto TimeKeygeneration -time 0.8
+  -pwlen 15 -sllen 64 -pwit 1000 <br>
+  <br>
+  C C Check what happens if password and salt length are increased:<br>
+  C Internal IG.Script.AppBase Crypto TimeKeygeneration -pwlen 15
+  -sllen 50 -pwit 100 <br>
+  C Internal IG.Script.AppBase Crypto TimeKeygeneration -pwlen 30
+  -sllen 50 -pwit 100 <br>
+  C Internal IG.Script.AppBase Crypto TimeKeygeneration -pwlen 60
+  -sllen 50 -pwit 100 <br>
+  C Internal IG.Script.AppBase Crypto TimeKeygeneration -pwlen 60
+  -sllen 100 -pwit 100 <br>
+  C Internal IG.Script.AppBase Crypto TimeKeygeneration -pwlen 60
+  -sllen 200 -pwit 100 <br>
+  C Internal IG.Script.AppBase Crypto TimeKeygeneration -pwlen 60
+  -sllen 200 -pwit 1000 <br>
+  <br>
+  C C You can also compare performance of difference algorithms:<br>
+  C Internal IG.Script.AppBase Crypto TimeKeygeneration -t Rfc -pwlen
+  20 -sllen 100 -pwit 1000 <br>
+  C Internal IG.Script.AppBase Crypto TimeKeygeneration -t DeriveBytes
+  -pwlen 20 -sllen 100 -pwit 1000 <br>
+  <br>
+  C C We can specify password and password salt from which keys are
+  generated by<br>
+  C C ourselves. These can be inserted as string, byte array in
+  hexadecimal <br>
+  C C form, or byte array in base64 encoding (formats can be mixed):<br>
+  C Internal IG.Script.AppBase Crypto TimeKeygeneration -pw MyPassword
+  -sl MySalt111 -pwit 1000 <br>
+  C Internal IG.Script.AppBase Crypto TimeKeygeneration -pwx
+  A353B49CFF -sl64 kjgif7gjdgd8f0a3 -pwit 1000 <br>
+  C Internal IG.Script.AppBase Crypto TimeKeygeneration -pw64
+  ajru79gkg7084jv7 -sl MySalt111 -pwit 1000 <br>
+  <br>
+  C C ==== END: TimeKeyGeneration<br>
+  <br>
+</body>
+
 </html>
