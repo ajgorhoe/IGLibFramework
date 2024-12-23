@@ -1,7 +1,9 @@
-<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Below: definition of canonical form of this page's URL -->
+    <link rel="canonical" href="./">
     <title>IGShell - a shell application based on the Investigative
       Generic Library (IGLib).</title>
     <meta name="author" content="Igor Grešovnik">
@@ -21,7 +23,6 @@
     <meta name="Author" content="Igor Grešovnik">
     <link rev="made"
 href="http://www.google.com/search?hl=en&amp;q=Igor+Gre%C5%A1ovnik&amp;btnG=Google+Search&amp;meta=">
-    <link rel="SHORTCUT ICON" href="ig.ico">
     <!-- Google Analitics - account Software 
 	property Software IGLibShell -->
     <script>
@@ -52,6 +53,13 @@ href="http://www.google.com/search?hl=en&amp;q=Igor+Gre%C5%A1ovnik&amp;btnG=Goog
 	  ga('create', 'UA-76143121-1', 'auto');
 	  ga('send', 'pageview');
 	</script>
+
+    <!-- Tags below define icons, CSSs, and scripts. Leave them as absolute URLs. -->
+    <link rel="icon" href="https://ajgorhoe.github.io/icons/IGLibIcon_128x128.png" />
+    <link rel="stylesheet" href="https://ajgorhoe.github.io/scripts/IgsScriptSupport.css" />
+    <!-- The following two script elements perform canonical redirect: -->
+    <script src="https://ajgorhoe.github.io/scripts/IgsScriptTools.js"></script>
+    <script>igsCanonicalRedirect();</script>
   </head>
   <body style=" color: rgb(0, 0, 0); background-color: rgb(255, 255,
     255);" vlink="#006600" link="#0000ee" alink="#fe0000">
@@ -74,29 +82,6 @@ href="http://www2.arnes.si/%7Efgreso/stan/index.html">Stanovanje v
                   </small></small></small></td>
             <td valign="top" align="right"><small>&nbsp; <a
                   href="HashForm.html">HashForm &amp; HashShell</a>&nbsp;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <a href="../../links.html">Optimization links</a>&nbsp;
                 &nbsp; <a href="../../index.html">Igor Grešovnik</a>
                 &nbsp;&nbsp; <a href="../../iglib/index.html"><span
@@ -120,73 +105,22 @@ href="http://www2.arnes.si/%7Efgreso/stan/index.html">Stanovanje v
         <tr nosave="" valign="top">
           <td nosave="" style="vertical-align: middle; text-align: left;
             width: 90%;"> <span style="font-weight: bold;"></span><br>
-            <h1 style="text-align: center;"><big><b><i><font><font><b><i><font><font><big><big><b><i><font><font><b><i><font
-                                                  color="#cc0000"><font
-                                                    size="+2"><big><font
-                                                        size="+2">IGShell
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                        <font size="+2">-</font>
-                                                        IGLib's&nbsp; <font
-                                                          size="+2">Shell
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                          Application</font></font><br>
-                                                    </big></font></font></i></b></font></font></i></b></big></big></font></font></i></b></font></font></i></b></big></h1>
-            <p style="text-align: left;"><b>This page contains IGLib
-                binaries and IGShell, a simple shell application that is
+            <h1 style="text-align: center;">
+              <i><font color="#cc0000" size="+2">
+                IGShell - IGLib's Shell Application
+              </font></i>
+            </h1><br>
+            <p style="text-align: left;"><b>This page contains <i>IGLib</i>
+                binaries and <i>IGShell</i>, a shell application that is
                 based on the library. <br>
               </b></p>
+
             <font color="#000000"> </font><span style="font-weight:
-              bold;"></span><br>
-            <font color="#000000"> </font> </td>
+              bold;"></span>
+              <br>
+            <font color="#000000"> </font> 
+          
+          </td>
           <td style="text-align: right;" nosave="">&nbsp;&nbsp; <img
               src="shellapp_title.jpg" alt="ShellApp screenshot."
               style="width: 336px; height: 256px;" width="336"
@@ -248,18 +182,6 @@ href="http://www2.arnes.si/%7Efgreso/stan/index.html">Stanovanje v
     <br>
     &nbsp; IGShell is an extensible application based on the&nbsp; <a
       href="file:///D:/users/igor/www/www/igor/iglib/index.html"><i>Investigative
-
-
-
-
-
-
-
-
-
-
-
-
         Generic Library</i></a><a> (<i>IGLib</i>)</a> and the .NET
     framework. It provides access to a couple of useful utilities
     implemented in <i>IGLib</i> through a command-line interpreter used
@@ -374,51 +296,6 @@ href="http://www2.arnes.si/%7Efgreso/stan/index.html">Stanovanje v
           links</a>.<br>
       </li>
       <li>Ph.D. thesis on <a href="../../../inverse/doc/phd/index.html">optimization
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           shell <span style="font-style: italic;">Inverse</span></a>. <br>
       </li>
     </ul>
@@ -449,12 +326,7 @@ href="http://www2.arnes.si/%7Efgreso/stan/index.html">Stanovanje v
       <li>Within the root directory, there is a Visual Studio C# project
         that can be used to build the application. You can modify the
         application and run it from the <a
-          href="https://en.wikipedia.org/wiki/Microsoft_Visual_Studio">VS
-
-
-
-
-          IDE</a> or from <a
+          href="https://en.wikipedia.org/wiki/Microsoft_Visual_Studio">VS IDE</a> or from <a
           href="https://en.wikipedia.org/wiki/MonoDevelop">MonoDevelop</a>.<br>
       </li>
     </ul>
@@ -466,95 +338,54 @@ href="http://www2.arnes.si/%7Efgreso/stan/index.html">Stanovanje v
     <a href="../../iglib/index.html"><img
         src="../../iglib/dragonfly_server_small.jpg" alt="IGLib Logo."
         style="width: 336px; height: 256px;" width="336" height="256"
-        border="0"></a> This softwae is based on the <a
+        border="0"></a> 
+        
+      <p>This softwae is based on the <a
       href="http://www2.arnes.si/%7Eljc3m2/igor/iglib/index.html"><i>Investigative
-
-        Generic Library (IGLib.NET)</i></a>.<br>
-    Some other publically available software based on this library
-    includes: <br>
+        Generic Library (IGLib.NET)</i></a>. <br>
+    Some other publically available software based on this library includes:</p>
     <ul>
       <li><a
 href="http://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/HashForm.html#hashform"><i>HashForm</i></a>
         - application for calculation and verification of checksums
-        (MD5, SHA-1, SHA-256, SHA-512) for files and text. <br>
+        (MD5, SHA-1, SHA-256, SHA-512) for files and text.
       </li>
       <li><a
 href="http://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/HashForm.html#hashshell"><i>HashShell</i></a>
         - a shell application with various cryptography-related
         functionality (calculation of hash functions / checksums,
         symmetric and asymmetric encryption, certificate management,
-        etc.). <br>
+        etc.). 
       </li>
-      <li><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
-          font-family:&quot;Times New
-          Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times
-          New Roman&quot;;
-          mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
-
-          layout-grid-mode:line"><a
-            href="http://www2.arnes.si/%7Eljc3m2/igor/software/NeurApp/index.html">NeurApp</a>
-          – an educational application for visually exploring features
+      <li>
+          <a
+            href="http://www2.arnes.si/%7Eljc3m2/igor/software/NeurApp/index.html"><i>NeurApp</i></a>
+          - an educational application for visually exploring features
           of function approximation with artificial neural networks
           (ANN). It creates 1D and 2D ANN models of user defined
           functions and provides visualization capabilities to compare
           these models with originals. It can be <a
-            href="http://www.softpedia.com/get/Science-CAD/NeurApp.shtml">downloaded
-
-            from Softpedia</a>.<br>
-        </span></li>
-      <li>&nbsp;<i style="mso-bidi-font-style:normal"><span
-            style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times
-
-            New Roman&quot;,&quot;serif&quot;;
-            mso-fareast-font-family:&quot;Times New
-            Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
-            EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line"><a
-              href="http://www2.arnes.si/%7Eljc3m2/igor/software/AnnApp/index.html">AnnApp</a></span></i><span
-          style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times
-
-          New Roman&quot;,&quot;serif&quot;;
-          mso-fareast-font-family:&quot;Times New
-          Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
-          EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line"> –
-          software for exploring multidimensional ANN-based models.</span></li>
-      <li><a
-href="http://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/index.html"><span
-            style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
-            font-family:&quot;Times New
-            Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times
-            New Roman&quot;;
-            mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
-
-            layout-grid-mode:line"><i>IGShell</i></span></a> - <span
-          style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
-          font-family:&quot;Times New
-          Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times
-          New Roman&quot;;
-          mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
-
-          layout-grid-mode:line">a shell application based on <i>IGLib</i>.</span></li>
-      <li><i style="mso-bidi-font-style:normal"><span
-            style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times
-
-            New Roman&quot;,&quot;serif&quot;;
-            mso-fareast-font-family:&quot;Times New
-            Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
-            EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line"><a
-href="http://www2.arnes.si/%7Eljc3m2/igor/software/thesis_petek/index.html">Oscillator
-
-              Modeller</a></span></i><span
-          style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
-          font-family:&quot;Times New
-          Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times
-          New Roman&quot;;
-          mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
-
-          layout-grid-mode:line"> – an educational application for
-          playing with nonlinear driven oscillators and their resonance
-          curves. <br>
-        </span></li>
+            href="http://www.softpedia.com/get/Science-CAD/NeurApp.shtml">downloaded from Softpedia</a>.
+      </li>
+      <li>
+        <i><a
+              href="http://www2.arnes.si/%7Eljc3m2/igor/software/AnnApp/index.html">AnnApp</a>
+            </i>
+              - software for exploring multidimensional ANN-based models.</span>
+        </li>
+      <li>
+        <a href="http://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/index.html">
+          <i>IGShell</i>
+      </a> - a shell application based on <i>IGLib</i>.
+      </li>
+      <li>
+        <i><a href="http://www2.arnes.si/%7Eljc3m2/igor/software/thesis_petek/index.html">Oscillator
+              Modeller</a></i> - 
+              an educational application for exploring 
+              nonlinear driven oscillators and their resonance curves.
+      </li>
     </ul>
-    <p><br>
+    <p>
     </p>
     <center>
       <h1> <a name="archive"></a><b><i><font color="#cc0000"><font
