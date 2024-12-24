@@ -1,1034 +1,587 @@
 <!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
 <html>
-  <head>
-    <!-- Redirection: -->
-    <meta http-equiv="refresh" content="1; url=../NeurApp/index.html">
-    <title>NeurApp, exploring approximation by artificial neural
-      networks.</title>
-    <meta name="author" content="Igor Grešovnik, Tadej Kodelja">
-    <meta name="keywords" content="artificial neural networks,
+
+<head>
+  <!-- Redirection: -->
+  <meta http-equiv="refresh" content="1; url=../NeurApp/index.html">
+  <title>NeurApp, exploring approximation by artificial neural
+    networks.</title>
+  <meta name="author" content="Igor Grešovnik, Tadej Kodelja">
+  <meta name="keywords" content="artificial neural networks,
       approximation, freeware, software, intuitive graphical user
       interface, 2D and 3D graphics, Igor Grešovnik, Investigative
       Generic Library, IGLib, IOptLib">
-    <meta name="description" content="NeurApp is an intuitive graphical
+  <meta name="description" content="NeurApp is an intuitive graphical
       software for exploring properties of the artificial neural
       networks (ANN) modelling by approximating arbitrary user defined
       functions of 1 or 2 variables. Powered by IGLib.">
-    <meta name="Classification" content="software/numerical">
-    <meta name="GENERATOR" content="Netscape 7 Composer">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link rev="made"
-href="http://www.google.com/search?hl=en&amp;q=Igor+Gre%C5%A1ovnik&amp;btnG=Google+Search&amp;meta=">
-    <link rel="SHORTCUT ICON" href="ig.ico">
-    <!-- Google Analitics - account IGLib -->
-    <script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	  ga('create', 'UA-76143121-1', 'auto');
-	  ga('send', 'pageview');
-	</script>
-    <!-- Google Analitics - account Software 
+  <meta name="Classification" content="software/numerical">
+  <meta name="GENERATOR" content="Netscape 7 Composer">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rev="made" href="http://www.google.com/search?hl=en&amp;q=Igor+Gre%C5%A1ovnik&amp;btnG=Google+Search&amp;meta=">
+  <link rel="SHORTCUT ICON" href="ig.ico">
+  <!-- Google Analitics - account IGLib -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-76143121-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- Google Analitics - account Software 
 	property Software all -->
-    <script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	  ga('create', 'UA-96841644-1', 'auto');
-	  ga('send', 'pageview');
-	</script>
-  </head>
-  <body style=" color: rgb(0, 0, 0); background-color: rgb(255, 255,
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-96841644-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+<body style=" color: rgb(0, 0, 0); background-color: rgb(255, 255,
     255);" vlink="#006600" link="#0000ee" alink="#fe0000">
-    <div align="right"><small>&nbsp; </small>
-      <table width="100%" cellspacing="2" cellpadding="2" border="0">
-        <tbody>
-          <tr>
-            <td valign="top"><small><small>&nbsp;&nbsp; &nbsp; &nbsp;</small><small><big><big>
-                      <small><a href="./"><big>./ <small>(directory)</small></big></a></small></big></big>
-                  &nbsp;&nbsp;<small> <a href="../index.html"><span
-                        style="font-weight: bold;">&lt;&lt;</span></a>
-                    &nbsp;&nbsp; <a href="../index.html"><span
-                        style="font-weight: bold;">&lt; back</span></a>
-                    &nbsp;&nbsp;</small></small></small>&nbsp;&nbsp; <small><a
-                  href="index.html#search" style="font-weight: bold;">Search</a></small>
-              &nbsp;<small><small><small> &nbsp; </small></small></small><small><small><small>
-                    &nbsp;&nbsp; &lt; sponsored: <a
-                      href="http://www2.arnes.si/%7Efgreso/stan/index.html">Stanovanje
-
-
-
-
-
-
-
-
-
-                      v Ljubljani</a> &gt; </small></small></small></td>
-            <td valign="top" align="right"><small>&nbsp; <a
-                  href="../../links.html">Optimization links</a>&nbsp;
-                &nbsp; <a href="../../index.html">Igor Grešovnik</a>
-                &nbsp;&nbsp; <a href="../../iglib/index.html"><span
-                    style="font-style: italic;">IGLib</span></a> &nbsp;
-                &nbsp;&nbsp; </small></td>
-          </tr>
-        </tbody>
-      </table>
-      <font size="-1"><a href="http://www.c3m.si/igor"> </a></font></div>
-    <center>
-      <div style="text-align: left;">
-        <div style="text-align: right;">&nbsp;&nbsp;<span
-            style="font-style: italic;"> </span><font color="#000000"><span
-              style="font-style: italic;"><br>
-            </span></font></div>
-      </div>
-    </center>
-    <table nosave="" style="width: 100%;" cols="2" cellspacing="5"
-      cellpadding="0">
+  <div align="right"><small>&nbsp; </small>
+    <table width="100%" cellspacing="2" cellpadding="2" border="0">
       <tbody>
-        <tr nosave="" valign="top">
-          <td nosave="" style="vertical-align: middle; text-align: left;
-            width: 90%;"> <span style="font-weight: bold;"></span><font
-              color="#33cc00">&lt;&lt; You are being redirected...
-              &gt;&gt;</font>
-            <h1 style="text-align: center;"><big><b><i><font><font><b><i><font><font><big><big><b><i><font><font><b><i><font
-                                                  color="#cc0000"><font
-                                                    size="+2"><big>NeurApp
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                      <br>
-                                                    </big></font></font></i></b></font></font></i></b></big></big></font></font></i></b></font></font></i></b></big></h1>
-            <p style="text-align: left;"><b><span style="font-style:
-                  italic;">&nbsp; NeurApp is an intuitive </span></b><b>software
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                for exploring approximation by artificial neural
-                networks. It can be freely downloaded from the internet.<br>
-              </b></p>
-            <font color="#000000"> </font><span style="font-weight:
-              bold;"></span><br>
-            <font color="#000000"> </font> </td>
-          <td style="text-align: right;" nosave="">&nbsp;&nbsp; <img
-              src="dragonfly_server_small.jpg" alt="Dragonfly Server
-              Logo." style="width: 336px; height: 256px;"><b> &nbsp;
-              &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; </b></td>
+        <tr>
+          <td valign="top"><small><small>&nbsp;&nbsp; &nbsp; &nbsp;</small><small><big><big>
+                    <small><a href="./"><big>./ <small>(directory)</small></big></a></small></big></big>
+                &nbsp;&nbsp;<small> <a href="../index.html"><span style="font-weight: bold;">&lt;&lt;</span></a>
+                  &nbsp;&nbsp; <a href="../index.html"><span style="font-weight: bold;">&lt; back</span></a>
+                  &nbsp;&nbsp;</small></small></small>&nbsp;&nbsp; <small><a href="index.html#search"
+                style="font-weight: bold;">Search</a></small>
+            &nbsp;<small><small><small> &nbsp; </small></small></small><small><small><small>
+                  &nbsp;&nbsp; &lt; sponsored: <a href="http://www2.arnes.si/%7Efgreso/stan/index.html">Stanovanje
+                    v Ljubljani</a> &gt; </small></small></small></td>
+          <td valign="top" align="right"><small>&nbsp; <a href="../../links.html">Optimization links</a>&nbsp;
+              &nbsp; <a href="../../index.html">Igor Grešovnik</a>
+              &nbsp;&nbsp; <a href="../../iglib/index.html"><span style="font-style: italic;">IGLib</span></a> &nbsp;
+              &nbsp;&nbsp; </small></td>
         </tr>
       </tbody>
     </table>
-    <p><b><br>
-      </b></p>
-    <p> </p>
-    <hr width="100%">
-    <center>
-      <table nosave="" cols="2" width="100%">
-        <tbody>
-          <tr nosave="" valign="top">
-            <td nosave=""> <span style="font-weight: bold;">Contents:<br>
-              </span>
+    <font size="-1"><a href="http://www.c3m.si/igor"> </a></font>
+  </div>
+  <center>
+    <div style="text-align: left;">
+      <div style="text-align: right;">&nbsp;&nbsp;<span style="font-style: italic;"> </span>
+        <font color="#000000"><span style="font-style: italic;"><br>
+          </span></font>
+      </div>
+    </div>
+  </center>
+  <table nosave="" style="width: 100%;" cols="2" cellspacing="5" cellpadding="0">
+    <tbody>
+      <tr nosave="" valign="top">
+        <td nosave="" style="vertical-align: middle; text-align: left;
+            width: 90%;"> <span style="font-weight: bold;"></span>
+          <font color="#33cc00">&lt;&lt; You are being redirected...
+            &gt;&gt;</font>
+          <h1 style="text-align: center;"><big><b><i>
+                  <font>
+                    <font><b><i>
+                          <font>
+                            <font><big><big><b><i>
+                                      <font>
+                                        <font><b><i>
+                                              <font color="#cc0000">
+                                                <font size="+2"><big>NeurApp
+                                                    <br>
+                                                  </big></font>
+                                              </font>
+                                            </i></b></font>
+                                      </font>
+                                    </i></b></big></big></font>
+                          </font>
+                        </i></b></font>
+                  </font>
+                </i></b></big></h1>
+          <p style="text-align: left;"><b><span style="font-style:
+                  italic;">&nbsp; NeurApp is an intuitive </span></b><b>software
+              for exploring approximation by artificial neural
+              networks. It can be freely downloaded from the internet.<br>
+            </b></p>
+          <font color="#000000"> </font><span style="font-weight:
+              bold;"></span><br>
+          <font color="#000000"> </font>
+        </td>
+        <td style="text-align: right;" nosave="">&nbsp;&nbsp; <img src="dragonfly_server_small.jpg" alt="Dragonfly Server
+              Logo." style="width: 336px; height: 256px;"><b> &nbsp;
+            &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; </b></td>
+      </tr>
+    </tbody>
+  </table>
+  <p><b><br>
+    </b></p>
+  <p> </p>
+  <hr width="100%">
+  <center>
+    <table nosave="" cols="2" width="100%">
+      <tbody>
+        <tr nosave="" valign="top">
+          <td nosave=""> <span style="font-weight: bold;">Contents:<br>
+            </span>
+            <ul>
+              <li><a href="#about">About the Software</a>&nbsp; <br>
+              </li>
+              <li><a href="#download">Free Download</a>&nbsp; <br>
+              </li>
               <ul>
-                <li><a href="#about">About the Software</a>&nbsp; <br>
+                <li><small><a href="#system_requirements">System
+                      Requirements</a>&nbsp; </small><br>
                 </li>
-                <li><a href="#download">Free Download</a>&nbsp; <br>
-                </li>
-                <ul>
-                  <li><small><a href="#system_requirements">System
-                        Requirements</a>&nbsp; </small><br>
-                  </li>
-                </ul>
-                <ul>
-                </ul>
-                <li><a href="#doc"><span style="text-decoration:
+              </ul>
+              <ul>
+              </ul>
+              <li><a href="#doc"><span style="text-decoration:
                       underline;">Documentation</span></a>&nbsp; <br>
-                </li>
-                <li><a href="#examples">Screen shots</a>&nbsp; <br>
-                </li>
-                <li><a
-href="file:///U:/igor/www/www/igor/software/NeurApp/index.html#other_software">Other
-                    Software</a>&nbsp; </li>
-                <li><a href="#old_versions">Previous Versions</a>&nbsp;
+              </li>
+              <li><a href="#examples">Screen shots</a>&nbsp; <br>
+              </li>
+              <li><a href="file:///U:/igor/www/www/igor/software/NeurApp/index.html#other_software">Other
+                  Software</a>&nbsp; </li>
+              <li><a href="#old_versions">Previous Versions</a>&nbsp;
+                <br>
+              </li>
+              <ul>
+                <li><a href="index.html#ver_01_03">Version 1.3</a>&nbsp;&nbsp;
                   <br>
                 </li>
-                <ul>
-                  <li><a href="index.html#ver_01_03">Version 1.3</a>&nbsp;&nbsp;
-
-
-                    <br>
-                  </li>
-                  <li><a href="index.html#ver_01_01">Version 1.1</a>&nbsp;
-
-
-                    <br>
-                  </li>
-                  <li><a href="#ver_01_00">Version 1.0</a>
-                    &nbsp;&nbsp;&nbsp;</li>
-                </ul>
+                <li><a href="index.html#ver_01_01">Version 1.1</a>&nbsp;
+                  <br>
+                </li>
+                <li><a href="#ver_01_00">Version 1.0</a>
+                  &nbsp;&nbsp;&nbsp;</li>
               </ul>
-              &nbsp;&nbsp; <br>
-              <br>
-              <font color="#000000"><span style="font-weight: bold;"></span></font></td>
-            <td nosave="" align="right">&nbsp;&nbsp;&nbsp; <br>
-              &nbsp;&nbsp; <a href="#search" style="font-weight: bold;">Search</a>
-              &nbsp; <br>
-              &nbsp;&nbsp;&nbsp;&nbsp; <b><br>
-                &nbsp; &nbsp; &nbsp; <br>
-              </b></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-    </center>
-    <hr width="100%">&nbsp;&nbsp; <br>
-    <center>
-      <h1> <a name="about"></a><b><i><font color="#cc0000"><font
-                size="+2">About the Software<br>
-              </font></font></i></b></h1>
-    </center>
-    &nbsp; <span style="" lang="EN-GB">The simple and intuitive
-      software has been created by <a href="../../index.html"><span
-          style="font-style: italic;">Igor Grešovnik</span></a> and
-      Tadej Kodelja. It is aimed at exploring properties and function of
-      modelling by artificial neural networks</span>. The software is
-    based on the <a href="../../iglib/index.html">Investigative Generic
-      Library (IGLib)</a> and uses the <a
-      href="http://www.aforgenet.com/aforge/framework/">Aforge.Net</a>&nbsp;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    neural network library. See the <a href="doc/NeurApp_help.html">User
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      Manual</a> and the <a href="#doc">Documentation</a> Section for
-    more details.<br>
+            </ul>
+            &nbsp;&nbsp; <br>
+            <br>
+            <font color="#000000"><span style="font-weight: bold;"></span></font>
+          </td>
+          <td nosave="" align="right">&nbsp;&nbsp;&nbsp; <br>
+            &nbsp;&nbsp; <a href="#search" style="font-weight: bold;">Search</a>
+            &nbsp; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; <b><br>
+              &nbsp; &nbsp; &nbsp; <br>
+            </b></td>
+        </tr>
+      </tbody>
+    </table>
     <br>
-    <br>
-    <center>
-      <h1> <a name="doc"></a><b><i><font color="#cc0000"><font
-                size="+2">Documentation<br>
-              </font></font></i></b></h1>
-    </center>
-    &nbsp; <a href="doc/NeurApp.pdf"><span style="font-weight: bold;">NeurApp
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        User Manual</span></a>. PDF document containing instructions for
-    installation, running, and using the software, and some background
-    information about the software. Also available as <a
-      href="doc/NeurApp_help.html">html page</a> and <a
-      href="doc/NeurApp_help.mhtml">mhtml document</a>.<br>
-    <br>
-    &nbsp; <a href="License_NeurApp.html"><b>NeurApp License Agreement</b></a>.
-    Contains terms of use of the software.<br>
-    <br>
-    &nbsp; <a href="ReadMe_NeurApp.html"><b>ReadMe file</b></a>.
-    Contains very basic information about the software.<br>
-    <br>
-    &nbsp; <a href="../codedoc/generated/NeurApp/html/index.html"><span
-        style="font-weight: bold;">NeurApp Code Documentation</span></a>
-    (<a href="../codedoc/generated/NeurApp/index.html">base index</a>).
-    Code documentation for the software, automatically generated from
-    documentation comments by <a
-      href="http://www.stack.nl/%7Edimitri/doxygen/">Doxygen</a>. Only
-    the top-level part of code and the most relevant libraries are
-    documented here. For additional documentation of base libraries, see
-    the <b><a href="../codedoc/generated/iglib/html/index.html">IGLib
-        Code documentation</a></b>.<br>
-    <br>
-    <br>
-    &nbsp; <span style="font-weight: bold;">See also:</span> <br>
-    <ul>
-      <li><a href="../../iglib/index.html">IGLib</a> home page. Contains
-        information on the <i>Investigative Generic Library</i>, the
-        code base for this software, including the complete <a
-          href="../codedoc/generated/iglib/html/index.html">code
-          documentation</a> (and <a
-          href="../codedoc/generated/iglib/index.html">wider code
-          documentation</a>).<br>
-      </li>
-      <li>My <a href="../../doc/index.html">other documentation</a>.</li>
-      <li>Documentation section on the page about <a
-          href="../../cobik/index.html#doc">my work at COBIK</a> where I
-        use IGLib as a base library for research software in the field
-        of neural networks. <br>
-      </li>
-      <li>Docuentation section on the <a
-          href="../../ioptlib/index.html#doc">IOptLib page</a>.</li>
-      <li>Collection of <a href="../../links.html">optimization-related
-          links</a>.<br>
-      </li>
-      <li>Ph.D. thesis on <a href="../../../inverse/doc/phd/index.html">optimization
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          shell <span style="font-style: italic;">Inverse</span></a>.<br>
-      </li>
-    </ul>
-    <br>
-    <center>
-      <h1> <a name="download"></a><b><i><font color="#cc0000"><font
-                size="+2">Free Download<br>
-              </font></font></i></b></h1>
-    </center>
-    &nbsp;&nbsp; NeurApp can be downloaded here and can be used free of
-    charge by anyone (see the license agreement). The current version is
-    1.0.<br>
-    <br>
-    <a href="download/NeurApp.zip">Download NeurApp</a> (click on the
-    link) or <a href="download/NeurApp_x86.zip">32-bit version</a> for
-    older (32 bit) Windows systems.<br>
-    <br>
-    Short installation instructions:<br>
-    <ul>
-      <li>Download the compressed archive by clicking on the <a
-          href="download/NeurApp.zip">download link</a> above.</li>
-      <li>Unpack contents of the archive to an arbitrary directory.</li>
-      <li>Run the executable from the location where files were
-        unpacked.</li>
-      <li>That's it. For more information about how to use the
-        application, run it, click on the "<i>About</i>" tab and then on
-        the "<i>Help</i>" button, or read the <a href="doc/NeurApp.pdf">user
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          manual</a>.<br>
-      </li>
-    </ul>
-    <br>
-    <h2 style="text-align: center;"><small><a name="system_requirements"></a><span
-          style="color: rgb(204, 0, 0);">System Requirements<br>
-        </span></small></h2>
-    <br>
-    &nbsp; The application requires the 64 bit <a
-      href="http://www.microsoft.com/net">.NET</a> framework or its
-    alternative implementation such as <a
-      href="http://www.mono-project.com/">Mono</a>. One of these is
-    available for most modern computing platforms and are many times
-    pre-installed with the operating system. If not yet installed, you
-    will have to download and install the <a
-      href="http://www.microsoft.com/net">.NET framework</a> (for Widows
-    operating systems) or <a href="http://www.mono-project.com/">Mono</a>
-    (cross platform) before using the software.<br>
-    &nbsp; There may be problems with using the software on some older
-    platforms, e.g. Windows XP. For more details, see the <a
-      href="../../iglib/index.html#system_requirements">System
-      Requirements Section at the IGLib</a> pages.<br>
-    <br>
-    <center>
-      <h1> <a name="examples"></a><b><i><font color="#cc0000"><font
-                size="+2">Examples and Screenshots<br>
-              </font></font></i></b></h1>
-    </center>
-    <br>
-    <br>
-    <img alt="DUI for 1D approximation"
-      src="screenshots/approximation_1d.jpg" width="708" height="448"><br>
-    Approximation of function of 1 variable.<br>
-    <br>
-    <img alt="sampled data for approximation of a function of 2
-      variables" src="screenshots/sampled_data_2d.jpg" width="710"
-      height="457"><br>
-    Generating training data by sampling a user defined reference
-    function of two variables.<br>
-    <br>
-    <br>
-    <img alt="sampled data for approximation of a function of 2
-      variables" src="screenshots/approximated_2d_function.jpg"
-      width="710" height="457"><br>
-    Neural network - based model of a user defined function of two
-    variables.Original function is shown for comparison, with errors
-    shown in color scale.<br>
-    <br>
-    <img alt="detail - comparison of original function and ANN model"
-      src="screenshots/approximated_function_detail.jpg" width="526"
-      height="467"><br>
-    Zoomed-in detail of an area with larger approximation errors. <br>
-    <br>
-    <img alt="Model with contours."
-      src="screenshots/approximation_2d_contours.jpg" width="652"
-      height="578"><br>
-    Plot of approximated data with contours shown. <br>
-    <br>
-    <img alt="Fine tuning display options."
-      src="screenshots/display_fine_tuning.jpg" width="1095"
-      height="999"><br>
-    There are a number of display options that make inspection of the
-    approximation and its errors really easy and clear. One can
-    individually switch on or off display of training points, grid,
-    surfaces and contours of the original function and its
-    approximation. Transparency of both surfaces can be continuously
-    adjusted. In this figure, both original and approximated surface
-    were drawn relatively opaque, therefore it is immediately clear
-    where approximated function has higher or lower values than the
-    original one. Contours of the original function are displayed, which
-    gives better feeling of 3D shapes.<br>
-    <br>
-    <br>
-    <h2 style="text-align: center;"><small><a name="other_software"></a><span
-          style="color: rgb(204, 0, 0);">Other Software&nbsp; <br>
-        </span></small></h2>
-    <br>
-    <a href="file:///U:/igor/www/www/igor/iglib/index.html"><img
-src="file:///U:/igor/www/www/igor/software/NeurApp/dragonfly_server_small.jpg"
-        alt="IGLib Logo." style="width: 336px; height: 256px;"
-        width="336" height="256" border="0"></a>&nbsp; <i> NeurApp</i>
-    is based on <a
-      href="http://www2.arnes.si/%7Eljc3m2/igor/iglib/index.html"><i>Investigative
-
-        Generic Library (IGLib)</i></a>.<br>
-    <br>
-    Some publically available software based on this library includes: <br>
-    <ul>
-      <li><a
-href="http://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/HashForm.html#hashform"><i>HashForm</i></a>
-        - application for calculation and verification of checksums
-        (MD5, SHA-1, SHA-256, SHA-512) for files and text. <br>
-      </li>
-      <li><a
-href="http://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/HashForm.html#hashshell"><i>HashShell</i></a>
-        - a shell application with various cryptography-related
-        functionality (calculation of hash functions / checksums,
-        symmetric and asymmetric encryption, certificate management,
-        etc.). <br>
-      </li>
-      <li><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+  </center>
+  <hr width="100%">&nbsp;&nbsp; <br>
+  <center>
+    <h1> <a name="about"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">About the Software<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  &nbsp; <span style="" lang="EN-GB">The simple and intuitive
+    software has been created by <a href="../../index.html"><span style="font-style: italic;">Igor Grešovnik</span></a>
+    and
+    Tadej Kodelja. It is aimed at exploring properties and function of
+    modelling by artificial neural networks</span>. The software is
+  based on the <a href="../../iglib/index.html">Investigative Generic
+    Library (IGLib)</a> and uses the <a href="http://www.aforgenet.com/aforge/framework/">Aforge.Net</a>&nbsp;
+  neural network library. See the <a href="doc/NeurApp_help.html">User
+    Manual</a> and the <a href="#doc">Documentation</a> Section for
+  more details.<br>
+  <br>
+  <br>
+  <center>
+    <h1> <a name="doc"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">Documentation<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  &nbsp; <a href="doc/NeurApp.pdf"><span style="font-weight: bold;">NeurApp
+      User Manual</span></a>. PDF document containing instructions for
+  installation, running, and using the software, and some background
+  information about the software. Also available as <a href="doc/NeurApp_help.html">html page</a> and <a
+    href="doc/NeurApp_help.mhtml">mhtml document</a>.<br>
+  <br>
+  &nbsp; <a href="License_NeurApp.html"><b>NeurApp License Agreement</b></a>.
+  Contains terms of use of the software.<br>
+  <br>
+  &nbsp; <a href="ReadMe_NeurApp.html"><b>ReadMe file</b></a>.
+  Contains very basic information about the software.<br>
+  <br>
+  &nbsp; <a href="../codedoc/generated/NeurApp/html/index.html"><span style="font-weight: bold;">NeurApp Code
+      Documentation</span></a>
+  (<a href="../codedoc/generated/NeurApp/index.html">base index</a>).
+  Code documentation for the software, automatically generated from
+  documentation comments by <a href="http://www.stack.nl/%7Edimitri/doxygen/">Doxygen</a>. Only
+  the top-level part of code and the most relevant libraries are
+  documented here. For additional documentation of base libraries, see
+  the <b><a href="../codedoc/generated/iglib/html/index.html">IGLib
+      Code documentation</a></b>.<br>
+  <br>
+  <br>
+  &nbsp; <span style="font-weight: bold;">See also:</span> <br>
+  <ul>
+    <li><a href="../../iglib/index.html">IGLib</a> home page. Contains
+      information on the <i>Investigative Generic Library</i>, the
+      code base for this software, including the complete <a href="../codedoc/generated/iglib/html/index.html">code
+        documentation</a> (and <a href="../codedoc/generated/iglib/index.html">wider code
+        documentation</a>).<br>
+    </li>
+    <li>My <a href="../../doc/index.html">other documentation</a>.</li>
+    <li>Documentation section on the page about <a href="../../cobik/index.html#doc">my work at COBIK</a> where I
+      use IGLib as a base library for research software in the field
+      of neural networks. <br>
+    </li>
+    <li>Docuentation section on the <a href="../../ioptlib/index.html#doc">IOptLib page</a>.</li>
+    <li>Collection of <a href="../../links.html">optimization-related
+        links</a>.<br>
+    </li>
+    <li>Ph.D. thesis on <a href="../../../inverse/doc/phd/index.html">optimization
+        shell <span style="font-style: italic;">Inverse</span></a>.<br>
+    </li>
+  </ul>
+  <br>
+  <center>
+    <h1> <a name="download"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">Free Download<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  &nbsp;&nbsp; NeurApp can be downloaded here and can be used free of
+  charge by anyone (see the license agreement). The current version is
+  1.0.<br>
+  <br>
+  <a href="download/NeurApp.zip">Download NeurApp</a> (click on the
+  link) or <a href="download/NeurApp_x86.zip">32-bit version</a> for
+  older (32 bit) Windows systems.<br>
+  <br>
+  Short installation instructions:<br>
+  <ul>
+    <li>Download the compressed archive by clicking on the <a href="download/NeurApp.zip">download link</a> above.</li>
+    <li>Unpack contents of the archive to an arbitrary directory.</li>
+    <li>Run the executable from the location where files were
+      unpacked.</li>
+    <li>That's it. For more information about how to use the
+      application, run it, click on the "<i>About</i>" tab and then on
+      the "<i>Help</i>" button, or read the <a href="doc/NeurApp.pdf">user
+        manual</a>.<br>
+    </li>
+  </ul>
+  <br>
+  <h2 style="text-align: center;"><small><a name="system_requirements"></a><span style="color: rgb(204, 0, 0);">System
+        Requirements<br>
+      </span></small></h2>
+  <br>
+  &nbsp; The application requires the 64 bit <a href="http://www.microsoft.com/net">.NET</a> framework or its
+  alternative implementation such as <a href="http://www.mono-project.com/">Mono</a>. One of these is
+  available for most modern computing platforms and are many times
+  pre-installed with the operating system. If not yet installed, you
+  will have to download and install the <a href="http://www.microsoft.com/net">.NET framework</a> (for Widows
+  operating systems) or <a href="http://www.mono-project.com/">Mono</a>
+  (cross platform) before using the software.<br>
+  &nbsp; There may be problems with using the software on some older
+  platforms, e.g. Windows XP. For more details, see the <a href="../../iglib/index.html#system_requirements">System
+    Requirements Section at the IGLib</a> pages.<br>
+  <br>
+  <center>
+    <h1> <a name="examples"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">Examples and Screenshots<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  <br>
+  <br>
+  <img alt="DUI for 1D approximation" src="screenshots/approximation_1d.jpg" width="708" height="448"><br>
+  Approximation of function of 1 variable.<br>
+  <br>
+  <img alt="sampled data for approximation of a function of 2
+      variables" src="screenshots/sampled_data_2d.jpg" width="710" height="457"><br>
+  Generating training data by sampling a user defined reference
+  function of two variables.<br>
+  <br>
+  <br>
+  <img alt="sampled data for approximation of a function of 2
+      variables" src="screenshots/approximated_2d_function.jpg" width="710" height="457"><br>
+  Neural network - based model of a user defined function of two
+  variables.Original function is shown for comparison, with errors
+  shown in color scale.<br>
+  <br>
+  <img alt="detail - comparison of original function and ANN model" src="screenshots/approximated_function_detail.jpg"
+    width="526" height="467"><br>
+  Zoomed-in detail of an area with larger approximation errors. <br>
+  <br>
+  <img alt="Model with contours." src="screenshots/approximation_2d_contours.jpg" width="652" height="578"><br>
+  Plot of approximated data with contours shown. <br>
+  <br>
+  <img alt="Fine tuning display options." src="screenshots/display_fine_tuning.jpg" width="1095" height="999"><br>
+  There are a number of display options that make inspection of the
+  approximation and its errors really easy and clear. One can
+  individually switch on or off display of training points, grid,
+  surfaces and contours of the original function and its
+  approximation. Transparency of both surfaces can be continuously
+  adjusted. In this figure, both original and approximated surface
+  were drawn relatively opaque, therefore it is immediately clear
+  where approximated function has higher or lower values than the
+  original one. Contours of the original function are displayed, which
+  gives better feeling of 3D shapes.<br>
+  <br>
+  <br>
+  <h2 style="text-align: center;"><small><a name="other_software"></a><span style="color: rgb(204, 0, 0);">Other
+        Software&nbsp; <br>
+      </span></small></h2>
+  <br>
+  <a href="file:///U:/igor/www/www/igor/iglib/index.html"><img
+      src="file:///U:/igor/www/www/igor/software/NeurApp/dragonfly_server_small.jpg" alt="IGLib Logo."
+      style="width: 336px; height: 256px;" width="336" height="256" border="0"></a>&nbsp; <i> NeurApp</i>
+  is based on <a href="http://www2.arnes.si/%7Eljc3m2/igor/iglib/index.html"><i>Investigative
+
+      Generic Library (IGLib)</i></a>.<br>
+  <br>
+  Some publically available software based on this library includes: <br>
+  <ul>
+    <li><a href="http://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/HashForm.html#hashform"><i>HashForm</i></a>
+      - application for calculation and verification of checksums
+      (MD5, SHA-1, SHA-256, SHA-512) for files and text. <br>
+    </li>
+    <li><a
+        href="http://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/HashForm.html#hashshell"><i>HashShell</i></a>
+      - a shell application with various cryptography-related
+      functionality (calculation of hash functions / checksums,
+      symmetric and asymmetric encryption, certificate management,
+      etc.). <br>
+    </li>
+    <li><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
           font-family:&quot;Times New
           Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times
           New Roman&quot;;
 mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
-          layout-grid-mode:line"><a
-            href="http://www2.arnes.si/%7Eljc3m2/igor/software/NeurApp/index.html">NeurApp</a>
-          – an educational application for visually exploring features
-          of function approximation
-          with artificial neural networks (ANN). It creates 1D and 2D
-          ANN models of user
-          defined functions and provides visualization capabilities to
-          compare these
-          models with originals. It can be <a
-            href="http://www.softpedia.com/get/Science-CAD/NeurApp.shtml">downloaded
-            from Softpedia</a>.<br>
-        </span></li>
-      <li>&nbsp;<i style="mso-bidi-font-style:normal"><span
-            style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times
+          layout-grid-mode:line"><a href="http://www2.arnes.si/%7Eljc3m2/igor/software/NeurApp/index.html">NeurApp</a>
+        – an educational application for visually exploring features
+        of function approximation
+        with artificial neural networks (ANN). It creates 1D and 2D
+        ANN models of user
+        defined functions and provides visualization capabilities to
+        compare these
+        models with originals. It can be <a href="http://www.softpedia.com/get/Science-CAD/NeurApp.shtml">downloaded
+          from Softpedia</a>.<br>
+      </span></li>
+    <li>&nbsp;<i style="mso-bidi-font-style:normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times
             New Roman&quot;,&quot;serif&quot;;
             mso-fareast-font-family:&quot;Times New
             Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
             EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line"><a
-              href="http://www2.arnes.si/%7Eljc3m2/igor/software/AnnApp/index.html">AnnApp</a></span></i><span
-          style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times
+            href="http://www2.arnes.si/%7Eljc3m2/igor/software/AnnApp/index.html">AnnApp</a></span></i><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times
           New Roman&quot;,&quot;serif&quot;;
           mso-fareast-font-family:&quot;Times New
           Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
           EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line"> –
-          software for exploring
-          multidimensional ANN-based models.</span></li>
-      <li><a
-href="http://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/index.html"><span
-            style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+        software for exploring
+        multidimensional ANN-based models.</span></li>
+    <li><a href="http://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/index.html"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
             font-family:&quot;Times New
             Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times
             New Roman&quot;;
 mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
-            layout-grid-mode:line"><i>IGShell</i></span></a> - <span
-          style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+            layout-grid-mode:line"><i>IGShell</i></span></a> - <span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
           font-family:&quot;Times New
           Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times
           New Roman&quot;;
 mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
           layout-grid-mode:line">a shell application based on <i>IGLib</i>.</span></li>
-      <li><i style="mso-bidi-font-style:normal"><span
-            style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times
+    <li><i style="mso-bidi-font-style:normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times
             New Roman&quot;,&quot;serif&quot;;
             mso-fareast-font-family:&quot;Times New
             Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
             EN-US;mso-bidi-language:AR-SA;layout-grid-mode:line"><a
-href="http://www2.arnes.si/%7Eljc3m2/igor/software/thesis_petek/index.html">Oscillator
-              Modeller</a></span></i><span
-          style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+            href="http://www2.arnes.si/%7Eljc3m2/igor/software/thesis_petek/index.html">Oscillator
+            Modeller</a></span></i><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
           font-family:&quot;Times New
           Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times
           New Roman&quot;;
 mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
           layout-grid-mode:line"> – an educational application for
-          playing with nonlinear
-          driven oscillators and their resonance curves. <br>
-        </span></li>
-    </ul>
-    <h1> </h1>
-    <br>
-    <br>
-    <br>
-    <center>
-      <h1> <a name="old_versions"></a><b><i><font color="#cc0000"><font
-                size="+2">Previous Versions<br>
-              </font></font></i></b></h1>
-    </center>
-    <br>
-    &nbsp; This software is available as freeware and is freely
-    available on these pages. Different version can be downloaded below.
-    For download and installation instructions, see the <a
-      href="#download">Download Section</a>.<br>
-    <br>
-    <br>
-    <h2 style="text-align: center;"><small><a name="ver_01_03"></a><span
-          style="color: rgb(204, 0, 0);">Version 1.3<br>
-        </span></small></h2>
-    <ul>
-      <li><a href="old/ver_01_03/doc/NeurApp_help.pdf">User manual in
-          PDF</a> (<a href="old/ver_01_03/doc/NeurApp_help.html">html</a>,
-        <a href="old/ver_01_03/doc/NeurApp_help.mhtml">mhtml</a>).&nbsp;
-        <br>
-      </li>
-      <li><a
-href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_03/License_NeurApp.html">License
-
-
-
-
-
-          Agreement</a>.&nbsp; <br>
-      </li>
-      <li><a
-href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_03/ReadMe_NeurApp.html">ReadMe
-
-
-
-
-
-          file</a>.&nbsp; <br>
-      </li>
-      <li><a
-href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_03/download/NeurApp.zip">Application
-
-
-
-
-
-          (zip archive)</a>.&nbsp; <br>
-      </li>
-    </ul>
-    <br>
-    <br>
-    <h2 style="text-align: center;"><small><a name="ver_01_01"></a><span
-          style="color: rgb(204, 0, 0);">Version 1.1<br>
-        </span></small></h2>
-    <ul>
-      <li><a
-href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_01/doc/NeurApp.pdf">User
-
-
-
-
-
-          manual in PDF</a> (<a
-href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_01/doc/NeurApp_help.html">html</a>,
-        <a
-href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_01/doc/NeurApp_help.mhtml">mhtml</a>).&nbsp;
-
-
-
-
-
-
-        <br>
-      </li>
-      <li><a
-href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_01/License_NeurApp.html">License
-
-
-
-
-
-          Agreement</a>.&nbsp; <br>
-      </li>
-      <li><a
-href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_01/ReadMe_NeurApp.html">ReadMe
-
-
-
-
-
-          file</a>.&nbsp; <br>
-      </li>
-      <li><a
-href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_01/download/NeurApp.zip">Application
-
-
-
-
-
-          (zip archive)</a>.&nbsp; <br>
-      </li>
-    </ul>
-    <br>
-    <br>
-    <h2 style="text-align: center;"><small><a name="ver_01_00"></a><span
-          style="color: rgb(204, 0, 0);">Version 1.0<br>
-        </span></small></h2>
-    <ul>
-      <li><a href="old/ver_01_00/doc/NeurApp.pdf">User manual in PDF</a>
-        (<a href="old/ver_01_00/doc/help.html">html</a>, <a
-          href="old/ver_01_00/doc/help.mhtml">mhtml</a>).&nbsp; <br>
-      </li>
-      <li><a href="old/ver_01_00/License_NeurApp.html">License Agreement</a>.&nbsp;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <br>
-      </li>
-      <li><a href="old/ver_01_00/ReadMe_NeurApp.html">ReadMe file</a>.&nbsp;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <br>
-      </li>
-      <li><a href="old/ver_01_00/download/NeurApp.zip">Application (zip
-          archive)</a>.&nbsp; <br>
-      </li>
-    </ul>
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr width="100%"><br>
-    <br>
-    <!-- SiteSearch Google -->
-    <form method="get" action="http://www.google.com/search">
-      <div style="text-align: right;"> </div>
-      <table style="width: 60%;" cellspacing="4" cellpadding="4">
-        <tbody>
-          <tr>
-            <td style="text-align: right; font-style: italic;"><a
-                href="http://www.google.com/"> </a><a name="search"></a><a
-                href="http://www.google.com/"><img
-                  src="http://www.google.com/logos/Logo_25wht.gif"
-                  style="border: 0px solid ; width: 75px; height: 32px;"
-                  alt="Google" title=""></a></td>
-            <td> <input name="q" size="31" maxlength="255" type="text"><input name="btnG" value="Google Search" type="submit"> <font size="-1"><input name="domains" value="../" type="hidden"><br>
-                <input name="sitesearch" value="" checked="checked" type="radio">WWW&nbsp;&nbsp;&nbsp; <input name="sitesearch" value="../" type="radio">../&nbsp;&nbsp;&nbsp;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <input name="sitesearch" value="./" type="radio">./&nbsp;&nbsp;&nbsp;&nbsp;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <input name="sitesearch" value="http://www2.arnes.si/%7Eljc3m2/" type="radio">
-                Igor at Arnes&nbsp;&nbsp; <input name="sitesearch" value="hhttp://igor.mrfreehost.com/" type="radio">
-                Igor at Mrfreesite <br>
-              </font> </td>
-          </tr>
-        </tbody>
-      </table>
-    </form>
-    <!-- SiteSearch Google -->
-    <p> </p>
-    <p> </p>
-    <p> </p>
-    <p> </p>
-    <br>
-    <hr>
-    <center>
-      <table nosave="" cellpadding="2" border="3" bgcolor="#ffffff">
-        <tbody>
-          <tr nosave="">
-            <td nosave="" valign="top" align="center">
-              <center>&nbsp;&nbsp; <a href="http://www.c3m.si/inverse/doc/phd/"><br>
-                </a></center>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </center>
-    &nbsp;
-    <div align="right">
-      <table nosave="" cellpadding="2" border="3" bgcolor="#ffffff">
-        <tbody>
-          <tr nosave="">
-            <td nosave="" valign="top" align="left">
-              <div align="right"><font size="-1">&nbsp; Maintained by <a href="http://www2.arnes.si/%7Eljc3m2/igor/">Igor
-                    Grešovnik</a>&nbsp; <br>
-                </font></div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      &nbsp; &nbsp; &nbsp;&nbsp; </div>
-    <center>
-      <table nosave="" cellpadding="2" border="3">
-        <tbody>
-          <tr nosave="">
-            <td nosave="" valign="top" align="left">
-              <center><i>&nbsp; Updated in April 2015 &nbsp; <br>
-                </i></center>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </center>
-    <br>
-    <br>
-    <br>
-    <small>Number of accesses since the last
-      update:&nbsp;&nbsp;&nbsp;&nbsp; </small><a href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/index.html"><img src="http://www.arnes.si/cgi-bin/counter?md=7%7Cdd=B%7Cid=IGarnes_igor_ioptlib_index" title="" alt="If you don't see the access counter properly then
+        playing with nonlinear
+        driven oscillators and their resonance curves. <br>
+      </span></li>
+  </ul>
+  <h1> </h1>
+  <center>
+    <h1> <a name="old_versions"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">Previous Versions<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  <br>
+  &nbsp; This software is available as freeware and is freely
+  available on these pages. Different version can be downloaded below.
+  For download and installation instructions, see the <a href="#download">Download Section</a>.<br>
+  <br>
+  <br>
+  <h2 style="text-align: center;"><small><a name="ver_01_03"></a><span style="color: rgb(204, 0, 0);">Version 1.3<br>
+      </span></small></h2>
+  <ul>
+    <li><a href="old/ver_01_03/doc/NeurApp_help.pdf">User manual in
+        PDF</a> (<a href="old/ver_01_03/doc/NeurApp_help.html">html</a>,
+      <a href="old/ver_01_03/doc/NeurApp_help.mhtml">mhtml</a>).&nbsp;
+      <br>
+    </li>
+    <li><a href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_03/License_NeurApp.html">License
+        Agreement</a>.&nbsp; <br>
+    </li>
+    <li><a href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_03/ReadMe_NeurApp.html">ReadMe
+        file</a>.&nbsp; <br>
+    </li>
+    <li><a href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_03/download/NeurApp.zip">Application
+        (zip archive)</a>.&nbsp; <br>
+    </li>
+  </ul>
+  <br>
+  <br>
+  <h2 style="text-align: center;"><small><a name="ver_01_01"></a><span style="color: rgb(204, 0, 0);">Version 1.1<br>
+      </span></small></h2>
+  <ul>
+    <li><a href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_01/doc/NeurApp.pdf">User
+        manual in PDF</a> (<a
+        href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_01/doc/NeurApp_help.html">html</a>,
+      <a
+        href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_01/doc/NeurApp_help.mhtml">mhtml</a>).&nbsp;
+      <br>
+    </li>
+    <li><a href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_01/License_NeurApp.html">License
+        Agreement</a>.&nbsp; <br>
+    </li>
+    <li><a href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_01/ReadMe_NeurApp.html">ReadMe
+        file</a>.&nbsp; <br>
+    </li>
+    <li><a href="file:///D:/users/igor/www/www/igor/software/NeurApp/old/ver_01_01/download/NeurApp.zip">Application
+        (zip archive)</a>.&nbsp; <br>
+    </li>
+  </ul>
+  <br>
+  <br>
+  <h2 style="text-align: center;"><small><a name="ver_01_00"></a><span style="color: rgb(204, 0, 0);">Version 1.0<br>
+      </span></small></h2>
+  <ul>
+    <li><a href="old/ver_01_00/doc/NeurApp.pdf">User manual in PDF</a>
+      (<a href="old/ver_01_00/doc/help.html">html</a>, <a href="old/ver_01_00/doc/help.mhtml">mhtml</a>).&nbsp; <br>
+    </li>
+    <li><a href="old/ver_01_00/License_NeurApp.html">License Agreement</a>.&nbsp;
+
+      <br>
+    </li>
+    <li><a href="old/ver_01_00/ReadMe_NeurApp.html">ReadMe file</a>.&nbsp;
+      <br>
+    </li>
+    <li><a href="old/ver_01_00/download/NeurApp.zip">Application (zip
+        archive)</a>.&nbsp; <br>
+    </li>
+  </ul>
+  <br>
+  <br>
+  <br>
+  <br>
+  <hr width="100%"><br>
+  <br>
+  <!-- SiteSearch Google -->
+  <form method="get" action="http://www.google.com/search">
+    <div style="text-align: right;"> </div>
+    <table style="width: 60%;" cellspacing="4" cellpadding="4">
+      <tbody>
+        <tr>
+          <td style="text-align: right; font-style: italic;"><a href="http://www.google.com/"> </a><a
+              name="search"></a><a href="http://www.google.com/"><img src="http://www.google.com/logos/Logo_25wht.gif"
+                style="border: 0px solid ; width: 75px; height: 32px;" alt="Google" title=""></a></td>
+          <td> <input name="q" size="31" maxlength="255" type="text"><input name="btnG" value="Google Search"
+              type="submit">
+            <font size="-1"><input name="domains" value="../" type="hidden"><br>
+              <input name="sitesearch" value="" checked="checked" type="radio">WWW&nbsp;&nbsp;&nbsp; <input
+                name="sitesearch" value="../" type="radio">../&nbsp;&nbsp;&nbsp;
+              <input name="sitesearch" value="./" type="radio">./&nbsp;&nbsp;&nbsp;&nbsp;
+              <input name="sitesearch" value="http://www2.arnes.si/%7Eljc3m2/" type="radio">
+              Igor at Arnes&nbsp;&nbsp; <input name="sitesearch" value="hhttp://igor.mrfreehost.com/" type="radio">
+              Igor at Mrfreesite <br>
+            </font>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  <!-- SiteSearch Google -->
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <br>
+  <hr>
+  <center>
+    <table nosave="" cellpadding="2" border="3" bgcolor="#ffffff">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" valign="top" align="center">
+            <center>&nbsp;&nbsp; <a href="http://www.c3m.si/inverse/doc/phd/"><br>
+              </a></center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+  &nbsp;
+  <div align="right">
+    <table nosave="" cellpadding="2" border="3" bgcolor="#ffffff">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" valign="top" align="left">
+            <div align="right">
+              <font size="-1">&nbsp; Maintained by <a href="http://www2.arnes.si/%7Eljc3m2/igor/">Igor
+                  Grešovnik</a>&nbsp; <br>
+              </font>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    &nbsp; &nbsp; &nbsp;&nbsp;
+  </div>
+  <center>
+    <table nosave="" cellpadding="2" border="3">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" valign="top" align="left">
+            <center><i>&nbsp; Updated in April 2015 &nbsp; <br>
+              </i></center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+  <br>
+  <br>
+  <br>
+  <small>Number of accesses since the last
+    update:&nbsp;&nbsp;&nbsp;&nbsp; </small><a href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/index.html"><img
+      src="http://www.arnes.si/cgi-bin/counter?md=7%7Cdd=B%7Cid=IGarnes_igor_ioptlib_index" title="" alt="If you don't see the access counter properly then
         click on the link!" style="border: 0px solid ; width: 172px;
         height: 28px;"></a><small>&nbsp;&nbsp;&nbsp; If you don't see
-      the access counter properly then please follow <a href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/index.html">this
+    the access counter properly then please follow <a href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/index.html">this
+      link</a>!</small><br>
+  <br>
+  <br>
 
+</body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        link</a>!</small><br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  
-
-</body></html>
+</html>

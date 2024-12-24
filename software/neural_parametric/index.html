@@ -1,514 +1,371 @@
-<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
-<html>
-  <head>
-    <title>NeuralParametric, exploring artificial neural networks (ANN)
-      - based models.</title>
-    <meta name="author" content="Igor Grešovnik, Tadej Kodelja">
-    <meta name="keywords" content="artificial neural networks,
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Below: definition of canonical form of this page's URL -->
+  <link rel="canonical" href="./">
+  <title>NeuralParametric, exploring artificial neural networks (ANN)
+    - based models.</title>
+  <meta name="author" content="Igor Grešovnik, Tadej Kodelja">
+  <meta name="keywords" content="artificial neural networks,
       approximation, parametric studies, software, Igor Grešovnik,
       Investigative Generic Library, IGLib, IOptLib">
-    <meta name="description" content="NeuralParametric is an intuitive
+  <meta name="description" content="NeuralParametric is an intuitive
       graphical software for exploring artificial neural networks (ANN)
       - based models. Powered by IGLib.">
-    <meta name="Classification" content="software/numerical">
-    <meta name="GENERATOR" content="Netscape 7 Composer">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link rev="made"
-href="http://www.google.com/search?hl=en&amp;q=Igor+Gre%C5%A1ovnik&amp;btnG=Google+Search&amp;meta=">
-    <link rel="SHORTCUT ICON" href="ig.ico">
-			  		
-		
-	<!-- Google Analitics - account Software 
+  <meta name="Classification" content="software/numerical">
+  <meta name="GENERATOR" content="Netscape 7 Composer">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rev="made" href="http://www.google.com/search?hl=en&amp;q=Igor+Gre%C5%A1ovnik&amp;btnG=Google+Search&amp;meta=">
+
+  <!-- Google Analitics - account Software 
 	property Software NeurApp -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	  ga('create', 'UA-96841644-6', 'auto');
-	  ga('send', 'pageview');
-	</script>
-
-
-	<!-- Google Analitics - account Software 
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-96841644-6', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- Google Analitics - account Software 
 	property Software all -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	  ga('create', 'UA-96841644-1', 'auto');
-	  ga('send', 'pageview');
-	</script>	  
-	
-	<!-- Google Analitics - account IGLib -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-96841644-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- Google Analitics - account IGLib -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-76143121-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 
-	  ga('create', 'UA-76143121-1', 'auto');
-	  ga('send', 'pageview');
-	</script>
+  <!-- Tags below define icons, CSSs, and scripts. Leave them as absolute URLs. -->
+  <link rel="icon" href="https://ajgorhoe.github.io/icons/IGLibIcon_128x128.png" />
+  <link rel="stylesheet" href="https://ajgorhoe.github.io/scripts/IgsScriptSupport.css" />
+  <!-- The following two script elements perform canonical redirect: -->
+  <script src="https://ajgorhoe.github.io/scripts/IgsScriptTools.js"></script>
+  <script>igsCanonicalRedirect();</script>
+</head>
 
-
-  </head>
-  <body style=" color: rgb(0, 0, 0); background-color: rgb(255, 255,
+<body style=" color: rgb(0, 0, 0); background-color: rgb(255, 255,
     255);" link="#0000ee" vlink="#006600" alink="#fe0000">
-    <div align="right"><small>&nbsp; </small>
-      <table width="100%" border="0" cellpadding="2" cellspacing="2">
-        <tbody>
-          <tr>
-            <td valign="top"><small><small>&nbsp;&nbsp; &nbsp; &nbsp;</small><small><big><big>
-                      <small><a href="./"><big>./ <small>(directory)</small></big></a></small></big></big>
-                  &nbsp;&nbsp;<small> <a href="../index.html"><span
-                        style="font-weight: bold;">&lt;&lt;</span></a>
-                    &nbsp;&nbsp; <a href="../index.html"><span
-                        style="font-weight: bold;">&lt; back</span></a>
-                    &nbsp;&nbsp;</small></small></small>&nbsp;&nbsp; <small><a
-                  href="index.html#search" style="font-weight: bold;">Search</a></small>
-              &nbsp;<small><small><small> &nbsp; </small></small></small></td>
-            <td valign="top" align="right"><small>&nbsp; <a
-                  href="../../links.html">Optimization links</a>&nbsp;
-                &nbsp; <a href="../../index.html">Igor Grešovnik</a>
-                &nbsp;&nbsp; <a href="../../iglib/index.html"><span
-                    style="font-style: italic;">IGLib</span></a> &nbsp;
-                &nbsp;&nbsp; </small></td>
-          </tr>
-        </tbody>
-      </table>
-      <font size="-1"><a href="http://www.c3m.si/igor"> </a></font></div>
-    <center>
-      <div style="text-align: left;">
-        <div style="text-align: right;">&nbsp;&nbsp;<span
-            style="font-style: italic;"> </span><font color="#000000"><span
-              style="font-style: italic;"><br>
-            </span></font></div>
-      </div>
-    </center>
-    <table nosave="" style="width: 100%;" cols="2" cellpadding="0"
-      cellspacing="5">
+  <div align="right"><small>&nbsp; </small>
+    <table width="100%" border="0" cellpadding="2" cellspacing="2">
       <tbody>
-        <tr nosave="" valign="top">
-          <td nosave="" style="vertical-align: middle; text-align: left;
-            width: 90%;"> <span style="font-weight: bold;"></span><br>
-            Warning: Development of this software is discontinued. Newer
-            development moved to <i><b><a href="../AnnApp/index.html">AnnApp</a></b></i>.
-            <br>
-            <br>
-            <br>
-            <h1 style="text-align: center;"><big><b><i><font><font><b><i><font><font><big><big><b><i><font><font><b><i><font
-                                                  color="#cc0000"><font
-                                                    size="+2"><big>NeuralParametric
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                      <br>
-                                                    </big></font></font></i></b></font></font></i></b></big></big></font></font></i></b></font></font></i></b></big></h1>
-            <p style="text-align: left;"><b><span style="font-style:
-                  italic;">&nbsp; </span></b><span style="font-style:
-                italic;">NeuralParametric is an intuitive </span>software
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              for exploring approximation with artificial neural
-              networks. It is replaced by <a
-                href="../AnnApp/index.html"><i><b>Ann</b></i><i><b>A</b></i><i><b>pp</b></i></a>.<b><br>
-              </b></p>
-            <font color="#000000"> </font><span style="font-weight:
-              bold;"></span><br>
-            <font color="#000000"> </font> </td>
-          <td style="text-align: right;" nosave="">&nbsp;&nbsp; <img
-              src="neuralparametric_title.jpg" alt="Dragonfly Server
-              Logo." style="width: 336px; height: 256px;" width="336"
-              height="256"><b> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
-              &nbsp; </b></td>
+        <tr>
+          <td valign="top"><small><small>&nbsp;&nbsp; &nbsp; &nbsp;</small><small><big><big>
+                    <small><a href="./"><big>./ <small>(directory)</small></big></a></small></big></big>
+                &nbsp;&nbsp;<small> <a href="../index.html"><span style="font-weight: bold;">&lt;&lt;</span></a>
+                  &nbsp;&nbsp; <a href="../index.html"><span style="font-weight: bold;">&lt; back</span></a>
+                  &nbsp;&nbsp;</small></small></small>&nbsp;&nbsp; <small><a href="index.html#search"
+                style="font-weight: bold;">Search</a></small>
+            &nbsp;<small><small><small> &nbsp; </small></small></small></td>
+          <td valign="top" align="right"><small>&nbsp; <a href="../../links.html">Optimization links</a>&nbsp;
+              &nbsp; <a href="../../index.html">Igor Grešovnik</a>
+              &nbsp;&nbsp; <a href="../../iglib/index.html"><span style="font-style: italic;">IGLib</span></a> &nbsp;
+              &nbsp;&nbsp; </small></td>
         </tr>
       </tbody>
     </table>
-    <p><b><br>
-      </b></p>
-    <p> </p>
-    <hr width="100%">
-    <center>
-      <table nosave="" cols="2" width="100%">
-        <tbody>
-          <tr nosave="" valign="top">
-            <td nosave=""> <span style="font-weight: bold;">Contents:<br>
-              </span>
-              <ul>
-                <li><a href="#about">About the Software</a>&nbsp; <br>
-                </li>
-                <li><a href="#examples">Screen shots</a>&nbsp;&nbsp;</li>
-              </ul>
-              <br>
-              <font color="#000000"><span style="font-weight: bold;"></span></font></td>
-            <td nosave="" align="right">&nbsp;&nbsp;&nbsp; <br>
-              &nbsp;&nbsp; <a href="#search" style="font-weight: bold;">Search</a>
-              &nbsp; <br>
-              &nbsp;&nbsp;&nbsp;&nbsp; <b><br>
-                &nbsp; &nbsp; &nbsp; <br>
-              </b></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-    </center>
-    <hr width="100%">&nbsp;&nbsp; <br>
-    <center>
-      <h1> <a name="about"></a><b><i><font color="#cc0000"><font
-                size="+2">About the Software<br>
-              </font></font></i></b></h1>
-    </center>
-    &nbsp; <span style="" lang="EN-GB">The simple and intuitive
-      software has been created by <a href="../../index.html"><span
-          style="font-style: italic;">Igor Grešovnik</span></a> and
-      Tadej Kodelja. It is aimed at exploring the artificial neural
-      networks (ANNs) - based models</span>.<br>
+    <font size="-1"><a href="http://www.c3m.si/igor"> </a></font>
+  </div>
+  <center>
+    <div style="text-align: left;">
+      <div style="text-align: right;">&nbsp;&nbsp;<span style="font-style: italic;"> </span>
+        <font color="#000000"><span style="font-style: italic;"><br>
+          </span></font>
+      </div>
+    </div>
+  </center>
+  <table nosave="" style="width: 100%;" cols="2" cellpadding="0" cellspacing="5">
+    <tbody>
+      <tr nosave="" valign="top">
+        <td nosave="" style="vertical-align: middle; text-align: left;
+            width: 90%;"> <span style="font-weight: bold;"></span><br>
+          Warning: Development of this software is discontinued. Newer
+          development moved to <i><b><a href="../AnnApp/index.html">AnnApp</a></b></i>.
+          <br>
+          <br>
+          <br>
+          <h1 style="text-align: center;"><big><b><i>
+                  <font>
+                    <font><b><i>
+                          <font>
+                            <font><big><big><b><i>
+                                      <font>
+                                        <font><b><i>
+                                              <font color="#cc0000">
+                                                <font size="+2"><big>NeuralParametric
+                                                    <br>
+                                                  </big></font>
+                                              </font>
+                                            </i></b></font>
+                                      </font>
+                                    </i></b></big></big></font>
+                          </font>
+                        </i></b></font>
+                  </font>
+                </i></b></big></h1>
+          <p style="text-align: left;"><b><span style="font-style:
+                  italic;">&nbsp; </span></b><span style="font-style:
+                italic;">NeuralParametric is an intuitive </span>software
+            for exploring approximation with artificial neural
+            networks. It is replaced by <a
+              href="../AnnApp/index.html"><i><b>Ann</b></i><i><b>A</b></i><i><b>pp</b></i></a>.<b><br>
+            </b></p>
+          <font color="#000000"> </font><span style="font-weight:
+              bold;"></span><br>
+          <font color="#000000"> </font>
+        </td>
+        <td style="text-align: right;" nosave="">&nbsp;&nbsp; <img src="neuralparametric_title.jpg" alt="Dragonfly Server
+              Logo." style="width: 336px; height: 256px;" width="336" height="256"><b> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+            &nbsp;
+            &nbsp; </b></td>
+      </tr>
+    </tbody>
+  </table>
+  <p><b><br>
+    </b></p>
+  <p> </p>
+  <hr width="100%">
+  <center>
+    <table nosave="" cols="2" width="100%">
+      <tbody>
+        <tr nosave="" valign="top">
+          <td nosave=""> <span style="font-weight: bold;">Contents:<br>
+            </span>
+            <ul>
+              <li><a href="#about">About the Software</a>&nbsp; <br>
+              </li>
+              <li><a href="#examples">Screen shots</a>&nbsp;&nbsp;</li>
+            </ul>
+            <br>
+            <font color="#000000"><span style="font-weight: bold;"></span></font>
+          </td>
+          <td nosave="" align="right">&nbsp;&nbsp;&nbsp; <br>
+            &nbsp;&nbsp; <a href="#search" style="font-weight: bold;">Search</a>
+            &nbsp; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; <b><br>
+              &nbsp; &nbsp; &nbsp; <br>
+            </b></td>
+        </tr>
+      </tbody>
+    </table>
     <br>
-    <br>
-    <center>
-      <h1> <a name="doc"></a><b><i><font color="#cc0000"><font
-                size="+2">Documentation<br>
-              </font></font></i></b></h1>
-    </center>
-    &nbsp; <a href="documentation.html"><span style="font-weight:
+  </center>
+  <hr width="100%">&nbsp;&nbsp; <br>
+  <center>
+    <h1> <a name="about"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">About the Software<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  &nbsp; <span style="" lang="EN-GB">The simple and intuitive
+    software has been created by <a href="../../index.html"><span style="font-style: italic;">Igor Grešovnik</span></a>
+    and
+    Tadej Kodelja. It is aimed at exploring the artificial neural
+    networks (ANNs) - based models</span>.<br>
+  <br>
+  <br>
+  <center>
+    <h1> <a name="doc"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">Documentation<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  &nbsp; <a href="documentation.html"><span style="font-weight:
         bold;">NeuralParametric User Manual</span></a>. PDF document
-    containing instructions for installation, running, and using the
-    software, and some background information about the software. Also
-    available as <a href="documentation.html">html page</a>.<br>
-    <br>
-    &nbsp; <a href="License_NeuralParametric.html"><b>NeuralParametric
-        License Agreement</b></a>. Contains terms of use of the
-    software.<br>
-    <br>
-    &nbsp; <a href="ReadMe_NeuralParametric.html"><b>ReadMe file</b></a>.
-    Contains very basic information about the software.<br>
-    <br>
-    <br>
-    <br>
-    &nbsp; <span style="font-weight: bold;">See also:</span> <br>
-    <ul>
-      <li><a href="../../iglib/index.html">IGLib</a> home page. Contains
-        information on the <i>Investigative Generic Library</i>, the
-        code base for this software, including the complete <a
-          href="../codedoc/generated/iglib/html/index.html">code
-          documentation</a> (and <a
-          href="../codedoc/generated/iglib/index.html">wider code
-          documentation</a>).<br>
-      </li>
-      <li>My <a href="../../doc/index.html">other documentation</a>.</li>
-      <li>Documentation section on the page about <a
-          href="../../cobik/index.html#doc">my work at COBIK</a> where I
-        use IGLib as a base library for research software in the field
-        of neural networks. <br>
-      </li>
-      <li>Docuentation section on the <a
-          href="../../ioptlib/index.html#doc">IOptLib page</a>.</li>
-      <li>Collection of <a href="../../links.html">optimization-related
-          links</a>.<br>
-      </li>
-      <li>Ph.D. thesis on <a href="../../../inverse/doc/phd/index.html">optimization
+  containing instructions for installation, running, and using the
+  software, and some background information about the software. Also
+  available as <a href="documentation.html">html page</a>.<br>
+  <br>
+  &nbsp; <a href="License_NeuralParametric.html"><b>NeuralParametric
+      License Agreement</b></a>. Contains terms of use of the
+  software.<br>
+  <br>
+  &nbsp; <a href="ReadMe_NeuralParametric.html"><b>ReadMe file</b></a>.
+  Contains very basic information about the software.<br>
+  <br>
+  <br>
+  <br>
+  &nbsp; <span style="font-weight: bold;">See also:</span> <br>
+  <ul>
+    <li><a href="../../iglib/index.html">IGLib</a> home page. Contains
+      information on the <i>Investigative Generic Library</i>, the
+      code base for this software, including the complete <a href="../codedoc/generated/iglib/html/index.html">code
+        documentation</a> (and <a href="../codedoc/generated/iglib/index.html">wider code
+        documentation</a>).<br>
+    </li>
+    <li>My <a href="../../doc/index.html">other documentation</a>.</li>
+    <li>Documentation section on the page about <a href="../../cobik/index.html#doc">my work at COBIK</a> where I
+      use IGLib as a base library for research software in the field
+      of neural networks. <br>
+    </li>
+    <li>Docuentation section on the <a href="../../ioptlib/index.html#doc">IOptLib page</a>.</li>
+    <li>Collection of <a href="../../links.html">optimization-related
+        links</a>.<br>
+    </li>
+    <li>Ph.D. thesis on <a href="../../../inverse/doc/phd/index.html">optimization
+        shell <span style="font-style: italic;">Inverse</span></a>.<br>
+    </li>
+  </ul>
+  <br>
+  <br>
+  <span style="" lang="EN-GB"></span><br>
+  <center>
+    <h1> <a name="download"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">Download<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  &nbsp;&nbsp; NeuralParametric can be downloaded here and can be used
+  free of charge by anyone (see the license agreement). The current
+  version is 1.0.<br>
+  <br>
+  <a href="download.html">Download NeuralParametric</a> (click on the
+  link).<br>
+  <br>
+  Short installation instructions:<br>
+  <ul>
+    <li>Download the compressed archive by clicking on the <a href="download.html">download link</a> above.</li>
+    <li>Unpack contents of the archive to an arbitrary directory.</li>
+    <li>Run the executable from the location where files were
+      unpacked.</li>
+    <li>That's it. For more information about how to use the
+      application, run it, click on the "<i>About</i>" tab and then on
+      the "<i>Help</i>" button, or read the <a href="doc/help.html">user
+        manual</a>.<br>
+    </li>
+  </ul>
+  <br>
+  <center>
+    <h1> <a name="examples"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">Examples and Screenshots<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  <br>
+  <br>
+  <img title="Evaluation of Model Outputs at specified process
+      parametrs." alt="Evaluation of Model Outputs." src="screenshots/neuralparametric_prediction.jpg" width="1148"
+    height="598"><br>
+  Evaluation of model outputs at the specified input parameters.<br>
+  <br>
+  <br>
+  <img title="Parametric study - influence of selected parameters on
+      chosen process output." alt="Parametric study." src="screenshots/neuralparametric_parametric_study.jpg"
+    width="1148" height="598"><br>
+  Parametric Study.<br>
+  <br>
+  <br>
+  <img title="Multiple parametric studies performed simultaneously." alt="Multiple parametric studies."
+    src="screenshots/neuralparametric_parametric_study_multiple.jpg" width="1148" height="598"><br>
+  Multiple Parametric Studies.<br>
+  <br>
+  <br>
+  &nbsp; <br>
+  <br>
+  <br>
+  <hr width="100%"><br>
+  <br>
+  <!-- SiteSearch Google -->
+  <form method="get" action="http://www.google.com/search">
+    <div style="text-align: right;"> </div>
+    <table style="width: 60%;" cellpadding="4" cellspacing="4">
+      <tbody>
+        <tr>
+          <td style="text-align: right; font-style: italic;"><a href="http://www.google.com/"> </a><a
+              name="search"></a><a href="http://www.google.com/"><img src="http://www.google.com/logos/Logo_25wht.gif"
+                style="border: 0px solid ; width: 75px; height: 32px;" alt="Google" title=""></a></td>
+          <td> <input name="q" size="31" maxlength="255" value="" type="text"><input name="btnG" value="Google Search"
+              type="submit">
+            <font size="-1"><input name="domains" value="../" type="hidden"><br>
+              <input name="sitesearch" value="" checked="checked" type="radio">WWW&nbsp;&nbsp;&nbsp; <input
+                name="sitesearch" value="../" type="radio">../&nbsp;&nbsp;&nbsp;
+              <input name="sitesearch" value="./" type="radio">./&nbsp;&nbsp;&nbsp;&nbsp;
+              <input name="sitesearch" value="http://www2.arnes.si/%7Eljc3m2/" type="radio">
+              Igor at Arnes&nbsp;&nbsp; <input name="sitesearch" value="hhttp://igor.mrfreehost.com/" type="radio">
+              Igor at Mrfreesite <br>
+            </font>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  <!-- SiteSearch Google -->
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <br>
+  <hr>
+  <center>
+    <table nosave="" bgcolor="#ffffff" border="3" cellpadding="2">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" valign="top" align="center">
+            <center>&nbsp;&nbsp; <a href="http://www.c3m.si/inverse/doc/phd/"><br>
+              </a></center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+  &nbsp;
+  <div align="right">
+    <table nosave="" bgcolor="#ffffff" border="3" cellpadding="2">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" valign="top" align="left">
+            <div align="right">
+              <font size="-1">&nbsp; Maintained by <a href="http://www2.arnes.si/%7Eljc3m2/igor/">Igor
+                  Grešovnik</a>&nbsp; <br>
+              </font>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    &nbsp; &nbsp; &nbsp;&nbsp;
+  </div>
+  <center>
+    <table nosave="" border="3" cellpadding="2">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" valign="top" align="left">
+            <center><i>&nbsp; Updated in August 2012 &nbsp; <br>
+              </i></center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+  <br>
+  <br>
+</body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          shell <span style="font-style: italic;">Inverse</span></a>.<br>
-      </li>
-    </ul>
-    <br>
-    <br>
-    <span style="" lang="EN-GB"></span><br>
-    <center>
-      <h1> <a name="download"></a><b><i><font color="#cc0000"><font
-                size="+2">Download<br>
-              </font></font></i></b></h1>
-    </center>
-    &nbsp;&nbsp; NeuralParametric can be downloaded here and can be used
-    free of charge by anyone (see the license agreement). The current
-    version is 1.0.<br>
-    <br>
-    <a href="download.html">Download NeuralParametric</a> (click on the
-    link).<br>
-    <br>
-    Short installation instructions:<br>
-    <ul>
-      <li>Download the compressed archive by clicking on the <a
-          href="download.html">download link</a> above.</li>
-      <li>Unpack contents of the archive to an arbitrary directory.</li>
-      <li>Run the executable from the location where files were
-        unpacked.</li>
-      <li>That's it. For more information about how to use the
-        application, run it, click on the "<i>About</i>" tab and then on
-        the "<i>Help</i>" button, or read the <a href="doc/help.html">user
-
-
-
-
-
-
-
-
-
-
-
-
-
-          manual</a>.<br>
-      </li>
-    </ul>
-    <br>
-    <center>
-      <h1> <a name="examples"></a><b><i><font color="#cc0000"><font
-                size="+2">Examples and Screenshots<br>
-              </font></font></i></b></h1>
-    </center>
-    <br>
-    <br>
-    <img title="Evaluation of Model Outputs at specified process
-      parametrs." alt="Evaluation of Model Outputs."
-      src="screenshots/neuralparametric_prediction.jpg" width="1148"
-      height="598"><br>
-    Evaluation of model outputs at the specified input parameters.<br>
-    <br>
-    <br>
-    <img title="Parametric study - influence of selected parameters on
-      chosen process output." alt="Parametric study."
-      src="screenshots/neuralparametric_parametric_study.jpg"
-      width="1148" height="598"><br>
-    Parametric Study.<br>
-    <br>
-    <br>
-    <img title="Multiple parametric studies performed simultaneously."
-      alt="Multiple parametric studies."
-      src="screenshots/neuralparametric_parametric_study_multiple.jpg"
-      width="1148" height="598"><br>
-    Multiple Parametric Studies.<br>
-    <br>
-    <br>
-    <br>
-    &nbsp; <br>
-    <br>
-    <br>
-    <hr width="100%"><br>
-    <br>
-    <!-- SiteSearch Google -->
-    <form method="get" action="http://www.google.com/search">
-      <div style="text-align: right;"> </div>
-      <table style="width: 60%;" cellpadding="4" cellspacing="4">
-        <tbody>
-          <tr>
-            <td style="text-align: right; font-style: italic;"><a
-                href="http://www.google.com/"> </a><a name="search"></a><a
-                href="http://www.google.com/"><img
-                  src="http://www.google.com/logos/Logo_25wht.gif"
-                  style="border: 0px solid ; width: 75px; height: 32px;"
-                  alt="Google" title=""></a></td>
-            <td> <input name="q" size="31" maxlength="255" value=""
-                type="text"><input name="btnG" value="Google Search"
-                type="submit"> <font size="-1"><input name="domains"
-                  value="../" type="hidden"><br>
-                <input name="sitesearch" value="" checked="checked"
-                  type="radio">WWW&nbsp;&nbsp;&nbsp; <input
-                  name="sitesearch" value="../" type="radio">../&nbsp;&nbsp;&nbsp;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <input name="sitesearch" value="./" type="radio">./&nbsp;&nbsp;&nbsp;&nbsp;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <input name="sitesearch"
-                  value="http://www2.arnes.si/%7Eljc3m2/" type="radio">
-                Igor at Arnes&nbsp;&nbsp; <input name="sitesearch"
-                  value="hhttp://igor.mrfreehost.com/" type="radio">
-                Igor at Mrfreesite <br>
-              </font> </td>
-          </tr>
-        </tbody>
-      </table>
-    </form>
-    <!-- SiteSearch Google -->
-    <p> </p>
-    <p> </p>
-    <p> </p>
-    <p> </p>
-    <br>
-    <hr>
-    <center>
-      <table nosave="" bgcolor="#ffffff" border="3" cellpadding="2">
-        <tbody>
-          <tr nosave="">
-            <td nosave="" valign="top" align="center">
-              <center>&nbsp;&nbsp; <a
-                  href="http://www.c3m.si/inverse/doc/phd/"><br>
-                </a></center>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </center>
-    &nbsp;
-    <div align="right">
-      <table nosave="" bgcolor="#ffffff" border="3" cellpadding="2">
-        <tbody>
-          <tr nosave="">
-            <td nosave="" valign="top" align="left">
-              <div align="right"><font size="-1">&nbsp; Maintained by <a
-                    href="http://www2.arnes.si/%7Eljc3m2/igor/">Igor
-                    Grešovnik</a>&nbsp; <br>
-                </font></div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      &nbsp; &nbsp; &nbsp;&nbsp; </div>
-    <center>
-      <table nosave="" border="3" cellpadding="2">
-        <tbody>
-          <tr nosave="">
-            <td nosave="" valign="top" align="left">
-              <center><i>&nbsp; Updated in August 2012 &nbsp; <br>
-                </i></center>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </center>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  </body>
 </html>
