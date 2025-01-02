@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Below: definition of canonical form of this page's URL -->
+  <link rel="canonical" href="./">
+  <title>IGLib.NET - Investigative Generic Library</title>
+  <meta name="author" content="Igor Grešovnik - Gresovnik">
+  <meta name="keywords" content="numerical library, technical
+      applications, optimization, optimization library, optimization
+      algorithm, successive approximation, moving least squares, inverse
+      problems, weighted least squares, approximation, Igor Gresovnik,
+      Igor Grešovnik, IGLib, IOptLib, framework library, cryptography,
+      encryption">
+  <meta name="description" content="IGLib.NET (Investigative Generic
+      Library) is a base library for development of technical, numerical
+      and other applications. It is developed in C# by Igor Grešovnik
+      and depends on a number of third party libraries.">
+  <meta name="Classification" content="software/library">
+  <meta name="GENERATOR" content="Netscape 7 Composer">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rev="made"
+    href="https://www.google.com/search?hl=en&amp;q=Igor+Gre%C5%A1ovnik&amp;btnG=Google+Search&amp;meta=">
+  <!-- Google Analitics - account IGLib -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-76143121-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- Google Analitics - account Software 
+	property Software all -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-96841644-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- Tags below define icons, CSSs, and scripts. Leave them as absolute URLs. -->
+  <link rel="icon" href="https://ajgorhoe.github.io/icons/IGLibIcon_128x128.png" />
+  <link rel="stylesheet" href="https://ajgorhoe.github.io/scripts/IgsScriptSupport.css" />
+  <!-- The following two script elements perform canonical redirect: -->
+  <script src="https://ajgorhoe.github.io/scripts/IgsScriptTools.js"></script>
+  <script>igsCanonicalRedirect();</script>
+</head>
+
+<body style=" color: rgb(0, 0, 0); background-color: rgb(255, 255,
+    255);" vlink="#006600" link="#0000ee" alink="#fe0000">
+  <div align="right"><small>&nbsp; </small>
+    <table width="100%" cellspacing="2" cellpadding="2" border="0">
+      <tbody>
+        <tr>
+          <td valign="top"><small><small>&nbsp;&nbsp; &nbsp; &nbsp;</small><small><big><big>
+                    <small><a href="./"><big>./ <small>(directory)</small></big></a></small></big></big>
+                &nbsp;&nbsp;<small> <a href="../index.html"><span style="font-weight: bold;">&lt;&lt;</span></a>
+                  &nbsp;&nbsp; <a href="../index.html"><span style="font-weight: bold;">&lt; back</span></a>
+                  &nbsp;&nbsp;</small></small></small>&nbsp;&nbsp; <small><a href="index.html#search">Search</a></small>
+            &nbsp;<small><small><small>
+                  &nbsp; </small></small></small></td>
+          <td valign="top" align="right"><small>&nbsp; </small><small>
+              <font size="-1"><a moz-do-not-send="true" href="../../index.html">Site Map</a> | <a href="../index.html"
+                  moz-do-not-send="true">Other
+                  Software</a> </font>|| <a href="../doc/index.html">Selected
+
+
+                Documents</a> | <a href="../../inverse/index.html"><span style="font-style: italic;">Inverse</span></a>
+            </small><small><small>
+                <font size="-1"> || <a moz-do-not-send="true" href="https://ajgorhoe.github.io/">GitHub</a>
+                  / <a moz-do-not-send="true" href="https://ajgorhoe.github.io/IGLibFramework/iglib/">IGLib</a></font>
+              </small>&nbsp;&nbsp;
+
+
+
+            </small></td>
+        </tr>
+      </tbody>
+    </table>
+    <font size="-1"><a href="https://www2.arnes.si/~ljc3m2/igor/"> </a></font>
+  </div>
+  <center>
+    <div style="text-align: left;">
+      <div style="text-align: right;">&nbsp;&nbsp;<span style="font-style: italic;"> </span>
+        <font color="#000000"><span style="font-style: italic;"><br>
+          </span></font>
+      </div>
+    </div>
+  </center>
+  <table nosave="" style="width: 100%;" cols="2" cellspacing="5" cellpadding="0">
+    <tbody>
+      <tr nosave="" valign="top">
+        <td nosave="" style="vertical-align: middle; text-align: left;
+            width: 90%;"> <span style="font-weight: bold;"></span><br>
+          <h1 style="text-align: center;"><big><b><i>
+                  <font>
+                    <font><b><i>
+                          <font>
+                            <font><big><big><b><i>
+                                      <font>
+                                        <font><b><i>
+                                              <font color="#cc0000">
+                                                <font size="+2"><big>
+                                                    IGLib.NET <br>
+                                                  </big></font>
+                                              </font>
+                                            </i></b></font>
+                                      </font>
+                                    </i></b></big></big></font>
+                          </font>
+                        </i></b></font>
+                  </font>
+                </i></b></big></h1>
+          <p style="text-align: left;"><b>&nbsp; This page provides some
+              information about the <i>IGLib.NET</i>
+              (Investigative Generic Library), a base library
+              for efficient development of technical and other
+              applications on .NET framework or its alternatives. <br>
+              &nbsp; Currently, IGLib is used by the author and his partner
+              institutions for their projects, but there is an
+              intention to release it as free open source library when
+              it reaches sufficient maturity level.<br>
+            </b></p>
+          <font color="#000000"> </font><span style="font-weight:
+              bold;"></span><br>
+          <font color="#000000"> </font>
+        </td>
+        <td style="text-align: right;" nosave="">&nbsp;&nbsp; <img src="dragonfly_server_small.jpg" alt="Dragonfly Server
+              Logo." style="width: 336px; height: 256px;"><b> &nbsp;
+            &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; </b></td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <hr width="100%">
+  <center>
+    <table nosave="" cols="2" width="100%">
+      <tbody>
+        <tr nosave="" valign="top">
+          <td nosave=""> <span style="font-weight: bold;">Contents:<br>
+            </span>
+            <ul>
+              <li>&nbsp;&nbsp; <a href="#about">About the library</a>&nbsp;&nbsp;</li>
+              <ul>
+                <li><a href="#system_requirements">System Requirements</a>&nbsp;
+                  <big><br>
+                  </big>
+                </li>
+                <big> </big>
+              </ul>
+              <big> </big>
+              <ul>
+                <big> </big>
+                <li><big><a href="#availability"><small>Availability</small></a>&nbsp;&nbsp;</big></li>
+                <li><small><a href="#app_igshell">IGShell</a> (with <a
+                      href="../software/IGLibShellApp/HashForm.html">HashForm
+                      &amp; HashShell</a>)&nbsp; </small><br>
+                </li>
+                <li><small><a href="#app_neurapp">NeurApp</a>&nbsp; <br>
+                  </small></li>
+                <li><small><a href="#app_annapp">Annapp</a>&nbsp; <br>
+                  </small></li>
+                <li><small><a href="#app_oscillatormodeler">Oscillator
+                      Modeller</a>&nbsp; <br>
+                  </small></li>
+                <li><small><a href="#app_neuralshell">Neural Shell</a>&nbsp;
+                    <br>
+                  </small></li>
+                <li><small><a href="#app_neuralparametric">NeuralParametric</a>&nbsp;
+                    <br>
+                  </small></li>
+              </ul>
+              <li><a href="#doc"><span style="text-decoration:
+                      underline;">Documentation</span></a>&nbsp; <br>
+              </li>
+              <li><a href="#examples">Examples</a>&nbsp;&nbsp;</li>
+              <li><a href="#archive">Archive</a>&nbsp;&nbsp;</li>
+              <li><a href="#search">Search</a>&nbsp; <br>
+              </li>
+            </ul>
+            <br>
+            <font color="#000000"><span style="font-weight: bold;"></span></font>
+          </td>
+          <td nosave="" align="right">&nbsp;&nbsp;&nbsp; <br>
+            &nbsp;&nbsp; <a href="#search" style="font-weight: bold;">Search</a>
+            &nbsp; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; <b><br>
+              &nbsp; &nbsp; &nbsp; <br>
+            </b></td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+  </center>
+  <hr width="100%">&nbsp;&nbsp; <br>
+  <center>
+    <h1> <a name="about"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">About the library<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  &nbsp; <br>
+  <p class="MsoBodyText" style="text-align: justify;"><span style="" lang="EN-GB">&nbsp; <span
+        style="font-style: italic;">IGLib</span>
+      (Investigative Generic Library) is a base utility library for
+      efficient development of cross-platform technical and other
+      applications. It is developed for the <a href="https://en.wikipedia.org/wiki/.NET_Framework">.NET
+        framework</a> and its alternatives (such as <a
+        href="https://en.wikipedia.org/wiki/Mono_%28software%29">Mono</a>).
+      <br>
+    </span></p>
+  <p class="MsoBodyText" style="text-align: justify;"><span style="" lang="EN-GB">&nbsp; The library has been designed
+      and developed
+      by <a href="../index.html"><span style="font-style: italic;">Igor
+          Grešovnik</span></a>. It contains various general utilities
+      such as those for parsing of strings, auxiliary utilities for
+      building GUI, a numerical library, I/O utilities</span><span style="" lang="EN-GB"><span style=""
+        lang="EN-GB"><span style="" lang="EN-GB">, </span> 2D and 3D graphics modules</span>,
+      parallel computing module,</span><span style="" lang="EN-GB"><span style="" lang="EN-GB"> command-line and fully
+        object-oriented
+        interpreters</span>, application framework, etc. It aims at
+      providing a well designed base library for development of
+      complex numerical and other technical applications. Parts of the
+      library have also been used in other areas such as a system for
+      managing a histological laboratory or large scale invoicing
+      support system.</span>&nbsp; <br>
+  </p>
+  <span style="" lang="EN-GB">&nbsp; Historically, the initial
+    motivation for development of the library arose from the needs to
+    have a good base library for development of complex optimization
+    software.</span> One of the goals <span style="" lang="EN-GB">
+    was to take utilities and standards from the <a href="../ioptlib/index.html"><span
+        style="font-style: italic;">IOptLib</span></a>
+    C library and transfer them to an expressively object object
+    oriented C# library, in order to elaborate, extend and implement
+    ideas about how an environment for efficient development of
+    industrial scale optimization software can be established.
+    However, the library has been developed in a much broader sense
+    since the very beginning of its development.</span><br>
+  <br>
+  &nbsp; The library depends on several external libraries, of which
+  majority are open source (see the <i><b><a
+        href="https://www2.arnes.si/%7Eljc3m2/igor/software/codedoc/generated/iglib/ReadMe_IGLib.html">Readme</a></b></i>
+  file for more details). It is structured in hierarchic layers that
+  are arranged according to the dependence on different types of
+  libraries with respect to permissiveness of their licenses and
+  according to cross-platform transferability. The extensive base
+  layer is allowed to depend only on free open source libraries whose
+  licenses does not impose any restrictions neither on commercial nor
+  on research use of the libraries or distribution of the derived
+  products. The <span style="font-style: italic;">IGLib</span> itself
+  has not yet been publicly released under free license. Prior to
+  doing so, its author would like to establish stable enough
+  development conditions with enough interested parties to enable
+  sustainable development. However, the author welcomes initiatives
+  for development partnership based on technical or research projects,
+  especially those with ambitious and exciting goals.<br>
+  <br>
+  <h2 style="text-align: center;"><small><a name="system_requirements"></a><span style="color: rgb(204, 0, 0);">System
+        Requirements<br>
+      </span></small></h2>
+  <br>
+  &nbsp; <i>IGLib</i> is developed in C# and it targets the 64 bit <a href="https://www.microsoft.com/net">.NET</a>
+  framework and its
+  alternative implementations such as <a href="https://www.mono-project.com/">Mono</a>. It is intended as
+  higher level utility library for development of cross-platform
+  applications. <br>
+  &nbsp; Currently, the target platform is <b>.NET 4.0</b>, which is
+  commonly available across the main computing platforms (e.g. in form
+  of the open source <a href="https://www.mono-project.com/">Mono</a>
+  implementation).&nbsp; The source code of substantial portions of
+  code can be compiled for lower versions of the framework, however
+  the official recommendation is to stick with .NET 4 or higher. <br>
+  <br>
+  &nbsp; It is straight forward to port the library to any modern
+  computing platform. The only requirement is that a .NET 4 or
+  compatible framework is installed on the computer. Many operating
+  systems already include the framework, but if not then you will have
+  to download and install the <a href="https://www.microsoft.com/net">.NET
+    framework</a> (for Widows operating systems) or <a href="https://www.mono-project.com/">Mono</a> (cross-platform)
+  before using the library.<br>
+  &nbsp; It might not be completely straight forward to install the
+  framework on <b>older operating systems</b>. For example, on
+  Windows XP, you will need to install the Service pack 3 before
+  installing the .NET 4 or later. We have not checked whether the
+  service pack is also required when using the Mono framework instead
+  of .NET.<br>
+  <br>
+  &nbsp; There are some specialized portions of the library that are
+  difficult to use on some older operating systems. This is true e.g.
+  on 32 bit Windows XP for the 3D graphics modules that are based on
+  the <a href="https://www.kitware.com/opensource/avdownload.php">ActiViz</a>,
+  C# wrappers for the <a href="https://www.vtk.org">VTK library</a>
+  (used e.g. in <a href="../software/NeurApp/index.html">NeurApp</a>,
+  <a href="../software/AnnApp/index.html"> AnnApp</a>, <a href="../software/IGLibShellApp/index.html">IGShell</a>, and
+  some
+  other applications). In these applications, all functionality that
+  does not use the problamatic libraries should still work correctly.
+  For example, with some applications for ANN modelling, one can do
+  everything except showing 3D plots of 2-parametric studies. When
+  launching such a plot, an error message is launched, but one can
+  continue to use the application for other tasks. <br>
+  &nbsp; In the case of VTK-based 3D plots, the problem is because 64
+  bit native libraries are linked with the code, and these can not be
+  loaded on a 32 bit system. Due to just in time compiler (JIT), this
+  is not an issue with managed libraries, but linking with native
+  libraries is different. In order to use 3D modules on 32 bit Windows
+  XP, one must use the code that is specifically compiled for 32 bit
+  windows. Such code would also work on all 64 bit windows systems,
+  but it would the applications would be limited to use up to 2 GB
+  RAM. Therefore, downloadable applications are usually prepared for
+  64 bit windows. If you would like to use full functionality of such
+  applications on 32 bit Windows, check the web site if there is also
+  a 32 bit version.<br>
+  <br>
+  <h2 style="text-align: center;"><small><a name="availability"></a><span
+        style="color: rgb(204, 0, 0);">Availability<br>
+      </span></small></h2>
+  <p>&nbsp; The library source code is currently available only upon
+    special agreement with the author. Author's interest is that the
+    library is used and/or developed under a limited number of partner
+    agreements until it reaches a sufficient maturity level. Te
+    intention is that the library is released under a free open source
+    license when it reaches sufficient maturity level and a solid user
+    base.<br>
+  </p>
+  <p>&nbsp; A number of applications base on the IGLib have been
+    developed by the author of the library or under partner agreement.
+    Library binaries are currently available with a simple application
+    that very briefly demonstrates a possible use of the library for
+    developing an interpreter-based application. You can <a href="../software/IGLibShellApp/index.html">check it
+      out</a><a>
+      here</a> and <a href="../software/IGLibShellApp/download/IGLibShellApp.zip">download</a>
+    the demo. The demo contains a Visual Studio project for building
+    the application. It is basically just a framework of a
+    command-line interpreter based application whose architecture
+    follows the simple application framework rules that are used for
+    some development projects, student projects, small research
+    projects and alike.</p>
+  <p>&nbsp; The <i>IGLib</i> binaries are currently available as part
+    of several <a href="../software/index.html">applications</a>,
+    some of which are available on the internet and can be downloaded
+    together with the library dll-s. Some of these applications are
+    listed below.&nbsp;</p>
+  <p><br>
+  </p>
+  <blockquote>
+    <div align="left">
+      <h3><small><a name="app_igshell"></a>IGShell - A command-line
+          shell aplication built on IGLib<br>
+        </small></h3>
+    </div>
+  </blockquote>
+  &nbsp; This is a simple shell application created to demonstrate the
+  use of the IGLib libraries in the shell applications. A Visual
+  Studio (or MonoDevelop) project is attached that demonstrates how a
+  simple shell application is created according to the IGLib
+  Standards.<br>
+  &nbsp; The project also includes two hosted applications, the <b>HashForm</b>
+  and <b>Hash</b><b>Shell</b>. <i>HaskForm</i> is a simple but
+  useful application for calculation and verification of hash values,
+  and can thus be used as file verification software. <i>HashShell</i>
+  includes utilities for performing common cryptographic tasks such as
+  calculation and verification of cryptographic hash functions,
+  symmetric encryption and decryption, asymmetric encryption,
+  generation and manipulation of keys, digital signatures, and others.
+  <br>
+  <ul>
+    <li><a href="../software/IGLibShellApp/index.html">IGShell home</a>
+      &nbsp; <br>
+    </li>
+    <ul>
+      <li><a href="../software/IGLibShellApp/download/IGLibShellApp.zip">Download
+          IGShell</a> &nbsp; <br>
+      </li>
+    </ul>
+    <li><a href="../software/IGLibShellApp/HashForm.html">HashForm and
+        HashShell home</a> &nbsp; <br>
+    </li>
+    <ul>
+      <li><a href="../software/IGLibShellApp/HashForm.html#hashform">HashForm</a>&nbsp;
+      </li>
+      <ul>
+        <li><a href="../software/IGLibShellApp/doc/HashForm_help.pdf">HashForm
+            User Manual</a>&nbsp;&nbsp; <br>
+        </li>
+      </ul>
+      <li><a href="../software/IGLibShellApp/HashForm.html#hashshell">HashShell</a>
+        &nbsp; <br>
+      </li>
+    </ul>
+    <ul>
+      <li><a href="../software/IGLibShellApp/HashForm.html#download">Download
+          HashForm and HashShell</a>&nbsp; <br>
+      </li>
+    </ul>
+  </ul>
+  <p><br>
+  </p>
+  <blockquote>
+    <div align="left">
+      <h3><small><a name="app_neurapp"></a>NeurApp - Exploring
+          Approximation by Artificial Neural Networks</small></h3>
+    </div>
+  </blockquote>
+  &nbsp; A simple application for learning and exploring some features
+  of approximation by artificial neural networks. <i>NeurApp</i> is a
+  free software that can be downloaded from the links below.<br>
+  <ul>
+    <li><a href="../software/NeurApp/index.html">NeurApp home</a>&nbsp;
+      <br>
+    </li>
+    <ul>
+      <li><a href="../software/NeurApp/doc/NeurApp_help.pdf">NeurApp
+          User Manual</a> &nbsp; <br>
+      </li>
+    </ul>
+    <ul>
+      <li><a href="../software/NeurApp/download/NeurApp.zip">Download
+          NeurApp</a> &nbsp; <br>
+      </li>
+    </ul>
+  </ul>
+  &nbsp; <br>
+  <br>
+  <blockquote>
+    <div align="left">
+      <h3><small><a name="app_annapp"></a>AnnApp</small></h3>
+    </div>
+  </blockquote>
+  &nbsp;&nbsp; A GUI-based application for creating ANN-based models
+  by training neural networks on provided data, compatible with the <i>NeuralShell</i>.
+  The software contains modules for graphical representation of model
+  results, which enable to extract, with minimal effort, as much
+  useful information as possible from complex models. It will also be
+  useful for modeling professionals in order to quickly grasp model
+  features and doing some simple analytics.<br>
+  <ul>
+    <li><a href="../software/AnnApp/index.html">AnnApp home</a>.<br>
+    </li>
+  </ul>
+  <br>
+  <br>
+  <blockquote>
+    <div align="left">
+      <h3><small><a name="app_oscillatormodeler"></a>Oscillator
+          Modeller</small></h3>
+    </div>
+  </blockquote>
+  <big>&nbsp; </big>A small application for modeling various kinds of
+  linear and nonlinear driven oscillators. It vas created by <b>Marko
+    Petek</b> in the scope of his graduate thesis (under my
+  supervision) and will soon be available on the internet.<br>
+  <ul>
+    <li><a href="../software/thesis_petek/index.html">Oscillator
+        modeller home</a>. <br>
+    </li>
+    <ul>
+      <li><a href="../software/thesis_petek/download/AppMarkoPetek.zip">Download
+          Oscillator Modeller</a>.&nbsp;</li>
+    </ul>
+  </ul>
+  <br>
+  <blockquote>
+    <div align="left">
+      <h3><small><a name="app_neuralshell"></a>NeuralShell -
+          Development of Complex Models Based on Artificial Neural
+          Networks</small></h3>
+    </div>
+  </blockquote>
+  &nbsp;&nbsp; This is a professional application for industrial-scale
+  modelling of and for conducting research on artificial neural
+  networks. It is being developed in the scope of <a href="../cobik/index.html">COBIK projects</a> by Igor Grešovnik
+  and Tadej Kodelja (who is also preparing his Ph.D. thesis on basis
+  of the software). This versatile software is driven by a two level
+  interpreter system, which enables high flexibility and extensibility
+  through C# scripting engine. Demonstrative examples will be prepared
+  for download in the future.<br>
+  <br>
+  <blockquote>
+    <div align="left">
+      <h3><small><a name="app_neuralparametric"></a>NeuralParametric</small></h3>
+    </div>
+  </blockquote>
+  &nbsp;&nbsp; A GUI-based application for exploring results of ANN
+  modeling, compatible with the NeuralShell. It is primarily intended
+  for use by the people who are not skilled in using computers, in
+  order to interactively extract as much useful information as
+  possible from complex models in a short time and with minimal
+  effort. It will also be useful for modeling professionals in order
+  to quickly grasp model features and doing some simple analytics. <br>
+  <ul>
+    <li><a href="../software/neural_parametric/index.html">NeuralParametric
+        home</a>. <br>
+    </li>
+  </ul>
+  <br>
+  <center>
+    <h1> <a name="doc"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">Documentation<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  <br>
+  &nbsp; <a href="../software/codedoc/generated/iglib/html/index.html"><span style="font-weight: bold;">IGLib Code
+      Documentation</span></a> (<a href="../software/codedoc/generated/iglib/index.html">base index</a>,
+  <a href="../software/codedoc/generated/iglib/html/classes.html">classes</a>,
+  <a href="../software/codedoc/generated/iglib/html/functions.html">members</a>).
+  Code documentation for the library, automatically generated from
+  documentation comments by <a href="https://www.stack.nl/%7Edimitri/doxygen/">Doxygen</a>, a
+  remarkable documentation generation tool. Only a part of the library
+  is currently documented, since the majority of code is scattered
+  between various projects and in testing areas.<br>
+  <ul>
+    <li><a href="../software/codedoc/generated/igliball/html/index.html">Extended
+        documention</a> - with additional libraries and applications (<a
+        href="../software/codedoc/generated/igliball/index.html">base
+        index</a>, <a href="../software/codedoc/generated/igliball/html/classes.html">classes</a>,
+      <a href="../software/codedoc/generated/igliball/html/functions.html">members</a>)&nbsp;
+    </li>
+    <li>Older versions: <a
+        href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/15_06_iglib_1.6/html/">IGLib
+        1.6</a> (<a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/15_06_iglib_1.6/">base
+        index</a>, <a
+        href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/15_06_iglib_1.6/html/classes.html">classes</a>,
+      <a
+        href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/15_06_iglib_1.6/html/functions.html">members</a>),&nbsp;
+      <a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/15_03_iglib_1.5/html/">IGLib 1.5</a>
+      (<a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/15_03_iglib_1.5/">base index</a>, <a
+        href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/15_03_iglib_1.5/html/classes.html">classes</a>,
+      <a
+        href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/15_03_iglib_1.5/html/functions.html">members</a>),
+      <a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/13_09_iglib_1.4/html/">IGLib 1.4</a>
+      (<a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/13_09_iglib_1.4/">base index</a>,
+      <a
+        href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/13_09_iglib_1.4/html/classes.html">classes</a>,
+      <a
+        href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/13_09_iglib_1.4/html/functions.html">members</a>).
+      <br>
+    </li>
+  </ul>
+  <p><br>
+  </p>
+  <ul>
+  </ul>
+  <ul>
+    <li><a
+        href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/16_04_iglib_1.7.2/html/annotated.html">IGLib
+        1.7</a> code documentation
+      (<a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/16_04_iglib_1.7.2/">root</a>)
+    </li>
+    <li><a
+        href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/15_06_iglib_1.6/html/annotated.html">IGLib
+        1.6</a> code documentation
+      (<a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/15_06_iglib_1.6/">root</a>)</li>
+    <li><a
+        href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/15_03_iglib_1.5/html/annotated.html">IGLib
+        1.5</a> code documentation
+      (<a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/15_03_iglib_1.5/">root</a>)<br>
+    </li>
+    <li><a
+        href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/13_09_iglib_1.4/html/annotated.html">IGLib
+        1.4</a> code documentation
+      (<a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/13_09_iglib_1.4/">root</a>)</li>
+    <li><a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/archive.html#iglib_zipped">Zipped
+        documentation archives</a> <br>
+    </li>
+  </ul>
+  <br>
+  &nbsp; <span style="font-weight: bold;">See also:</span> <br>
+  <ul>
+    <li>My <a href="../doc/index.html">other documentation</a>.</li>
+    <li>Documentation section on the page about <a href="../cobik/index.html#doc">my work at COBIK</a> where I
+      use IGLib as a base library for research software in the field
+      of neural networks. <br>
+    </li>
+    <li>Docuentation section on the <a href="../ioptlib/index.html#doc">IOptLib page</a>.</li>
+    <li>Collection of <a href="../links.html">optimization-related
+        links</a>.<br>
+    </li>
+    <li>Ph.D. thesis on <a href="../../inverse/doc/phd/index.html">optimization
+        shell <span style="font-style: italic;">Inverse</span></a>.<br>
+    </li>
+  </ul>
+  <br>
+  <br>
+  <center>
+    <h1> <a name="examples"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">Examples<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  <br>
+  &nbsp; To be added...<br>
+  <br>
+  <br>
+  <center>
+    <h1> <a name="archive"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">Archive<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  <br>
+  &nbsp; Archive of documentation and downloads for older version of
+  IGLib and related software is maintained <a
+    href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/archive.html">here</a>.
+  In this way, you can find and download older versions of software in
+  order to investigate and resolve compatibility issues, or use
+  discontinued features. This is a central location for searching for
+  older versions, but some software pages may maintain their own
+  archives of older versions, such as <a href="../software/IGLibShellApp/index.html#archive">IGShell</a>,
+  for example (which also includes distributions of <a
+    href="../software/IGLibShellApp/HashForm.html#hashform">HashForm</a>
+  and <a href="../software/IGLibShellApp/HashForm.html#hashshell">HashShell</a>).<br>
+  <br>
+  <a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/archive.html"><b>Archive home</b></a>.
+  Contains links to archived documentation and downloads. <br>
+  <ul>
+    <li><a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/archive.html#iglib"><b>IGLib
+          archives</b></a>.</li>
+    <ul>
+      <li><a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/archive.html#iglib_zipped">Zipped
+          documentation</a> for older IGLiib versons.</li>
+      <li>Browsable documentation: <br>
+      </li>
+      <ul>
+        <li><a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/archive.html#iglib1.7.2">IGLib
+            1.7.2</a>, April 2016. </li>
+        <li><a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/archive.html#iglib1.6">IGLib
+            1.6</a>, June 2015. <br>
+        </li>
+        <li><a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/archive.html#iglib1.5">IGLib
+            1.5</a>, March 2015.&nbsp;</li>
+        <li><a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/archive.html#iglib1.5all">IGLib
+            1.5</a> (with additional projects), May 2015. </li>
+        <li><a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/archive.html#iglib1.4">IGLib
+            1.4</a>, September 2013.&nbsp;</li>
+      </ul>
+    </ul>
+    <li><a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/"><b>Archive directory</b></a>. All
+      archives can be browsed here. <br>
+    </li>
+    <li><a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/00downloads/"><b>Download
+          directory</b></a>. Software downloads can be browsed here. </li>
+    <li><a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/archive.html#neurapp">NeurApp
+        archives</a>.&nbsp;</li>
+    <li><a href="https://www2.arnes.si/%7Efgreso/archive/software/codedoc/generated/archive.html#markopetek">Marko
+        Petek's code documentation</a>. <br>
+    </li>
+  </ul>
+  <b>&nbsp; </b><br>
+  <b><a href="../software/IGLibShellApp/index.html#archive">IGShell
+      archive</a></b>. Contains older versions of <a href="../software/IGLibShellApp/index.html#archive">IGShell</a>,
+  which include <a href="../software/IGLibShellApp/HashForm.html#hashform">HashForm</a>
+  and <a href="../software/IGLibShellApp/HashForm.html#hashshell">HashShell</a>.<br>
+  <br>
+  <br>
+  <br>
+  <center>
+    <h1> <a name="see_also"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">See Also<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  <br>
+  <a href="https://www2.arnes.si/%7Eljc3m2/igor/blogs/"><b>A How-to
+      Guide on Creating Bootable Media</b></a> <a
+    href="https://www2.arnes.si/%7Eljc3m2/igor/blogs/technical/">(=&gt;</a>,
+  <a href="https://www2.arnes.si/%7Eljc3m2/igor/blogs/technical/bootable_media_creation.pdf">PDF</a>).
+  Details procedures and tools for creating bootable media for various
+  scenarios. These procedures were used for testing and the <a
+    href="https://www2.arnes.si/%7Eljc3m2/igor/iglib/">IGLib</a>-based
+  <a href="https://www2.arnes.si/%7Eljc3m2/igor/software/">software</a>,
+  although the described procedures are general and useful in many
+  situations. Document is composed in form of a how-to guide with
+  additional explanations to make things clearer and more
+  understandable.&nbsp; By Igor Grešovnik, April 2016.<br>
+  <br>
+  This site was partially sponsored by <a href="https://www.itaia.si/home">ITAIA electronics</a>.<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- SiteSearch Google --> <a name="search"><b>Search within this
+      site:</b> <br>
+    <script>
+      (function () {
+        var cx = '005529250561729632597:c5xdncmbwjo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <gcse:search></gcse:search>
+    <p> </p>
+    <div align="right">
+      <table nosave="" cellpadding="2" border="3" bgcolor="#ffffff">
+        <tbody>
+          <tr nosave="">
+            <td nosave="" valign="top" align="left">
+              <div align="right">
+                <font size="-1">&nbsp; Maintained by
+                  <a href="../igor.html" moz-do-not-send="true">Igor
+                    Grešovnik</a>&nbsp; <br>
+                </font>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      &nbsp; &nbsp; &nbsp;&nbsp;
+    </div>
+    <center>
+      <table nosave="" cellpadding="2" border="3">
+        <tbody>
+          <tr nosave="">
+            <td nosave="" valign="top" align="left">
+              <center><i>&nbsp; Updated in April 2016 &nbsp; <br>
+                </i></center>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </a>
+</body>
+
+</html>
