@@ -105,7 +105,7 @@
   </div>
   <br />
 
-
+  <!-- Table of contents: -->
   <div class="table-of-contents">
     <hr width="100%">
     <p><b>Contents</b>:</p>
@@ -124,51 +124,15 @@
           <li><a href="#app_neuralparametric">NeuralParametric</a>&nbsp;</li>
         </ul>
       </li>
-      
       <li><a href="#doc">Documentation</a>&nbsp;</li>
       <li><a href="#examples">Examples</a>&nbsp;&nbsp;</li>
       <li><a href="#archive">Archive</a>&nbsp;&nbsp;</li>
       <li><a href="#search">Search</a>&nbsp;</li>
     </ul>
-  <hr />
-</div>
-
-
-
-
-
-
-  <hr /> 
-    Above this line are styled parts of the document.
-  <hr />
-
-
+    <hr />
+  </div>
   
-  <hr width="100%">
-  <center>
-    <table nosave="" cols="2" width="100%">
-      <tbody>
-        <tr nosave="" valign="top">
-          <td nosave=""> <span style="font-weight: bold;">Contents:<br>
-            </span>
-            
-
-            <br>
-            <font color="#000000"><span style="font-weight: bold;"></span></font>
-          </td>
-          <td nosave="" align="right">&nbsp;&nbsp;&nbsp; <br>
-            &nbsp;&nbsp; <a href="#search" style="font-weight: bold;">Search</a>
-            &nbsp; <br>
-            &nbsp;&nbsp;&nbsp;&nbsp; <b><br>
-              &nbsp; &nbsp; &nbsp; <br>
-            </b></td>
-        </tr>
-      </tbody>
-    </table>
-    <br>
-  </center>
-  <hr width="100%">&nbsp;&nbsp; <br>
-
+  <!-- Contents: -->
   <h1 id="about">About the Library</h1>
   <p>
     IGLib (the Investigative Generic Library) is a utility library for
@@ -182,19 +146,47 @@
   <p>
     The library has been designed
       and developed
-      by <a href="../index.html"><span style="font-style: italic;">Igor
-          Grešovnik</span></a>. It contains various general utilities
-      such as those for parsing of strings, auxiliary utilities for
-      building GUI, a numerical library, I/O utilities</span><span style="" lang="EN-GB"><span style=""
-        lang="EN-GB"><span style="" lang="EN-GB">, </span> 2D and 3D graphics modules</span>,
-      parallel computing module,</span><span style="" lang="EN-GB"><span style="" lang="EN-GB"> command-line and fully
-        object-oriented
-        interpreters</span>, application framework, etc. It aims at
+      by <a href="../igor.html"><i>Igor Grešovnik</i></a>. It contains various general 
+      utilities such as those for parsing of strings, auxiliary utilities for
+      building GUI, a numerical library, I/O utilities  2D and 3D graphics modules,
+      parallel computing module,  command-line and fully object-oriented
+      interpreters, application framework, etc. It aims at
       providing a well designed base library for development of
       complex numerical and other technical applications. Parts of the
       library have also been used in other areas such as a system for
       managing a histological laboratory or large scale invoicing
       support system.
+  </p>
+  <p>
+    Historically, the initial motivation for development of the library arose 
+    from the need to have a versatile base library for development of complex 
+    optimization software. One of the goals 
+    was to take utilities and standards from the <a href="../ioptlib/index.html">
+    <i>IOptLib</i></a> C library and transfer them to an expressively object object
+    oriented C# library, in order to elaborate, extend and implement
+    ideas about how an environment for efficient development of
+    industrial scale optimization software can be established.
+    However, the library has been developed in a much broader scope in mind
+    since the beginning of its development.
+  </p>
+  <p>
+    The library depends on several external libraries, of which
+    majority are open source (see the <i><b><a
+          href="https://www2.arnes.si/%7Eljc3m2/igor/software/codedoc/generated/iglib/ReadMe_IGLib.html">Readme</a></b></i>
+    file for more details). It is structured in hierarchic layers that
+    are arranged according to the dependence on different types of
+    libraries with respect to permissiveness of their licenses and
+    according to cross-platform transferability. The extensive base
+    layer is allowed to depend only on free open source libraries whose
+    licenses does not impose any restrictions neither on commercial nor
+    on research use of the libraries or distribution of the derived
+    products. The <i>IGLib</i> itself
+    has not yet been publicly released under free license. Prior to
+    doing so, its author would like to establish stable enough
+    development conditions with enough interested parties to enable
+    sustainable development. However, the author welcomes initiatives
+    for development partnership based on technical or research projects,
+    especially those with ambitious and exciting goals.
   </p>
 
 
@@ -202,38 +194,18 @@
 
 
 
+  <br/><hr /> 
+    Above this line are styled parts of the document.
+  <hr /><br/>
 
-  <span style="" lang="EN-GB">&nbsp; Historically, the initial
-    motivation for development of the library arose from the needs to
-    have a good base library for development of complex optimization
-    software.</span> One of the goals <span style="" lang="EN-GB">
-    was to take utilities and standards from the <a href="../ioptlib/index.html"><span
-        style="font-style: italic;">IOptLib</span></a>
-    C library and transfer them to an expressively object object
-    oriented C# library, in order to elaborate, extend and implement
-    ideas about how an environment for efficient development of
-    industrial scale optimization software can be established.
-    However, the library has been developed in a much broader sense
-    since the very beginning of its development.</span><br>
-  <br>
-  &nbsp; The library depends on several external libraries, of which
-  majority are open source (see the <i><b><a
-        href="https://www2.arnes.si/%7Eljc3m2/igor/software/codedoc/generated/iglib/ReadMe_IGLib.html">Readme</a></b></i>
-  file for more details). It is structured in hierarchic layers that
-  are arranged according to the dependence on different types of
-  libraries with respect to permissiveness of their licenses and
-  according to cross-platform transferability. The extensive base
-  layer is allowed to depend only on free open source libraries whose
-  licenses does not impose any restrictions neither on commercial nor
-  on research use of the libraries or distribution of the derived
-  products. The <span style="font-style: italic;">IGLib</span> itself
-  has not yet been publicly released under free license. Prior to
-  doing so, its author would like to establish stable enough
-  development conditions with enough interested parties to enable
-  sustainable development. However, the author welcomes initiatives
-  for development partnership based on technical or research projects,
-  especially those with ambitious and exciting goals.<br>
-  <br>
+
+
+  
+
+
+
+
+
   <h2 style="text-align: center;"><small><a name="system_requirements"></a><span style="color: rgb(204, 0, 0);">System
         Requirements<br>
       </span></small></h2>
