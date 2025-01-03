@@ -189,6 +189,42 @@
     especially those with ambitious and exciting goals.
   </p>
 
+  <h2 id="system_requirements">System Requirements</h2>
+  <p>
+    <i>IGLib</i> is developed in C# and it targets the 64 bit <a href="https://www.microsoft.com/net">.NET</a>
+    framework and its
+    alternative implementations such as <a href="https://www.mono-project.com/">Mono</a>. It is intended as
+    higher level utility library for development of cross-platform
+    applications. <br>
+    &nbsp; Currently, the target platforms are <b>.NET Framework 4.0</b> and <b>4.8</b>, 
+    and <b>.NET 8</b>, which are commonly available across the main computing platforms (e.g. in form
+    of the open source <a href="https://www.mono-project.com/">Mono</a>
+    implementation for .NET Framework, and natively by the open source .NET). The source code of 
+    substantial portions of code can be compiled for lower versions of the framework, however
+    the official recommendation is to stick with .NET 4.8 when the <i>.NET Framework</i> is required.
+  </p>
+
+
+
+  <!-- TODO: Below - verify that info i up-to-date! -->
+  <p>
+    It is straight forward to port the library to any modern
+    computing platform. The only requirement is that a .NET 4 or
+    compatible framework is installed on the computer. Many operating
+    systems already include the framework, but if not then you will have
+    to download and install the <a href="https://www.microsoft.com/net">.NET
+    framework</a> (for Widows operating systems) or 
+    <a href="https://www.mono-project.com/">Mono</a> (cross-platform)
+    before using the library.
+  </p>
+  <p>
+    It might not be completely straight forward to install the
+    framework on <b>older operating systems</b>. For example, on
+    Windows XP, you will need to install the Service pack 3 before
+    installing the .NET 4 or later. We have not checked whether the
+    service pack is also required when using the Mono framework instead
+    of .NET.</p>
+
 
 
 
@@ -206,36 +242,7 @@
 
 
 
-  <h2 style="text-align: center;"><small><a name="system_requirements"></a><span style="color: rgb(204, 0, 0);">System
-        Requirements<br>
-      </span></small></h2>
-  <br>
-  &nbsp; <i>IGLib</i> is developed in C# and it targets the 64 bit <a href="https://www.microsoft.com/net">.NET</a>
-  framework and its
-  alternative implementations such as <a href="https://www.mono-project.com/">Mono</a>. It is intended as
-  higher level utility library for development of cross-platform
-  applications. <br>
-  &nbsp; Currently, the target platform is <b>.NET 4.0</b>, which is
-  commonly available across the main computing platforms (e.g. in form
-  of the open source <a href="https://www.mono-project.com/">Mono</a>
-  implementation).&nbsp; The source code of substantial portions of
-  code can be compiled for lower versions of the framework, however
-  the official recommendation is to stick with .NET 4 or higher. <br>
-  <br>
-  &nbsp; It is straight forward to port the library to any modern
-  computing platform. The only requirement is that a .NET 4 or
-  compatible framework is installed on the computer. Many operating
-  systems already include the framework, but if not then you will have
-  to download and install the <a href="https://www.microsoft.com/net">.NET
-    framework</a> (for Widows operating systems) or <a href="https://www.mono-project.com/">Mono</a> (cross-platform)
-  before using the library.<br>
-  &nbsp; It might not be completely straight forward to install the
-  framework on <b>older operating systems</b>. For example, on
-  Windows XP, you will need to install the Service pack 3 before
-  installing the .NET 4 or later. We have not checked whether the
-  service pack is also required when using the Mono framework instead
-  of .NET.<br>
-  <br>
+
   &nbsp; There are some specialized portions of the library that are
   difficult to use on some older operating systems. This is true e.g.
   on 32 bit Windows XP for the 3D graphics modules that are based on
