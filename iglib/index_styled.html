@@ -97,7 +97,8 @@
           Currently, IGLib is used by its developers and partner
           institutions for their projects, and there is an
           intention to release it as free open source library 
-          at a later time.</p>
+          at a later time.
+        </p>
     </div>
     <div class="title-logo">
         <img src="dragonfly_server_large.jpg" alt="Logo" />
@@ -107,10 +108,10 @@
 
   <!-- Table of contents: -->
   <div class="table-of-contents">
-    <hr width="100%">
+    <hr width="100%"/>
     <p><b>Contents</b>:</p>
     <ul>
-      <li>&nbsp;&nbsp; <a href="#about">About the library</a>&nbsp;&nbsp;
+      <li><a href="#about">About the library</a>&nbsp;
         <ul>
           <li><a href="#system_requirements">System Requirements</a>&nbsp;</li>
           <li><a href="#availability">Availability</a>&nbsp;</li>
@@ -120,16 +121,16 @@
           <li><a href="#app_neurapp">NeurApp</a>&nbsp;</li>
           <li><a href="#app_annapp">Annapp</a>&nbsp;</li>
           <li><a href="#app_oscillatormodeler">Oscillator Modeller</a>&nbsp;</li>
-          <li><small><a href="#app_neuralshell">Neural Shell</a>&nbsp;</li>
+          <li><a href="#app_neuralshell">Neural Shell</a>&nbsp;</li>
           <li><a href="#app_neuralparametric">NeuralParametric</a>&nbsp;</li>
         </ul>
       </li>
       <li><a href="#doc">Documentation</a>&nbsp;</li>
-      <li><a href="#examples">Examples</a>&nbsp;&nbsp;</li>
-      <li><a href="#archive">Archive</a>&nbsp;&nbsp;</li>
+      <li><a href="#examples">Examples</a>&nbsp;</li>
+      <li><a href="#archive">Archive</a>&nbsp;/li>
       <li><a href="#search">Search</a>&nbsp;</li>
     </ul>
-    <hr />
+    <hr width="100%"/>
   </div>
   
   <!-- Contents: -->
@@ -195,8 +196,10 @@
     framework and its
     alternative implementations such as <a href="https://www.mono-project.com/">Mono</a>. It is intended as
     higher level utility library for development of cross-platform
-    applications. <br>
-    &nbsp; Currently, the target platforms are <b>.NET Framework 4.0</b> and <b>4.8</b>, 
+    applications.
+  </p>
+  <p>
+    Currently, the target platforms are <b>.NET Framework 4.0</b> and <b>4.8</b>, 
     and <b>.NET 8</b>, which are commonly available across the main computing platforms (e.g. in form
     of the open source <a href="https://www.mono-project.com/">Mono</a>
     implementation for .NET Framework, and natively by the open source .NET). The source code of 
@@ -206,16 +209,15 @@
 
 
 
-  <!-- TODO: Below - verify that info i up-to-date! -->
+  <!-- TODO: Below - verify that info is up-to-date! -->
   <p>
     It is straight forward to port the library to any modern
-    computing platform. The only requirement is that a .NET 4 or
-    compatible framework is installed on the computer. Many operating
-    systems already include the framework, but if not then you will have
-    to download and install the <a href="https://www.microsoft.com/net">.NET
+    computing platform. The only requirement is that a compatible .NET framework
+    is installed on the computer. You may need to download and install 
+    either the legacy <a href="https://dotnet.microsoft.com/en-us/download/dotnet-framework">.NET
     framework</a> (for Widows operating systems) or 
     <a href="https://www.mono-project.com/">Mono</a> (cross-platform)
-    before using the library.
+    or the <a href="https://dotnet.microsoft.com/en-us/download">modern .NET</a> before using the library.
   </p>
   <p>
     It might not be completely straight forward to install the
@@ -223,11 +225,138 @@
     Windows XP, you will need to install the Service pack 3 before
     installing the .NET 4 or later. We have not checked whether the
     service pack is also required when using the Mono framework instead
-    of .NET.</p>
+    of .NET.
+  </p>
+  <p>
+    There are some specialized portions of the library that are
+    difficult to use on some older operating systems. This is true e.g.
+    on 32 bit Windows XP for the 3D graphics modules that are based on
+    the <a href="https://www.kitware.com/opensource/avdownload.php">ActiViz</a>,
+    C# wrappers for the <a href="https://www.vtk.org">VTK library</a>
+    (used e.g. in <a href="../software/NeurApp/index.html">NeurApp</a>,
+    <a href="../software/AnnApp/index.html"> AnnApp</a>, 
+    <a href="../software/IGLibShellApp/index.html">IGShell</a>, and some
+    other applications). In these applications, all functionality that
+    does not use the problematic libraries should still work correctly.
+    For example, with some applications for ANN modelling, one can do
+    everything except showing 3D plots of 2-parametric studies. When
+    launching such a plot, an error message is launched, but one can
+    continue to use the application for other tasks.
+  </p>
+  <p>
+    In the case of VTK-based 3D plots, the problem is because 64
+    bit native libraries are linked with the code, and these can not be
+    loaded on a 32 bit system. Due to just in time compiler (JIT), this
+    is not an issue with managed libraries, but linking with native
+    libraries is different. In order to use 3D modules on 32 bit Windows
+    XP, one must use the code that is specifically compiled for 32 bit
+    windows. Such code would also work on all 64 bit windows systems,
+    but it would the applications would be limited to use up to 2 GB
+    RAM. Therefore, downloadable applications are usually prepared for
+    64 bit windows. If you would like to use full functionality of such
+    applications on 32 bit Windows, check the web site if there is also
+    a 32 bit version.
+  </p>
+
+  <h2 id="availability">Availability</h2>
+  <p>
+    The complete library source code is currently available only upon
+    special agreement with the author. Author's interest is that the
+    library is used and/or developed under a limited number of partner
+    agreements until it reaches a sufficient maturity level. It is possible
+    that the library is released under a free open source license at a later time.
+    For up-to-date information, see the 
+    <a href="https://github.com/ajgorhoe/IGLib.workspace.base.iglib/blob/master/README.md">
+      README file</a> 
+    of the <a href="https://github.com/ajgorhoe/IGLib.workspace.base.iglib">IGLib 
+    base repository</a>.  
+  </p>
+  <p>
+    A number of applications base on the IGLib have been
+    developed by the author of the library or under partner agreement.
+    Library binaries are currently available with a simple application
+    that very briefly demonstrates a possible use of the library for
+    developing an interpreter-based application. You can 
+    <a href="../software/IGLibShellApp/index.html">check it out
+    here</a> and <a href="../software/IGLibShellApp/download/IGLibShellApp.zip">download</a>
+    the demo. The demo contains a Visual Studio project for building
+    the application. It is basically just a framework of a
+    command-line interpreter based application whose architecture
+    follows the simple application framework rules that are used for
+    some development projects, student projects, small research
+    projects and alike.
+  </p>
+  <p>The <i>IGLib</i> binaries are currently available as part
+    of several <a href="../software/index.html">applications</a>,
+    some of which are available on the internet and can be downloaded
+    together with the library dll-s. Some of these applications are
+    listed below.
+  </p>
+
+  <h3 id="app_igshell">IGShell - A command-line shell application based on IGLib</h3>
+  <p>
+    This is a simple shell application created to demonstrate the
+    use of the IGLib libraries in the shell applications. A Visual
+    Studio (or MonoDevelop) project is attached that demonstrates how a
+    simple shell application is created according to the IGLib
+    Standards.
+  </p>
+  <p>
+    The project also includes two hosted applications, the 
+    <b><i><a href="../software/IGLibShellApp/HashForm.html#hashform">HashForm</a></i></b> and 
+    <b><i><a href="../software/IGLibShellApp/HashForm.html#hashshell">HashShell</a></i></b>. 
+    <i>HashForm</i> is a convenience UI application for calculation and verification 
+    of hash values, and can be used for file verification. <i>HashShell</i>
+    includes utilities for performing common cryptographic tasks such as
+    calculation and verification of cryptographic hash functions,
+    symmetric encryption and decryption, asymmetric encryption,
+    generation and manipulation of keys, digital signatures, and others.
+  </p>
+  <ul>
+    <li><a href="../software/IGLibShellApp/index.html">IGShell home</a>&nbsp;
+      <ul>
+        <li><a href="../software/IGLibShellApp/download/IGLibShellApp.zip">Download IGShell</a> &nbsp;</li>
+      </ul>
+    </li>
+    <li><a href="../software/IGLibShellApp/HashForm.html">HashForm and HashShell home</a>&nbsp;</li>
+    <ul>
+      <li><a href="../software/IGLibShellApp/HashForm.html#hashform">HashForm</a>&nbsp;
+        <ul>
+          <li><a href="../software/IGLibShellApp/doc/HashForm_help.pdf">HashForm User Manual</a>&nbsp;</li>
+        </ul>
+      </li>
+      <li><a href="../software/IGLibShellApp/HashForm.html#hashshell">HashShell</a>
+        &nbsp; <br>
+      </li>
+    </ul>
+    <ul>
+      <li><a href="../software/IGLibShellApp/HashForm.html#download">Download
+          HashForm and HashShell</a>&nbsp;
+      </li>
+    </ul>
+  </ul>
+
+  <p>
+
+
+  </p>
+
+  <p>
+
+
+  </p>
+
+  <p>
+
+
+  </p>
 
 
 
 
+
+
+  
 
 
   <br/><hr /> 
@@ -243,115 +372,10 @@
 
 
 
-  &nbsp; There are some specialized portions of the library that are
-  difficult to use on some older operating systems. This is true e.g.
-  on 32 bit Windows XP for the 3D graphics modules that are based on
-  the <a href="https://www.kitware.com/opensource/avdownload.php">ActiViz</a>,
-  C# wrappers for the <a href="https://www.vtk.org">VTK library</a>
-  (used e.g. in <a href="../software/NeurApp/index.html">NeurApp</a>,
-  <a href="../software/AnnApp/index.html"> AnnApp</a>, <a href="../software/IGLibShellApp/index.html">IGShell</a>, and
-  some
-  other applications). In these applications, all functionality that
-  does not use the problamatic libraries should still work correctly.
-  For example, with some applications for ANN modelling, one can do
-  everything except showing 3D plots of 2-parametric studies. When
-  launching such a plot, an error message is launched, but one can
-  continue to use the application for other tasks. <br>
-  &nbsp; In the case of VTK-based 3D plots, the problem is because 64
-  bit native libraries are linked with the code, and these can not be
-  loaded on a 32 bit system. Due to just in time compiler (JIT), this
-  is not an issue with managed libraries, but linking with native
-  libraries is different. In order to use 3D modules on 32 bit Windows
-  XP, one must use the code that is specifically compiled for 32 bit
-  windows. Such code would also work on all 64 bit windows systems,
-  but it would the applications would be limited to use up to 2 GB
-  RAM. Therefore, downloadable applications are usually prepared for
-  64 bit windows. If you would like to use full functionality of such
-  applications on 32 bit Windows, check the web site if there is also
-  a 32 bit version.<br>
-  <br>
-  <h2 style="text-align: center;"><small><a name="availability"></a><span
-        style="color: rgb(204, 0, 0);">Availability<br>
-      </span></small></h2>
-  <p>&nbsp; The library source code is currently available only upon
-    special agreement with the author. Author's interest is that the
-    library is used and/or developed under a limited number of partner
-    agreements until it reaches a sufficient maturity level. Te
-    intention is that the library is released under a free open source
-    license when it reaches sufficient maturity level and a solid user
-    base.<br>
-  </p>
-  <p>&nbsp; A number of applications base on the IGLib have been
-    developed by the author of the library or under partner agreement.
-    Library binaries are currently available with a simple application
-    that very briefly demonstrates a possible use of the library for
-    developing an interpreter-based application. You can <a href="../software/IGLibShellApp/index.html">check it
-      out</a><a>
-      here</a> and <a href="../software/IGLibShellApp/download/IGLibShellApp.zip">download</a>
-    the demo. The demo contains a Visual Studio project for building
-    the application. It is basically just a framework of a
-    command-line interpreter based application whose architecture
-    follows the simple application framework rules that are used for
-    some development projects, student projects, small research
-    projects and alike.</p>
-  <p>&nbsp; The <i>IGLib</i> binaries are currently available as part
-    of several <a href="../software/index.html">applications</a>,
-    some of which are available on the internet and can be downloaded
-    together with the library dll-s. Some of these applications are
-    listed below.&nbsp;</p>
-  <p><br>
-  </p>
-  <blockquote>
-    <div align="left">
-      <h3><small><a name="app_igshell"></a>IGShell - A command-line
-          shell aplication built on IGLib<br>
-        </small></h3>
-    </div>
-  </blockquote>
-  &nbsp; This is a simple shell application created to demonstrate the
-  use of the IGLib libraries in the shell applications. A Visual
-  Studio (or MonoDevelop) project is attached that demonstrates how a
-  simple shell application is created according to the IGLib
-  Standards.<br>
-  &nbsp; The project also includes two hosted applications, the <b>HashForm</b>
-  and <b>Hash</b><b>Shell</b>. <i>HaskForm</i> is a simple but
-  useful application for calculation and verification of hash values,
-  and can thus be used as file verification software. <i>HashShell</i>
-  includes utilities for performing common cryptographic tasks such as
-  calculation and verification of cryptographic hash functions,
-  symmetric encryption and decryption, asymmetric encryption,
-  generation and manipulation of keys, digital signatures, and others.
-  <br>
-  <ul>
-    <li><a href="../software/IGLibShellApp/index.html">IGShell home</a>
-      &nbsp; <br>
-    </li>
-    <ul>
-      <li><a href="../software/IGLibShellApp/download/IGLibShellApp.zip">Download
-          IGShell</a> &nbsp; <br>
-      </li>
-    </ul>
-    <li><a href="../software/IGLibShellApp/HashForm.html">HashForm and
-        HashShell home</a> &nbsp; <br>
-    </li>
-    <ul>
-      <li><a href="../software/IGLibShellApp/HashForm.html#hashform">HashForm</a>&nbsp;
-      </li>
-      <ul>
-        <li><a href="../software/IGLibShellApp/doc/HashForm_help.pdf">HashForm
-            User Manual</a>&nbsp;&nbsp; <br>
-        </li>
-      </ul>
-      <li><a href="../software/IGLibShellApp/HashForm.html#hashshell">HashShell</a>
-        &nbsp; <br>
-      </li>
-    </ul>
-    <ul>
-      <li><a href="../software/IGLibShellApp/HashForm.html#download">Download
-          HashForm and HashShell</a>&nbsp; <br>
-      </li>
-    </ul>
-  </ul>
+
+
+
+
   <p><br>
   </p>
   <blockquote>
