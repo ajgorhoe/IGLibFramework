@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Below: definition of canonical form of this page's URL -->
+  <link rel="canonical" href="./">
+  <title>AnnApp, exploring artificial neural networks (ANN) - based
+    modelling.</title>
+  <meta name="author" content="Igor Grešovnik">
+  <meta name="keywords" content="artificial neural networks,
+      approximation, parametric studies, software, Igor Grešovnik,
+      Investigative Generic Library, IGLib, IOptLib">
+  <meta name="description" content="AnnApp is an intuitive graphical
+      software for exploring artificial neural networks (ANN) - based
+      modelling. Powered by IGLib.">
+  <meta name="Classification" content="software/numerical">
+  <meta name="GENERATOR" content="Netscape 7 Composer">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rev="made"
+    href="https://www.google.com/search?hl=en&amp;q=Igor+Gre%C5%A1ovnik&amp;btnG=Google+Search&amp;meta=">
+  <!-- The meta tag http-equiv below defines redirection, first number in content defines time before redirecting in seconds and the replacing URL. -->
+  <meta http-equiv="REFRESH" content="9000;URL=AnnApPar.html" charset="UTF-8">
+  <!-- Google Analitics - account Software 
+	property AnnApp -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-96841644-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- Google Analitics - account Software 
+	property Software all -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-96841644-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- Google Analitics - account IGLib -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-76143121-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- Tags below define icons, CSSs, and scripts. Leave them as absolute URLs. -->
+  <link rel="icon" href="https://ajgorhoe.github.io/icons/IGLibIcon_128x128.png" />
+  <link rel="stylesheet" href="https://ajgorhoe.github.io/scripts/IgsScriptSupport.css" />
+  <!-- The following two script elements perform canonical redirect: -->
+  <script src="https://ajgorhoe.github.io/scripts/IgsScriptTools.js"></script>
+  <script>igsCanonicalRedirect();</script>
+</head>
+
+<body style=" color: rgb(0, 0, 0); background-color: rgb(255, 255,
+    255);" vlink="#006600" link="#0000ee" alink="#fe0000">
+  <div align="right"><small>&nbsp; </small>
+    <table width="100%" cellspacing="2" cellpadding="2" border="0">
+      <tbody>
+        <tr>
+          <td valign="top"><small><small>&nbsp;&nbsp; &nbsp; &nbsp;</small><small><big><big>
+                    <small><a href="./"><big>./ <small>(directory)</small></big></a></small></big></big>
+                &nbsp;&nbsp;<small> <a href="../index.html"><span style="font-weight: bold;">&lt;&lt;</span></a>
+                  &nbsp;&nbsp; <a href="../index.html"><span style="font-weight: bold;">&lt; back</span></a>
+                  &nbsp; </small></small></small>&nbsp; &nbsp;&nbsp;<small><small><small>
+                  &nbsp; </small></small></small></td>
+          <td valign="top" align="right"><small>&nbsp; <a moz-do-not-send="true" href="../../../index.html">Site
+                Map</a> | <a href="../../index.html">Other Software</a>
+              | <a href="../../iglib/index.html"><span style="font-style: italic;">IGLib</span></a> | <a
+                moz-do-not-send="true" href="https://ajgorhoe.github.io/">GitHub</a>
+              / <a moz-do-not-send="true" href="https://ajgorhoe.github.io/IGLibFramework/software/AnnApp/">AnnApp</a>
+              &nbsp; </small></td>
+        </tr>
+      </tbody>
+    </table>
+    <font size="-1"><a href="https://www2.arnes.si/~ljc3m2/igor/"> </a></font>
+  </div>
+  <center>
+    <div style="text-align: left;">
+      <div style="text-align: right;">&nbsp;&nbsp;<span style="font-style: italic;"> </span>
+        <font color="#000000"><span style="font-style: italic;"><br>
+          </span></font>
+      </div>
+    </div>
+  </center>
+  <table nosave="" style="width: 100%;" cols="2" cellspacing="5" cellpadding="0">
+    <tbody>
+      <tr nosave="" valign="top">
+        <td nosave="" style="vertical-align: middle; text-align: left;
+            width: 90%;"> <span style="font-weight: bold;"></span><br>
+          <h1 style="text-align: center;"><big><b><i>
+                  <font>
+                    <font><b><i>
+                          <font>
+                            <font><big><big><b><i>
+                                      <font>
+                                        <font><b><i>
+                                              <font color="#cc0000">
+                                                <font size="+2"><big>AnnAp<br>
+                                                  </big></font>
+                                              </font>
+                                            </i></b></font>
+                                      </font>
+                                    </i></b></big></big></font>
+                          </font>
+                        </i></b></font>
+                  </font>
+                </i></b></big></h1>
+          <p"><b>&nbsp; <i>AnnApp</i> is an intuitive GUI-based software
+              for exploring approximation with artificial neural
+              networks.<br>
+            </b></p>
+          <span style="font-weight: bold;"></span><br>
+          <font color="#000000"> </font>
+        </td>
+        <td style="text-align: right;" nosave="">&nbsp;&nbsp; <img src="annapp_title.jpg" alt="Dragonfly Server Logo."
+            style="width: 336px; height: 256px;" width="336" height="256"><b> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+            &nbsp; </b></td>
+      </tr>
+    </tbody>
+  </table>
+  <p><b><br>
+    </b></p>
+  <p> </p>
+  <hr width="100%">
+  <center>
+    <table nosave="" cols="2" width="100%">
+      <tbody>
+        <tr nosave="" valign="top">
+          <td nosave=""> <span style="font-weight: bold;">Contents:<br>
+            </span>
+            <ul>
+              <li><a href="#about">About the Software</a>&nbsp; <br>
+              </li>
+              <li><a href="#download">Free Download</a> of a test
+                version <br>
+              </li>
+              <ul>
+              </ul>
+              <li><a href="#examples">Screen shots</a>&nbsp; <br>
+              </li>
+              <li><a href="../IGLibShellApp/HashForm.html#other_software">Other
+                  Software</a>&nbsp; &nbsp; </li>
+              <ul>
+              </ul>
+            </ul>
+            <br>
+            <font color="#000000"><span style="font-weight: bold;"></span></font>
+          </td>
+          <td nosave="" align="right">&nbsp;&nbsp;&nbsp; <br>
+            &nbsp;&nbsp; <a href="#search" style="font-weight: bold;">Search</a>
+            &nbsp; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; <b><br>
+              &nbsp; &nbsp; &nbsp; <br>
+            </b></td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+  </center>
+  <hr width="100%">&nbsp;&nbsp; <br>
+  <center>
+    <h1> <a name="about"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">About the Software<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  &nbsp; This software has been created
+    by <i><a href="../../index.html">Igor
+        Grešovnik</i></a>. It is aimed at exploring the artificial
+    neural networks (ANNs) - based modeling.<br>
+  <br>
+  &nbsp; <br>
+  <br>
+  <center>
+    <h1> <a name="download"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">Download<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  Only an early experimental version of <i>AnnApp</i> is currently
+  available for download. Application currently runs only on 64 bit
+  Windows (.NET or Mono framework must be installed).<br>
+  <br>
+  Download and installation instructions:<br>
+  <ul>
+    <li>Download the compressed archive by clicking on this <a href="download/AnnApp.zip">download link</a>.</li>
+    <li>Unpack contents of the archive to an arbitrary directory.</li>
+    <li>Run the <b>run.bat file</b> from the location where files
+      were unpacked.&nbsp;</li>
+    <li>The <i>neuralmodels</i> directory contains subdirectories
+      with other ANN-based models prepared. In order to open a
+      different model, change appropriately the command-line
+      parameters in the <i>run.bat</i> file: replacing <i>-dirdefault</i>
+      parameter with <i>-dirconvection2d</i> will open the model
+      contained in the <i>neuralmodels/convection2d</i> subdirectory
+      of the unpacked application directory. <br>
+    </li>
+  </ul>
+  <br>
+  <center>
+    <h1> <a name="examples"></a><b><i>
+          <font color="#cc0000">
+            <font size="+2">Examples and Screenshots<br>
+            </font>
+          </font>
+        </i></b></h1>
+  </center>
+  <br>
+  <br>
+  <img alt="Evaluation of Model Outputs." src="screenshots/response_calculator.jpg" width="708" height="448"><br>
+  Evaluation of model outputs at the specified input parameters.<br>
+  <br>
+  <img alt="Evaluation of Model Outputs." src="screenshots/parametric_1d.jpg" width="708" height="448"><br>
+  Parametric study (1D).<br>
+  <br>
+  <img alt="Evaluation of Model Outputs." src="screenshots/parametric_2d.jpg" width="708" height="448"><br>
+  Parametric Study (2d).<br>
+  <br>
+  <img alt="Evaluation of Model Outputs." src="screenshots/parametric2d_1.jpg" width="708" height="448"><br>
+  Parametric Study (2d).<br>
+  <br>
+  <img alt="Evaluation of Model Outputs." src="screenshots/full_version.jpg" width="708" height="448"><br>
+  Full version of the software.<br>
+  <br>
+  <br>
+  <h2 style="text-align: center;"><small><a name="other_software"></a><span style="color: rgb(204, 0, 0);">Other
+        Software&nbsp; <br>
+      </span></small></h2>
+  <br>
+  <a href="file:///U:/igor/www/www/igor/iglib/index.html"><img src="../NeurApp/dragonfly_server_small.jpg"
+      alt="IGLib Logo." style="width: 336px; height: 256px;" width="336" height="256" border="0"></a> This softwae is
+  based on <a href="https://www2.arnes.si/%7Eljc3m2/igor/iglib/"><i>Investigative
+      Generic Library (IGLib.NET)</i></a>.<br>
+  <br>
+  Some other publically available software based on this library
+  includes: <br>
+  <ul>
+    <li><a href="https://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/HashForm.html#hashform"><i>HashForm</i></a>
+      - application for calculation and verification of checksums
+      (MD5, SHA-1, SHA-256, SHA-512) for files and text. <br>
+    </li>
+    <li><a
+        href="https://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/HashForm.html#hashshell"><i>HashShell</i></a>
+      - a shell application with various cryptography-related
+      functionality (calculation of hash functions / checksums,
+      symmetric and asymmetric encryption, certificate management,
+      etc.). <br>
+    </li>
+        <li><i><a href="https://www2.arnes.si/%7Eljc3m2/igor/software/NeurApp/">NeurApp</a></i>
+        - an educational application for visually exploring features
+        of function approximation with artificial neural networks
+        (ANN). It creates 1D and 2D ANN models of user defined
+        functions and provides visualization capabilities to compare
+        these models with originals. It can be <a
+          href="https://www.softpedia.com/get/Science-CAD/NeurApp.shtml">downloaded from Softpedia</a>.<br>
+      </li>
+      <li>&nbsp;<i><a
+            href="https://www2.arnes.si/%7Eljc3m2/igor/software/AnnApp/">AnnApp</a></i><span> -
+        software for exploring multidimensional ANN-based models.</span></li>
+    <li><a href="https://www2.arnes.si/%7Eljc3m2/igor/software/IGLibShellApp/"><span><i>IGShell</i></span></a> - <span>a shell application based on <i>IGLib</i>.</span></li>
+    <li><i><span><a
+            href="https://www2.arnes.si/%7Eljc3m2/igor/software/thesis_petek/">Oscillator Modeller</a></span></i><span
+        > - an educational application for
+        playing with nonlinear driven oscillators and their resonance
+        curves. <br>
+      </span></li>
+  </ul>
+  <h1> </h1>
+  <br>
+  <hr width="100%"><br>
+  <br>
+  <!-- SiteSearch Google -->
+  <form method="get" action="https://www.google.com/search">
+    <div style="text-align: right;"> </div>
+    <table style="width: 60%;" cellspacing="4" cellpadding="4">
+      <tbody>
+        <tr>
+          <td style="text-align: right; font-style: italic;"><a href="https://www.google.com/"> </a><a
+              name="search"></a><a href="https://www.google.com/"><img src="https://www.google.com/logos/Logo_25wht.gif"
+                style="border: 0px solid ; width: 75px; height: 32px;" alt="Google" title=""></a></td>
+          <td> <input name="q" size="31" maxlength="255" type="text"><input name="btnG" value="Google Search"
+              type="submit">
+            <font size="-1"><input name="domains" value="../" type="hidden"><br>
+              <input name="sitesearch" value="" checked="checked" type="radio">WWW&nbsp;&nbsp;&nbsp; <input
+                name="sitesearch" value="../" type="radio">../&nbsp;&nbsp;&nbsp;
+              <input name="sitesearch" value="./" type="radio">./&nbsp;&nbsp;&nbsp;&nbsp;
+              <input name="sitesearch" value="https://www2.arnes.si/%7Eljc3m2/" type="radio">
+              Igor at Arnes&nbsp;&nbsp; <br>
+            </font>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  <!-- SiteSearch Google -->
+  <p> </p>
+  <br>
+  <hr>
+  <center>
+    <table nosave="" cellpadding="2" border="3" bgcolor="#ffffff">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" valign="top" align="center">
+            <center>&nbsp;&nbsp; <a href="https://www2.arnes.si/~ljc3m2/igor/doc/theses/phd/"><br>
+              </a></center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+  &nbsp;
+  <div align="right">
+    <table nosave="" cellpadding="2" border="3" bgcolor="#ffffff">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" valign="top" align="left">
+            <div align="right">
+              <font size="-1">&nbsp; Maintained by <a href="../../igor.html" moz-do-not-send="true">Igor
+                  Grešovnik</a>&nbsp; <br>
+              </font>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    &nbsp; &nbsp; &nbsp;&nbsp;
+  </div>
+  <center>
+    <table nosave="" cellpadding="2" border="3">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" valign="top" align="left">
+            <center><i>&nbsp; Updated in April 2016 &nbsp; <br>
+              </i></center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+  &nbsp;<br>
+  <br>
+  <br>
+  <br>
+</body>
+
+</html>
