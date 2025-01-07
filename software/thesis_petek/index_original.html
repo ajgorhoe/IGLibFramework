@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Below: definition of canonical form of this page's URL -->
+    <link rel="canonical" href="./">
+    <title>Software for Modelling Oscillator Behavior (Marko Petek -
+      Graduate Thesis)</title>
+    <meta name="author" content="Igor Grešovnik, Marko Petek">
+    <meta name="keywords" content="numerical software, oscillator
+      modeling, nonlinear oscillator, harmonic oscillator, damped
+      oscillator, driven oscillator, general 4th order Runge Kutta
+      solver, ordinary differential equations, initial value problem,
+      Investigative Generic Library, IGLib, graphical layer,
+      command-line interpreter, scripting engine">
+    <meta name="description" content="This page contains an applicatin
+      for modelling linear and nonlinear damped and driven oscillators.
+      The code was developed in C# .NET and is based on the
+      Investigative Generic Library (IGLib) of Igor Grešovnik. It
+      features a general 4th order Runge Kutta solver for systems of
+      ordinary differential equations, a comand-line interpreter - based
+      user interface, an object oriented C# scripting engine and a
+      versatile presentation layer.">
+    <meta name="Classification" content="software/numerical">
+    <meta name="GENERATOR" content="Netscape 7 Composer">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rev="made" href="http://www.google.com/search?hl=en&amp;q=Igor+Gre%C5%A1ovnik&amp;btnG=Google+Search&amp;meta=">
+			  		
+	<!-- Google Analytics - account Software 
+	property Software all -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-96841644-1', 'auto');
+	  ga('send', 'pageview');
+	</script>	  
+
+    <!-- Google Analitics - account IGLib -->
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-76143121-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+	
+    <!-- Tags below define icons, CSSs, and scripts. Leave them as absolute URLs. -->
+    <link rel="icon" href="https://ajgorhoe.github.io/icons/IGLibIcon_128x128.png" />
+    <link rel="stylesheet" href="https://ajgorhoe.github.io/scripts/IgsScriptSupport.css" />
+    <!-- The following two script elements perform canonical redirect: -->
+    <script src="https://ajgorhoe.github.io/scripts/IgsScriptTools.js"></script>
+    <script>igsCanonicalRedirect();</script>
+	</head>
+
+  <body style=" color: rgb(0, 0, 0); background-color: rgb(255, 255,
+    255);" alink="#fe0000" link="#0000ee" vlink="#006600">
+    <div align="right"><small>&nbsp; </small>
+      <table border="0" cellpadding="2" cellspacing="2" width="100%">
+        <tbody>
+          <tr>
+            <td valign="top"><small><small>&nbsp;&nbsp; &nbsp; &nbsp;</small><small><big><big>
+                      <small><a href="./"><big>./ <small>(directory)</small></big></a></small></big></big>
+                  &nbsp;&nbsp;<small> <a href="../index.html"><span
+                        style="font-weight: bold;">&lt;&lt;</span></a>
+                    &nbsp;&nbsp; <a href="../index.html"><span
+                        style="font-weight: bold;">&lt; back</span></a>
+                    &nbsp;&nbsp;</small></small></small>&nbsp;&nbsp; <small><a
+                  href="index.html#search" style="font-weight: bold;">Search</a></small>
+              &nbsp;<small><small><small> &nbsp; </small></small></small></td>
+            <td align="right" valign="top"><small>&nbsp; <a
+                  href="../../links.html">Optimization links</a>&nbsp;
+                &nbsp; <a href="../../index.html">Igor Grešovnik</a>
+                &nbsp;&nbsp; <a href="../../iglib/index.html"><span
+                    style="font-style: italic;">IGLib</span></a> &nbsp;
+                &nbsp;&nbsp; </small></td>
+          </tr>
+        </tbody>
+      </table>
+      <font size="-1"><a href="http://www.c3m.si/igor"> </a></font></div>
+    <center>
+      <div style="text-align: left;">
+        <div style="text-align: right;">&nbsp;&nbsp;<span
+            style="font-style: italic;"> </span><font color="#000000"><span
+              style="font-style: italic;"><br>
+            </span></font></div>
+      </div>
+    </center>
+    <table nosave="" style="width: 100%;" cols="2" cellpadding="0"
+      cellspacing="5">
+      <tbody>
+        <tr nosave="" valign="top">
+          <td nosave="" style="vertical-align: middle; text-align: left;
+            width: 90%;"> <span style="font-weight: bold;"></span><br>
+            <h1 style="text-align: center;"><big><b><i><font><font><b><i><font><font><big><big><b><i><font><font><b><i><font
+                                                  color="#cc0000"><font
+                                                    size="+2"><big><font
+                                                        size="+2">Application
+                                                        for Modelling
+                                                        Oscillator
+                                                        Behavior </font><br>
+                                                    </big></font></font></i></b></font></font></i></b></big></big></font></font></i></b></font></font></i></b></big></h1>
+            <p style="text-align: left;"><b>This page the Marko Petek's
+                application for modelling oscillators, which he has
+                created on basis of the <i>IGLib</i> in the scope of
+                his graduate thesis. <br>
+              </b></p>
+            <font color="#000000"> </font><span style="font-weight:
+              bold;"></span><br>
+            <font color="#000000"> </font> </td>
+          <td style="text-align: right;" nosave="">&nbsp;&nbsp; <img
+              src="markopetek_title2d.jpg" alt="A family of Resonance
+              curves for different damping coefficients." height="339"
+              width="446"><b> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+              &nbsp; </b></td>
+        </tr>
+      </tbody>
+    </table>
+    <p><b><br>
+      </b></p>
+    <p> </p>
+    <hr width="100%">
+    <center>
+      <table nosave="" cols="2" width="100%">
+        <tbody>
+          <tr nosave="" valign="top">
+            <td nosave=""> <span style="font-weight: bold;">Contents:<br>
+              </span>
+              <ul>
+                <li><a href="#about">About the Software</a>&nbsp; <br>
+                </li>
+                <ul>
+                </ul>
+                <li><a href="#doc"><span style="text-decoration:
+                      underline;">Documentation</span></a>&nbsp; <br>
+                </li>
+                <li><a href="#download">Download</a>&nbsp;&nbsp;</li>
+                <li><a href="#screenshots">Screenshots</a>&nbsp; </li>
+                <ul>
+                </ul>
+              </ul>
+              <br>
+              <font color="#000000"><span style="font-weight: bold;"></span></font></td>
+            <td nosave="" align="right">&nbsp;&nbsp;&nbsp; <br>
+              &nbsp;&nbsp; <a href="#search" style="font-weight: bold;">Search</a>
+              &nbsp; <br>
+              &nbsp;&nbsp;&nbsp;&nbsp; <b><br>
+                &nbsp; &nbsp; &nbsp; <br>
+              </b></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+    </center>
+    <hr width="100%">&nbsp;&nbsp; <br>
+    <center>
+      <h1> <a name="about"></a><b><i><font color="#cc0000"><font
+                size="+2">About the Software<br>
+              </font></font></i></b></h1>
+    </center>
+    &nbsp; This page contains an application for modelling behavior of
+    linear and nonlinear oscillators, together with the <a
+      href="../../iglib/index.html"><i>Investigative Generic Library</i></a><a>
+      (<i>IGLib</i>) binaries</a>.<br>
+    <br>
+    &nbsp; The application was created by Marko Petek in the scope of
+    his graduate thesis. It features a general 4th order Runge Kutta
+    solver for systems of ordinary differential equations, a number of
+    special solver classes for solution of equations that drive motion
+    of oscillators, a command-line interpreter acting as driver of the
+    application and user interface through which one can define what the
+    application should do, and a flexible object oriented scripting
+    engine that enables the users to extend the existent functionality
+    of the software. IGLib was used as code base and application
+    framework on which the application was built. The application is
+    written entirely in C# and is compiled for 64 bit .NET
+    platforms.&nbsp; <br>
+    <br>
+    <br>
+    <center>
+      <h1> <a name="doc"></a><b><i><font color="#cc0000"><font
+                size="+2">Documentation<br>
+              </font></font></i></b></h1>
+    </center>
+    <br>
+    &nbsp; <a href="ReadmeAppMarkoPetek.html"><b>ReadMe file</b></a>.
+    Contains very basic information about the software.<br>
+    <br>
+    &nbsp; <a href="LicenseAppMarkoPetek.html"><b>License Agreement</b></a>.
+    Contains terms of use of the software.<br>
+    <br>
+    &nbsp; <a
+      href="../codedoc/generated/guest_marko_petek/html/index.html"><span
+        style="font-weight: bold;">Application's Code Documentation</span></a>.
+    Code documentation for the software, automatically generated from
+    documentation comments by <a
+      href="http://www.stack.nl/%7Edimitri/doxygen/">Doxygen</a>. For
+    documentation of base libraries, see the <a
+      href="../codedoc/generated/iglib/html/index.html">IGLib Code
+      documentation</a> (<a href="../codedoc/generated/iglib/index.html">base
+
+
+      index</a> here).<br>
+    <br>
+    &nbsp; <a href="../../iglib/index.html#doc"><b>IGLib Documentation</b></a>.
+    <br>
+    <br>
+    <br>
+    <br>
+    &nbsp; <span style="font-weight: bold;">See also:</span> <br>
+    <ul>
+      <li><a href="../../iglib/index.html">IGLib</a> home page. Contains
+        information on the <i>Investigative Generic Library</i>, the
+        code base for this software, including the complete <a
+          href="../codedoc/generated/iglib/html/index.html">code
+          documentation</a> (and <a
+          href="../codedoc/generated/iglib/index.html">wider code
+          documentation</a>).<br>
+      </li>
+      <li>Igor's <a href="../../doc/index.html">other documentation</a>.</li>
+      <li>Documentation section on the page about <a
+          href="../../cobik/index.html#doc">my work at COBIK</a> where I
+        use IGLib as a base library for research software in the field
+        of neural networks. <br>
+      </li>
+      <li>Docuentation section on the <a
+          href="../../ioptlib/index.html#doc">IOptLib page</a>.</li>
+      <li>Collection of <a href="../../links.html">optimization-related
+          links</a>.<br>
+      </li>
+      <li>Ph.D. thesis on <a href="../../../inverse/doc/phd/index.html">optimization
+
+
+
+          shell <span style="font-style: italic;">Inverse</span></a>.<br>
+      </li>
+    </ul>
+    <br>
+    <br>
+    <span style="" lang="EN-GB"></span><br>
+    <center>
+      <h1> <a name="download"></a><b><i><font color="#cc0000"><font
+                size="+2">Download<br>
+              </font></font></i></b></h1>
+    </center>
+    <br>
+    <a href="download/AppMarkoPetek.zip">Download the files</a> (click
+    on the link).<br>
+    <br>
+    Short installation instructions:<br>
+    <ul>
+      <li>Download the compressed archive by clicking on the download
+        link above.</li>
+      <li>Extract contents of the archive to an arbitrary directory.</li>
+      <li>Run the executable from the location where files were
+        unpacked. As executable is build around a command-line
+        interpreter, things are invoked by providing commands and their
+        arguments as arguments to the program that is run in a console.
+        Some examples of commands with arguments are in the .cmd file
+        that is contained in the root directory.</li>
+      <li>Within the root directory, there is a Visual Studio C# project
+        that can be used to build the application. You can modify the
+        application and run it from the VS IDE.<br>
+      </li>
+    </ul>
+    <br>
+    <br>
+    <center>
+      <h1> <a name="screenshots"></a><b><i><font color="#cc0000"><font
+                size="+2">Screenshots<br>
+              </font></font></i></b></h1>
+    </center>
+    <br>
+    &nbsp;<img alt="A family of resonance curves."
+      src="screenshots/resonance_family.jpg" height="580" width="847"><br>
+    A family of resonance curves (amplitude dependent on angular
+    frequency). Exch curve is for different damping coefficient (blue
+    means low damping, yellow high damping).<br>
+    <br>
+    <br>
+    <img alt="A 3D surface plot of the family of resonance curves."
+      src="screenshots/resonance_surface.jpg" height="835" width="928"><br>
+    <br>
+    A family of resonance curves plotted as surface. Closer to the
+    observer are curves with higher damping while farther are those with
+    lower damping.<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    &nbsp; <br>
+    <br>
+    <hr width="100%"><br>
+    <br>
+    <!-- SiteSearch Google -->
+    <form method="get" action="http://www.google.com/search">
+      <div style="text-align: right;"> </div>
+      <table style="width: 60%;" cellpadding="4" cellspacing="4">
+        <tbody>
+          <tr>
+            <td style="text-align: right; font-style: italic;"><a
+                href="http://www.google.com/"> </a><a name="search"></a><a
+                href="http://www.google.com/"><img
+                  src="http://www.google.com/logos/Logo_25wht.gif"
+                  style="border: 0px solid ; width: 75px; height: 32px;"
+                  alt="Google" title=""></a></td>
+            <td> <input name="q" size="31" maxlength="255" value=""
+                type="text"><input name="btnG" value="Google Search"
+                type="submit"> <font size="-1"><input name="domains"
+                  value="../" type="hidden"><br>
+                <input name="sitesearch" value="" checked="checked"
+                  type="radio">WWW&nbsp;&nbsp;&nbsp; <input
+                  name="sitesearch" value="../" type="radio">../&nbsp;&nbsp;&nbsp;
+                <input name="sitesearch" value="./" type="radio">./&nbsp;&nbsp;&nbsp;&nbsp;
+                <input name="sitesearch"
+                  value="http://www2.arnes.si/%7Eljc3m2/" type="radio">
+                Igor at Arnes&nbsp;&nbsp; <input name="sitesearch"
+                  value="hhttp://igor.mrfreehost.com/" type="radio">
+                Igor at Mrfreesite <br>
+              </font> </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <!-- SiteSearch Google -->
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <br>
+    <hr>
+    <center>
+      <table nosave="" bgcolor="#ffffff" border="3" cellpadding="2">
+        <tbody>
+          <tr nosave="">
+            <td nosave="" align="center" valign="top">
+              <center>&nbsp;&nbsp; <a
+                  href="http://www.c3m.si/inverse/doc/phd/"><br>
+                </a></center>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+    &nbsp;
+    <div align="right">
+      <table nosave="" bgcolor="#ffffff" border="3" cellpadding="2">
+        <tbody>
+          <tr nosave="">
+            <td nosave="" align="left" valign="top">
+              <div align="right"><font size="-1">&nbsp; Maintained by <a
+                    href="http://www2.arnes.si/%7Eljc3m2/igor/">Igor
+                    Grešovnik</a>&nbsp; <br>
+                </font></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      &nbsp; &nbsp; &nbsp;&nbsp; </div>
+    <center>
+      <table nosave="" border="3" cellpadding="2">
+        <tbody>
+          <tr nosave="">
+            <td nosave="" align="left" valign="top">
+              <center><i>&nbsp; Updated in August 2013 &nbsp; <br>
+                </i></center>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+    <ul>
+      &nbsp;<br>
+    </ul>
+    <br>
+    <big style="color: rgb(204, 0, 0);"><span style="font-weight: bold;">Note:</span></big><span
+      style="color: rgb(204, 0, 0);"> </span><span style="font-weight:
+      bold; color: rgb(204, 0, 0);">This site is under construction.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <font color="#000000"><a href="../index.html"><img
+          src="../../work.gif" alt="This page is under construction.
+          Icon is missing." style="border: 0px solid ; width: 38px;
+          height: 38px;" height="38" border="0" width="38"></a></font>&nbsp;
+    <br>
+    <small>Number of accesses since the last upload:&nbsp;&nbsp;&nbsp;&nbsp; </small><a
+      href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/index.html"><img
+src="http://www.arnes.si/cgi-bin/counter?md=7%7Cdd=B%7Cid=IGarnes_igor_ioptlib_index"
+        title="" alt="If you don't see the access counter properly then
+        click on the link!" style="border: 0px solid ; width: 172px;
+        height: 28px;"></a><small>&nbsp;&nbsp;&nbsp; If you don't see
+      the access counter properly then please follow <a
+        href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/index.html">this
+        link</a>!</small><br>
+    <br>
+    <br>
+    <br>
+    TC
+  </body>
+</html>
