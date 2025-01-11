@@ -20,6 +20,7 @@
   <link rev="made" href="http://www.google.com/search?hl=en&amp;q=Igor+Gre%C5%A1ovnik&amp;btnG=Google+Search&amp;meta=">
 
   <!-- Tags below define icons, CSSs, and scripts. Leave them as absolute URLs. -->
+  <link rel="stylesheet" href="https://ajgorhoe.github.io/scripts/iglib.css" />
   <link rel="icon" href="https://ajgorhoe.github.io/icons/IOptLibIcon_128x128.png" />
   <link rel="stylesheet" href="https://ajgorhoe.github.io/scripts/IgsScriptSupport.css" />
   <!-- The following two script elements perform canonical redirect: -->
@@ -27,212 +28,158 @@
   <script>igsCanonicalRedirect();</script>
 </head>
 
-<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255,
-    255);" vlink="#006600" link="#0000ee" alink="#fe0000">
-  <div align="right"><small>&nbsp; </small>
-    <table width="100%" cellspacing="2" cellpadding="2" border="0">
-      <tbody>
-        <tr>
-          <td valign="top"><small><small>&nbsp;&nbsp; &nbsp; &nbsp;</small><small><big><big>
-                    <small><a href="./"><big>./ <small>(directory)</small></big></a></small></big></big>
-                &nbsp;&nbsp;<small> <a href="../index.html"><span style="font-weight: bold;">&lt;&lt;</span></a>
-                  &nbsp;&nbsp; <a href="../index.html"><span style="font-weight: bold;">&lt; back</span></a>
-                  &nbsp;&nbsp;</small></small></small>&nbsp;&nbsp; <small><a href="index.html#search"
-                style="font-weight: bold;">Search</a></small>
-            &nbsp;<small><small><small> &nbsp; </small></small></small></td>
-          <td valign="top" align="right"><small>&nbsp; <a href="../links.html">Optimization links</a>&nbsp;
-              &nbsp; <a href="../index.html">Igor Grešovnik</a>&nbsp;
-              <a href="../iglib/index.html">IGLib</a>&nbsp; <a href="index_dotnet_redir.html"> IOptLib.NET</a>&nbsp;
-              <a href="../../inverse/index.html"><span style="font-style: italic;">Inverse</span></a>
-              &nbsp; &nbsp; </small></td>
-        </tr>
-      </tbody>
-    </table>
-    <font size="-1"><a href="http://www.c3m.si/igor"> </a></font>
-  </div>
-  <center>
-    <div style="text-align: left;">
-      <div style="text-align: right;">&nbsp;&nbsp;<span style="font-style: italic;">&nbsp;</span>
-        <font color="#000000"><span style="font-style: italic;"> &nbsp; <br>
-          </span></font>
-      </div>
+<body>
+  <!-- Original style on the body element:
+  <body style=" color: rgb(0, 0, 0); background-color: rgb(255, 255,
+      255);" vlink="#006600" link="#0000ee" alink="#fe0000">
+  -->
+   
+  <!-- Navigation bar at the top of the page: -->
+  <div class="top-nav">
+    <div class="left">
+      <a href="../index.html">&lt; Software</a> |
+      <a href="../../index.html">&lt;&lt; Site Map</a> |
+      <a href="#search">Search</a> |
     </div>
-  </center>
-  <table nosave="" style="width: 100%;" cols="2" cellspacing="5" cellpadding="0">
-    <tbody>
-      <tr nosave="" valign="top">
-        <td nosave="" style="vertical-align: middle; text-align: left;
-            width: 90%;"> <span style="font-weight: bold;"></span><br>
-          <h1 style="text-align: center;"><big><b><i>
-                  <font>
-                    <font><b><i>
-                          <font>
-                            <font><big><big><b><i>
-                                      <font>
-                                        <font><b><i>
-                                              <font color="#cc0000">
-                                                <font size="+2"><big>
-                                                    IOptlib</big></font>
-                                              </font>
-                                            </i></b></font>
-                                      </font>
-                                    </i></b></big></big></font>
-                          </font>
-                        </i></b></font>
-                  </font>
-                </i></b></big></h1>
-          <p style="text-align: left;"><b><span style="font-style:
-                  italic;">&nbsp; </span></b><b>This page provides some
-              information about the </b><b><span style="font-style:
-                  italic;">Ioptlib</span> (<i>Investigative Optimization
-                Library</i>)</b><b>, whose experimental version
-              release is planned for 2008</b><b>.<br>
-            </b></p>
-          <font color="#000000"> </font><span style="font-weight:
-              bold;"></span><br>
-          <font color="#000000"> </font>
-        </td>
-        <td style="text-align: right;" nosave="">&nbsp;&nbsp; <img src="ss_optapprox_converg.gif" alt="" style="width: 272px;
-              height: 270px;"><b> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
-            &nbsp; &nbsp; </b></td>
-      </tr>
-    </tbody>
-  </table>
-  <p><b><br>
-    </b><b></b></p>
-  <p> </p>
-  <hr width="100%">
-  <center>
-    <table nosave="" cols="2" width="100%">
-      <tbody>
-        <tr nosave="" valign="top">
-          <td nosave=""> <span style="font-weight: bold;">Contents:<br>
-            </span>
-            <ul>
-              <li>&nbsp;&nbsp; <a href="#about">About the library</a>&nbsp;
-                <br>
-              </li>
-              <ul>
-                <li><a href="#availability"><small>Availability</small></a>&nbsp;
-                  <br>
-                </li>
-              </ul>
-              <li><a href="#doc"><span style="text-decoration:
-                      underline;">Documentation</span></a>&nbsp; <br>
-              </li>
-              <li><a href="#examples">Example</a>&nbsp; <br>
-              </li>
-            </ul>
-            <br>
-            <font color="#000000"><span style="font-weight: bold;"></span></font>
-          </td>
-          <td nosave="" align="right">&nbsp;&nbsp;&nbsp; <br>
-            &nbsp;&nbsp; <a href="#search" style="font-weight: bold;">Search</a>
-            &nbsp; <br>
-            &nbsp;&nbsp;&nbsp;&nbsp; <b><br>
-              &nbsp; &nbsp; &nbsp; <br>
-            </b></td>
-        </tr>
-      </tbody>
-    </table>
-    <br>
-  </center>
-  <hr width="100%">&nbsp;&nbsp; <br>
-  <center>
-    <h1> <a name="about"></a><b><i>
-          <font color="#cc0000">
-            <font size="+2">About the library<br>
-            </font>
-          </font>
-        </i></b></h1>
-  </center>
-  &nbsp; <br>
-  &nbsp; <i>Ioptlib</i> (the <i>Investigative Optimization Library</i>)
-  is an optimization library for developing and testing algorithms for
-  solving engineering optimization problems. A priority goal is to
-  develop algorithms suited to problems with computationally expensive
-  and possibly noisy evaluation of the response (i.e. objective and
-  constraint) functions. The library is intended to provide modular
-  building blocks for constructing such algorithms, standardized
-  templates for interfacing tools obtained form other libraries, and
-  testing environment where different performance aspects of
-  algorithms can be readily extensively tested during and after the
-  development stage. Currently most of the efforts are devoted to
-  algorithms based on successive solution of approximated problems
-  obtained by local sampling and approximation of the response
-  functions. Such algorithms have complex designs and involve solution
-  of many sub-problems such as non-linear or quadratic programming
-  problems, matrix algebra, optimal sampling strategies, etc. The
-  intention is therefore to gradually accumulate efficient routines
-  for solving these problems, which will lead to broader
-  serviceability of the library. Any attempt was made to keep open the
-  possibility of starting development of new algorithms or attaching
-  to the existent functionality at any level. The basic library is
-  therefore intended to be distributed as free open source under
-  certain conditions. A couple of algorithms will be available under
-  different negotiable terms since this is necessary to provide the
-  funding for library development, however their building blocks
-  together with a set of quite useful algorithms will be provided with
-  the basic set that is more open what concerns availability.<br>
-  <br>
-  &nbsp; The original motivation for the library was obtained in
-  optimization of forming processes where evaluation of objective and
-  constraint functions typically involves complex numerical simulation
-  with hundreds of thousands of degrees of freedom, very non-linear
-  and path dependent materials, multi-physics and multi-scale
-  phenomena etc. As result, not only the calculation of the objective
-  and constraint functions takes very long times even on the fastest
-  computers or parallel architectures, but these functions often
-  contain substantial amount of numerical noise. These conditions
-  impose a substantial turn in how algorithm performance is viewed. On
-  one hand the most important measure of algorithm efficiency becomes
-  the number of function evaluations it takes for calculating optimum
-  up to a given accuracy. The CPU time spent by the algorithm becomes
-  somehow less important because function evaluations will normally
-  require incomparably more computational time. Because running
-  optimization procedures will often be just on the limit of
-  affordable, the goal will not always be to find an optimal solution
-  up to a specified accuracy, but rather to achieve significant
-  improvement within affordable computational time. <br>
-  <br>
-  &nbsp; The targeted scope of the library is beyond the area of its
-  original motivation. It is intended to provide a pool of algorithms
-  for different problems and facilities for extending this pool.
-  Beside that, interaction with other libraries and use of the library
-  in existing or future software is accounted for as much as possible.
-  A lot of stress is put on defining standard data types and function
-  prototypes used for different purposes, such as evaluation of
-  response functions and their derivatives or for storing results of
-  such evaluation and their use in building approximations. These
-  standards are defined in such a way that routines for similar tasks
-  from other libraries can be easily incorporated in the system, and
-  functions that are consistent with library standards can be easily
-  exported in standard forms required in other software environments.
-  Wrapping functions and data converters are provided for some common
-  cases, and the way how one can create own tools for this is being
-  documented in manuals. The standards are designed in such a way that
-  they are suitable for any environment, in particular to allow
-  recursive calls and work in multi-threaded environment. <br>
-  <br>
-  &nbsp; The library comes with a set of basic utilities that are
-  extensively used in implementation of basic building blocks and
-  algorithms. This includes e.g. basic matrix and vector operations
-  and generic implementation of data containers such as stacks. These
-  utilities are well documented in source code while overview is given
-  in <a href="#doc">documentation</a>.<br>
-  <br>
-  &nbsp; Many of elementary utilities make use of other free
-  libraries. Contribution of people who designed these libraries and
-  made them available is gratefully acknowledged.<br>
-  <br>
-  <h2 style="text-align: center;"><small><a name="availability"></a><span
-        style="color: rgb(204, 0, 0);">Availability<br>
-      </span></small></h2>
-  <p><br>
+    <div class="right">
+      <a href="../doc/index.html">Selected Documents</a> |
+      <a href="../../Inverse/index.html"><i>Inverse</i></a> |
+      <a href="../ioptlib/index.html"><i>IOptLib</i></a> |
+      <a href="../software/AnnApp/index.html"><i>AnnApp</i></a> |
+      <a href="../software/NeurApp/index.html"><i>NeurApp</i></a> |
+      <a href="../software/IGLibShellApp/index.html"><i>IGShell</i></a> |
+      <a href="https://ajgorhoe.github.io/">GitHub</a> / 
+      <a href="https://github.com/ajgorhoe/IGLib.workspace.base.iglib">IGLib</a> |
+      <a href="../igor.html">Igor G.</a>
+    </div>
+  </div>
+  <br />
+
+  <!-- Title card: -->
+  <div class="title-card">
+    <div class="title-text">
+      <h1>IOptlib</h1>
+      <p>
+        This page provides some information about <i>IOptLib</i> (the 
+        <i>Investigative Optimization Library</i>), used to support development
+        of engineering optimization and inverse analysis software.
+      </p>
+    </div>
+    <div class="title-logo">
+        <img src="ss_optapprox_converg.gif" alt="Logo" />
+    </div>
+  </div>
+  <br/>
+
+  <!-- Table of contents: -->
+  <div class="table-of-contents">
+    <hr width="100%"/>
+    <p><b>Contents</b>:
+      <ul>
+        <li><a href="#about">About the library</a>&nbsp;
+          <ul>
+            <li><a href="#availability">Availability</a>&nbsp;</li>
+          </ul>
+        </li>
+        <li><a href="#doc">Documentation</a>&nbsp;</li>
+        <li><a href="#examples">Example</a>&nbsp;</li>
+        <li><a href="#search">Search</a></li>
+      </ul>
+    </p>
+    <hr width="100%"/>
+  </div>
+
+  <h1 id="about">About the library</h1>
+  <p>
+    <i>IOptLib</i> (the <i>Investigative Optimization Library</i>)
+    is an optimization library for developing and testing algorithms for
+    solving engineering optimization problems. A priority goal is to
+    develop algorithms suited to problems with computationally expensive
+    and possibly noisy evaluation of the response (i.e. objective and
+    constraint) functions. The library is intended to provide modular
+    building blocks for constructing such algorithms, standardized
+    templates for interfacing tools obtained form other libraries, and
+    testing environment where different performance aspects of
+    algorithms can be readily extensively tested during and after the
+    development stage. Currently most of the efforts are devoted to
+    algorithms based on successive solution of approximated problems
+    obtained by local sampling and approximation of the response
+    functions. Such algorithms have complex designs and involve solution
+    of many sub-problems such as non-linear or quadratic programming
+    problems, matrix algebra, optimal sampling strategies, etc. The
+    intention is therefore to gradually accumulate efficient routines
+    for solving these problems, which will lead to broader
+    serviceability of the library. Any attempt was made to keep open the
+    possibility of starting development of new algorithms or attaching
+    to the existent functionality at any level. The basic library is
+    therefore intended to be distributed as free open source under
+    certain conditions. A couple of algorithms will be available under
+    different negotiable terms since this is necessary to provide the
+    funding for library development, however their building blocks
+    together with a set of quite useful algorithms will be provided with
+    the basic set that is more open what concerns availability.
+  </p>
+  <p>
+    The original motivation for the library was obtained in
+    optimization of forming processes where evaluation of objective and
+    constraint functions typically involves complex numerical simulation
+    with hundreds of thousands of degrees of freedom, very non-linear
+    and path dependent materials, multi-physics and multi-scale
+    phenomena etc. As result, not only the calculation of the objective
+    and constraint functions takes very long times even on the fastest
+    computers or parallel architectures, but these functions often
+    contain substantial amount of numerical noise. These conditions
+    impose a substantial turn in how algorithm performance is viewed. On
+    one hand the most important measure of algorithm efficiency becomes
+    the number of function evaluations it takes for calculating optimum
+    up to a given accuracy. The CPU time spent by the algorithm becomes
+    somehow less important because function evaluations will normally
+    require incomparably more computational time. Because running
+    optimization procedures will often be just on the limit of
+    affordable, the goal will not always be to find an optimal solution
+    up to a specified accuracy, but rather to achieve significant
+    improvement within affordable computational time.
+  </p>
+  <p>
+    The targeted scope of the library is beyond the area of its
+    original motivation. It is intended to provide a pool of algorithms
+    for different problems and facilities for extending this pool.
+    Beside that, interaction with other libraries and use of the library
+    in existing or future software is accounted for as much as possible.
+    A lot of stress is put on defining standard data types and function
+    prototypes used for different purposes, such as evaluation of
+    response functions and their derivatives or for storing results of
+    such evaluation and their use in building approximations. These
+    standards are defined in such a way that routines for similar tasks
+    from other libraries can be easily incorporated in the system, and
+    functions that are consistent with library standards can be easily
+    exported in standard forms required in other software environments.
+    Wrapping functions and data converters are provided for some common
+    cases, and the way how one can create own tools for this is being
+    documented in manuals. The standards are designed in such a way that
+    they are suitable for any environment, in particular to allow
+    recursive calls and work in multi-threaded environment.
+  </p>
+  <p>
+    The library comes with a set of basic utilities that are
+    extensively used in implementation of basic building blocks and
+    algorithms. This includes e.g. basic matrix and vector operations
+    and generic implementation of data containers such as stacks. These
+    utilities are well documented in source code while overview is given
+    in <a href="#doc">documentation</a>.
+  </p>
+  <p>
+    &nbsp; Many of elementary utilities make use of other free
+    libraries. Contribution of people who designed these libraries and
+    made them available is gratefully acknowledged.
+  </p>
+
+  <h2 id="availability">Availability</h2>
+  <p>
     &nbsp; The library has been released experimentally June 2008. It
     was initially planned that the library would be incorporated in
-    the optimization software <a href="../../inverse/index.html"><span style="font-style: italic;">Inverse</span></a> as
-    its base
+    the optimization software <a href="../../Inverse/index.html">
+    <i>Inverse</i></a> as its base
     library. However, this development did not continue after 2007,
     but the software still uses numerous routines from the library.
     The library was released publicly in order to promote the exchange
@@ -244,77 +191,63 @@
     and utilities has been transferred to that platform (some of it
     still in the sandbox section), or it is planned to be transferred.
   </p>
-  <br>
-  <center>
-    <h1> <a name="doc"></a><b><i>
-          <font color="#cc0000">
-            <font size="+2">Documentation<br>
-            </font>
-          </font>
-        </i></b></h1>
-  </center>
-  &nbsp; <a style="font-weight: bold;" href="doc/optlib.pdf">IOptLib
-    User's Manual</a>. This manual is mainly intended for users of the
-  library, however the extent of information is sufficient that it cna
-  be advantageously used by developers.<br>
-  <br>
-  &nbsp; <br>
-  &nbsp; <a href="../doc/rep/optalgsimplex.pdf"><span style="font-weight: bold;">Simplex algorithms for nonlinear
-      constraint optimization problems</span></a>. This documents
-  containd description of a set of modified Nelder-Mead simplex
-  algorithms that can be used for constraint nonlinear optimization.
-  These algorithms can beadvantageously&nbsp; used for optimization
-  when gradients of the objective and constraint functions are not
-  available and where these functions are not smooth.&nbsp; All the
-  described algorithms are implemented in <span style="font-style:
-      italic;">IOptLib</span>.<br>
-  <br>
-  &nbsp; <span style="font-weight: bold;">See also:</span> <br>
-  <ul>
-    <li>My <a href="../doc/index.html">other documentation</a>.</li>
-    <li>Documentation section on the page about <a href="../cobik/index.html#doc">my work at COBIK</a>.</li>
-    <li>Docuentation section on the <a href="../iglib/index.html#doc">IGLib
 
-        page</a>.</li>
-    <li>Collection of <a href="../links.html">optimization-related
-        links</a>.<br>
-    </li>
-    <li>Ph.D. thesis on <a href="../../inverse/doc/phd/index.html">optimization
+  <h1 id="doc">Documentation</h1>
+  <p>
+    <a href="doc/optlib.pdf">IOptLib User's Manual</a>. This manual is mainly 
+    intended for users of the library and its developers.
+  </p>
+  <p>
+    <a href="../doc/rep/optalgsimplex.pdf">Simplex algorithms for nonlinear
+    constraint optimization problems</a>. This document contains description 
+    of a set of modified Nelder-Mead simplex algorithms that can be used for
+    constraint nonlinear optimization. These algorithms can be used for solving
+    engineering optimization problems when gradients of the objective and constraint 
+    functions are not available or these functions are not smooth. The
+    described algorithms are implemented in <i>IOptLib</i>.
+  </p>
+  <p>
+    <b>See also</b>:
+    <ul>
+      <li>My <a href="../doc/index.html">other documentation</a>.&nbsp;</li>
+      <li>Documentation section on the page about <a href="../cobik/index.html#doc">my work at COBIK</a>.&nbsp;</li>
+      <li>Docuentation section on the <a href="../iglib/index.html#doc">IGLib page</a>.&nbsp;</li>
+      <!-- The following link is outdated.
+      <li>Collection of <a href="../links.html">optimization-related links</a>.&nbsp;</li>
+      -->
+      <li>Ph.D. thesis on the <a href="../../inverse/doc/phd/index.html">optimization shell <i>Inverse</i></a>.&nbsp;</li>
+    </ul>
+  </p>
 
-        shell <span style="font-style: italic;">Inverse</span></a>.<br>
-    </li>
-  </ul>
-  <br>
-  <br>
-  <h2 style="text-align: left;"><small><big><a name="examples"></a></big><span
-        style="color: rgb(204, 0, 0);"><big>Example: optimization by
-          using successive approximations of response</big><br>
-      </span></small></h2>
-  <br>
-  <img alt="" src="s_optapprox_converg.gif" style="width: 398px;
-      height: 396px;"><br>
-  &nbsp; This figure represents convergence of&nbsp; an algorithm
-  based on successive approximation of the response functions.
-  Contours of actual objective and constraint function are shown in
-  pale colors while contours of&nbsp; approximated functions are
-  plotted in stronger colors. Zero constraint contours (actual and
-  approximated) are plotted with thicker lines. Small points are the
-  sampling points where the response functions (loaded with some level
-  of noise) were calculated, and larger points are the solutions of
-  the approximated problems.<br>
-  <br>
-  <br>
-  &nbsp; <img src="approx_1.gif" alt="">&nbsp; <img src="approx_3.gif" alt="">&nbsp; <img src="approx_6.gif"
+  <h2 id="examples">Example: Optimization by
+    Using Successive Approximations of Response</h2>
+  <img alt="" src="s_optapprox_converg.gif" style="width: 398px; height: 396px;">
+  <p>
+    This figure represents convergence of&nbsp; an algorithm
+    based on successive approximation of the response functions.
+    Contours of actual objective and constraint function are shown in
+    pale colors while contours of&nbsp; approximated functions are
+    plotted in stronger colors. Zero constraint contours (actual and
+    approximated) are plotted with thicker lines. Small points are the
+    sampling points where the response functions (loaded with some level
+    of noise) were calculated, and larger points are the solutions of
+    the approximated problems.
+  </p>
+  <img src="approx_1.gif" alt="">&nbsp; <img src="approx_3.gif" alt="">&nbsp; <img src="approx_6.gif"
     alt="">&nbsp;
-  <img src="approx_10.gif" alt=""><br>
-  &nbsp; The figure above shows approximations of the objective (green
-  contours) and constraint functions (blue contours, brown 0 contour)
-  after 1, 3, 6 and 10 iterations of an algorithm based on successive
-  approximations. First, the approximations are very rough, with
-  better approximation around the initial point. Over iterations,
-  center of the approximated region moves towards optimum (see Figure
-  above) and approximation gets better around the optimum while region
-  far from optimum is not of interest and is not well approximated.<br>
+  <img src="approx_10.gif" alt="">
+  
+  <p>
+    The figures above shows approximations of the objective (green
+    contours) and constraint functions (blue contours, brown 0 contour)
+    after 1, 3, 6 and 10 iterations of an algorithm based on successive
+    approximations. First, the approximations are very rough, with
+    better approximation around the initial point. Over iterations,
+    center of the approximated region moves towards optimum (see Figure
+    above) and approximation gets better around the optimum while region
+    far from optimum is not of interest and is not well approximated.
+  </p>
+
   <br>
   <hr width="100%"><br>
   <br>
@@ -342,10 +275,8 @@
       </tbody>
     </table>
   </form>
+  
   <!-- SiteSearch Google -->
-  <p> </p>
-  <p> </p>
-  <p> </p>
   <p> </p>
   <br>
   <hr>
@@ -368,7 +299,7 @@
         <tr nosave="">
           <td nosave="" valign="top" align="left">
             <div align="right">
-              <font size="-1">&nbsp; Maintained by <a href="http://www2.arnes.si/%7Eljc3m2/igor/">Igor
+              <font size="-1">&nbsp; Maintained by <a href="../igor.html">Igor
                   Grešovnik</a>&nbsp; <br>
               </font>
             </div>
@@ -394,15 +325,7 @@
   <br>
   <big style="color: rgb(204, 0, 0);"><span style="font-weight: bold;"></span></big><br>
   <br>
-  <br>
-  <small>Number of accesses:&nbsp;&nbsp;&nbsp;&nbsp; </small><a
-    href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/index.html"><img
-      src="http://www.arnes.si/cgi-bin/counter?md=7%7Cdd=B%7Cid=IGarnes_igor_ioptlib_index" title="" alt="If you don't see the access counter properly then
-        click on the link!" style="border: 0px solid ; width: 172px;
-        height: 28px;"></a><small>&nbsp;&nbsp;&nbsp; If you don't see
-    the access counter properly then please follow <a href="http://www2.arnes.si/%7Eljc3m2/igor/ioptlib/index.html">this
-      link</a>!</small><br>
-  <br>
+  
   <br>
 </body>
 
