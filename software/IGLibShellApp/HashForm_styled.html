@@ -68,6 +68,7 @@
   </script>
 
   <!-- Tags below define icons, CSSs, and scripts. Leave them as absolute URLs. -->
+  <link rel="stylesheet" href="https://ajgorhoe.github.io/scripts/iglib.css" />
   <link rel="icon" href="https://ajgorhoe.github.io/icons/IGLibIcon_128x128.png" />
   <link rel="stylesheet" href="https://ajgorhoe.github.io/scripts/IgsScriptSupport.css" />
   <!-- The following two script elements perform canonical redirect: -->
@@ -75,126 +76,92 @@
   <script>igsCanonicalRedirect();</script>
 </head>
 
-<body style=" color: rgb(0, 0, 0); background-color: rgb(255, 255,
-    255);" vlink="#006600" link="#0000ee" alink="#fe0000">
-  <div align="right"><small>&nbsp; </small>
-    <table width="100%" cellspacing="2" cellpadding="2" border="0">
-      <tbody>
-        <tr>
-          <td valign="top"><small><small>&nbsp;&nbsp; &nbsp; &nbsp;</small><small><big><big>
-                    <small><a href="./"><big>./ <small>(directory)</small></big></a></small></big></big>
-                &nbsp;&nbsp;<small> <a href="../index.html"><span style="font-weight: bold;">&lt;&lt;</span></a>
-                  &nbsp;&nbsp; <a href="../index.html"><span style="font-weight: bold;">&lt; back</span></a>
-                  &nbsp;&nbsp;</small></small></small>&nbsp;&nbsp; <small><a href="index.html#search"
-                style="font-weight: bold;">Search</a></small>
-            &nbsp;<small><small><small> &nbsp; </small></small></small></td>
-          <td valign="top" align="right"><small>&nbsp; <a href="index.html"><i>IGShell</i></a> &nbsp;&nbsp; <a
-                href="../../iglib/index.html"><span style="font-style:
-                    italic;">IGLib</span></a> &nbsp; &nbsp;&nbsp; </small></td>
-        </tr>
-      </tbody>
-    </table>
-    <font size="-1"><a href="http://www.c3m.si/igor"> </a></font>
-  </div>
-  <center>
-    <div style="text-align: left;">
-      <div style="text-align: right;">&nbsp;&nbsp;<span style="font-style: italic;"> </span>
-        <font color="#000000"><span style="font-style: italic;"><br>
-          </span></font>
-      </div>
+<body>
+  <!-- Original style on the body element:
+    <body style=" color: rgb(0, 0, 0); background-color: rgb(255, 255,
+      255);" vlink="#006600" link="#0000ee" alink="#fe0000">
+  -->
+      
+  <!-- Navigation bar at the top of the page: -->
+  <div class="top-nav">
+    <div class="left">
+      <a href="../index.html">&lt; Software</a> |
+      <a href="../../index.html">&lt;&lt; Site Map</a> |
+      <a href="#search">Search</a> |
     </div>
-  </center>
-  <table nosave="" style="width: 100%;" cols="2" cellspacing="5" cellpadding="0">
-    <tbody>
-      <tr nosave="" valign="top">
-        <td nosave="" style="vertical-align: middle; text-align: left;
-            width: 90%;"> <span style="font-weight: bold;"></span><br>
-          <h1 style="text-align: center;">
-              <font color="#cc0000" size="+2">
-                HashForm &amp; HashShell
-              </font>
-              <br>
-          </h1>
+    <div class="right">
+      <a href="../../doc/index.html">Selected Documents</a> |
+      <a href="../../../Inverse/index.html"><i>Inverse</i></a> |
+      <a href="../../ioptlib/index.html"><i>IOptLib</i></a> |
+      <a href="../../iglib/index.html"><i>IGLib</i></a> |
+      <a href="../NeurApp/index.html"><i>NeurApp</i></a> |
+      <a href="../IGLibShellApp/index.html"><i>IGShell</i></a> |
+      <a href="https://ajgorhoe.github.io/">GitHub</a> / 
+      <a href="https://github.com/ajgorhoe/IGLib.workspace.base.iglib">IGLib</a> |
+      <a href="../../igor.html">Igor G.</a>
+    </div>
+  </div>
+  <br />
 
-          <p style="text-align: left;"><b>Freeware for calculation of
-              hash values of files and text. MD5, SHA-1, SHA-256 and
-              SHA-512 checksums are supported. <br>
-            </b></p>
-          <font color="#000000"> </font><span style="font-weight:
-              bold;"></span><br>
-          <font color="#000000"> </font>
-        </td>
-        <td style="text-align: right;" nosave="">&nbsp;&nbsp; <img src="doc/hash.jpg" alt="HashForm &amp; HashShell
-              screenshot." style="width: 336px; height: 256px;" width="336" height="256"><b> &nbsp; &nbsp;
-            &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; </b></td>
-      </tr>
-    </tbody>
-  </table>
-  <p><b><br>
-    </b></p>
-  <p> </p>
-  <hr width="100%">
-  <center>
-    <table nosave="" cols="2" width="100%">
-      <tbody>
-        <tr nosave="" valign="top">
-          <td nosave=""> <span style="font-weight: bold;">Contents:<br>
-            </span>
-            <ul>
-              <li><a href="#about">About the Software</a>&nbsp; <br>
-              </li>
-              <ul>
-                <li><a href="#hashform">HashForm</a> (<a href="doc/HashForm_help.html">User manual</a>)&nbsp;
-                <br>
-                </li>
-                <li><a href="#hashshell">HashShell</a>&nbsp; <br>
-                </li>
-              </ul>
-              <ul>
-              </ul>
-              <li><a href="#doc"><span style="text-decoration:
-                      underline;">Documentation</span></a>&nbsp; <br>
-              </li>
-              <li><a href="#download">Download</a>&nbsp; <br>
-              </li>
-              <ul>
-                <li><a href="#versions">Other Versions</a>&nbsp; <br>
-                </li>
-              </ul>
-              <ul>
-                <li><a href="#other_software">Other Software</a>&nbsp;
-                  <br>
-                </li>
-              </ul>
-              <li><a href="#seealso">See Also</a> (a list of useful
-                links) <br>
-              </li>
-              <ul>
-              </ul>
-            </ul>
-            <br>
-            <font color="#000000"><span style="font-weight: bold;"></span></font>
-          </td>
-          <td nosave="" align="right">&nbsp;&nbsp;&nbsp; <br>
-            &nbsp;&nbsp; <a href="#search" style="font-weight: bold;">Search</a>
-            &nbsp; <br>
-            &nbsp;&nbsp;&nbsp;&nbsp; <b><br>
-              &nbsp; &nbsp; &nbsp; <br>
-            </b></td>
-        </tr>
-      </tbody>
-    </table>
-    <br>
-  </center>
-  <hr width="100%">&nbsp;&nbsp; <br>
-  <center>
-    <h1> <a name="about"></a><b><i>
-          <font color="#cc0000">
-            <font size="+2">About the Software<br>
-            </font>
-          </font>
-        </i></b></h1>
-  </center>
+  <!-- Title card: -->
+  <div class="title-card">
+    <div class="title-text">
+        <h1>HashForm & HashShell</h1>
+        <p>
+          Software for calculation of hash functions of files and text 
+          (MD5, SHA-1, SHA-256 and SHA-512 are supported),
+          symmetric and asymmetric encryption, generation and verification
+          of electronic signatures, etc.
+        </p>
+    </div>
+    <div class="title-logo">
+        <img src="doc/hash.jpg" alt="Logo" />
+    </div>
+  </div>
+  <br />
+
+  <!-- Table of contents: -->
+  <div class="table-of-contents">
+    <hr width="100%"/>
+    <p><b>Contents</b>:</p>
+    <ul>
+      <li><a href="#about">About the Software</a>&nbsp; <br>
+      </li>
+      <ul>
+        <li><a href="#hashform">HashForm</a> (<a href="doc/HashForm_help.html">User manual</a>)&nbsp;
+        <br>
+        </li>
+        <li><a href="#hashshell">HashShell</a>&nbsp; <br>
+        </li>
+      </ul>
+      <ul>
+      </ul>
+      <li><a href="#doc"><span style="text-decoration:
+              underline;">Documentation</span></a>&nbsp; <br>
+      </li>
+      <li><a href="#download">Download</a>&nbsp; <br>
+      </li>
+      <ul>
+        <li><a href="#versions">Other Versions</a>&nbsp; <br>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="#other_software">Other Software</a>&nbsp;
+          <br>
+        </li>
+      </ul>
+      <li><a href="#seealso">See Also</a> (a list of useful
+        links) <br>
+      </li>
+      <ul>
+      </ul>
+    </ul>
+    <hr width="100%">
+  </div>
+
+
+  <h1 id="about">About the Software</h1>
+  
   &nbsp; <a href="#hashform"><i><b>HashForm</b></i></a> is a simple
   applications for generation of MD5, SHA-1, SHA-256 and SHA-512
   hashes (checksums) from files and text. In addition, a supposed
@@ -1803,7 +1770,60 @@ mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings"><span style="m
   </ul>
   <ul>
   </ul>
-  <h2 style="text-align: center;"><small><a name="other_software"></a><span style="color: rgb(204, 0, 0);">Other
+
+
+
+  <h2 id="other_software">Other Software</h2>
+  <a href="../../iglib/index.html"><img src="../NeurApp/dragonfly_server_small.jpg"
+    alt="IGLib Logo" width="336" height="256" border="0"></a> 
+  <p>
+    <i>HashForm</i> and <i>HashShell</i> are 
+    based on the <a href="../../iglib/index.html"><i>Investigative
+    Generic Library (IGLib.NET)</i></a>.<br/>
+    Some other software based on this library includes:
+  </p>
+
+  <ul>
+    <li><a href="../IGLibShellApp/HashForm.html#hashform"><i>HashForm</i></a>
+      - application for calculation and verification of checksums
+      (MD5, SHA-1, SHA-256, SHA-512) of files and text.
+    </li>
+    <li><a
+        href="../IGLibShellApp/HashForm.html#hashshell"><i>HashShell</i></a>
+      - a shell application with various cryptography-related
+      functionality (calculation of hash functions / checksums,
+      symmetric and asymmetric encryption, certificate management,
+      etc.).
+    </li>
+      <li>
+        <a href="../NeurApp/index.html"><i>NeurApp</i></a>
+        - an educational application for visually exploring features
+        of function approximation with artificial neural networks
+        (ANN). It creates 1D and 2D ANN models of user defined
+        functions and provides visualization capabilities to compare
+        these models with originals. It can be <a
+        href="https://www.softpedia.com/get/Science-CAD/NeurApp.shtml">
+        downloaded from Softpedia</a>.<br>
+    </li>
+    <li>
+      <a href="../AnnApp/index.html"><i>AnnApp</i></a> -
+      software for exploring multidimensional ANN-based models.
+    </li>
+    <li><a href="../IGLibShellApp/index.html"><i>IGShell</i></a> - 
+      a shell application based on <i>IGLib</i>.</li>
+    <li>
+      <a href="../thesis_petek/index.html"><i>Oscillator Modeller</i></a>
+        - an educational application for playing with nonlinear driven 
+        oscillators and their resonance curves calculated numerically.
+    </li>
+  </ul>
+
+
+  <hr/>
+  <p>Remark: This section between horizontal lines will be
+    replaced by the section above and deleted.</p>
+  
+    <h2 style="text-align: center;"><small><a name="other_software"></a><span style="color: rgb(204, 0, 0);">Other
         Software&nbsp; <br>
       </span></small></h2>
   <i>HashForm</i> and <i>HashShell</i> are based on the <a
@@ -1864,6 +1884,11 @@ mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings"><span style="m
         curves. <br>
       </span></li>
   </ul>
+  <hr/>
+
+
+
+
   <center>
     <h1> <a name="seealso"></a><b><i>
           <font color="#cc0000">
