@@ -522,416 +522,496 @@ mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings"><span style="m
   </figure> 
 
   <figure>
-    <a href="">
-    <img alt="" src="" 
+    <a href="screenshots/hashform/03_hashform_browsefile.jpg">
+    <img alt="Browse for file." src="screenshots/hashform/03_hashform_browsefile.jpg" 
       style="width: min(881px, 100%);"></a>
-    <figcaption></figcaption>
+    <figcaption>
+      Users can also browse for the file. Location of the last file is
+      remembered and browsing always starts form this location.
+    </figcaption>
   </figure> 
 
+  <figure>
+    <a href="screenshots/hashform/06_hashform_textmode_when_typing.jpg">
+    <img alt="Text mode." src="screenshots/hashform/06_hashform_textmode_when_typing.jpg" 
+      style="width: min(881px, 100%);"></a>
+    <figcaption>
+      In text mode (as opposed to file mode) checksums (hashes) are
+      calculated for arbitrary text that user inserts into text box at the
+      bottom (note that now the "Text" radio button is checked in the
+      top-left part of the window). Hashes can be checked immediately as
+      user types (the "Calculate when Typing") checkbox. As always, the
+      indicator light in the top-right corner informs the user whether
+      calculation is in progress, it is finished, or the application is idle.
+    </figcaption>
+  </figure> 
 
+  <figure>
+    <a href="screenshots/hashform/08_hashform_savehashes.jpg">
+    <img alt="Save calculated hashes." src="screenshots/hashform/08_hashform_savehashes.jpg" 
+      style="width: min(881px, 100%);"></a>
+    <figcaption>
+      Calculated file hashes can be saved to a file. Just check the "Save
+      Hashes to Files".
+    </figcaption>
+  </figure> 
 
+  <figure>
+    <a href="screenshots/hashform/10_hashform_textdragdrop.jpg">
+    <img alt="Drag and drop text." src="screenshots/hashform/10_hashform_textdragdrop.jpg" 
+      style="width: min(881px, 100%);"></a>
+    <figcaption>
+      Text can also be dragged and dropped into the text box at the bottom
+      of application window. In any application shat supports selection
+      and dragging of text (browsers, office applications, word
+      processors, text editors, etc.), select the text whose hashes need
+      to be calculated, and simply drag the text into the textbox at the
+      bottom. If in file mode, the application automatically switches to
+      text mode when text is dropped.
+    </figcaption>
+  </figure> 
 
+  <figure>
+    <a href="screenshots/hashform/10_hashform_textdragdrop.jpg">
+    <img alt="Drag and drop text." src="screenshots/hashform/10_hashform_textdragdrop.jpg" 
+      style="width: min(881px, 100%);"></a>
+    <figcaption>
+      Text can also be dragged and dropped into the text box at the bottom
+      of application window. In any application shat supports selection
+      and dragging of text (browsers, office applications, word
+      processors, text editors, etc.), select the text whose hashes need
+      to be calculated, and simply drag the text into the textbox at the
+      bottom. If in file mode, the application automatically switches to
+      text mode when text is dropped.
+    </figcaption>
+  </figure> 
 
-
-
-
-
-  <img src="screenshots/hashform/03_hashform_browsefile.jpg" alt="Browse for file." width="685" height="441"><br>
-  Users can also browse for the file. Location of the last file is
-  remembered and browsing always starts form this location.<br>
-  <br>
-
-
-
-  <img src="screenshots/hashform/06_hashform_textmode_when_typing.jpg" alt="Text mode." width="881" height="554"><br>
-  In text mode (as opposed to file mode) checksums (hashes) are
-  calculated for arbitrary text that user inserts into text box at the
-  bottom (note that now the "Text" radio button is checked in the
-  top-left part of the window). Hashes can be checked immediately as
-  user types (the "Calculate when Typing") checkbox. As always, the
-  indicator light in the top-right corner informs the user whether
-  calculation is in progress, it is finished, or the application is
-  idle.<br>
-  <br>
-
-
-
-
-  <img src="screenshots/hashform/08_hashform_savehashes.jpg" alt="Save
-      calculated hashes." width="881" height="499"><br>
-  Calculated file hashes can be saved to a file. Just check the "Save
-  Hashes to Files".<br>
-  <br>
-
-
-
-  <img src="screenshots/hashform/10_hashform_textdragdrop.jpg" alt="Drag and drop text." width="748" height="425"><br>
-  Text can also be dragged and dropped into the text box at the bottom
-  of application window. In any application shat supports selection
-  and dragging of text (browsers, office applications, word
-  processors, text editors, etc.), select the text whose hashes need
-  to be calculated, and simply drag the text into the textbox at the
-  bottom. If in file mode, the application automatically switches to
-  text mode when text is dropped.<br>
-  <br>
-
-
-
-  <img src="screenshots/hashform/10_hashform_linux.jpg" alt="HashForm
-      running on Ubuntu Linux." width="827" height="547"><br>
-  HashForm is cross-platform. Here it is running on Ubuntu Linux.<br>
-  <br>
-
-
-
-
-
+  <figure>
+    <a href="screenshots/hashform/10_hashform_linux.jpg">
+    <img alt="HashForm
+      running on Ubuntu Linux." src="screenshots/hashform/10_hashform_linux.jpg" 
+      style="width: min(881px, 100%);"></a>
+    <figcaption>
+      HashForm is cross-platform. Here it is running on Ubuntu Linux.
+    </figcaption>
+  </figure> 
 
   <h1 id="hashshell">HashShell</h1>
+  <p>
+    <a href="download/HashShell.zip"><i>HashShell</i></a> is a
+    command-line application that contains commands for a number of
+    cryptographic utilities. As shell application, it is suitable for
+    use in batch files.<br>
+    The available cryptographic utilities include:<br>
+    <ul>
+      <li>Calculation of cryptographic file hashes (checksums):</li>
+      <ul>
+        <li>MD5, SHA-1, SHA-256, SHA-512 haches are computed.</li>
+        <li>Calculation of hashes for strings, byte arrays, or files</li>
+        <li>Bulk shecksums:</li>
+        <ul>
+          <li>File hashes can easily be calculated for all files from
+            the specified directories and all their recursive
+            subdirectories, with possibility to use wildcard filters and
+            to specify recursive directory level.</li>
+          <li>Hashes stored to a file can easily be verified by a single
+            command at a later time, providing a mechanism for easy
+            monitoring directory trees for changes.</li>
+        </ul>
+      </ul>
+      <li>Password hashing, key derivation, and password authentication.</li>
+      <li>Symmetric encryption:</li>
+      <ul>
+        <li>Rijndael, AES (Advanced Encryption Standard), TripleDes,
+          DES, RC2 encryption algorithms.</li>
+        <li>Encryption of strings, byte arrays, or files.</li>
+        <ul>
+          <li>Input/output in string form or in hexadecimal or base 64
+            encoding binary form is supported.</li>
+        </ul>
+        <li>Easy and safe bulk encryption of all files from the
+          specified directories and all their recursive subdirectories,
+          with possibility to use wildcard filters and to specify
+          recursive directory level.</li>
+        <ul>
+          <li>Originals are deleted only after encryption/decryption</li>
+          <li>It is possible to separate the encryption/decryption and
+            cleaning stage.</li>
+          <li>One version of a file (original or encrypted) always
+            remains in its location. Special cleaning commands must be
+            performed to delete all versions of a file.</li>
+        </ul>
+        <li>Various levels of commands - from basic (intended for expert
+          users) to safer high level commands with greater level of
+          automatism and less options.</li>
+      </ul>
+      <li>Public key cryptography (asymmetric algorithms) - not yet
+        implemented in free versions of software:</li>
+      <ul>
+        <li>RSA, DSA public key algorithms.<br>
+        </li>
+        <li>Asymmetric encryption, decryption, and signatures.</li>
+        <li>Key generation.</li>
+        <li>Encryption of strings, byte arrays, or files.</li>
+        <li>Bulk encryption of files.</li>
+        <ul>
+          <li>The same simplicity and safety as for symmetric
+            encryption, although files are not commonly encrypted by
+            asymmetric algorithms.</li>
+        </ul>
+      </ul>
+      <li>Elaborated user interface:<br>
+      </li>
+      <ul>
+        <li>Countless possibilities through parameters that modify
+          behavior of commands.</li>
+        <li>Uniform and mnemonic semantics of parameters. <br>
+        </li>
+        <li>Easy selection of multiple input files by commands.</li>
+        <li>Uniform, safe and comfortable policy of handling file
+          overwrites and deletions.</li>
+        <ul>
+          <li>By default, overwrites and deletions need user
+            confirmation. <br>
+          </li>
+          <li>Within a single command, confirmations can be done for all
+            affected files by a single instruction.</li>
+          <li>Easy to repeat previous choices.</li>
+          <li>Additional options to control automatic overwrites or
+            deletions, or automatic skipping, make possible to use the
+            shell in batch files.<br>
+          </li>
+        </ul>
+        <li>Input of strings and byte arrays in different forms. <br>
+        </li>
+      </ul>
+      <li>A number of helper utilities.</li>
+      <ul>
+        <li>File cleaning:</li>
+        <ul>
+          <li>Easily remove originals, encrypted files, or decrypted
+            files.</li>
+          <li>Safe behavior - at least one version of each file will
+            remain, unless special options are used.</li>
+        </ul>
+        <li>Key generation:</li>
+        <ul>
+          <li>Key derivation functions for generation of cryptographic
+            keys or initialization vectors from passwords.</li>
+          <li>Provided or randomly generated password salts can be used.
+            Easy switch between both through command parameters.</li>
+          <li>Time measuring functionality provided to assess the number
+            of iterations to use in order to achieve sufficient level of
+            security.</li>
+        </ul>
+        <li>Handy conversion utilities:</li>
+        <ul>
+          <li>Convert between strings, arrays of bytes in hexadecimal or
+            base-64 encoding, or integers.<br>
+          </li>
+        </ul>
+      </ul>
+      <li>Easy learning <a href="excrypto.cmd.html">by example</a>.</li>
+    </ul>
+  </p>
+  <p>
+    Rather than having extensive documentation, use of
+    cryptographic utilities is documented by the example command file <a href="excrypto.cmd.html"><i>excrypto.cmd</i></a>
+    (<a href="examples/crypto/excrypto.cmd">text version</a>). This file
+    contains explaining comments and a number of example commands that
+    should be run from the containing directory <a href="examples/crypto/">examples/crypto/</a>. The best way to run
+    the commands is to download and extract the <a href="download/examples.zip">examples directory</a>, go to the <a
+      href="examples/crypto/">examples/crypto/</a> subdirectory and run
+    the shell in interactive mode by the following command:
+  </p>
+  <code>
+    <i>HashShell.exe Interactive</i>
+  </code>
+  <p>
+    This launches a shell with interactive command prompt where you can
+    copy commands from the example command file and execute them one by
+    one. It is important that the current directory is set to the
+    directory that contains the&nbsp; <a href="excrypto.cmd.html"><i>excrypto.cmd</i></a>
+    file (<a href="examples/crypto/excrypto.cmd">text version</a>),
+    since many of the commands use auxiliary files and directories that
+    are included in this directory. Some examples of commands that you
+    can run by the application can also be found in the <i><a href="download/HashShell.cmd">HashShell.cmd</a></i> file,
+    but this is far less exhaustive than <i>excrypto.cmd</i>.
+  </p>
+  <p>
+    You can run the applications in several ways. The most common is to
+    execute a single application's command:
+  </p>
+  <code>
+    <i>HashShell.exe CommandName &lt;Arg1&gt; &lt;Arg2&gt; ...</i>
+  </code>
 
-  &nbsp;&nbsp; <a href="download/HashShell.zip"> HashShell</a> is a
-  command-line application that contains commands for a number of
-  cryptographic utilities. As shell application, it is suitable for
-  use in batch files.<br>
-  The available cryptographic utilities include:<br>
-  <ul>
-    <li>Calculation of cryptographic file hashes (checksums):</li>
-    <ul>
-      <li>MD5, SHA-1, SHA-256, SHA-512 haches are computed.</li>
-      <li>Calculation of hashes for strings, byte arrays, or files</li>
-      <li>Bulk shecksums:</li>
-      <ul>
-        <li>File hashes can easily be calculated for all files from
-          the specified directories and all their recursive
-          subdirectories, with possibility to use wildcard filters and
-          to specify recursive directory level.</li>
-        <li>Hashes stored to a file can easily be verified by a single
-          command at a later time, providing a mechanism for easy
-          monitoring directory trees for changes.</li>
-      </ul>
-    </ul>
-    <li>Password hashing, key derivation, and password authentication.</li>
-    <li>Symmetric encryption:</li>
-    <ul>
-      <li>Rijndael, AES (Advanced Encryption Standard), TripleDes,
-        DES, RC2 encryption algorithms.</li>
-      <li>Encryption of strings, byte arrays, or files.</li>
-      <ul>
-        <li>Input/output in string form or in hexadecimal or base 64
-          encoding binary form is supported.</li>
-      </ul>
-      <li>Easy and safe bulk encryption of all files from the
-        specified directories and all their recursive subdirectories,
-        with possibility to use wildcard filters and to specify
-        recursive directory level.</li>
-      <ul>
-        <li>Originals are deleted only after encryption/decryption</li>
-        <li>It is possible to separate the encryption/decryption and
-          cleaning stage.</li>
-        <li>One version of a file (original or encrypted) always
-          remains in its location. Special cleaning commands must be
-          performed to delete all versions of a file.</li>
-      </ul>
-      <li>Various levels of commands - from basic (intended for expert
-        users) to safer high level commands with greater level of
-        automatism and less options.</li>
-    </ul>
-    <li>Public key cryptography (asymmetric algorithms) - not yet
-      implemented in free versions of software:</li>
-    <ul>
-      <li>RSA, DSA public key algorithms.<br>
-      </li>
-      <li>Asymmetric encryption, decryption, and signatures.</li>
-      <li>Key generation.</li>
-      <li>Encryption of strings, byte arrays, or files.</li>
-      <li>Bulk encryption of files.</li>
-      <ul>
-        <li>The same simplicity and safety as for symmetric
-          encryption, although files are not commonly encrypted by
-          asymmetric algorithms.</li>
-      </ul>
-    </ul>
-    <li>Elaborated user interface:<br>
-    </li>
-    <ul>
-      <li>Countless possibilities through parameters that modify
-        behavior of commands.</li>
-      <li>Uniform and mnemonic semantics of parameters. <br>
-      </li>
-      <li>Easy selection of multiple input files by commands.</li>
-      <li>Uniform, safe and comfortable policy of handling file
-        overwrites and deletions.</li>
-      <ul>
-        <li>By default, overwrites and deletions need user
-          confirmation. <br>
-        </li>
-        <li>Within a single command, confirmations can be done for all
-          affected files by a single instruction.</li>
-        <li>Easy to repeat previous choices.</li>
-        <li>Additional options to control automatic overwrites or
-          deletions, or automatic skipping, make possible to use the
-          shell in batch files.<br>
-        </li>
-      </ul>
-      <li>Input of strings and byte arrays in different forms. <br>
-      </li>
-    </ul>
-    <li>A number of helper utilities.</li>
-    <ul>
-      <li>File cleaning:</li>
-      <ul>
-        <li>Easily remove originals, encrypted files, or decrypted
-          files.</li>
-        <li>Safe behavior - at least one version of each file will
-          remain, unless special options are used.</li>
-      </ul>
-      <li>Key generation:</li>
-      <ul>
-        <li>Key derivation functions for generation of cryptographic
-          keys or initialization vectors from passwords.</li>
-        <li>Provided or randomly generated password salts can be used.
-          Easy switch between both through command parameters.</li>
-        <li>Time measuring functionality provided to assess the number
-          of iterations to use in order to achieve sufficient level of
-          security.</li>
-      </ul>
-      <li>Handy conversion utilities:</li>
-      <ul>
-        <li>Convert between strings, arrays of bytes in hexadecimal or
-          base-64 encoding, or integers.<br>
-        </li>
-      </ul>
-    </ul>
-    <li>Easy learning <a href="excrypto.cmd.html">by example</a>.</li>
-  </ul>
+  <p>
+    For example, the following command will calculate hash values of the
+    executable itself:
+  </p>
+  <command>
+    <i>HashShell.exe GetFileHash HashShell.exe false</i>
+  </command>
+  <p>
+    In the above case, the "false" argument instructs the command not to
+    write the calculated hashes to a file. If this argument was true,
+    the hash values would be written to the file named
+    "HashShell.exe.chk", located in the same directory as the file whose
+    hashes are calculated.
+  </p>
+  <p>
+    From HashShell, you can also launch the GUI application <a href="#hashform">HashForm</a> 
+    for calculation and verification of file / string cryptographic hashes:<br>
+  </p>
+  <code>
+    <i>HashShell.exe HashForm</i>
+  </code>
+  <p>
+  <b>Other ways of using HashShell:</b></p>
+  <p>
+    The application can be launched in <font color="#cc0000"><b>interactive
+    mode</b></font> by running:
+  </p>
+  <code>
+    <i>HashShell.exe Interactive</i>
+  </code>
+
+  <p>
+    or shortly:
+  </p>
+  <code>
+    <i>HashShell.exe int</i>
+  </code>
+  <p>
+    In the interactive mode, you can insert commands one by one. You can
+    copy commands from the example command file (<a href="download/HashShell.cmd">HashShell.cmd</a> or <a
+      href="examples/crypto/excrypto.cmd">excrypto.cmd</a> / <a href="excrypto.cmd.html">html</a>), e.g.:
+  </p>
+  <code>
+    <i>Cmd&gt;GetFileHash HashShell.exe false</i>
+  </code>
+
   <br>
-  &nbsp; Rather than having extensive documentation, use of
-  cryptographic utilities is documented by the example command file <a href="excrypto.cmd.html"><i>excrypto.cmd</i></a>
-  (<a href="examples/crypto/excrypto.cmd">text version</a>). This file
-  contains explaining comments and a number of example commands that
-  should be run from the containing directory <a href="examples/crypto/">examples/crypto/</a>. The best way to run
-  the commands is to download and extract the <a href="download/examples.zip">examples directory</a>, go to the <a
-    href="examples/crypto/">examples/crypto/</a> subdirectory and run
-  the shell in interactive mode by the following command:<br>
+  &nbsp;&nbsp;&nbsp; <br>
   <br>
-  &nbsp;&nbsp;&nbsp; <i><b>HashShell.exe Interactive </b></i><br>
+  <p>
+    Yet another way to use the application is to run a command file,
+    which is executed by teh application's command-line interpreter:
+  </p>
+  <code>
+    <i>HashShell.exe Run HashShell.cmd</i>
+  </code>
+
   <br>
-  This launches a shell with interactive command prompt where you can
-  copy commands from the example command file and execute them one by
-  one. It is important that the current directory is set to the
-  directory that contains the&nbsp; <a href="excrypto.cmd.html"><i>excrypto.cmd</i></a>
-  file (<a href="examples/crypto/excrypto.cmd">text version</a>),
-  since many of the commands use auxiliary files and directories that
-  are included in this directory. Some examples of commands that you
-  can run by the application can also be found in the <i><a href="download/HashShell.cmd">HashShell.cmd</a></i> file,
-  but
-  this is far less exhaustive than <i>excrypto.cmd</i>. <br>
+  &nbsp; &nbsp; <br>
   <br>
-  You can run the applications in several ways. The most common is to
-  execute a single application's command:<br>
-  <br>
-  &nbsp;&nbsp;&nbsp; <i><b>HashShell.exe CommandName &lt;Arg1&gt;
-      &lt;Arg2&gt; ...</b></i><br>
-  <br>
-  For example, the following command will calculate hash values of the
-  executable itself:<br>
-  <br>
-  &nbsp;&nbsp;&nbsp; <i><b>HashShell.exe GetFileHash HashShell.exe
-      false</b></i><br>
-  <br>
-  In the above case, the "false" argument instructs the command not to
-  write the calculated hashes to a file. If this argument was true,
-  the hash values would be written to the file named
-  "HashShell.exe.chk", located in the same directory as the file whose
-  hashes are calculated.<br>
-  <br>
-  From HashShell, you can also launch the GUI application <a href="#hashform">HashForm</a> for calculation and
-  verification of
-  file/string cryptographic hashes:<br>
-  <br>
-  &nbsp;&nbsp;&nbsp; <i><b>HashShell.exe HashForm</b></i><br>
-  <br>
-  <br>
-  <b>&nbsp;&nbsp;&nbsp; Other ways of using HashShell:</b><br>
-  <br>
-  The application can be launched in <font color="#cc0000"><b>interactive
-      mode</b></font> by running <br>
-  <br>
-  &nbsp;&nbsp;&nbsp; <i><b>HashShell.exe Interactive</b></i><br>
-  <br>
-  or shortly<br>
-  <br>
-  &nbsp;&nbsp;&nbsp; <i><b>HashShell.exe int</b></i><br>
-  <br>
-  In the interactive mode, you can insert commands one by one. You can
-  copy commands from the example command file (<a href="download/HashShell.cmd">HashShell.cmd</a> or <a
-    href="examples/crypto/excrypto.cmd">excrypto.cmd</a> / <a href="excrypto.cmd.html">html</a>), e.g.<br>
-  <br>
-  &nbsp;&nbsp;&nbsp; <i><b>Cmd&gt;GetFileHash HashShell.exe false</b></i><br>
-  <br>
-  Yet another way to use the application is to run a command file,
-  which is executed by teh application's command-line interpreter:<br>
-  <br>
-  &nbsp; &nbsp; <i><b>HashShell.exe Run HashShell.cmd</b></i><br>
-  <br>
-  This will run commands from HashShell.cmd line by line. Note that C
-  stands for comment, and you can selectively comment or uncomment
-  commands from the interpreted file.<br>
-  <br>
-  <b>Cryptographic utilities:</b><br>
-  &nbsp; HashShell provides an exhaustive set of cryptographic
-  utilities that can be used in countless ways. In order to learn
-  more, download and unpack the <a href="download/examples.zip"><i>examples</i></a>,
-  go to the directory exemples/crypto within the unpack examples, run
-  the shell in interactive mode, open the example command file <a href="excrypto.cmd.html"><i>excrypto.cmd</i></a> and
-  read its
-  comments or try to execute example commands. It is important to run
-  the shell in the above mentioned directory as some demonstrative
-  examples depend on the files that are included in the directory.
-  Only some basic examples are given below.<br>
-  <br>
-  In order to run the shell interactively, type <br>
-  <br>
-  &nbsp; <i>HashShell.exe Interactive</i> <br>
-  <br>
-  The "Cmd&gt;" prompt appears. Cryptographic commands are invoked by
-  the <i>Crypto</i> groub command followed by specific command and
-  its parameters. <br>
-  <br>
-  The following command will calculate the SHA1 hash of the string "My
-  String":<br>
-  <br>
-  &nbsp; <i>Crypto CheckSum -t SHA1 -s "My String"</i><br>
-  <br>
-  We can verify that the specifiied hash corresponds to the given
-  string by using the -c option (for "check") and specify the presumed
-  hash value after the -h option: <br>
-  <br>
-  &nbsp; <i>Crypto CheckSum -t SHA1 -s "My String" -c -h
-    07841b2e0fda6cfbf7c6bf00f179233cf4e3247b</i><br>
-  <br>
-  To calculate file hashes, omit the -s option. Hashes for groups of
-  files can be calculated, stored to a file, and verified at a later
-  time. The followind will calculate hashes for all files contained
-  directly in the current directory:<br>
-  <br>
-  &nbsp; <i>Crypto CheckSum -t MD5 *.* </i><br>
-  <br>
-  One of the strong points of the <i>HashShell</i> is that operations
-  can be performed on large number of files by single command. One can
-  choose between all files contains in the specified directories and
-  their recursive sub-directories, filter files by using wildcards,
-  etc.<br>
-  <br>
-  The following command calculates hthe SHA-256 hashes (the -t
-  parameter) for all files with ".txt" or ".cmd" extensions (the -rp
-  options) contained in the current directory and all its
-  sub-directories (the -rd parameter) and stores them to the&nbsp;
-  "hashes.SHA256" file:<br>
-  <br>
-  &nbsp; <i>Crypto CheckSum -t SHA-256&nbsp; -o hashes.SHA256 -rd ./
-    -rp *.txt -rp *.cmd </i><br>
-  <br>
-  Once file hashes are stored to a file, it is easy to check whether
-  all the files still have the same hash values (which guarantees that
-  the files have not been modified since the hashes were calculated
-  and stored):<br>
-  <br>
-  &nbsp; <i>Crypto CheckSum -c hashes.SHA256 </i><br>
-  <br>
-  Encryption of text or files is another task that can be performed by
-  the shell. To encrypt one or more strings, type the following
-  command:<br>
-  <br>
-  &nbsp; <i>Crypto EncryptPlain -s -pw MyPassword11 -iv
+
+  <p>
+    This will run commands from HashShell.cmd line by line. Note that C
+    stands for comment, and you can selectively comment or uncomment
+    commands from the interpreted file.
+  </p>
+  <p>
+    <b>Cryptographic utilities:</b>
+  </p>
+  <p>
+    HashShell provides an exhaustive set of cryptographic
+    utilities that can be used in countless ways. In order to learn
+    more, download and unpack the <a href="download/examples.zip"><i>examples</i></a>,
+    go to the directory exemples/crypto within the unpack examples, run
+    the shell in interactive mode, open the example command file 
+    <a href="excrypto.cmd.html"><i>excrypto.cmd</i></a> and
+    read its comments or try to execute example commands. It is important to run
+    the shell in the above mentioned directory as some demonstrative
+    examples depend on the files that are included in the directory.
+    Only some basic examples are given below.
+  </p>
+  <p>
+    In order to run the shell interactively, type:
+  </p>
+  <code>
+    <i>HashShell.exe Interactive</i>
+  </code>
+  <p>
+    The "Cmd&gt;" prompt appears. Cryptographic commands are invoked by
+    the <i>Crypto</i> group command followed by specific command and
+    its parameters. 
+  </p>
+  <p>
+    The following command will calculate the SHA1 hash of the string "My
+    String":
+  </p>
+  <code>
+    &nbsp; <i>Crypto CheckSum -t SHA1 -s "My String"</i>
+  </code>
+  <p>
+    We can verify that the specified hash corresponds to the given
+    string by using the -c option (for "check") and specify the presumed
+    hash value after the -h option: <br>
+  </p>
+  <code>
+    <i>Crypto CheckSum -t SHA1 -s "My String" -c -h 
+      07841b2e0fda6cfbf7c6bf00f179233cf4e3247b</i>
+  </code>
+  <p>
+    To calculate file hashes, omit the -s option. Hashes for groups of
+    files can be calculated, stored to a file, and verified at a later
+    time. The following will calculate hashes for all files contained
+    directly in the current directory:
+  </p>
+  <code>
+    <i>Crypto CheckSum -t MD5 *.* </i>
+  </code>
+  <p>
+    One of the strong points of the <i>HashShell</i> is that operations
+    can be performed on large number of files by single command. One can
+    choose between all files contains in the specified directories and
+    their recursive sub-directories, filter files by using wildcards,
+    etc.
+  </p>
+  <p>
+    The following command calculates hthe SHA-256 hashes (the -t
+    parameter) for all files with ".txt" or ".cmd" extensions (the -rp
+    options) contained in the current directory and all its
+    sub-directories (the -rd parameter) and stores them to the&nbsp;
+    "hashes.SHA256" file:
+  </p>
+  <code>
+    <i>Crypto CheckSum -t SHA-256&nbsp; -o hashes.SHA256 -rd ./
+    -rp *.txt -rp *.cmd </i>
+  </code>
+  <p>
+    Once file hashes are stored to a file, it is easy to check whether
+    all the files still have the same hash values (which guarantees that
+    the files have not been modified since the hashes were calculated
+    and stored):
+  </p>
+  <code>
+    <i>Crypto CheckSum -c hashes.SHA256 </i>
+  </code>
+  <p>
+    Encryption of text or files is another task that can be performed by
+    the shell. To encrypt one or more strings, type the following
+    command:
+  </p>
+  <code>
+    <i>Crypto EncryptPlain -s -pw MyPassword11 -iv
     MyInitializationVector "Encrypted string No. 1"&nbsp; "Encrypted
-    string No. 2"</i><br>
+    string No. 2"</i>
+  </code>
+  <p>
+    Above, the -pw parameter specifies the password (which must be
+    secret) and the -iv parameter specified the initialization vector
+    for the symmetric encryption algorithm used, free parameters are
+    strings to be encrypted, and encryption algorithm is not specified
+    (since there is no -t parameter) meaning that the default algorithm
+    is used (which is Rijndael). One of the two strings is restored by
+    the <i>Decrypt</i> command (where the same password and
+    initialization vector must be provided, and the free parameter is
+    the encrypted string returned by the previous command):
+  </p>
+  <code>
+    <i>Crypto DecryptPlain -s -pw MyPassword11 -iv
+      MyInitializationVector&nbsp;
+      dggQxTn7y2m2tDw44rR/oYfhlHfVt6j1Ug0f8UYI2fM=</i>
+  </code>
+  <p>
+    Without the -s parameter, files are encrypted. As with hash
+    calculation, whole groups of files can be encrypted at once,
+    including all files contained in the specified directories and their
+    nested sub-directories:
+  </p>
+  <code>
+    <i>Crypto EncryptPlain *.* -pw MyPassword11 -iv
+    MyInitializationVector </i>
+  </code>
   <br>
-  Above, the -pw parameter specifies the password (which must be
-  secret) and the -iv parameter specified the initialization vector
-  for the symmetric encryption algorithm used, free parameters are
-  strings to be encrypted, and encryption algorithm is not specified
-  (since there is no -t parameter) meaning that the default algorithm
-  is used (which is Rijndael). One of the two strings is restored by
-  the <i>Decrypt</i> command (where the same password and
-  initialization vector must be provided, and the free parameter is
-  the encrypted string returned by the previous command):<br>
-  <br>
-  &nbsp; <i>Crypto DecryptPlain -s -pw MyPassword11 -iv
-    MyInitializationVector&nbsp;
-    dggQxTn7y2m2tDw44rR/oYfhlHfVt6j1Ug0f8UYI2fM=</i><br>
-  <br>
-  Without the -s parameter, files are encrypted. As with hash
-  calculation, whole groups of files can be encrypted at once,
-  including all files contained in the specified directories and their
-  nested sub-directories:<br>
-  <br>
-  &nbsp; <i>Crypto EncryptPlain *.* -pw MyPassword11 -iv
-    MyInitializationVector </i><br>
-  <br>
-  By default, original files remain intact (which contributes to safer
-  use and reduces the chances to accidentally lose the original
-  contents), and encrypted contents are stored to the files with the
-  same names (and in the same directories) but with the distinctive
-  extension ".ig_enc" appended.<br>
-  <br>
-  The opposite operation is decryption. Here we will use the -delorig
-  option in order to delete the (decrypted) input files after the
-  operation has been performed. The -delorig parameter also causes the
-  decrypted files have the same names as the original files from which
-  we started the procedures, causing the originals be overwritten
-  (after user confirmation is obtained): <br>
-  <br>
-  &nbsp; <i>Crypto DecryptPlain -delorig *.* -pw MyPassword11 -iv
-    MyInitializationVector </i><br>
-  <br>
-  Without the -delorig option, the enxrzpted files would remain on the
-  system, and decrypted contents would be stored to the files with
-  distinctive extension ".ig_dec", and also the input files (i.e. the
-  encrypted versions) would remain intact. Encryption / decryption can
-  be combined by file hashes in order to make sure that the restored
-  original files actually match the originals. It is always a good
-  idea to store hashes of original files, to be able to verify later
-  that the encrypted / decrypted files match the originals. <br>
-  <br>
-  Finally, there are countless possibilities to modify the behavior of
-  commands and to use auxiliary tools. We went through it only very
-  briefly, and for more information you should check the example file.
+  &nbsp; <br>
   <br>
   <br>
-  Auxiliary utilities include Cleaning the remaining unnecessary files
-  produced by encryption / decryption:<br>
+  &nbsp; <br>
   <br>
-  &nbsp; <i>IG.Script.AppBase Crypto CleanFiles -deldecrypted
-    -delencrypted *.*</i><br>
-  <br>
-  There are a number of other auxiliary utilities. Por example, the <i>Convert</i>
-  command helps you when conversions need to be performed between
-  strings, byte arrays in hexadecimal, and byte arrays in base-64
-  encoding:<br>
-  <br>
-  &nbsp; <i>Crypto Convert Luxembourg London Ljubljana </i><br>
-  <br>
-  Then, there exists a command that generates a password or an
-  initialization vector on basis of provided parameters, including the
-  specified number of iterations in an iterative process to extract
-  the unique key from provided parameters: <br>
-  <br>
-  &nbsp; <i>Internal IG.Script.AppBase Crypto GetKey -pw
-    TestPassword1 -sl MySalt123 21</i><br>
-  <br>
-  The key generated in such a way can be used asa&nbsp; key for
-  symmetric encryption or decryption. If we depend on key extraction
-  algorithm, we must be able to specify enough iterations, such that
-  time necessary for generation of a key is large enough to enable
-  good security.&nbsp; The <i>TimeKeyGeneration</i> command makes
-  possible to measure times necessary for key extraction with specific
-  parameters such as number of iterations, length of the key, and
-  initialization vector<br>
-  <br>
-  &nbsp; <i>TimeKeyGeneration -pwlen 60 -sllen 50 -pwit 100 </i><br>
-  <br>
-  <br>
+
+  <p>
+    By default, original files remain intact (which contributes to safer
+    use and reduces the chances to accidentally lose the original
+    contents), and encrypted contents are stored to the files with the
+    same names (and in the same directories) but with the distinctive
+    extension ".ig_enc" appended.
+  </p>
+  <p>
+    The opposite operation is decryption. Here we will use the -delorig
+    option in order to delete the (decrypted) input files after the
+    operation has been performed. The -delorig parameter also causes the
+    decrypted files have the same names as the original files from which
+    we started the procedures, causing the originals be overwritten
+    (after user confirmation is obtained):
+  </p>
+  <code>
+    <i>Crypto DecryptPlain -delorig *.* -pw MyPassword11 -iv
+    MyInitializationVector</i>
+  </code>
+  <p>
+    Without the -delorig option, the enxrzpted files would remain on the
+    system, and decrypted contents would be stored to the files with
+    distinctive extension ".ig_dec", and also the input files (i.e. the
+    encrypted versions) would remain intact. Encryption / decryption can
+    be combined by file hashes in order to make sure that the restored
+    original files actually match the originals. It is always a good
+    idea to store hashes of original files, to be able to verify later
+    that the encrypted / decrypted files match the originals.
+
+  </p>
+  <p>
+    Finally, there are countless possibilities to modify the behavior of
+    commands and to use auxiliary tools. We went through it only very
+    briefly, and for more information you should check the example file.
+  </p>
+  <p>
+    Auxiliary utilities include Cleaning the remaining unnecessary files
+    produced by encryption / decryption:
+  </p>
+  <code>
+    <i>IG.Script.AppBase Crypto CleanFiles -deldecrypted
+    -delencrypted *.*</i>
+  </code>
+  <p>
+    There are a number of other auxiliary utilities. Por example, the <i>Convert</i>
+    command helps you when conversions need to be performed between
+    strings, byte arrays in hexadecimal, and byte arrays in base-64
+    encoding:
+  </p>
+  <code>
+    <i>Crypto Convert Luxembourg London Ljubljana </i>
+  </code>
+  <p>
+    Then, there exists a command that generates a password or an
+    initialization vector on basis of provided parameters, including the
+    specified number of iterations in an iterative process to extract
+    the unique key from provided parameters:
+  </p>
+  <code>
+    <i>Internal IG.Script.AppBase Crypto GetKey -pw
+      TestPassword1 -sl MySalt123 21</i>
+  </code>
+  <p>
+    The key generated in such a way can be used asa&nbsp; key for
+    symmetric encryption or decryption. If we depend on key extraction
+    algorithm, we must be able to specify enough iterations, such that
+    time necessary for generation of a key is large enough to enable
+    good security.&nbsp; The <i>TimeKeyGeneration</i> command makes
+    possible to measure times necessary for key extraction with specific
+    parameters such as number of iterations, length of the key, and
+    initialization vector:
+  </p>
+  <code>
+    <i>TimeKeyGeneration -pwlen 60 -sllen 50 -pwit 100 </i>
+  </code>
+  <p>
+    
+  </p>
+
   &nbsp;&nbsp; Some <b>other commands</b> enable, for example,
   running system commands (Sys) or calculate expressions by a built-in
   calculator (Calc). The calculator is convenient because you can
