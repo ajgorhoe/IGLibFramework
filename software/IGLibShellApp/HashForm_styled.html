@@ -791,10 +791,6 @@ mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings"><span style="m
   <code>
     <i>Cmd&gt;GetFileHash HashShell.exe false</i>
   </code>
-
-  <br>
-  &nbsp;&nbsp;&nbsp; <br>
-  <br>
   <p>
     Yet another way to use the application is to run a command file,
     which is executed by teh application's command-line interpreter:
@@ -802,11 +798,6 @@ mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings"><span style="m
   <code>
     <i>HashShell.exe Run HashShell.cmd</i>
   </code>
-
-  <br>
-  &nbsp; &nbsp; <br>
-  <br>
-
   <p>
     This will run commands from HashShell.cmd line by line. Note that C
     stands for comment, and you can selectively comment or uncomment
@@ -926,13 +917,6 @@ mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings"><span style="m
     <i>Crypto EncryptPlain *.* -pw MyPassword11 -iv
     MyInitializationVector </i>
   </code>
-  <br>
-  &nbsp; <br>
-  <br>
-  <br>
-  &nbsp; <br>
-  <br>
-
   <p>
     By default, original files remain intact (which contributes to safer
     use and reduces the chances to accidentally lose the original
@@ -978,7 +962,7 @@ mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings"><span style="m
   </code>
   <p>
     There are a number of other auxiliary utilities. Por example, the <i>Convert</i>
-    command helps you when conversions need to be performed between
+    command helps you whe conversions need to be performed between
     strings, byte arrays in hexadecimal, and byte arrays in base-64
     encoding:
   </p>
@@ -1009,74 +993,87 @@ mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings"><span style="m
     <i>TimeKeyGeneration -pwlen 60 -sllen 50 -pwit 100 </i>
   </code>
   <p>
-    
+    Some <b>other commands</b> enable, for example,
+    running system commands (Sys) or calculate expressions by a built-in
+    calculator (Calc). The calculator is convenient because you can
+    store values (including values of expressions) in variables that you
+    can use in later calculations. See the <a href="download/HashShell.cmd">
+    HashShell.cmd</a> file for basic examples.
   </p>
 
-  &nbsp;&nbsp; Some <b>other commands</b> enable, for example,
-  running system commands (Sys) or calculate expressions by a built-in
-  calculator (Calc). The calculator is convenient because you can
-  store values (including values of expressions) in variables that you
-  can use in later calculations. See the <a href="download/HashShell.cmd">HashShell.cmd</a> file for basic
-  examples.<br>
-  <br>
-  <b>Example of using the calculator:</b><br>
-  Below is transcription of user input and output of the application
-  after running the following command:<br>
-  &nbsp; <i><b>HashShell Interactive Calc </b></i><br>
-  <font color="#666666">JS&gt; a=2<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 2<br>
-    JS&gt; b=5<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 5<br>
-    JS&gt; c=2*(a+b)<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 14<br>
-    JS&gt; sin(c*const_pi/3)<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 0.8660254037844393<br>
-    JS&gt; exp(const_e)<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 15.154262241479262<br>
-    JS&gt; 1.5*(4+8+9-3)*(5+22+pow(3,5))<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 7290<br>
-    JS&gt; pow(2,10)<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 1024<br>
-    JS&gt; log(64,2)<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 6<br>
-    JS&gt; /q<br>
-    Command-line JavaScript expression evaluator stopped.</font><br>
-  <br>
-  &nbsp;&nbsp; When running the application in interactive mode, a
-  single calculator command can be evaluated at any rime by preceding
-  it by the <i>Calc</i> command. This executes a single command in
-  the calculator, as opposed to launching a command shell where
-  multiple commands can be inserted and executed. The calculator will
-  maintain its state during the lifetime of the application,
-  regardless of whether its command are inserted interactively or not.
-  This is demonstrated by the following sequence of commands inserted
-  in the shell's interactive command-line:<br>
-  <br>
-  <br>
-  <font color="#666666">Cmd&gt;Calc x = 16<br>
-    <br>
-    &nbsp; = 16<br>
-    &nbsp; = 16<br>
-    Cmd&gt;Calc pow(x, 4)<br>
-    <br>
-    &nbsp; = 65536<br>
-    &nbsp; = 65536<br>
-    Cmd&gt;
-  </font><br>
-  <br>
-  <br>
-  <br>
-  <b>&nbsp;&nbsp;&nbsp; The CheckSum Command:</b><br>
-  <br>
-  &nbsp; The <b>CheckSum</b> command calculates or verifies various
-  type of checksums (hash functions MD5, SHA-1, SHA-256, SHA-512) of
-  files or strings. Use of the <i>CheckSum</i> function is summarized
-  here as example, but this should not be considered a complete
-  specification of the command. For more exhaustive specification,
-  please consider the examples in the <a href="examples/crypto/excrypto.cmd">examples/crypto/excrypto.cmd</a>
-  file. Examples should be run in the directory containing this file (<a href="download/examples.zip">available
+  <p>
+    <b>Example of using the calculator</b>:
+  </p>
+  <p>
+    Below is transcription of user input and output of the application
+    after running the following command:
+  </p>
+  <code>
+    <i>HashShell Interactive Calc</i>
+  </code>
+  <p></p>
+  <code>
+    <font color="#666666">JS&gt; a=2<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 2<br>
+      JS&gt; b=5<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 5<br>
+      JS&gt; c=2*(a+b)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 14<br>
+      JS&gt; sin(c*const_pi/3)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 0.8660254037844393<br>
+      JS&gt; exp(const_e)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 15.154262241479262<br>
+      JS&gt; 1.5*(4+8+9-3)*(5+22+pow(3,5))<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 7290<br>
+      JS&gt; pow(2,10)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 1024<br>
+      JS&gt; log(64,2)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 6<br>
+      JS&gt; /q<br>
+      Command-line JavaScript expression evaluator stopped.</font><br>
+  </code>
+  <p>
+    When running the application in interactive mode, a
+    single calculator command can be evaluated at any rime by preceding
+    it by the <i>Calc</i> command. This executes a single command in
+    the calculator, as opposed to launching a command shell where
+    multiple commands can be inserted and executed. The calculator will
+    maintain its state during the lifetime of the application,
+    regardless of whether its command are inserted interactively or not.
+    This is demonstrated by the following sequence of commands inserted
+    in the shell's interactive command-line:
+  </p>
+  <code>
+    <font color="#666666">Cmd&gt;Calc x = 16<br>
+      &nbsp; = 16<br>
+      &nbsp; = 16<br>
+      Cmd&gt;Calc pow(x, 4)<br>
+      &nbsp; = 65536<br>
+      &nbsp; = 65536<br>
+      Cmd&gt;
+    </font>
+  </code>
+ 
+  <p>
+    <b>The CheckSum Command:</b>
+  </p>
+  <p>
+    The <b><i>CheckSum</i></b> command calculates or verifies various
+    type of checksums (hash functions MD5, SHA-1, SHA-256, SHA-512) of
+    files or strings. Use of the <i>CheckSum</i> function is summarized
+    here as example, but this should not be considered a complete
+    specification of the command. For more exhaustive specification,
+    please consider the examples in the <a href="examples/crypto/excrypto.cmd">
+      examples/crypto/excrypto.cmd</a> file. Examples should be run in
+    the directory containing this file (<a href="download/examples.zip">available
     here</a>) in order to use
-  the auxiliary files properly.<br>
+    the auxiliary files properly.
+  </p>
+
+
+  <br>
+  <br>
+  &nbsp; <br>
   <br>
   &nbsp; Usage: <br>
   &nbsp;&nbsp;&nbsp; <b>CheckSum &lt;-c&gt; &lt;-s string&gt; &lt;-h
