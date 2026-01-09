@@ -7,10 +7,18 @@ This directory contains images of trefoil knots rendered with ray tracing, with 
 
 ---
 
-[./TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent.png](././TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent.png):
+[TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent.png](./TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent.png):
 
 <a href="./TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent.png">
-  <img src="./TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent.png" width="30%"></img>
+  <img src="./TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent.png" alt = [Trefoil knot rendered with ray tracer image, transparent background] style = "max-width: 50%; max-width: 20em; width: 300pt" ></img>
+</a>
+
+---
+
+[TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent_Red.png](./TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent_Red.png):
+
+<a href="./TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent_Red.png">
+  <img src="./TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent_Red.png" alt = [Trefoil knot rendered with ray tracer image, transparent background] style = "max-width: 50%; max-width: 20em; width: 300pt" ></img>
 </a>
 
 ---
@@ -22,9 +30,10 @@ This directory contains images of trefoil knots rendered with ray tracing, with 
 -->
 
 <img src="TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent.png" alt="[IGLib]"
-  style="float: right; max-width: 30%; width: 150pt; margin-left: 8pt;" />
+  style="float: right; max-width: min(10em, 30%); width: 250pt; margin-left: 8pt;" />
 
-Leonardo di ser Piero da Vinci (15 April 1452 – 2 May 1519) was an Italian polymath of the High Renaissance who was active as a painter, draughtsman, engineer, scientist, theorist, sculptor, and architect. While his fame initially rested on his achievements as a painter, he has also become known for his notebooks, in which he made drawings and notes on a variety of subjects, including anatomy, astronomy, botany, cartography, painting, and palaeontology. Leonardo is widely regarded to have been a genius who epitomised the Renaissance humanist ideal, and his collective works comprise a contribution to later generations of artists matched only by that of his younger contemporary Michelangelo.
+Leonardo di ser Piero da Vinci (15 April 1452 – 2 May 1519) was an Italian polymath of the High Renaissance who was active as a painter, draughtsman, engineer, scientist, theorist, sculptor, and architect. While his fame initially rested on his achievements as a painter, he has also become known for his notebooks, in which he made drawings and notes on a variety of subjects,<img src="TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent_Red.png" alt="[IGLib]"
+  style="float: center; max-width: 5em; width: 250pt; margin-left: 8pt;" /> including anatomy, astronomy, botany, cartography, painting, and palaeontology. Leonardo is widely regarded to have been a genius who epitomised the Renaissance humanist ideal, and his collective works comprise a contribution to later generations of artists matched only by that of his younger contemporary Michelangelo.
 
 Born out of wedlock to a successful notary and a lower-class woman in, or near, Vinci, he was educated in Florence by the Italian painter and sculptor Andrea del Verrocchio. He began his career in the city, but then spent much time in the service of Ludovico Sforza in Milan. Later, he worked in Florence and Milan again, as well as briefly in Rome, all while attracting a large following of imitators and students. Upon the invitation of Francis I, he spent his last three years in France, where he died in 1519. Since his death, there has not been a time when his achievements, diverse interests, personal life, and empirical thinking have failed to incite interest and admiration, making him a frequent namesake and subject in culture.
 
