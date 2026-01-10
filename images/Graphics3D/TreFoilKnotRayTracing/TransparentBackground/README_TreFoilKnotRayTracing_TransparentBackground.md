@@ -13,6 +13,22 @@ This directory contains images of trefoil knots rendered with ray tracing, with 
   <img src="./TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent.png" alt = [Trefoil knot rendered with ray tracer image, transparent background] style = "max-width: 50%; max-width: 20em; width: 300pt" ></img>
 </a>
 
+PNG images are large in size because they use lossless compression. A much better compromise for photos and images is the **[WebP raster image format](https://en.wikipedia.org/wiki/WebP)**, which can use both **lossless and lossy compression**, and also supports **transparency**. Below is the above PNG image converted to WebP with **65% quality**, which results in **20-times smaller** image than in PNG format. The *conversion was done by Paint.NET*:
+
+[TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent_1.webp](./TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent_1.webp):
+
+<a href="./TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent_1.webp">
+  <img src="./TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent_1.webp" alt = [Trefoil knot rendered with ray tracer image, transparent background] style = "max-width: 50%; max-width: 20em; width: 300pt" ></img>
+</a>
+
+When converting the PNG image to WebP with **40% quality**, further reduction in size from 30 to 25 kB was achieved:
+
+[TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent_2.webp](./TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent_2.webp):
+
+<a href="./TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent_2.webp">
+  <img src="./TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent_2.webp" alt = [Trefoil knot rendered with ray tracer image, transparent background] style = "max-width: 50%; max-width: 20em; width: 300pt" ></img>
+</a>
+
 ---
 
 [TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent_Red.png](./TrefoilKnot_Blue_RayTracer_BlackBackground_MetallicBSDF_Transparent_Red.png):
