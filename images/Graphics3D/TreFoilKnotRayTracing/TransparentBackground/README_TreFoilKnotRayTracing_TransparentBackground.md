@@ -23,6 +23,22 @@ This directory contains images of trefoil knots rendered with ray tracing, with 
 
 ---
 
+[TrefoilKnot_Blue_RayTracer_GrayBackground_Transparent.png](./TrefoilKnot_Blue_RayTracer_GrayBackground_Transparent.png):
+
+<a href="./TrefoilKnot_Blue_RayTracer_GrayBackground_Transparent.png">
+  <img src="./TrefoilKnot_Blue_RayTracer_GrayBackground_Transparent.png" alt = [Trefoil knot rendered with ray tracer image, transparent background] style = "max-width: 50%; max-width: 20em; width: 300pt" ></img>
+</a>
+
+---
+
+[TrefoilKnot_Blue_RayTracer_GrayBackground_1_Transparent.png](./TrefoilKnot_Blue_RayTracer_GrayBackground_1_Transparent.png):
+
+<a href="./TrefoilKnot_Blue_RayTracer_GrayBackground_1_Transparent.png">
+  <img src="./TrefoilKnot_Blue_RayTracer_GrayBackground_1_Transparent.png" alt = [Trefoil knot rendered with ray tracer image, transparent background] style = "max-width: 50%; max-width: 20em; width: 300pt" ></img>
+</a>
+
+---
+
 ## Usage Examples
 
 <!--
