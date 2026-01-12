@@ -5,7 +5,6 @@ This directory contains images of trefoil knots rendered with ray tracing, with 
 
  See also the **[images/ directory readme](../../../README_images_info.md)**.
 
-
 ## Images Contained in this Directory
 
 ---
