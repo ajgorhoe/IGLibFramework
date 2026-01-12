@@ -9,5 +9,6 @@ This is directory `images/` in the [IGLib Framework's web site](../index.html) (
 **images/ directories**:
   * [images/IGLib/ readme](./IGLib/README_images_IGLib.md) ([on GitHub](https://ajgorhoe.github.io/IGLibFramework/images/IGLib/README_images_IGLib.md))
   * [images/Graphics3D/ readme](./Graphics3D/README_images_Graphics3D.md) ([on GitHub](https://ajgorhoe.github.io/IGLibFramework/images/Graphics3D/EADME_images_Graphics3D.md))
-  * [images/Graphics3D/TreFoilKnotRayTracing readme](./Graphics3D/TreFoilKnotRayTracing/README_TreFoilKnotRayTracing.md) ([on GitHub](https://ajgorhoe.github.io/IGLibFramework/images/Graphics3D/TreFoilKnotRayTracing/README_TreFoilKnotRayTracing.md))
+    * [images/Graphics3D/TreFoilKnotRayTracing readme](./Graphics3D/TreFoilKnotRayTracing/README_TreFoilKnotRayTracing.md) ([on GitHub](https://ajgorhoe.github.io/IGLibFramework/images/Graphics3D/TreFoilKnotRayTracing/README_TreFoilKnotRayTracing.md))
+      * [images/Graphics3D/TreFoilKnotRayTracing readme](./Graphics3D/TreFoilKnotRayTracing/TransparentBackground/README_TreFoilKnotRayTracing_TransparentBackground.md) ([on GitHub](https://ajgorhoe.github.io/IGLibFramework/images/Graphics3D/TreFoilKnotRayTracing/TransparentBackground/README_TreFoilKnotRayTracing_TransparentBackground.md))
 
