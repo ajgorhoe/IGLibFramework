@@ -1,7 +1,7 @@
 
 # Directory `images/IGLib`
 
-This is directory `images/IGLib/` in the [IGLib Framework's web site](../../index.html) ([site on GitHub](https://ajgorhoe.github.io/IGLibFramework/); [images/IGLib/ directory on GitHub](https://ajgorhoe.github.io/IGLibFramework/images/IGLib/README_images_IGLib.md))
+This is directory `images/IGLib/` in the [IGLib Framework's web site](../../index.html) ([site on GitHub](https://ajgorhoe.github.io/IGLibFramework/); [images/IGLib/ directory on GitHub](https://ajgorhoe.github.io/IGLibFramework/images/IGLib/README_images_IGLib.md)). **See also the [images/ directory readme](../README_images_info.md)**.
 
 ## Images Contained in this Directory
 
