@@ -1,9 +1,9 @@
 
 # Directory `images`
 
-This is directory `images/` in the [IGLib Framework's web site repo](../index.html) (***[repository on GitHub](https://github.com/ajgorhoe/IGLibFramework)***;  **[web site on GitHub](https://ajgorhoe.github.io/IGLibFramework/)**).
+This is directory `images/` in the [IGLib Framework's web site repo](../index.html) (*[repository on GitHub](https://github.com/ajgorhoe/IGLibFramework)*;  [web site on GitHub](https://ajgorhoe.github.io/IGLibFramework/)).
 
-* [images/ directory on GitHub](https://github.com/ajgorhoe/IGLibFramework/blob/main/images/README_images_info.md) ([on the web](https://ajgorhoe.github.io/IGLibFramework/images/README_images_info.md))
+* **[images/ directory on GitHub](https://github.com/ajgorhoe/IGLibFramework/blob/main/images/README_images_info.md)** (**[on the web](https://ajgorhoe.github.io/IGLibFramework/images/README_images_info.md)**)
 * [Repository readme](../README.md) ([on GitHub](https://github.com/ajgorhoe/IGLibFramework/blob/main/README.md))
 * **[Parent site's repository readme](../../README.md)** ([on GitHub](https://github.com/ajgorhoe/ajgorhoe.github.io/blob/main/README.md))
 **images/ directories**:
