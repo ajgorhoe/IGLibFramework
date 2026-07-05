@@ -1,5 +1,11 @@
 # Web Page Repository: IGLib Home
 
+See also:
+
+* [This readme on GitHub]() ([repository on GitHub]())
+* [Site map of this site](./index.html) ([on GitHub](https://ajgorhoe.github.io/IGLibFramework/))
+* [Readme of the root site](../README.md) ([on GitHub](https://github.com/ajgorhoe/ajgorhoe.github.io/blob/main/README.md))
+
 ## About this Repository
 
 This repository provieds content for the **IGLib Legacy web pages** at **[ajgorhoe.github.io/IGLibFramework/](https://ajgorhoe.github.io/IGLibFramework/index.html)**, with some subpages:
